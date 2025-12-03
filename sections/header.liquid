@@ -327,10 +327,9 @@
             <div class="h-menu">
                 <nav class="h-links">
                     <ul>
-                        <li><a href="#">Why Seven Sundays</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Experience & Order</a></li>
-                        <li><a href="#">Pillow Shop</a></li>
+                        {%- for link in section.settings.menu.links -%}
+                        <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+                        {%- endfor -%}
                     </ul>
                 </nav>
             </div>
