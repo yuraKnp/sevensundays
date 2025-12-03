@@ -300,8 +300,29 @@
         <div class="h-inner">
             <div class="h-burger js-open-menu"><i></i></div>
             <a class="h-logo" href="index.php" aria-label="Company logo">
-                <img width="229" height="16" src="img/logo-white.svg" alt="" loading="eager">
-                <img width="229" height="16" src="img/logo-black.svg" alt="" loading="eager">
+                {%- assign logo_height = 16 -%}
+                {{ settings.logo_white | image_url: width: 229 | image_tag:
+                  class: '',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true,
+                  loading: 'eager'
+                }}
+                {{ settings.logo | image_url: width: 229 | image_tag:
+                  class: '',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true,
+                  loading: 'eager'
+                }}
+                {% comment %} <img width="229" height="16" src="img/logo-white.svg" alt="" loading="eager">
+                <img width="229" height="16" src="img/logo-black.svg" alt="" loading="eager"> {% endcomment %}
             </a>
             <div class="h-menu">
                 <nav class="h-links">
