@@ -144,6 +144,9 @@
         "logo_image": {
           "label": "Logo"
         },
+        "logo_image_white": {
+          "label": "Logo white"
+        },
         "logo_width": {
           "label": "Width"
         },

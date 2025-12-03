@@ -16,6 +16,11 @@
         "label": "t:settings_schema.logo.settings.logo_image.label"
       },
       {
+        "type": "image_picker",
+        "id": "logo_white",
+        "label": "t:settings_schema.logo.settings.logo_image_white.label"
+      },
+      {
         "type": "range",
         "id": "logo_width",
         "min": 50,
