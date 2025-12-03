@@ -12,36 +12,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="theme-color" content="var(--clr-white)" />
 
-    {{ 'update/css/main.css' | asset_url | stylesheet_tag }}
-    <link rel="preload" href="{{ 'update/fonts/test-soehne-leicht.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ 'update/fonts/test-soehne-buch.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ 'update/fonts/test-soehne-kraftig.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ 'update/fonts/TobiasTRIAL-Light.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    {{ 'main.css' | asset_url | stylesheet_tag }}
+    <link rel="preload" href="{{ 'test-soehne-leicht.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ 'test-soehne-buch.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ 'test-soehne-kraftig.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ 'TobiasTRIAL-Light.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
     <style type="text/css">
     @font-face {
         font-family: 'test-soehne';
-        src: url('{{ 'update/fonts/test-soehne-leicht.woff2' | asset_url }}') format('woff2');
+        src: url('{{ 'test-soehne-leicht.woff2' | asset_url }}') format('woff2');
         font-weight: 300;
         font-style: normal;
         font-display: swap;
     }
     @font-face {
         font-family: 'test-soehne';
-        src: url('{{ 'update/fonts/test-soehne-buch.woff2' | asset_url }}') format('woff2');
+        src: url('{{ 'test-soehne-buch.woff2' | asset_url }}') format('woff2');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
     }
     @font-face {
         font-family: 'test-soehne';
-        src: url('{{ 'update/fonts/test-soehne-kraftig.woff2' | asset_url }}') format('woff2');
+        src: url('{{ 'test-soehne-kraftig.woff2' | asset_url }}') format('woff2');
         font-weight: 500;
         font-style: normal;
         font-display: swap;
     }
     @font-face {
         font-family: 'TobiasTRIAL';
-        src: url('{{ 'update/fonts/TobiasTRIAL-Light.woff2' | asset_url }}') format('woff2');
+        src: url('{{ 'TobiasTRIAL-Light.woff2' | asset_url }}') format('woff2');
         font-weight: 300;
         font-style: normal;
         font-display: swap;
