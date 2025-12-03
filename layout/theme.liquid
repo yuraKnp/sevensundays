@@ -346,6 +346,7 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    <div id="content-block">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -419,5 +420,11 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    </div>
+
+    <link href="{{ 'bootstrap-grid.css' | asset_url }}" rel="stylesheet" type="text/css" defer="defer" />
+    <link href="{{ 'style.css' | asset_url }}" rel="stylesheet" type="text/css" defer="defer"/>
+    <script defer src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script defer src="{{ 'app-global.js' | asset_url }}"></script>
   </body>
 </html>
