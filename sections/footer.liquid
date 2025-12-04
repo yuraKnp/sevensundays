@@ -354,53 +354,42 @@
 
                         {%- for block in section.blocks -%}
 
-                          {%- case block.type -%}
-                            {%- when 'link_list' -%}
+                            {%- case block.type -%}
+                              {%- when 'link_list' -%}
                               
-                              {%- assign menu_count = menu_count | plus: 1 -%}
-                              
-                              {% comment %} 
-                                OPEN new column div for the 1st menu and every odd-numbered menu thereafter (1, 3, 5, etc.) 
-                              {% endcomment %}
-                              {%- if menu_count == 1 or menu_count | modulo: 2 == 1 -%}
+                                {%- assign menu_count = menu_count | plus: 1 -%}
                                 
-                                {% comment %} Calculate the order index: 0 for menus 1/2, 1 for menus 3/4, etc. {% endcomment %}
-                                {%- assign order_index = menu_count | minus: 1 | divided_by: 2 -%}
-                                {%- assign order_class = 'order-lg-' | append: order_index -%}
-                                
-                                <div class="col-12 col-lg-3 {{ order_class }}">
-                              {% endif -%}
+                                {%- if menu_count == 1 or menu_count | modulo: 2 == 1 -%}
+                                  
+                                  {%- assign order_index = menu_count | minus: 1 | divided_by: 2 -%}
+                                  {%- assign order_class = 'order-lg-' | append: order_index -%}
+                                  
+                                  <div class="col-12 col-lg-3 {{ order_class }}">
+                                {% endif -%}
 
-                              {% comment %} Output the actual footer menu content {% endcomment %}
-                              {%- if block.settings.menu != blank -%}
-                                <div class="footer-links" {{ block.shopify_attributes }}>
-                                  {% comment %} Use the menu title as the caption {% endcomment %}
-                                  <div class="footer-caption">{{ block.settings.menu.title | escape }}</div>
-                                  <ul>
-                                    {%- for link in block.settings.menu.links -%}
-                                      <li>
-                                        <a href="{{ link.url }}"{% if link.active %} class="active"{% endif %}>{{ link.title | escape }}</a>
-                                      </li>
-                                    {%- endfor -%}
-                                  </ul>
-                                </div>
-                              {% endif -%}
+                                {%- if block.settings.menu != blank -%}
+                                    <div class="footer-caption">{{ block.settings.menu.title | escape }}</div>
+                                    <ul>
+                                      {%- for link in block.settings.menu.links -%}
+                                        <li>
+                                          <a href="{{ link.url }}"{% if link.active %} class="active"{% endif %}>{{ link.title | escape }}</a>
+                                        </li>
+                                      {%- endfor -%}
+                                    </ul>
+                                  </div>
+                                {% endif -%}
 
-                              
-                              {% comment %} 
-                                CLOSE the current column div after the 2nd menu and every even-numbered menu thereafter (2, 4, 6, etc.) 
-                              {% endcomment %}
-                              {%- if menu_count | modulo: 2 == 0 -%}
-                                </div>
-                              {% endif -%}
+                                {% comment %} {%- if menu_count | modulo: 2 == 0 -%} {% endcomment %}
+                                  </div>
+                                {% comment %} {% endif -%} {% endcomment %}
 
                             {%- endcase -%}
                             
                         {%- endfor -%}
 
-                        {%- if menu_count > 0 and menu_count | modulo: 2 != 0 -%}
+                        {% comment %} {%- if menu_count > 0 and menu_count | modulo: 2 != 0 -%}
                           </div>
-                        {%- endif -%}
+                        {%- endif -%} {% endcomment %}
 
                     </div>
                     <div class="footer-bottom">
