@@ -1035,6 +1035,9 @@
         "footer_left_image": {
           "label": "Footer left image"
         },
+        "footer_left_link": {
+          "label": "Footer left link"
+        },
         "newsletter_enable": {
           "label": "Email signup"
         },

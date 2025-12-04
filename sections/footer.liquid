@@ -328,6 +328,27 @@
             <div class="row">
                 <div class="col-lg-auto">
                     <div class="footer-img">
+                        {{ settings.footer_left_image | image_url: width: 380 | image_tag:
+                          class: '',
+                          widths: widths,
+                          height: 24,
+                          alt: logo_alt,
+                          sizes: sizes,
+                          preload: true,
+                          loading: 'lazy'
+                        }}
+                        <a class="footer-logo" href="index.php" aria-label="Company logo">
+                        {{ settings.logo_white | image_url: width: 215 | image_tag:
+                          class: '',
+                          widths: widths,
+                          height: 24,
+                          alt: logo_alt,
+                          sizes: sizes,
+                          preload: true,
+                          loading: 'lazy'
+                        }}
+                        </a>
+
                         <picture>
                             <source srcset="img/footer-img.webp" type="image/webp">
                             <source srcset="img/footer-img.jpg" type="image/jpg">
@@ -553,7 +574,7 @@
     },
     {
       "type": "url",
-      "id": "link",
+      "id": "footer_left_link",
       "label": "t:settings.footer.settings.link.label"
     },
     {
