@@ -202,15 +202,22 @@
                                 <img width="380" height="240" src="img/icons/icon-rating.svg" alt="icon" loading="lazy">
                                 <span>Rated 4.5 on Trustpilot</span>
                             </div>
-                            <h1 class="h1 title text-balance">The Modular Sleep System</h1>
-                            <div class="banner-btn">
-                                <div class="button-wrapp">
-                                    <a href="#" class="btn">
-                                        <b>Get Sleep System</b>
-                                        <svg width="12" height="12"><use href="img/icons/icons_global.svg#btn-arrow"></use></svg>
-                                    </a>
-                                </div>
-                            </div>
+                            {%- for block in section.blocks -%}
+                              {%- case block.type -%}
+                                {%- when 'heading' -%}
+                                  <h1 class="h1 title text-balance">{{ block.settings.heading }}</h1>
+                                {%- when 'buttons' -%}
+                                  <div class="banner-btn">
+                                      <div class="button-wrapp">
+                                          <a href="{{ block.settings.button_link_1 }}" class="btn">
+                                            <b> {{- block.settings.button_label_1 | escape -}}</b>
+                                              {%- assign svg_icon_url = 'icons_global.svg' | asset_url | append: '#btn-arrow' -%}
+                                              <svg width="12" height="12"><use href="{{ svg_icon_url }}"></use></svg>
+                                          </a>
+                                      </div>
+                                  </div>
+                              {%- endcase -%}
+                            {%- endfor -%}
                         </div>
                     </div>
                 </div>
