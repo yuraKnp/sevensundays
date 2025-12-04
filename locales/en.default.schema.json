@@ -1377,7 +1377,19 @@
           }
           },
         "content": {
-          "content": "Content"
+          "content": "Additional block"
+        },
+        "image_left_bottom": {
+          "label": "Image left bottom"
+        },
+        "image_left_bottom_logo": {
+          "label": "Left bottom logo"
+        },
+        "image_left_bottom_link": {
+          "label": "Left bottom link"
+        },
+        "image_left_bottom_description": {
+          "label": "Left bottom small logo"
         },
         "desktop_content_position": {
           "options__1": {
