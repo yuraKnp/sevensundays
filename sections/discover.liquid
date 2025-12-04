@@ -1,0 +1,81 @@
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7">
+                <div class="title-shortcode text-center">
+                    <div class="motto">Discover the secret of restorative nights</div>
+                    <div class="h3 title font-1">One mattress, countless configurations.<br> Our 3-layer system adjusts in seconds to support your body's natural regeneration – night after night.</div>
+                </div>
+                <div class="motto text-center">As seen in</div>
+                <div class="marquee">
+                    <div class="marquee-line" data-speed="0.03" data-direction="false">
+                        <div class="marquee-item">
+                            <div class="marquee-content">
+                                <img width="85" height="23" src="img/partner-logo-1.svg" alt="partner" loading="lazy">
+                                <img width="136" height="16" src="img/partner-logo-2.svg" alt="partner" loading="lazy">
+                                <img width="84" height="16" src="img/partner-logo-3.svg" alt="partner" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-lg"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Discover",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "discover_subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "discover_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "discover_text_before_gallery",
+      "label": "Title"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Gallery Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "textarea",
+          "id": "caption",
+          "label": "Caption"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Grid Gallery"
+    }
+  ],
+}
+{% endschema %}
