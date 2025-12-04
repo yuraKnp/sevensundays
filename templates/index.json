@@ -24,10 +24,7 @@
           "settings": {
             "button_label_1": "Get Sleep System",
             "button_link_1": "#",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_1": false
           }
         }
       },
@@ -42,6 +39,10 @@
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "none",
+        "image_left_bottom": "shopify://shop_images/banner-sticker.webp",
+        "image_left_bottom_logo": "shopify://shop_images/sticker-logo.svg",
+        "image_left_bottom_link": "shopify://collections/frontpage",
+        "image_left_bottom_description": "13% Better Sleep Based on Red Bull Study",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
