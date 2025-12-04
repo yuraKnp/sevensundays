@@ -10,13 +10,6 @@
 {
   "name": "t:sections.footer.name",
   "type": "footer",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "logo_fotoer_white",
-        "label": "t:sections.footer.label"
-      },
-  ],
   "sections": {
     "footer": {
       "type": "footer",
