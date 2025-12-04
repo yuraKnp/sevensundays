@@ -328,9 +328,9 @@
             <div class="row">
                 <div class="col-lg-auto">
                     <div class="footer-img">
-                        {{ settings.footer_left_image | image_url: width: 380 }}
+                        {{ section.settings.footer_left_image | image_url: width: 380 }}
                         <a class="footer-logo" href="index.php" aria-label="Company logo">
-                        {{ settings.logo_white | image_url: width: 215 | image_tag:
+                        {{ section.settings.logo_white | image_url: width: 215 | image_tag:
                           class: '',
                           widths: widths,
                           width: 215,
