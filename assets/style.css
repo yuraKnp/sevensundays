@@ -96,7 +96,7 @@ a:hover .video-cover video {transform: scale(1.04);}
 .banner-info .button-wrapp {justify-content: center;}
 .banner-info > * + * {margin-top: var(--sp-32);}
 .banner-info .text {margin-top: var(--sp-24);}
-.banner-section {margin-top: var(--h-top-rating);}
+/* .banner-section {margin-top: var(--h-top-rating);} */
 .section + .banner-section {margin-top: 0;}
 .banner.full {--banner-margin: 8px;margin: var(--banner-margin);margin-bottom: 0;}
 .banner.full .banner-media {border-radius: var(--rd-1);}
