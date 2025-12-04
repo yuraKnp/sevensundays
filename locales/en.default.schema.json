@@ -1032,6 +1032,9 @@
         }
       },
       "settings": {
+        "footer_left_image": {
+          "label": "Footer left image"
+        },
         "newsletter_enable": {
           "label": "Email signup"
         },
