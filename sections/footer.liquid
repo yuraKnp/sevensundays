@@ -358,8 +358,9 @@
                               {%- when 'link_list' -%}
                               
                                 {%- assign menu_count = menu_count | plus: 1 -%}
+                                {%- assign is_odd = menu_count | modulo: 2 -%}
                                 
-                                {%- if menu_count == 1 or menu_count | modulo: 2 == 1 -%}
+                                {%- if menu_count == 1 or is_odd == 1 -%}
                                   
                                   {%- assign order_index = menu_count | minus: 1 | divided_by: 2 -%}
                                   {%- assign order_class = 'order-lg-' | append: order_index -%}
@@ -379,17 +380,17 @@
                                   </div>
                                 {% endif -%}
 
-                                {% comment %} {%- if menu_count | modulo: 2 == 0 -%} {% endcomment %}
+                                {%- if is_odd == 0 -%}
                                   </div>
-                                {% comment %} {% endif -%} {% endcomment %}
+                                {% endif -%}
 
                             {%- endcase -%}
                             
                         {%- endfor -%}
 
-                        {% comment %} {%- if menu_count > 0 and menu_count | modulo: 2 != 0 -%}
+                        {%- if menu_count > 0 and is_odd != 0 -%}
                           </div>
-                        {%- endif -%} {% endcomment %}
+                        {%- endif -%}
 
                     </div>
                     <div class="footer-bottom">
