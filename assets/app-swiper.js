@@ -13,7 +13,7 @@ jQuery(function ($) {
         if (!options.pagination) options.pagination = {
             el: $p.find('.swiper-pagination')[0],
             clickable: true,
-            dynamicBullets: (slidesLength > 10) ? true : false,
+            dynamicBullets: (slidesLength > 14) ? true : false,
         };
         if (!options.navigation) options.navigation = {
             nextEl: $p.find('.swiper-button-next')[0],
