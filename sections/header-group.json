@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "New mattress delivery coming to Germany",
             "link": ""
           }
         }
@@ -28,7 +28,7 @@
       "settings": {
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "color_scheme": "",
+        "color_scheme": "scheme-d671c85e-3608-43fd-b840-a146f19e890b",
         "show_line_separator": true,
         "show_social": false,
         "enable_country_selector": false,
