@@ -253,6 +253,7 @@
   },
   "order": [
     "image_banner",
+    "image_banner_video",
     "rich_text",
     "featured_collection",
     "collage",
