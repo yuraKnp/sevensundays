@@ -350,8 +350,6 @@
                                 </label>
                             </form>
                         </div>
-
-                        {% comment %} Initialize a counter to track the number of menus processed {% endcomment %}
                         {%- assign menu_count = 0 -%}
 
                         {%- for block in section.blocks -%}
@@ -400,48 +398,10 @@
                             
                         {%- endfor -%}
 
-                        {% comment %} 
-                          Final check: If the total number of menus was odd (e.g., 1 or 3), the last column wrapper is still open, so close it now.
-                        {% endcomment %}
                         {%- if menu_count > 0 and menu_count | modulo: 2 != 0 -%}
                           </div>
                         {%- endif -%}
 
-{% comment %} 
-                        {%- for block in section.blocks -%}
-                          {%- case block.type -%}
-                              {%- when 'link_list' -%}
-                              <div class="col-12 col-lg-3 order-lg-0">
-                                    {%- if block.settings.menu != blank -%}
-                                    <div class="footer-links">
-                                        <div class="footer-caption">Company</div>
-                                        <ul>
-                                            {%- for link in block.settings.menu.links -%}
-                                            <li><a href="{{ link.url }}" class="{% if link.active %}">{{ link.title | escape }}</a></li>
-                                            {%- endfor -%}
-                                        </ul>
-                                    </div>
-                                    {% endif %}                              
-                              </div>
-                          {% endcase %}
-                        {% endfor %}
-                        <div class="col-12 col-lg-3 order-lg-1">
-                            <div class="footer-links">
-                                <div class="footer-caption">partners</div>
-                                <ul>
-                                    <li><a href="#">Partner Portal</a></li>
-                                    <li><a href="#">Sleep Academy</a></li>
-                                </ul>
-                            </div>
-                            <div class="footer-links">
-                                <div class="footer-caption">Support</div>
-                                <ul>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Delivery & Returns</a></li>
-                                </ul>
-                            </div>
-                        </div> {% endcomment %}
                     </div>
                     <div class="footer-bottom">
                         <div class="footer-links">
