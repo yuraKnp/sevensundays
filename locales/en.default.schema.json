@@ -1524,12 +1524,6 @@
         "name": "Image banner"
       }
     },
-    "discover": {
-      "name": "Discover",
-      "presets": {
-        "name": "Gallery images"
-      }
-    },
     "image-with-text": {
       "name": "Image with text",
       "settings": {
