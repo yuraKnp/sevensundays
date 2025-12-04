@@ -328,8 +328,16 @@
             <div class="row">
                 <div class="col-lg-auto">
                     <div class="footer-img">
-                        {{ section.settings.footer_left_image | image_url: width: 380 }}
-                        <a class="footer-logo" href="index.php" aria-label="Company logo">
+                        {{ section.settings.footer_left_image | image_url: width: 380 | image_tag:
+                          class: '',
+                          widths: widths,
+                          width: 380,
+                          height: 240,
+                          alt: logo_alt,
+                          sizes: sizes,
+                          preload: true,
+                          loading: 'lazy' }}
+                        <a class="footer-logo" href="{{section.settings.footer_left_link.link}}" aria-label="Company logo">
                         {{ section.settings.logo_white | image_url: width: 215 | image_tag:
                           class: '',
                           widths: widths,
@@ -342,14 +350,14 @@
                         }}
                         </a>
 
-                        <picture>
+                        {% comment %} <picture>
                             <source srcset="img/footer-img.webp" type="image/webp">
                             <source srcset="img/footer-img.jpg" type="image/jpg">
                             <img width="380" height="240" src="#" alt="" loading="lazy">
                         </picture>
                         <a class="footer-logo" href="index.php" aria-label="Company logo">
                             <img width="215" height="24" src="img/logo-white.svg" alt="" loading="lazy">
-                        </a>
+                        </a> {% endcomment %}
                     </div>
 
                 </div>
