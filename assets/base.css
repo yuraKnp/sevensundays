@@ -3606,3 +3606,7 @@ details-disclosure > details {
   opacity: 0;
   visibility: hidden;
 }
+
+header.scrolled {
+    transform: translateY(calc(var(--h-top-rating) * -1));
+}
