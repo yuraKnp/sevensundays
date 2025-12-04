@@ -3,21 +3,33 @@
         <div class="row justify-content-center">
             <div class="col-xl-7">
                 <div class="title-shortcode text-center">
-                    <div class="motto">Discover the secret of restorative nights</div>
-                    <div class="h3 title font-1">One mattress, countless configurations.<br> Our 3-layer system adjusts in seconds to support your body's natural regeneration – night after night.</div>
+                    {% if section.settings.discover_subtitle != blank %}
+                    <div class="motto">{{ section.settings.discover_subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.discover_title != blank %}
+                    <div class="h3 title font-1">{{ section.settings.discover_title }}</div>
+                    {% endif %}
                 </div>
-                <div class="motto text-center">As seen in</div>
+                {% if section.settings.discover_text_before_gallery != blank %}
+                <div class="motto text-center">{{ section.settings.discover_text_before_gallery }}</div>
+                {% endif %}
+                
+                {% if section.blocks != blank %}
                 <div class="marquee">
                     <div class="marquee-line" data-speed="0.03" data-direction="false">
                         <div class="marquee-item">
                             <div class="marquee-content">
-                                <img width="85" height="23" src="img/partner-logo-1.svg" alt="partner" loading="lazy">
-                                <img width="136" height="16" src="img/partner-logo-2.svg" alt="partner" loading="lazy">
-                                <img width="84" height="16" src="img/partner-logo-3.svg" alt="partner" loading="lazy">
+                                {% for block in section.blocks %}
+                                {% assign image = block.settings.image %}
+                                {% assign caption = block.settings.caption %}
+                                    <img width="85" height="23" src="img/partner-logo-1.svg" alt="partner" loading="lazy">
+                                    <img src="{{ image }}" alt="{{ caption | escape }}" alt="{{ image.alt | escape }}" loading="lazy">
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
                 </div>
+                {% end %}
             </div>
         </div>
     </div>
@@ -46,7 +58,7 @@
     {
       "type": "text",
       "id": "discover_text_before_gallery",
-      "label": "Title"
+      "label": "Text before gallery"
     },
   ],
   "blocks": [
