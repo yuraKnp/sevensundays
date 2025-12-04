@@ -337,17 +337,17 @@
                           sizes: sizes,
                           preload: true,
                           loading: 'lazy' }}
-                        <a class="footer-logo" href="{{section.settings.footer_left_link.link}}" aria-label="Company logo">
-                        {{ section.settings.logo_white | image_url: width: 215 | image_tag:
-                          class: '',
-                          widths: widths,
-                          width: 215,
-                          height: 24,
-                          alt: logo_alt,
-                          sizes: sizes,
-                          preload: true,
-                          loading: 'lazy'
-                        }}
+                        <a class="footer-logo" href="{{ shop.url }}" aria-label="Company logo">
+                          {{ section.settings.logo_white | image_url: width: 215 | image_tag:
+                            class: '',
+                            widths: widths,
+                            width: 215,
+                            height: 24,
+                            alt: logo_alt,
+                            sizes: sizes,
+                            preload: true,
+                            loading: 'lazy'
+                          }}
                         </a>
 
                         {% comment %} <picture>
