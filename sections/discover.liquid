@@ -20,16 +20,19 @@
                         <div class="marquee-item">
                             <div class="marquee-content">
                                 {% for block in section.blocks %}
-                                {% assign image = block.settings.image %}
-                                {% assign caption = block.settings.caption %}
-                                    {{
-                                        image
-                                        | image_tag:
-                                        width: image.width,
-                                        alt: image.caption,
-                                        fetchpriority: 'auto',
-                                        loading: 'lazy',
-                                    }}
+                                    {%- assign image = block.settings.image -%}
+                                       
+                                    {% if image != blank %}
+                                        {{ image 
+                                            | image_url: width: image.width 
+                                            | image_tag: 
+                                                width: image.width,
+                                                alt: image.alt,
+                                                fetchpriority: 'auto',
+                                                loading: 'lazy'
+                                        }}
+
+                                    {% endif %}
                                 {% endfor %}
                             </div>
                         </div>
