@@ -169,12 +169,31 @@
 <div class="section banner-section">
     <div class="banner full">
         <div class="banner-media">
-            <img fetchpriority="high" width="380" height="240" src="img/main-banner.webp" alt="Banner Image" loading="eager">
+            <img fetchpriority="high" width="380" height="240" src="{{
+            section.settings.image
+            | image_url: width: 380
+            | image_tag:
+              width: 380,
+              height: 240,
+              fetchpriority: fetch_priority
+          }}" alt="Banner Image" loading="eager">
+          {% assign selected_video = section.settings.hero_video_file %}
+          {% comment %} Get the URL of the first source (often the main .mp4) {% endcomment %}
+          {% assign video_url = selected_video.sources.first.url %}
 
+          {% if video_url != blank %}
             <!-- to display the video, add a class 'video-present' to the video -->
             <div class="video">
-                <video muted playsinline loop preload poster="img/main-banner.webp" data-src="video/main-banner.mp4"></video>
+              <video muted playsinline loop preload poster="{{
+              section.settings.image
+              | image_url: width: 380
+              | image_tag:
+                width: 380,
+                height: 240,
+                fetchpriority: fetch_priority
+            }}" data-src="{{ video_url }}"></video>
             </div>
+          {% endif %}
         </div>
         <div class="banner-align align-top">
             <div class="container">
@@ -233,9 +252,9 @@
       "label": "t:sections.image-banner-video.settings.image.label"
     },
     {
-      "type": "image_picker",
-      "id": "image_2",
-      "label": "t:sections.image-banner-video.settings.image_2.label"
+      "type": "video",
+      "id": "hero_video_file",
+      "label": "t:sections.image-banner-video.settings.hero_video_file.label",
     },
     {
       "type": "range",

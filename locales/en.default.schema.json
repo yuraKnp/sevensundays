@@ -1355,6 +1355,9 @@
         "image_2": {
           "label": "Image 2"
         },
+        "hero_video_file":{
+          "label": "Video for banner"
+        },
         "image_overlay_opacity": {
           "label": "Overlay opacity"
         },
