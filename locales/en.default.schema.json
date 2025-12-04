@@ -1046,6 +1046,9 @@
         "footer_bottom_menu": {
           "label": "Footer bottom menu"
         },
+        "footer_copyright_text":{
+          "label": "Footer copyright text"
+        },
         "newsletter_enable": {
           "label": "Email signup"
         },

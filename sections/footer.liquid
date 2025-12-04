@@ -27,7 +27,7 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+{% comment %} <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {%- liquid
     assign has_social_icons = true
     if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -319,7 +319,7 @@
       </div>
     </div>
   </div>
-</footer> 
+</footer>  {% endcomment %}
 
 <footer itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Name company">
@@ -349,15 +349,6 @@
                             loading: 'lazy'
                           }}
                         </a>
-
-                        {% comment %} <picture>
-                            <source srcset="img/footer-img.webp" type="image/webp">
-                            <source srcset="img/footer-img.jpg" type="image/jpg">
-                            <img width="380" height="240" src="#" alt="" loading="lazy">
-                        </picture>
-                        <a class="footer-logo" href="index.php" aria-label="Company logo">
-                            <img width="215" height="24" src="img/logo-white.svg" alt="" loading="lazy">
-                        </a> {% endcomment %}
                     </div>
 
                 </div>
@@ -417,17 +408,22 @@
 
                     </div>
                     <div class="footer-bottom">
+                        {%- if section.settings.footer_bottom_menu != blank -%}
                         <div class="footer-links">
                             <ul>
-                                <li><a href="#">Impressum</a></li>
-                                <li><a href="#">AGBt</a></li>
-                                <li><a href="#">Datenschutz</a></li>
-                                <li><a href="#">Whistleblowing</a></li>
+                              {%- for link in section.settings.footer_bottom_menu.links -%}
+                                <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+                              {%- endfor -%}
                             </ul>
                         </div>
+                         {%- endif -%}
                         <div class="footer-right-part">
-                            <div class="footer-copy">Design <a href="#">Ariel Jędrzejczak</a></div>
-                            <div class="social">
+                            {%- if section.settings.footer_copyright_text != blank -%}
+                            <div class="footer-copy">
+                              {{ section.settings.footer_copyright_text }}
+                            </div>
+                            {%- endif -%}
+                            {% comment %} <div class="social">
                                 <ul>
                                     <li>
                                         <a href="#" target="_blank" aria-label="instagram">
@@ -445,7 +441,10 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> {% endcomment %}
+                            {%- if block.settings.show_social and has_social_icons -%}
+                              {%- render 'social-icons', class: 'footer__list-social' -%}
+                            {%- endif -%}
                         </div>
                     </div>
                 </div>
@@ -577,6 +576,11 @@
       "type": "link_list",
       "id": "footer_bottom_menu",
       "label": "t:sections.footer.settings.footer_bottom_menu.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "footer_copyright_text",
+      "label": "t:sections.footer.settings.footer_copyright_text.label"
     },
     {
       "type": "url",
