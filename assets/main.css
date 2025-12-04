@@ -427,3 +427,8 @@ h2,
 .btn-close {--bw: 32px;}
 .video-btn {--size: 32px;}
 }
+
+.announcement-bar{
+    height: 28px;
+    text-transform: uppercase;
+}
