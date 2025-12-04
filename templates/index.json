@@ -37,12 +37,11 @@
         "image": "shopify://shop_images/main-banner.webp",
         "hero_video_file": "shopify://files/videos/main-banner.mp4",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
         "image_left_bottom": "shopify://shop_images/banner-sticker.webp",
         "image_left_bottom_logo": "shopify://shop_images/sticker-logo.svg",
-        "image_left_bottom_link": "shopify://collections/frontpage",
         "image_left_bottom_description": "13% Better Sleep Based on Red Bull Study",
+        "image_left_bottom_text": "Click Here",
+        "image_left_bottom_link": "shopify://collections/frontpage",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
@@ -50,6 +49,45 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
+      }
+    },
+    "discover": {
+      "type": "discover",
+      "blocks": {
+        "image_rBp4gi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/partner-logo-1.svg",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_8jNwmV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/partner-logo-2.svg",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_UzawPb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/partner-logo-3.svg",
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rBp4gi",
+        "image_8jNwmV",
+        "image_UzawPb"
+      ],
+      "settings": {
+        "discover_subtitle": "Discover the secret of restorative nights",
+        "discover_title": "",
+        "discover_text_before_gallery": ""
       }
     },
     "rich_text": {
@@ -215,19 +253,15 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "discover": {
-      "type": "discover",
-      "settings": {}
     }
   },
   "order": [
     "image_banner_video_gj83zd",
+    "discover",
     "rich_text",
     "featured_collection",
     "collage",
     "video",
-    "multicolumn",
-    "discover"
+    "multicolumn"
   ]
 }
