@@ -22,7 +22,6 @@
                                 {% for block in section.blocks %}
                                 {% assign image = block.settings.image %}
                                 {% assign caption = block.settings.caption %}
-                                    <img width="85" height="23" src="img/partner-logo-1.svg" alt="partner" loading="lazy">
                                     <img src="{{ image }}" alt="{{ caption | escape }}" alt="{{ image.alt | escape }}" loading="lazy">
                                 {% endfor %}
                             </div>
@@ -85,9 +84,14 @@
     }
   ],
   "presets": [
-    {
-      "name": "Image Grid Gallery"
+        {
+      "name": "Gallery images",
+      "blocks": [
+        {
+          "type": "image"
+        },
+      ]
     }
-  ],
+  ]
 }
 {% endschema %}
