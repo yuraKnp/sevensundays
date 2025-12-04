@@ -367,21 +367,24 @@
                                   
                                   <div class="col-12 col-lg-3 {{ order_class }}">
                                 {% endif -%}
-
+                               
                                 {%- if block.settings.menu != blank -%}
+                                  <div class="footer-links">  
                                     <div class="footer-caption">{{ block.settings.heading | escape }}</div>
-                                    <ul>
-                                      {%- for link in block.settings.menu.links -%}
-                                        <li>
-                                          <a href="{{ link.url }}"{% if link.active %} class="active"{% endif %}>{{ link.title | escape }}</a>
-                                        </li>
-                                      {%- endfor -%}
-                                    </ul>
+                                      <ul>
+                                        {%- for link in block.settings.menu.links -%}
+                                          <li>
+                                            <a href="{{ link.url }}"{% if link.active %} class="active"{% endif %}>{{ link.title | escape }}</a>
+                                          </li>
+                                        {%- endfor -%}
+                                      </ul>
+                                    </div>
                                   </div>
                                 {% endif -%}
 
                                 {%- if is_odd == 0 -%}
-                                  </div>
+                                  
+                                </div>
                                 {% endif -%}
 
                             {%- endcase -%}
