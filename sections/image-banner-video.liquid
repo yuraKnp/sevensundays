@@ -213,8 +213,10 @@
                                       <div class="button-wrapp">
                                           <a href="{{ block.settings.button_link_1 }}" class="btn">
                                             <b> {{- block.settings.button_label_1 | escape -}}</b>
-                                              {%- assign svg_icon_url = 'icons_global.svg' | asset_url | append: '#btn-arrow' -%}
-                                              <svg width="12" height="12"><use href="{{ svg_icon_url }}"></use></svg>
+                                              {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
+                                              {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                                              {%- assign final_svg_url = url_no_version | append: '#btn-arrow' -%}
+                                              <svg width="12" height="12"><use href="{{ final_svg_url }}"></use></svg>
                                           </a>
                                       </div>
                                   </div>
