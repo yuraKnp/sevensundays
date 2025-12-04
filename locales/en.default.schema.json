@@ -1347,7 +1347,7 @@
       }
     },
     "image-banner-video": {
-      "name": "Image banner",
+      "name": "Image banner video",
       "settings": {
         "image": {
           "label": "Image 1"
