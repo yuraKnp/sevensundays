@@ -369,7 +369,7 @@
                                 {% endif -%}
 
                                 {%- if block.settings.menu != blank -%}
-                                    <div class="footer-caption">{{ block.settings.menu.title | escape }}</div>
+                                    <div class="footer-caption">{{ block.settings.menu.heading | escape }}</div>
                                     <ul>
                                       {%- for link in block.settings.menu.links -%}
                                         <li>
