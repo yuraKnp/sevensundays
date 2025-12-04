@@ -56,12 +56,6 @@
             "heading_size": "h0"
           }
         },
-        "checkbox": {
-          "type": "checkbox",
-          "settings": {
-            "text": "Add trustpilot rating",
-          }
-        },
         "text": {
           "type": "text",
           "settings": {
