@@ -22,13 +22,21 @@
                                 {% for block in section.blocks %}
                                 {% assign image = block.settings.image %}
                                 {% assign caption = block.settings.caption %}
-                                    <img src="{{ image }}" alt="{{ caption | escape }}" alt="{{ image.alt | escape }}" loading="lazy">
+                                    {{
+                                        image
+                                        | image_url: width: 3840
+                                        | image_tag:
+                                        width: image.width,
+                                        alt: image.caption,
+                                        fetchpriority: 'auto',
+                                        loading: 'lazy',
+                                    }}
                                 {% endfor %}
                             </div>
                         </div>
                     </div>
                 </div>
-                {% end %}
+                {% endif %}
             </div>
         </div>
     </div>
