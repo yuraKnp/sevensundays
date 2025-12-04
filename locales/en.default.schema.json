@@ -1036,11 +1036,15 @@
         }
       },
       "settings": {
+        
         "footer_left_image": {
           "label": "Footer left image"
         },
         "footer_left_link": {
           "label": "Footer left link test"
+        },
+        "footer_bottom_menu": {
+          "label": "Footer bottom menu"
         },
         "newsletter_enable": {
           "label": "Email signup"
