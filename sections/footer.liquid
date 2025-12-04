@@ -365,7 +365,7 @@
                                   {%- assign order_index = menu_count | minus: 1 | divided_by: 2 -%}
                                   {%- assign order_class = 'order-lg-' | append: order_index -%}
                                   
-                                  <div class="col-12 col-lg-3 {{ order_class }}">
+                                <div class="col-12 col-lg-3 {{ order_class }}">
                                 {% endif -%}
                                
                                 {%- if block.settings.menu != blank -%}
@@ -378,12 +378,10 @@
                                           </li>
                                         {%- endfor -%}
                                       </ul>
-                                    </div>
                                   </div>
                                 {% endif -%}
 
                                 {%- if is_odd == 0 -%}
-                                  
                                 </div>
                                 {% endif -%}
 
