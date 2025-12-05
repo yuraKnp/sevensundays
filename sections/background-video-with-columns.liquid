@@ -37,10 +37,10 @@
                             <div class="banner-info">
                                 {% if section.settings.image_logo != blank %}
                                 {{ section.settings.image_logo 
-                                    | image_url: width: 48
+                                    | image_url: width: 48px
                                     | image_tag: 
-                                        width: 48,
-                                        height: 48,
+                                        width: 48px,
+                                        height: 48px,
                                         alt: section.settings.image_logo.alt,
                                         fetchpriority: 'auto',
                                         loading: 'lazy'
