@@ -141,6 +141,58 @@
         "description": "Pick three from unique layers – and create the perfect feel and ergonomics for your body."
       }
     },
+    "horizontal_slider_ezYgWk": {
+      "type": "horizontal-slider",
+      "blocks": {
+        "slide_ejtr6k": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-1.webp",
+            "slide_heading": "Why Choose One Material?",
+            "slide_desc": "Memory foam. Latex. High-support cold foam. Soft cold foam. A modular system combines every premium sleep material in one place. No more guessing which material is right — you have them all available whenever your body needs them.",
+            "slide_tag": "All Materials"
+          }
+        },
+        "slide_JnEm7g": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-2.webp",
+            "slide_heading": "The Last Mattress You’ll Ever Buy",
+            "slide_desc": "Traditional mattresses wear out and get replaced entirely. Modular design means endless lifecycle: adjust, swap, expand, repair — replace only parts, never the whole system. Sustainable for your wallet and the planet.",
+            "slide_tag": "Endless Lifespan"
+          }
+        },
+        "slide_YtBiBB": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-3.webp",
+            "slide_heading": "Your Life Changes. So Should Your Mattress",
+            "slide_desc": "Your body changes through pregnancy, injury, stress, and aging.Your sleep system should change with it. A modular system adapts to every chapter of your life. Why buy a new mattress when yours can simply evolve?",
+            "slide_tag": "Life Adaptability"
+          }
+        },
+        "slide_xEKfVn": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-4.webp",
+            "slide_heading": "Sleep Your Way. Even Together",
+            "slide_desc": "Different bodies need different support — yet most couples compromise, meaning someone sleeps worse. A modular system configures each side independently while decoupling all movement between them. No visitor gap, no motion transfer, no disturbance. Two people, one bed, zero compromise.",
+            "slide_tag": "Zero Compromise"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ejtr6k",
+        "slide_JnEm7g",
+        "slide_YtBiBB",
+        "slide_xEKfVn"
+      ],
+      "name": "Vertical slider",
+      "settings": {
+        "title": "With Seven Sundays sleep finally gets easy",
+        "subtitle": "a smarter way to rest"
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -311,6 +363,7 @@
     "discover",
     "comfort_fkYaFb",
     "sleep_system_cXWBy3",
+    "horizontal_slider_ezYgWk",
     "rich_text",
     "featured_collection",
     "collage",
