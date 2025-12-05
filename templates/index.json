@@ -330,6 +330,26 @@
         "title": "Born in the Swiss alps and intentionally different",
         "image_logo": "shopify://shop_images/icon-born.svg"
       }
+    },
+    "testimonial_slider_GB8Tpi": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "slide_CT7bNr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-1.webp",
+            "tags": "real sleep, real stories",
+            "name": "Jan Donovan",
+            "job": "Olympic Swimmer",
+            "slide_desc": "In swimming, recovery decides everything. Seven Sundays helps me recharge deeper, wake up sharper, and find the energy to push further, day after day."
+          }
+        }
+      },
+      "block_order": [
+        "slide_CT7bNr"
+      ],
+      "name": "Testimonial slider",
+      "settings": {}
     }
   },
   "order": [
@@ -340,6 +360,7 @@
     "horizontal_slider_ezYgWk",
     "slider_gallery_UXbqYq",
     "featured_collection",
-    "background_video_with_columns_cFTmqL"
+    "background_video_with_columns_cFTmqL",
+    "testimonial_slider_GB8Tpi"
   ]
 }
