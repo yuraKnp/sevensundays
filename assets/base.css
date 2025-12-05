@@ -150,9 +150,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   margin-top: var(--spacing-sections-mobile);
 }
 
-.section + .section {
+/* .section + .section {
   margin-top: var(--sp-lg);
-}
+} */
 
 .element-margin-top {
   margin-top: 5rem;
