@@ -30,7 +30,7 @@
                                 {%- assign heading = block.settings.slide_heading -%}
                                 {%- assign desc = block.settings.slide_desc -%}
                                 {%- assign tags = block.settings.tags -%}
-                                {%- assign target_words = tags | split: ', ' | strip -%}
+                                {%- assign target_words = tags | split: ', ' -%}
                             <div class="swiper-slide">
                                 <div class="energy-item">
                                     {% if image != blank %}
@@ -47,7 +47,7 @@
                                     {% if target_words.size > 0 %}
                                     <div class="tags">
                                         {% for word in target_words %}
-                                        <span>{{ word }}</span>
+                                        <span>{{ word | strip }}</span>
                                         {% endfor %}
                                     </div>
                                     {% endif %}
