@@ -2,7 +2,6 @@
     <div class="banner">
         <div class="banner-media bottom-shadow shadow-2">
             {% if image != blank %}
-            {% comment %} <img width="380" height="240" src="img/bedroom-video.webp" alt="Banner Image" loading="lazy"> {% endcomment %}
             {{ image 
                 | image_url: width: image.width
                 | image_tag: 
