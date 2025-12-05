@@ -1,7 +1,6 @@
 {{ 'swiper-style.css' | asset_url | stylesheet_tag }}
-{{ 'swiper-bundle.min.js' | asset_url | script_tag }}
-{{ 'app-swiper.js' | asset_url | script_tag }}
-
+<script src="{{ 'app-swiper.js' | asset_url }}" async></script>
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" async></script>
 
 <div class="section padd-lg gradient-1">
     <div class="container">
