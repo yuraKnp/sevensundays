@@ -35,12 +35,11 @@
                     <div class="row">
                         <div class="col-9 col-lg-7 col-xl-6">
                             <div class="banner-info">
-                                <img width="48" height="48" src="img/icons/icon-born.svg" alt="icon" loading="lazy">
                                 {% if section.settings.image_logo != blank %}
                                 {{ section.settings.image_logo 
-                                    | image_url: width: section.settings.image_logo.width
+                                    | image_url: width: 48
                                     | image_tag: 
-                                        width: section.settings.image_logo.width,
+                                        width: 48,
                                         height: 'auto',
                                         alt: section.settings.image_logo.alt,
                                         fetchpriority: 'auto',
