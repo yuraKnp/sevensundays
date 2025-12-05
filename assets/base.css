@@ -150,10 +150,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   margin-top: var(--spacing-sections-mobile);
 }
 
-@media screen and (min-width: 750px) {
-  .section + .section {
-    margin-top: var(--spacing-sections-desktop);
-  }
+.section + .section {
+  margin-top: var(--sp-lg);
 }
 
 .element-margin-top {
