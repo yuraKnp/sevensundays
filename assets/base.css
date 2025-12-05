@@ -154,6 +154,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   margin-top: var(--sp-lg);
 } */
 
+.section.mr-top-add{
+  margin-top: var(--sp-lg);
+}
+
 .element-margin-top {
   margin-top: 5rem;
 }
