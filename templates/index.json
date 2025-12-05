@@ -202,12 +202,62 @@
             "slide_image": "shopify://shop_images/energy-img-2.webp",
             "slide_heading": "For job performers",
             "slide_desc": "Start mentally sharp for important decisions and demanding workdays.",
-            "tags": "back problems,office workers"
+            "tags": "back problems, office workers"
+          }
+        },
+        "slide_kPYWcQ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/energy-img-1.webp",
+            "slide_heading": "For athletes",
+            "slide_desc": "Maximize your regeneration and wake up ready for new personal bests.",
+            "tags": "back problems, office workers"
+          }
+        },
+        "slide_fnEjKT": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/energy-img-3.webp",
+            "slide_heading": "For active 50+",
+            "slide_desc": "Stay fit, vital and full of energy for everything that’s important to you.",
+            "tags": "back problems, office workers"
+          }
+        },
+        "slide_RBWc83": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/energy-img-4.webp",
+            "slide_heading": "For Seniors",
+            "slide_desc": "Sleep comfortably, move easily and enjoy every day with renewed energy.",
+            "tags": "back problems, office workers"
+          }
+        },
+        "slide_WfAtFh": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/energy-img-5.webp",
+            "slide_heading": "For Back Pain Sufferers",
+            "slide_desc": "For Back Pain Sufferers",
+            "tags": "back problems, office workers"
+          }
+        },
+        "slide_7wAr4E": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/energy-img-6.webp",
+            "slide_heading": "For Menopause",
+            "slide_desc": "Find deeper rest, reduce tension and wake up refreshed – despite hormonal changes.",
+            "tags": "back problems, office workers"
           }
         }
       },
       "block_order": [
-        "slide_jxPJig"
+        "slide_jxPJig",
+        "slide_kPYWcQ",
+        "slide_fnEjKT",
+        "slide_RBWc83",
+        "slide_WfAtFh",
+        "slide_7wAr4E"
       ],
       "name": "Gallery slider",
       "settings": {
