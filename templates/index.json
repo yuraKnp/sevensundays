@@ -195,6 +195,20 @@
     },
     "slider_gallery_UXbqYq": {
       "type": "slider-gallery",
+      "blocks": {
+        "slide_jxPJig": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/energy-img-2.webp",
+            "slide_heading": "For job performers",
+            "slide_desc": "Start mentally sharp for important decisions and demanding workdays.",
+            "tags": "back problems,office workers"
+          }
+        }
+      },
+      "block_order": [
+        "slide_jxPJig"
+      ],
       "name": "Gallery slider",
       "settings": {
         "title": "More energy for everything that truly matters",
