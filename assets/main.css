@@ -23,7 +23,8 @@ a:hover {text-decoration: none;}
 sup {top: -0.5em;}
 sub {bottom: -0.25em;}
 picture {font-size: 0;-webkit-user-select: none;-moz-user-select: none;user-select: none;}
-:is(img, svg, iframe) {width: auto;height: auto;max-width: 100%;-webkit-user-select: none;-moz-user-select: none;user-select: none;vertical-align: middle;}
+/* :is(img, svg, iframe) {width: auto;height: auto;max-width: 100%;-webkit-user-select: none;-moz-user-select: none;user-select: none;vertical-align: middle;} */
+:is(img, svg, iframe) {max-width: 100%;-webkit-user-select: none;-moz-user-select: none;user-select: none;vertical-align: middle;}
 img {position: relative;}
 img::before {content: "";position: absolute;inset: 0;background: no-repeat center/min(5rem, 50%) min(5rem, 50%) var(--clr-grey) url(placeholder.svg);}
 input {-webkit-appearance: none;-moz-appearance: none;font-size: 1rem;font-weight: 400;color: var(--clr-black);}
