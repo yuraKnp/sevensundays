@@ -330,6 +330,37 @@
         "title": "Born in the Swiss alps and intentionally different",
         "image_logo": "shopify://shop_images/icon-born.svg"
       }
+    },
+    "testimonial_slider_GB8Tpi": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "slide_CT7bNr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-1.webp",
+            "tags": "real sleep, real stories",
+            "name": "Jan Donovan",
+            "job": "Olympic Swimmer",
+            "slide_desc": "In swimming, recovery decides everything. Seven Sundays helps me recharge deeper, wake up sharper, and find the energy to push further, day after day."
+          }
+        },
+        "slide_aqjTMr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-2.webp",
+            "tags": "real sleep, real stories",
+            "name": "Thomas K.",
+            "job": "Tech Executive",
+            "slide_desc": "As someone who travels frequently, I was skeptical about yet another sleep solution. But Seven Sundays has transformed my sleep quality. Even after long flights, I can adjust the system and get restorative sleep immediately."
+          }
+        }
+      },
+      "block_order": [
+        "slide_CT7bNr",
+        "slide_aqjTMr"
+      ],
+      "name": "Testimonial slider",
+      "settings": {}
     }
   },
   "order": [
@@ -340,6 +371,7 @@
     "horizontal_slider_ezYgWk",
     "slider_gallery_UXbqYq",
     "featured_collection",
-    "background_video_with_columns_cFTmqL"
+    "background_video_with_columns_cFTmqL",
+    "testimonial_slider_GB8Tpi"
   ]
 }
