@@ -791,9 +791,9 @@ summary::-webkit-details-marker {
   flex-wrap: wrap;
 }
 
-.title--primary {
+/* .title--primary {
   margin: 4rem 0;
-}
+} */
 
 .title-wrapper--self-padded-tablet-down,
 .title-wrapper--self-padded-mobile {
@@ -814,9 +814,9 @@ summary::-webkit-details-marker {
     margin: 5rem 0 3rem;
   }
 
-  .title--primary {
+  /* .title--primary {
     margin: 2rem 0;
-  }
+  } */
 
   .title-wrapper-with-link {
     align-items: center;
