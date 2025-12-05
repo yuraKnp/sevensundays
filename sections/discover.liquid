@@ -24,15 +24,7 @@
                                        
                                     {% if image != blank %}
                                       {%- assign thumbnail_size = 84 -%}
-                                      {{ image 
-                                          | image_url: width: thumbnail_size 
-                                          | image_tag: 
-                                              width: thumbnail_size,
-                                              height: 'auto',
-                                              alt: image.alt,
-                                              fetchpriority: 'auto',
-                                              loading: 'lazy'
-                                      }}
+                                      {{ image }}
                                     {% endif %}
                                 {% endfor %}
                             </div>
