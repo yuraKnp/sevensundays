@@ -361,6 +361,51 @@
       ],
       "name": "Testimonial slider",
       "settings": {}
+    },
+    "awards_slider_9phifT": {
+      "type": "awards-slider",
+      "blocks": {
+        "slide_Y3xwFE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-1.svg",
+            "name": "German Brand Award Winner",
+            "year": "2024"
+          }
+        },
+        "slide_g3ygYL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-2.svg",
+            "name": "Europe's fastest growing companies",
+            "year": "2023"
+          }
+        },
+        "slide_WebKEa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-3.svg",
+            "name": "Innovation Prize Ergonomics Winner",
+            "year": "2022"
+          }
+        },
+        "slide_RL7VPk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-3.svg",
+            "name": "German Design Award Winner",
+            "year": "2019"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Y3xwFE",
+        "slide_g3ygYL",
+        "slide_WebKEa",
+        "slide_RL7VPk"
+      ],
+      "name": "Awards slider",
+      "settings": {}
     }
   },
   "order": [
@@ -372,6 +417,7 @@
     "slider_gallery_UXbqYq",
     "featured_collection",
     "background_video_with_columns_cFTmqL",
-    "testimonial_slider_GB8Tpi"
+    "testimonial_slider_GB8Tpi",
+    "awards_slider_9phifT"
   ]
 }
