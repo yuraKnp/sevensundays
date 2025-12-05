@@ -231,13 +231,33 @@
             "slide_desc": "Sleep comfortably, move easily and enjoy every day with renewed energy.",
             "tags": "back problems, office workers"
           }
+        },
+        "slide_WfAtFh": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/energy-img-5.webp",
+            "slide_heading": "For Back Pain Sufferers",
+            "slide_desc": "For Back Pain Sufferers",
+            "tags": "back problems, office workers"
+          }
+        },
+        "slide_7wAr4E": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/energy-img-6.webp",
+            "slide_heading": "For Menopause",
+            "slide_desc": "Find deeper rest, reduce tension and wake up refreshed – despite hormonal changes.",
+            "tags": "back problems, office workers"
+          }
         }
       },
       "block_order": [
         "slide_jxPJig",
         "slide_kPYWcQ",
         "slide_fnEjKT",
-        "slide_RBWc83"
+        "slide_RBWc83",
+        "slide_WfAtFh",
+        "slide_7wAr4E"
       ],
       "name": "Gallery slider",
       "settings": {
