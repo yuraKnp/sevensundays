@@ -1,13 +1,13 @@
 <div class="section">
     <div class="banner">
         <div class="banner-media bottom-shadow shadow-2">
-            {% if image != blank %}
-            {{ image 
-                | image_url: width: image.width
+            {% if section.settings.image != blank %}
+            {{ section.settings.image 
+                | image_url: width: section.settings.image.width
                 | image_tag: 
-                    width: image.width,
+                    width: section.settings.image.width,
                     height: 'auto',
-                    alt: image.alt,
+                    alt: section.settings.image.alt,
                     fetchpriority: 'auto',
                     loading: 'lazy'
             }}
