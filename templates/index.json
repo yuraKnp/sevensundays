@@ -101,6 +101,40 @@
     },
     "sleep_system_cXWBy3": {
       "type": "sleep-system",
+      "blocks": {
+        "slide_WekHFV": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/sleep-img-1.webp",
+            "slide_heading": "For Active Regeneration",
+            "slide_desc": "Lightly springy sleep sensations with support for natural movement sequences. Promotes muscle and fascia regeneration during night rest.",
+            "slide_tag": "Revitalizing"
+          }
+        },
+        "slide_e7YppJ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/sleep-img-1.webp",
+            "slide_heading": "For Deep Relaxation",
+            "slide_desc": "Weightless sleep sensations with memory effect to minimize movement interruptions. Reduces pressure points and optimizes circulation.",
+            "slide_tag": "Revitalizing"
+          }
+        },
+        "slide_dmtXfR": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/sleep-img-1.webp",
+            "slide_heading": "For Active Regeneration",
+            "slide_desc": "Lightly springy sleep sensations with support for natural movement sequences. Promotes muscle and fascia regeneration during night rest.",
+            "slide_tag": "Revitalizing"
+          }
+        }
+      },
+      "block_order": [
+        "slide_WekHFV",
+        "slide_e7YppJ",
+        "slide_dmtXfR"
+      ],
       "name": "Sleep system",
       "settings": {
         "title": "One sleep system, endless lying sensations",
