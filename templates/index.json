@@ -96,7 +96,7 @@
       "settings": {
         "image": "shopify://shop_images/bedroom-video.webp",
         "hero_video_file": "shopify://files/videos/bedroom-video.mp4",
-        "discover_text_before_gallery": "Adjust your comfort in 30 seconds. Perfect regeneration. Every night."
+        "confort_title": "Adjust your comfort in 30 seconds. Perfect regeneration. Every night."
       }
     },
     "rich_text": {
