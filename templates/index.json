@@ -392,7 +392,7 @@
         "slide_RL7VPk": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/award-3.svg",
+            "image": "shopify://shop_images/award-4.svg",
             "name": "German Design Award Winner",
             "year": "2019"
           }
@@ -406,6 +406,18 @@
       ],
       "name": "Awards slider",
       "settings": {}
+    },
+    "call_to_action_UG3xYY": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "title": "Get the award-winning sleep system that changes everything",
+        "subtitle": "crafted to change everything",
+        "short_description": "Learn to know and love the modular sleep system with all its benefits and wake up like its Sunday morning, every morning.",
+        "link_text": "Get Sleep System",
+        "link_url": "#"
+      }
     }
   },
   "order": [
@@ -418,6 +430,7 @@
     "featured_collection",
     "background_video_with_columns_cFTmqL",
     "testimonial_slider_GB8Tpi",
-    "awards_slider_9phifT"
+    "awards_slider_9phifT",
+    "call_to_action_UG3xYY"
   ]
 }
