@@ -99,6 +99,14 @@
         "confort_title": "Adjust your comfort in 30 seconds. Perfect regeneration. Every night."
       }
     },
+    "sleep_system_cXWBy3": {
+      "type": "sleep-system",
+      "name": "Sleep system",
+      "settings": {
+        "title": "One sleep system, endless lying sensations",
+        "description": "Pick three from unique layers – and create the perfect feel and ergonomics for your body."
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -268,6 +276,7 @@
     "image_banner_video_gj83zd",
     "discover",
     "comfort_fkYaFb",
+    "sleep_system_cXWBy3",
     "rich_text",
     "featured_collection",
     "collage",
