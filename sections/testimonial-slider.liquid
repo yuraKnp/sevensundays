@@ -1,0 +1,151 @@
+{% if section.blocks != blank %}
+<div class="section sec-padd padd-xl-lg sec-stories">
+    <div class="container">
+        <div class="swiper-entry">
+            <div class="swiper-controls-wrap pos-2">
+                <div class="swiper-button-prev style2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9.99935 15.8337L4.16602 10.0003M4.16602 10.0003L9.99935 4.16699M4.16602 10.0003H15.8327" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-next style2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4.16602 10.0003H15.8327M15.8327 10.0003L9.99935 4.16699M15.8327 10.0003L9.99935 15.8337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-container" data-options='{
+                "loop": true,
+                "speed": 1000,
+                "effect": "fade",
+                "fadeEffect": {"crossFade": true},
+                "slidesPerView": 1,
+                "spaceBetween": 12,
+                "breakpoints":{
+                    "576":{"spaceBetween": 16, "slidesPerView": 1},
+                    "992":{"spaceBetween": 16, "slidesPerView": 1},
+                    "1200":{"spaceBetween": 16, "slidesPerView": 1}
+                }}'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {%- assign image = block.settings.slide_image -%}
+                        {%- assign tags = block.settings.tags -%}
+                        {%- assign name = block.settings.name -%}
+                        {%- assign job = block.settings.job -%}
+                        {%- assign slide_desc = block.settings.slide_desc -%}
+                    <div class="swiper-slide">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-6">
+                                <div class="stories-img">
+                                    {% if image != blank %}
+                                        {{ image 
+                                            | image_url: width: image.width
+                                            | image_tag: 
+                                                width: image.width,
+                                                height: 'auto',
+                                                alt: image.alt,
+                                                fetchpriority: 'auto',
+                                                loading: 'lazy'
+                                        }}
+                                    {% endif %}
+                                    <div class="block-blurs">
+                                        <div class="block-blur"></div>
+                                        <div class="block-blur"></div>
+                                        <div class="block-blur"></div>
+                                        <div class="block-blur"></div>
+                                        <div class="block-blur"></div>
+                                    </div>
+                                    <div class="content-top">
+                                        {% if tags != blank %}
+                                        <div class="label">{{ tags }}</div>
+                                        {% endif %}
+                                        {% if slide_desc != blank %}
+                                        <div class="title h5">“{{ slide_desc }}”</div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-5">
+                                <div class="stories-content">
+                                    <div class="content-top">
+                                        {% if tags != blank %}
+                                        <div class="label">{{ tags }}</div>
+                                        {% endif %}
+                                        {% if slide_desc != blank %}
+                                        <div class="title h5">“{{ slide_desc }}”</div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="s-content-bottom">
+                                        {% if name != blank %}
+                                        <div class="text"><b>{{ name }}</b></div>
+                                        {% endif %}
+                                        {% if job != blank %}
+                                        <div class="text text-sm">{{ job }}</div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Testimonial slider",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide Image"
+        },
+        {
+          "type": "text",
+          "id": "tags",
+          "label": "Tags",
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Person name",
+        },
+        {
+          "type": "text",
+          "id": "job",
+          "label": "Person position",
+        },
+        {
+        "type": "inline_richtext",
+        "id": "slide_desc",
+        "label": "Testimonial"
+        },
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial slider",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
