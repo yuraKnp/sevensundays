@@ -23,8 +23,15 @@
                                     {%- assign image = block.settings.image -%}
                                        
                                     {% if image != blank %}
-                                      {%- assign thumbnail_size = 84 -%}
-                                      {{ image }}
+                                      {{ image 
+                                          | image_url: width: image.width
+                                          | image_tag: 
+                                              width: image.width,
+                                              height: 'auto',
+                                              alt: image.alt,
+                                              fetchpriority: 'auto',
+                                              loading: 'lazy'
+                                      }}
                                     {% endif %}
                                 {% endfor %}
                             </div>
