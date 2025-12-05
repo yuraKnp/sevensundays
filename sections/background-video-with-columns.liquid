@@ -1,0 +1,139 @@
+<div class="section sec-born">
+    <div class="banner">
+        <div class="banner-media top-bottom-shadow">
+            {% if section.settings.image != blank %}
+            {{ section.settings.image 
+                | image_url: width: section.settings.image.width
+                | image_tag: 
+                    width: section.settings.image.width,
+                    height: 'auto',
+                    alt: section.settings.image.alt,
+                    fetchpriority: 'auto',
+                    loading: 'lazy'
+            }}
+            {% endif %}
+            {% assign selected_video = section.settings.hero_video_file %}
+            {% assign video_url = selected_video.sources.first.url %}
+
+            {% if video_url != blank %}
+                {%- assign my_image_object = section.settings.image -%}
+                <div class="video video-present">
+                <video muted playsinline loop preload poster="{{ my_image_object }}" data-src="{{ video_url }}"></video>
+                </div>
+            {% endif %}
+        </div>
+        <div class="banner-align align-top-bottom">
+            <div class="block-blurs">
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+            </div>
+            <div class="align-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-7 col-xl-6">
+                            <div class="banner-info">
+                                <img width="48" height="48" src="img/icons/icon-born.svg" alt="icon" loading="lazy">
+                                {% if section.settings.image_logo != blank %}
+                                {{ section.settings.image_logo 
+                                    | image_url: width: section.settings.image_logo.width
+                                    | image_tag: 
+                                        width: section.settings.image_logo.width,
+                                        height: 'auto',
+                                        alt: section.settings.image_logo.alt,
+                                        fetchpriority: 'auto',
+                                        loading: 'lazy'
+                                }}
+                                {% endif %}
+                                {% if section.settings.title != blank %}
+                                <div class="h2 title text-balance">{{ section.settings.title }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if section.blocks != blank %}
+            <div class="align-bottom">
+                <div class="container">
+                    <div class="row">
+                        {% for block in section.blocks %}
+                          {%- assign heading = block.settings.slide_heading -%}
+                          {%- assign desc = block.settings.slide_desc -%}
+                          <div class="col-lg-4">
+                              <div class="born-item">
+                                  {% if heading != blank %}
+                                  <div class="h5 title">{{ heading }}</div>
+                                  {% endif %}
+                                  {% if desc != blank %}
+                                  <div class="text">{{ desc }}</div>
+                                  {% endif %}
+                              </div>
+                          </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Background video columns",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "video",
+      "id": "hero_video_file",
+      "label": "Background video",
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_logo",
+      "label": "Logo before title"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "slide_heading",
+          "label": "Title",
+        },
+        {
+        "type": "inline_richtext",
+        "id": "slide_desc",
+        "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Background video columns",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
