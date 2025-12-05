@@ -1,0 +1,206 @@
+<div class="section sec-black sec-padd sec-materials hide-xl">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="title-shortcode text-center">
+                    {%- if section.settings.subtitle != blank -%}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {%- if section.settings.title != blank -%}
+                    <div class="h2 title">{{ section.settings.title }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% if section.blocks != blank %}
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="sticky-links-wrap">
+                    <div class="sticky-links">
+                        <ul>
+                            {% for block in section.blocks %}
+                                {%- assign tag = block.settings.slide_tag -%}
+                            <li><a href="#item{{ forloop.index0 }}" class="active">{{ tag }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                {% for block in section.blocks %}
+                    {%- assign image = block.settings.slide_image -%}
+                    {%- assign heading = block.settings.slide_heading -%}
+                    {%- assign desc = block.settings.slide_desc -%}
+                    {%- assign tag = block.settings.slide_tag -%}
+                <div id="item{{ forloop.index0 }}" class="row material-item link-content">
+                    <div class="col-xl-8">
+                        <div class="material-img">
+                            {% if image != blank %}
+                                {{ image 
+                                    | image_url: width: image.width
+                                    | image_tag: 
+                                        width: image.width,
+                                        height: 'auto',
+                                        alt: image.alt,
+                                        fetchpriority: 'auto',
+                                        loading: 'lazy'
+                                }}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="material-content">
+                            {% if heading != blank %} 
+                            <div class="h4 title">{{ heading }}</div>
+                            {% endif %}
+                            {% if desc != blank %} 
+                            <div class="text">{{ desc }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<div class="section sec-black sec-padd sec-materials hide-top-xl">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="title-shortcode text-center">
+                    {%- if section.settings.subtitle != blank -%}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {%- if section.settings.title != blank -%}
+                    <div class="h2 title">{{ section.settings.title }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% if section.blocks != blank %}
+        <div class="swiper-entry">
+            <div class="swiper-container" data-options='{
+                "slidesPerView": 1.07,
+                "spaceBetween": 24,
+                "breakpoints":{
+                    "576":{"spaceBetween": 16, "slidesPerView": 1.6},
+                    "992":{"spaceBetween": 16, "slidesPerView": 2.4},
+                    "1200":{"spaceBetween": 16, "slidesPerView": 1.7}
+                }}'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {%- assign image = block.settings.slide_image -%}
+                        {%- assign heading = block.settings.slide_heading -%}
+                        {%- assign desc = block.settings.slide_desc -%}
+                        {%- assign tag = block.settings.slide_tag -%}
+                        <div class="swiper-slide">
+                            <div class="stories-img type-2">
+                                {% if image != blank %}
+                                    {{ image 
+                                        | image_url: width: image.width
+                                        | image_tag: 
+                                            width: image.width,
+                                            height: 'auto',
+                                            alt: image.alt,
+                                            fetchpriority: 'auto',
+                                            loading: 'lazy'
+                                    }}
+                                {% endif %}
+                                <div class="block-blurs">
+                                    <div class="block-blur"></div>
+                                    <div class="block-blur"></div>
+                                    <div class="block-blur"></div>
+                                    <div class="block-blur"></div>
+                                    <div class="block-blur"></div>
+                                </div>
+                                <div class="content-top">
+                                    {% if heading != blank %} 
+                                    <div class="h4 title">{{ heading }}</div>
+                                    {% endif %}
+                                    {% if desc != blank %} 
+                                    <div class="text">{{ desc }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="button-wrapp">
+                <div class="swiper-button-prev style3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9.99935 15.8332L4.16602 9.99984M4.16602 9.99984L9.99935 4.1665M4.16602 9.99984H15.8327" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-next style3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4.16602 9.99984H15.8327M15.8327 9.99984L9.99935 4.1665M15.8327 9.99984L9.99935 15.8332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Vertical slider",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slide_image",
+          "label": "Slide Image"
+        },
+        {
+          "type": "text",
+          "id": "slide_heading",
+          "label": "Title",
+        },
+        {
+        "type": "inline_richtext",
+        "id": "slide_desc",
+        "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "slide_tag",
+          "label": "Slide tag",
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vertical slider",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
