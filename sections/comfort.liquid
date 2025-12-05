@@ -1,0 +1,52 @@
+<div class="section">
+    <div class="banner">
+        <div class="banner-media bottom-shadow shadow-2">
+            <img width="380" height="240" src="img/bedroom-video.webp" alt="Banner Image" loading="lazy">
+            <!-- to display the video, add a class 'video-present' to the video -->
+            <div class="video video-present">
+                <video muted playsinline loop preload poster="img/bedroom-video.webp" src="#" data-src="video/bedroom-video.mp4"></video>
+            </div>
+        </div>
+        <div class="banner-align">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="banner-info text-center">
+                            <div class="h2 title text-balance">Adjust your comfort in 30 seconds. Perfect regeneration. Every night.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-xl"></div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Comfort",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "video",
+      "id": "hero_video_file",
+      "label": "Background video",
+    },
+    {
+      "type": "text",
+      "id": "discover_text_before_gallery",
+      "label": "Title"
+    },
+  ]
+}
+{% endschema %}
