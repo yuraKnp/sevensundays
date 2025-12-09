@@ -470,7 +470,7 @@ table:not([class]) th {
 a:empty,
 ul:empty,
 dl:empty,
-div:empty:not(.block-blur),
+div:empty:not(.block-blur):not([class^="spacer-"]),
 section:empty,
 article:empty,
 p:empty,
