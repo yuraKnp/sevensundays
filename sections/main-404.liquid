@@ -1,4 +1,4 @@
-<style type="text/css">
+{% comment %} <style type="text/css">
   .template-404 .title + * {
     margin-top: 1rem;
   }
@@ -8,16 +8,24 @@
       margin-top: 2rem;
     }
   }
-</style>
+</style> {% endcomment %}
 
-<div class="template-404 page-width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
-  </h1>
-  <a href="{{ routes.all_products_collection_url }}" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
+
+<div class="section">
+  <div class="page-404-2">
+    <div class="container">
+      <div class="page-404-img-2">
+        <img width="527" height="527" src="img/404.svg" alt="" loading="lazy">
+      </div>
+      <div class="page-404-inner-2">
+        <h1 class="title h3">{{ 'templates.404.title' | t }}</h1>
+        <div class="text">
+          {{ 'templates.404.subtext' | t }}
+        </div>
+        <a href="{{ routes.all_products_collection_url }}" class="btn">
+          <b>{{ 'general.continue_shopping' | t }}</b>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
