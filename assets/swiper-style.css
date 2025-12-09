@@ -31,6 +31,7 @@
 .swiper-controls-wrap .swiper-button-next {position: relative;top: 0;left: 0;right: 0;transform: none;}
 .swiper-controls-wrap.pos-1 {position: absolute;top: calc(var(--sw-btn) * -1 + var(--sp-md) * -1);right: 0;}
 .swiper-controls-wrap.pos-2 {position: absolute;bottom: var(--sp-24);right: var(--sp-24);z-index: 2;}
+.swiper-controls-wrap.pos-3 {position: absolute;top: calc(var(--sw-btn) * -1 + var(--sp-48) * -1);right: 0;}
 .section:has(.swiper-button-lock) .swiper-wrapper {cursor: default !important;}
 .section:has(.swiper-button-lock) .swiper-controls-wrap {display: none !important;}
 .swiper-button-lock {display: none !important;}
@@ -39,7 +40,9 @@
 }
 @media (max-width: 1199px) {
 .swiper-controls-wrap {gap: 10px;}
-.swiper-controls-wrap.pos-1 {position: relative;top: auto;right: auto;margin-top: var(--sp-64);}
+.swiper-controls-wrap.pos-1,
+.swiper-controls-wrap.pos-3 {position: relative;top: auto;right: auto;margin-top: var(--sp-64);}
+.swiper-controls-wrap.pos-3 {margin-top: var(--sp-48);}
 .swiper-entry .button-wrapp {margin-top: var(--sp-32);}
 .swiper-entry .button-wrapp.text-center {justify-content: center;}
 .swiper-entry .button-wrapp [class*=swiper-button] {position: relative;left: auto;right: auto;top: auto;}
