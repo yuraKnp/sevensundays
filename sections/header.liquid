@@ -288,7 +288,15 @@
       </a>
     </div>
   </header> {% endcomment %}
-<header>
+
+  {% liquid
+  assign header_tag_add = ''
+
+  if section.settings.header_type != 'light'
+    assign header_tag_add = 'class="type2"'
+  endif
+%}
+<header {{ header_tag_add }}>
 <div class="h-top-header">
     <div class="container">
         <span>New mattress delivery coming to Germany</span>
