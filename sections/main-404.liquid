@@ -9,12 +9,11 @@
     }
   }
 </style> {% endcomment %}
-{% comment %} {{ '404.svg' | asset_url }} {% endcomment %}
 <div class="section">
   <div class="page-404-2">
     <div class="container">
       <div class="page-404-img-2">
-        <img width="527" height="527" src="" alt="" loading="lazy">
+        <img width="527" height="527" src="{{ '404.svg' | asset_url }}" alt="" loading="lazy">
       </div>
       <div class="page-404-inner-2">
         <h1 class="title h3">{{ 'templates.404.title' | t }}</h1>
