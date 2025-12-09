@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
   --alpha-link: 0.85;
@@ -6,7 +6,7 @@
   --focused-base-outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   --focused-base-outline-offset: 0.3rem;
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
-}
+} */
 
 .product-card-wrapper .card,
 .contains-card--product {
@@ -578,7 +578,7 @@ details > * {
   }
 }
 
-:root {
+/* :root {
   --duration-short: 100ms;
   --duration-default: 200ms;
   --duration-announcement-bar: 250ms;
@@ -590,7 +590,7 @@ details > * {
   --ease-out-slow: cubic-bezier(0, 0, 0.3, 1);
   --animation-slide-in: slideIn var(--duration-extra-long) var(--ease-out-slow) forwards;
   --animation-fade-in: fadeIn var(--duration-extra-long) var(--ease-out-slow);
-}
+} */
 
 .underlined-link,
 .customer a,
