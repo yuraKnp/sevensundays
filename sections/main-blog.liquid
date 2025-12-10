@@ -21,12 +21,10 @@
   }
  {%- endstyle -%}
 
-{% assign article_handle = section.settings.featured_article %}
+{% assign article_handle = section.settings.featured_article.handle %}
 
 
-{{ blogs | json }}
-
-<div class="section fist-blog-section {{ article_handle }}">
+<div class="section fist-blog-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-xl-5">
@@ -51,7 +49,7 @@
               
             
             <div class="blog-item full">
-                <a class="blog-img" href="{{ featured_article.url }}">
+                <a class="blog-img" href="{{ article_handle.url }}">
                     {% if featured_article != blank and featured_article.image != blank %}
                     {% assign image_format = featured_article.image.format %}
                     <picture>
@@ -68,7 +66,7 @@
                     </a>
                 </div>
             </div>
-            {% endif %}
+            {% comment %} {% endif %} {% endcomment %}
         {% endif %}
         
 
