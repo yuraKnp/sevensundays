@@ -53,13 +53,13 @@
                     {% if article_handle != blank and article_handle.image != blank %}
                     {% assign image_format = article_handle.image.format %}
                     <picture>
-                        <source srcset="{{ article_handle.image | img_url: '400x' }}" type="{{ image_format }}">
+                        <source srcset="{{ article_handle.image | img_url: 'full' }}" type="{{ image_format }}">
                         <img width="380" height="240" src="#" alt="{{ article_handle.title }}" loading="lazy">
                     </picture>
                     {% endif %}
                 </a>
                 <div class="blog-content">
-                    <a class="h3 title" href="{{ article_handle.url }}">{{ section.settings.heading }}</a>
+                    <a class="h3 title" href="{{ article_handle.url }}">{{ article_handle.title }}</a>
                     <div class="text">{{ article_handle.excerpt | default: article_handle.content | strip_html | truncatewords: 30 }}</div>
                     <a href="{{ article_handle.url }}" class="btn-link style3">
                         <b>{{ 'blogs.article.read_now' | t }}</b>
