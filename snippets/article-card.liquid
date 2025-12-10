@@ -17,13 +17,13 @@
 {% endcomment %}
 
 {%- if article and article != empty -%}
-  {%- liquid
+  {% comment %} {%- liquid
     assign ratio = 1
     if media_aspect_ratio != null
       assign ratio = media_aspect_ratio
     endif
-  -%}
-  <div class="article-card-wrapper card-wrapper underline-links-hover">
+  -%} {% endcomment %}
+  {% comment %} <div class="article-card-wrapper card-wrapper underline-links-hover">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div
       class="
@@ -151,5 +151,33 @@
         {%- endif -%}
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
+
+  <div class="blog-item">
+    {% if article.image != blank %}
+      <a href="{{ article.url }}" class="blog-img">
+          {% assign image_format = article.image.format %}
+          <picture>
+              <source srcset="{{ article.image.src | image_url }}" type="{{ image_format }}">
+              <img width="380" height="240" src="#" alt="" loading="lazy">
+          </picture>
+      </a>
+    {% endif %}
+    <div class="blog-content">
+        <a href="{{ article.url }}" class="h5 title">{{ article.title | truncate: 50 | escape }}</a>
+          {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+            {%- if article.excerpt.size > 0 -%}
+              <div class="text">{{ article.excerpt | strip_html | truncatewords: 30 }}</div>
+            {%- else -%}
+              <div class="text">{{ article.content | strip_html | truncatewords: 30 }}</div>
+            {%- endif -%}
+        {%- endif -%}
+        
+        <a href="{{ article.url }}" class="btn-link style3">
+            <b>{{ 'blogs.article.read_now' | t }}</b>
+        </a>
+    </div>
+{% comment %} </div> {% endcomment %}
 {%- endif -%}
+
+
