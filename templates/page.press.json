@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -31,7 +30,7 @@
     }
   },
   "order": [
-    "main",
-    "press_9kh9HK"
+    "press_9kh9HK",
+    "main"
   ]
 }
