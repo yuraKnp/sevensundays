@@ -16,10 +16,14 @@
   }
 {%- endstyle -%} {% endcomment %}
  {%- style -%}
- .fist-blog-section{
-  padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md));
- }
+  .fist-blog-section{
+      padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md));
+  }
  {%- endstyle -%}
+
+{% assign article_handle = section.settings.featured_article %}
+
+
 
 <div class="section fist-blog-section">
     <div class="container">
@@ -39,22 +43,33 @@
             </div>
         </div>
 
-        <div class="blog-item full">
-            <a class="blog-img" href="blog-detail.php">
-                <picture>
-                    <source srcset="img/blog-item-full.webp" type="image/webp">
-                    <source srcset="img/blog-item-full.jpg" type="image/jpg">
-                    <img width="380" height="240" src="#" alt="" loading="lazy">
-                </picture>
-            </a>
-            <div class="blog-content">
-                <a class="h3 title" href="blog-detail.php">5 Tips for Finding Your Dream Home in a Competitive Market</a>
-                <div class="text">Duis vel nibh at velit scelerisque suscipit. Suspendisse potenti. Praesent nec nisl a purus blandit viverra. Phasellus nec sem in justo pellentesque facilisis.</div>
-                <a href="blog-detail.php" class="btn-link style3">
-                    <b>Read now</b>
+        {% if article_handle != blank %}
+          {% assign featured_article = all_articles[article_handle] %}
+          
+            {% if featured_article %}
+            
+            <div class="blog-item full">
+                <a class="blog-img" href="{{ featured_article.url }}">
+                    {% if featured_article != blank and featured_article.image != blank %}
+                    {% assign image_format = featured_article.image.format %}
+                    <picture>
+                        <source srcset="{{ featured_article.image | img_url: '400x' }}" type="{{ image_format }}">
+                        <img width="380" height="240" src="#" alt="{{ featured_article.title }}" loading="lazy">
+                    </picture>
+                    {% endif %}
                 </a>
+                <div class="blog-content">
+                    <a class="h3 title" href="{{ featured_article.url }}">{{ section.settings.heading }}</a>
+                    <div class="text">{{ featured_article.excerpt | default: featured_article.content | strip_html | truncatewords: 30 }}</div>
+                    <a href="{{ featured_article.url }}" class="btn-link style3">
+                        <b>{{ 'general.article.read_now' | t }}</b>
+                    </a>
+                </div>
             </div>
-        </div>
+            {% endif %}
+        {% endif %}
+        
+
     </div>
     <div class="spacer-sm"></div>
 </div>

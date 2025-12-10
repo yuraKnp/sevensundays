@@ -82,6 +82,7 @@
   },
   "blogs": {
     "article": {
+      "read_now": "Read now",
       "blog": "Blog",
       "read_more_title": "Read more: {{ title }}",
       "comments": {
