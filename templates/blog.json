@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -11,9 +20,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "call_to_action_bDhQUh": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "title": "Get the award-winning sleep system that changes everything",
+        "subtitle": "crafted to change everything",
+        "short_description": "Learn to know and love the modular sleep system with all its benefits and wake up like its Sunday morning, every morning.",
+        "link_text": "Get Sleep System",
+        "link_url": "#"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "call_to_action_bDhQUh"
   ]
 }
