@@ -47,6 +47,7 @@
           {% assign featured_article = blogs[article_handle] %}
           
             {% if featured_article %}
+              {{ featured_article | json }}
             
             <div class="blog-item full">
                 <a class="blog-img" href="{{ featured_article.url }}">
