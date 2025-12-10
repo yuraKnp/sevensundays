@@ -53,7 +53,7 @@
                     {% if article_handle != blank and article_handle.image != blank %}
                     {% assign image_format = article_handle.image.format %}
                     <picture>
-                        <source srcset="{{ article_handle.image | image_url: '680px' }}" type="{{ image_format }}">
+                        <source srcset="{{ article_handle.image | img_url: '680px' }}" type="{{ image_format }}">
                         <img width="380" height="240" src="#" alt="{{ article_handle.title }}" loading="lazy">
                     </picture>
                     {% endif %}
