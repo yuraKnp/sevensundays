@@ -2,7 +2,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
+{% comment %} {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -14,9 +14,48 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-{%- endstyle -%}
+{%- endstyle -%} {% endcomment %}
+
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-5">
+                <div class="title-shortcode text-center">
+                    {%  if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {%  if section.settings.title != blank %}
+                    <h1 class="h1 title">{{ section.settings.title }}</h1>
+                    {% endif %}
+                    {%  if section.settings.short_description != blank %}
+                    <div class="text">{{ section.settings.short_description }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-item full">
+            <a class="blog-img" href="blog-detail.php">
+                <picture>
+                    <source srcset="img/blog-item-full.webp" type="image/webp">
+                    <source srcset="img/blog-item-full.jpg" type="image/jpg">
+                    <img width="380" height="240" src="#" alt="" loading="lazy">
+                </picture>
+            </a>
+            <div class="blog-content">
+                <a class="h3 title" href="blog-detail.php">5 Tips for Finding Your Dream Home in a Competitive Market</a>
+                <div class="text">Duis vel nibh at velit scelerisque suscipit. Suspendisse potenti. Praesent nec nisl a purus blandit viverra. Phasellus nec sem in justo pellentesque facilisis.</div>
+                <a href="blog-detail.php" class="btn-link style3">
+                    <b>Read now</b>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-sm"></div>
+</div>
 
 {%- paginate blog.articles by 6 -%}
+  
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
@@ -44,9 +83,9 @@
       {%- endfor -%}
     </div>
 
-    {%- if paginate.pages > 1 -%}
+    {% comment %} {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
   </div>
 {%- endpaginate -%}
 
@@ -56,6 +95,27 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "short_description",
+      "label": "Short description"
+    },
+    {
+      "type": "article",
+      "id": "featured_article",
+      "label": "Choose featured article",
+      "info": "If you do not choose any, last one will be taken automaticly."
+    },
     {
       "type": "select",
       "id": "layout",
