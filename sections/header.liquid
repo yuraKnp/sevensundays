@@ -292,7 +292,7 @@
   {% liquid
   assign header_tag_add = ''
 
-  if section.settings.header_type != 'light' or template == '404'
+  if section.settings.header_type != 'light' or template == '404' or template == 'blog'
     assign header_tag_add = 'class="type2"'
   endif
 %}
