@@ -10,7 +10,7 @@
 .swiper-horizontal {touch-action: pan-y;}
 .swiper-vertical {touch-action: pan-x;}
 .swiper-vertical > .swiper-wrapper {flex-direction: column;cursor: url(../img/drag-vertical.png) 8 16,ns-resize;}
-.swiper-wrapper {box-sizing: border-box;position: relative;z-index: 1;width: 100%;height: 100%;display: flex;transition-property: transform;transition-timing-function: var(--transition-timing, initial);cursor: url(../img/drag.png) 16 9,ew-resize;}
+.swiper-wrapper {box-sizing: border-box;position: relative;z-index: 1;width: 100%;height: 100%;display: flex;transition-property: transform;transition-timing-function: var(--transition-timing, initial);cursor: url(drag.png) 16 9,ew-resize;}
 @media (max-width: 1199px) {
 .swiper-container {overflow: visible;}
 :root {--sw-btn: 40px;--pg-space: 32px;}
