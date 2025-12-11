@@ -26,14 +26,14 @@ endif
                 }}
             {% endif %}
             {%- if card_product.media[2] != null and show_secondary_image -%}
-                {%- assign image_hover = card_product.featured_media -%}     
-                {% if image != blank %}
-                    {{ image 
-                        | image_url: width: image.width
+                {%- assign image_hover = card_product.media[2] -%}     
+                {% if image_hover != blank %}
+                    {{ image_hover 
+                        | image_url: width: image_hover.width
                         | image_tag: 
-                            width: image.width,
+                            width: image_hover.width,
                             height: 'auto',
-                            alt: image.alt,
+                            alt: image_hover.alt,
                             fetchpriority: 'auto',
                             loading: 'lazy',
                             class: 'hover-img'
