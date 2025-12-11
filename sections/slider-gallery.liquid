@@ -1,3 +1,4 @@
+{% if section.settings.layout == 'type-1' %}
 <div class="section sec-padd padd-xl-lg gradient-1">
     <div class="container">
         <div class="row justify-content-center">
@@ -91,6 +92,99 @@
     </div>
 </div>
 
+{% elsif section.settings.layout == 'type-2' %}
+
+<div class="section">
+    <div class="container">
+        <div class="title-shortcode mb-48 row-align mob-left">
+            <div class="left-part">
+                {%- if section.settings.title != blank -%}
+                <div class="h3 title">{{ section.settings.title }}</div>
+                {% endif %}
+            </div>
+        </div>
+        {% if section.blocks != blank %}
+        <div class="swiper-entry">
+            <div class="swiper-container overflow-visible" data-options='{ 
+                "slidesPerView": 1.07,
+                "spaceBetween": 12,
+                "breakpoints":{
+                    "576":{"spaceBetween": 16, "slidesPerView": 1.6},
+                    "992":{"spaceBetween": 16, "slidesPerView": 2.4},
+                    "1200":{"spaceBetween": 16, "slidesPerView": 1.7}
+                }}'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {%- assign image = block.settings.slide_image -%}
+                        {%- assign heading = block.settings.slide_heading -%}
+                        {%- assign desc = block.settings.slide_desc -%}
+                        {%- assign tags = block.settings.tags -%}
+                        {%- assign target_words = tags | split: ', ' -%}
+                        <div class="swiper-slide">
+                            <div class="sleep-item type2">
+                                {% if target_words.size > 0 %}
+                                <div class="tags">
+                                    {% for word in target_words %}
+                                    <span>{{ word | strip }}</span>
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                <div class="sleep-img">
+                                    {% if image != blank %}
+                                        {{ image 
+                                            | image_url: width: image.width
+                                            | image_tag: 
+                                                width: image.width,
+                                                height: 'auto',
+                                                alt: image.alt,
+                                                fetchpriority: 'auto',
+                                                loading: 'lazy'
+                                        }}
+                                    {% endif %}
+                                </div>
+                                <div class="sleep-info">
+                                    <div class="block-blurs">
+                                        <div class="block-blur"></div>
+                                        <div class="block-blur"></div>
+                                        <div class="block-blur"></div>
+                                        <div class="block-blur"></div>
+                                        <div class="block-blur"></div>
+                                    </div>
+                                    {% if heading != blank %} 
+                                    <div class="title h4">{{ heading }}</div>
+                                    {% endif %}
+                                    {% if desc != blank %} 
+                                    <div class="text">{{ desc }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {%  endfor %}
+                </div>
+            </div>
+            <div class="swiper-controls-wrap pos-3">
+                <div class="swiper-button-prev style2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-next style2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+        </div>
+        {% endif %}
+    </div>
+    <div class="spacer-md"></div>
+</div>
+
+{% endif %}
+
 {% schema %}
 {
   "name": "Gallery slider",
@@ -109,6 +203,22 @@
         "type": "text",
         "id": "subtitle",
         "label": "Subtitle"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "type-1",
+          "label": "Type 1"
+        },
+        {
+          "value": "type-2",
+          "label": "Type 2"
+        }
+      ],
+      "default": "type-1",
+      "label": "Slider Gallery type"
     },
   ],
   "blocks": [
