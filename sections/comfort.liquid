@@ -16,7 +16,7 @@
             {% assign video_url = selected_video.sources.first.url %}
 
             {% if video_url != blank %}
-                {%- assign my_image_object = section.settings.image -%}
+                {%- assign my_image_object = section.settings.image.url -%}
                 <div class="video video-present">
                 <video muted playsinline loop preload poster="{{ my_image_object }}" data-src="{{ video_url }}"></video>
                 </div>
