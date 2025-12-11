@@ -17,15 +17,6 @@
         "padding_bottom": 28
       }
     },
-    "heading_jK9nGn": {
-      "type": "heading",
-      "name": "Heading",
-      "settings": {
-        "discover_subtitle": "Pillow Shop",
-        "discover_title": "Meet our pillows",
-        "discover_text_before_gallery": "Just as your body is unique, so is your ideal head and neck positioning. Side sleepers have different ergonomic needs compared to stomach or back sleepers."
-      }
-    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -41,7 +32,6 @@
   },
   "order": [
     "main",
-    "heading_jK9nGn",
     "press_aicD8y"
   ]
 }
