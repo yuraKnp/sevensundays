@@ -107,6 +107,7 @@
   },
   "products": {
     "product": {
+      "read_now": "Jetzt einkaufen",
       "add_to_cart": "In den Warenkorb legen",
       "description": "Beschreibung",
       "on_sale": "Sale",
