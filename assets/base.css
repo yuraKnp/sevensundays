@@ -3628,3 +3628,7 @@ body {font-family: "BasisGrotesqueArabicPro";font-weight: 400;font-size: var(--h
 }
 
 .footer-logo img {height: 100%;}
+
+.banner-section{
+  margin-top: 0px!important;
+}
