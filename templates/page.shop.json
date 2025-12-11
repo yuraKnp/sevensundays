@@ -23,7 +23,36 @@
       "settings": {
         "discover_subtitle": "Pillow Shop",
         "discover_title": "Meet our pillows",
-        "discover_text_before_gallery": "Just as your body is unique, so is your ideal head and neck positioning. Side sleepers have different ergonomic needs compared to stomach or back sleepers.!"
+        "discover_text_before_gallery": "Just as your body is unique, so is your ideal head and neck positioning. Side sleepers have different ergonomic needs compared to stomach or back sleepers."
+      }
+    },
+    "featured_collection_KnxmFe": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 3,
+        "title": "Vorgestellte Kollektion",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "press_aicD8y": {
@@ -42,6 +71,7 @@
   "order": [
     "main",
     "heading_PjcYKP",
+    "featured_collection_KnxmFe",
     "press_aicD8y"
   ]
 }
