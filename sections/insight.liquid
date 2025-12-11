@@ -1,0 +1,82 @@
+<div class="section sec-padd padd-xl gradient-1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+                <div class="title-shortcode text-center mb-0">
+                    {% if section.settings.tag != blank %}
+                    <div class="tags"><span>{{ section.settings.tag }}</span></div>
+                    {% endif %}
+                    {% if section.settings.main_description != blank %}
+                    <div class="h3 title no-balance">{{ section.settings.main_description }}</div>
+                    {% endif %}
+                    <div class="expert-block">
+                        {%- assign image = section.settings.image -%}     
+                        {% if image != blank %}
+                            {{ image 
+                                | image_url: width: image.width
+                                | image_tag: 
+                                    width: image.width,
+                                    height: 'auto',
+                                    alt: image.alt,
+                                    fetchpriority: 'auto',
+                                    loading: 'lazy'
+                            }}
+                        {% endif %}
+                        <div class="content">
+                            {% if section.settings.exper_name != blank %}
+                            <div class="text"><b>{{ section.settings.exper_name }}</b></div>
+                            {% endif %}
+                            {% if section.settings.expert_occupation != blank %}
+                            <div class="text text-sm">{{ section.settings.expert_occupation }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Insight",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "tag",
+      "label": "Insight tag"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "main_description",
+      "label": "Main description"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Expert image"
+    },
+    {
+      "type": "text",
+      "id": "exper_name",
+      "label": "Expert name"
+    },
+    {
+      "type": "text",
+      "id": "expert_occupation",
+      "label": "Expert occuoation"
+    },
+  ],
+  "presets": [
+        {
+      "name": "Insight",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
