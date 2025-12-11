@@ -57,10 +57,30 @@
             "slide_desc": "Developed with our scientific advisory board for evidence-based neck and spine support",
             "tags": "science based"
           }
+        },
+        "slide_TYnTNq": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-2.webp",
+            "slide_heading": "Swiss Design & Craftmanship",
+            "slide_desc": "Premium materials, handcrafted with Swiss precision for superior comfort and durability",
+            "tags": "swiss quality"
+          }
+        },
+        "slide_dR3RRc": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-3_42f40d5c-bb96-4ea4-9dad-4b52724acac3.webp",
+            "slide_heading": "Scientifically Engineered",
+            "slide_desc": "Developed with our scientific advisory board for evidence-based neck and spine support",
+            "tags": "Revitalizing"
+          }
         }
       },
       "block_order": [
-        "slide_bFDQVf"
+        "slide_bFDQVf",
+        "slide_TYnTNq",
+        "slide_dR3RRc"
       ],
       "name": "Gallery slider",
       "settings": {
