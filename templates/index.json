@@ -262,7 +262,8 @@
       "name": "Gallery slider",
       "settings": {
         "title": "More energy for everything that truly matters",
-        "subtitle": "sleep that powers you"
+        "subtitle": "sleep that powers you",
+        "layout": "type-1"
       }
     },
     "featured_collection": {
