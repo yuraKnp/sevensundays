@@ -1,0 +1,54 @@
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.discover_subtitle != blank %}
+                    <div class="motto">{{ section.settings.discover_subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.discover_title != blank %}
+                    <div class="h3 title ">{{ section.settings.discover_title }}</div>
+                    {% endif %}
+                    {% if section.settings.discover_text_before_gallery != blank %}
+                    <div class="text text-md">{{ section.settings.discover_text_before_gallery }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-xs"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Heading",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "discover_subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "discover_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "discover_text_before_gallery",
+      "label": "Short text description"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Press section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
