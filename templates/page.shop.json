@@ -34,18 +34,6 @@
         "products_to_show": 3
       }
     },
-    "press_aicD8y": {
-      "type": "press",
-      "name": "Press section",
-      "settings": {
-        "image": "shopify://shop_images/cta-video.webp",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
-        "link_url": "#test"
-      }
-    },
     "slider_gallery_XKcytz": {
       "type": "slider-gallery",
       "blocks": {
@@ -88,13 +76,37 @@
         "subtitle": "",
         "layout": "type-2"
       }
+    },
+    "insight_7LjFep": {
+      "type": "insight",
+      "name": "Insight",
+      "settings": {
+        "tag": "expert insight",
+        "main_description": "In our modern world – shaped by constant stress, prolonged sitting, and screen time – our neck needs special care at night. The right support from an ergonomic pillow can help release tension and give your body the regeneration it deserves.",
+        "image": "shopify://shop_images/expert-photo.webp",
+        "exper_name": "Prof. Dr. Dietrich Gronemeyer",
+        "expert_occupation": "Back Expert & Medical Advisor SEVEN SUNDAYS"
+      }
+    },
+    "press_aicD8y": {
+      "type": "press",
+      "name": "Press section",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "title": "Press & Media",
+        "subtitle": "stories worth sharing",
+        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
+        "link_text": "Download Press Kit",
+        "link_url": "#test"
+      }
     }
   },
   "order": [
     "main",
     "heading_PjcYKP",
     "products_line_x6md47",
-    "press_aicD8y",
-    "slider_gallery_XKcytz"
+    "slider_gallery_XKcytz",
+    "insight_7LjFep",
+    "press_aicD8y"
   ]
 }
