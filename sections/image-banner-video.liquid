@@ -87,7 +87,8 @@
                     <div class="col-xl-7">
                         <div class="banner-info text-center">
                             <div class="rating">
-                                <img width="380" height="240" src="img/icons/icon-rating.svg" alt="icon" loading="lazy">
+                                {%- assign svg_icon_url = 'icon-rating.svg' | asset_url -%}
+                                <img width="380" height="240" src="{{ svg_icon_url }}" alt="icon" loading="lazy">
                                 <span>Rated 4.5 on Trustpilot</span>
                             </div>
                             {%- for block in section.blocks -%}
