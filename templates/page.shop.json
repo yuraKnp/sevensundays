@@ -45,12 +45,56 @@
         "link_text": "Download Press Kit",
         "link_url": "#test"
       }
+    },
+    "slider_gallery_XKcytz": {
+      "type": "slider-gallery",
+      "blocks": {
+        "slide_bFDQVf": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/sleep-img-2.webp",
+            "slide_heading": "Scientifically Engineered",
+            "slide_desc": "Developed with our scientific advisory board for evidence-based neck and spine support",
+            "tags": "science based"
+          }
+        },
+        "slide_TYnTNq": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-2.webp",
+            "slide_heading": "Swiss Design & Craftmanship",
+            "slide_desc": "Premium materials, handcrafted with Swiss precision for superior comfort and durability",
+            "tags": "swiss quality"
+          }
+        },
+        "slide_dR3RRc": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-3_42f40d5c-bb96-4ea4-9dad-4b52724acac3.webp",
+            "slide_heading": "Scientifically Engineered",
+            "slide_desc": "Developed with our scientific advisory board for evidence-based neck and spine support",
+            "tags": "Revitalizing"
+          }
+        }
+      },
+      "block_order": [
+        "slide_bFDQVf",
+        "slide_TYnTNq",
+        "slide_dR3RRc"
+      ],
+      "name": "Gallery slider",
+      "settings": {
+        "title": "Why Seven Sundays Pillows?",
+        "subtitle": "",
+        "layout": "type-2"
+      }
     }
   },
   "order": [
     "main",
     "heading_PjcYKP",
     "products_line_x6md47",
-    "press_aicD8y"
+    "press_aicD8y",
+    "slider_gallery_XKcytz"
   ]
 }
