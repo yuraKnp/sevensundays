@@ -147,7 +147,10 @@ jQuery(function ($) {
         rootMargin: '0px'
     });
 
-    observer.observe(banner);
+    if(banner){
+        observer.observe(banner);
+    }
+    
 
 
 
