@@ -1,0 +1,63 @@
+{%- if section.settings.collection.products.size > 0 -%}
+{% assign lazy_load = false %}
+<div class="section">
+    <div class="container">
+        <div class="row product-row">
+            {% paginate section.settings.collection.products by section.settings.products_to_show %}
+                {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+                    {% if lazy_load == false and forloop.index > max_columns_to_show %}
+                        {% assign lazy_load = true %}
+                    {% endif %}
+                    <div class="col-md-6 col-lg-4">
+                        {% render 'card-product-second',
+                        card_product: product,
+                        media_aspect_ratio: section.settings.image_ratio,
+                        image_shape: section.settings.image_shape,
+                        lazy_load: lazy_load,
+                        show_secondary_image: section.settings.show_secondary_image,
+                        show_vendor: section.settings.show_vendor,
+                        show_rating: section.settings.show_rating,
+                        skip_styles: skip_card_product_styles,
+                        section_id: section.id,
+                        quick_add: section.settings.quick_add
+                        %}
+                    </div>
+                {%- endfor -%}
+            {% endpaginate %}
+        </div>
+    </div>
+    <div class="spacer-xl"></div>
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Featured collection new",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 25,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.products_to_show.label"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Featured collection new"
+    }
+  ],
+}
+{% endschema %}
