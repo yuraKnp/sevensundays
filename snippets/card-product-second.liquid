@@ -13,7 +13,34 @@ endif
 
 -%}
 <a href="{{ card_product.url }}" class="product-category">
-            <img
+            {%- assign image = card_product.featured_media -%}     
+            {% if image != blank %}
+                {{ image 
+                    | image_url: width: image.width
+                    | image_tag: 
+                        width: image.width,
+                        height: 'auto',
+                        alt: image.alt,
+                        fetchpriority: 'auto',
+                        loading: 'lazy'
+                }}
+            {% endif %}
+            {%- if card_product.media[2] != null and show_secondary_image -%}
+                {%- assign image_hover = card_product.featured_media -%}     
+                {% if image != blank %}
+                    {{ image 
+                        | image_url: width: image.width
+                        | image_tag: 
+                            width: image.width,
+                            height: 'auto',
+                            alt: image.alt,
+                            fetchpriority: 'auto',
+                            loading: 'lazy',
+                            class: 'hover-img'
+                    }}
+                {% endif %}
+            {% endif %}
+            {% comment %} <img
         srcset="
             {%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
             {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
@@ -54,7 +81,9 @@ endif
             width="{{ card_product.media[2].width }}"
             height="{{ card_product.media[2].height }}"
         >
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
+
+
     {% comment %} <picture>
         <source srcset="img/product-img-1.webp" type="image/webp">
         <source srcset="img/product-img-1.png" type="image/png">
