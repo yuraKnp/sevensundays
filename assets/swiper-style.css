@@ -23,10 +23,12 @@
 [class*=swiper-button] {cursor: pointer;position: absolute;z-index: 1;color: var(--clr-black);right: auto;top: calc(50% - var(--sw-btn) / 2);left: calc(-1 * var(--sw-btn) - 56px);margin: 0;width: var(--sw-btn);height: var(--sw-btn);border: none;border-radius: var(--sw-btn);background-color: var(--clr-white-2);transition: var(--transition-1);display: flex;justify-content: center;align-items: center;color: var(--clr-black);}
 [class*=swiper-button].style2 {background-color: rgba(30, 34, 39, 0.04);}
 [class*=swiper-button].style3 {background-color: var(--clr-black);color: var(--clr-white-2);}
+[class*=swiper-button].style4 {background-color: var(--clr-grey-4);color: var(--clr-white-2);margin-top: var(--sp-md);}
 .swiper-button-next {left: auto;right: calc(-1 * var(--sw-btn) - 56px);}
 .swiper-button-disabled {opacity: 1;cursor: auto;pointer-events: none;color: #cfcfcf;}
 .swiper-button-hidden {opacity: 0;cursor: auto;pointer-events: none;}
 .swiper-controls-wrap {position: relative;line-height: 0;display: flex;align-items: center;gap: var(--sp-12);}
+.swiper-controls-wrap.text-center {justify-content: center;}
 .swiper-controls-wrap .swiper-button-prev,
 .swiper-controls-wrap .swiper-button-next {position: relative;top: 0;left: 0;right: 0;transform: none;}
 .swiper-controls-wrap.pos-1 {position: absolute;top: calc(var(--sw-btn) * -1 + var(--sp-md) * -1);right: 0;}
