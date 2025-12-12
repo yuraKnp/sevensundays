@@ -124,7 +124,8 @@
         "left_image": "shopify://shop_images/sticker-logo_65784ff8-3aa8-432d-ba32-8d01f2c30583.svg",
         "left_title": "Sleep 13% better with Seven Sundays",
         "left_desctription": "What does 13% better sleep mean? Faster sleep onset, deeper rest, better recovery. Proven in 14-day study with 43 elite athletes using scientific Oura Ring measurements.",
-        "left_button_link": "",
+        "left_button_link": "#",
+        "left_button_link_text": "Read Study",
         "right_doc_name": "Dr. Helge Riepenhof",
         "right_doc_position": "Red Bull Global Medical Director",
         "right_image": "shopify://shop_images/expert-photo-2.webp"
