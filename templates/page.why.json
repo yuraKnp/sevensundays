@@ -192,12 +192,24 @@
         "link_text": "Get Sleep System",
         "link_url": "#test"
       }
+    },
+    "insight_imFNQp": {
+      "type": "insight",
+      "name": "Insight",
+      "settings": {
+        "tag": "expert insight",
+        "main_description": "In our modern world – shaped by constant stress, prolonged sitting, and screen time – our neck needs special care at night. The right support from an ergonomic pillow can help release tension and give your body the regeneration it deserves.",
+        "image": "shopify://shop_images/expert-photo-3.webp",
+        "exper_name": "Dr. Michael Feld",
+        "expert_occupation": "Sleep Expert & Medical Advisor SEVEN SUNDAYS"
+      }
     }
   },
   "order": [
     "main",
     "time_WzFBTt",
     "horizontal_slider_8kbf6a",
+    "insight_imFNQp",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
     "press_aicD8y"
