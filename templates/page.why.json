@@ -108,6 +108,26 @@
     },
     "time_WzFBTt": {
       "type": "time",
+      "blocks": {
+        "slide_RTxYBe": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Sleep is the essence of performance",
+            "slide_desc": "Perfected by nature over millions of years, restorative sleep remains the ultimate regeneration program for body and mind – an irreplaceable biological masterpiece no technology can replicate."
+          }
+        },
+        "slide_V3zbVT": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Yet bad sleep became acceptable – with dire consequences",
+            "slide_desc": "Industrial and digital revolutions disrupted our natural sleep cycles. Factory work brought artificial light and fractured rhythms. The digital age introduced constant stimulation and \"always-on\" mentality our brains weren't designed for. Today, you're paying the price: declining health, diminished performance, compromised wellbeing."
+          }
+        }
+      },
+      "block_order": [
+        "slide_RTxYBe",
+        "slide_V3zbVT"
+      ],
       "name": "Time",
       "settings": {
         "image": "shopify://shop_images/time-1.webp",
