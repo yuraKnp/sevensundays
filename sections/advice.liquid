@@ -1,0 +1,144 @@
+<div class="section">
+    <div class="banner">
+        <div class="banner-media bottom-shadow shadow-3">
+            {%- assign image = section.settings.image -%}
+            {% if image != blank %}
+                {{ image 
+                    | image_url: width: image.width
+                    | image_tag: 
+                        width: image.width,
+                        height: 'auto',
+                        alt: image.alt,
+                        fetchpriority: 'auto',
+                        loading: 'lazy'
+                }}
+            {% endif %}
+        </div>
+        <div class="banner-align align-bottom size2">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-7 col-xl-5">
+                        <div class="banner-info">
+                            {%- assign image2 = section.settings.left_image -%}
+                            {% if image2 != blank %}
+                              {{ image2 
+                                  | image_url: width: image2.width
+                                  | image_tag: 
+                                      width: image2.width,
+                                      height: 'auto',
+                                      alt: image2.alt,
+                                      fetchpriority: 'auto',
+                                      loading: 'lazy'
+                              }}
+                            {% endif %}
+                            {% if section.settings.left_title != blank %}
+                            <div class="h2 title text-balance">{{ section.settings.left_title }}</div>
+                            {% endif %}
+                            {% if section.settings.left_desctription != blank %}
+                            <div class="text">{{ section.settings.left_desctription }}</div>
+                            {% endif %}
+                            {% if section.settings.left_button_link != blank %}
+                            <a href="{{ section.settings.left_button_link }}" class="btn btn-blur">
+                                <b>{{- section.settings.left_button_link | escape -}}</b>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-lg-5 align-self-end">
+                        <div class="expert-block type-2">
+                            {%- assign image3 = section.settings.right_image -%}
+                            {% if image3 != blank %}
+                                {{ image3
+                                    | image_url: width: image3.width
+                                    | image_tag: 
+                                        width: image3.width,
+                                        height: 'auto',
+                                        alt: image3.alt,
+                                        fetchpriority: 'auto',
+                                        loading: 'lazy'
+                                }}
+                            {% endif %}
+                            <div class="content">
+                                {% if section.settings.right_doc_name != blank %}
+                                <div class="text"><b>{{ section.settings.right_doc_name }}</b></div>
+                                {% endif %}
+                                {% if section.settings.right_doc_position != blank %}
+                                <div class="text text-sm">{{ section.settings.right_doc_position }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Advice",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "header",
+      "content": "Left block description"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left logo"
+    },
+    {
+      "type": "text",
+      "id": "left_title",
+      "label": "Left title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "left_desctription",
+      "label": "Left description"
+    },
+    {
+      "type": "url",
+      "id": "left_button_link",
+      "label": "Left link"
+    },
+    {
+      "type": "header",
+      "content": "Right info"
+    },
+      {
+      "type": "text",
+      "id": "right_doc_name",
+      "label": "Advice name"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "right_doc_position",
+      "label": "Advice position"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Advice image"
+    },
+
+  ],
+  "presets": [
+        {
+      "name": "Advice",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
