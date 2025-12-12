@@ -17,6 +17,51 @@
         "padding_bottom": 28
       }
     },
+    "awards_slider_XwhBJd": {
+      "type": "awards-slider",
+      "blocks": {
+        "slide_YtVD9P": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-1.svg",
+            "name": "German Brand Award Winner",
+            "year": "2024"
+          }
+        },
+        "slide_VdRxjP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-2.svg",
+            "name": "Europe's fastest growing companies",
+            "year": "2023"
+          }
+        },
+        "slide_kNJwxe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-3.svg",
+            "name": "Innovation Prize Ergonomics Winner",
+            "year": "2022"
+          }
+        },
+        "slide_Lk3Wfw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-4.svg",
+            "name": "German Design Award Winner",
+            "year": "2019"
+          }
+        }
+      },
+      "block_order": [
+        "slide_YtVD9P",
+        "slide_VdRxjP",
+        "slide_kNJwxe",
+        "slide_Lk3Wfw"
+      ],
+      "name": "Awards slider",
+      "settings": {}
+    },
     "testimonial_slider_WQiFem": {
       "type": "testimonial-slider",
       "blocks": {
@@ -60,57 +105,12 @@
         "link_text": "Get Sleep System",
         "link_url": "#test"
       }
-    },
-    "awards_slider_XwhBJd": {
-      "type": "awards-slider",
-      "blocks": {
-        "slide_Lk3Wfw": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/award-4.svg",
-            "name": "German Design Award Winner",
-            "year": "2019"
-          }
-        },
-        "slide_kNJwxe": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/award-3.svg",
-            "name": "Innovation Prize Ergonomics Winner",
-            "year": "2022"
-          }
-        },
-        "slide_VdRxjP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/award-2.svg",
-            "name": "Europe's fastest growing companies",
-            "year": "2023"
-          }
-        },
-        "slide_YtVD9P": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/award-1.svg",
-            "name": "German Brand Award Winner",
-            "year": "2024"
-          }
-        }
-      },
-      "block_order": [
-        "slide_Lk3Wfw",
-        "slide_kNJwxe",
-        "slide_VdRxjP",
-        "slide_YtVD9P"
-      ],
-      "name": "Awards slider",
-      "settings": {}
     }
   },
   "order": [
     "main",
+    "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
-    "press_aicD8y",
-    "awards_slider_XwhBJd"
+    "press_aicD8y"
   ]
 }
