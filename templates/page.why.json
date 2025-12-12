@@ -174,6 +174,44 @@
         "description": "Seven Sundays has partnered with renowned medical experts who are leaders in their respective fields. They support Seven Sundays in developing the modular sleep system based on precise, cutting-edge science in health & longevity."
       }
     },
+    "supplier_mKffBi": {
+      "type": "supplier",
+      "blocks": {
+        "slide_ipAGWr": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/partner-logo-1_db1874ae-62dd-49ff-b348-b55d60f9ba68.svg"
+          }
+        },
+        "slide_LkBwwL": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/partner-logo-3_e7b92cf1-a732-4255-8315-fa1b59f1e569.svg"
+          }
+        },
+        "slide_4mmnzn": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/partner-logo-2_605948c4-22b3-40c7-aae6-d9aa989ae944.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ipAGWr",
+        "slide_LkBwwL",
+        "slide_4mmnzn"
+      ],
+      "name": "Supplier",
+      "settings": {
+        "banner_main_image": "shopify://shop_images/why-banner-2.webp",
+        "title": "“Because the miliseconds decide, we only rely on the best”",
+        "description": "Official sleep system supplier to Red Bull BORA-hansgrohe. The entire team recovers on SEVEN SUNDAYS – from training to Grand Tour competition.",
+        "sup_logo": "shopify://shop_images/support-logo-1.svg",
+        "sup_title": "Official sleep system supplier 2025/2026",
+        "sup_description": "Giro d’Italia / Tour de France / Vuelta a Espana",
+        "gallery_title": "pro sport teams trusting seven sundays"
+      }
+    },
     "awards_slider_XwhBJd": {
       "type": "awards-slider",
       "blocks": {
@@ -218,44 +256,6 @@
       ],
       "name": "Awards slider",
       "settings": {}
-    },
-    "supplier_mKffBi": {
-      "type": "supplier",
-      "blocks": {
-        "slide_ipAGWr": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-1_db1874ae-62dd-49ff-b348-b55d60f9ba68.svg"
-          }
-        },
-        "slide_LkBwwL": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-3_e7b92cf1-a732-4255-8315-fa1b59f1e569.svg"
-          }
-        },
-        "slide_4mmnzn": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-2_605948c4-22b3-40c7-aae6-d9aa989ae944.svg"
-          }
-        }
-      },
-      "block_order": [
-        "slide_ipAGWr",
-        "slide_LkBwwL",
-        "slide_4mmnzn"
-      ],
-      "name": "Supplier",
-      "settings": {
-        "banner_main_image": "shopify://shop_images/why-banner-2.webp",
-        "title": "“Because the miliseconds decide, we only rely on the best”",
-        "description": "Official sleep system supplier to Red Bull BORA-hansgrohe. The entire team recovers on SEVEN SUNDAYS – from training to Grand Tour competition.",
-        "sup_logo": "shopify://shop_images/support-logo-1.svg",
-        "sup_title": "Official sleep system supplier 2025/2026",
-        "sup_description": "Giro d’Italia / Tour de France / Vuelta a Espana",
-        "gallery_title": "pro sport teams trusting seven sundays"
-      }
     },
     "testimonial_slider_WQiFem": {
       "type": "testimonial-slider",
@@ -309,8 +309,8 @@
     "insight_imFNQp",
     "advice_QjPdMt",
     "advisor_UNcFd9",
-    "awards_slider_XwhBJd",
     "supplier_mKffBi",
+    "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
     "press_aicD8y"
   ]
