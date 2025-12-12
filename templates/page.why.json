@@ -116,6 +116,64 @@
         "expert_occupation": "Sleep Expert & Medical Advisor SEVEN SUNDAYS"
       }
     },
+    "advice_QjPdMt": {
+      "type": "advice",
+      "name": "Advice",
+      "settings": {
+        "image": "shopify://shop_images/why-banner-1.webp",
+        "left_image": "shopify://shop_images/sticker-logo_65784ff8-3aa8-432d-ba32-8d01f2c30583.svg",
+        "left_title": "Sleep 13% better with Seven Sundays",
+        "left_desctription": "What does 13% better sleep mean? Faster sleep onset, deeper rest, better recovery. Proven in 14-day study with 43 elite athletes using scientific Oura Ring measurements.",
+        "left_button_link": "#",
+        "left_button_link_text": "Read Study",
+        "right_doc_name": "Dr. Helge Riepenhof",
+        "right_doc_position": "Red Bull Global Medical Director",
+        "right_image": "shopify://shop_images/expert-photo-2.webp"
+      }
+    },
+    "advisor_UNcFd9": {
+      "type": "advisor",
+      "blocks": {
+        "slide_z86JBp": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/advisor-img-1.webp",
+            "slide_desc": "Many back problems originate from tense muscles. With Seven Sundays, I always pursue a holistic approach – one that supports the body’s natural self-healing and promotes nighttime regeneration.",
+            "slide_heading": "Dr. Helge Riepenhof",
+            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+          }
+        },
+        "slide_xmQbaQ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/advisor-img-1.webp",
+            "slide_desc": "Champions are made at night. At Seven Sundays, I ensure every component is designed for peak performance. Elite athletes have no time for poor sleep – our studies prove: The system works measurably.",
+            "slide_heading": "Dr. Helge Riepenhof",
+            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+          }
+        },
+        "slide_mUbdVf": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/advisor-img-1.webp",
+            "slide_desc": "True sleep optimization requires individualization. At Seven Sundays, I contribute my expertise so the modular system enables maximum regeneration. Here, sleep medicine becomes applicable innovation.",
+            "slide_heading": "Dr. Helge Riepenhof",
+            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+          }
+        }
+      },
+      "block_order": [
+        "slide_z86JBp",
+        "slide_xmQbaQ",
+        "slide_mUbdVf"
+      ],
+      "name": "Advisor",
+      "settings": {
+        "title": "Our scientific<br>advisory board",
+        "subtitle": "recovery experts at your side",
+        "description": "Seven Sundays has partnered with renowned medical experts who are leaders in their respective fields. They support Seven Sundays in developing the modular sleep system based on precise, cutting-edge science in health & longevity."
+      }
+    },
     "awards_slider_XwhBJd": {
       "type": "awards-slider",
       "blocks": {
@@ -204,20 +262,6 @@
         "link_text": "Get Sleep System",
         "link_url": "#test"
       }
-    },
-    "advice_QjPdMt": {
-      "type": "advice",
-      "name": "Advice",
-      "settings": {
-        "image": "shopify://shop_images/why-banner-1.webp",
-        "left_image": "shopify://shop_images/sticker-logo_65784ff8-3aa8-432d-ba32-8d01f2c30583.svg",
-        "left_title": "Sleep 13% better with Seven Sundays",
-        "left_desctription": "What does 13% better sleep mean? Faster sleep onset, deeper rest, better recovery. Proven in 14-day study with 43 elite athletes using scientific Oura Ring measurements.",
-        "left_button_link": "",
-        "right_doc_name": "Dr. Helge Riepenhof",
-        "right_doc_position": "Red Bull Global Medical Director",
-        "right_image": "shopify://shop_images/expert-photo-2.webp"
-      }
     }
   },
   "order": [
@@ -225,9 +269,10 @@
     "time_WzFBTt",
     "horizontal_slider_8kbf6a",
     "insight_imFNQp",
+    "advice_QjPdMt",
+    "advisor_UNcFd9",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
-    "press_aicD8y",
-    "advice_QjPdMt"
+    "press_aicD8y"
   ]
 }
