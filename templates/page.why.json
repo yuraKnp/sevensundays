@@ -17,6 +17,26 @@
         "padding_bottom": 28
       }
     },
+    "testimonial_slider_WQiFem": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "slide_qYBD34": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-2.webp",
+            "tags": "real sleep, real stories",
+            "name": "Thomas K.",
+            "job": "Tech Executive",
+            "slide_desc": "As someone who travels frequently, I was skeptical about yet another sleep solution. But Seven Sundays has transformed my sleep quality. Even after long flights, I can adjust the system and get restorative sleep immediately."
+          }
+        }
+      },
+      "block_order": [
+        "slide_qYBD34"
+      ],
+      "name": "Testimonial slider",
+      "settings": {}
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -33,6 +53,7 @@
   },
   "order": [
     "main",
+    "testimonial_slider_WQiFem",
     "press_aicD8y"
   ]
 }
