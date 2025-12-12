@@ -105,12 +105,21 @@
         "link_text": "Get Sleep System",
         "link_url": "#test"
       }
+    },
+    "time_WzFBTt": {
+      "type": "time",
+      "name": "Time",
+      "settings": {
+        "image": "shopify://shop_images/time-1.webp",
+        "title": "It’s time to celebrate sleep, again"
+      }
     }
   },
   "order": [
     "main",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
-    "press_aicD8y"
+    "press_aicD8y",
+    "time_WzFBTt"
   ]
 }
