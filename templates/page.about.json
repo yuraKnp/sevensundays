@@ -28,10 +28,21 @@
         "link_text": "Download Press Kit",
         "link_url": "#test"
       }
+    },
+    "image_banner_new_PHnfqq": {
+      "type": "image-banner-new",
+      "name": "Image banner new",
+      "settings": {
+        "image": "shopify://shop_images/about-banner-img.webp",
+        "image_mob": "shopify://shop_images/about-banner-img-mob.webp",
+        "title": "The Swiss Sleep Manufactory",
+        "description": "Two generations of Swiss craftsmanship. One breakthrough that changed everything."
+      }
     }
   },
   "order": [
     "main",
-    "press_aicD8y"
+    "press_aicD8y",
+    "image_banner_new_PHnfqq"
   ]
 }
