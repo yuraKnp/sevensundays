@@ -17,6 +17,16 @@
         "padding_bottom": 28
       }
     },
+    "image_banner_new_PHnfqq": {
+      "type": "image-banner-new",
+      "name": "Image banner new",
+      "settings": {
+        "image": "shopify://shop_images/about-banner-img.webp",
+        "image_mob": "shopify://shop_images/about-banner-img-mob.webp",
+        "title": "The Swiss Sleep Manufactory",
+        "description": "Two generations of Swiss craftsmanship. One breakthrough that changed everything."
+      }
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -28,21 +38,11 @@
         "link_text": "Download Press Kit",
         "link_url": "#test"
       }
-    },
-    "image_banner_new_PHnfqq": {
-      "type": "image-banner-new",
-      "name": "Image banner new",
-      "settings": {
-        "image": "shopify://shop_images/about-banner-img.webp",
-        "image_mob": "shopify://shop_images/about-banner-img-mob.webp",
-        "title": "The Swiss Sleep Manufactory",
-        "description": "Two generations of Swiss craftsmanship. One breakthrough that changed everything."
-      }
     }
   },
   "order": [
-    "main",
+    "image_banner_new_PHnfqq",
     "press_aicD8y",
-    "image_banner_new_PHnfqq"
+    "main"
   ]
 }
