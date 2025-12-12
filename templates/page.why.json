@@ -131,6 +131,49 @@
         "right_image": "shopify://shop_images/expert-photo-2.webp"
       }
     },
+    "advisor_UNcFd9": {
+      "type": "advisor",
+      "blocks": {
+        "slide_z86JBp": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/advisor-img-1.webp",
+            "slide_desc": "Many back problems originate from tense muscles. With Seven Sundays, I always pursue a holistic approach – one that supports the body’s natural self-healing and promotes nighttime regeneration.",
+            "slide_heading": "Dr. Helge Riepenhof",
+            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+          }
+        },
+        "slide_xmQbaQ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/advisor-img-1.webp",
+            "slide_desc": "Champions are made at night. At Seven Sundays, I ensure every component is designed for peak performance. Elite athletes have no time for poor sleep – our studies prove: The system works measurably.",
+            "slide_heading": "Dr. Helge Riepenhof",
+            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+          }
+        },
+        "slide_mUbdVf": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/advisor-img-1.webp",
+            "slide_desc": "True sleep optimization requires individualization. At Seven Sundays, I contribute my expertise so the modular system enables maximum regeneration. Here, sleep medicine becomes applicable innovation.",
+            "slide_heading": "Dr. Helge Riepenhof",
+            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+          }
+        }
+      },
+      "block_order": [
+        "slide_z86JBp",
+        "slide_xmQbaQ",
+        "slide_mUbdVf"
+      ],
+      "name": "Advisor",
+      "settings": {
+        "title": "Our scientific advisory board",
+        "subtitle": "recovery experts at your side",
+        "description": "Seven Sundays has partnered with renowned medical experts who are leaders in their respective fields. They support Seven Sundays in developing the modular sleep system based on precise, cutting-edge science in health & longevity."
+      }
+    },
     "awards_slider_XwhBJd": {
       "type": "awards-slider",
       "blocks": {
@@ -219,49 +262,6 @@
         "link_text": "Get Sleep System",
         "link_url": "#test"
       }
-    },
-    "advisor_UNcFd9": {
-      "type": "advisor",
-      "blocks": {
-        "slide_z86JBp": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/advisor-img-1.webp",
-            "slide_desc": "Many back problems originate from tense muscles. With Seven Sundays, I always pursue a holistic approach – one that supports the body’s natural self-healing and promotes nighttime regeneration.",
-            "slide_heading": "Dr. Helge Riepenhof",
-            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
-          }
-        },
-        "slide_xmQbaQ": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/advisor-img-1.webp",
-            "slide_desc": "Champions are made at night. At Seven Sundays, I ensure every component is designed for peak performance. Elite athletes have no time for poor sleep – our studies prove: The system works measurably.",
-            "slide_heading": "Dr. Helge Riepenhof",
-            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
-          }
-        },
-        "slide_mUbdVf": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/advisor-img-1.webp",
-            "slide_desc": "True sleep optimization requires individualization. At Seven Sundays, I contribute my expertise so the modular system enables maximum regeneration. Here, sleep medicine becomes applicable innovation.",
-            "slide_heading": "Dr. Helge Riepenhof",
-            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
-          }
-        }
-      },
-      "block_order": [
-        "slide_z86JBp",
-        "slide_xmQbaQ",
-        "slide_mUbdVf"
-      ],
-      "name": "Advisor",
-      "settings": {
-        "title": "Our scientificadvisory board",
-        "subtitle": "recovery experts at your side",
-        "description": "Seven Sundays has partnered with renowned medical experts who are leaders in their respective fields. They support Seven Sundays in developing the modular sleep system based on precise, cutting-edge science in health & longevity."
-      }
     }
   },
   "order": [
@@ -270,9 +270,9 @@
     "horizontal_slider_8kbf6a",
     "insight_imFNQp",
     "advice_QjPdMt",
+    "advisor_UNcFd9",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
-    "press_aicD8y",
-    "advisor_UNcFd9"
+    "press_aicD8y"
   ]
 }
