@@ -1,0 +1,99 @@
+<div class="section fixed-sec">
+    <div class="banner">
+        <div class="banner-media bottom-shadow shadow-5">
+            {% if section.settings.image != blank %}
+            {{ section.settings.image 
+                | image_url: width: section.settings.image.width
+                | image_tag: 
+                    width: section.settings.image.width,
+                    height: 'auto',
+                    alt: section.settings.image.alt,
+                    fetchpriority: 'auto',
+                    loading: 'lazy'
+            }}
+            {% endif %}
+        </div>
+        <div class="banner-align">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="banner-info text-center">
+                            {% if section.settings.title != blank %}
+                            <h1 class="h1 title text-balance">{{ section.settings.title }}</h1>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if section.blocks != blank %}
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="steps">
+                         {% for block in section.blocks %}
+                          {%- assign heading = block.settings.slide_heading -%}
+                          {%- assign desc = block.settings.slide_desc -%}
+                            <div class="step-item text-center">
+                                {% if heading != blank %}
+                                <div class="title h2">{{ heading }}</div>
+                                {% endif %}
+                                {% if desc != blank %}
+                                <div class="text text-md">{{ desc }}</div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Time",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Time sections",
+      "settings": [
+        {
+          "type": "text",
+          "id": "slide_heading",
+          "label": "Title",
+        },
+        {
+        "type": "inline_richtext",
+        "id": "slide_desc",
+        "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Time",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
