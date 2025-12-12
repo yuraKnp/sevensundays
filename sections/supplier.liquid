@@ -1,0 +1,123 @@
+<div class="section sec-black sec-padd-inline">
+    <div class="banner">
+        <div class="banner-media bottom-shadow shadow-4">
+            <picture>
+                <source srcset="img/why-banner-2.webp" type="image/webp">
+                <source srcset="img/why-banner-2.jpg" type="image/jpg">
+                <img width="380" height="240" src="#" alt="" loading="lazy">
+            </picture>
+        </div>
+        <div class="banner-align align-bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="banner-info">
+                            <div class="h2 title text-balance font-1">“Because the miliseconds decide, we only rely on the best”</div>
+                            <div class="text">Official sleep system supplier to Red Bull BORA-hansgrohe. The entire team recovers on SEVEN SUNDAYS – from training to Grand Tour competition.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 align-self-end">
+                        <div class="support-item">
+                            <div class="support-img">
+                                <img width="66" height="66" src="img/support-logo-1.svg" alt="" loading="lazy">
+                            </div>
+                            <div class="support-content">
+                                <div class="text"><b>Official sleep system supplier 2025/2026</b></div>
+                                <div class="text text-sm">Giro d’Italia / Tour de France / Vuelta a Espana</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-md"></div>
+    <div class="motto text-center">pro sport teams trusting seven sundays</div>
+    <div class="marquee type-2">
+        <div class="marquee-line" data-speed="0.03" data-direction="false">
+            <div class="marquee-item">
+                <div class="marquee-content">
+                    <img width="85" height="23" src="img/partner-logo-4.svg" alt="partner" loading="lazy">
+                    <img width="136" height="16" src="img/partner-logo-5.svg" alt="partner" loading="lazy">
+                    <img width="84" height="16" src="img/partner-logo-6.svg" alt="partner" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-lg"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Supplier",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_main_image",
+      "label": "Banner main photo"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Supplier info"
+    },
+    {
+      "type": "image_picker",
+      "id": "sup_logo",
+      "label": "Supplier logo"
+    },
+    {
+      "type": "text",
+      "id": "sup_title",
+      "label": "Supplier title"
+    },
+    {
+        "type": "text",
+        "id": "sup_description",
+        "label": "Supplier description"
+    },
+    {
+      "type": "header",
+      "content": "Title before bottom gallery"
+    },
+    {
+      "type": "text",
+      "id": "gallery_title",
+      "label": "Text before gallery"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slide_image",
+          "label": "Slide Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Supplier",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
