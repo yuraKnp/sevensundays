@@ -1,4 +1,13 @@
-<div class="section sec-black sec-padd sec-materials hide-xl">
+{% assign sec_color = '' %}
+{% assign sec_class = 'style2' %}
+{% assign third_class = '' %}
+{% if section.settings.section_color == 'dark' %}
+    {% assign sec_color = 'sec-black' %}
+    {% assign sec_class = '' %}
+    {% assign third_class = 'style3' %}
+{% endif %}
+
+<div class="section {{ sec_color }} sec-padd sec-materials hide-xl">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-6">
@@ -16,7 +25,7 @@
         <div class="row">
             <div class="col-xl-3">
                 <div class="sticky-links-wrap">
-                    <div class="sticky-links">
+                    <div class="sticky-links {{ sec_class }}">
                         <ul>
                             {% for block in section.blocks %}
                                 {%- assign tag = block.settings.slide_tag -%}
@@ -66,7 +75,7 @@
     </div>
 </div>
 
-<div class="section sec-black sec-padd sec-materials hide-top-xl">
+<div class="section {{ sec_color }} sec-padd sec-materials hide-top-xl">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-6">
@@ -130,12 +139,12 @@
                 </div>
             </div>
             <div class="button-wrapp">
-                <div class="swiper-button-prev style3">
+                <div class="swiper-button-prev {{ third_class }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M9.99935 15.8332L4.16602 9.99984M4.16602 9.99984L9.99935 4.1665M4.16602 9.99984H15.8327" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="swiper-button-next style3">
+                <div class="swiper-button-next {{ third_class }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M4.16602 9.99984H15.8327M15.8327 9.99984L9.99935 4.1665M15.8327 9.99984L9.99935 15.8332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -166,6 +175,22 @@
         "type": "text",
         "id": "subtitle",
         "label": "Subtitle"
+    },
+    {
+      "type": "select",
+      "id": "section_color",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Dark"
+        },
+        {
+          "value": "light",
+          "label": "Light"
+        },
+      ],
+      "default": "dark",
+      "label": "Section color type",
     },
   ],
   "blocks": [
