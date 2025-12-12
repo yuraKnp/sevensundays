@@ -116,6 +116,20 @@
         "expert_occupation": "Sleep Expert & Medical Advisor SEVEN SUNDAYS"
       }
     },
+    "advice_QjPdMt": {
+      "type": "advice",
+      "name": "Advice",
+      "settings": {
+        "image": "shopify://shop_images/why-banner-1.webp",
+        "left_image": "shopify://shop_images/sticker-logo_65784ff8-3aa8-432d-ba32-8d01f2c30583.svg",
+        "left_title": "Sleep 13% better with Seven Sundays",
+        "left_desctription": "What does 13% better sleep mean? Faster sleep onset, deeper rest, better recovery. Proven in 14-day study with 43 elite athletes using scientific Oura Ring measurements.",
+        "left_button_link": "",
+        "right_doc_name": "Dr. Helge Riepenhof",
+        "right_doc_position": "Red Bull Global Medical Director",
+        "right_image": "shopify://shop_images/expert-photo-2.webp"
+      }
+    },
     "awards_slider_XwhBJd": {
       "type": "awards-slider",
       "blocks": {
@@ -204,20 +218,6 @@
         "link_text": "Get Sleep System",
         "link_url": "#test"
       }
-    },
-    "advice_QjPdMt": {
-      "type": "advice",
-      "name": "Advice",
-      "settings": {
-        "image": "shopify://shop_images/why-banner-1.webp",
-        "left_image": "shopify://shop_images/sticker-logo_65784ff8-3aa8-432d-ba32-8d01f2c30583.svg",
-        "left_title": "Sleep 13% better with Seven Sundays",
-        "left_desctription": "What does 13% better sleep mean? Faster sleep onset, deeper rest, better recovery. Proven in 14-day study with 43 elite athletes using scientific Oura Ring measurements.",
-        "left_button_link": "",
-        "right_doc_name": "Dr. Helge Riepenhof",
-        "right_doc_position": "Red Bull Global Medical Director",
-        "right_image": "shopify://shop_images/expert-photo-2.webp"
-      }
     }
   },
   "order": [
@@ -225,9 +225,9 @@
     "time_WzFBTt",
     "horizontal_slider_8kbf6a",
     "insight_imFNQp",
+    "advice_QjPdMt",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
-    "press_aicD8y",
-    "advice_QjPdMt"
+    "press_aicD8y"
   ]
 }
