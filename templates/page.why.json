@@ -81,11 +81,21 @@
             "slide_desc": "Designed for ergonomic balance and optimal cervical support.",
             "slide_tag": "Alignment"
           }
+        },
+        "slide_BpC8Fy": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-7.webp",
+            "slide_heading": "Always in alignment",
+            "slide_desc": "Designed for ergonomic balance and optimal cervical support.",
+            "slide_tag": "Sustainable"
+          }
         }
       },
       "block_order": [
         "slide_mzgPKr",
-        "slide_RACthp"
+        "slide_RACthp",
+        "slide_BpC8Fy"
       ],
       "name": "Vertical slider",
       "settings": {
