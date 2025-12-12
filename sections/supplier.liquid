@@ -1,29 +1,55 @@
 <div class="section sec-black sec-padd-inline">
     <div class="banner">
         <div class="banner-media bottom-shadow shadow-4">
-            <picture>
-                <source srcset="img/why-banner-2.webp" type="image/webp">
-                <source srcset="img/why-banner-2.jpg" type="image/jpg">
-                <img width="380" height="240" src="#" alt="" loading="lazy">
-            </picture>
+            {%- assign image = section.settings.banner_main_image -%}
+            {% if image != blank %}
+                {{ image 
+                    | image_url: width: image.width
+                    | image_tag: 
+                        width: image.width,
+                        height: 'auto',
+                        alt: image.alt,
+                        fetchpriority: 'auto',
+                        loading: 'lazy'
+                }}
+            {% endif %}
         </div>
         <div class="banner-align align-bottom">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-7 col-xl-6">
                         <div class="banner-info">
-                            <div class="h2 title text-balance font-1">“Because the miliseconds decide, we only rely on the best”</div>
-                            <div class="text">Official sleep system supplier to Red Bull BORA-hansgrohe. The entire team recovers on SEVEN SUNDAYS – from training to Grand Tour competition.</div>
+                            {%- if section.settings.title != blank -%}
+                            <div class="h2 title text-balance font-1">{{ section.settings.title }}</div>
+                            {% endif %}
+                            {%- if section.settings.description != blank -%}
+                            <div class="text">{{ section.settings.description }}</div>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="col-lg-5 align-self-end">
                         <div class="support-item">
                             <div class="support-img">
-                                <img width="66" height="66" src="img/support-logo-1.svg" alt="" loading="lazy">
+                                {%- assign image2 = section.settings.sup_logo -%}
+                                {% if image2 != blank %}
+                                    {{ image2 
+                                        | image_url: width: image2.width
+                                        | image_tag: 
+                                            width: image2.width,
+                                            height: 'auto',
+                                            alt: image2.alt,
+                                            fetchpriority: 'auto',
+                                            loading: 'lazy'
+                                    }}
+                                {% endif %}
                             </div>
                             <div class="support-content">
-                                <div class="text"><b>Official sleep system supplier 2025/2026</b></div>
-                                <div class="text text-sm">Giro d’Italia / Tour de France / Vuelta a Espana</div>
+                                {%- if section.settings.sup_title != blank -%}
+                                <div class="text"><b>{{section.settings.sup_title }}</b></div>
+                                {% endif %}
+                                {%- if section.settings.sup_description != blank -%}
+                                <div class="text text-sm">{{ section.settings.sup_description }}</div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -32,18 +58,33 @@
         </div>
     </div>
     <div class="spacer-md"></div>
-    <div class="motto text-center">pro sport teams trusting seven sundays</div>
+    {%- if section.settings.gallery_title != blank -%}
+    <div class="motto text-center">{{ section.settings.gallery_title }}</div>
+    {% endif %}
+    {% if section.blocks != blank %}
     <div class="marquee type-2">
         <div class="marquee-line" data-speed="0.03" data-direction="false">
             <div class="marquee-item">
                 <div class="marquee-content">
-                    <img width="85" height="23" src="img/partner-logo-4.svg" alt="partner" loading="lazy">
-                    <img width="136" height="16" src="img/partner-logo-5.svg" alt="partner" loading="lazy">
-                    <img width="84" height="16" src="img/partner-logo-6.svg" alt="partner" loading="lazy">
+                    {% for block in section.blocks %}
+                        {%- assign image = block.settings.slide_image -%}
+                        {% if image != blank %}
+                            {{ image 
+                                | image_url: width: image.width
+                                | image_tag: 
+                                    width: image.width,
+                                    height: 'auto',
+                                    alt: image.alt,
+                                    fetchpriority: 'auto',
+                                    loading: 'lazy'
+                            }}
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
+    {% endif %}
     <div class="spacer-lg"></div>
 </div>
 
@@ -86,9 +127,9 @@
       "label": "Supplier title"
     },
     {
-        "type": "text",
-        "id": "sup_description",
-        "label": "Supplier description"
+      "type": "text",
+      "id": "sup_description",
+      "label": "Supplier description"
     },
     {
       "type": "header",
