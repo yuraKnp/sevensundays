@@ -1,0 +1,77 @@
+<div class="section">
+    <div class="banner">
+        <div class="banner-media top-bottom-shadow style-2">
+            {% assign image_object = section.settings.image %}
+            {% assign full_image_url = image_object | img_url: 'master' %}
+            {% assign image_format = image_object.format %}
+            {% if full_image_url != blank %}
+
+            {% assign image_object_mob = section.settings.image_mob %}
+            {% assign full_image_url_mob = image_object | img_url: 'master' %}
+            {% assign image_format_mob = image_object.format %}
+            <picture>
+                <source srcset="{{ full_image_url }}" type="{{ image_format }}"  media="(min-width:768px)">
+                {% if full_image_url_mob != blank %}
+                <source srcset="{{ full_image_url_mob }}" type="{{ image_format_mob }}" media="(max-width:767px)">
+                {% endif %}
+                <img width="380" height="240" src="#" alt="" loading="eager">
+            </picture>
+            {% endif %}
+        </div>
+        <div class="banner-align align-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-5">
+                        <div class="banner-info">
+                            {% if section.settings.title != blank %}
+                            <h1 class="h1 title text-balance">{{ section.settings.title }}</h1>
+                            {% endif %}
+                            {% if section.settings.description != blank %}
+                            <div class="text text-md">{{ section.settings.description }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image banner new",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mob",
+      "label": "Background image mob"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Image banner new",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
