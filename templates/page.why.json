@@ -212,6 +212,44 @@
         "gallery_title": "pro sport teams trusting seven sundays"
       }
     },
+    "three_column_4QExdE": {
+      "type": "three-column",
+      "blocks": {
+        "slide_gWQAtn": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
+            "title": "Premium Material Quality",
+            "description": "Every sleep system is only as good as its components. As an independent manufacturer, we always choose the best materials: Exclusively cold foams with highest density from Europe’s leading manufacturers."
+          }
+        },
+        "slide_EpDt9x": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-2_271fb58a-1317-4729-9ebf-b02049d32a00.webp",
+            "title": "Swiss Design",
+            "description": "We emerged from a Swiss foam manufacturer that has worked with Europe’s best interior brands for decades. Our manufacturing expertise is found in premium furniture from Vitra, Walter Knoll and Rolf Benz."
+          }
+        },
+        "slide_qijHpN": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-4_0a470568-c20b-4430-9231-b9da5271c0cd.webp",
+            "title": "Revolutionarily Sustainable",
+            "description": "While 30 million mattresses are burned annually in Europe, Seven Sundays redefines sustainability: Completely unglued, modular like Lego – every component exchangeable and recyclable."
+          }
+        }
+      },
+      "block_order": [
+        "slide_gWQAtn",
+        "slide_EpDt9x",
+        "slide_qijHpN"
+      ],
+      "name": "Three columns section",
+      "settings": {
+        "title": "Family business with over 40 years of experience and reasearch"
+      }
+    },
     "awards_slider_XwhBJd": {
       "type": "awards-slider",
       "blocks": {
@@ -310,6 +348,7 @@
     "advice_QjPdMt",
     "advisor_UNcFd9",
     "supplier_mKffBi",
+    "three_column_4QExdE",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
     "press_aicD8y"
