@@ -18,6 +18,9 @@
                     {%- if section.settings.title != blank -%}
                     <div class="h2 title">{{ section.settings.title }}</div>
                     {% endif %}
+                    {%- if section.settings.description != blank -%}
+                    <div class="text">{{ section.settings.description }}</div>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -85,6 +88,9 @@
                     {% endif %}
                     {%- if section.settings.title != blank -%}
                     <div class="h2 title">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {%- if section.settings.description != blank -%}
+                    <div class="text">{{ section.settings.description }}</div>
                     {% endif %}
                 </div>
             </div>
@@ -175,6 +181,11 @@
         "type": "text",
         "id": "subtitle",
         "label": "Subtitle"
+    },
+    {
+        "type": "text",
+        "id": "description",
+        "label": "Description"
     },
     {
       "type": "select",
