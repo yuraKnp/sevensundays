@@ -1,0 +1,116 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "awards_slider_XwhBJd": {
+      "type": "awards-slider",
+      "blocks": {
+        "slide_YtVD9P": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-1.svg",
+            "name": "German Brand Award Winner",
+            "year": "2024"
+          }
+        },
+        "slide_VdRxjP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-2.svg",
+            "name": "Europe's fastest growing companies",
+            "year": "2023"
+          }
+        },
+        "slide_kNJwxe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-3.svg",
+            "name": "Innovation Prize Ergonomics Winner",
+            "year": "2022"
+          }
+        },
+        "slide_Lk3Wfw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-4.svg",
+            "name": "German Design Award Winner",
+            "year": "2019"
+          }
+        }
+      },
+      "block_order": [
+        "slide_YtVD9P",
+        "slide_VdRxjP",
+        "slide_kNJwxe",
+        "slide_Lk3Wfw"
+      ],
+      "name": "Awards slider",
+      "settings": {}
+    },
+    "testimonial_slider_WQiFem": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "slide_qYBD34": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-2.webp",
+            "tags": "real sleep, real stories",
+            "name": "Thomas K.",
+            "job": "Tech Executive",
+            "slide_desc": "As someone who travels frequently, I was skeptical about yet another sleep solution. But Seven Sundays has transformed my sleep quality. Even after long flights, I can adjust the system and get restorative sleep immediately."
+          }
+        },
+        "slide_3fAjHr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-1.webp",
+            "tags": "real sleep, real stories",
+            "name": "Jan Donovan",
+            "job": "Olympic Swimmer",
+            "slide_desc": "In swimming, recovery decides everything. Seven Sundays helps me recharge deeper, wake up sharper, and find the energy to push further, day after day."
+          }
+        }
+      },
+      "block_order": [
+        "slide_qYBD34",
+        "slide_3fAjHr"
+      ],
+      "name": "Testimonial slider",
+      "settings": {}
+    },
+    "press_aicD8y": {
+      "type": "press",
+      "name": "Press section",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Get the award-winning sleep system that changes everything",
+        "subtitle": "crafted to change everything",
+        "short_description": "Learn to know and love the modular sleep system with all its benefits and wake up like its Sunday morning, every morning.",
+        "link_text": "Get Sleep System",
+        "link_url": "#test"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "awards_slider_XwhBJd",
+    "testimonial_slider_WQiFem",
+    "press_aicD8y"
+  ]
+}
