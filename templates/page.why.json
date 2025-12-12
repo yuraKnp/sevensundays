@@ -29,10 +29,21 @@
             "job": "Tech Executive",
             "slide_desc": "As someone who travels frequently, I was skeptical about yet another sleep solution. But Seven Sundays has transformed my sleep quality. Even after long flights, I can adjust the system and get restorative sleep immediately."
           }
+        },
+        "slide_3fAjHr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-1.webp",
+            "tags": "real sleep, real stories",
+            "name": "Jan Donovan",
+            "job": "Olympic Swimmer",
+            "slide_desc": "In swimming, recovery decides everything. Seven Sundays helps me recharge deeper, wake up sharper, and find the energy to push further, day after day."
+          }
         }
       },
       "block_order": [
-        "slide_qYBD34"
+        "slide_qYBD34",
+        "slide_3fAjHr"
       ],
       "name": "Testimonial slider",
       "settings": {}
