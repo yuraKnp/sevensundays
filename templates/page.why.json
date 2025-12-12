@@ -61,6 +61,39 @@
         "title": "It’s time to celebrate sleep, again"
       }
     },
+    "horizontal_slider_8kbf6a": {
+      "type": "horizontal-slider",
+      "blocks": {
+        "slide_mzgPKr": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-5.webp",
+            "slide_heading": "Adjustment in seconds",
+            "slide_desc": "Because no two bodies are the same, your system adapts instantly to you.",
+            "slide_tag": "Adjustment"
+          }
+        },
+        "slide_RACthp": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-6.webp",
+            "slide_heading": "Always in alignment",
+            "slide_desc": "Designed for ergonomic balance and optimal cervical support.",
+            "slide_tag": "Alignment"
+          }
+        }
+      },
+      "block_order": [
+        "slide_mzgPKr",
+        "slide_RACthp"
+      ],
+      "name": "Vertical slider",
+      "settings": {
+        "title": "A sophisticated modular sleep system that changes everything",
+        "subtitle": "Our solution",
+        "section_color": "light"
+      }
+    },
     "awards_slider_XwhBJd": {
       "type": "awards-slider",
       "blocks": {
@@ -154,6 +187,7 @@
   "order": [
     "main",
     "time_WzFBTt",
+    "horizontal_slider_8kbf6a",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
     "press_aicD8y"
