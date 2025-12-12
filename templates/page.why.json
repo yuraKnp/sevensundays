@@ -169,9 +169,47 @@
       ],
       "name": "Advisor",
       "settings": {
-        "title": "Our scientific<br>advisory board",
+        "title": "Our scientificadvisory board",
         "subtitle": "recovery experts at your side",
         "description": "Seven Sundays has partnered with renowned medical experts who are leaders in their respective fields. They support Seven Sundays in developing the modular sleep system based on precise, cutting-edge science in health & longevity."
+      }
+    },
+    "supplier_mKffBi": {
+      "type": "supplier",
+      "blocks": {
+        "slide_ipAGWr": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/partner-logo-4.svg"
+          }
+        },
+        "slide_LkBwwL": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/partner-logo-5.svg"
+          }
+        },
+        "slide_4mmnzn": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/partner-logo-6.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ipAGWr",
+        "slide_LkBwwL",
+        "slide_4mmnzn"
+      ],
+      "name": "Supplier",
+      "settings": {
+        "banner_main_image": "shopify://shop_images/why-banner-2.webp",
+        "title": "“Because the miliseconds decide, we only rely on the best”",
+        "description": "Official sleep system supplier to Red Bull BORA-hansgrohe. The entire team recovers on SEVEN SUNDAYS – from training to Grand Tour competition.",
+        "sup_logo": "shopify://shop_images/support-logo-1.svg",
+        "sup_title": "Official sleep system supplier 2025/2026",
+        "sup_description": "Giro d’Italia / Tour de France / Vuelta a Espana",
+        "gallery_title": "pro sport teams trusting seven sundays"
       }
     },
     "awards_slider_XwhBJd": {
@@ -271,6 +309,7 @@
     "insight_imFNQp",
     "advice_QjPdMt",
     "advisor_UNcFd9",
+    "supplier_mKffBi",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
     "press_aicD8y"
