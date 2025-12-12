@@ -105,12 +105,57 @@
         "link_text": "Get Sleep System",
         "link_url": "#test"
       }
+    },
+    "time_WzFBTt": {
+      "type": "time",
+      "blocks": {
+        "slide_RTxYBe": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Sleep is the essence of performance",
+            "slide_desc": "Perfected by nature over millions of years, restorative sleep remains the ultimate regeneration program for body and mind – an irreplaceable biological masterpiece no technology can replicate."
+          }
+        },
+        "slide_V3zbVT": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Yet bad sleep became acceptable – with dire consequences",
+            "slide_desc": "Industrial and digital revolutions disrupted our natural sleep cycles. Factory work brought artificial light and fractured rhythms. The digital age introduced constant stimulation and \"always-on\" mentality our brains weren't designed for. Today, you're paying the price: declining health, diminished performance, compromised wellbeing."
+          }
+        },
+        "slide_3Q73dE": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "The mattress industry exploited this crisis",
+            "slide_desc": "Instead of solving the problem, a multi-billion dollar industry promised \"one mattress fits all\" – mass-produced products with massive margins. The result: over 30 million discarded mattresses annually in Europe, and even more people with bad sleep. Can a 20-year-old athlete really need the same support as a 75-year-old with arthritis?"
+          }
+        },
+        "slide_XVQXK8": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "The mattress industry exploited this crisis",
+            "slide_desc": "Just as your body is unique, no single sleep surface can serve everyone. Personalized, modular sleep systems finally return control to you – giving you the key to unlock restorative rest tailored to your body. Return to sleep's original purpose: essential regeneration enabling your peak performance."
+          }
+        }
+      },
+      "block_order": [
+        "slide_RTxYBe",
+        "slide_V3zbVT",
+        "slide_3Q73dE",
+        "slide_XVQXK8"
+      ],
+      "name": "Time",
+      "settings": {
+        "image": "shopify://shop_images/time-1.webp",
+        "title": "It’s time to celebrate sleep, again"
+      }
     }
   },
   "order": [
     "main",
     "awards_slider_XwhBJd",
     "testimonial_slider_WQiFem",
-    "press_aicD8y"
+    "press_aicD8y",
+    "time_WzFBTt"
   ]
 }
