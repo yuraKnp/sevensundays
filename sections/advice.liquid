@@ -38,8 +38,9 @@
                             <div class="text">{{ section.settings.left_desctription }}</div>
                             {% endif %}
                             {% if section.settings.left_button_link != blank %}
+                            {% assign link_text = section.settings.left_button_link_text | default: 'Read Study' %}
                             <a href="{{ section.settings.left_button_link }}" class="btn btn-blur">
-                                <b>{{- section.settings.left_button_link | escape -}}</b>
+                                <b>{{ link_text }}</b>
                             </a>
                             {% endif %}
                         </div>
@@ -112,6 +113,11 @@
       "type": "url",
       "id": "left_button_link",
       "label": "Left link"
+    },
+    {
+      "type": "text",
+      "id": "left_button_link_text",
+      "label": "Left link text"
     },
     {
       "type": "header",
