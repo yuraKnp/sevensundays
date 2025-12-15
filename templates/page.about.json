@@ -87,6 +87,28 @@
         "position": "Co-Founder & Inventor of the Modular Sleep System"
       }
     },
+    "three_columns_section_xK8rmF": {
+      "type": "three-columns-section",
+      "blocks": {
+        "slide_3fAWaa": {
+          "type": "slide",
+          "settings": {
+            "number": "01",
+            "title": "Personalized like everything else",
+            "description": "From fitness to nutrition—now your sleep finally catches up."
+          }
+        }
+      },
+      "block_order": [
+        "slide_3fAWaa"
+      ],
+      "name": "Three columns (no bg)",
+      "settings": {
+        "subtitle": "THE FUTURE OF SLEEP",
+        "title": "Sleep deserves<br> to evolve with you",
+        "short_desc": "We believe your mattress should adapt to your life—not the other way around."
+      }
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -112,6 +134,7 @@
     "image_banner_new_PHnfqq",
     "innovating_7CDdhn",
     "story_section_D3YUVx",
+    "three_columns_section_xK8rmF",
     "press_aicD8y",
     "main"
   ]
