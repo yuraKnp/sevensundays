@@ -1,0 +1,87 @@
+<div class="section sec-padd padd-xl-lg gradient-2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="title-shortcode text-center">
+                    <div class="motto">from insight to innovation</div>
+                    <div class="h2 title no-balance">When the Expert Became the Customer</div>
+                    <div class="text text-md">In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="simple-img">
+                    <picture>
+                        <source srcset="img/expert-become.webp" type="image/webp">
+                        <source srcset="img/expert-become.jpg" type="image/jpg">
+                        <img width="380" height="240" src="#" alt="" loading="lazy">
+                    </picture>
+
+                    <div class="customer-review">
+                        <div class="title h6">“After decades crafting comfort for others, I realized the best design isn’t just what looks impressive — it must also genuinely benefit its user.”</div>
+                        <div class="customer-info">
+                            <div class="text"><b>Reinhard Maier</b></div>
+                            <div class="text text-sm">Co-Founder & Inventor of the Modular Sleep System</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Story section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "descroption",
+      "label": "Description"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "name",
+      "label": "Name"
+    },
+    {
+      "type": "text",
+      "id": "position",
+      "label": "Position"
+    },
+  ],
+  "presets": [
+        {
+      "name": "Story section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
