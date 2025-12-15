@@ -429,16 +429,51 @@
             </div>
             {% endform %}
 
-            {% form 'localization' %}
-            <select name="locale" id="localization_form_locale" onchange="this.form.submit()">
-              {% for language in localization.available_languages %}
-                <option value="{{ language.iso_code }}" 
-                        {% if language.iso_code == localization.language.iso_code %}selected{% endif %}
-                >
-                  {{ language.name }}
-                </option>
-              {% endfor %}
-            </select>
+            {% comment %} 
+            This outer tag MUST wrap your entire language selector structure.
+            It ensures the form submission is handled correctly by Shopify. 
+          {% endcomment %}
+          {% form 'localization' %} 
+
+              <div class="h-lang-wrap">
+                  
+                  {% comment %} Displays the currently selected language name {% endcomment %}
+                  <div class="current-lang">
+                      <span>{{ localization.language.name }}</span>
+                  </div>
+                  
+                  {% comment %} The list/dropdown of available languages {% endcomment %}
+                  <ul class="h-lang">
+                      {% for language in localization.available_languages %}
+                          
+                          {% comment %} Only show languages that are NOT the current one {% endcomment %}
+                          {% if language.iso_code != localization.language.iso_code %}
+                          
+                              <li data-lang-code="{{ language.iso_code }}">
+                                  
+                                  {% comment %} 
+                                    The button submits the form. name="locale_code" and 
+                                    value="{{ language.iso_code }}" are critical. 
+                                    We display the full name inside the span for clarity.
+                                  {% endcomment %}
+                                  <button type="submit" 
+                                          name="locale_code" 
+                                          value="{{ language.iso_code | escape }}" 
+                                          class="lang-switch-button"
+                                  >
+                                      <span>{{ language.name }}</span> 
+                                      
+                                      {% comment %} Use .name for full name, .iso_code for 'en', 'fr', etc. {% endcomment %}
+                                      
+                                  </button>
+                              </li>
+                              
+                          {% endif %}
+                      {% endfor %}
+                  </ul>
+                  
+              </div>
+              
           {% endform %}
             <div class="h-cart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
