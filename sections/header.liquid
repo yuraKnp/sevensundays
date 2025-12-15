@@ -332,6 +332,9 @@
                 {% comment %} <img width="229" height="16" src="img/logo-white.svg" alt="" loading="eager">
                 <img width="229" height="16" src="img/logo-black.svg" alt="" loading="eager"> {% endcomment %}
             </a>
+
+            {% assign featured_product = section.settings.featured_product %}
+
             <div class="h-menu">
                 <nav class="h-links">
                     <ul>
@@ -340,6 +343,60 @@
                         {%- endfor -%}
                     </ul>
                 </nav>
+                <div class="h-menu-bottom">
+                    {% if featured_product != blank %}
+                    {% assign thumbnail_image = featured_product.featured_image %}
+                    {% assign image_format = image_object.format %}
+                    <div class="product-item-wrapp">
+                        <div class="product-item">
+                            <div class="pr-content">
+                                <div class="text"><b>From {{ featured_product.price | money }}</b></div>
+                                <div class="text">{{ featured_product.title }}</div>
+                            </div>
+                            <a href="{{ featured_product.url }}" class="btn">
+                                <b>{{ 'general.menu.get_sleep_system' | t }}</b>
+                            </a>
+                            {% if thumbnail_image != blank %}
+                            <div class="product-img">
+                                <picture>
+                                    <source srcset="{{ thumbnail_image | img_url: 'medium' }}" type="{{ image_format }}">
+                                    <img width="380" height="240" src="#" alt="{{ thumbnail_image.alt | escape }}" loading="lazy">
+                                </picture>
+                            </div>
+                            {%  endif %}
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="lang-social">
+                        <div class="h-lang-wrap">
+                            <div class="current-lang">
+                                <span>English</span>
+                            </div>
+                            <ul class="h-lang">
+                                <li><a href="index.php"><span>German</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="instagram">
+                                        <img width="16" height="16" src="img/icons/icon-instagram-2.svg" alt="" loading="lazy">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="facebook">
+                                        <img width="16" height="16" src="img/icons/icon-facebook-2.svg" alt="" loading="lazy">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="linkedin">
+                                        <img width="16" height="16" src="img/icons/icon-linkedin-2.svg" alt="" loading="lazy">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="h-lang-wrap">
                 <div class="current-lang">
@@ -565,7 +622,16 @@
       ],
       "default": "light",
       "label": "Header type"
-    }, 
+    },
+    {
+      "type": "header",
+      "content": "Product in mobile menu"
+    },
+    {
+      "type": "product",
+      "id": "featured_product",
+      "label": "Select a Featured Product"
+    },
     {
       "type": "select",
       "id": "mobile_logo_position",
