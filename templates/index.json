@@ -106,27 +106,27 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/sleep-img-1.webp",
-            "slide_heading": "For Active Regeneration",
-            "slide_desc": "Lightly springy sleep sensations with support for natural movement sequences. Promotes muscle and fascia regeneration during night rest.",
-            "slide_tag": "Revitalizing"
+            "slide_heading": "Für aktive Regeneration",
+            "slide_desc": "Federnde Unterstützung für natürliche Bewegung und dadurch die Muskel- und Faszien-Regeneration.",
+            "slide_tag": "Vitalisierend"
           }
         },
         "slide_e7YppJ": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/sleep-img-1.webp",
-            "slide_heading": "For Deep Relaxation",
-            "slide_desc": "Weightless sleep sensations with memory effect to minimize movement interruptions. Reduces pressure points and optimizes circulation.",
-            "slide_tag": "Revitalizing"
+            "slide_heading": "Für tiefe Entspannung",
+            "slide_desc": "Memory-Effekt für schwereloses Liegen. Beruhigt, entlastet und fördert Durchblutung.",
+            "slide_tag": "Beruhigend"
           }
         },
         "slide_dmtXfR": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/sleep-img-1.webp",
-            "slide_heading": "For Active Regeneration",
-            "slide_desc": "Lightly springy sleep sensations with support for natural movement sequences. Promotes muscle and fascia regeneration during night rest.",
-            "slide_tag": "Revitalizing"
+            "slide_heading": "Für aktive Regeneration",
+            "slide_desc": "Federnde Unterstützung für natürliche Bewegung und dadurch die Muskel- und Faszien-Regeneration.",
+            "slide_tag": "Vitalisierend"
           }
         }
       },
@@ -189,8 +189,8 @@
       ],
       "name": "Vertical slider",
       "settings": {
-        "title": "With Seven Sundays sleep finally gets easy",
-        "subtitle": "a smarter way to rest",
+        "title": "Mit Seven Sundayswird Schlaf endlich einfach",
+        "subtitle": "  EIN SMARTERER WEG ZUR ERHOLUNG",
         "description": "",
         "section_color": "dark"
       }
