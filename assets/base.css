@@ -3643,7 +3643,9 @@ main.type2 > .section:first-child{
   height: revert-layer;
 }
 
-.h-lang button{
+.h-lang button,
+.h-lang li,
+.h-lang ul{
   cursor: pointer;
 }
 
