@@ -176,11 +176,20 @@
             "title": "Infinite configurations",
             "description": ""
           }
+        },
+        "slide_hBFAaG": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-4_0a470568-c20b-4430-9231-b9da5271c0cd.webp",
+            "title": "30 seconds to transform",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "slide_nb9JGJ",
-        "slide_hN46Lk"
+        "slide_hN46Lk",
+        "slide_hBFAaG"
       ],
       "name": "Three columns section",
       "settings": {
