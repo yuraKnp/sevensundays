@@ -179,6 +179,50 @@
         "short_desc": "The Modular Sleep System — inspired by Swiss precision, built on the building block."
       }
     },
+    "philosofy_LcwnKg": {
+      "type": "philosofy",
+      "blocks": {
+        "slide_rBF8hJ": {
+          "type": "slide",
+          "settings": {
+            "title": "Premium European Materials Only",
+            "description": "Cold foams with highest density and premium textiles from Europe’s leading manufacturers. No compromises on quality or origin."
+          }
+        },
+        "slide_hRqBxb": {
+          "type": "slide",
+          "settings": {
+            "title": "Handcrafted Excellence",
+            "description": "Every system individually crafted in our Swiss manufactory. The same meticulous attention to detail that premium furniture brands have trusted for over 40 years."
+          }
+        },
+        "slide_Jgfdri": {
+          "type": "slide",
+          "settings": {
+            "title": "Individual Optimization",
+            "description": "True sleep improvement only works individually. That’s why we listen, learn, and innovate together with our customers."
+          }
+        },
+        "slide_UCEYwF": {
+          "type": "slide",
+          "settings": {
+            "title": "Closed-Loop Design",
+            "description": "Built to last, repair, and evolve. Individual components can be replaced or upgraded without discarding the entire system."
+          }
+        }
+      },
+      "block_order": [
+        "slide_rBF8hJ",
+        "slide_hRqBxb",
+        "slide_Jgfdri",
+        "slide_UCEYwF"
+      ],
+      "name": "Left sticky slider",
+      "settings": {
+        "subtitle": "SWISS DESIGN PHILOSOPHY",
+        "title": "Where function meets beautiful craftsmanship"
+      }
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -198,54 +242,6 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "philosofy_LcwnKg": {
-      "type": "philosofy",
-      "blocks": {
-        "slide_rBF8hJ": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/philosophy-1.svg",
-            "title": "Premium European Materials Only",
-            "description": "Cold foams with highest density and premium textiles from Europe’s leading manufacturers. No compromises on quality or origin."
-          }
-        },
-        "slide_hRqBxb": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/philosophy-2.svg",
-            "title": "Handcrafted Excellence",
-            "description": "Every system individually crafted in our Swiss manufactory. The same meticulous attention to detail that premium furniture brands have trusted for over 40 years."
-          }
-        },
-        "slide_Jgfdri": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/philosophy-3.svg",
-            "title": "Individual Optimization",
-            "description": "True sleep improvement only works individually. That’s why we listen, learn, and innovate together with our customers."
-          }
-        },
-        "slide_UCEYwF": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/philosophy-4.svg",
-            "title": "Closed-Loop Design",
-            "description": "Built to last, repair, and evolve. Individual components can be replaced or upgraded without discarding the entire system."
-          }
-        }
-      },
-      "block_order": [
-        "slide_rBF8hJ",
-        "slide_hRqBxb",
-        "slide_Jgfdri",
-        "slide_UCEYwF"
-      ],
-      "name": "Left sticky slider",
-      "settings": {
-        "subtitle": "SWISS DESIGN PHILOSOPHY",
-        "title": "Where function meets beautiful craftsmanship"
-      }
     }
   },
   "order": [
@@ -255,8 +251,8 @@
     "three_columns_section_xK8rmF",
     "background_video_gXPVqU",
     "three_column_6L9zAp",
+    "philosofy_LcwnKg",
     "press_aicD8y",
-    "main",
-    "philosofy_LcwnKg"
+    "main"
   ]
 }
