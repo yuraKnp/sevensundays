@@ -227,26 +227,6 @@
         "title": "Where function meets beautiful craftsmanship"
       }
     },
-    "press_aicD8y": {
-      "type": "press",
-      "name": "Press section",
-      "settings": {
-        "image": "shopify://shop_images/cta-video.webp",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
-        "link_url": "#test"
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "innovation_fFRgcP": {
       "type": "innovation",
       "blocks": {
@@ -285,6 +265,26 @@
         "title": "Our Core Belief: Human Connection Drives Innovation",
         "desc": "<p>Sleep is deeply personal. What works for one person may fail for another. That’s why our process starts with understanding you.</p>"
       }
+    },
+    "press_aicD8y": {
+      "type": "press",
+      "name": "Press section",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "title": "Press & Media",
+        "subtitle": "stories worth sharing",
+        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
+        "link_text": "Download Press Kit",
+        "link_url": "#test"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
@@ -295,8 +295,8 @@
     "background_video_gXPVqU",
     "three_column_6L9zAp",
     "philosofy_LcwnKg",
+    "innovation_fFRgcP",
     "press_aicD8y",
-    "main",
-    "innovation_fFRgcP"
+    "main"
   ]
 }
