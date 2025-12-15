@@ -157,6 +157,44 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "three_column_6L9zAp": {
+      "type": "three-column",
+      "blocks": {
+        "slide_nb9JGJ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
+            "title": "Three unglued layers",
+            "description": ""
+          }
+        },
+        "slide_hN46Lk": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/about-banner-img.webp",
+            "title": "Infinite configurations",
+            "description": ""
+          }
+        },
+        "slide_hBFAaG": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-4_0a470568-c20b-4430-9231-b9da5271c0cd.webp",
+            "title": "30 seconds to transform",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_nb9JGJ",
+        "slide_hN46Lk",
+        "slide_hBFAaG"
+      ],
+      "name": "Three columns section",
+      "settings": {
+        "title": "The Swiss Army Knife of Sleep"
+      }
     }
   },
   "order": [
@@ -166,6 +204,7 @@
     "three_columns_section_xK8rmF",
     "background_video_gXPVqU",
     "press_aicD8y",
-    "main"
+    "main",
+    "three_column_6L9zAp"
   ]
 }
