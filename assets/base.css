@@ -3639,5 +3639,6 @@ main.type2 > .section:first-child{
 
 
 :is(img,svg,iframe){
-  width: 100%!important;
+  width: revert-layer;
+  height: revert-layer;
 }
