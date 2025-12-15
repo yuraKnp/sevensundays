@@ -19,7 +19,7 @@
             <div class="col-xl-10">
                 <div class="simple-img">
                     {%- assign image = section.settings.image -%}
-                    {% assign image_url = image | image_url: 'master' %}
+                    {% assign image_url = image | image_url %}
                     {% assign image_format = image.format %}              
                     <picture>
                         <source srcset="{{ image_url }}" type="{{ image_format }}">
