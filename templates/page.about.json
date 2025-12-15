@@ -22,18 +22,56 @@
     "innovating_7CDdhn": {
       "type": "innovating",
       "blocks": {
+        "image_8awy9t": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-1.svg"
+          }
+        },
         "image_98YHQX": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-2.svg"
+          }
+        },
+        "image_KD8GGE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-3.svg"
+          }
+        },
+        "image_wJ3f3m": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-4.svg"
+          }
+        },
+        "image_GYHwbj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-5.svg"
+          }
+        },
+        "image_dWxCX9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-6.svg"
+          }
         }
       },
       "block_order": [
-        "image_98YHQX"
+        "image_8awy9t",
+        "image_98YHQX",
+        "image_KD8GGE",
+        "image_wJ3f3m",
+        "image_GYHwbj",
+        "image_dWxCX9"
       ],
       "name": "Innovating",
       "settings": {
         "title": "Decades innovating for Europe’s most iconic brands",
-        "description": "In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating."
+        "description": "In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.",
+        "description_b_g": "Brands we worked with"
       }
     },
     "press_aicD8y": {
