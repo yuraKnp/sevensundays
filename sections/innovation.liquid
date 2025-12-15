@@ -4,11 +4,11 @@
             <div class="col-lg-6 col-xl-5">
                 <div class="sticky-block">
                     <div class="title-shortcode mb-md">
-                        {% if section.settings.subtitle != blank %}
-                        <div class="h2 title">{{ section.settings.subtitle }}</div>
-                        {%  endif %}
                         {% if section.settings.title != blank %}
-                        <div class="text text-md">{{ section.settings.title }}</div>
+                        <div class="h2 title">{{ section.settings.title }}</div>
+                        {%  endif %}
+                        {% if section.settings.desc != blank %}
+                        <div class="text text-md">{{ section.settings.desc }}</div>
                         {% endif %}
                     </div>
                 </div>
@@ -57,13 +57,13 @@
   "settings": [
     {
       "type": "text",
-      "id": "subtitle",
-      "label": "Subtitle"
-    },
-    {
-      "type": "text",
       "id": "title",
       "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "desc",
+      "label": "Description"
     },
   ],
   "blocks": [
