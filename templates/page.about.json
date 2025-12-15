@@ -168,10 +168,19 @@
             "title": "Three unglued layers",
             "description": ""
           }
+        },
+        "slide_hN46Lk": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/about-banner-img.webp",
+            "title": "Infinite configurations",
+            "description": ""
+          }
         }
       },
       "block_order": [
-        "slide_nb9JGJ"
+        "slide_nb9JGJ",
+        "slide_hN46Lk"
       ],
       "name": "Three columns section",
       "settings": {
