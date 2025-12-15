@@ -74,6 +74,19 @@
         "description_b_g": "Brands we worked with"
       }
     },
+    "story_section_D3YUVx": {
+      "type": "story-section",
+      "name": "Story section",
+      "settings": {
+        "subtitle": "from insight to innovation",
+        "title": "When the Expert Became the Customer",
+        "description": "In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.",
+        "image": "shopify://shop_images/expert-become.webp",
+        "quote": "After decades crafting comfort for others, I realized the best design isn’t just what looks impressive — it must also genuinely benefit its user.",
+        "name": "Reinhard Maier",
+        "position": "Co-Founder & Inventor of the Modular Sleep System"
+      }
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -98,6 +111,7 @@
   "order": [
     "image_banner_new_PHnfqq",
     "innovating_7CDdhn",
+    "story_section_D3YUVx",
     "press_aicD8y",
     "main"
   ]
