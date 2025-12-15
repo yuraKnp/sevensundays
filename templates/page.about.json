@@ -97,10 +97,28 @@
             "title": "Personalized like everything else",
             "description": "From fitness to nutrition—now your sleep finally catches up."
           }
+        },
+        "slide_BnENgX": {
+          "type": "slide",
+          "settings": {
+            "number": "02",
+            "title": "Built for what matters most",
+            "description": "Better heart health, sharper focus, faster recovery. Sleep is the foundation."
+          }
+        },
+        "slide_p7AY8A": {
+          "type": "slide",
+          "settings": {
+            "number": "03",
+            "title": "Designed to grow with you",
+            "description": "Your body changes through pregnancy, injury, aging, lifestyle. Your mattress should too."
+          }
         }
       },
       "block_order": [
-        "slide_3fAWaa"
+        "slide_3fAWaa",
+        "slide_BnENgX",
+        "slide_p7AY8A"
       ],
       "name": "Three columns (no bg)",
       "settings": {
