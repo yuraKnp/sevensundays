@@ -3642,3 +3642,12 @@ main.type2 > .section:first-child{
   width: revert-layer;
   height: revert-layer;
 }
+
+.h-lang button{
+  cursor: pointer;
+}
+
+.h-lang button:hover span{
+  color: var(--clr-primary);
+
+}
