@@ -157,6 +157,26 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "three_column_6L9zAp": {
+      "type": "three-column",
+      "blocks": {
+        "slide_nb9JGJ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
+            "title": "Three unglued layers",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_nb9JGJ"
+      ],
+      "name": "Three columns section",
+      "settings": {
+        "title": "The Swiss Army Knife of Sleep"
+      }
     }
   },
   "order": [
@@ -166,6 +186,7 @@
     "three_columns_section_xK8rmF",
     "background_video_gXPVqU",
     "press_aicD8y",
-    "main"
+    "main",
+    "three_column_6L9zAp"
   ]
 }
