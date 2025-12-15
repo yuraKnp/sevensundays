@@ -1,0 +1,71 @@
+<div class="section padd-lg sec-black">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-xl-4">
+                <div class="sticky-block">
+                    <div class="title-shortcode mb-32">
+                        <div class="h3 title">Decades innovating for Europe’s most iconic brands</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text text-md mb-md">In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.</div>
+                <div class="motto">Brands we worked with</div>
+                <div class="brands">
+                    <div class="brand"><img width="93" height="30" src="img/brand-logo-1.svg" alt="brand" loading="lazy"></div>
+                    <div class="brand"><img width="116" height="26" src="img/brand-logo-2.svg" alt="brand" loading="lazy"></div>
+                    <div class="brand"><img width="69" height="46" src="img/brand-logo-3.svg" alt="brand" loading="lazy"></div>
+                    <div class="brand"><img width="163" height="32" src="img/brand-logo-4.svg" alt="brand" loading="lazy"></div>
+                    <div class="brand"><img width="108" height="28" src="img/brand-logo-5.svg" alt="brand" loading="lazy"></div>
+                    <div class="brand"><img width="163" height="15" src="img/brand-logo-6.svg" alt="brand" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Innovating",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Gallery Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+      ]
+    }
+  ],
+  "presets": [
+        {
+      "name": "Innovating",
+      "blocks": [
+        {
+          "type": "image"
+        },
+      ]
+    }
+  ]
+}
+{% endschema %}

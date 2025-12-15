@@ -128,31 +128,28 @@ jQuery(function ($) {
 
 
     //fixed section
-    const banner = document.querySelector('.fixed-sec');
-    const bannerMedia = document.querySelector('.fixed-sec .banner-media img');
+    if($('.fixed-sec').length){
+        const banner = document.querySelector('.fixed-sec');
+        const bannerMedia = document.querySelector('.fixed-sec .banner-media img');
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.boundingClientRect.top <= 0 && !entry.isIntersecting) {
-                bannerMedia.style.position = 'absolute';
-                bannerMedia.style.top = '0';
-            } 
-            else {
-                bannerMedia.style.position = 'fixed';
-                bannerMedia.style.top = '0';
-            }
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top <= 0 && !entry.isIntersecting) {
+                    bannerMedia.style.position = 'absolute';
+                    bannerMedia.style.top = '0';
+                } 
+                else {
+                    bannerMedia.style.position = 'fixed';
+                    bannerMedia.style.top = '0';
+                }
+            });
+        }, {
+            threshold: 0,
+            rootMargin: '0px'
         });
-    }, {
-        threshold: 0,
-        rootMargin: '0px'
-    });
 
-    if(banner){
         observer.observe(banner);
     }
-    
-
-
 
 
     //*===========
