@@ -128,27 +128,31 @@ jQuery(function ($) {
 
 
     //fixed section
-    if($('.fixed-sec').length){
-        const banner = document.querySelector('.fixed-sec');
-        const bannerMedia = document.querySelector('.fixed-sec .banner-media img');
+    if ($('.fixed-sec').length) {
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.boundingClientRect.top <= 0 && !entry.isIntersecting) {
-                    bannerMedia.style.position = 'absolute';
-                    bannerMedia.style.top = '0';
-                } 
-                else {
-                    bannerMedia.style.position = 'fixed';
-                    bannerMedia.style.top = '0';
-                }
-            });
-        }, {
-            threshold: 0,
-            rootMargin: '0px'
-        });
+        const section = document.querySelector('.fixed-sec');
+        const bannerMedia = section.querySelector('.banner-media img');
+        const lastStep = section.querySelector('.step-item:last-child');
 
-        observer.observe(banner);
+        function handleScroll() {
+            const lastStepRect = lastStep.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+
+            const isLastStepAtBottom = lastStepRect.bottom <= viewportHeight;
+
+            if (isLastStepAtBottom) {
+                bannerMedia.style.position = 'absolute';
+                bannerMedia.style.bottom = '0';
+            } else {
+                bannerMedia.style.position = 'fixed';
+                bannerMedia.style.bottom = '0';
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+
+        handleScroll();
     }
 
 
