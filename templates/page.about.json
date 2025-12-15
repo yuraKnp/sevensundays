@@ -246,6 +246,27 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "innovation_fFRgcP": {
+      "type": "innovation",
+      "blocks": {
+        "slide_dUU7xf": {
+          "type": "slide",
+          "settings": {
+            "number": "Step 1",
+            "title": "Listen & Learn",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_dUU7xf"
+      ],
+      "name": "Left sticky text",
+      "settings": {
+        "title": "Our Core Belief: Human Connection Drives Innovation",
+        "desc": "<p>Sleep is deeply personal. What works for one person may fail for another. That’s why our process starts with understanding you.</p>"
+      }
     }
   },
   "order": [
@@ -257,6 +278,7 @@
     "three_column_6L9zAp",
     "philosofy_LcwnKg",
     "press_aicD8y",
-    "main"
+    "main",
+    "innovation_fFRgcP"
   ]
 }
