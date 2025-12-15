@@ -350,7 +350,7 @@
                     <div class="product-item-wrapp">
                         <div class="product-item">
                             <div class="pr-content">
-                                <div class="text"><b>From {{ featured_product.price | money }}</b></div>
+                                <div class="text"><b>{{ 'general.menu.from' | t }} {{ featured_product.price | money }}</b></div>
                                 <div class="text">{{ featured_product.title }}</div>
                             </div>
                             <a href="{{ featured_product.url }}" class="btn">

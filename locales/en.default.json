@@ -11,6 +11,7 @@
   "general": {
     "menu":{
       "get_sleep_system": "Get Sleep System",
+      "from": "From",
     },
     "password_page": {
       "login_form_heading": "Enter store using password:",

@@ -11,6 +11,7 @@
   "general": {
     "menu":{
       "get_sleep_system": "Schlafsystem",
+      "from": "Ab",
     },
     "password_page": {
       "login_form_heading": "Shop mit Passwort betreten:",
