@@ -255,12 +255,30 @@
           "settings": {
             "number": "Step 1",
             "title": "Listen & Learn",
-            "description": ""
+            "description": "<p>We start by listening — to your story, habits, and needs. Every consultation begins with understanding how you live, move, and rest.</p><p>Because real improvement starts with empathy, not assumptions.</p>"
+          }
+        },
+        "slide_YCYFc9": {
+          "type": "slide",
+          "settings": {
+            "number": "Step 2",
+            "title": "Analyze & Adapt",
+            "description": "<p>Together, we explore your current sleep situation — posture, comfort zones, tension points. Our experts translate this knowledge into personalized insights that shape your ideal configuration.</p><p>It’s a process built around real people, not generic averages.</p>"
+          }
+        },
+        "slide_39ANta": {
+          "type": "slide",
+          "settings": {
+            "number": "Step 3",
+            "title": "Design for You",
+            "description": "<p>We create a tailored sleep solution that evolves with your life. Your comfort isn’t static — it grows and changes, just like you.</p><p>That’s why we build systems designed to adapt, not just impress.</p>"
           }
         }
       },
       "block_order": [
-        "slide_dUU7xf"
+        "slide_dUU7xf",
+        "slide_YCYFc9",
+        "slide_39ANta"
       ],
       "name": "Left sticky text",
       "settings": {
