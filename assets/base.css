@@ -3636,3 +3636,8 @@ body {font-family: "BasisGrotesqueArabicPro";font-weight: 400;font-size: var(--h
 main.type2 > .section:first-child{
   padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md) - 28px);
 }
+
+
+:is(img,svg,iframe){
+  width: 100%!important;
+}
