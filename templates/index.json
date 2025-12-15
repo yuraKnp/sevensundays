@@ -303,22 +303,22 @@
         "slide_BCecDW": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Family craftsmanship",
-            "slide_desc": "Second-generation expertise with 40 years producing for premium brands like Vitra and Walter Knoll."
+            "slide_heading": "Familienhandwerk",
+            "slide_desc": "Know-how in zweiter Generation mit 40 Jahren Erfahrung in der Produktion für Premiummarken wie Vitra, Walter Knoll und viele mehr."
           }
         },
         "slide_7nULig": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Swiss design",
-            "slide_desc": "Swiss craftsmanship meets uncompromising material selection – only the best for your perfect sleep."
+            "slide_heading": "Schweizer Design",
+            "slide_desc": "Schweizer Handwerkskunst trifft auf kompromisslose Materialauswahl – nur das Beste für deinen perfekten Schlaf."
           }
         },
         "slide_HdkRbJ": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Maximum sustainability",
-            "slide_desc": "Perfect sleep for a lifetime – every part exchangeable, expandable, repairable, forever"
+            "slide_heading": "Maximale Nachhaltigkeit",
+            "slide_desc": "Perfekter Schlaf ein Leben lang. Jedes Teil ist austauschbar, erweiterbar, reparierbar – für immer."
           }
         }
       },
@@ -331,7 +331,7 @@
       "settings": {
         "image": "shopify://shop_images/born-video.webp",
         "hero_video_file": "shopify://files/videos/born-video.mp4",
-        "title": "Born in the Swiss alps and intentionally different",
+        "title": "Geboren in den Schweizer Alpen und bewusst anders",
         "image_logo": "shopify://shop_images/icon-born.svg"
       }
     },
