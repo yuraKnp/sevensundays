@@ -1,10 +1,28 @@
- <div class="section sec-padd padd-xl-lg">
+ {% assign section_type = section.settings.section_type %}
+
+    {% if section_type == 'light' %}
+        {% assign add_class = 'sec-padd' %}
+        {% assign add_class2 = 'button-wrapp pos-3' %}
+        {% assign add_class3 = '' %}
+    {% else %}
+        {% assign add_class = 'sec-black' %}
+        {% assign add_class2 = 'swiper-controls-wrap mt-md' %}
+        {% assign add_class3 = ' style3' %}
+    {% endif %}
+
+ <div class="section {{ add_class }} padd-xl-lg">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="title-shortcode text-center">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
                     {% if section.settings.title != blank %}
                     <div class="h2 title no-balance">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.short_desc != blank %}
+                    <div class="text text-md">{{ section.settings.short_desc }}</div>
                     {% endif %}
                 </div>
             </div>
@@ -57,13 +75,13 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="button-wrapp pos-3">
-                <div class="swiper-button-prev">
+            <div class="{{ add_class2 }}">
+                <div class="swiper-button-prev{{ add_class3 }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M9.99935 15.8332L4.16602 9.99984M4.16602 9.99984L9.99935 4.1665M4.16602 9.99984H15.8327" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="swiper-button-next">
+                <div class="swiper-button-next{{ add_class3 }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M4.16602 9.99984H15.8327M15.8327 9.99984L9.99935 4.1665M15.8327 9.99984L9.99935 15.8332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -85,9 +103,35 @@
   },
   "settings": [
     {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "light",
+          "label": "Light"
+        },
+        {
+          "value": "dark",
+          "label": "Dark"
+        },
+      ],
+      "default": "light",
+      "label": "Section type"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
       "type": "text",
       "id": "title",
       "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "short_desc",
+      "label": "Short description"
     },
   ],
   "blocks": [
