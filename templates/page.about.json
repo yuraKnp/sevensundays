@@ -9,14 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "image_banner_new_PHnfqq": {
       "type": "image-banner-new",
       "name": "Image banner new",
@@ -25,6 +17,23 @@
         "image_mob": "shopify://shop_images/about-banner-img-mob.webp",
         "title": "The Swiss Sleep Manufactory",
         "description": "Two generations of Swiss craftsmanship. One breakthrough that changed everything."
+      }
+    },
+    "innovating_7CDdhn": {
+      "type": "innovating",
+      "blocks": {
+        "image_98YHQX": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_98YHQX"
+      ],
+      "name": "Innovating",
+      "settings": {
+        "title": "Decades innovating for Europe’s most iconic brands",
+        "description": "In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating."
       }
     },
     "press_aicD8y": {
@@ -38,10 +47,19 @@
         "link_text": "Download Press Kit",
         "link_url": "#test"
       }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
     "image_banner_new_PHnfqq",
+    "innovating_7CDdhn",
     "press_aicD8y",
     "main"
   ]
