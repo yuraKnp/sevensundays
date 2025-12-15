@@ -3,26 +3,40 @@
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="title-shortcode text-center">
-                    <div class="motto">from insight to innovation</div>
-                    <div class="h2 title no-balance">When the Expert Became the Customer</div>
-                    <div class="text text-md">In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.</div>
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h2 title no-balance">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.description != blank %}
+                    <div class="text text-md">{{ section.settings.description }}</div>
+                    {% endif %}
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-xl-10">
                 <div class="simple-img">
+                    {%- assign image = section.settings.image -%}
+                    {% assign image_url = image | image_url: 'master' %}
+                    {% assign image_format = image.format %}              
                     <picture>
-                        <source srcset="img/expert-become.webp" type="image/webp">
-                        <source srcset="img/expert-become.jpg" type="image/jpg">
+                        <source srcset="{{ image_url }}" type="{{ image_format }}">
                         <img width="380" height="240" src="#" alt="" loading="lazy">
                     </picture>
 
                     <div class="customer-review">
-                        <div class="title h6">“After decades crafting comfort for others, I realized the best design isn’t just what looks impressive — it must also genuinely benefit its user.”</div>
+                        {% if section.settings.quote != blank %}                       
+                        <div class="title h6">“{{ section.settings.quote }}”</div>
+                        {% endif %}
                         <div class="customer-info">
-                            <div class="text"><b>Reinhard Maier</b></div>
-                            <div class="text text-sm">Co-Founder & Inventor of the Modular Sleep System</div>
+                            {% if section.settings.name != blank %}
+                            <div class="text"><b>{{ section.settings.name }}</b></div>
+                            {% endif %}
+                            {% if section.settings.position != blank %}
+                            <div class="text text-sm">{{ section.settings.position }}</div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -53,7 +67,7 @@
     },
     {
       "type": "inline_richtext",
-      "id": "descroption",
+      "id": "description",
       "label": "Description"
     },
     {
