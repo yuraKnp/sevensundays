@@ -4,21 +4,39 @@
             <div class="col-lg-6 col-xl-4">
                 <div class="sticky-block">
                     <div class="title-shortcode mb-32">
-                        <div class="h3 title">Decades innovating for Europe’s most iconic brands</div>
+                        {% if section.settings.title != blank %}
+                        <div class="h3 title">{{ section.settings.title }}</div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="text text-md mb-md">In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.</div>
-                <div class="motto">Brands we worked with</div>
+                {% if section.settings.description != blank %}
+                <div class="text text-md mb-md">{{ section.settings.description }}</div>
+                {% endif %}
+                {% if section.settings.description_b_g != blank %}
+                <div class="motto">{{ section.settings.description_b_g }}</div>
+                {% endif %}
+                {% if section.blocks != blank %}
                 <div class="brands">
-                    <div class="brand"><img width="93" height="30" src="img/brand-logo-1.svg" alt="brand" loading="lazy"></div>
-                    <div class="brand"><img width="116" height="26" src="img/brand-logo-2.svg" alt="brand" loading="lazy"></div>
-                    <div class="brand"><img width="69" height="46" src="img/brand-logo-3.svg" alt="brand" loading="lazy"></div>
-                    <div class="brand"><img width="163" height="32" src="img/brand-logo-4.svg" alt="brand" loading="lazy"></div>
-                    <div class="brand"><img width="108" height="28" src="img/brand-logo-5.svg" alt="brand" loading="lazy"></div>
-                    <div class="brand"><img width="163" height="15" src="img/brand-logo-6.svg" alt="brand" loading="lazy"></div>
+                    {% for block in section.blocks %}
+                        {%- assign image = block.settings.image -%}
+                        {% if image != blank %}       
+                        <div class="brand">
+                         {{ image 
+                                | image_url: width: image.width
+                                | image_tag: 
+                                    width: image.width,
+                                    height: 'auto',
+                                    alt: image.alt,
+                                    fetchpriority: 'auto',
+                                    loading: 'lazy'
+                            }}
+                        </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -42,6 +60,11 @@
       "type": "inline_richtext",
       "id": "description",
       "label": "Description"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description_b_g",
+      "label": "Text before gallery"
     },
   ],
   "blocks": [
