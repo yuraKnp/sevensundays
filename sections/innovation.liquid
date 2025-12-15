@@ -1,0 +1,100 @@
+<div class="section sec-padd gradient-2">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-xl-5">
+                <div class="sticky-block">
+                    <div class="title-shortcode mb-md">
+                        {% if section.settings.subtitle != blank %}
+                        <div class="h2 title">{{ section.settings.subtitle }}</div>
+                        {%  endif %}
+                        {% if section.settings.title != blank %}
+                        <div class="text text-md">{{ section.settings.title }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% if section.blocks != blank %}
+            <div class="col-lg-6">
+                <div class="innovations">
+                    
+                    {% for block in section.blocks %}
+                    {%- assign number = block.settings.number -%}
+                    {%- assign heading = block.settings.title -%}
+                    {%- assign desc = block.settings.description -%}
+                    <div class="innovation-item">
+                        <div class="left-col">
+                            {% if number != blank %}
+                            <div class="motto">{{ number }}</div>
+                            {% endif %}
+                            {% if heading != blank %}
+                            <div class="text text-md"><b>{{ heading }}</b></div>
+                            {% endif %}
+                        </div>
+                        {% if desc != blank %}
+                        <div class="right-col">
+                            <div class="text">
+                                {{ desc }}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Left sticky slider",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "limit": 5,
+      "settings": [
+        {
+            "type": "text",
+            "id": "number",
+            "label": "Slide number"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "description",
+            "label": "Description"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Left sticky slider",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
