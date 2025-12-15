@@ -373,7 +373,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-1.svg",
-            "name": "German Brand Award Winner",
+            "name": "German Brand Winner 2024",
             "year": "2024"
           }
         },
@@ -381,7 +381,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-2.svg",
-            "name": "Europe's fastest growing companies",
+            "name": "Europas am schnellsten wachsende Unternehmen",
             "year": "2023"
           }
         },
@@ -389,15 +389,15 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-3.svg",
-            "name": "Innovation Prize Ergonomics Winner",
-            "year": "2022"
+            "name": "Innovation Ergonomics 2023",
+            "year": "2023"
           }
         },
         "slide_RL7VPk": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-4.svg",
-            "name": "German Design Award Winner",
+            "name": "German Design Award 2019",
             "year": "2019"
           }
         }
