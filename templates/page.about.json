@@ -127,6 +127,17 @@
         "short_desc": "We believe your mattress should adapt to your life—not the other way around."
       }
     },
+    "background_video_gXPVqU": {
+      "type": "background-video",
+      "name": "Background video popup",
+      "settings": {
+        "title": "“We spend a third of our lives sleeping, yet a 90-year-old with arthritis sleeps on the same mattress as a 25-year-old athlete. This never made sense to me.”",
+        "image": "shopify://shop_images/live-sleeping.webp",
+        "hero_video_file": "shopify://files/videos/born-video.mp4",
+        "video_title": "Das Schlafsystem fürs Leben",
+        "video_duration": "2m 42s"
+      }
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -153,6 +164,7 @@
     "innovating_7CDdhn",
     "story_section_D3YUVx",
     "three_columns_section_xK8rmF",
+    "background_video_gXPVqU",
     "press_aicD8y",
     "main"
   ]
