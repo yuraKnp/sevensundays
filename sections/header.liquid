@@ -398,14 +398,36 @@
                     </div>
                 </div>
             </div>
-            <div class="h-lang-wrap">
+            {% comment %} <div class="h-lang-wrap">
                 <div class="current-lang">
                     <span>English</span>
                 </div>
                 <ul class="h-lang">
                     <li><a href="index.php"><span>De</span></a></li>
                 </ul>
+            </div> {% endcomment %}
+            {% form 'localization' %}
+            <div class="h-lang-wrap">
+                <div class="current-lang">
+                    <span>{{ localization.language.name }}</span>
+                </div>
+                <ul class="h-lang">
+                    {% for language in localization.available_languages %}
+                        {% if language.iso_code != localization.language.iso_code %}
+                            <li data-lang-code="{{ language.iso_code }}">
+                                <button type="submit" 
+                                        name="locale_code" 
+                                        value="{{ language.iso_code | escape }}" 
+                                        class="lang-switch-button"
+                                >
+                                    <span>{{ language.iso_code | upcase }}</span>
+                                </button>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
             </div>
+            {% endform %}
             <div class="h-cart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M1.36719 1.3667L2.70052 1.3667L4.47385 9.6467C4.53891 9.94994 4.70763 10.221 4.951 10.4133C5.19436 10.6055 5.49713 10.7069 5.80719 10.7L12.3272 10.7C12.6306 10.6995 12.9248 10.5956 13.1612 10.4053C13.3976 10.215 13.5619 9.94972 13.6272 9.65337L14.7272 4.70003L3.41385 4.70003M6.00049 14C6.00049 14.3682 5.70201 14.6667 5.33382 14.6667C4.96563 14.6667 4.66716 14.3682 4.66716 14C4.66716 13.6318 4.96563 13.3333 5.33382 13.3333C5.70201 13.3333 6.00049 13.6318 6.00049 14ZM13.3338 14C13.3338 14.3682 13.0353 14.6667 12.6672 14.6667C12.299 14.6667 12.0005 14.3682 12.0005 14C12.0005 13.6318 12.299 13.3333 12.6672 13.3333C13.0353 13.3333 13.3338 13.6318 13.3338 14Z" stroke="#E7D39A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
