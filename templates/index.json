@@ -15,14 +15,14 @@
         "heading_8HKPz6": {
           "type": "heading",
           "settings": {
-            "heading": "The Modular Sleep System",
+            "heading": "Das Modulare Schlafsystem",
             "heading_size": "h1"
           }
         },
         "buttons_YMdtKk": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Get Sleep System",
+            "button_label_1": "Schlafsystem entdecken.",
             "button_link_1": "#",
             "button_style_secondary_1": false
           }
@@ -190,7 +190,9 @@
       "name": "Vertical slider",
       "settings": {
         "title": "With Seven Sundays sleep finally gets easy",
-        "subtitle": "a smarter way to rest"
+        "subtitle": "a smarter way to rest",
+        "description": "",
+        "section_color": "dark"
       }
     },
     "slider_gallery_UXbqYq": {
