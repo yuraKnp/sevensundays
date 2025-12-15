@@ -1,0 +1,101 @@
+<div class="section">
+    <div class="banner">
+        <div class="banner-media top-bottom-shadow style-2">
+            {%- assign image = section.settings.image -%}
+            {% assign image_url = image | image_url %}
+            {% comment %} {% assign image_format = image.format %} {% endcomment %}
+            {% if image_url != blank %}   
+            <img width="380" height="240" src="{{ image_url }}" alt="Banner Image" loading="lazy">
+            {% endif %}
+
+            {% assign selected_video = section.settings.hero_video_file %}
+            {% assign video_url = selected_video.sources.first.url %}
+
+            {% if video_url != blank %}
+                <div class="video video-present">
+                <video muted playsinline loop preload poster="{{ image_url }}" data-src="{{ video_url }}"></video>
+                </div>
+            {% endif %}
+        </div>
+        <div class="banner-align align-top-bottom">
+            <div class="align-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 col-xl-6">
+                            <div class="banner-info">
+                                {% if section.settings.title != blank %}
+                                <div class="h3 title">{{ section.settings.title }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="align-bottom">
+                <div class="container">
+                    {% if video_url != blank %}
+                    <div class="video-play video-open" data-href="{{ video_url }}">
+                        <div class="video-btn">
+                            {%- assign svg_icon_url = 'play-icon.svg' | asset_url -%}
+                            {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                            <img width="20" height="20" src="{{ url_no_version }}" alt="icon" loading="lazy">
+                        </div>
+                        <div class="content">
+                            {% if section.settings.video_title != blank %}
+                            <div class="text"><b>{{ section.settings.video_title }}</b></div>
+                            {% endif %}
+                            {% if section.settings.video_duration != blank %}
+                            <div class="text">{{ section.settings.video_duration }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Background video popup",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Video placeholder"
+    },
+    {
+      "type": "video",
+      "id": "hero_video_file",
+      "label": "Video for background and popup",
+    },
+    {
+      "type": "text",
+      "id": "video_title",
+      "label": "Video title"
+    },
+    {
+      "type": "text",
+      "id": "video_duration",
+      "label": "Video duration"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Background video popup",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

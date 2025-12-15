@@ -20,11 +20,13 @@
                 <div class="simple-img">
                     {%- assign image = section.settings.image -%}
                     {% assign image_url = image | image_url %}
-                    {% assign image_format = image.format %}              
+                    {% assign image_format = image.format %}
+                    {% if image_url != blank %}            
                     <picture>
                         <source srcset="{{ image_url }}" type="{{ image_format }}">
                         <img width="380" height="240" src="#" alt="" loading="lazy">
                     </picture>
+                    {% endif %}
 
                     <div class="customer-review">
                         {% if section.settings.quote != blank %}                       
