@@ -138,26 +138,6 @@
         "video_duration": "2m 42s"
       }
     },
-    "press_aicD8y": {
-      "type": "press",
-      "name": "Press section",
-      "settings": {
-        "image": "shopify://shop_images/cta-video.webp",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
-        "link_url": "#test"
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "three_column_6L9zAp": {
       "type": "three-column",
       "blocks": {
@@ -165,7 +145,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
-            "title": "Three unglued layers",
+            "title": "Three unglued layerss",
             "description": ""
           }
         },
@@ -195,6 +175,26 @@
       "settings": {
         "title": "The Swiss Army Knife of Sleep"
       }
+    },
+    "press_aicD8y": {
+      "type": "press",
+      "name": "Press section",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "title": "Press & Media",
+        "subtitle": "stories worth sharing",
+        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
+        "link_text": "Download Press Kit",
+        "link_url": "#test"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
@@ -203,8 +203,8 @@
     "story_section_D3YUVx",
     "three_columns_section_xK8rmF",
     "background_video_gXPVqU",
+    "three_column_6L9zAp",
     "press_aicD8y",
-    "main",
-    "three_column_6L9zAp"
+    "main"
   ]
 }
