@@ -434,6 +434,21 @@
     {%- endif -%}
     </div>
 
+    <div class="video-popup">
+        <div class="video-popup-overlay"></div>
+        <div class="video-popup-content">
+            <div class="video-popup-layer"></div>
+            <div class="video-popup-container">
+                <div class="video-popup-align">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" title="Video Frame" src="about:blank" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="btn-close video-popup-close"></div>
+            </div>
+        </div>
+    </div>
+
     <link href="{{ 'bootstrap-grid.css' | asset_url }}" rel="stylesheet" type="text/css" defer="defer" />
     <link href="{{ 'style.css' | asset_url }}" rel="stylesheet" type="text/css" defer="defer"/>
     <script defer src="{{ 'jquery.min.js' | asset_url }}"></script>
