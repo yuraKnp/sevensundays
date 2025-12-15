@@ -145,7 +145,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
-            "title": "Three unglued layerss",
+            "title": "Three unglued layers",
             "description": ""
           }
         },
@@ -173,7 +173,10 @@
       ],
       "name": "Three columns section",
       "settings": {
-        "title": "The Swiss Army Knife of Sleep"
+        "section_type": "dark",
+        "subtitle": "EVERYTHING YOU NEED – BUILT RIGHT IN",
+        "title": "The Swiss Army Knife of Sleep",
+        "short_desc": "The Modular Sleep System — inspired by Swiss precision, built on the building block."
       }
     },
     "press_aicD8y": {
