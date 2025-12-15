@@ -185,6 +185,7 @@
         "slide_rBF8hJ": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/philosophy-1.svg",
             "title": "Premium European Materials Only",
             "description": "Cold foams with highest density and premium textiles from Europe’s leading manufacturers. No compromises on quality or origin."
           }
@@ -192,6 +193,7 @@
         "slide_hRqBxb": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/philosophy-2.svg",
             "title": "Handcrafted Excellence",
             "description": "Every system individually crafted in our Swiss manufactory. The same meticulous attention to detail that premium furniture brands have trusted for over 40 years."
           }
@@ -199,6 +201,7 @@
         "slide_Jgfdri": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/philosophy-3.svg",
             "title": "Individual Optimization",
             "description": "True sleep improvement only works individually. That’s why we listen, learn, and innovate together with our customers."
           }
@@ -206,6 +209,7 @@
         "slide_UCEYwF": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/philosophy-4.svg",
             "title": "Closed-Loop Design",
             "description": "Built to last, repair, and evolve. Individual components can be replaced or upgraded without discarding the entire system."
           }
@@ -221,6 +225,45 @@
       "settings": {
         "subtitle": "SWISS DESIGN PHILOSOPHY",
         "title": "Where function meets beautiful craftsmanship"
+      }
+    },
+    "innovation_fFRgcP": {
+      "type": "innovation",
+      "blocks": {
+        "slide_dUU7xf": {
+          "type": "slide",
+          "settings": {
+            "number": "Step 1",
+            "title": "Listen & Learn",
+            "description": "<p>We start by listening — to your story, habits, and needs. Every consultation begins with understanding how you live, move, and rest.</p><p>Because real improvement starts with empathy, not assumptions.</p>"
+          }
+        },
+        "slide_YCYFc9": {
+          "type": "slide",
+          "settings": {
+            "number": "Step 2",
+            "title": "Analyze & Adapt",
+            "description": "<p>Together, we explore your current sleep situation — posture, comfort zones, tension points. Our experts translate this knowledge into personalized insights that shape your ideal configuration.</p><p>It’s a process built around real people, not generic averages.</p>"
+          }
+        },
+        "slide_39ANta": {
+          "type": "slide",
+          "settings": {
+            "number": "Step 3",
+            "title": "Design for You",
+            "description": "<p>We create a tailored sleep solution that evolves with your life. Your comfort isn’t static — it grows and changes, just like you.</p><p>That’s why we build systems designed to adapt, not just impress.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_dUU7xf",
+        "slide_YCYFc9",
+        "slide_39ANta"
+      ],
+      "name": "Left sticky text",
+      "settings": {
+        "title": "Our Core Belief: Human Connection Drives Innovation",
+        "desc": "<p>Sleep is deeply personal. What works for one person may fail for another. That’s why our process starts with understanding you.</p>"
       }
     },
     "press_aicD8y": {
@@ -252,6 +295,7 @@
     "background_video_gXPVqU",
     "three_column_6L9zAp",
     "philosofy_LcwnKg",
+    "innovation_fFRgcP",
     "press_aicD8y",
     "main"
   ]
