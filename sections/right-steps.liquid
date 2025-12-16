@@ -1,0 +1,116 @@
+<div class="section padd-xl-lg">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6">
+                <div class="lr-img-1 size2">
+                    {%- assign image = section.settings.left_image -%}
+                    {% if image != blank %}
+                    {% assign image_url = image | image_url %}
+                    {% assign image_format = image.format %}
+                    <picture>
+                        <source srcset="img/lr-img-8.webp" type="image/webp">
+                        <source srcset="{{ image_url }}" type="{{ image_format }}">
+                        <img width="380" height="240" src="#" alt="" loading="lazy">
+                    </picture>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-5">
+                <div class="content-top-bottom">
+                    <div class="title-shortcode">
+                        {% if section.settings.subtitle != blank %}
+                        <div class="motto">{{ section.settings.subtitle }}</div>
+                        {% endif %}
+                        {% if section.settings.title != blank %}
+                        <div class="h2 title">{{ section.settings.title }}</div>
+                        {% endif %}
+                    </div>
+                    {% if section.blocks != blank %}
+                    <div class="consultation-block">
+                        {% for block in section.blocks %}
+                        {%- assign step_number = block.settings.step_number -%}
+                        {%- assign title = block.settings.title -%}
+                        {%- assign subtitle = block.settings.subtitle -%}
+                        <div class="consultation-item">
+                            {%  if step_number != blank %}
+                            <i class="text text-md">01</i>
+                            {% endif %}
+                            <div class="content">
+                                {%  if title != blank %}
+                                <div class="text text-md"><b>{{ title }}</b></div>
+                                {% endif %}
+                                {%  if subtitle != blank %}
+                                <div class="text text-md">{{ subtitle }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Right steps section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left image"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Single step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step_number",
+          "label": "Step number"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+        {
+      "name": "Right steps section",
+      "blocks": [
+        {
+          "type": "slide"
+        },
+      ]
+    }
+  ]
+}
+{% endschema %}
