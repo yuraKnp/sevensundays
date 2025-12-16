@@ -100,6 +100,37 @@
     },
     "three_columns_section_v2_eDQpGb": {
       "type": "three-columns-section-v2",
+      "blocks": {
+        "slide_f3wqbG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/lr-img-1_0c2e1cbd-561b-4f62-ad9d-d6f16482c312.webp",
+            "title": "Every body sleeps differently",
+            "description": "Whether side sleeper or back sleeper, whether back problems, limitations or comfort wishes – your sleep consultant explores your individual needs."
+          }
+        },
+        "slide_zqi7Kd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/lr-img-2_988c355a-4ff9-4bc0-98b6-53a37130484e.webp",
+            "title": "Experience with all senses",
+            "description": "Feel high-quality fabrics on your skin, understand differences of various materials – completely relaxed in your living room."
+          }
+        },
+        "slide_HXneBK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/lr-img-4_83bbd417-051a-4535-ae4b-1d3e7a2f3a53.webp",
+            "title": "Swiss innovation to touch",
+            "description": "The modular sleep system with its configuration wants to be experienced. Only through personal testing do you find your most restorative sleep."
+          }
+        }
+      },
+      "block_order": [
+        "slide_f3wqbG",
+        "slide_zqi7Kd",
+        "slide_HXneBK"
+      ],
       "name": "Three columns (v2)",
       "settings": {
         "subtitle": "MAKE IT PERSONAL",
