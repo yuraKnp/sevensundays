@@ -2,7 +2,12 @@
 jQuery(function ($) {
   "use strict";
 
-  document.addEventListener('DOMContentLoaded', function() {
+
+  
+
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const formContainer = document.querySelector('.contact-form-section');
 
     console.log(formContainer);
@@ -19,7 +24,4 @@ jQuery(function ($) {
         window.history.replaceState({path: cleanUrl}, '', cleanUrl);
       }
     }
-  });
-  
-
 });
