@@ -109,11 +109,11 @@
       "type": "insight",
       "name": "Insight",
       "settings": {
-        "tag": "expert insight",
-        "main_description": "In our modern world – shaped by constant stress, prolonged sitting, and screen time – our neck needs special care at night. The right support from an ergonomic pillow can help release tension and give your body the regeneration it deserves.",
+        "tag": "Experteneinblick",
+        "main_description": "Wir verbringen ein Drittel unseres Lebens schlafend – nicht als Pause vom Leben, sondern als essentielle Zeit für Regeneration. Wenn Technologie allein noch an der Oberfläche dessen kratzt, was Schlaf wirklich für uns bedeutet, müssen wir ihn als entscheidenden Faktor für unsere psychische Gesundheit und Leistung sehen.",
         "image": "shopify://shop_images/expert-photo-3.webp",
         "exper_name": "Dr. Michael Feld",
-        "expert_occupation": "Sleep Expert & Medical Advisor SEVEN SUNDAYS"
+        "expert_occupation": "Schlafexperte & Medizinischer Berater Seven Sundays"
       }
     },
     "advice_QjPdMt": {
@@ -122,12 +122,12 @@
       "settings": {
         "image": "shopify://shop_images/why-banner-1.webp",
         "left_image": "shopify://shop_images/sticker-logo_65784ff8-3aa8-432d-ba32-8d01f2c30583.svg",
-        "left_title": "Sleep 13% better with Seven Sundays",
-        "left_desctription": "What does 13% better sleep mean? Faster sleep onset, deeper rest, better recovery. Proven in 14-day study with 43 elite athletes using scientific Oura Ring measurements.",
+        "left_title": "Schlafe 13% besser mit Seven Sundays",
+        "left_desctription": "Schneller einschlafen. Tiefer schlafen. Besser regenerieren. Wissenschaftlich belegt in einer 90-Tage-Studie mit 43 Profi-Athleten.",
         "left_button_link": "#",
-        "left_button_link_text": "Read Study",
+        "left_button_link_text": "Studie lesen",
         "right_doc_name": "Dr. Helge Riepenhof",
-        "right_doc_position": "Red Bull Global Medical Director",
+        "right_doc_position": "Globaler Medizinischer Direktor von Red Bull",
         "right_image": "shopify://shop_images/expert-photo-2.webp"
       }
     },
@@ -138,27 +138,27 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/advisor-img-1.webp",
-            "slide_desc": "Many back problems originate from tense muscles. With Seven Sundays, I always pursue a holistic approach – one that supports the body’s natural self-healing and promotes nighttime regeneration.",
+            "slide_desc": "Champions werden nachts gemacht. Bei Seven Sundays stelle ich sicher, dass jede Komponente für Höchstleistung entwickelt ist. Spitzensportler haben keine Zeit für schlechten Schlaf – unsere Körper auch nicht. Das System funktioniert messbar.",
             "slide_heading": "Dr. Helge Riepenhof",
-            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+            "slide_tag": "Global Medical Director Red Bull"
           }
         },
         "slide_xmQbaQ": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/advisor-img-1.webp",
-            "slide_desc": "Champions are made at night. At Seven Sundays, I ensure every component is designed for peak performance. Elite athletes have no time for poor sleep – our studies prove: The system works measurably.",
-            "slide_heading": "Dr. Helge Riepenhof",
-            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+            "slide_desc": "Echte Schlafoptimierung erfordert Individualisierung auf höchstem Niveau. Bei Seven Sundays bringe ich meine Expertise ein, damit das modulare System gesamtheitlich optimalen Schlaf fördert. Hier wird Schlafmedizin zur anwendbaren Innovation.",
+            "slide_heading": "Dr. Michael Feld",
+            "slide_tag": "Schlafexperte und medizinischer Berater bei Seven Sundays"
           }
         },
         "slide_mUbdVf": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/advisor-img-1.webp",
-            "slide_desc": "True sleep optimization requires individualization. At Seven Sundays, I contribute my expertise so the modular system enables maximum regeneration. Here, sleep medicine becomes applicable innovation.",
-            "slide_heading": "Dr. Helge Riepenhof",
-            "slide_tag": "Chief Medical Officer BG Klinikum Hamburg and Global Medical Director Red Bull"
+            "slide_desc": "In unserer modernen Welt – geprägt von ständigem Stress, langem Sitzen und endlosen Bildschirmzeiten – braucht unser Nacken nachts besondere Pflege. Die richtige Unterstützung durch ein ergonomisches Kissen kann helfen, Verspannungen zu lösen und dem Körper die Regeneration zu geben, die er verdient.",
+            "slide_heading": "Prof. Dr. Dietrich Grönemeyer",
+            "slide_tag": "Rückenexperte und medizinischer Berater von Seven Sundays"
           }
         }
       },
@@ -169,9 +169,9 @@
       ],
       "name": "Advisor",
       "settings": {
-        "title": "Our scientificadvisory board",
-        "subtitle": "recovery experts at your side",
-        "description": "Seven Sundays has partnered with renowned medical experts who are leaders in their respective fields. They support Seven Sundays in developing the modular sleep system based on precise, cutting-edge science in health & longevity."
+        "title": "Unser wissenschaftlicher Beirat",
+        "subtitle": "Genesungsexperten an Ihrer Seite",
+        "description": "Seven Sundays hat sich mit renommierten Medizinexperten zusammengeschlossen, die führend auf ihren jeweiligen Gebieten sind. Sie unterstützen Seven Sundays bei der Weiterentwicklung des modularen Schlafsystems auf Basis modernster Wissenschaft."
       }
     },
     "supplier_mKffBi": {
@@ -204,10 +204,10 @@
       "name": "Supplier",
       "settings": {
         "banner_main_image": "shopify://shop_images/why-banner-2.webp",
-        "title": "“Because the miliseconds decide, we only rely on the best”",
-        "description": "Official sleep system supplier to Red Bull BORA-hansgrohe. The entire team recovers on SEVEN SUNDAYS – from training to Grand Tour competition.",
+        "title": "\"Weil Millisekunden entscheiden, verlassen wir uns nur auf das Beste\"",
+        "description": "Offizieller Schlafsystem-Lieferant von Red Bull BORA-hansgrohe.Das gesamte Team erholt sich auf Seven Sundays – vom Training bis zum Grand-Tour-Wettkampf.",
         "sup_logo": "shopify://shop_images/support-logo-1.svg",
-        "sup_title": "Official sleep system supplier 2025/2026",
+        "sup_title": "Offizieller Lieferant von Schlafsystemen 2025/2026",
         "sup_description": "Giro d’Italia / Tour de France / Vuelta a Espana",
         "gallery_title": "pro sport teams trusting seven sundays"
       }
@@ -219,24 +219,24 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
-            "title": "Premium Material Quality",
-            "description": "Every sleep system is only as good as its components. As an independent manufacturer, we always choose the best materials: Exclusively cold foams with highest density from Europe’s leading manufacturers."
+            "title": "  Premium-Material Qualität",
+            "description": "Jedes Schlafsystem ist nur so gut wie seine Komponenten. Als unabhängiger Hersteller wählen wir immer das Beste: Kaltschäume mit der weltweit höchsten Dichte von Europas führenden Herstellern."
           }
         },
         "slide_EpDt9x": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-2_271fb58a-1317-4729-9ebf-b02049d32a00.webp",
-            "title": "Swiss Design",
-            "description": "We emerged from a Swiss foam manufacturer that has worked with Europe’s best interior brands for decades. Our manufacturing expertise is found in premium furniture from Vitra, Walter Knoll and Rolf Benz."
+            "title": "Schweizer Design",
+            "description": "Wir sind aus einem Schweizer Schaumstoffhersteller entstanden, der seit Jahrzehnten mit Europas besten Interior-Marken arbeitet. Unser innovatives Kerndesign findet sich in Premium-Möbeln von Vitra, Walter Knoll und Rolf Benz."
           }
         },
         "slide_qijHpN": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-4_0a470568-c20b-4430-9231-b9da5271c0cd.webp",
-            "title": "Revolutionarily Sustainable",
-            "description": "While 30 million mattresses are burned annually in Europe, Seven Sundays redefines sustainability: Completely unglued, modular like Lego – every component exchangeable and recyclable."
+            "title": "Revolutionär nachhaltig",
+            "description": "Während 30 Millionen Matratzen jährlich in Europa verbrannt werden, definiert Seven Sundays Nachhaltigkeit neu: komplett ungeklebt, reparierbar, langlebig, jede Komponente austauschbar und recycelbar."
           }
         }
       },
@@ -249,7 +249,7 @@
       "settings": {
         "section_type": "light",
         "subtitle": "",
-        "title": "Family business with over 40 years of experience and reasearch",
+        "title": "Familienbetrieb mit über 40 Jahren Erfahrung und Forschung",
         "short_desc": ""
       }
     },
@@ -305,26 +305,37 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/stories-img-2.webp",
-            "tags": "real sleep, real stories",
+            "tags": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
             "name": "Thomas K.",
             "job": "Tech Executive",
-            "slide_desc": "As someone who travels frequently, I was skeptical about yet another sleep solution. But Seven Sundays has transformed my sleep quality. Even after long flights, I can adjust the system and get restorative sleep immediately."
+            "slide_desc": "Die beste Investition meiner Karriere? Nicht ein Deal – sondern endlich richtig zu schlafen. Seven Sundays war überfällig."
           }
         },
         "slide_3fAjHr": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/stories-img-1.webp",
-            "tags": "real sleep, real stories",
-            "name": "Jan Donovan",
-            "job": "Olympic Swimmer",
-            "slide_desc": "In swimming, recovery decides everything. Seven Sundays helps me recharge deeper, wake up sharper, and find the energy to push further, day after day."
+            "tags": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
+            "name": "Alexander Mazza",
+            "job": "Moderator & TV-Host",
+            "slide_desc": "Wenn man viel Zeit auf der Bühne oder vor der Kamera verbringt und jeden Tag Höchstleistung bringen muss, wird Qualitätsschlaf essentiell. Seven Sundays ist genau die Lösung, nach der ich immer gesucht habe."
+          }
+        },
+        "slide_RRqmmB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-1.webp",
+            "tags": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
+            "name": "Anita Tillmann",
+            "job": "Gründerin PREMIUM Group",
+            "slide_desc": "Ich kuratiere seit 20 Jahren, was gut ist. Bei Schlaf war ich überrascht, wie viel Potenzial ich verschenkt habe – bis ich Florian kennengelernt und Seven Sundays entdeckt habe."
           }
         }
       },
       "block_order": [
         "slide_qYBD34",
-        "slide_3fAjHr"
+        "slide_3fAjHr",
+        "slide_RRqmmB"
       ],
       "name": "Testimonial slider",
       "settings": {}
@@ -335,9 +346,9 @@
       "settings": {
         "image": "shopify://shop_images/cta-video.webp",
         "hero_video_file": "shopify://files/videos/cta-video.mp4",
-        "title": "Get the award-winning sleep system that changes everything",
-        "subtitle": "crafted to change everything",
-        "short_description": "Learn to know and love the modular sleep system with all its benefits and wake up like its Sunday morning, every morning.",
+        "title": "",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "Entfalte dein volles Potenzial. Ob Sportler oder Alltagsheld: Starte jeden Tag mit 100% Power, überwinde Grenzen und hole das Maximum aus jedem Moment.",
         "link_text": "Get Sleep System",
         "link_url": "#test"
       }
