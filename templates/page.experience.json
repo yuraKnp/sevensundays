@@ -51,12 +51,71 @@
         "link_text": "Download Press Kit",
         "link_url": "#test"
       }
+    },
+    "right_steps_eLHDTE": {
+      "type": "right-steps",
+      "blocks": {
+        "slide_f8qXQd": {
+          "type": "slide",
+          "settings": {
+            "step_number": "01",
+            "title": "Free appointment",
+            "subtitle": "Your personal sleep expert contacts you by phone"
+          }
+        },
+        "slide_rhLaJP": {
+          "type": "slide",
+          "settings": {
+            "step_number": "02",
+            "title": "Home visit",
+            "subtitle": "Your certified consultant comes with a complete demo system"
+          }
+        },
+        "slide_qj8ef6": {
+          "type": "slide",
+          "settings": {
+            "step_number": "03",
+            "title": "In-home trial",
+            "subtitle": "Discover your perfect setup in a 60-minute home consultation."
+          }
+        },
+        "slide_y9KPAB": {
+          "type": "slide",
+          "settings": {
+            "step_number": "04",
+            "title": "Decide in peace",
+            "subtitle": "Buy only if 100% convinced – no pressure"
+          }
+        },
+        "slide_hzPQWt": {
+          "type": "slide",
+          "settings": {
+            "step_number": "05",
+            "title": "Handcrafted delivery",
+            "subtitle": "Your system is handcrafted and delivered to your bedroom"
+          }
+        }
+      },
+      "block_order": [
+        "slide_f8qXQd",
+        "slide_rhLaJP",
+        "slide_qj8ef6",
+        "slide_y9KPAB",
+        "slide_hzPQWt"
+      ],
+      "name": "Right steps section",
+      "settings": {
+        "subtitle": "FINALLY, MATTRESS SHOPPING YOU'LL ENJOY",
+        "title": "Expert consultation tailored to you – 100% insight, zero pressure",
+        "left_image": "shopify://shop_images/lr-img-8.webp"
+      }
     }
   },
   "order": [
     "main",
     "image_banner_right_info_9nbfQj",
     "small_title_4zHLyK",
-    "press_aicD8y"
+    "press_aicD8y",
+    "right_steps_eLHDTE"
   ]
 }
