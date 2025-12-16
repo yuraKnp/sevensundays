@@ -39,8 +39,8 @@
         "image_overlay_opacity": 0,
         "image_left_bottom": "shopify://shop_images/banner-sticker.webp",
         "image_left_bottom_logo": "shopify://shop_images/sticker-logo.svg",
-        "image_left_bottom_description": "13% Better Sleep Based on Red Bull Study",
-        "image_left_bottom_text": "Click Here",
+        "image_left_bottom_description": "Schlafe 13% besser mit Seven Sundays",
+        "image_left_bottom_text": "Klicken Sie hier",
         "image_left_bottom_link": "shopify://collections/frontpage",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
@@ -85,9 +85,9 @@
         "image_UzawPb"
       ],
       "settings": {
-        "discover_subtitle": "Discover the secret of restorative nights",
-        "discover_title": "One mattress, countless configurations. </br>Our 3-layer system adjusts in seconds to support your body's natural regeneration – night after night.",
-        "discover_text_before_gallery": "As seen in"
+        "discover_subtitle": "ENTDECKE DAS GEHEIMNIS ERHOLSAMER NÄCHTE",
+        "discover_title": "Eine Matratze, unzählige Konfigurationen. Unser 3-Schichten-System passt sich in Sekunden an, um die natürliche Regeneration deines Körpers zu unterstützen – Nacht für Nacht.",
+        "discover_text_before_gallery": "Bekannt aus"
       }
     },
     "comfort_fkYaFb": {
@@ -96,7 +96,7 @@
       "settings": {
         "image": "shopify://shop_images/bedroom-video.webp",
         "hero_video_file": "shopify://files/videos/bedroom-video.mp4",
-        "confort_title": "Adjust your comfort in 30 seconds. Perfect regeneration. Every night."
+        "confort_title": "Passe deinen Komfort in 30 Sekunden an. Perfekte Regeneration. Jede Nacht."
       }
     },
     "sleep_system_cXWBy3": {
@@ -106,27 +106,27 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/sleep-img-1.webp",
-            "slide_heading": "For Active Regeneration",
-            "slide_desc": "Lightly springy sleep sensations with support for natural movement sequences. Promotes muscle and fascia regeneration during night rest.",
-            "slide_tag": "Revitalizing"
+            "slide_heading": "Für aktive Regeneration",
+            "slide_desc": "Federnde Unterstützung für natürliche Bewegung und dadurch die Muskel- und Faszien-Regeneration.",
+            "slide_tag": "Vitalisierend"
           }
         },
         "slide_e7YppJ": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/sleep-img-1.webp",
-            "slide_heading": "For Deep Relaxation",
-            "slide_desc": "Weightless sleep sensations with memory effect to minimize movement interruptions. Reduces pressure points and optimizes circulation.",
-            "slide_tag": "Revitalizing"
+            "slide_heading": "Für tiefe Entspannung",
+            "slide_desc": "Memory-Effekt für schwereloses Liegen. Beruhigt, entlastet und fördert Durchblutung.",
+            "slide_tag": "Beruhigend"
           }
         },
         "slide_dmtXfR": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/sleep-img-1.webp",
-            "slide_heading": "For Active Regeneration",
-            "slide_desc": "Lightly springy sleep sensations with support for natural movement sequences. Promotes muscle and fascia regeneration during night rest.",
-            "slide_tag": "Revitalizing"
+            "slide_heading": "Für aktive Regeneration",
+            "slide_desc": "Federnde Unterstützung für natürliche Bewegung und dadurch die Muskel- und Faszien-Regeneration.",
+            "slide_tag": "Vitalisierend"
           }
         }
       },
@@ -137,8 +137,8 @@
       ],
       "name": "Sleep system",
       "settings": {
-        "title": "One sleep system, endless lying sensations",
-        "description": "Pick three from unique layers – and create the perfect feel and ergonomics for your body."
+        "title": "Ein Schlafsystem, endlose Liegegefühle",
+        "description": "Wähle drei aus fünf einzigartigen Schichten – und kreiere das perfekte Gefühl und die perfekte Ergonomie für deinen Körper."
       }
     },
     "horizontal_slider_ezYgWk": {
@@ -148,36 +148,36 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-1.webp",
-            "slide_heading": "Why Choose One Material?",
-            "slide_desc": "Memory foam. Latex. High-support cold foam. Soft cold foam. A modular system combines every premium sleep material in one place. No more guessing which material is right — you have them all available whenever your body needs them.",
-            "slide_tag": "All Materials"
+            "slide_heading": "Warum nur ein Material wählen?",
+            "slide_desc": "Warum sich festlegen? Memory-Schaum, Latex, Kaltschaum – alle Premium-Materialien in einem System. Kein Rätselraten. Dein Körper bekommt, was er gerade braucht.",
+            "slide_tag": "Alle Materialien"
           }
         },
         "slide_JnEm7g": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-2.webp",
-            "slide_heading": "The Last Mattress You’ll Ever Buy",
-            "slide_desc": "Traditional mattresses wear out and get replaced entirely. Modular design means endless lifecycle: adjust, swap, expand, repair — replace only parts, never the whole system. Sustainable for your wallet and the planet.",
-            "slide_tag": "Endless Lifespan"
+            "slide_heading": "Die letzte Matratze deines Lebens.",
+            "slide_desc": "Klassische Matratzen verschleißen und belasten die Umwelt. Unsere nicht – du tauschst nur einzelne Teile. Gut für dich, gut für den Planeten.",
+            "slide_tag": "Endlose Lebensdauer"
           }
         },
         "slide_YtBiBB": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-3.webp",
-            "slide_heading": "Your Life Changes. So Should Your Mattress",
-            "slide_desc": "Your body changes through pregnancy, injury, stress, and aging.Your sleep system should change with it. A modular system adapts to every chapter of your life. Why buy a new mattress when yours can simply evolve?",
-            "slide_tag": "Life Adaptability"
+            "slide_heading": "Dein Leben verändert sich. Deine Matratze passt sich an.",
+            "slide_desc": "Schwangerschaft, Verletzung, Stress, Alter – dein Körper wandelt sich. Dein Schlaf sollte mitgehen. Ein System für jedes Kapitel. Keine neue Matratze nötig.",
+            "slide_tag": "Lebensanpassungsfähigkeit"
           }
         },
         "slide_xEKfVn": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-4.webp",
-            "slide_heading": "Sleep Your Way. Even Together",
-            "slide_desc": "Different bodies need different support — yet most couples compromise, meaning someone sleeps worse. A modular system configures each side independently while decoupling all movement between them. No visitor gap, no motion transfer, no disturbance. Two people, one bed, zero compromise.",
-            "slide_tag": "Zero Compromise"
+            "slide_heading": "Zusammen schlafen. Ohne Kompromisse.",
+            "slide_desc": "Jede Seite individuell konfiguriert. Keine Ritze, keine Bewegungsübertragung. Zwei Menschen, ein Bett – beide schlafen perfekt.",
+            "slide_tag": "Null Kompromisse"
           }
         }
       },
@@ -189,8 +189,8 @@
       ],
       "name": "Vertical slider",
       "settings": {
-        "title": "With Seven Sundays sleep finally gets easy",
-        "subtitle": "a smarter way to rest",
+        "title": "Mit Seven Sundayswird Schlaf endlich einfach",
+        "subtitle": "  EIN SMARTERER WEG ZUR ERHOLUNG",
         "description": "",
         "section_color": "dark"
       }
@@ -202,54 +202,54 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/energy-img-2.webp",
-            "slide_heading": "For job performers",
-            "slide_desc": "Start mentally sharp for important decisions and demanding workdays.",
-            "tags": "back problems, office workers"
+            "slide_heading": "Für Leistungsträger",
+            "slide_desc": "Starte fokussiert in wichtige Entscheidungen und anspruchsvolle Arbeitstage.",
+            "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
           }
         },
         "slide_kPYWcQ": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/energy-img-1.webp",
-            "slide_heading": "For athletes",
-            "slide_desc": "Maximize your regeneration and wake up ready for new personal bests.",
-            "tags": "back problems, office workers"
+            "slide_heading": "  Für Sportler",
+            "slide_desc": "Tiefe Regeneration. Aufstehen mit Energie für persönliche Bestleistungen.",
+            "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
           }
         },
         "slide_fnEjKT": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/energy-img-3.webp",
-            "slide_heading": "For active 50+",
-            "slide_desc": "Stay fit, vital and full of energy for everything that’s important to you.",
-            "tags": "back problems, office workers"
+            "slide_heading": "Für aktive 50+",
+            "slide_desc": "Volle Energie für alles, was du noch vorhast – Reisen, Sport, Leben.",
+            "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
           }
         },
         "slide_RBWc83": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/energy-img-4.webp",
-            "slide_heading": "For Seniors",
-            "slide_desc": "Sleep comfortably, move easily and enjoy every day with renewed energy.",
-            "tags": "back problems, office workers"
+            "slide_heading": "Für Senioren",
+            "slide_desc": "Erholt aufstehen. Aktiv bleiben. Dein Leben selbstbestimmt genießen.",
+            "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
           }
         },
         "slide_WfAtFh": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/energy-img-5.webp",
-            "slide_heading": "For Back Pain Sufferers",
-            "slide_desc": "For Back Pain Sufferers",
-            "tags": "back problems, office workers"
+            "slide_heading": "  Für Rückenschmerzgeplagte",
+            "slide_desc": "Dynamisierende Lamellen entlasten die Wirbelsäule und fördern Regeneration – für entspannteres Liegen und Aufwachen",
+            "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
           }
         },
         "slide_7wAr4E": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/energy-img-6.webp",
-            "slide_heading": "For Menopause",
-            "slide_desc": "Find deeper rest, reduce tension and wake up refreshed – despite hormonal changes.",
-            "tags": "back problems, office workers"
+            "slide_heading": "Für Wechseljahre",
+            "slide_desc": "Finde tiefere Ruhe, reduziere Verspannungen und wache erfrischt auf – trotz hormoneller Veränderungen.",
+            "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
           }
         }
       },
@@ -263,8 +263,8 @@
       ],
       "name": "Gallery slider",
       "settings": {
-        "title": "More energy for everything that truly matters",
-        "subtitle": "sleep that powers you",
+        "title": "Mehr Energie für alles, was wirklich zählt",
+        "subtitle": "SCHLAF, DER DICH ANTREIBT",
         "layout": "type-1"
       }
     },
@@ -303,22 +303,22 @@
         "slide_BCecDW": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Family craftsmanship",
-            "slide_desc": "Second-generation expertise with 40 years producing for premium brands like Vitra and Walter Knoll."
+            "slide_heading": "Familienhandwerk",
+            "slide_desc": "Know-how in zweiter Generation mit 40 Jahren Erfahrung in der Produktion für Premiummarken wie Vitra, Walter Knoll und viele mehr."
           }
         },
         "slide_7nULig": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Swiss design",
-            "slide_desc": "Swiss craftsmanship meets uncompromising material selection – only the best for your perfect sleep."
+            "slide_heading": "Schweizer Design",
+            "slide_desc": "Schweizer Handwerkskunst trifft auf kompromisslose Materialauswahl – nur das Beste für deinen perfekten Schlaf."
           }
         },
         "slide_HdkRbJ": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Maximum sustainability",
-            "slide_desc": "Perfect sleep for a lifetime – every part exchangeable, expandable, repairable, forever"
+            "slide_heading": "Maximale Nachhaltigkeit",
+            "slide_desc": "Perfekter Schlaf ein Leben lang. Jedes Teil ist austauschbar, erweiterbar, reparierbar – für immer."
           }
         }
       },
@@ -331,7 +331,7 @@
       "settings": {
         "image": "shopify://shop_images/born-video.webp",
         "hero_video_file": "shopify://files/videos/born-video.mp4",
-        "title": "Born in the Swiss alps and intentionally different",
+        "title": "Geboren in den Schweizer Alpen und bewusst anders",
         "image_logo": "shopify://shop_images/icon-born.svg"
       }
     },
@@ -342,20 +342,20 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/stories-img-1.webp",
-            "tags": "real sleep, real stories",
+            "tags": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
             "name": "Jan Donovan",
-            "job": "Olympic Swimmer",
-            "slide_desc": "In swimming, recovery decides everything. Seven Sundays helps me recharge deeper, wake up sharper, and find the energy to push further, day after day."
+            "job": "Olympischer Schwimmer",
+            "slide_desc": "Im Schwimmen entscheidet Erholung alles. Seven Sundays hilft mir, tiefer aufzuladen, wacher aufzuwachen und die Energie zu finden, um jeden Tag weiter zu pushen."
           }
         },
         "slide_aqjTMr": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/stories-img-2.webp",
-            "tags": "real sleep, real stories",
-            "name": "Thomas K.",
-            "job": "Tech Executive",
-            "slide_desc": "As someone who travels frequently, I was skeptical about yet another sleep solution. But Seven Sundays has transformed my sleep quality. Even after long flights, I can adjust the system and get restorative sleep immediately."
+            "tags": "ECHTER SCHLAF. ECHTE GESCHICHTEN.",
+            "name": "Ben Zwiehoff",
+            "job": "Profi-Radsportler, BORA–Hansgrohe Team",
+            "slide_desc": "Als Profi-Radsportler ist Erholung genauso wichtig wie Training. Das Seven Sundays Schlafsystem hilft mir, voll aufgeladen aufzuwachen. So kann ich guten Gewissens meinem Körper und Geist Spitzenleistungen abverlangen."
           }
         }
       },
@@ -373,7 +373,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-1.svg",
-            "name": "German Brand Award Winner",
+            "name": "German Brand Winner 2024",
             "year": "2024"
           }
         },
@@ -381,7 +381,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-2.svg",
-            "name": "Europe's fastest growing companies",
+            "name": "Europas am schnellsten wachsende Unternehmen",
             "year": "2023"
           }
         },
@@ -389,15 +389,15 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-3.svg",
-            "name": "Innovation Prize Ergonomics Winner",
-            "year": "2022"
+            "name": "Innovation Ergonomics 2023",
+            "year": "2023"
           }
         },
         "slide_RL7VPk": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-4.svg",
-            "name": "German Design Award Winner",
+            "name": "German Design Award 2019",
             "year": "2019"
           }
         }
@@ -416,10 +416,10 @@
       "name": "Call to action",
       "settings": {
         "image": "shopify://shop_images/cta-video.webp",
-        "title": "Get the award-winning sleep system that changes everything",
-        "subtitle": "crafted to change everything",
-        "short_description": "Learn to know and love the modular sleep system with all its benefits and wake up like its Sunday morning, every morning.",
-        "link_text": "Get Sleep System",
+        "title": "Entdecke das preisgekrönte Schlafsystem, das alles verändert",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "Jetzt entdecken. Jeden Morgen wie Sonntag aufwachen.",
+        "link_text": "Schlafsystem entdecken",
         "link_url": "#"
       }
     }

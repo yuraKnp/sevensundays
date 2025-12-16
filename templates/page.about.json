@@ -15,8 +15,8 @@
       "settings": {
         "image": "shopify://shop_images/about-banner-img.webp",
         "image_mob": "shopify://shop_images/about-banner-img-mob.webp",
-        "title": "The Swiss Sleep Manufactory",
-        "description": "Two generations of Swiss craftsmanship. One breakthrough that changed everything."
+        "title": "DIE SCHWEIZER SCHLAFMANUFAKTUR",
+        "description": "Zwei Generationen Schweizer Handwerkskunst. Ein Durchbruch, der alles veränderte."
       }
     },
     "innovating_7CDdhn": {
@@ -69,22 +69,22 @@
       ],
       "name": "Innovating",
       "settings": {
-        "title": "Decades innovating for Europe’s most iconic brands",
-        "description": "In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.",
-        "description_b_g": "Brands we worked with"
+        "title": "Jahrzehntelange Innovation für Europas renommierteste Marken.",
+        "description": "Seit über 40 Jahren ist unsere Schweizer Familienmanufaktur die verborgene Kraft hinter Europas renommiertesten Möbelmarken. Walter Knoll, Rolf Benz, DeSede, Vitra, Vetsak, Dedon – wenn diese Design-Ikonen perfekte Schaumlösungen brauchen, wenden sie sich an unseren Erfindergeist und unsere Handwerkskunst.",
+        "description_b_g": "Marken, mit denen wir gearbeitet haben"
       }
     },
     "story_section_D3YUVx": {
       "type": "story-section",
       "name": "Story section",
       "settings": {
-        "subtitle": "from insight to innovation",
-        "title": "When the Expert Became the Customer",
-        "description": "In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.",
+        "subtitle": "VON ERKENNTNISSEN ZUR INNOVATION",
+        "title": "Wie ein Experte selbst zum Kunden wurde",
+        "description": "Alles begann mit einer schlaflosen Nacht. Genauer gesagt: mit Jahren davon. 2016 wollte Reinhard Maier endlich wissen, warum keine Matratze wirklich half. Was er entdeckte, überraschte ihn: Die Branche hatte aufgehört, echte Innovationen für besseren Schlaf zu entwickeln.",
         "image": "shopify://shop_images/expert-become.webp",
-        "quote": "After decades crafting comfort for others, I realized the best design isn’t just what looks impressive — it must also genuinely benefit its user.",
+        "quote": "Das beste Design passt sich dem Menschen an – nicht umgekehrt. Jede Nacht aufs Neue, ein Leben lang.",
         "name": "Reinhard Maier",
-        "position": "Co-Founder & Inventor of the Modular Sleep System"
+        "position": "Mitgründer & Erfinder des Modularen Schlafsystems"
       }
     },
     "three_columns_section_xK8rmF": {
@@ -94,24 +94,24 @@
           "type": "slide",
           "settings": {
             "number": "01",
-            "title": "Personalized like everything else",
-            "description": "From fitness to nutrition—now your sleep finally catches up."
+            "title": "Personalisiert wie alles andere",
+            "description": "Von Fitness bis Ernährung – jetzt zieht dein Schlaf endlich nach."
           }
         },
         "slide_BnENgX": {
           "type": "slide",
           "settings": {
             "number": "02",
-            "title": "Built for what matters most",
-            "description": "Better heart health, sharper focus, faster recovery. Sleep is the foundation."
+            "title": "Für das Wesentliche geschaffen",
+            "description": "Bessere Herzgesundheit, mehr Konzentration, schnellere Erholung, mehr Lebensfreude. Schlaf ist die Grundlage."
           }
         },
         "slide_p7AY8A": {
           "type": "slide",
           "settings": {
             "number": "03",
-            "title": "Designed to grow with you",
-            "description": "Your body changes through pregnancy, injury, aging, lifestyle. Your mattress should too."
+            "title": "Entwickelt, um mit dir zu wachsen",
+            "description": "Dein Körper verändert sich – durch Schwangerschaft, Verletzungen, Alter, Lebensstil. Deine Matratze sollte das auch."
           }
         }
       },
@@ -122,16 +122,16 @@
       ],
       "name": "Three columns (no bg)",
       "settings": {
-        "subtitle": "THE FUTURE OF SLEEP",
-        "title": "Sleep deserves<br> to evolve with you",
-        "short_desc": "We believe your mattress should adapt to your life—not the other way around."
+        "subtitle": "DIE ZUKUNFT DES SCHLAFS",
+        "title": "Dein Schlaf verdient es, sich mit dir zu entwickeln",
+        "short_desc": "Wir glauben, dass sich deine Matratze deinem Leben anpassen sollte – nicht umgekehrt."
       }
     },
     "background_video_gXPVqU": {
       "type": "background-video",
       "name": "Background video popup",
       "settings": {
-        "title": "“We spend a third of our lives sleeping, yet a 90-year-old with arthritis sleeps on the same mattress as a 25-year-old athlete. This never made sense to me.”",
+        "title": "\"Wir verbringen ein Drittel unseres Lebens schlafend, doch eine 85-jährige Person mit Arthritis schläft auf derselben Matratze wie eine 25-jährige sportliche Person. Das hat für mich nie Sinn ergeben.\"",
         "image": "shopify://shop_images/live-sleeping.webp",
         "hero_video_file": "shopify://files/videos/born-video.mp4",
         "video_title": "Das Schlafsystem fürs Leben",
@@ -145,7 +145,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
-            "title": "Three unglued layers",
+            "title": "Drei unverklebte Schichten",
             "description": ""
           }
         },
@@ -153,7 +153,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/about-banner-img.webp",
-            "title": "Infinite configurations",
+            "title": "Unendliche Konfigurationen",
             "description": ""
           }
         },
@@ -161,7 +161,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-4_0a470568-c20b-4430-9231-b9da5271c0cd.webp",
-            "title": "30 seconds to transform",
+            "title": "30 Sekunden zur Transformation",
             "description": ""
           }
         }
@@ -174,9 +174,9 @@
       "name": "Three columns section",
       "settings": {
         "section_type": "dark",
-        "subtitle": "EVERYTHING YOU NEED – BUILT RIGHT IN",
-        "title": "The Swiss Army Knife of Sleep",
-        "short_desc": "The Modular Sleep System — inspired by Swiss precision, built on the building block."
+        "subtitle": "  ALLES, WAS DU BRAUCHST – IST DRIN",
+        "title": "Das Schweizer Taschenmesser des Schlafs",
+        "short_desc": "Das Modulare Schlafsystem – inspiriert von Schweizer Präzision, gebaut auf dem Baustein-Prinzip."
       }
     },
     "philosofy_LcwnKg": {
@@ -186,32 +186,32 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/philosophy-1.svg",
-            "title": "Premium European Materials Only",
-            "description": "Cold foams with highest density and premium textiles from Europe’s leading manufacturers. No compromises on quality or origin."
+            "title": "  Europäische Premium-Materialien",
+            "description": "Kaltschäume höchster Dichte, Premium-Textilien von Europas besten Herstellern. Keine Kompromisse."
           }
         },
         "slide_hRqBxb": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/philosophy-2.svg",
-            "title": "Handcrafted Excellence",
-            "description": "Every system individually crafted in our Swiss manufactory. The same meticulous attention to detail that premium furniture brands have trusted for over 40 years."
+            "title": "Handgefertigte Exzellenz",
+            "description": "Individuell gefertigt in unserer Schweizer Manufaktur. Mit der Präzision, der Premium-Marken seit 40 Jahren vertrauen."
           }
         },
         "slide_Jgfdri": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/philosophy-3.svg",
-            "title": "Individual Optimization",
-            "description": "True sleep improvement only works individually. That’s why we listen, learn, and innovate together with our customers."
+            "title": "Individuelle Optimierung",
+            "description": "Echter Schlaf ist individuell. Deshalb hören wir zu, lernen und entwickeln mit dir weiter."
           }
         },
         "slide_UCEYwF": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/philosophy-4.svg",
-            "title": "Closed-Loop Design",
-            "description": "Built to last, repair, and evolve. Individual components can be replaced or upgraded without discarding the entire system."
+            "title": "Kreislauf-Design",
+            "description": "Gebaut für Langlebigkeit. Teile ersetzen, upgraden, reparieren – nie das ganze System wegwerfen."
           }
         }
       },
@@ -223,8 +223,8 @@
       ],
       "name": "Left sticky slider",
       "settings": {
-        "subtitle": "SWISS DESIGN PHILOSOPHY",
-        "title": "Where function meets beautiful craftsmanship"
+        "subtitle": "SCHWEIZER DESIGNPHILOSOPHIE",
+        "title": "Wo Funktion auf schöne Handwerkskunst trifft"
       }
     },
     "innovation_fFRgcP": {
@@ -233,25 +233,25 @@
         "slide_dUU7xf": {
           "type": "slide",
           "settings": {
-            "number": "Step 1",
-            "title": "Listen & Learn",
-            "description": "<p>We start by listening — to your story, habits, and needs. Every consultation begins with understanding how you live, move, and rest.</p><p>Because real improvement starts with empathy, not assumptions.</p>"
+            "number": "SCHRITT 1",
+            "title": "Zuhören & Lernen",
+            "description": "<p>Wir beginnen mit Zuhören – deinen Schlafgewohnheiten und Bedürfnissen. Jede Beratung beginnt damit zu verstehen, wie du lebst, dich bewegst und ruhst. </p><p>Denn echte Verbesserung beginnt mit Empathie, nicht mit Annahmen.</p>"
           }
         },
         "slide_YCYFc9": {
           "type": "slide",
           "settings": {
-            "number": "Step 2",
-            "title": "Analyze & Adapt",
-            "description": "<p>Together, we explore your current sleep situation — posture, comfort zones, tension points. Our experts translate this knowledge into personalized insights that shape your ideal configuration.</p><p>It’s a process built around real people, not generic averages.</p>"
+            "number": "SCHRITT 2",
+            "title": "Analysieren & Anpassen",
+            "description": "<p>Gemeinsam erkunden wir deine aktuelle Schlafsituation – Haltung, Komfortzonen, Verspannungspunkte. Unsere Experten übersetzen dieses Wissen in personalisierte Erkenntnisse, die deine ideale Konfiguration formen. </p><p>Es ist ein Prozess, der um echte Menschen gebaut ist, nicht um generische Durchschnitte.</p>"
           }
         },
         "slide_39ANta": {
           "type": "slide",
           "settings": {
-            "number": "Step 3",
-            "title": "Design for You",
-            "description": "<p>We create a tailored sleep solution that evolves with your life. Your comfort isn’t static — it grows and changes, just like you.</p><p>That’s why we build systems designed to adapt, not just impress.</p>"
+            "number": "SCHRITT 3",
+            "title": "Designed für dich",
+            "description": "<p>Wir kreieren eine maßgeschneiderte Schlaflösung, die sich mit deinem Leben entwickelt. Dein Komfort ist nicht statisch – er wächst und verändert sich, genau wie du. </p><p>Deshalb bauen wir Systeme, die sich anpassen, nicht nur beeindrucken.</p>"
           }
         }
       },
@@ -262,8 +262,8 @@
       ],
       "name": "Left sticky text",
       "settings": {
-        "title": "Our Core Belief: Human Connection Drives Innovation",
-        "desc": "<p>Sleep is deeply personal. What works for one person may fail for another. That’s why our process starts with understanding you.</p>"
+        "title": "Unser Überzeugung: Verständnis treibt Innovation",
+        "desc": "<p>Schlaf ist persönlich – was für einen funktioniert, passt nicht für alle. Darum beginnt alles damit, dich zu verstehen.</p>"
       }
     },
     "press_aicD8y": {
@@ -271,10 +271,10 @@
       "name": "Press section",
       "settings": {
         "image": "shopify://shop_images/cta-video.webp",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
+        "title": "Sonntagmorgen. Jeden Morgen.",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "Das Gefühl kennst du. Wir machen es zum Alltag.",
+        "link_text": "Schlafsystem entdecken",
         "link_url": "#test"
       }
     },

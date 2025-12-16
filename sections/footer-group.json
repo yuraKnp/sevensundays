@@ -17,21 +17,21 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Company",
+            "heading": "Unternehmen",
             "menu": "menu-footer-1"
           }
         },
         "link_list_cmjKGa": {
           "type": "link_list",
           "settings": {
-            "heading": "Career",
+            "heading": "Karriere",
             "menu": "menu-footer-3"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Partners",
+            "heading": "Partner",
             "menu": "menu-footer-2"
           }
         },
@@ -62,7 +62,7 @@
         "logo_white": "shopify://shop_images/logo-white.svg",
         "footer_left_image": "shopify://shop_images/footer-img.jpg",
         "footer_bottom_menu": "footer-copyright-menu",
-        "footer_copyright_text": "Design <a href=\"https://seven-sundays.shop/en?pb=0#\">Ariel Jędrzejczak</a>",
+        "footer_copyright_text": "",
         "footer_left_link": "",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
