@@ -13,7 +13,11 @@
       "submit_form" : "Book now",
       "name" : "Name",
       "phone" : "Phone",
-      "city" : "City / Location"
+      "city" : "City / Location",
+      "name_p" : "Your full name",
+      "email_p" : "We’ll send confirmation here",
+      "phone_p" : "We’ll call you here",
+      "city_p" : "Where the consultation will take place",
     },
     "menu":{
       "get_sleep_system": "Get Sleep System",
