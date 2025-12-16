@@ -1,4 +1,4 @@
-<div class="section padd-lg contact-form-section">
+<div class="section padd-lg " >
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8 col-xl-6">
@@ -16,8 +16,11 @@
 
                 {% form 'contact', class: 'form-block white' %}
 
-                    {% if form.posted_successfully? %}
+                    {% comment %} {% if form.posted_successfully? %}
                         <p class="form-success">Thank you for contacting us! We will be in touch soon.</p>
+                    {% endif %} {% endcomment %}
+                    {% if form.posted_successfully? %}
+                        <div class="contact-form-section" data-form-status="success"></div>
                     {% endif %}
 
                     {% if form.errors %}
