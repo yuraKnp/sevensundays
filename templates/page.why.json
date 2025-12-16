@@ -23,29 +23,29 @@
         "slide_RTxYBe": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Sleep is the essence of performance",
-            "slide_desc": "Perfected by nature over millions of years, restorative sleep remains the ultimate regeneration program for body and mind – an irreplaceable biological masterpiece no technology can replicate."
+            "slide_heading": "Schlaf ist die Essenz unserer Leistung",
+            "slide_desc": "Über Jahrtausende von der Natur perfektioniert, ist er das ultimative Regenerationsprogramm für Körper und Geist. Trotz jahrzehntelanger Schlafforschung bleibt er eines der größten Mysterien der Menschheit – ein tiefes, komplexes, biologisches Meisterwerk, das keine Technologie replizieren kann."
           }
         },
         "slide_V3zbVT": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Yet bad sleep became acceptable – with dire consequences",
-            "slide_desc": "Industrial and digital revolutions disrupted our natural sleep cycles. Factory work brought artificial light and fractured rhythms. The digital age introduced constant stimulation and \"always-on\" mentality our brains weren't designed for. Today, you're paying the price: declining health, diminished performance, compromised wellbeing."
+            "slide_heading": "Schlechter Schlaf wurde akzeptabel – mit fatalen Folgen",
+            "slide_desc": "Industrielle und technische Revolutionen störten unsere natürlichen Schlafzyklen. Nicht mehr Sonne und innere Rhythmen bestimmten unsere Ruhe – stattdessen regieren externe Faktoren unsere Nächte. Fabrikarbeit brachte künstliches Licht und Schichtarbeit. Die digitale Revolution brachte ständige Stimulation, permanente Benachrichtigungen und eine \"Always-on\"-Mentalität, für die unser Gehirn nicht gemacht ist. Das erklärt den Anstieg psychischer Probleme weltweit."
           }
         },
         "slide_3Q73dE": {
           "type": "slide",
           "settings": {
-            "slide_heading": "The mattress industry exploited this crisis",
-            "slide_desc": "Instead of solving the problem, a multi-billion dollar industry promised \"one mattress fits all\" – mass-produced products with massive margins. The result: over 30 million discarded mattresses annually in Europe, and even more people with bad sleep. Can a 20-year-old athlete really need the same support as a 75-year-old with arthritis?"
+            "slide_heading": "Die Matratzenindustrie nutzte diese Krise aus",
+            "slide_desc": "Anstatt das Problem zu lösen, versprach eine milliardenschwere Industrie \"Eine Matratze für alle\" – massenproduzierten Produkte mit riesigen Margen. Das Ergebnis: über 30 Millionen entsorgte Matratzen jährlich in Europa, und noch mehr Menschen mit schlechtem Schlaf. Kann eine 20-jährige sportliche Person wirklich dieselbe Unterstützung brauchen wie eine 75-jährige Person mit Arthritis?"
           }
         },
         "slide_XVQXK8": {
           "type": "slide",
           "settings": {
-            "slide_heading": "The mattress industry exploited this crisis",
-            "slide_desc": "Just as your body is unique, no single sleep surface can serve everyone. Personalized, modular sleep systems finally return control to you – giving you the key to unlock restorative rest tailored to your body. Return to sleep's original purpose: essential regeneration enabling your peak performance."
+            "slide_heading": "Die Lösung: Erobere deine Erholung durch Personalisierung zurück",
+            "slide_desc": "So einzigartig wie dein Körper ist, kann keine einzelne Schlafunterlage allen dienen. Personalisierte, modulare Schlafsysteme geben dir endlich die Kontrolle zurück – sie geben dir den Schlüssel zu erholsamer Ruhe, maßgeschneidert für deinen Körper. Zurück zum ursprünglichen Zweck des Schlafs: essentielle Regeneration für deine Höchstleistung."
           }
         }
       },
@@ -58,7 +58,7 @@
       "name": "Time",
       "settings": {
         "image": "shopify://shop_images/time-1.webp",
-        "title": "It’s time to celebrate sleep, again"
+        "title": "Es ist Zeit, Schlaf wieder zu zelebrieren"
       }
     },
     "horizontal_slider_8kbf6a": {
@@ -68,27 +68,27 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-5.webp",
-            "slide_heading": "Adjustment in seconds",
-            "slide_desc": "Because no two bodies are the same, your system adapts instantly to you.",
-            "slide_tag": "Adjustment"
+            "slide_heading": "Anpassung in Sekunden",
+            "slide_desc": "Weil keine zwei Körper gleich sind, passt sich dein System sofort an dich an.",
+            "slide_tag": " Anpassung"
           }
         },
         "slide_RACthp": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-6.webp",
-            "slide_heading": "Always in alignment",
-            "slide_desc": "Designed for ergonomic balance and optimal cervical support.",
-            "slide_tag": "Alignment"
+            "slide_heading": "Immer in Balance",
+            "slide_desc": "Entwickelt für ergonomisches Gleichgewicht und optimale Unterstützung der Halswirbelsäule.",
+            "slide_tag": "Balance"
           }
         },
         "slide_BpC8Fy": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-7.webp",
-            "slide_heading": "Completely sustainable",
-            "slide_desc": "Handcrafted from natural, high-quality materials that respect both you and the planet.",
-            "slide_tag": "Sustainable"
+            "slide_heading": "Komplett nachhaltig",
+            "slide_desc": "Handgefertigt aus natürlichen, hochwertigen Materialien, die dich und den Planeten respektieren.",
+            "slide_tag": "Nachhaltig"
           }
         }
       },
@@ -99,9 +99,9 @@
       ],
       "name": "Vertical slider",
       "settings": {
-        "title": "A sophisticated modular sleep system that changes everything",
-        "subtitle": "Our solution",
-        "description": "",
+        "title": "Ein ausgeklügeltes modulares Schlafsystem, das alles verändert",
+        "subtitle": "UNSERE LÖSUNG",
+        "description": "Seven Sundays ist ein modulares Schlafsystem, entwickelt um deine nächtliche Regeneration zu optimieren und deine Energie natürlich aufzuladen für die Momente, die das Leben erfüllend machen.",
         "section_color": "light"
       }
     },
@@ -247,7 +247,10 @@
       ],
       "name": "Three columns section",
       "settings": {
-        "title": "Family business with over 40 years of experience and reasearch"
+        "section_type": "light",
+        "subtitle": "",
+        "title": "Family business with over 40 years of experience and reasearch",
+        "short_desc": ""
       }
     },
     "awards_slider_XwhBJd": {
