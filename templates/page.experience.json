@@ -139,6 +139,51 @@
         "link_url": "#"
       }
     },
+    "background_image_columns_bAXB7A": {
+      "type": "background-image-columns",
+      "blocks": {
+        "slide_J9Kz88": {
+          "type": "slide",
+          "settings": {
+            "title": "Maximum comfort",
+            "description": "No research, no travel, no stress – everything comes to you"
+          }
+        },
+        "slide_MjbdTL": {
+          "type": "slide",
+          "settings": {
+            "title": "Tailored consultation",
+            "description": "A sleep consultant who focuses only on your needs"
+          }
+        },
+        "slide_bB4398": {
+          "type": "slide",
+          "settings": {
+            "title": "Time without pressure",
+            "description": "Try everything at your own pace in familiar surroundings"
+          }
+        },
+        "slide_gbWAmR": {
+          "type": "slide",
+          "settings": {
+            "title": "Absolute exclusivity",
+            "description": "Access to award-winning products available nowhere else"
+          }
+        }
+      },
+      "block_order": [
+        "slide_J9Kz88",
+        "slide_MjbdTL",
+        "slide_bB4398",
+        "slide_gbWAmR"
+      ],
+      "name": "Background image columns",
+      "settings": {
+        "image": "shopify://shop_images/exclusive-banner-img.webp",
+        "image_mob": "shopify://shop_images/exclusive-banner-img-mob.jpg",
+        "title": "All exclusive home shopping advantages at a glance"
+      }
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -158,6 +203,7 @@
     "small_title_4zHLyK",
     "right_steps_eLHDTE",
     "three_columns_section_v2_eDQpGb",
+    "background_image_columns_bAXB7A",
     "press_aicD8y"
   ]
 }
