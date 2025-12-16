@@ -32,6 +32,14 @@
         "right_add_text": "(90x200cm)"
       }
     },
+    "small_title_4zHLyK": {
+      "type": "small-title",
+      "name": "Small title section",
+      "settings": {
+        "subtitle": "Sleep is as unique as you are",
+        "title": "That’s why Seven Sundays isn’t available online – only through our exclusive premium home consultation service, where we bring the modular sleep system directly to you for personalized expert guidance and in-home trial."
+      }
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -48,6 +56,7 @@
   "order": [
     "main",
     "image_banner_right_info_9nbfQj",
+    "small_title_4zHLyK",
     "press_aicD8y"
   ]
 }
