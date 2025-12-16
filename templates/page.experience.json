@@ -195,6 +195,39 @@
         "link_text": "Download Press Kit",
         "link_url": "#test"
       }
+    },
+    "call_back_form_XWxPhg": {
+      "type": "call-back-form",
+      "blocks": {
+        "slide_R7HUBe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/support-logo-2.svg",
+            "title": "Trusted by hundreds of sleepers",
+            "description": "Rated <strong>4.5/5</strong> on Trustpilot — <strong>“Exzellent”</strong> based on 648 verified reviews."
+          }
+        },
+        "slide_V7AiPC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/support-logo-3.svg",
+            "title": "Certified expertise",
+            "description": "Seven Sundays upholds the highest quality and ethical standards."
+          }
+        }
+      },
+      "block_order": [
+        "slide_R7HUBe",
+        "slide_V7AiPC"
+      ],
+      "name": "Call to action form",
+      "settings": {
+        "subtitle": "Call-back",
+        "title": "Ready for your best sleep ever?",
+        "desc": "Request your call-back now – your personal sleep consultant will contact you to schedule your exclusive home consultation experience that might just change your life forever.",
+        "title_before_form": "<strong>Let's schedule your sleep consultation in 60 seconds</strong>",
+        "desc_before_form": "I'll call you back to schedule your free in-home SEVEN SUNDAYS experience with a certified sleep consultant."
+      }
     }
   },
   "order": [
@@ -204,6 +237,7 @@
     "right_steps_eLHDTE",
     "three_columns_section_v2_eDQpGb",
     "background_image_columns_bAXB7A",
-    "press_aicD8y"
+    "press_aicD8y",
+    "call_back_form_XWxPhg"
   ]
 }
