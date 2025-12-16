@@ -11,6 +11,9 @@
   "general": {
     "form":{
       "submit_form" : "Rückruf buchen",
+      "name" : "NAME",
+      "phone" : "Telefon",
+      "city" : "STADT/ORT"
     },
     "menu":{
       "get_sleep_system": "Schlafsystem",

@@ -28,38 +28,48 @@
 
                     <div class="form-expert-block">
                         <div class="content">
-                        <div class="text text-md"><b>Let's schedule your sleep consultation in 60 seconds</b></div>
-                        <div class="text text-sm">I'll call you back to schedule your free in-home SEVEN SUNDAYS experience with a certified sleep consultant.</div>
+                            {% if section.settings.title_before_form != blank %}
+                            <div class="text text-md"><b>{{ section.settings.title_before_form }}</b></div>
+                            {% endif %}
+                            {% if section.settings.desc_before_form != blank %}
+                            <div class="text text-sm">{{ section.settings.desc_before_form }}</div>
+                        {% endif %}
                         </div>
-                        <img width="64" height="64" src="img/expert-photo-4.webp" alt="" loading="lazy">
+                        {% assign image_before_form = section.settings.image_before_form %}
+                        
+                        {% if image_before_form != blank %}
+                            {% assign image_b_url = image_before_form | image_url  %}
+                            {% assign image_b_alt = image_before_form.alt  %}
+                            <img width="64" height="64" src="{{ image_b_url }}" alt="{{ image_b_alt }}" loading="lazy">
+                        {% endif %}
                     </div>
                     <div class="row">
                         <div class="col-12">
                         <label class="input-field">
-                            <div class="label">Name</div>
+                            <div class="label">{{ 'general.form.name' | t }}</div>
                             <input name="contact[name]" class="input" type="text" placeholder="Your full name" required>
-                            <div class="input-error">Please fill in this field</div>
+                            {% comment %} <div class="input-error">Please fill in this field</div> {% endcomment %}
                         </label>
                         </div>
                         <div class="col-12">
                         <label class="input-field">
                             <div class="label">email</div>
                             <input name="contact[email]" class="input" type="email" placeholder="We’ll send confirmation here" required>
-                            <div class="input-error">Please fill in this field</div>
+                            {% comment %} <div class="input-error">Please fill in this field</div> {% endcomment %}
                         </label>
                         </div>
                         <div class="col-12">
                         <label class="input-field">
-                            <div class="label">Phone</div>
+                            <div class="label">{{ 'general.form.phone' | t }}</div>
                             <input name="contact[phone]" class="input" type="tel" placeholder="We’ll call you here" required>
-                            <div class="input-error">Please fill in this field</div>
+                            {% comment %} <div class="input-error">Please fill in this field</div> {% endcomment %}
                         </label>
                         </div>
                         <div class="col-12">
                         <label class="input-field">
-                            <div class="label">City / Location</div>
+                            <div class="label">{{ 'general.form.city' | t }}</div>
                             <input name="contact[city]" class="input" type="text" placeholder="Where the consultation will take place" required>
-                            <div class="input-error">Please fill in this field</div>
+                            {% comment %} <div class="input-error">Please fill in this field</div> {% endcomment %}
                         </label>
                         </div>
                     </div>
@@ -136,6 +146,11 @@
       "type": "inline_richtext",
       "id": "desc",
       "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before_form",
+      "label": "Image before form"
     },
     {
       "type": "inline_richtext",

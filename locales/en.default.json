@@ -11,6 +11,9 @@
   "general": {
     "form":{
       "submit_form" : "Book now",
+      "name" : "Name",
+      "phone" : "Phone",
+      "city" : "City / Location"
     },
     "menu":{
       "get_sleep_system": "Get Sleep System",
