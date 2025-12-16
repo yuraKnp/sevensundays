@@ -98,6 +98,16 @@
         "left_image": "shopify://shop_images/lr-img-8.webp"
       }
     },
+    "three_columns_section_v2_eDQpGb": {
+      "type": "three-columns-section-v2",
+      "name": "Three columns (v2)",
+      "settings": {
+        "subtitle": "MAKE IT PERSONAL",
+        "title": "Why home shopping is the best path to your best sleep",
+        "link_text": "Request appointment",
+        "link_url": "#"
+      }
+    },
     "press_aicD8y": {
       "type": "press",
       "name": "Press section",
@@ -116,6 +126,7 @@
     "image_banner_right_info_9nbfQj",
     "small_title_4zHLyK",
     "right_steps_eLHDTE",
+    "three_columns_section_v2_eDQpGb",
     "press_aicD8y"
   ]
 }
