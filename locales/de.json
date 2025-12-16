@@ -18,6 +18,8 @@
       "email_p" : "We’ll send confirmation here",
       "phone_p" : "We’ll call you here",
       "city_p" : "Where the consultation will take place",
+      "thank_you_t" : "Vielen Dank für Ihre Anfrage.",
+      "thank_you_d" : "Wir werden uns in Kürze mit Ihnen in Verbindung setzen."
     },
     "menu":{
       "get_sleep_system": "Schlafsystem",
