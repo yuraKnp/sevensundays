@@ -198,6 +198,28 @@
     },
     "call_back_form_XWxPhg": {
       "type": "call-back-form",
+      "blocks": {
+        "slide_R7HUBe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/support-logo-2.svg",
+            "title": "Trusted by hundreds of sleepers",
+            "description": "Rated <strong>4.5/5</strong> on Trustpilot — <strong>“Exzellent”</strong> based on 648 verified reviews."
+          }
+        },
+        "slide_V7AiPC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/support-logo-3.svg",
+            "title": "Certified expertise",
+            "description": "Seven Sundays upholds the highest quality and ethical standards."
+          }
+        }
+      },
+      "block_order": [
+        "slide_R7HUBe",
+        "slide_V7AiPC"
+      ],
       "name": "Call to action form",
       "settings": {
         "subtitle": "Call-back",
