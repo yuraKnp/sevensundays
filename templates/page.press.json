@@ -14,10 +14,10 @@
       "name": "Press section",
       "settings": {
         "image": "shopify://shop_images/cta-video.jpg",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
+        "title": "Presse & Medien",
+        "subtitle": "GESCHICHTEN, DIE GETEILT WERDEN WOLLEN",
+        "short_description": "Für Medienanfragen, Interviews oder Produktinformationen wenden Sie sich bitte an unser Kommunikationsteam. Wir stellen Ihnen gerne Pressematerialien, Experteneinblicke und hochauflösende Bilder zur Verfügung.",
+        "link_text": "Pressekit herunterladen",
         "link_url": "documents/test.pdf"
       }
     },
