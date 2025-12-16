@@ -437,7 +437,7 @@
 
     <div class="popup-wrapper test123" id="popups" {{ content_for_index }}>
 
-    {% assign target_section_id = 'call-back-form' %}
+    {% comment %} {% assign target_section_id = 'call-back-form' %}
     {% if content_for_index contains target_section_id %}
 
       <div class="bg-layer"></div>
@@ -459,7 +459,7 @@
           </div>
       </div>
 
-    {%  endif %}
+    {%  endif %} {% endcomment %}
 
     </div>
 
