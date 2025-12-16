@@ -40,18 +40,6 @@
         "title": "That’s why Seven Sundays isn’t available online – only through our exclusive premium home consultation service, where we bring the modular sleep system directly to you for personalized expert guidance and in-home trial."
       }
     },
-    "press_aicD8y": {
-      "type": "press",
-      "name": "Press section",
-      "settings": {
-        "image": "shopify://shop_images/cta-video.webp",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
-        "link_url": "#test"
-      }
-    },
     "right_steps_eLHDTE": {
       "type": "right-steps",
       "blocks": {
@@ -109,13 +97,25 @@
         "title": "Expert consultation tailored to you – 100% insight, zero pressure",
         "left_image": "shopify://shop_images/lr-img-8.webp"
       }
+    },
+    "press_aicD8y": {
+      "type": "press",
+      "name": "Press section",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "title": "Press & Media",
+        "subtitle": "stories worth sharing",
+        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
+        "link_text": "Download Press Kit",
+        "link_url": "#test"
+      }
     }
   },
   "order": [
     "main",
     "image_banner_right_info_9nbfQj",
     "small_title_4zHLyK",
-    "press_aicD8y",
-    "right_steps_eLHDTE"
+    "right_steps_eLHDTE",
+    "press_aicD8y"
   ]
 }
