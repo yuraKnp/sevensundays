@@ -1,0 +1,117 @@
+<div class="section sec-padd padd-xl-lg sec-black">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h2 title no-balance">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.link_text != blank and section.settings.link_url != blank %}
+                    <a href="{{ section.settings.link_url }}" class="btn">
+                        <b>{{ section.settings.link_text }}</b>
+                        {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
+                        {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                        {%- assign final_svg_url = url_no_version | append: '#btn-arrow' -%}
+                        <svg width="12" height="12"><use href="{{ final_svg_url }}"></use></svg>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% if section.blocks != blank %}
+        <div class="row row-16 justify-content-center">
+            {% for block in section.blocks %}
+                {%- assign image = block.settings.image -%}
+                {%- assign heading = block.settings.title -%}
+                {%- assign desc = block.settings.description -%}
+                <div class="col-lg-4">
+                    <div class="stories-img type-4">
+                        {% if image != blank %}
+                        {% assign image_url = image | image_url  %}
+                        {% assign image_format = image.format  %}
+                        <picture>
+                            <source srcset="{{ image_url }}" type="{{ image_format }}">
+                            <img width="380" height="240" src="#" alt="" loading="lazy">
+                        </picture>
+                        {% endif %}
+                        <div class="content-top">
+                            {% if heading != blank %}
+                            <div class="title h6">{{ heading }}</div>
+                            {% endif %}
+                            {% if desc != blank %}
+                            <div class="text">{{ desc }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Three columns (v2)",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "text",
+      "id": "link_url",
+      "label": "Link url"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "limit": 5,
+      "settings": [
+         {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "description",
+            "label": "Description"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Three columns (v2)",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
