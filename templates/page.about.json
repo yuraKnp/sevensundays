@@ -131,7 +131,7 @@
       "type": "background-video",
       "name": "Background video popup",
       "settings": {
-        "title": "“We spend a third of our lives sleeping, yet a 90-year-old with arthritis sleeps on the same mattress as a 25-year-old athlete. This never made sense to me.”",
+        "title": "\"Wir verbringen ein Drittel unseres Lebens schlafend, doch eine 85-jährige Person mit Arthritis schläft auf derselben Matratze wie eine 25-jährige sportliche Person. Das hat für mich nie Sinn ergeben.\"",
         "image": "shopify://shop_images/live-sleeping.webp",
         "hero_video_file": "shopify://files/videos/born-video.mp4",
         "video_title": "Das Schlafsystem fürs Leben",
