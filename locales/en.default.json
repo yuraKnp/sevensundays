@@ -9,6 +9,9 @@
  */
 {
   "general": {
+    "form":{
+      "submit_form" : "Book now",
+    },
     "menu":{
       "get_sleep_system": "Get Sleep System",
       "from": "From",

@@ -9,6 +9,9 @@
  */
 {
   "general": {
+    "form":{
+      "submit_form" : "Rückruf buchen",
+    },
     "menu":{
       "get_sleep_system": "Schlafsystem",
       "from": "Ab",
