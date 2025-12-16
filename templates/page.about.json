@@ -271,10 +271,10 @@
       "name": "Press section",
       "settings": {
         "image": "shopify://shop_images/cta-video.webp",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
+        "title": "Sonntagmorgen. Jeden Morgen.",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "Das Gefühl kennst du. Wir machen es zum Alltag.",
+        "link_text": "Schlafsystem entdecken",
         "link_url": "#test"
       }
     },
