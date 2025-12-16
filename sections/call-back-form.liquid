@@ -1,0 +1,107 @@
+<div class="section padd-lg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 col-xl-6">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h2 title">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.desc != blank %}
+                    <div class="text text-md">{{ section.settings.desc }}</div>
+                    {% endif %}
+                </div>
+
+                {% comment %} <?php include 'template-parts/_form-block.php'; ?> {% endcomment %}
+
+                {% if section.blocks != blank %}
+                <div class="support-items">
+                    {% for block in section.blocks %}
+                        {%- assign image = block.settings.image -%}
+                        {%- assign heading = block.settings.title -%}
+                        {%- assign desc = block.settings.description -%}
+                        <div class="support-item">
+                            {% if image != blank %}
+                                {% assign image_url = image | image_url  %}
+                                {% assign image_format = image.alt  %}
+                            <div class="support-img">
+                                <img width="66" height="66" src="{{ image_url }}" alt="{{ image_format }}" loading="lazy">
+                            </div>
+                            {% endif %}
+                            <div class="support-content">
+                                {% if heading != blank %}
+                                <div class="text"><b>{{ heading }}</b></div>
+                                {% endif %}
+                                {% if desc != blank %}
+                                <div class="text text-sm">{{ desc }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Call to action form",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "desc",
+      "label": "Description"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "After form items",
+      "limit": 4,
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "description",
+            "label": "Description"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Call to action form",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
