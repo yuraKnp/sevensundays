@@ -120,6 +120,7 @@
   },
   "products": {
     "product": {
+      "shop_now" : "Shop now",
       "read_now" : "Shop now",
       "add_to_cart": "Add to cart",
       "choose_options": "Choose options",
