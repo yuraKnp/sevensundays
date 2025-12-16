@@ -145,7 +145,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
-            "title": "Three unglued layers",
+            "title": "Drei unverklebte Schichten",
             "description": ""
           }
         },
@@ -153,7 +153,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/about-banner-img.webp",
-            "title": "Infinite configurations",
+            "title": "Unendliche Konfigurationen",
             "description": ""
           }
         },
@@ -161,7 +161,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-4_0a470568-c20b-4430-9231-b9da5271c0cd.webp",
-            "title": "30 seconds to transform",
+            "title": "30 Sekunden zur Transformation",
             "description": ""
           }
         }
@@ -174,9 +174,9 @@
       "name": "Three columns section",
       "settings": {
         "section_type": "dark",
-        "subtitle": "EVERYTHING YOU NEED – BUILT RIGHT IN",
-        "title": "The Swiss Army Knife of Sleep",
-        "short_desc": "The Modular Sleep System — inspired by Swiss precision, built on the building block."
+        "subtitle": "  ALLES, WAS DU BRAUCHST – IST DRIN",
+        "title": "Das Schweizer Taschenmesser des Schlafs",
+        "short_desc": "Das Modulare Schlafsystem – inspiriert von Schweizer Präzision, gebaut auf dem Baustein-Prinzip."
       }
     },
     "philosofy_LcwnKg": {
@@ -186,32 +186,32 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/philosophy-1.svg",
-            "title": "Premium European Materials Only",
-            "description": "Cold foams with highest density and premium textiles from Europe’s leading manufacturers. No compromises on quality or origin."
+            "title": "  Europäische Premium-Materialien",
+            "description": "Kaltschäume höchster Dichte, Premium-Textilien von Europas besten Herstellern. Keine Kompromisse."
           }
         },
         "slide_hRqBxb": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/philosophy-2.svg",
-            "title": "Handcrafted Excellence",
-            "description": "Every system individually crafted in our Swiss manufactory. The same meticulous attention to detail that premium furniture brands have trusted for over 40 years."
+            "title": "Handgefertigte Exzellenz",
+            "description": "Individuell gefertigt in unserer Schweizer Manufaktur. Mit der Präzision, der Premium-Marken seit 40 Jahren vertrauen."
           }
         },
         "slide_Jgfdri": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/philosophy-3.svg",
-            "title": "Individual Optimization",
-            "description": "True sleep improvement only works individually. That’s why we listen, learn, and innovate together with our customers."
+            "title": "Individuelle Optimierung",
+            "description": "Echter Schlaf ist individuell. Deshalb hören wir zu, lernen und entwickeln mit dir weiter."
           }
         },
         "slide_UCEYwF": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/philosophy-4.svg",
-            "title": "Closed-Loop Design",
-            "description": "Built to last, repair, and evolve. Individual components can be replaced or upgraded without discarding the entire system."
+            "title": "Kreislauf-Design",
+            "description": "Gebaut für Langlebigkeit. Teile ersetzen, upgraden, reparieren – nie das ganze System wegwerfen."
           }
         }
       },
@@ -223,8 +223,8 @@
       ],
       "name": "Left sticky slider",
       "settings": {
-        "subtitle": "SWISS DESIGN PHILOSOPHY",
-        "title": "Where function meets beautiful craftsmanship"
+        "subtitle": "SCHWEIZER DESIGNPHILOSOPHIE",
+        "title": "Wo Funktion auf schöne Handwerkskunst trifft"
       }
     },
     "innovation_fFRgcP": {
@@ -233,25 +233,25 @@
         "slide_dUU7xf": {
           "type": "slide",
           "settings": {
-            "number": "Step 1",
-            "title": "Listen & Learn",
-            "description": "<p>We start by listening — to your story, habits, and needs. Every consultation begins with understanding how you live, move, and rest.</p><p>Because real improvement starts with empathy, not assumptions.</p>"
+            "number": "SCHRITT 1",
+            "title": "Zuhören & Lernen",
+            "description": "<p>Wir beginnen mit Zuhören – deinen Schlafgewohnheiten und Bedürfnissen. Jede Beratung beginnt damit zu verstehen, wie du lebst, dich bewegst und ruhst. </p><p>Denn echte Verbesserung beginnt mit Empathie, nicht mit Annahmen.</p>"
           }
         },
         "slide_YCYFc9": {
           "type": "slide",
           "settings": {
-            "number": "Step 2",
-            "title": "Analyze & Adapt",
-            "description": "<p>Together, we explore your current sleep situation — posture, comfort zones, tension points. Our experts translate this knowledge into personalized insights that shape your ideal configuration.</p><p>It’s a process built around real people, not generic averages.</p>"
+            "number": "SCHRITT 2",
+            "title": "Analysieren & Anpassen",
+            "description": "<p>Gemeinsam erkunden wir deine aktuelle Schlafsituation – Haltung, Komfortzonen, Verspannungspunkte. Unsere Experten übersetzen dieses Wissen in personalisierte Erkenntnisse, die deine ideale Konfiguration formen. </p><p>Es ist ein Prozess, der um echte Menschen gebaut ist, nicht um generische Durchschnitte.</p>"
           }
         },
         "slide_39ANta": {
           "type": "slide",
           "settings": {
-            "number": "Step 3",
-            "title": "Design for You",
-            "description": "<p>We create a tailored sleep solution that evolves with your life. Your comfort isn’t static — it grows and changes, just like you.</p><p>That’s why we build systems designed to adapt, not just impress.</p>"
+            "number": "SCHRITT 3",
+            "title": "Designed für dich",
+            "description": "<p>Wir kreieren eine maßgeschneiderte Schlaflösung, die sich mit deinem Leben entwickelt. Dein Komfort ist nicht statisch – er wächst und verändert sich, genau wie du. </p><p>Deshalb bauen wir Systeme, die sich anpassen, nicht nur beeindrucken.</p>"
           }
         }
       },
@@ -262,8 +262,8 @@
       ],
       "name": "Left sticky text",
       "settings": {
-        "title": "Our Core Belief: Human Connection Drives Innovation",
-        "desc": "<p>Sleep is deeply personal. What works for one person may fail for another. That’s why our process starts with understanding you.</p>"
+        "title": "Unser Überzeugung: Verständnis treibt Innovation",
+        "desc": "<p>Schlaf ist persönlich – was für einen funktioniert, passt nicht für alle. Darum beginnt alles damit, dich zu verstehen.</p>"
       }
     },
     "press_aicD8y": {
