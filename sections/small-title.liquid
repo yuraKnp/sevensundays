@@ -1,0 +1,46 @@
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <div class="title-shortcode mb-0 text-center">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h3 title font-1">{{ section.settings.title }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-md"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Small title section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Small title section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
