@@ -8,6 +8,7 @@
                     {% assign image_url = image | image_url  %}
                     {% assign image_format = image.format  %}
                     <picture>
+                        <source srcset="img/lr-img-8.webp" type="image/webp">
                         <source srcset="{{ image_url }}" type="{{ image_format }}">
                         <img width="380" height="240" src="#" alt="" loading="lazy">
                     </picture>
