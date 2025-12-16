@@ -70,7 +70,7 @@
       "name": "Innovating",
       "settings": {
         "title": "Jahrzehntelange Innovation für Europas renommierteste Marken.",
-        "description": "Alles begann mit einer schlaflosen Nacht. Genauer gesagt: mit Jahren davon. 2016 wollte Reinhard Maier endlich wissen, warum keine Matratze wirklich half. Was er entdeckte, überraschte ihn: Die Branche hatte aufgehört, echte Innovationen für besseren Schlaf zu entwickeln.",
+        "description": "Seit über 40 Jahren ist unsere Schweizer Familienmanufaktur die verborgene Kraft hinter Europas renommiertesten Möbelmarken. Walter Knoll, Rolf Benz, DeSede, Vitra, Vetsak, Dedon – wenn diese Design-Ikonen perfekte Schaumlösungen brauchen, wenden sie sich an unseren Erfindergeist und unsere Handwerkskunst.",
         "description_b_g": "Marken, mit denen wir gearbeitet haben"
       }
     },
@@ -78,13 +78,13 @@
       "type": "story-section",
       "name": "Story section",
       "settings": {
-        "subtitle": "from insight to innovation",
-        "title": "When the Expert Became the Customer",
-        "description": "In 2016, after years of declining sleep quality, Reinhard started researching why every mattress he tried failed to help him sleep better. His investigation revealed a shocking reality: while every other industry had evolved, the mattress world had simply stopped innovating.",
+        "subtitle": "VON ERKENNTNISSEN ZUR INNOVATION",
+        "title": "Wie ein Experte selbst zum Kunden wurde",
+        "description": "Alles begann mit einer schlaflosen Nacht. Genauer gesagt: mit Jahren davon. 2016 wollte Reinhard Maier endlich wissen, warum keine Matratze wirklich half. Was er entdeckte, überraschte ihn: Die Branche hatte aufgehört, echte Innovationen für besseren Schlaf zu entwickeln.",
         "image": "shopify://shop_images/expert-become.webp",
-        "quote": "After decades crafting comfort for others, I realized the best design isn’t just what looks impressive — it must also genuinely benefit its user.",
+        "quote": "Das beste Design passt sich dem Menschen an – nicht umgekehrt. Jede Nacht aufs Neue, ein Leben lang.",
         "name": "Reinhard Maier",
-        "position": "Co-Founder & Inventor of the Modular Sleep System"
+        "position": "Mitgründer & Erfinder des Modularen Schlafsystems"
       }
     },
     "three_columns_section_xK8rmF": {
