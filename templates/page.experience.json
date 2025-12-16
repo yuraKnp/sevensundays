@@ -195,6 +195,17 @@
         "link_text": "Download Press Kit",
         "link_url": "#test"
       }
+    },
+    "call_back_form_XWxPhg": {
+      "type": "call-back-form",
+      "name": "Call to action form",
+      "settings": {
+        "subtitle": "Call-back",
+        "title": "Ready for your best sleep ever?",
+        "desc": "Request your call-back now – your personal sleep consultant will contact you to schedule your exclusive home consultation experience that might just change your life forever.",
+        "title_before_form": "<strong>Let's schedule your sleep consultation in 60 seconds</strong>",
+        "desc_before_form": "I'll call you back to schedule your free in-home SEVEN SUNDAYS experience with a certified sleep consultant."
+      }
     }
   },
   "order": [
@@ -204,6 +215,7 @@
     "right_steps_eLHDTE",
     "three_columns_section_v2_eDQpGb",
     "background_image_columns_bAXB7A",
-    "press_aicD8y"
+    "press_aicD8y",
+    "call_back_form_XWxPhg"
   ]
 }
