@@ -1,0 +1,120 @@
+{%- assign image = section.settings.image -%}
+{%- assign image_mob = section.settings.image_mob -%}
+
+
+<div class="section sec-born">
+    <div class="banner">
+        <div class="banner-media top-bottom-shadow style-2">
+            {% if image != blank %}
+            {% assign image_url = image | image_url  %}
+            {% assign image_format = image.format  %}
+            <picture>
+                <source srcset="{{ image_url }}" type="{{ image_format }}"  media="(min-width:768px)">
+                {% if image_mob != blank %}
+                    {% assign image_url = image_mob | image_url  %}
+                    {% assign image_format = image_mob.format  %}
+                <source srcset="{{ image_url }}" type="{{ image_format }}" media="(max-width:767px)">
+                {% endif %}
+                <img width="380" height="240" src="#" alt="" loading="lazy">
+            </picture>
+            {% endif %}
+        </div>
+        <div class="banner-align align-top-bottom">
+            <div class="block-blurs">
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+            </div>
+            <div class="align-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 col-xl-6">
+                            <div class="banner-info">
+                                {% if section.settings.title != blank %}
+                                <div class="h2 title">{{ section.settings.title }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if section.blocks != blank %}
+            <div class="align-bottom">
+                <div class="container">
+                    <div class="row">
+                        {% for block in section.blocks %}
+                            {%- assign heading = block.settings.title -%}
+                            {%- assign desc = block.settings.description -%}
+                        <div class="col-lg-3">
+                            <div class="born-item">
+                                {% if heading != blank %}
+                                <div class="h5 title">{{ heading }}</div>
+                                {% endif %}
+                                {% if desc != blank %}
+                                <div class="text">{{ desc }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Background image columns",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background image"
+    },
+    {
+        "type": "image_picker",
+        "id": "image_mob",
+        "label": "Background image mobile"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "limit": 4,
+      "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "description",
+            "label": "Description"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Background image columns",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
