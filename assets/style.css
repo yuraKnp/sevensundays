@@ -101,6 +101,7 @@ a:hover .video-cover video {transform: scale(1.04);}
 .banner-align.align-top-bottom {padding-block: var(--sp-md);display: flex;width: 100%;flex-direction: column;justify-content: space-between;flex-wrap: wrap;}
 .sec-padd-inline .banner {border-radius: var(--rd-1);overflow: hidden;}
 .sec-padd-inline .banner-align {display: flex;align-items: flex-end;width: auto;padding: var(--sp-32) var(--sp-16);}
+.sec-padd-inline .banner-align.align-middle {align-items: center;}
 .banner-info .title {color: var(--clr-white-2);}
 .banner-info .text {color: var(--clr-grey);}
 .banner-info .button-wrapp {justify-content: center;}
