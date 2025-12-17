@@ -260,8 +260,8 @@
           "settings": {
             "tags": "",
             "name": "Beate Stewen",
-            "job": "Agency Partner",
-            "slide_desc": "\"I was almost retired when I tried the Seven Sundays system. Instantly knew I had to get back in the game! Now I'm running a thriving business with great income and an amazing team.\""
+            "job": "Agenturpartnerin",
+            "slide_desc": "\"Ich war fast im Ruhestand, als ich das Seven Sundays System ausprobierte. Sofort wusste ich, dass ich wieder einsteigen muss! Jetzt führe ich ein florierendes Geschäft mit tollem Einkommen und einem großartigen Team.\""
           }
         },
         "slide_3QULtU": {
@@ -269,8 +269,8 @@
           "settings": {
             "tags": "",
             "name": "Petra Reuter",
-            "job": "Agency Partner",
-            "slide_desc": "“I never dared to get into direct sales because everyone always wants an upfront investment. Not so with SEVEN SUNDAYS! No capital investment, I completed the training and earned money right away. Now I have a constantly growing team. The opportunities are endless.”"
+            "job": "Agenturpartnerin",
+            "slide_desc": "\"Ich habe mich nie getraut, in den Direktvertrieb einzusteigen, weil alle immer eine Vorabinvestition wollen. Nicht so bei Seven Sundays! Keine Investition außer ein paar Stunden meiner Zeit! Ich habe die Schulung abgeschlossen und schnell gutes Geld verdient. Jetzt habe ich ein ständig wachsendes Team. Die Möglichkeiten sind endlos.\""
           }
         },
         "slide_WMCdCU": {
@@ -278,8 +278,8 @@
           "settings": {
             "tags": "",
             "name": "Anton Wolf",
-            "job": "Sleep Consultant",
-            "slide_desc": "\"Flexibility has always mattered to me, even in my days as a fitness coach. With SEVEN SUNDAYS, both my income and my free time have grown—giving me the freedom I always wanted, plus the reward of helping people sleep better.\""
+            "job": "Schlafberater:in",
+            "slide_desc": "\"Flexibilität war mir schon als Fitnesstrainer wichtig. Mit Seven Sundays sind sowohl mein Einkommen als auch meine Freizeit gewachsen – das gibt mir die Freiheit, die ich immer wollte, plus die Belohnung, Menschen beim besseren Schlafen zu helfen.\""
           }
         },
         "slide_RATtrY": {
@@ -287,8 +287,8 @@
           "settings": {
             "tags": "",
             "name": "Laura Müller",
-            "job": "Sleep Consultant",
-            "slide_desc": "\"As a physiotherapist, I always declined sales partnerships—my patients come first. But after trying SEVEN SUNDAYS myself, I was fully convinced. Now I recommend it where it truly helps—guilt-free. The additional income is a welcome bonus.\""
+            "job": "Schlafberaterin",
+            "slide_desc": "\"Als Physiotherapeutin habe ich Vertriebspartnerschaften immer abgelehnt – meine Patienten kommen zuerst. Aber nachdem ich Seven Sundays selbst ausprobiert habe, war ich voll überzeugt. Jetzt empfehle ich es, wo es wirklich hilft – ohne schlechtes Gewissen. Das zusätzliche Einkommen ist ein willkommener Bonus.\""
           }
         }
       },
@@ -301,7 +301,7 @@
       "name": "Testimonial slider",
       "settings": {
         "section_type": "type_2",
-        "slider_title": "What our sleep consultants say"
+        "slider_title": "Was unsere Schlafberater:in sagen"
       }
     },
     "call_to_action_jBeyNj": {
