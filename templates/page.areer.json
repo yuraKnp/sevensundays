@@ -17,21 +17,22 @@
         "padding_bottom": 28
       }
     },
-    "press_aicD8y": {
-      "type": "press",
-      "name": "Press section",
+    "banner_text_eKYhXt": {
+      "type": "banner-text",
+      "name": "Banner text",
       "settings": {
-        "image": "shopify://shop_images/cta-video.webp",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
-        "link_url": "#test"
+        "subtitle": "Transform lives through sleep",
+        "title": "Build your dream career. Start earning next month.",
+        "description": "As a Seven Sundays Sleep Consultant, you’ll help people unlock their full potential through better sleep – while creating unlimited earning potential for yourself.",
+        "link_text": "Start Career Now",
+        "link_url": "#",
+        "link_text2": "Learn more",
+        "link_url2": "#"
       }
     }
   },
   "order": [
     "main",
-    "press_aicD8y"
+    "banner_text_eKYhXt"
   ]
 }
