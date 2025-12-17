@@ -16,9 +16,23 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "three_layer_banner_mra8DQ": {
+      "type": "three-layer-banner",
+      "name": "Three layer banner",
+      "settings": {
+        "title": "Meet the world's most personal mattress",
+        "subtitle": "engineered in switzerland",
+        "scroll_text": " Scroll to explore",
+        "image": "shopify://shop_images/mattress-img-1.webp",
+        "image_sec": "shopify://shop_images/mattress-img-2.webp",
+        "title_under_img": "Three layers",
+        "short_desc_under_img": "Three separate layers engineered with the most advanced comfort and ergonomic science to unlock better sleep forever."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "three_layer_banner_mra8DQ"
   ]
 }
