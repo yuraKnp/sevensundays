@@ -1,0 +1,140 @@
+<div class="section sec-born">
+    <div class="banner">
+        <div class="banner-media top-bottom-shadow style-2">
+            {% if section.settings.image != blank %}
+            {{ section.settings.image 
+                | image_url: width: section.settings.image.width
+                | image_tag: 
+                    width: section.settings.image.width,
+                    height: 'auto',
+                    alt: section.settings.image.alt,
+                    fetchpriority: 'auto',
+                    loading: 'lazy'
+            }}
+            {% endif %}
+            {% assign selected_video = section.settings.hero_video_file %}
+            {% assign video_url = selected_video.sources.first.url %}
+
+            {% if video_url != blank %}
+                <div class="video video-present">
+                <video muted playsinline loop preload poster="{{ section.settings.image | image_url }}" data-src="{{ video_url }}"></video>
+                </div>
+            {% endif %}
+        </div>
+        <div class="banner-align align-center-bottom">
+            <div class="block-blurs">
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+                <div class="block-blur"></div>
+            </div>
+            <div class="align-top">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-7 col-xl-6">
+                            <div class="banner-info text-center">
+                                {% if section.settings.subtitle != blank %}
+                                <div class="motto white">{{ section.settings.subtitle }}</div>
+                                {% endif %}
+                                {% if section.settings.title != blank %}
+                                <div class="h2 title">{{ section.settings.title }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if section.blocks != blank %}
+            <div class="align-bottom">
+                <div class="container">
+                    <div class="row">
+                        {% for block in section.blocks %}
+                          {%- assign heading = block.settings.slide_heading -%}
+                          {%- assign desc = block.settings.slide_desc -%}
+                        <div class="col-lg-4">
+                            <div class="born-item">
+                                {% if heading != blank %}
+                                <div class="h5 title">{{ heading }}</div>
+                                {% endif %}
+                                {% if desc != blank %}
+                                <div class="text">{{ desc }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Three columns video",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "video",
+      "id": "hero_video_file",
+      "label": "Background video",
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "short_desc",
+      "label": "Short description"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "limit": 5,
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "slide_image",
+            "label": "Slide Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "description",
+            "label": "Description"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Three columns section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
