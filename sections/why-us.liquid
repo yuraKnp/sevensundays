@@ -1,0 +1,119 @@
+<div class="section padd-lg">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 order-lg-2">
+                <div class="lr-img-1">
+                    {% assign right_image = section.settings.right_image %}
+                    {% if right_image != blank %}
+                        {% assign image_url = right_image | image_url  %}
+                        {% assign image_format = right_image.format  %}
+                        <picture>
+                            <source srcset="{{ image_url }}" type="{{ image_format }}">
+                            <img width="380" height="240" src="#" alt="" loading="lazy">
+                        </picture>
+                    {%  endif %}
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-5 order-lg-1 align-self-center">
+                <div class="content-top-bottom">
+                    <div class="title-shortcode">
+                        {% if section.settings.subtitle != blank %}
+                        <div class="motto">{{ section.settings.subtitle }}</div>
+                        {% endif %}
+                        {% if section.settings.title != blank %}
+                        <div class="h2 title">{{ section.settings.title }}</div>
+                        {% endif %}
+                    </div>
+                    {% if section.blocks != blank %}
+                    <div class="consultation-block">
+                        {% for block in section.blocks %}
+                            {%- assign image = block.settings.slide_image  -%}
+                            {%- assign heading = block.settings.title -%}
+                            {%- assign desc = block.settings.description -%}
+                            <div class="consultation-item">
+                                {% if image != blank %}
+                                    {{ image 
+                                        | image_url: width: image.width
+                                        | image_tag: 
+                                            width: image.width,
+                                            height: 'auto',
+                                            alt: image.alt,
+                                            fetchpriority: 'auto',
+                                            loading: 'lazy'
+                                    }}
+                                {% endif %}
+                                <div class="content">
+                                    {% if heading != blank %}
+                                    <div class="text text-md"><b>{{ heading }}</b></div>
+                                    {% endif %}
+                                    {% if desc != blank %}
+                                    <div class="text text-md">{{ desc }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Why us section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right image"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "limit": 5,
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "slide_image",
+            "label": "Slide Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "description",
+            "label": "Description"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why us section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
