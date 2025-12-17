@@ -150,8 +150,48 @@
         "image": "shopify://shop_images/driven-by-people.webp",
         "hero_video_file": "shopify://files/videos/driven-by-people.mp4",
         "subtitle": "driven by people",
-        "title": "We combine purpose, science, and opportunity",
-        "short_desc": ""
+        "title": "We combine purpose, science, and opportunity"
+      }
+    },
+    "three_column_nrMqfJ": {
+      "type": "three-column",
+      "blocks": {
+        "slide_kgaUGc": {
+          "type": "slide",
+          "settings": {
+            "number": "01",
+            "title": "Listen & Learn",
+            "description": "Every conversation starts with understanding – habits, challenges, goals. Because real solutions come from empathy, not assumptions."
+          }
+        },
+        "slide_TpTfaG": {
+          "type": "slide",
+          "settings": {
+            "number": "02",
+            "title": "Analyze & Adapt",
+            "description": "Turn insights into action. Our experts help you translate customer needs into the perfect configuration."
+          }
+        },
+        "slide_AEERPQ": {
+          "type": "slide",
+          "settings": {
+            "number": "03",
+            "title": "Deliver Impact",
+            "description": "A sale is just the beginning. You become their trusted sleep partner – for upgrades, advice, and better rest. Relationships that last."
+          }
+        }
+      },
+      "block_order": [
+        "slide_kgaUGc",
+        "slide_TpTfaG",
+        "slide_AEERPQ"
+      ],
+      "name": "Three columns section",
+      "settings": {
+        "section_type": "light2",
+        "subtitle": "Human Connection Drives Results",
+        "title": "Real impact happens face-to-face",
+        "short_desc": "Our consultants don't just sell – they listen, learn, and help."
       }
     }
   },
@@ -161,6 +201,7 @@
     "background_video_TyyERC",
     "slider_gallery_desc_dBf8Mg",
     "three_columns_section_dark_jbNQd3",
-    "three_columns_video_FbNkYY"
+    "three_columns_video_FbNkYY",
+    "three_column_nrMqfJ"
   ]
 }
