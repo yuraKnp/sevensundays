@@ -1,6 +1,16 @@
+{% assign section_type = section.settings.section_type %}
+
+{% if section_type == 'type_1' %}
+  {% assign custom_class = 'top-bottom-shadow style-2' %}
+  {% assign custom_class2 = 'align-top-bottom' %}
+{% elseif section_type == 'type_2' %}
+  {% assign custom_class = 'bottom-shadow shadow-6' %}
+  {% assign custom_class2 = 'align-middle size4' %}
+{% endif %}
+
 <div class="section">
     <div class="banner">
-        <div class="banner-media top-bottom-shadow style-2">
+        <div class="banner-media {{ custom_class }}">
             {%- assign image = section.settings.image -%}
             {% assign image_url = image | image_url %}
             {% comment %} {% assign image_format = image.format %} {% endcomment %}
@@ -17,15 +27,16 @@
                 </div>
             {% endif %}
         </div>
-        <div class="banner-align align-top-bottom">
+        <div class="banner-align {{ custom_class2 }}">
+            {% if section.settings.title != blank %}
             <div class="align-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-7 col-xl-6">
                             <div class="banner-info">
-                                {% if section.settings.title != blank %}
+                                
                                 <div class="h3 title">{{ section.settings.title }}</div>
-                                {% endif %}
+                                
                             </div>
                         </div>
                     </div>
@@ -34,7 +45,7 @@
             <div class="align-bottom">
                 <div class="container">
                     {% if video_url != blank %}
-                    <div class="video-play video-open" data-href="{{ video_url }}">
+                    <div class="video-play {% if section_type == 'type_2' %} center {% endif %} video-open" data-href="{{ video_url }}">
                         <div class="video-btn">
                             {%- assign svg_icon_url = 'play-icon.svg' | asset_url -%}
                             {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
@@ -52,6 +63,53 @@
                     {% endif %}
                 </div>
             </div>
+            {% else %}
+              <div class="container">
+                {% if video_url != blank %}
+                    <div class="video-play {% if section_type == 'type_2' %} center {% endif %} video-open" data-href="{{ video_url }}">
+                        <div class="video-btn">
+                            {%- assign svg_icon_url = 'play-icon.svg' | asset_url -%}
+                            {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                            <img width="20" height="20" src="{{ url_no_version }}" alt="icon" loading="lazy">
+                        </div>
+                        <div class="content">
+                            {% if section.settings.video_title != blank %}
+                            <div class="text"><b>{{ section.settings.video_title }}</b></div>
+                            {% endif %}
+                            {% if section.settings.video_duration != blank %}
+                            <div class="text">{{ section.settings.video_duration }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="section sec-padd-inline">
+    <div class="banner">
+        <div class="banner-media bottom-shadow shadow-6">
+            <img width="380" height="240" src="img/career-story.webp" alt="Banner Image" loading="lazy">
+
+            <!-- to display the video, add a class 'video-present' to the video -->
+            <div class="video video-present">
+                <video muted playsinline loop preload poster="img/career-story.webp" src="#" data-src="video/career-story.mp4"></video>
+            </div>
+        </div>
+        <div class="banner-align align-middle size4">
+            <div class="container">
+                <div class="video-play center video-open" data-href="video/career-story.mp4">
+                    <div class="video-btn">
+                        <img width="20" height="20" src="img/icons/play-icon.svg" alt="icon" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <div class="text"><b>Watch Career Story of Jacob</b></div>
+                        <div class="text">2m 42s</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -65,6 +123,22 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "type_1",
+          "label": "Type 1"
+        },
+        {
+          "value": "type_2",
+          "label": "Type 2"
+        },
+      ],
+      "default": "type_1",
+      "label": "Section type"
+    },
     {
       "type": "text",
       "id": "title",
