@@ -66,4 +66,29 @@ jQuery(function ($) {
         }
     });
 
+    // sleep slider
+    var $slider = $('.sleep-slider .swiper-container');
+    var $controls = $('.control-slider .item');
+
+    if (!$slider.length || !$controls.length) return;
+
+    if (typeof $slider[0].swiper === 'undefined') return;
+
+    var sleepSwiper = $slider[0].swiper;
+
+    function setActiveControl(index) {
+        $controls.removeClass('active');
+        $controls.eq(index).addClass('active');
+    }
+
+    sleepSwiper.on('slideChange', function () {
+        setActiveControl(this.realIndex);
+    });
+
+    $controls.on('click', function () {
+        var index = $(this).index();
+        sleepSwiper.slideTo(index);
+        setActiveControl(index);
+    });
+
 });

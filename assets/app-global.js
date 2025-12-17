@@ -422,6 +422,12 @@ jQuery(function ($) {
         });
     }
 
+    //comfort item
+    $(document).on('click', '.comfort-item', function(){
+        $(this).toggleClass('open');
+        $(this).find('.text-hide').slideToggle();
+    });
+
     //cta scroll to
     $(document).on('click', '.scroll-to', function(){
         let nextBlock = $(this).closest('.section').next(),
