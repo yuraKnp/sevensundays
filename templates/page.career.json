@@ -263,10 +263,20 @@
             "job": "Agency Partner",
             "slide_desc": "\"I was almost retired when I tried the Seven Sundays system. Instantly knew I had to get back in the game! Now I'm running a thriving business with great income and an amazing team.\""
           }
+        },
+        "slide_3QULtU": {
+          "type": "slide",
+          "settings": {
+            "tags": "",
+            "name": "Petra Reuter",
+            "job": "Agency Partner",
+            "slide_desc": "“I never dared to get into direct sales because everyone always wants an upfront investment. Not so with SEVEN SUNDAYS! No capital investment, I completed the training and earned money right away. Now I have a constantly growing team. The opportunities are endless.”"
+          }
         }
       },
       "block_order": [
-        "slide_wjpYfT"
+        "slide_wjpYfT",
+        "slide_3QULtU"
       ],
       "name": "Testimonial slider",
       "settings": {
