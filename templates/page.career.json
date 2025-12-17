@@ -281,12 +281,22 @@
             "job": "Sleep Consultant",
             "slide_desc": "\"Flexibility has always mattered to me, even in my days as a fitness coach. With SEVEN SUNDAYS, both my income and my free time have grown—giving me the freedom I always wanted, plus the reward of helping people sleep better.\""
           }
+        },
+        "slide_RATtrY": {
+          "type": "slide",
+          "settings": {
+            "tags": "",
+            "name": "Laura Müller",
+            "job": "Sleep Consultant",
+            "slide_desc": "\"As a physiotherapist, I always declined sales partnerships—my patients come first. But after trying SEVEN SUNDAYS myself, I was fully convinced. Now I recommend it where it truly helps—guilt-free. The additional income is a welcome bonus.\""
+          }
         }
       },
       "block_order": [
         "slide_wjpYfT",
         "slide_3QULtU",
-        "slide_WMCdCU"
+        "slide_WMCdCU",
+        "slide_RATtrY"
       ],
       "name": "Testimonial slider",
       "settings": {
