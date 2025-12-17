@@ -75,12 +75,52 @@
         "subtitle": "not just a job",
         "bottom_desc": "<p>Poor sleep affects almost 50% of adults worldwide. You can change that. Sleep isn’t just rest – it’s the foundation of mental clarity, physical health, and life satisfaction.</p><p>As a Sleep Consultant, you’re not selling a product. You’re guiding people to their lives back. Imagine helping someone feel refreshed for the first time in years, watching their productivity soar, their mood improve, and their relationships flourish. That’s what you do.</p>"
       }
+    },
+    "three_columns_section_dark_jbNQd3": {
+      "type": "three-columns-section-dark",
+      "blocks": {
+        "slide_y3iPi9": {
+          "type": "slide",
+          "settings": {
+            "number": "01",
+            "title": "Shadow & Learn",
+            "description": "Observe live professional presentations within your network. Our experts handle everything while you absorb the techniques. No pressure, just learning."
+          }
+        },
+        "slide_KNRPHX": {
+          "type": "slide",
+          "settings": {
+            "number": "02",
+            "title": "Confidence Building",
+            "description": "Complete our compact Sleep Academy certification while building confidence. See how naturally people respond to genuine quality."
+          }
+        },
+        "slide_dFYAPt": {
+          "type": "slide",
+          "settings": {
+            "number": "03",
+            "title": "Launch Success",
+            "description": "Hit the ground running with your portable demonstration system. You’re fully equipped to help customers experience better sleep immediately."
+          }
+        }
+      },
+      "block_order": [
+        "slide_y3iPi9",
+        "slide_KNRPHX",
+        "slide_dFYAPt"
+      ],
+      "name": "Three columns dark",
+      "settings": {
+        "subtitle": "success proven process",
+        "title": "From Zero to Sleep Expert <br> in 3 Simple Steps"
+      }
     }
   },
   "order": [
     "main",
     "banner_text_Qgz3rk",
     "background_video_TyyERC",
-    "slider_gallery_desc_dBf8Mg"
+    "slider_gallery_desc_dBf8Mg",
+    "three_columns_section_dark_jbNQd3"
   ]
 }
