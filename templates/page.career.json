@@ -71,9 +71,9 @@
       ],
       "name": "Gallery slider (desc)",
       "settings": {
-        "title": "More Than a Career -A Mission That Matters",
-        "subtitle": "not just a job",
-        "bottom_desc": "<p>Poor sleep affects almost 50% of adults worldwide. You can change that. Sleep isn’t just rest – it’s the foundation of mental clarity, physical health, and life satisfaction.</p><p>As a Sleep Consultant, you’re not selling a product. You’re guiding people to their lives back. Imagine helping someone feel refreshed for the first time in years, watching their productivity soar, their mood improve, and their relationships flourish. That’s what you do.</p>"
+        "title": "Mehr als eine Karriere – Eine Mission, die zählt",
+        "subtitle": "NICHT NUR EIN JOB",
+        "bottom_desc": "<p>Schlechter Schlaf betrifft fast 50% der Erwachsenen weltweit. Du kannst das ändern. Schlaf ist nicht nur Ruhe – er ist das Fundament für mentale Klarheit, körperliche Gesundheit und Zufriedenheit. Als Schlafberater:in verkaufst du kein Produkt. </p><p>Du hilfst Menschen, ihr Leben zurückzugewinnen. Stell dir vor, wie jemand sich zum ersten Mal seit Jahren erholt fühlt, wie seine Produktivität steigt, seine Stimmung sich verbessert und seine Beziehungen aufblühen. Das ist es, was du tust.</p>"
       }
     },
     "three_columns_section_dark_jbNQd3": {
@@ -83,24 +83,24 @@
           "type": "slide",
           "settings": {
             "number": "01",
-            "title": "Shadow & Learn",
-            "description": "Observe live professional presentations within your network. Our experts handle everything while you absorb the techniques. No pressure, just learning."
+            "title": "Beobachten & Lernen",
+            "description": "Erlebe live professionelle Präsentationen in deinem Netzwerk. Unsere Experten übernehmen alles, während du beobachtest. Kein Druck, nur Lernen."
           }
         },
         "slide_KNRPHX": {
           "type": "slide",
           "settings": {
             "number": "02",
-            "title": "Confidence Building",
-            "description": "Complete our compact Sleep Academy certification while building confidence. See how naturally people respond to genuine quality."
+            "title": "Selbstvertrauen aufbauen",
+            "description": "Die Sleep Academy Zertifizierung gibt dir das Wissen. Der Rest kommt von selbst – echte Qualität überzeugt."
           }
         },
         "slide_dFYAPt": {
           "type": "slide",
           "settings": {
             "number": "03",
-            "title": "Launch Success",
-            "description": "Hit the ground running with your portable demonstration system. You’re fully equipped to help customers experience better sleep immediately."
+            "title": "Alles dabei, sofort loslegen",
+            "description": "Starte mit deinem kompakten Demoschlafsystem in der Tragetasche – und lass Kunden besseren Schlaf erleben."
           }
         }
       },
@@ -111,8 +111,8 @@
       ],
       "name": "Three columns dark",
       "settings": {
-        "subtitle": "success proven process",
-        "title": "From Zero to Sleep Expert  in 3 Simple Steps"
+        "subtitle": "BEWÄHRTER ERFOLGSPROZESS",
+        "title": "Vom Einsteiger zum Schlafexperten in 3 einfachen Schritten"
       }
     },
     "three_columns_video_FbNkYY": {
@@ -121,22 +121,22 @@
         "slide_BtBgLG": {
           "type": "slide",
           "settings": {
-            "title": "Award-Winning Product",
-            "description": "Validated by doctors and sleep experts. Over 1000 satisfied customers worldwide."
+            "title": "Preisgekröntes Produkt",
+            "description": "Validiert von Ärzten und Schlafexperten. Über 50.000 zufriedene Kunden weltweit."
           }
         },
         "slide_6Ycnrc": {
           "type": "slide",
           "settings": {
-            "title": "Attractive Earnings",
-            "description": "Commission-based model with unlimited growth potential. Residual income possible."
+            "title": "Attraktive Verdienstmöglichkeiten",
+            "description": "Provisionsbasiertes Modell mit unbegrenztem Wachstumspotenzial. Passiv-Einkommen dank Teamaufbau möglich."
           }
         },
         "slide_E9MC64": {
           "type": "slide",
           "settings": {
-            "title": "Purpose-Driven",
-            "description": "Ongoing Training & support, and meaningful impact on people's lives."
+            "title": "Sinnstiftend",
+            "description": "Fortlaufende Schulung & Unterstützung und bedeutsamer Einfluss auf das Leben der Menschen."
           }
         }
       },
@@ -149,8 +149,8 @@
       "settings": {
         "image": "shopify://shop_images/driven-by-people.webp",
         "hero_video_file": "shopify://files/videos/driven-by-people.mp4",
-        "subtitle": "driven by people",
-        "title": "We combine purpose, science, and opportunity"
+        "subtitle": "ANGETRIEBEN VON MENSCHEN",
+        "title": "Wir verbinden Sinn, Wissenschaft und Chance."
       }
     },
     "three_column_nrMqfJ": {
@@ -160,24 +160,24 @@
           "type": "slide",
           "settings": {
             "number": "01",
-            "title": "Listen & Learn",
-            "description": "Every conversation starts with understanding – habits, challenges, goals. Because real solutions come from empathy, not assumptions."
+            "title": "Zuhören & Lernen",
+            "description": "Jedes Gespräch beginnt mit Verstehen – Gewohnheiten, Herausforderungen, Ziele. Denn echte Lösungen entstehen aus Empathie, nicht aus Annahmen."
           }
         },
         "slide_TpTfaG": {
           "type": "slide",
           "settings": {
             "number": "02",
-            "title": "Analyze & Adapt",
-            "description": "Turn insights into action. Our experts help you translate customer needs into the perfect configuration."
+            "title": "Analysieren & Anpassen",
+            "description": "Erkenntnisse in Handlung umsetzen. Unsere Experten helfen dir, Kundenbedürfnisse in die perfekte Konfiguration zu übersetzen."
           }
         },
         "slide_AEERPQ": {
           "type": "slide",
           "settings": {
             "number": "03",
-            "title": "Deliver Impact",
-            "description": "A sale is just the beginning. You become their trusted sleep partner – for upgrades, advice, and better rest. Relationships that last."
+            "title": "Wirkung erzielen",
+            "description": "Ein Verkauf ist erst der Anfang. Du wirst ihr vertrauenswürdiger Schlafpartner – für Upgrades, Beratung und bessere Erholung. Beziehungen, die halten."
           }
         }
       },
@@ -189,9 +189,9 @@
       "name": "Three columns section",
       "settings": {
         "section_type": "light2",
-        "subtitle": "Human Connection Drives Results",
-        "title": "Real impact happens face-to-face",
-        "short_desc": "Our consultants don't just sell – they listen, learn, and help."
+        "subtitle": "Menschliche Verbindung bringt Ergebnisse",
+        "title": "Echte Wirkung entsteht von Angesicht zu Angesicht.",
+        "short_desc": "Unsere Berater verkaufen nicht nur – sie hören zu, lernen und helfen."
       }
     },
     "why_us_gnNCj7": {
