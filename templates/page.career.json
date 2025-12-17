@@ -21,12 +21,12 @@
       "type": "banner-text",
       "name": "Banner text",
       "settings": {
-        "subtitle": "Transform lives through sleep",
-        "title": "Build your dream career. Start earning next month.",
-        "description": "As a Seven Sundays Sleep Consultant, you’ll help people unlock their full potential through better sleep – while creating unlimited earning potential for yourself.",
-        "link_text": "Start Career Now",
+        "subtitle": "DURCH SCHLAF DAS LEBEN ANDERER VERÄNDERN",
+        "title": "Baue deine Traumkarriere auf. Verdiene dein erstes Geld schon in wenigen Wochen.",
+        "description": "Als Seven Sundays Schlafberater:in hilfst du Menschen, ihr volles Potenzial durch besseren Schlaf zu entfalten – und schaffst dir dabei unbegrenztes Einkommenspotenzial.",
+        "link_text": "Karriere starten",
         "link_url": "#",
-        "link_text2": "Learn more",
+        "link_text2": "Mehr erfahren",
         "link_url2": "#"
       }
     },
@@ -71,9 +71,9 @@
       ],
       "name": "Gallery slider (desc)",
       "settings": {
-        "title": "More Than a Career -A Mission That Matters",
-        "subtitle": "not just a job",
-        "bottom_desc": "<p>Poor sleep affects almost 50% of adults worldwide. You can change that. Sleep isn’t just rest – it’s the foundation of mental clarity, physical health, and life satisfaction.</p><p>As a Sleep Consultant, you’re not selling a product. You’re guiding people to their lives back. Imagine helping someone feel refreshed for the first time in years, watching their productivity soar, their mood improve, and their relationships flourish. That’s what you do.</p>"
+        "title": "Mehr als eine Karriere – Eine Mission, die zählt",
+        "subtitle": "NICHT NUR EIN JOB",
+        "bottom_desc": "<p>Schlechter Schlaf betrifft fast 50% der Erwachsenen weltweit. Du kannst das ändern. Schlaf ist nicht nur Ruhe – er ist das Fundament für mentale Klarheit, körperliche Gesundheit und Zufriedenheit. Als Schlafberater:in verkaufst du kein Produkt. </p><p>Du hilfst Menschen, ihr Leben zurückzugewinnen. Stell dir vor, wie jemand sich zum ersten Mal seit Jahren erholt fühlt, wie seine Produktivität steigt, seine Stimmung sich verbessert und seine Beziehungen aufblühen. Das ist es, was du tust.</p>"
       }
     },
     "three_columns_section_dark_jbNQd3": {
@@ -83,24 +83,24 @@
           "type": "slide",
           "settings": {
             "number": "01",
-            "title": "Shadow & Learn",
-            "description": "Observe live professional presentations within your network. Our experts handle everything while you absorb the techniques. No pressure, just learning."
+            "title": "Beobachten & Lernen",
+            "description": "Erlebe live professionelle Präsentationen in deinem Netzwerk. Unsere Experten übernehmen alles, während du beobachtest. Kein Druck, nur Lernen."
           }
         },
         "slide_KNRPHX": {
           "type": "slide",
           "settings": {
             "number": "02",
-            "title": "Confidence Building",
-            "description": "Complete our compact Sleep Academy certification while building confidence. See how naturally people respond to genuine quality."
+            "title": "Selbstvertrauen aufbauen",
+            "description": "Die Sleep Academy Zertifizierung gibt dir das Wissen. Der Rest kommt von selbst – echte Qualität überzeugt."
           }
         },
         "slide_dFYAPt": {
           "type": "slide",
           "settings": {
             "number": "03",
-            "title": "Launch Success",
-            "description": "Hit the ground running with your portable demonstration system. You’re fully equipped to help customers experience better sleep immediately."
+            "title": "Alles dabei, sofort loslegen",
+            "description": "Starte mit deinem kompakten Demoschlafsystem in der Tragetasche – und lass Kunden besseren Schlaf erleben."
           }
         }
       },
@@ -111,8 +111,8 @@
       ],
       "name": "Three columns dark",
       "settings": {
-        "subtitle": "success proven process",
-        "title": "From Zero to Sleep Expert  in 3 Simple Steps"
+        "subtitle": "BEWÄHRTER ERFOLGSPROZESS",
+        "title": "Vom Einsteiger zum Schlafexperten in 3 einfachen Schritten"
       }
     },
     "three_columns_video_FbNkYY": {
@@ -121,22 +121,22 @@
         "slide_BtBgLG": {
           "type": "slide",
           "settings": {
-            "title": "Award-Winning Product",
-            "description": "Validated by doctors and sleep experts. Over 1000 satisfied customers worldwide."
+            "title": "Preisgekröntes Produkt",
+            "description": "Validiert von Ärzten und Schlafexperten. Über 50.000 zufriedene Kunden weltweit."
           }
         },
         "slide_6Ycnrc": {
           "type": "slide",
           "settings": {
-            "title": "Attractive Earnings",
-            "description": "Commission-based model with unlimited growth potential. Residual income possible."
+            "title": "Attraktive Verdienstmöglichkeiten",
+            "description": "Provisionsbasiertes Modell mit unbegrenztem Wachstumspotenzial. Passiv-Einkommen dank Teamaufbau möglich."
           }
         },
         "slide_E9MC64": {
           "type": "slide",
           "settings": {
-            "title": "Purpose-Driven",
-            "description": "Ongoing Training & support, and meaningful impact on people's lives."
+            "title": "Sinnstiftend",
+            "description": "Fortlaufende Schulung & Unterstützung und bedeutsamer Einfluss auf das Leben der Menschen."
           }
         }
       },
@@ -149,8 +149,8 @@
       "settings": {
         "image": "shopify://shop_images/driven-by-people.webp",
         "hero_video_file": "shopify://files/videos/driven-by-people.mp4",
-        "subtitle": "driven by people",
-        "title": "We combine purpose, science, and opportunity"
+        "subtitle": "ANGETRIEBEN VON MENSCHEN",
+        "title": "Wir verbinden Sinn, Wissenschaft und Chance."
       }
     },
     "three_column_nrMqfJ": {
@@ -160,24 +160,24 @@
           "type": "slide",
           "settings": {
             "number": "01",
-            "title": "Listen & Learn",
-            "description": "Every conversation starts with understanding – habits, challenges, goals. Because real solutions come from empathy, not assumptions."
+            "title": "Zuhören & Lernen",
+            "description": "Jedes Gespräch beginnt mit Verstehen – Gewohnheiten, Herausforderungen, Ziele. Denn echte Lösungen entstehen aus Empathie, nicht aus Annahmen."
           }
         },
         "slide_TpTfaG": {
           "type": "slide",
           "settings": {
             "number": "02",
-            "title": "Analyze & Adapt",
-            "description": "Turn insights into action. Our experts help you translate customer needs into the perfect configuration."
+            "title": "Analysieren & Anpassen",
+            "description": "Erkenntnisse in Handlung umsetzen. Unsere Experten helfen dir, Kundenbedürfnisse in die perfekte Konfiguration zu übersetzen."
           }
         },
         "slide_AEERPQ": {
           "type": "slide",
           "settings": {
             "number": "03",
-            "title": "Deliver Impact",
-            "description": "A sale is just the beginning. You become their trusted sleep partner – for upgrades, advice, and better rest. Relationships that last."
+            "title": "Wirkung erzielen",
+            "description": "Ein Verkauf ist erst der Anfang. Du wirst ihr vertrauenswürdiger Schlafpartner – für Upgrades, Beratung und bessere Erholung. Beziehungen, die halten."
           }
         }
       },
@@ -189,9 +189,9 @@
       "name": "Three columns section",
       "settings": {
         "section_type": "light2",
-        "subtitle": "Human Connection Drives Results",
-        "title": "Real impact happens face-to-face",
-        "short_desc": "Our consultants don't just sell – they listen, learn, and help."
+        "subtitle": "Menschliche Verbindung bringt Ergebnisse",
+        "title": "Echte Wirkung entsteht von Angesicht zu Angesicht.",
+        "short_desc": "Unsere Berater verkaufen nicht nur – sie hören zu, lernen und helfen."
       }
     },
     "why_us_gnNCj7": {
@@ -201,40 +201,40 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-1.svg",
-            "title": "Believe sleep is the key to human potential",
-            "description": "You understand that quality sleep transforms every aspect of life."
+            "title": "Glaubst, dass Schlaf der Schlüssel zum menschlichen Potenzial ist",
+            "description": "Du verstehst, dass Qualitätsschlaf jeden Aspekt des Lebens transformiert."
           }
         },
         "slide_hrYk7C": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-2.svg",
-            "title": "Connect authentically with people",
-            "description": "You don’t just listen, but understand, provide, and inspire."
+            "title": "Authentisch mit Menschen verbindest",
+            "description": "Du hörst nicht nur zu, sondern verstehst, lieferst und inspirierst."
           }
         },
         "slide_Gem7kX": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-3.svg",
-            "title": "Want to truly make a difference",
-            "description": "Money matters, but impact matters more – you want both financial independence and real purpose."
+            "title": "Wirklich etwas bewirken willst",
+            "description": "Geld zählt, aber Wirkung zählt mehr – du willst beides: finanzielle Unabhängigkeit und echten Sinn."
           }
         },
         "slide_hiPgDN": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-4.svg",
-            "title": "Value your freedom",
-            "description": "You want to control your schedule and income potential independently, aligned with your lifestyle."
+            "title": "Deine Freiheit schätzt",
+            "description": "Du willst deinen Zeitplan und dein Einkommenspotenzial unabhängig kontrollieren, abgestimmt auf deinen Lebensstil."
           }
         },
         "slide_GBHxee": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-5.svg",
-            "title": "Are ready to grow",
-            "description": "You’re ready to learn, implement, and succeed."
+            "title": "Bereit bist zu wachsen",
+            "description": "Du bist bereit zu lernen, umzusetzen und erfolgreich zu sein."
           }
         }
       },
@@ -247,8 +247,8 @@
       ],
       "name": "Why us section",
       "settings": {
-        "subtitle": "why us",
-        "title": "It’ll be perfect place for You if You:",
+        "subtitle": "Warum wir",
+        "title": "Der perfekte Ort für dich, wenn du:",
         "right_image": "shopify://shop_images/lr-img-9_43b84279-e9fc-4e12-8e1f-6849e8c459d9.webp"
       }
     },
@@ -260,8 +260,8 @@
           "settings": {
             "tags": "",
             "name": "Beate Stewen",
-            "job": "Agency Partner",
-            "slide_desc": "\"I was almost retired when I tried the Seven Sundays system. Instantly knew I had to get back in the game! Now I'm running a thriving business with great income and an amazing team.\""
+            "job": "Agenturpartnerin",
+            "slide_desc": "\"Ich war fast im Ruhestand, als ich das Seven Sundays System ausprobierte. Sofort wusste ich, dass ich wieder einsteigen muss! Jetzt führe ich ein florierendes Geschäft mit tollem Einkommen und einem großartigen Team.\""
           }
         },
         "slide_3QULtU": {
@@ -269,8 +269,8 @@
           "settings": {
             "tags": "",
             "name": "Petra Reuter",
-            "job": "Agency Partner",
-            "slide_desc": "“I never dared to get into direct sales because everyone always wants an upfront investment. Not so with SEVEN SUNDAYS! No capital investment, I completed the training and earned money right away. Now I have a constantly growing team. The opportunities are endless.”"
+            "job": "Agenturpartnerin",
+            "slide_desc": "\"Ich habe mich nie getraut, in den Direktvertrieb einzusteigen, weil alle immer eine Vorabinvestition wollen. Nicht so bei Seven Sundays! Keine Investition außer ein paar Stunden meiner Zeit! Ich habe die Schulung abgeschlossen und schnell gutes Geld verdient. Jetzt habe ich ein ständig wachsendes Team. Die Möglichkeiten sind endlos.\""
           }
         },
         "slide_WMCdCU": {
@@ -278,8 +278,8 @@
           "settings": {
             "tags": "",
             "name": "Anton Wolf",
-            "job": "Sleep Consultant",
-            "slide_desc": "\"Flexibility has always mattered to me, even in my days as a fitness coach. With SEVEN SUNDAYS, both my income and my free time have grown—giving me the freedom I always wanted, plus the reward of helping people sleep better.\""
+            "job": "Schlafberater:in",
+            "slide_desc": "\"Flexibilität war mir schon als Fitnesstrainer wichtig. Mit Seven Sundays sind sowohl mein Einkommen als auch meine Freizeit gewachsen – das gibt mir die Freiheit, die ich immer wollte, plus die Belohnung, Menschen beim besseren Schlafen zu helfen.\""
           }
         },
         "slide_RATtrY": {
@@ -287,8 +287,8 @@
           "settings": {
             "tags": "",
             "name": "Laura Müller",
-            "job": "Sleep Consultant",
-            "slide_desc": "\"As a physiotherapist, I always declined sales partnerships—my patients come first. But after trying SEVEN SUNDAYS myself, I was fully convinced. Now I recommend it where it truly helps—guilt-free. The additional income is a welcome bonus.\""
+            "job": "Schlafberaterin",
+            "slide_desc": "\"Als Physiotherapeutin habe ich Vertriebspartnerschaften immer abgelehnt – meine Patienten kommen zuerst. Aber nachdem ich Seven Sundays selbst ausprobiert habe, war ich voll überzeugt. Jetzt empfehle ich es, wo es wirklich hilft – ohne schlechtes Gewissen. Das zusätzliche Einkommen ist ein willkommener Bonus.\""
           }
         }
       },
@@ -301,7 +301,7 @@
       "name": "Testimonial slider",
       "settings": {
         "section_type": "type_2",
-        "slider_title": "What our sleep consultants say"
+        "slider_title": "Was unsere Schlafberater:in sagen"
       }
     },
     "call_to_action_jBeyNj": {
@@ -311,12 +311,12 @@
         "section_type": "type_2",
         "image": "shopify://shop_images/expert-career-img.webp",
         "image_mob": "shopify://shop_images/expert-career-img-mob.webp",
-        "title": "Your Sleep Expert Career Starts Now",
-        "subtitle": "stop dreaming about change",
-        "short_description": "The sleep wellness industry is exploding. People are finally understanding that sleep isn’t optional – it’s essential. Position yourself at the forefront of this massive opportunity.",
-        "link_text": "Start Application",
+        "title": "Deine Schlafexperten-Karriere beginnt jetzt",
+        "subtitle": "HÖR AUF, VON VERÄNDERUNG ZU TRÄUMEN",
+        "short_description": "Die Schlaf-Wellness-Branche explodiert. Menschen verstehen endlich, dass Schlaf nicht optional ist – er ist essentiell. Positioniere dich an der Spitze dieser enormen Chance.",
+        "link_text": "Bewerbung starten",
         "link_url": "#",
-        "link_text2": "Request Callback",
+        "link_text2": "Rückruf anfordern",
         "link_url2": "#"
       }
     },
@@ -324,11 +324,110 @@
       "type": "insight",
       "name": "Insight",
       "settings": {
-        "tag": "expert insight",
-        "main_description": "“Having built, lead, and sold global direct sales organizations, I can say: Seven Sundays offers the most attractive career model out there. Anyone passionate about wellbeing and human connection can build an exceptional career here.\"",
+        "tag": "EXPERTENEINBLICK",
+        "main_description": "\"Nach dem Aufbau, der Führung und dem Verkauf globaler Direktvertriebsorganisationen kann ich sagen: Seven Sundays bietet das attraktivste Karrieremodell überhaupt. Jeder, der sich für Wohlbefinden und menschliche Verbindung begeistert, kann hier eine außergewöhnliche Karriere aufbauen.\"",
         "image": "shopify://shop_images/expert-photo-5.webp",
         "exper_name": "Reto von der Becke",
-        "expert_occupation": "Co-Owner & Chairman of<br>the Board SEVEN SUNDAYS"
+        "expert_occupation": "Miteigentümer & Verwaltungsratspräsident Seven Sundays"
+      }
+    },
+    "faq_GVmkW9": {
+      "type": "faq",
+      "blocks": {
+        "slide_Jb4bjX": {
+          "type": "slide",
+          "settings": {
+            "question": "Brauche ich Verkaufserfahrung?",
+            "answer": "<p>Nein. Unser Ansatz ist für alle geeignet, die sich für Gesundheit und Wohlbefinden begeistern. Wir haben kompakte, leicht verständliche Trainings entwickelt – und dein regionales Team ist immer für dich da. Wir bringen dir alles bei, was du wissen musst, mit persönlicher Unterstützung wenn gewünscht.</p>"
+          }
+        },
+        "slide_U47xXg": {
+          "type": "slide",
+          "settings": {
+            "question": "Wie viel kann ich realistisch verdienen?",
+            "answer": "<p>Dein Einkommen hängt direkt von deinem Einsatz ab. Nicht selten verdienen Berater 2.500 € pro Monat. Mit Fokus und Kontinuität sind auch 3.000-5.000 €+ erreichbar. Top-Performer erzielen sechsstellige Jahreseinkommen. Es gibt keine Obergrenze – deine Leistung bestimmt deinen Erfolg.</p>"
+          }
+        },
+        "slide_nFBMPh": {
+          "type": "slide",
+          "settings": {
+            "question": "Wie flexibel sind die Arbeitszeiten?",
+            "answer": "<p>Komplett flexibel. Du entscheidest wann, wo und wie viel du arbeitest. Perfekt für Quereinsteiger, Eltern oder alle, die mehr Freiheit und Selbstbestimmung wollen.</p>"
+          }
+        },
+        "slide_YTicbB": {
+          "type": "slide",
+          "settings": {
+            "question": "Was kostet der Einstieg?",
+            "answer": "<p>Nichts. Der Start bei Seven Sundays ist 100% kostenlos. Du erhältst alles, was du brauchst: umfassende Schulung, dein eigenes Demo-Schlafsystem und volle Unterstützung durch erfahrene Mentoren.</p>"
+          }
+        },
+        "slide_7yxi7q": {
+          "type": "slide",
+          "settings": {
+            "question": "Wie funktioniert die Ausbildung?",
+            "answer": "<p>Wir kombinieren Online-Module, Präsenz-Workshops und persönliches Mentoring. Zusätzlich erhältst du drei begleitete Übungstermine, damit du von Anfang an sicher startest. Die Grundausbildung dauert Stunden, nicht Tage.</p>"
+          }
+        },
+        "slide_LwfBEN": {
+          "type": "slide",
+          "settings": {
+            "question": "Ist das ein Nebenjob oder eine Vollzeit-Möglichkeit?",
+            "answer": "<p>Beides. Viele starten nebenberuflich, während andere schnell in Vollzeit wechseln – dank des starken Verdienstpotenzials.</p>"
+          }
+        },
+        "slide_NgQPUM": {
+          "type": "slide",
+          "settings": {
+            "question": "Muss ich Produkte lagern oder mich um den Versand kümmern?",
+            "answer": "<p>Nein. Du lagerst nie Ware und kümmerst dich nie um Versand. Seven Sundays übernimmt Logistik, Rechnungsstellung, Lieferung und Kundenservice. Du konzentrierst dich ausschließlich auf Beratungen.</p>"
+          }
+        },
+        "slide_NPEW4W": {
+          "type": "slide",
+          "settings": {
+            "question": "Werde ich nach dem Start unterstützt?",
+            "answer": "<p>Absolut. Du bist nie allein. Du hast einen persönlichen Mentor, eine unterstützende Community, regelmäßige Workshops und Coachings sowie Marketingmaterial und digitale Tools. Wir setzen uns für deinen nachhaltigen Erfolg ein.</p>"
+          }
+        },
+        "slide_kEgLh6": {
+          "type": "slide",
+          "settings": {
+            "question": "Wie schnell kann ich Geld verdienen?",
+            "answer": "<p>Die meisten Berater verdienen ihre erste Provision innerhalb von 2-4 Wochen – abhängig davon, wie schnell sie die Ausbildung abschließen und erste Beratungen vereinbaren.</p>"
+          }
+        },
+        "slide_PDKeaB": {
+          "type": "slide",
+          "settings": {
+            "question": "Gibt es sonst noch etwas, das ich brauche?",
+            "answer": "<p>Ein Auto und Führerschein sind empfehlenswert. Hausberatungen stehen im Mittelpunkt unserer Arbeit – Mobilität ermöglicht dir, schnell zu reagieren und Kunden in deiner Region zu betreuen.</p>"
+          }
+        },
+        "slide_9icG7U": {
+          "type": "slide",
+          "settings": {
+            "question": "Wie bewerbe ich mich?",
+            "answer": "<p>Es gibt keinen formellen Bewerbungsprozess – wir glauben an Menschen und Leidenschaft. Du kannst einen Rückruf anfordern, dich direkt bewerben oder eines unserer kostenlosen regionalen Events besuchen, um mehr zu erfahren und loszulegen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Jb4bjX",
+        "slide_U47xXg",
+        "slide_nFBMPh",
+        "slide_YTicbB",
+        "slide_7yxi7q",
+        "slide_LwfBEN",
+        "slide_NgQPUM",
+        "slide_NPEW4W",
+        "slide_kEgLh6",
+        "slide_PDKeaB",
+        "slide_9icG7U"
+      ],
+      "name": "FAQ section",
+      "settings": {
+        "title": "FAQ"
       }
     }
   },
@@ -343,6 +442,7 @@
     "why_us_gnNCj7",
     "testimonial_slider_tniH9A",
     "call_to_action_jBeyNj",
-    "insight_TNDAJw"
+    "insight_TNDAJw",
+    "faq_GVmkW9"
   ]
 }
