@@ -340,10 +340,42 @@
             "question": "Do I need prior sales experience?",
             "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
           }
+        },
+        "slide_U47xXg": {
+          "type": "slide",
+          "settings": {
+            "question": "How much can I realistically earn?",
+            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+          }
+        },
+        "slide_nFBMPh": {
+          "type": "slide",
+          "settings": {
+            "question": "How flexible are the working hours?",
+            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+          }
+        },
+        "slide_YTicbB": {
+          "type": "slide",
+          "settings": {
+            "question": "What does it cost to get started?",
+            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+          }
+        },
+        "slide_7yxi7q": {
+          "type": "slide",
+          "settings": {
+            "question": "How does the training work?",
+            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+          }
         }
       },
       "block_order": [
-        "slide_Jb4bjX"
+        "slide_Jb4bjX",
+        "slide_U47xXg",
+        "slide_nFBMPh",
+        "slide_YTicbB",
+        "slide_7yxi7q"
       ],
       "name": "FAQ section",
       "settings": {
