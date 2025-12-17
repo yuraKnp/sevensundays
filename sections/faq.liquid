@@ -1,0 +1,78 @@
+<div class="section padd-lg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                {%  if section.settings.title != blank %}
+                <div class="title-shortcode mb-64 text-center">
+                    <div class="h2 title">{{ section.settings.title }}</div>
+                </div>
+                {% endif %}
+                {% if section.blocks != blank %}
+                <div class="accordion" itemscope itemtype="https://schema.org/FAQPage">
+                    {% for block in section.blocks %}
+                        {%- assign question = block.settings.question -%}
+                        {%- assign answer = block.settings.answer -%}
+                    {% if question != blank and answer != blank  %}
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="accordion-title" itemprop="name">
+                            {{ question }}
+                            <i></i>
+                        </div>
+                        <div class="accordion-inner" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div class="text" itemprop="text">
+                                {{ answer }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                {%  endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "FAQ section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Single question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Tags",
+        },
+        {
+        "type": "richtext",
+        "id": "answer",
+        "label": "Answer"
+        },
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
