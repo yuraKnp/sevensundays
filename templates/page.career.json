@@ -34,6 +34,7 @@
       "type": "background-video",
       "name": "Background video popup",
       "settings": {
+        "section_type": "type_2",
         "title": "",
         "image": "shopify://shop_images/career-story.webp",
         "hero_video_file": "shopify://files/videos/career-story.mp4",
