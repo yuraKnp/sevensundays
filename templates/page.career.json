@@ -29,10 +29,22 @@
         "link_text2": "Learn more",
         "link_url2": "#"
       }
+    },
+    "background_video_TyyERC": {
+      "type": "background-video",
+      "name": "Background video popup",
+      "settings": {
+        "title": "",
+        "image": "shopify://shop_images/career-story.webp",
+        "hero_video_file": "shopify://files/videos/career-story.mp4",
+        "video_title": "Watch Career Story of Jacob",
+        "video_duration": "2m 42s"
+      }
     }
   },
   "order": [
     "main",
-    "banner_text_Qgz3rk"
+    "banner_text_Qgz3rk",
+    "background_video_TyyERC"
   ]
 }
