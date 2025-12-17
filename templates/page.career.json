@@ -303,6 +303,22 @@
         "section_type": "type_2",
         "slider_title": "What our sleep consultants say"
       }
+    },
+    "call_to_action_jBeyNj": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "section_type": "type_2",
+        "image": "shopify://shop_images/expert-career-img.webp",
+        "image_mob": "shopify://shop_images/expert-career-img-mob.webp",
+        "title": "Your Sleep Expert Career Starts Now",
+        "subtitle": "stop dreaming about change",
+        "short_description": "The sleep wellness industry is exploding. People are finally understanding that sleep isn’t optional – it’s essential. Position yourself at the forefront of this massive opportunity.",
+        "link_text": "Start Application",
+        "link_url": "#",
+        "link_text2": "Request Callback",
+        "link_url2": "#"
+      }
     }
   },
   "order": [
@@ -314,6 +330,7 @@
     "three_columns_video_FbNkYY",
     "three_column_nrMqfJ",
     "why_us_gnNCj7",
-    "testimonial_slider_tniH9A"
+    "testimonial_slider_tniH9A",
+    "call_to_action_jBeyNj"
   ]
 }
