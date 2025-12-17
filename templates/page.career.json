@@ -204,10 +204,46 @@
             "title": "Believe sleep is the key to human potential",
             "description": "You understand that quality sleep transforms every aspect of life."
           }
+        },
+        "slide_hrYk7C": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/why-icon-2.svg",
+            "title": "Connect authentically with people",
+            "description": "You don’t just listen, but understand, provide, and inspire."
+          }
+        },
+        "slide_Gem7kX": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/why-icon-3.svg",
+            "title": "Want to truly make a difference",
+            "description": "Money matters, but impact matters more – you want both financial independence and real purpose."
+          }
+        },
+        "slide_hiPgDN": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/why-icon-4.svg",
+            "title": "Value your freedom",
+            "description": "You want to control your schedule and income potential independently, aligned with your lifestyle."
+          }
+        },
+        "slide_GBHxee": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/why-icon-5.svg",
+            "title": "Are ready to grow",
+            "description": "You’re ready to learn, implement, and succeed."
+          }
         }
       },
       "block_order": [
-        "slide_jB769K"
+        "slide_jB769K",
+        "slide_hrYk7C",
+        "slide_Gem7kX",
+        "slide_hiPgDN",
+        "slide_GBHxee"
       ],
       "name": "Why us section",
       "settings": {
