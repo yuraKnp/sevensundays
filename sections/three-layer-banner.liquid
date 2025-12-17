@@ -1,0 +1,116 @@
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {%  endif %}
+                    {% if section.settings.title != blank %}
+                    <h1 class="h1 size2 title">{{ section.settings.title }}</h1>
+                    {%  endif %}
+                </div>
+            </div>
+            <div class="col-xl-10">
+                <div class="mattress-img mt-300 decor">
+                    {% assign image = section.settings.image %}
+                    {% if image != blank %}
+                        {% assign image_url = image | image_url  %}
+                        {% assign image_format = image.format  %}
+                        <picture>
+                            <source srcset="{{ image_url }}" type="{{ image_format }}">
+                            <img width="380" height="240" src="#" alt="" loading="lazy">
+                        </picture>
+                    {% endif %}
+                    <div class="decor-radial"><i></i></div>
+                </div>
+            </div>
+            <div class="btn-link color2 btn-link-animation text-center mattress-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M6 2.5V9.5M6 9.5L9.5 6M6 9.5L2.5 6" stroke="#F5F1E8" stroke-opacity="0.88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                {% if section.settings.scroll_text != blank %}
+                <b>{{ section.settings.scroll_text }}</b>
+                {%  endif %}
+            </div>
+            <div class="col-xl-10">
+                <div class="mattress-img">
+                    {% assign image_sec = section.settings.image_sec %}
+                    {% if image_sec != blank %}
+                        {% assign image_url = image_sec | image_url  %}
+                        {% assign image_format = image_sec.format  %}
+                        <picture>
+                            <source srcset="{{ image_url }}" type="{{ image_format }}">
+                            <img width="380" height="240" src="#" alt="" loading="lazy">
+                        </picture>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-lg-7 col-xl-5">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.title_under_img != blank %}
+                    <div class="h1 title">{{ section.settings.title_under_img }}</div>
+                    {% endif %}
+                    {% if section.settings.short_desc_under_img != blank %}
+                    <div class="text text-md">{{ section.settings.short_desc_under_img }}</div>
+                    {%  endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-lg"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Three layer banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "scroll_text",
+      "label": "Scroll text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "First image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_sec",
+      "label": "Second image"
+    },
+    {
+      "type": "text",
+      "id": "title_under_img",
+      "label": "Title under images"
+    },
+    {
+      "type": "text",
+      "id": "short_desc_under_img",
+      "label": "Short description under images"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Three layer banner",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
