@@ -47,40 +47,40 @@
           "type": "slide",
           "settings": {
             "step_number": "01",
-            "title": "Free appointment",
-            "subtitle": "Your personal sleep expert contacts you by phone"
+            "title": "Kostenloser Termin",
+            "subtitle": "Wir kontaktieren Dich telefonisch, um einen Termin zu vereinbaren"
           }
         },
         "slide_rhLaJP": {
           "type": "slide",
           "settings": {
             "step_number": "02",
-            "title": "Home visit",
-            "subtitle": "Your certified consultant comes with a complete demo system"
+            "title": "Hausbesuch",
+            "subtitle": "Dein zertifizierter Berater kommt mit einem kompletten Demo-Schlafsystem"
           }
         },
         "slide_qj8ef6": {
           "type": "slide",
           "settings": {
             "step_number": "03",
-            "title": "In-home trial",
-            "subtitle": "Discover your perfect setup in a 60-minute home consultation."
+            "title": "Test zu Hause",
+            "subtitle": "Entdecke die Schweizer Schlafg-Innovation in einer 60-minütigen Beratung."
           }
         },
         "slide_y9KPAB": {
           "type": "slide",
           "settings": {
             "step_number": "04",
-            "title": "Decide in peace",
-            "subtitle": "Buy only if 100% convinced – no pressure"
+            "title": "In Ruhe entscheiden",
+            "subtitle": "Bestelle nur, wenn du 100% überzeugt bist – kein Druck"
           }
         },
         "slide_hzPQWt": {
           "type": "slide",
           "settings": {
             "step_number": "05",
-            "title": "Handcrafted delivery",
-            "subtitle": "Your system is handcrafted and delivered to your bedroom"
+            "title": "Premium Lieferung",
+            "subtitle": "Handgefertigt für dich, geliefert bis ins Schlafzimmer – inkl. Altmatratzen-Mitnahme."
           }
         }
       },
@@ -93,8 +93,8 @@
       ],
       "name": "Right steps section",
       "settings": {
-        "subtitle": "FINALLY, MATTRESS SHOPPING YOU'LL ENJOY",
-        "title": "Expert consultation tailored to you – 100% insight, zero pressure",
+        "subtitle": "ENDLICH: MATRATZENKAUF, DER SPASS MACHT",
+        "title": "Expertenberatung, auf dich zugeschnitten. 100% Einblick, null Druck",
         "left_image": "shopify://shop_images/lr-img-8.webp"
       }
     },
@@ -105,24 +105,24 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/lr-img-1_0c2e1cbd-561b-4f62-ad9d-d6f16482c312.webp",
-            "title": "Every body sleeps differently",
-            "description": "Whether side sleeper or back sleeper, whether back problems, limitations or comfort wishes – your sleep consultant explores your individual needs."
+            "title": "Jeder Körper liegt anders",
+            "description": "Ob Seitenschläfer oder Rückenschläfer, Schulter-Rücken-Probleme, Tinnitus oder Komfortsucher – dein Schlafprofil gibt die Richtung vor."
           }
         },
         "slide_zqi7Kd": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/lr-img-2_988c355a-4ff9-4bc0-98b6-53a37130484e.webp",
-            "title": "Experience with all senses",
-            "description": "Feel high-quality fabrics on your skin, understand differences of various materials – completely relaxed in your living room."
+            "title": "Mit allen Sinnen erleben",
+            "description": "Stoffe fühlen, Materialunterschiede spüren, das System verstehen – für eine Entscheidung, die sich richtig anfühlt."
           }
         },
         "slide_HXneBK": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/lr-img-4_83bbd417-051a-4535-ae4b-1d3e7a2f3a53.webp",
-            "title": "Swiss innovation to touch",
-            "description": "The modular sleep system with its configuration wants to be experienced. Only through personal testing do you find your most restorative sleep."
+            "title": "Schweizer Innovation zum Anfassen",
+            "description": "Personalisierung muss man erleben. Schon beim Probeliegen spürst du, welches Setting zu dir passt."
           }
         }
       },
@@ -133,9 +133,9 @@
       ],
       "name": "Three columns (v2)",
       "settings": {
-        "subtitle": "MAKE IT PERSONAL",
-        "title": "Why home shopping is the best path to your best sleep",
-        "link_text": "Request appointment",
+        "subtitle": "NIMM ES PERSÖNLICH",
+        "title": "Home-Shopping dein bester Weg zum bestem Schlaf",
+        "link_text": "Termin anfragen",
         "link_url": "#"
       }
     },
@@ -145,29 +145,29 @@
         "slide_J9Kz88": {
           "type": "slide",
           "settings": {
-            "title": "Maximum comfort",
-            "description": "No research, no travel, no stress – everything comes to you"
+            "title": "Maximaler Komfort",
+            "description": "Keine Recherche, keine Store-Besuche, kein Stress – alles kommt zu dir"
           }
         },
         "slide_MjbdTL": {
           "type": "slide",
           "settings": {
-            "title": "Tailored consultation",
-            "description": "A sleep consultant who focuses only on your needs"
+            "title": "Maßgeschneiderte Beratung",
+            "description": "Ein Schlafberater:in, der sich nur auf deine Bedürfnisse konzentriert"
           }
         },
         "slide_bB4398": {
           "type": "slide",
           "settings": {
-            "title": "Time without pressure",
-            "description": "Try everything at your own pace in familiar surroundings"
+            "title": "Zeit ohne Druck",
+            "description": "Probiere alles in deinem eigenen Tempo, in vertrauter Umgebung"
           }
         },
         "slide_gbWAmR": {
           "type": "slide",
           "settings": {
-            "title": "Absolute exclusivity",
-            "description": "Access to award-winning products available nowhere else"
+            "title": "Absolute Exklusivität",
+            "description": "Zugang zu preisgekrönten Produkten, die nirgendwo anders erhältlich sind"
           }
         }
       },
@@ -181,7 +181,7 @@
       "settings": {
         "image": "shopify://shop_images/exclusive-banner-img.webp",
         "image_mob": "shopify://shop_images/exclusive-banner-img-mob.jpg",
-        "title": "All exclusive home shopping advantages at a glance"
+        "title": "Alle exklusiven Home-Shopping-Vorteile auf einen Blick"
       }
     },
     "call_back_form_XWxPhg": {
