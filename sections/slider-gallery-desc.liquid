@@ -1,0 +1,115 @@
+<div class="section padd-xl-lg">
+    <div class="container">
+        <div class="title-shortcode mb-64">
+            {% if section.settings.subtitle != blank %}
+            <div class="motto">{{ section.settings.subtitle }}</div>
+            {% endif %}
+            {% if section.settings.title != blank %}
+            <div class="h2 title no-balance">{{ section.settings.title }}</div>
+            {%  endif %}
+        </div>
+         {% if section.blocks != blank %}
+        <div class="swiper-entry">
+            <div class="swiper-container overflow-visible" data-options='{ 
+                "slidesPerView": 1.2,
+                "spaceBetween": 8,
+                "breakpoints":{
+                    "576":{"spaceBetween": 16, "slidesPerView": 1.5},
+                    "992":{"spaceBetween": 16, "slidesPerView": 2.1},
+                    "1200":{"spaceBetween": 16, "slidesPerView": 2.05}
+                }}'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {%- assign image = block.settings.slide_image -%}
+                        {% assign image_url = image | image_url  %}
+                        {% assign image_format = image.format  %}
+                        {% if image_url != blank %}
+                            <div class="swiper-slide">
+                                <div class="simple-img size2">
+                                    <picture>
+                                        <source srcset="{{ image_url }}" type="{{ image_format }}">
+                                        <img width="380" height="240" src="#" alt="" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {%  endfor %}
+                </div>
+            </div>
+            <div class="swiper-controls-wrap text-center d-none">
+                <div class="swiper-button-prev style4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-next style4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+        </div>
+        {%  endif %}
+        <div class="spacer-64"></div>
+        {% if section.settings.bottom_desc != blank %}
+        <div class="row">
+            <div class="col-lg-8 offset-lg-4 col-xl-6 offset-xl-6">
+                <div class="text">
+                    {{ section.settings.bottom_desc }}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Gallery slider (desc)",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+    },
+    {
+        "type": "richtext",
+        "id": "bottom_desc",
+        "label": "Bottom Description"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Gallery Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slide_image",
+          "label": "Slide Image"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gallery slider (desc)",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
