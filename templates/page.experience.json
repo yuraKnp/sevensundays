@@ -210,11 +210,11 @@
       ],
       "name": "Call to action form",
       "settings": {
-        "subtitle": "Call-back",
-        "title": "Ready for your best sleep ever?",
-        "desc": "Request your call-back now – your personal sleep consultant will contact you to schedule your exclusive home consultation experience that might just change your life forever.",
-        "title_before_form": "<strong>Let's schedule your sleep consultation in 60 seconds</strong>",
-        "desc_before_form": "I'll call you back to schedule your free in-home SEVEN SUNDAYS experience with a certified sleep consultant."
+        "subtitle": "RÜCKRUF",
+        "title": "Bereit für deinen besten Schlaf aller Zeiten?",
+        "desc": "Lass dich zurückrufen. Wir melden uns bei dir – und vereinbaren deine persönliche Beratung zu Hause.",
+        "title_before_form": "<strong>60 Sekunden bis zu deinem Schlafberatungstermin</strong>",
+        "desc_before_form": "Wir rufen dich an und vereinbaren deinen kostenlosen Termin."
       }
     }
   },
