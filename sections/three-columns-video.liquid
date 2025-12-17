@@ -50,8 +50,8 @@
                 <div class="container">
                     <div class="row">
                         {% for block in section.blocks %}
-                          {%- assign heading = block.settings.slide_heading -%}
-                          {%- assign desc = block.settings.slide_desc -%}
+                          {%- assign heading = block.settings.title -%}
+                          {%- assign desc = block.settings.description -%}
                         <div class="col-lg-4">
                             <div class="born-item">
                                 {% if heading != blank %}
@@ -112,11 +112,7 @@
       "name": "Slide Item",
       "limit": 5,
       "settings": [
-        {
-            "type": "image_picker",
-            "id": "slide_image",
-            "label": "Slide Image"
-        },
+
         {
             "type": "text",
             "id": "title",
