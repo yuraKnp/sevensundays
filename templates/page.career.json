@@ -251,6 +251,28 @@
         "title": "It’ll be perfect place for You if You:",
         "right_image": "shopify://shop_images/lr-img-9_43b84279-e9fc-4e12-8e1f-6849e8c459d9.webp"
       }
+    },
+    "testimonial_slider_tniH9A": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "slide_wjpYfT": {
+          "type": "slide",
+          "settings": {
+            "tags": "",
+            "name": "Beate Stewen",
+            "job": "Agency Partner",
+            "slide_desc": "\"I was almost retired when I tried the Seven Sundays system. Instantly knew I had to get back in the game! Now I'm running a thriving business with great income and an amazing team.\""
+          }
+        }
+      },
+      "block_order": [
+        "slide_wjpYfT"
+      ],
+      "name": "Testimonial slider",
+      "settings": {
+        "section_type": "type_2",
+        "slider_title": "What our sleep consultants say"
+      }
     }
   },
   "order": [
@@ -261,6 +283,7 @@
     "three_columns_section_dark_jbNQd3",
     "three_columns_video_FbNkYY",
     "three_column_nrMqfJ",
-    "why_us_gnNCj7"
+    "why_us_gnNCj7",
+    "testimonial_slider_tniH9A"
   ]
 }
