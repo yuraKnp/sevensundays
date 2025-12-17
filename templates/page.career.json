@@ -251,6 +251,48 @@
         "title": "It’ll be perfect place for You if You:",
         "right_image": "shopify://shop_images/lr-img-9_43b84279-e9fc-4e12-8e1f-6849e8c459d9.webp"
       }
+    },
+    "testimonial_slider_tniH9A": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "slide_wjpYfT": {
+          "type": "slide",
+          "settings": {
+            "tags": "",
+            "name": "Beate Stewen",
+            "job": "Agency Partner",
+            "slide_desc": "\"I was almost retired when I tried the Seven Sundays system. Instantly knew I had to get back in the game! Now I'm running a thriving business with great income and an amazing team.\""
+          }
+        },
+        "slide_3QULtU": {
+          "type": "slide",
+          "settings": {
+            "tags": "",
+            "name": "Petra Reuter",
+            "job": "Agency Partner",
+            "slide_desc": "“I never dared to get into direct sales because everyone always wants an upfront investment. Not so with SEVEN SUNDAYS! No capital investment, I completed the training and earned money right away. Now I have a constantly growing team. The opportunities are endless.”"
+          }
+        },
+        "slide_WMCdCU": {
+          "type": "slide",
+          "settings": {
+            "tags": "",
+            "name": "Anton Wolf",
+            "job": "Sleep Consultant",
+            "slide_desc": "\"Flexibility has always mattered to me, even in my days as a fitness coach. With SEVEN SUNDAYS, both my income and my free time have grown—giving me the freedom I always wanted, plus the reward of helping people sleep better.\""
+          }
+        }
+      },
+      "block_order": [
+        "slide_wjpYfT",
+        "slide_3QULtU",
+        "slide_WMCdCU"
+      ],
+      "name": "Testimonial slider",
+      "settings": {
+        "section_type": "type_2",
+        "slider_title": "What our sleep consultants say"
+      }
     }
   },
   "order": [
@@ -261,6 +303,7 @@
     "three_columns_section_dark_jbNQd3",
     "three_columns_video_FbNkYY",
     "three_column_nrMqfJ",
-    "why_us_gnNCj7"
+    "why_us_gnNCj7",
+    "testimonial_slider_tniH9A"
   ]
 }
