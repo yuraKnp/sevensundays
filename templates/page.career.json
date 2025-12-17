@@ -193,6 +193,28 @@
         "title": "Real impact happens face-to-face",
         "short_desc": "Our consultants don't just sell – they listen, learn, and help."
       }
+    },
+    "why_us_gnNCj7": {
+      "type": "why-us",
+      "blocks": {
+        "slide_jB769K": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/why-icon-1.svg",
+            "title": "Believe sleep is the key to human potential",
+            "description": "You understand that quality sleep transforms every aspect of life."
+          }
+        }
+      },
+      "block_order": [
+        "slide_jB769K"
+      ],
+      "name": "Why us section",
+      "settings": {
+        "subtitle": "why us",
+        "title": "It’ll be perfect place for You if You:",
+        "right_image": "shopify://shop_images/lr-img-9_43b84279-e9fc-4e12-8e1f-6849e8c459d9.webp"
+      }
     }
   },
   "order": [
@@ -202,6 +224,7 @@
     "slider_gallery_desc_dBf8Mg",
     "three_columns_section_dark_jbNQd3",
     "three_columns_video_FbNkYY",
-    "three_column_nrMqfJ"
+    "three_column_nrMqfJ",
+    "why_us_gnNCj7"
   ]
 }
