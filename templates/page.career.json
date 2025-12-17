@@ -201,40 +201,40 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-1.svg",
-            "title": "Believe sleep is the key to human potential",
-            "description": "You understand that quality sleep transforms every aspect of life."
+            "title": "Glaubst, dass Schlaf der Schlüssel zum menschlichen Potenzial ist",
+            "description": "Du verstehst, dass Qualitätsschlaf jeden Aspekt des Lebens transformiert."
           }
         },
         "slide_hrYk7C": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-2.svg",
-            "title": "Connect authentically with people",
-            "description": "You don’t just listen, but understand, provide, and inspire."
+            "title": "Authentisch mit Menschen verbindest",
+            "description": "Du hörst nicht nur zu, sondern verstehst, lieferst und inspirierst."
           }
         },
         "slide_Gem7kX": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-3.svg",
-            "title": "Want to truly make a difference",
-            "description": "Money matters, but impact matters more – you want both financial independence and real purpose."
+            "title": "Wirklich etwas bewirken willst",
+            "description": "Geld zählt, aber Wirkung zählt mehr – du willst beides: finanzielle Unabhängigkeit und echten Sinn."
           }
         },
         "slide_hiPgDN": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-4.svg",
-            "title": "Value your freedom",
-            "description": "You want to control your schedule and income potential independently, aligned with your lifestyle."
+            "title": "Deine Freiheit schätzt",
+            "description": "Du willst deinen Zeitplan und dein Einkommenspotenzial unabhängig kontrollieren, abgestimmt auf deinen Lebensstil."
           }
         },
         "slide_GBHxee": {
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/why-icon-5.svg",
-            "title": "Are ready to grow",
-            "description": "You’re ready to learn, implement, and succeed."
+            "title": "Bereit bist zu wachsen",
+            "description": "Du bist bereit zu lernen, umzusetzen und erfolgreich zu sein."
           }
         }
       },
@@ -247,8 +247,8 @@
       ],
       "name": "Why us section",
       "settings": {
-        "subtitle": "why us",
-        "title": "It’ll be perfect place for You if You:",
+        "subtitle": "Warum wir",
+        "title": "Der perfekte Ort für dich, wenn du:",
         "right_image": "shopify://shop_images/lr-img-9_43b84279-e9fc-4e12-8e1f-6849e8c459d9.webp"
       }
     },
