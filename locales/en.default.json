@@ -9,21 +9,21 @@
  */
 {
   "general": {
-    "form":{
-      "submit_form" : "Book now",
-      "name" : "Name",
-      "phone" : "Phone",
-      "city" : "City / Location",
-      "name_p" : "Your full name",
-      "email_p" : "We’ll send confirmation here",
-      "phone_p" : "We’ll call you here",
-      "city_p" : "Where the consultation will take place",
-      "thank_you_t" : "Thank you for Your request",
-      "thank_you_d" : "We will contact you shortly"
+    "form": {
+      "submit_form": "Book Call-back",
+      "name": "Name",
+      "phone": "Phone",
+      "city": "City / Location",
+      "name_p": "Your full name",
+      "email_p": "We’ll send confirmation here",
+      "phone_p": "We’ll call you here",
+      "city_p": "Where the consultation will take place",
+      "thank_you_t": "Thank you for Your request",
+      "thank_you_d": "We will contact you shortly"
     },
-    "menu":{
+    "menu": {
       "get_sleep_system": "Get Sleep System",
-      "from": "From",
+      "from": "From"
     },
     "password_page": {
       "login_form_heading": "Enter store using password:",
@@ -132,8 +132,8 @@
   },
   "products": {
     "product": {
-      "shop_now" : "Shop now",
-      "read_now" : "Shop now",
+      "shop_now": "Shop now",
+      "read_now": "Shop now",
       "add_to_cart": "Add to cart",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
@@ -302,7 +302,6 @@
       "announcement": "Announcement",
       "announcement_bar": "Announcement bar"
     },
-
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
