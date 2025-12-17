@@ -56,11 +56,18 @@
           "settings": {
             "slide_image": "shopify://shop_images/simple-img-1.webp"
           }
+        },
+        "slide_DRt46F": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-2.webp"
+          }
         }
       },
       "block_order": [
         "slide_4P8i7j",
-        "slide_HCKLdd"
+        "slide_HCKLdd",
+        "slide_DRt46F"
       ],
       "name": "Gallery slider (desc)",
       "settings": {
