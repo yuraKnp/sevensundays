@@ -3,14 +3,14 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 col-xl-7">
                 <div class="title-shortcode text-center mb-64">
-                    {% if settings.section.subtitle != blank %}
-                    <div class="motto">{{ settings.section.subtitle }}</div>
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
                     {% endif %}
-                    {% if settings.section.title != blank %}
-                    <h1 class="h1 title">{{ settings.section.title }}</h1>
+                    {% if section.settings.title != blank %}
+                    <h1 class="h1 title">{{ section.settings.title }}</h1>
                     {% endif %}
-                    {% if settings.section.description != blank %}
-                    <div class="text">{{ settings.section.description }}</div>
+                    {% if section.settings.description != blank %}
+                    <div class="text">{{ section.settings.description }}</div>
                     {% endif %}
                     <div class="button-wrapp gap-16">
                         {% if section.settings.link_text != blank and section.settings.link_url != blank %}
