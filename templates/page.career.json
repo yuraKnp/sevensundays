@@ -337,36 +337,78 @@
         "slide_Jb4bjX": {
           "type": "slide",
           "settings": {
-            "question": "Do I need prior sales experience?",
-            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+            "question": "Brauche ich Verkaufserfahrung?",
+            "answer": "<p>Nein. Unser Ansatz ist für alle geeignet, die sich für Gesundheit und Wohlbefinden begeistern. Wir haben kompakte, leicht verständliche Trainings entwickelt – und dein regionales Team ist immer für dich da. Wir bringen dir alles bei, was du wissen musst, mit persönlicher Unterstützung wenn gewünscht.</p>"
           }
         },
         "slide_U47xXg": {
           "type": "slide",
           "settings": {
-            "question": "How much can I realistically earn?",
-            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+            "question": "Wie viel kann ich realistisch verdienen?",
+            "answer": "<p>Dein Einkommen hängt direkt von deinem Einsatz ab. Nicht selten verdienen Berater 2.500 € pro Monat. Mit Fokus und Kontinuität sind auch 3.000-5.000 €+ erreichbar. Top-Performer erzielen sechsstellige Jahreseinkommen. Es gibt keine Obergrenze – deine Leistung bestimmt deinen Erfolg.</p>"
           }
         },
         "slide_nFBMPh": {
           "type": "slide",
           "settings": {
-            "question": "How flexible are the working hours?",
-            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+            "question": "Wie flexibel sind die Arbeitszeiten?",
+            "answer": "<p>Komplett flexibel. Du entscheidest wann, wo und wie viel du arbeitest. Perfekt für Quereinsteiger, Eltern oder alle, die mehr Freiheit und Selbstbestimmung wollen.</p>"
           }
         },
         "slide_YTicbB": {
           "type": "slide",
           "settings": {
-            "question": "What does it cost to get started?",
-            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+            "question": "Was kostet der Einstieg?",
+            "answer": "<p>Nichts. Der Start bei Seven Sundays ist 100% kostenlos. Du erhältst alles, was du brauchst: umfassende Schulung, dein eigenes Demo-Schlafsystem und volle Unterstützung durch erfahrene Mentoren.</p>"
           }
         },
         "slide_7yxi7q": {
           "type": "slide",
           "settings": {
-            "question": "How does the training work?",
-            "answer": "<p>No! Our system works without sales pressure. You provide honest advice and help customers choose what best suits their needs.</p>"
+            "question": "Wie funktioniert die Ausbildung?",
+            "answer": "<p>Wir kombinieren Online-Module, Präsenz-Workshops und persönliches Mentoring. Zusätzlich erhältst du drei begleitete Übungstermine, damit du von Anfang an sicher startest. Die Grundausbildung dauert Stunden, nicht Tage.</p>"
+          }
+        },
+        "slide_LwfBEN": {
+          "type": "slide",
+          "settings": {
+            "question": "Ist das ein Nebenjob oder eine Vollzeit-Möglichkeit?",
+            "answer": "<p>Beides. Viele starten nebenberuflich, während andere schnell in Vollzeit wechseln – dank des starken Verdienstpotenzials.</p>"
+          }
+        },
+        "slide_NgQPUM": {
+          "type": "slide",
+          "settings": {
+            "question": "Muss ich Produkte lagern oder mich um den Versand kümmern?",
+            "answer": "<p>Nein. Du lagerst nie Ware und kümmerst dich nie um Versand. Seven Sundays übernimmt Logistik, Rechnungsstellung, Lieferung und Kundenservice. Du konzentrierst dich ausschließlich auf Beratungen.</p>"
+          }
+        },
+        "slide_NPEW4W": {
+          "type": "slide",
+          "settings": {
+            "question": "Werde ich nach dem Start unterstützt?",
+            "answer": "<p>Absolut. Du bist nie allein. Du hast einen persönlichen Mentor, eine unterstützende Community, regelmäßige Workshops und Coachings sowie Marketingmaterial und digitale Tools. Wir setzen uns für deinen nachhaltigen Erfolg ein.</p>"
+          }
+        },
+        "slide_kEgLh6": {
+          "type": "slide",
+          "settings": {
+            "question": "Wie schnell kann ich Geld verdienen?",
+            "answer": "<p>Die meisten Berater verdienen ihre erste Provision innerhalb von 2-4 Wochen – abhängig davon, wie schnell sie die Ausbildung abschließen und erste Beratungen vereinbaren.</p>"
+          }
+        },
+        "slide_PDKeaB": {
+          "type": "slide",
+          "settings": {
+            "question": "Gibt es sonst noch etwas, das ich brauche?",
+            "answer": "<p>Ein Auto und Führerschein sind empfehlenswert. Hausberatungen stehen im Mittelpunkt unserer Arbeit – Mobilität ermöglicht dir, schnell zu reagieren und Kunden in deiner Region zu betreuen.</p>"
+          }
+        },
+        "slide_9icG7U": {
+          "type": "slide",
+          "settings": {
+            "question": "Wie bewerbe ich mich?",
+            "answer": "<p>Es gibt keinen formellen Bewerbungsprozess – wir glauben an Menschen und Leidenschaft. Du kannst einen Rückruf anfordern, dich direkt bewerben oder eines unserer kostenlosen regionalen Events besuchen, um mehr zu erfahren und loszulegen.</p>"
           }
         }
       },
@@ -375,7 +417,13 @@
         "slide_U47xXg",
         "slide_nFBMPh",
         "slide_YTicbB",
-        "slide_7yxi7q"
+        "slide_7yxi7q",
+        "slide_LwfBEN",
+        "slide_NgQPUM",
+        "slide_NPEW4W",
+        "slide_kEgLh6",
+        "slide_PDKeaB",
+        "slide_9icG7U"
       ],
       "name": "FAQ section",
       "settings": {
