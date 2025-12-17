@@ -41,11 +41,46 @@
         "video_title": "Watch Career Story of Jacob",
         "video_duration": "2m 42s"
       }
+    },
+    "slider_gallery_desc_dBf8Mg": {
+      "type": "slider-gallery-desc",
+      "blocks": {
+        "slide_4P8i7j": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-2.webp"
+          }
+        },
+        "slide_HCKLdd": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.webp"
+          }
+        },
+        "slide_DRt46F": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slide_4P8i7j",
+        "slide_HCKLdd",
+        "slide_DRt46F"
+      ],
+      "name": "Gallery slider (desc)",
+      "settings": {
+        "title": "More Than a Career -<br>A Mission That Matters",
+        "subtitle": "not just a job",
+        "bottom_desc": "<p>Poor sleep affects almost 50% of adults worldwide. You can change that. Sleep isn’t just rest – it’s the foundation of mental clarity, physical health, and life satisfaction.</p><p>As a Sleep Consultant, you’re not selling a product. You’re guiding people to their lives back. Imagine helping someone feel refreshed for the first time in years, watching their productivity soar, their mood improve, and their relationships flourish. That’s what you do.</p>"
+      }
     }
   },
   "order": [
     "main",
     "banner_text_Qgz3rk",
-    "background_video_TyyERC"
+    "background_video_TyyERC",
+    "slider_gallery_desc_dBf8Mg"
   ]
 }
