@@ -1,3 +1,4 @@
+{% if section.settings.section_type == 'type_1' %}
 <div class="section sec-cta">
     <div class="banner">
         <div class="banner-media bottom-shadow">
@@ -52,6 +53,68 @@
     </div>
 </div>
 
+{% elsif section.settings.section_type == 'type_2' %}
+
+{%- assign image = section.settings.image -%}
+{%- assign image_mob = section.settings.image_mob -%}
+
+<div class="section padd-lg sec-padd-inline gradient-2">
+    <div class="banner">
+        <div class="banner-media bottom-shadow">
+            {% if image != blank %}
+            {% assign image_url = image | image_url  %}
+            {% assign image_format = image.format  %}
+            <picture>
+                <source srcset="{{ image_url }}" type="{{ image_format }}"  media="(min-width:768px)">
+                {% if image_mob != blank %}
+                    {% assign image_url = image_mob | image_url  %}
+                    {% assign image_format = image_mob.format  %}
+                <source srcset="{{ image_url }}" type="{{ image_format }}" media="(max-width:767px)">
+                {% endif %}
+                <img width="380" height="240" src="#" alt="" loading="eager">
+            </picture>
+            {% endif %}
+        </div>
+        <div class="banner-align size2 align-middle">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7 col-xl-6">
+                        <div class="banner-info text-center">
+                            {%  if section.settings.subtitle != blank %}
+                            <div class="motto white">{{ section.settings.subtitle }}</div>
+                            {% endif %}
+                            {%  if section.settings.title != blank %}
+                            <div class="h2 title">{{ section.settings.title }}</div>
+                            {% endif %}
+                            {%  if section.settings.short_description != blank %}
+                            <div class="text">{{ section.settings.short_description }}</div>
+                            {% endif %}
+                            <div class="button-wrapp">
+                                {% if section.settings.link_text != blank and section.settings.link_url != blank %}
+                                <a href="{{ section.settings.link_url }}" class="btn">
+                                    <b>{{ section.settings.link_text }}</b>
+                                    {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
+                                    {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                                    {%- assign final_svg_url = url_no_version | append: '#btn-arrow' -%}
+                                    <svg width="12" height="12"><use href="{{ final_svg_url }}"></use></svg>
+                                </a>
+                                {% endif %}
+                                {% if section.settings.link_text2 != blank and section.settings.link_url2 != blank %}
+                                <a href="{{ section.settings.link_url2 }}" class="btn btn-blur size2">
+                                    <b>{{ section.settings.link_text2 }}</b>
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%  endif %}
+
 {% schema %}
 {
   "name": "Call to action",
@@ -62,9 +125,30 @@
   },
   "settings": [
     {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "type_1",
+          "label": "Type 1"
+        },
+        {
+          "value": "type_2",
+          "label": "Type 2"
+        },
+      ],
+      "default": "type_1",
+      "label": "Slider type"
+    },
+    {
       "type": "image_picker",
       "id": "image",
       "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mob",
+      "label": "Background image mob"
     },
     {
       "type": "video",
@@ -95,6 +179,16 @@
       "type": "text",
       "id": "link_url",
       "label": "Link url"
+    },
+        {
+      "type": "text",
+      "id": "link_text2",
+      "label": "Link text 2"
+    },
+    {
+      "type": "text",
+      "id": "link_url2",
+      "label": "Link url 2"
     },
   ],
   "presets": [
