@@ -272,11 +272,21 @@
             "job": "Agency Partner",
             "slide_desc": "“I never dared to get into direct sales because everyone always wants an upfront investment. Not so with SEVEN SUNDAYS! No capital investment, I completed the training and earned money right away. Now I have a constantly growing team. The opportunities are endless.”"
           }
+        },
+        "slide_WMCdCU": {
+          "type": "slide",
+          "settings": {
+            "tags": "",
+            "name": "Anton Wolf",
+            "job": "Sleep Consultant",
+            "slide_desc": "\"Flexibility has always mattered to me, even in my days as a fitness coach. With SEVEN SUNDAYS, both my income and my free time have grown—giving me the freedom I always wanted, plus the reward of helping people sleep better.\""
+          }
         }
       },
       "block_order": [
         "slide_wjpYfT",
-        "slide_3QULtU"
+        "slide_3QULtU",
+        "slide_WMCdCU"
       ],
       "name": "Testimonial slider",
       "settings": {
