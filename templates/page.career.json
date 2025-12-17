@@ -319,6 +319,17 @@
         "link_text2": "Request Callback",
         "link_url2": "#"
       }
+    },
+    "insight_TNDAJw": {
+      "type": "insight",
+      "name": "Insight",
+      "settings": {
+        "tag": "expert insight",
+        "main_description": "“Having built, lead, and sold global direct sales organizations, I can say: Seven Sundays offers the most attractive career model out there. Anyone passionate about wellbeing and human connection can build an exceptional career here.\"",
+        "image": "shopify://shop_images/expert-photo-5.webp",
+        "exper_name": "Reto von der Becke",
+        "expert_occupation": "Co-Owner & Chairman ofthe Board SEVEN SUNDAYS"
+      }
     }
   },
   "order": [
@@ -331,6 +342,7 @@
     "three_column_nrMqfJ",
     "why_us_gnNCj7",
     "testimonial_slider_tniH9A",
-    "call_to_action_jBeyNj"
+    "call_to_action_jBeyNj",
+    "insight_TNDAJw"
   ]
 }
