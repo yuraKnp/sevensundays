@@ -1,3 +1,6 @@
+
+{% if section.settings.section_type == 'type_1' %}
+
 {% if section.blocks != blank %}
 <div class="section sec-padd padd-xl-lg sec-stories">
     <div class="container">
@@ -97,6 +100,80 @@
 </div>
 {% endif %}
 
+
+{% elsif section.settings.section_type == 'type_2' %}
+
+
+<div class="section padd-xl-lg gradient-1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+                <div class="title-shortcode text-center">
+                    {%  if section.settings.title != blank %}
+                    <div class="h2 title">{{ section.settings.title }}</div>
+                    {%  endif %}
+                </div>
+            </div>
+        </div>
+        {% if section.blocks != blank %}
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-8 col-xl-6">
+                <div class="swiper-entry advisor-slider">
+                    <div class="swiper-container overflow-visible" data-options='{ 
+                        "slidesPerView": 1,
+                        "spaceBetween": 12,
+                        "breakpoints":{
+                            "576":{"spaceBetween": 16, "slidesPerView": 1},
+                            "992":{"spaceBetween": 16, "slidesPerView": 1},
+                            "1200":{"spaceBetween": 16, "slidesPerView": 1}
+                        }}'>
+                        <div class="swiper-wrapper">
+                            {% for block in section.blocks %}
+                                {%- assign name = block.settings.name -%}
+                                {%- assign job = block.settings.job -%}
+                                {%- assign slide_desc = block.settings.slide_desc -%}
+                            <div class="swiper-slide">
+                                <div class="advisor-item style2">
+                                    <div class="advisor-info">
+                                        <div class="title h5">{{ slide_desc }}</div>
+                                        <div class="info-bottom">
+                                            {% if name != blank %}
+                                            <div class="text"><b>{{ name }}</b></div>
+                                            {% endif %}
+                                            {% if job != blank %}
+                                            <div class="text text-sm">{{ job  }}</div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="swiper-controls-wrap text-center mt-48">
+                        <div class="swiper-button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endif %}
+
 {% schema %}
 {
   "name": "Testimonial slider",
@@ -106,6 +183,27 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "type_1",
+          "label": "Type 1"
+        },
+        {
+          "value": "type_2",
+          "label": "Type 2"
+        },
+      ],
+      "default": "type_1",
+      "label": "Slider type"
+    },
+    {
+        "type": "text",
+        "id": "slider_title",
+        "label": "Slider title",
+    },
   ],
   "blocks": [
     {
