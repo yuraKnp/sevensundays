@@ -16,9 +16,23 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "three_layer_banner_mra8DQ": {
+      "type": "three-layer-banner",
+      "name": "Three layer banner",
+      "settings": {
+        "title": "Das persönlichste Schlafsystem der Welt",
+        "subtitle": "ENGINEERED IN SWITZERLAND ",
+        "scroll_text": "Scrollen Sie zum Erkunden",
+        "image": "shopify://shop_images/mattress-img-1.webp",
+        "image_sec": "shopify://shop_images/mattress-img-2.webp",
+        "title_under_img": "Deine drei Schichten. Wie für dich gemacht.",
+        "short_desc_under_img": "Jede Schicht hat ihren Zweck für Komfort und Ergonomie. Du wählst, was zu dir passt."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "three_layer_banner_mra8DQ"
   ]
 }
