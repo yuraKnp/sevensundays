@@ -3,54 +3,6 @@
         <div class="row justify-content-between">
             {% if section.blocks != blank %}
             <div class="col-lg-6">
-              {% comment %} {% for block in section.blocks %}
-                    {%- assign next_block_type = section.blocks[forloop.index].type -%}
-                    {%- assign prev_index = forloop.index0 | minus: 1 -%}
-                    {%- assign prev_block_type = 'none' -%}
-                    {%- unless forloop.first -%}
-                      {%- assign prev_block_type = section.blocks[prev_index].type -%}
-                    {%- endunless -%}
-                    
-                    {%- if block.type == 'slide' -%}
-                      {%- assign title = block.settings.title -%}
-                      {%- assign subtitle = block.settings.subtitle -%}
-                      {%- assign description = block.settings.description -%}
-                    <div class="layer-item">
-                      {% if subtitle != blank %}
-                      <div class="motto">{{ subtitle }}</div>
-                      {% endif %}
-                      {% if title != blank %}
-                      <div class="title h2">{{ title }}</div>
-                      {% endif %}
-                      {% if description != blank %}
-                      <div class="text text-md">{{ description }}</div>
-                      {% endif %}
-                    {%- if next_block_type == 'slide' or forloop.last -%} 
-                    </div> 
-                    {% continue %}
-                    {% endif %}
-
-                    {% if prev_block_type == 'slide' %}
-                      <div class="comfort-blocks"> {% endif %}
-                        {%- if block.type == 'child_layer' -%}
-                            {%- assign question = block.settings.question -%}
-                            {%- assign answer = block.settings.answer -%}
-                            <div class="comfort-item">
-                                <div class="comfort-btn">
-                                    <img width="20" height="20" src="img/icons/comfort-icon.svg" alt="" loading="lazy">
-                                </div>
-                                <div class="text text-md"><b>{{ question }}</b></div>
-                                <div class="text text-md text-hide">{{ answer }}</div>
-                            </div>
-                      {%- if next_block_type == 'slide' %}</div> {% endif %}
-                      {% endif %}
-                      
-                      {%- if next_block_type == 'slide' or forloop.last -%} 
-                    </div> 
-                    {% endif %}
-                    {% endif %}
-                  {%- if forloop.last %}</div> {% endif %}
-              {% endfor %} {% endcomment %}
 
               {%- for block in section.blocks -%}
                 {%- assign next_block_type = section.blocks[forloop.index].type -%}
