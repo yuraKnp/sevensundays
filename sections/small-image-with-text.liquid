@@ -1,0 +1,63 @@
+<div class="section sec-black">
+    <div class="banner">
+        <div class="banner-media"></div>
+        <div class="banner-align">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="banner-info text-center">
+                            {% if section.settings.title != blank %}
+                                <div class="h1 size2 title text-balance">{{ section.settings.title }}</div>
+                            {% endif %}
+                            
+                            <div class="expert-block size2">
+                                {% if section.settings.image != blank %}
+                                    {%- assign image = section.settings.image -%}
+                                    {% assign image_url = image | image_url  %}
+                                    <img width="380" height="240" src="{{ image_url }}" alt="" loading="lazy">
+                                {% endif %}
+                                {% if section.settings.description != blank %}
+                                    <div class="text text-md">{{ section.settings.description }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Small image with text",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Small image"
+    },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "description",
+        "label": "Description"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Small image with text",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
