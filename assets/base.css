@@ -3658,3 +3658,7 @@ main.type2 > [id*="three_layer_banner"] > .section{
   height: auto;
   width: auto;
 }
+
+.article > .section{
+  margin-top: 0px;
+}
