@@ -16,11 +16,11 @@
                       {%- assign subtitle = block.settings.subtitle -%}
                       {%- assign description = block.settings.description -%}
                     <div class="layer-item">
-                      {% if title != blank %}
-                      <div class="motto">{{ title }}</div>
-                      {% endif %}
                       {% if subtitle != blank %}
-                      <div class="title h2">{{ subtitle }}</div>
+                      <div class="motto">{{ subtitle }}</div>
+                      {% endif %}
+                      {% if title != blank %}
+                      <div class="title h2">{{ title }}</div>
                       {% endif %}
                       {% if description != blank %}
                       <div class="text text-md">{{ description }}</div>
