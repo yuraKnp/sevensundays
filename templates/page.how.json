@@ -40,10 +40,28 @@
             "title": "Deep Back Recovery",
             "description": "Counter-rotating lamellas create a gentle stretch effect that activates regeneration in your back and discs."
           }
+        },
+        "slide_Banypj": {
+          "type": "slide",
+          "settings": {
+            "subtitle": "5-Zone Layer",
+            "title": "Perfected Ergonomics",
+            "description": "Shoulders and hips sink in naturally. Your spine stays aligned. Your muscles release completely."
+          }
+        },
+        "slide_WLE8gy": {
+          "type": "slide",
+          "settings": {
+            "subtitle": "Matched to how you sleep",
+            "title": "Your Comfort Layer",
+            "description": ""
+          }
         }
       },
       "block_order": [
-        "slide_rEdKat"
+        "slide_rEdKat",
+        "slide_Banypj",
+        "slide_WLE8gy"
       ],
       "name": "Layers slider",
       "settings": {
