@@ -1,8 +1,8 @@
 {%- assign image = section.settings.image -%}
 {%- assign image_mob = section.settings.image_mob -%}
 {% if image != blank %}
-    {% assign image_url = image | image_url  %}
-    {% assign image_format = image.format  %}
+{% assign image_url = image | image_url  %}
+{% assign image_format = image.format  %}
 <div class="section">
     <div class="banner">
         <div class="banner-media">

@@ -470,7 +470,7 @@ table:not([class]) th {
 a:empty,
 ul:empty,
 dl:empty,
-div:empty:not(.block-blur):not([class^="spacer-"]):not(.video-popup-overlay):not(.video-popup-layer),
+div:empty:not(.block-blur):not([class^="spacer-"]):not(.video-popup-overlay):not(.video-popup-layer):not(.banner-align),
 section:empty,
 article:empty,
 p:empty,
