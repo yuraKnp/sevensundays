@@ -74,7 +74,8 @@ jQuery(function ($) {
 
         newLine += '<a class="toc__link" href="' + link + '">' + title + "</a>";
 
-        ToC += newLine;
+        if(newLine) ToC += newLine;
+        
         });
 
         ToC += "</li></ul>".repeat(level - baseLevel) + "</li>" + "</ul>" + "</nav>";
