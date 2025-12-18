@@ -30,7 +30,8 @@
                     {% continue %}
                     {% endif %}
 
-                    {% if prev_block_type == 'slide' %}<div class="comfort-blocks"> {% endif %}
+                    {% if prev_block_type == 'slide' %}
+                      <div class="comfort-blocks"> {% endif %}
                         {%- if block.type == 'child_layer' -%}
                             {%- assign question = block.settings.question -%}
                             {%- assign answer = block.settings.answer -%}
@@ -41,7 +42,8 @@
                                 <div class="text text-md"><b>{{ question }}</b></div>
                                 <div class="text text-md text-hide">{{ answer }}</div>
                             </div>
-                            {% endif %}
+                        {%- if forloop.last %}</div> {% endif %}
+                        {% endif %}
                       {%- if next_block_type == 'slide' %}</div> {% endif %}
                       {%- if next_block_type == 'slide' or forloop.last -%} 
                     </div> 
