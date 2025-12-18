@@ -350,7 +350,7 @@
                       <article>
                         <div class="related__media">
                           {%- if rt_article.image -%}
-                            <img class="lazyload" data-src="{{ rt_article.image | img_url: '160x' }}" />
+                            <img src="{{ article.image | img_url: '1217x' }}" class="lazyload" data-src="{{ rt_article.image | img_url: '160x' }}" />
                           {%- endif -%}
                         </div>
                         <p>{{ rt_article.title }}</p>
@@ -412,7 +412,7 @@
                 <article>
                   <div class="grid__media">
                     {%- if rt_article.image != nil -%}
-                      <img class="lazyload" data-src="{{ rt_article.image | img_url: '592px' }}" />
+                      <img src="{{ rt_article.image | img_url: '592px' }}" class="lazyload" data-src="{{ rt_article.image | img_url: '592px' }}" />
                     {%- endif -%}
                   </div>
                   <div class="grid__copy">
