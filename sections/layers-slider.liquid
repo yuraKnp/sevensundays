@@ -54,7 +54,11 @@
 
               {%- for block in section.blocks -%}
                 {%- assign next_block_type = section.blocks[forloop.index].type -%}
-                {%- assign prev_block_type = section.blocks[forloop.index0 | minus: 1].type -%}
+                {%- assign prev_index = forloop.index0 | minus: 1 -%}
+                {%- assign prev_block_type = 'none' -%}
+                {%- unless forloop.first -%}
+                  {%- assign prev_block_type = section.blocks[prev_index].type -%}
+                {%- endunless -%}
 
                 {%- if block.type == 'slide' -%}
                   <div class="layer-item" {{ block.shopify_attributes }}>
