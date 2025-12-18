@@ -96,6 +96,7 @@
       "type": "small-image-with-text",
       "name": "Small image with text",
       "settings": {
+        "section_type": "type_1",
         "image": "shopify://shop_images/expert-photo-6.webp",
         "title": "Infinite Possibilities",
         "description": "30 seconds to a completely new sleep experience."
@@ -160,6 +161,16 @@
         "title": "4 ways to sleep like it’s Sunday.",
         "subtitle": "Unzip. Reconfigure. Recover."
       }
+    },
+    "small_image_with_text_RKA9qY": {
+      "type": "small-image-with-text",
+      "name": "Small image with text",
+      "settings": {
+        "section_type": "type_2",
+        "image": "shopify://shop_images/mattress-img-1_4b9e4c45-e583-466a-8381-ae54af05e4d5.webp",
+        "title": "Design your sleep. For life.",
+        "description": "An investment that lasts a lifetime. With SEVEN SUNDAYS, you never buy another mattress again. Revolutionary modularity and uncompromising quality mean the system evolves with you – literally for life."
+      }
     }
   },
   "order": [
@@ -168,6 +179,7 @@
     "layers_slider_dtrfD9",
     "background_image_xQ8D7C",
     "small_image_with_text_FV4nVG",
-    "tabs_section_FQ8mDC"
+    "tabs_section_FQ8mDC",
+    "small_image_with_text_RKA9qY"
   ]
 }
