@@ -3,7 +3,7 @@
         <div class="row justify-content-between">
             {% if section.blocks != blank %}
             <div class="col-lg-6">
-                 {% for block in section.blocks %}
+              {% comment %} {% for block in section.blocks %}
                     {%- assign next_block_type = section.blocks[forloop.index].type -%}
                     {%- assign prev_index = forloop.index0 | minus: 1 -%}
                     {%- assign prev_block_type = 'none' -%}
@@ -43,14 +43,47 @@
                                 <div class="text text-md text-hide">{{ answer }}</div>
                             </div>
                       {%- if next_block_type == 'slide' %}</div> {% endif %}
-                        {% endif %}
+                      {% endif %}
                       
                       {%- if next_block_type == 'slide' or forloop.last -%} 
                     </div> 
                     {% endif %}
                     {% endif %}
                   {%- if forloop.last %}</div> {% endif %}
-              {% endfor %}
+              {% endfor %} {% endcomment %}
+
+              {%- for block in section.blocks -%}
+                {%- assign next_block_type = section.blocks[forloop.index].type -%}
+                {%- assign prev_block_type = section.blocks[forloop.index0 | minus: 1].type -%}
+
+                {%- if block.type == 'slide' -%}
+                  <div class="layer-item" {{ block.shopify_attributes }}>
+                    {%- if block.settings.subtitle != blank -%}<div class="motto">{{ block.settings.subtitle }}</div>{%- endif -%}
+                    {%- if block.settings.title != blank -%}<div class="title h2">{{ block.settings.title }}</div>{%- endif -%}
+                    {%- if block.settings.description != blank -%}<div class="text text-md">{{ block.settings.description }}</div>{%- endif -%}
+                    {%- if next_block_type == 'slide' or forloop.last -%}
+                      </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- if block.type == 'child_layer' -%}
+                  {%- if prev_block_type == 'slide' -%}
+                    <div class="comfort-blocks">
+                  {%- endif -%}
+
+                  <div class="comfort-item" {{ block.shopify_attributes }}>
+                    <div class="comfort-btn">
+                      <img width="20" height="20" src="{{ 'comfort-icon.svg' | asset_url }}" alt="" loading="lazy">
+                    </div>
+                    <div class="text text-md"><b>{{ block.settings.question }}</b></div>
+                    <div class="text text-md text-hide">{{ block.settings.answer }}</div>
+                  </div>
+
+                  {%- if next_block_type == 'slide' or forloop.last -%}
+                    </div> </div> {%- endif -%}
+                {%- endif -%}
+
+              {%- endfor -%}
             </div>
             {% endif %}
             <div class="col-lg-6">
