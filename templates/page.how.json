@@ -100,6 +100,66 @@
         "title": "Infinite Possibilities",
         "description": "30 seconds to a completely new sleep experience."
       }
+    },
+    "tabs_section_FQ8mDC": {
+      "type": "tabs-section",
+      "blocks": {
+        "slide_qDV7Ya": {
+          "type": "slide",
+          "settings": {
+            "tag_name": "Revitalizing",
+            "image": "shopify://shop_images/mattress-img-4.webp",
+            "title": "Active Recovery",
+            "description": "Gently responsive feel supports natural movement. Promotes muscle and fascia regeneration.",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
+        },
+        "slide_nkkJmR": {
+          "type": "slide",
+          "settings": {
+            "tag_name": "Calming",
+            "image": "shopify://shop_images/mattress-img-4.webp",
+            "title": "Active Recovery 2",
+            "description": "Gently responsive feel supports natural movement. Promotes muscle and fascia regeneration.",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
+        },
+        "slide_BVPCX6": {
+          "type": "slide",
+          "settings": {
+            "tag_name": "Back Regeneration",
+            "image": "shopify://shop_images/mattress-img-4.webp",
+            "title": "Active Recovery 3",
+            "description": "Gently responsive feel supports natural movement. Promotes muscle and fascia regeneration.",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
+        },
+        "slide_FCapTm": {
+          "type": "slide",
+          "settings": {
+            "tag_name": "Ergonomic",
+            "image": "shopify://shop_images/mattress-img-4.webp",
+            "title": "Active Recovery 4",
+            "description": "Gently responsive feel supports natural movement. Promotes muscle and fascia regeneration.",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qDV7Ya",
+        "slide_nkkJmR",
+        "slide_BVPCX6",
+        "slide_FCapTm"
+      ],
+      "name": "Tabs section",
+      "settings": {
+        "title": "4 ways to sleep like it’s Sunday.",
+        "subtitle": "Unzip. Reconfigure. Recover."
+      }
     }
   },
   "order": [
@@ -107,6 +167,7 @@
     "three_layer_banner_mra8DQ",
     "layers_slider_dtrfD9",
     "background_image_xQ8D7C",
-    "small_image_with_text_FV4nVG"
+    "small_image_with_text_FV4nVG",
+    "tabs_section_FQ8mDC"
   ]
 }
