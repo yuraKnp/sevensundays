@@ -1,0 +1,162 @@
+<div class="section padd-xl sleep-sec">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="title-shortcode text-center mb-48">
+                    {% if section.settings.title != blank %}
+                    <div class="motto">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.subtitle != blank %}
+                    <div class="h1 title">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                </div>
+                {% if section.blocks != blank %}
+                <div class="control-slider">
+                    {%- for block in section.blocks -%}
+                        {%- assign tag_name = block.settings.tag_name -%}
+                        {% if tag_name != blank %}   
+                            <div class="item active">{{ tag_name }}</div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% if section.blocks != blank %}
+        <div class="row justify-content-center mattress-img decor">
+            <div class="decor-radial"><i></i></div>
+            <div class="col-md-10 col-xl-7">
+                <div class="swiper-entry sleep-slider">
+                    <div class="swiper-container" data-options='{ 
+                        "slidesPerView": 1,
+                        "effect": "fade",
+                        "autoHeight": true,
+                        "spaceBetween": 12,
+                        "fadeEffect": {"crossFade": true}}'>
+                        <div class="swiper-wrapper">
+                            {%- for block in section.blocks -%}
+                                {%- assign tag_name = block.settings.tag_name -%}
+                                {%- assign image = block.settings.image -%}
+                                {%- assign image_url = image | image_url  -%}
+                                {%- assign image_format = image.format  -%}
+                                {%- assign title = block.settings.title -%}
+                                {%- assign desc = block.settings.description -%}
+                                {%- assign link_text = block.settings.link_text -%}
+                                {%- assign link_url = block.settings.link_url -%}
+                                {% if tag_name != blank %}   
+                                    <div class="swiper-slide">
+                                        {% if image_url != blank %}
+                                        <div class="mattress-img">
+                                            <picture>
+                                                <source srcset="{{ image_url }}" type="{{ image_format }}">
+                                                <img width="380" height="240" src="#" alt="" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        {% endif %}
+                                        <div class="title-shortcode text-center">
+                                            {% if title != blank %}
+                                            <div class="h3 title">{{ title }}</div>
+                                            {% endif %}
+                                            {% if desc != blank %}
+                                            <div class="text text-md">{{ desc  }}</div>
+                                            {% endif %}
+                                            {% if link_text != blank and link_url != blank %}
+                                            <a href="{{ link_url }}" class="btn btn-third" target="_blank">
+                                                <b>{{ link_text }}</b>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="swiper-controls-wrap mt-xs text-center">
+                        <div class="swiper-button-prev style2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next style2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Tabs section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+    },
+    {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Single tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tag_name",
+          "label": "Tag name",
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+        },
+        {
+        "type": "inline_richtext",
+        "id": "description",
+        "label": "Description"
+        },
+        {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+        },
+        {
+        "type": "text",
+        "id": "link_url",
+        "label": "Link url"
+        },
+      ]
+    },
+  ],
+  "presets": [
+    {
+      "name": "Tabs section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
