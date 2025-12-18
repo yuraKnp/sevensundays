@@ -29,10 +29,49 @@
         "title_under_img": "Three layers",
         "short_desc_under_img": "Three separate layers engineered with the most advanced comfort and ergonomic science to unlock better sleep forever."
       }
+    },
+    "layers_slider_dtrfD9": {
+      "type": "layers-slider",
+      "blocks": {
+        "slide_rEdKat": {
+          "type": "slide",
+          "settings": {
+            "subtitle": "Stretch Layer",
+            "title": "Deep Back Recovery",
+            "description": "Counter-rotating lamellas create a gentle stretch effect that activates regeneration in your back and discs."
+          }
+        },
+        "slide_Banypj": {
+          "type": "slide",
+          "settings": {
+            "subtitle": "5-Zone Layer",
+            "title": "Perfected Ergonomics",
+            "description": "Shoulders and hips sink in naturally. Your spine stays aligned. Your muscles release completely."
+          }
+        },
+        "slide_WLE8gy": {
+          "type": "slide",
+          "settings": {
+            "subtitle": "Matched to how you sleep",
+            "title": "Your Comfort Layer",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_rEdKat",
+        "slide_Banypj",
+        "slide_WLE8gy"
+      ],
+      "name": "Layers slider",
+      "settings": {
+        "right_image": "shopify://shop_images/mattress-img-3.webp"
+      }
     }
   },
   "order": [
     "main",
-    "three_layer_banner_mra8DQ"
+    "three_layer_banner_mra8DQ",
+    "layers_slider_dtrfD9"
   ]
 }
