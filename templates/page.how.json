@@ -91,12 +91,22 @@
         "image": "shopify://shop_images/about-banner-img_5cf257b7-0f1d-497e-a0bd-9252e10f6274.webp",
         "image_mob": "shopify://shop_images/about-banner-img-mob_3bb8651d-4858-4d69-971b-93621711fa8b.webp"
       }
+    },
+    "small_image_with_text_FV4nVG": {
+      "type": "small-image-with-text",
+      "name": "Small image with text",
+      "settings": {
+        "image": "shopify://shop_images/expert-photo-6.webp",
+        "title": "Infinite Possibilities",
+        "description": "30 seconds to a completely new sleep experience."
+      }
     }
   },
   "order": [
     "main",
     "three_layer_banner_mra8DQ",
     "layers_slider_dtrfD9",
-    "background_image_xQ8D7C"
+    "background_image_xQ8D7C",
+    "small_image_with_text_FV4nVG"
   ]
 }
