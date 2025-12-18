@@ -56,12 +56,28 @@
             "title": "Your Comfort Layer",
             "description": ""
           }
+        },
+        "child_layer_Jtw8AC": {
+          "type": "child_layer",
+          "settings": {
+            "question": "Move a lot and wake up exhausted?",
+            "answer": "Memory Layer. Cradles your contours. Holds you close and gently reduces movement. Feels supersoft."
+          }
+        },
+        "child_layer_6WRbTz": {
+          "type": "child_layer",
+          "settings": {
+            "question": "Move too little and wake up stiff?",
+            "answer": "Memory Layer. Cradles your contours. Holds you close and gently reduces movement. Feels supersoft."
+          }
         }
       },
       "block_order": [
         "slide_rEdKat",
         "slide_Banypj",
-        "slide_WLE8gy"
+        "slide_WLE8gy",
+        "child_layer_Jtw8AC",
+        "child_layer_6WRbTz"
       ],
       "name": "Layers slider",
       "settings": {
