@@ -299,6 +299,8 @@
     Example: http://shopname.myshopify.com/blogs/news/2022072-my-post?comment=3721372
 {%- endcomment -%}
 
+{{ 'custom-blog-styles.scss' | asset_url | stylesheet_tag }}
+
 <div class="nightBackground"></div>
 
 <article>
