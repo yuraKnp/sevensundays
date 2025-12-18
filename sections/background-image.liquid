@@ -1,0 +1,51 @@
+{%- assign image = section.settings.image -%}
+{%- assign image_mob = section.settings.image_mob -%}
+{% if image != blank %}
+    {% assign image_url = image | image_url  %}
+    {% assign image_format = image.format  %}
+<div class="section">
+    <div class="banner">
+        <div class="banner-media">
+            <picture>
+                <source srcset="{{ image_url }}" type="{{ image_format }}"  media="(min-width:768px)">
+                {% if image_mob != blank %}
+                    {% assign image_mob = image_mob | image_url  %}
+                    {% assign image_mob_format = image_mob.format  %}
+                <source srcset="{{ image_mob }}" type="{{ image_mob_format }}" media="(max-width:767px)">
+                {% endif %}
+                <img width="380" height="240" src="#" alt="" loading="eager">
+            </picture>
+        </div>
+        <div class="banner-align size4"></div>
+    </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Background image",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background image"
+    },
+    {
+        "type": "image_picker",
+        "id": "image_mob",
+        "label": "Background image mobile"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Background image",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
