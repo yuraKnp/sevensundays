@@ -3,11 +3,11 @@
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="title-shortcode text-center mb-48">
-                    {% if section.settings.title != blank %}
-                    <div class="motto">{{ section.settings.title }}</div>
-                    {% endif %}
                     {% if section.settings.subtitle != blank %}
-                    <div class="h1 title">{{ section.settings.subtitle }}</div>
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h1 title">{{ section.settings.title }}</div>
                     {% endif %}
                 </div>
                 {% if section.blocks != blank %}
