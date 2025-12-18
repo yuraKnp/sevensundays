@@ -423,9 +423,9 @@ a {
 .legal a,
 .legal a:link,
 .legal a:visited {
-  color: #2461c9;
-  -webkit-text-decoration-color: #2461c9;
-  text-decoration-color: #2461c9;
+  color: #E7D39A;
+  -webkit-text-decoration-color: #E7D39A;
+  text-decoration-color: #E7D39A;
   text-decoration: underline;
   word-break: break-word; }
 
@@ -813,7 +813,7 @@ html {
   position: relative; }
 
 .ad .h2, .ad .article__body > h2 {
-  color: #2461c9;
+  color: #E7D39A;
   text-align: center;
   line-height: 48px !important;
   padding-bottom: 21rem; }
@@ -874,8 +874,8 @@ html {
     width: calc(50% - 1rem); } }
 /** adarticle.scss */
 .adArticle {
-  border-top: solid 2px #2461c9;
-  border-bottom: solid 2px #2461c9;
+  border-top: solid 2px #E7D39A;
+  border-bottom: solid 2px #E7D39A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,7 +938,8 @@ html {
   margin-bottom: 1rem; }
 
 .article__body > p a {
-  color: #2461c9; }
+  color: #E7D39A;
+}
 
 .article__body .ftnref {
   color: #E7D39A;
@@ -1410,7 +1411,7 @@ div + .blockquote {
   padding: 0 0.25rem 0; }
 
 .breadcrumb_last {
-  color: #2461c9;
+  color: #E7D39A;
   padding: 0 0.25rem 0; }
 
 .page--dark .breadcrumbs .breadcrumb_last {
@@ -1672,7 +1673,8 @@ button {
   width: 1.5rem; }
 
 .checkbox input[type="checkbox"]:checked {
-  background: #2461c9; }
+  background: #E7D39A;
+ }
 
 .checkbox input[type="checkbox"]:checked:after {
   -webkit-appearance: initial;
@@ -1711,7 +1713,7 @@ span#i-agree .wpcf7-list-item {
   margin-left: 0.5rem; }
 
 #i-agree + .checkbox__label a {
-  color: #2461c9;
+  color: #E7D39A;
   display: inline-block;
   text-decoration: underline; }
 
@@ -1743,7 +1745,7 @@ span#i-agree .wpcf7-list-item {
 
 /** cta.scss */
 .cta {
-  background: #2461c9;
+  background: #E7D39A;
   position: relative;
   width: 100%;
   margin: 4rem auto 0; }
@@ -1792,12 +1794,12 @@ section#layer-system + .cta {
     line-height: 96px; } }
 /** ctatwocolumns.scss */
 .ctaTwoColumns {
-  background: #2461c9;
+  background: #E7D39A;
   margin: 2rem 0 2rem;
   position: relative; }
 
 .ctaTwoColumns:after {
-  background: #2461c9;
+  background: #E7D39A;
   bottom: 0;
   content: " ";
   left: 100%;
@@ -2856,7 +2858,7 @@ body.fixed-header.show-logo .header.show-in {
   position: relative; }
 
 .highlight__wrapper::before {
-  background: #2461c9;
+  background: #E7D39A;
   bottom: 0;
   content: " ";
   position: absolute;
@@ -2997,8 +2999,8 @@ body.fixed-header.show-logo .header.show-in {
   margin: 0 1rem; }
 
 .menu__item.active .nav-link {
-  -webkit-box-shadow: inset 0 -4px 0 0 #2461c9 !important;
-  box-shadow: inset 0 -4px 0 0 #2461c9 !important;
+  -webkit-box-shadow: inset 0 -4px 0 0 #E7D39A!important;
+  box-shadow: inset 0 -4px 0 0 #E7D39A!important;
   font-weight: 600; }
 
 .menu__item .nav-link {
@@ -3728,7 +3730,8 @@ button[data-action="scroll-right"]:after {
 
 .radio input[type="radio"]:checked {
   border: none;
-  background: #2461c9; }
+  background: #E7D39A;
+}
 
 .radio input[type="radio"]:checked:after {
   content: " ";
@@ -3794,7 +3797,8 @@ button[data-action="scroll-right"]:after {
   margin-bottom: 2rem; }
 
 .related__item:hover p {
-  color: #2461c9;
+  color: #E7D39A;
+;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease; }
 
@@ -3847,7 +3851,7 @@ button[data-action="scroll-right"]:after {
 
 /** scrolltop.scss */
 #scrollTop {
-  background: #2461c9;
+  background: #E7D39A;
   border-radius: 2px;
   border: none;
   bottom: 20px;
@@ -8755,7 +8759,7 @@ div.product-single__media > img:hover {
 
 /*================ GDPR Banner ================*/
 .banner-main_header a, .banner-main_header a:visited {
-  color: #2461c9; }
+  color: #E7D39A; }
 
 /*================ Qen Homepage Design ================*/
 .qen-button {
