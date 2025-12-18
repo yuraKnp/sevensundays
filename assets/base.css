@@ -3651,3 +3651,7 @@ main.type2 > .section:first-child{
   color: var(--clr-primary);
 
 }
+
+.expert-block.size2 img{
+  height: auto;
+}
