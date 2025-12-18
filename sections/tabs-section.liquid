@@ -15,7 +15,7 @@
                     {%- for block in section.blocks -%}
                         {%- assign tag_name = block.settings.tag_name -%}
                         {% if tag_name != blank %}   
-                            <div class="item active">{{ tag_name }}</div>
+                            <div class="item {% if forloop.first %}active{% endif %}">{{ tag_name }}</div>
                         {% endif %}
                     {% endfor %}
                 </div>
