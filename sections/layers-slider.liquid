@@ -42,14 +42,14 @@
                                 <div class="text text-md"><b>{{ question }}</b></div>
                                 <div class="text text-md text-hide">{{ answer }}</div>
                             </div>
-                        {%- if forloop.last %}</div> {% endif %}
-                        {% endif %}
                       {%- if next_block_type == 'slide' %}</div> {% endif %}
+                        {% endif %}
+                      
                       {%- if next_block_type == 'slide' or forloop.last -%} 
                     </div> 
                     {% endif %}
                     {% endif %}
-                  
+                  {%- if forloop.last %}</div> {% endif %}
               {% endfor %}
             </div>
             {% endif %}
