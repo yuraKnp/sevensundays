@@ -1,3 +1,6 @@
+{% assign section_type = section.settings.section_type %}
+
+{% if section_type == 'type_1' %}
 <div class="section sec-black">
     <div class="banner">
         <div class="banner-media"></div>
@@ -27,6 +30,37 @@
         </div>
     </div>
 </div>
+{% elsif section_type == 'type_2' %}
+<div class="section sec-padd padd-md">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.title != blank %}
+                    <div class="h2 title">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.description != blank %}
+                    <div class="text text-md">{{ section.settings.description }}</div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-xl-10">
+                <div class="mattress-img mt-300">
+                    {% if section.settings.image != blank %}
+                        {%- assign image = section.settings.image -%}
+                        {% assign image_url = image | image_url  %}
+                        {% assign image_format = image_mob.format  %}
+                        <picture>
+                            <source srcset="{{ image_url }}" type="{{ image_format }}">
+                            <img width="380" height="240" src="#" alt="" loading="lazy">
+                        </picture>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 {% schema %}
 {
@@ -37,6 +71,22 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "type_1",
+          "label": "Type 1"
+        },
+        {
+          "value": "type_2",
+          "label": "Type 2"
+        },
+      ],
+      "default": "type_1",
+      "label": "Section type"
+    },
     {
         "type": "image_picker",
         "id": "image",
