@@ -1,0 +1,136 @@
+<div class="section sec-black">
+    <div class="container">
+        <div class="row justify-content-between">
+            {% if section.blocks != blank %}
+            <div class="col-lg-6">
+                 {% for block in section.blocks %}
+                    {%- assign next_block_type = section.blocks[forloop.index].type -%}
+                    {%- assign prev_index = forloop.index0 | minus: 1 -%}
+                    {%- assign prev_block_type = 'none' -%}
+                    {%- unless forloop.first -%}
+                      {%- assign prev_block_type = section.blocks[prev_index].type -%}
+                    {%- endunless -%}
+                    
+                    {%- if block.type == 'slide' -%}
+                      {%- assign title = block.settings.title -%}
+                      {%- assign subtitle = block.settings.subtitle -%}
+                      {%- assign description = block.settings.description -%}
+                    <div class="layer-item">
+                      {% if title != blank %}
+                      <div class="motto">{{ title }}</div>
+                      {% endif %}
+                      {% if subtitle != blank %}
+                      <div class="title h2">{{ subtitle }}</div>
+                      {% endif %}
+                      {% if description != blank %}
+                      <div class="text text-md">{{ description }}</div>
+                      {% endif %}
+                    {%- if next_block_type == 'slide' or forloop.last -%} 
+                    </div> 
+                    {% continue %}
+                    {% endif %}
+
+                    {% if prev_block_type == 'slide' %}<div class="comfort-blocks"> {% endif %}
+                        {%- if block.type == 'child_layer' -%}
+                            {%- assign question = block.settings.question -%}
+                            {%- assign answer = block.settings.answer -%}
+                            <div class="comfort-item">
+                                <div class="comfort-btn">
+                                    <img width="20" height="20" src="img/icons/comfort-icon.svg" alt="" loading="lazy">
+                                </div>
+                                <div class="text text-md"><b>{{ question }}</b></div>
+                                <div class="text text-md text-hide">{{ answer }}</div>
+                            </div>
+                            {% endif %}
+                      {%- if next_block_type == 'slide' %}</div> {% endif %}
+                      {%- if next_block_type == 'slide' or forloop.last -%} 
+                    </div> 
+                    {% endif %}
+                    {% endif %}
+                  
+              {% endfor %}
+            </div>
+            {% endif %}
+            <div class="col-lg-6">
+                <div class="sticky-block">
+                    <div class="mattress-img mr-32">
+                        {% assign image = section.settings.right_image %}
+                        {% if image != blank %}
+                          {% assign image_url = image | image_url  %}
+                          {% assign image_format = image.format  %}
+                          <picture>
+                              <source srcset="{{ image_url }}" type="{{ image_format }}">
+                              <img width="380" height="240" src="#" alt="" loading="lazy">
+                          </picture>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-xxl"></div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Layers slider",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "right_image",
+        "label": "Right Image"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Layer Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+        },
+        {
+        "type": "inline_richtext",
+        "id": "description",
+        "label": "Description"
+        },
+      ]
+    },
+    {
+      "type": "child_layer",
+      "name": "Embed Q/A",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+        },
+        {
+          "type": "text",
+          "id": "answer",
+          "label": "Answer",
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Layers slider",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
