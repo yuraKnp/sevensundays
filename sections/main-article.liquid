@@ -306,7 +306,7 @@
 <article>
   <div class="section">
     <div class="section__wrapper">
-      <header class="section__header">
+      <div class="section__header">
         <div class="article__hero">
           {%- if article.image != nil -%}
             <img class="lazyload" data-src="{{ article.image | img_url: '1217x' }}" />
@@ -315,7 +315,7 @@
         <div class="article__title">
           <h1 class="h1">{{ article.title }}</h1>
         </div>
-      </header>
+      </div>
       <div class="section__main">
         <aside class="section__aside">
           <div table-of-content>
@@ -400,9 +400,9 @@
   </div>
   <div class="section section--divider">
     <div class="section__wrapper">
-      <header class="section__header">
+      <div class="section__header">
         <div class="h2">Ähnliche Artikel</div>
-      </header>
+      </div>
       <ul class="grid">
         {%- assign rt_count = 0 -%}
         {%- for rt_article in blog.articles -%}
