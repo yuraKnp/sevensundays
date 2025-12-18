@@ -3652,6 +3652,8 @@ main.type2 > .section:first-child{
 
 }
 
-.expert-block.size2 img{
+.expert-block.size2 img,
+.mattress-img img{
   height: auto;
+  width: auto;
 }
