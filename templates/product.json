@@ -56,6 +56,27 @@
             "icon": "shopify://shop_images/delivery-icons-3.svg",
             "content": "2-3 days delivery"
           }
+        },
+        "collapsible_tab_HMwbPJ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Measurements & Dimensions",
+            "content": "<p>60x40 cm, adjustable height: 9 or 12 cm</p>"
+          }
+        },
+        "collapsible_tab_rdVhCp": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials & Care",
+            "content": "<p>60x40 cm, adjustable height: 9 or 12 cm</p>"
+          }
+        },
+        "collapsible_tab_nrFNyK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warranty, Shipping & Returns",
+            "content": "<p>60x40 cm, adjustable height: 9 or 12 cm</p>"
+          }
         }
       },
       "block_order": [
@@ -66,7 +87,10 @@
         "info_mR8EFU",
         "collapsible_tab_a_s_CrGik6",
         "collapsible_tab_a_s_bzQkpd",
-        "collapsible_tab_a_s_wjD3Yq"
+        "collapsible_tab_a_s_wjD3Yq",
+        "collapsible_tab_HMwbPJ",
+        "collapsible_tab_rdVhCp",
+        "collapsible_tab_nrFNyK"
       ],
       "name": "Single product info",
       "settings": {
@@ -87,121 +111,6 @@
     },
     "main": {
       "type": "main-product",
-      "blocks": {
-        "rating_gEjEJe": {
-          "type": "rating",
-          "settings": {}
-        },
-        "sku_GwK3VX": {
-          "type": "sku",
-          "settings": {
-            "text_style": "body"
-          }
-        },
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "rating_gEjEJe",
-        "sku_GwK3VX",
-        "vendor",
-        "title",
-        "caption",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
-      ],
       "disabled": true,
       "settings": {
         "enable_sticky_info": true,
