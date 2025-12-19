@@ -66,7 +66,8 @@
                 {%- endif -%}
                 {% if product.media != blank %}
                 <div class="row product-row hide-lg">
-                    {%- for media in product.media offset: number_slide_images++ -%}
+                    {%- assign start_index = number_slide_images | plus: 1 -%}
+                    {%- for media in product.media offset: start_index -%}
                     <div class="col-md-6">
                         <div class="simple-img size5">
                             {%- if media.media_type == 'image' -%}
