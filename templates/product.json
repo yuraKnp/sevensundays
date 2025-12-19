@@ -63,6 +63,13 @@
             "heading": "Measurements & Dimensions",
             "content": "<p>60x40 cm, adjustable height: 9 or 12 cm</p>"
           }
+        },
+        "collapsible_tab_rdVhCp": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials & Care",
+            "content": "<p>60x40 cm, adjustable height: 9 or 12 cm</p>"
+          }
         }
       },
       "block_order": [
@@ -74,7 +81,8 @@
         "collapsible_tab_a_s_CrGik6",
         "collapsible_tab_a_s_bzQkpd",
         "collapsible_tab_a_s_wjD3Yq",
-        "collapsible_tab_HMwbPJ"
+        "collapsible_tab_HMwbPJ",
+        "collapsible_tab_rdVhCp"
       ],
       "name": "Single product info",
       "settings": {
