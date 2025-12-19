@@ -85,22 +85,37 @@
             <div class="col-lg-5 col-xl-4">
                 <div class="pd-detail-info">
                     <div class="title-shortcode mb-64">
-                        <div class="pd-rating">
-                            <div class="stars">
-                                <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
+                        {%- for block in section.blocks -%}
+                          {%- case block.type -%}
+                            {%- when 'rating' -%}
+                            <div class="pd-rating">
+                                <div class="stars">
+                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
+                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
+                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
+                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
+                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
+                                </div>
+                                <div class="text text-sm">(177)</div>
                             </div>
-                            <div class="text text-sm">(177)</div>
-                        </div>
-                        <h1 class="h2 title">Neck Pillow</h1>
-                        <div class="text text-md">€123</div>
-                        <div class="text">Designed with neck pain in mind, our best-selling neck pillow features premium memory foam with ergonomic contour to keep you comfortable in any position.</div>
-                        <a href="#" class="btn btn-third">
-                            <b>More details</b>
-                        </a>
+                            {%- when 'title' -%}
+                            <h1 class="h2 title">{{ product.title | escape }}</h1>
+                            {%- when 'price' -%}
+                            <div class="text text-md">
+                              {%- render 'price',
+                                product: product,
+                                use_variant: true,
+                                show_badges: true,
+                                price_class: 'price--large'
+                              -%}
+                            </div>
+                            {%-  when 'description' -%}
+                            <div class="text">{{ product.description }}</div>
+                            <a href="#" class="btn btn-third">
+                                <b>More details</b>
+                            </a>
+                          {% endcase %}
+                        {% endfor %}
                     </div>
                     <div class="quantity-wrapp">
                         <div class="motto">Select your pillow quantity:</div>
