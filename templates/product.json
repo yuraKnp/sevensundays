@@ -9,6 +9,51 @@
  */
 {
   "sections": {
+    "product_info_XcKJA4": {
+      "type": "product-info",
+      "blocks": {
+        "collapsible_tab_a_s_CrGik6": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-1.svg",
+            "content": "Swiss Engineered"
+          }
+        },
+        "collapsible_tab_a_s_bzQkpd": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-2.svg",
+            "content": "14-day free returns"
+          }
+        },
+        "collapsible_tab_a_s_wjD3Yq": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-3.svg",
+            "content": "2-3 days delivery"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_a_s_CrGik6",
+        "collapsible_tab_a_s_bzQkpd",
+        "collapsible_tab_a_s_wjD3Yq"
+      ],
+      "name": "Single product info",
+      "settings": {
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -164,6 +209,7 @@
     }
   },
   "order": [
+    "product_info_XcKJA4",
     "main",
     "related-products"
   ]
