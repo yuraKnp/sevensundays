@@ -8,7 +8,7 @@
                 <div class="brands style2">
                     {% for block in section.blocks %}
                       {%- assign image = block.settings.image  -%}
-                    <div class="brand"><img width="132" height="80" src="{{ image | img_url: 'master' }}" alt="brand" loading="lazy"></div>
+                    <div class="brand"><img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: 'master' }}" alt="brand" loading="lazy"></div>
                     {% endfor %}
                 </div>
             </div>
