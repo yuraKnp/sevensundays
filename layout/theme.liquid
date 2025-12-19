@@ -361,10 +361,13 @@
 
     {% sections 'header-group' %}
 
+    {% comment %} if template == '404' or template == 'blog' or template == 'page.shop' or template == 'page.career' or template == 'page.how' {% endcomment %}
+
     {% liquid
       assign header_tag_add = ''
 
-      if template == '404' or template == 'blog' or template == 'page.shop' or template == 'page.career' or template == 'page.how'
+      assign list = settings.template_list_space | split: ','
+      if list contains template.name or list contains template
         assign header_tag_add = 'type2'
       endif
     %}
