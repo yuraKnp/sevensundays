@@ -6,7 +6,6 @@
   {%- endfor -%}
 {%- endcapture -%}
 
-{% comment %} {%- assign block_ids = block_id_list | split: ',' -%} {% endcomment %}
 {%- assign block_ids = block_id_list | strip_newlines | replace: ' ', '' | split: ',' -%}
 
 
