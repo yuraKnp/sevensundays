@@ -7,7 +7,7 @@
                 <div class="simple-img size3">
                     {% if left_image != blank %}
                     <picture>
-                        <source srcset="{{ left_image | img_url: 'master' }}" type="{{ left_image.format }}">
+                        <source srcset="{{ left_image | img_url: 'master' }}" type="">
                         <img width="380" height="240" src="#" alt="" loading="lazy">
                     </picture>
                     {% endif %}
@@ -17,7 +17,7 @@
                 <div class="simple-img size4">
                     {% if right_image != blank %}
                     <picture>
-                        <source srcset="{{ right_image | img_url: 'master' }}" type="{{ right_image.format  }}">
+                        <source srcset="{{ right_image | img_url: 'master' }}" type="">
                         <img width="380" height="240" src="#" alt="" loading="lazy">
                     </picture>
                     {% endif %}
