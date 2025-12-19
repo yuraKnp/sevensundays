@@ -6,7 +6,8 @@
   {%- endfor -%}
 {%- endcapture -%}
 
-{%- assign block_ids = block_id_list | split: ',' -%}
+{% comment %} {%- assign block_ids = block_id_list | split: ',' -%} {% endcomment %}
+{%- assign block_ids = block_id_list | strip_newlines | replace: ' ', '' | split: ',' -%}
 
 
 <div class="section sp-sec">
