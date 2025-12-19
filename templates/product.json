@@ -41,6 +41,8 @@
       ],
       "name": "Single product info",
       "settings": {
+        "number_slide_images": 2,
+        "slider_tags": "For every sleep position,swiss quality",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
