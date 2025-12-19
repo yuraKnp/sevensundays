@@ -289,10 +289,13 @@
     </div>
   </header> {% endcomment %}
 
+  {% comment %} if template == '404' or template == 'blog' or template == 'page.shop' or template == 'page.experience' or template == 'page.career' or template == 'page.how' or template == 'article' {% endcomment %}
+
   {% liquid
   assign header_tag_add = ''
 
-  if template == '404' or template == 'blog' or template == 'page.shop' or template == 'page.experience' or template == 'page.career' or template == 'page.how' or template == 'article'
+  assign list = settings.template_list | split: ','
+  if list contains template.name or list contains template
     assign header_tag_add = 'class="type2"'
   endif
 %}
