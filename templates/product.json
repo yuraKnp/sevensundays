@@ -56,6 +56,13 @@
             "icon": "shopify://shop_images/delivery-icons-3.svg",
             "content": "2-3 days delivery"
           }
+        },
+        "collapsible_tab_HMwbPJ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Measurements & Dimensions",
+            "content": "<p>60x40 cm, adjustable height: 9 or 12 cm</p>"
+          }
         }
       },
       "block_order": [
@@ -66,7 +73,8 @@
         "info_mR8EFU",
         "collapsible_tab_a_s_CrGik6",
         "collapsible_tab_a_s_bzQkpd",
-        "collapsible_tab_a_s_wjD3Yq"
+        "collapsible_tab_a_s_wjD3Yq",
+        "collapsible_tab_HMwbPJ"
       ],
       "name": "Single product info",
       "settings": {
