@@ -262,8 +262,6 @@ jQuery(function ($) {
                         popupWrapper.innerHTML = this.responseText;
 
                         setTimeout(function () {
-                            _functions.initSelect('.popup-wrapper');
-                            _functions.initMask()
                             _functions.openPopup('.popup-content[data-rel="' + dataRel + '"]');
                         }, 50);
                     }
@@ -426,6 +424,11 @@ jQuery(function ($) {
     $(document).on('click', '.comfort-item', function(){
         $(this).toggleClass('open');
         $(this).find('.text-hide').slideToggle();
+    });
+
+    //select quantity
+    $(document).on('click', '.quantity .quantity-item', function(){
+        $(this).addClass('active').siblings().removeClass('active');
     });
 
     //cta scroll to
