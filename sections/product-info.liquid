@@ -53,7 +53,7 @@
                 </div>
 
                 {%- if block_ids.size > 0 -%}
-                  <div class="pd-delivery">
+                  <div class="pd-delivery {{ block_ids }}">
                     {%- for id in block_ids -%}
                       {%- assign current_block = section.blocks | where: "id", id | first -%}
                       
