@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "template_list_dark": "404,blog,page.shop,page.career,page.how,page.experience,article,product",
     "logo": "shopify://shop_images/logo-black.svg",
     "logo_white": "shopify://shop_images/logo-white.svg",
     "logo_width": 220,
