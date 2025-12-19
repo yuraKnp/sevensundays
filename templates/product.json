@@ -170,6 +170,59 @@
         "right_image": "shopify://shop_images/simple-img-4.webp"
       }
     },
+    "product_partners_mmnBTt": {
+      "type": "product-partners",
+      "blocks": {
+        "slides_HkJcHA": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-10.svg"
+          }
+        },
+        "slides_jbm3Hk": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-8.svg"
+          }
+        },
+        "slides_NNfzcg": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-9.svg"
+          }
+        },
+        "slides_qL8Qgf": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-10.svg"
+          }
+        },
+        "slides_F4eEKx": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-11.svg"
+          }
+        },
+        "slides_JtRcmk": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-12.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slides_HkJcHA",
+        "slides_jbm3Hk",
+        "slides_NNfzcg",
+        "slides_qL8Qgf",
+        "slides_F4eEKx",
+        "slides_JtRcmk"
+      ],
+      "name": "Product Partners",
+      "settings": {
+        "title": "PROFISPORT-TEAMS VERTRAUEN Seven Sundays"
+      }
+    },
     "main": {
       "type": "main-product",
       "disabled": true,
@@ -212,6 +265,7 @@
   "order": [
     "product_info_XcKJA4",
     "product_faq_finfX4",
+    "product_partners_mmnBTt",
     "main",
     "related-products"
   ]
