@@ -1,7 +1,7 @@
 
 {% assign number_slide_images = section.settings.number_slide_images %}
 
-{%- assign slider_tags = section.settings.slider_tags | strip_newlines | replace: ' ', '' | split: ',' -%}
+{%- assign slider_tags = section.settings.slider_tags | split: ',' -%}
 
 {%- capture block_id_list -%}
   {%- for block in section.blocks -%}
