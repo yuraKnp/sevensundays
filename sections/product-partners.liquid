@@ -1,0 +1,57 @@
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                {% if section.settings.title != blank %}
+                <div class="motto text-center">{{ section.settings.title }}</div>
+                {% endif %}
+                <div class="brands style2">
+                    {% for block in section.blocks %}
+                      {%- assign image = block.settings.image  -%}
+                    <div class="brand"><img width="132" height="80" src="{{ image | img_url: 'master' }}" alt="brand" loading="lazy"></div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-lg"></div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Product Partners",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slides",
+      "name": "Image",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Partners",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
