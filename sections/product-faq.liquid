@@ -1,22 +1,26 @@
+{% assign left_image = section.settings.left_image %}
+{% assign right_image = section.settings.right_image %}
 <div class="section pd-simple-img">
     <div class="container">
         <div class="row product-row">
             <div class="col-md-7">
                 <div class="simple-img size3">
+                    {% if left_image != blank %}
                     <picture>
-                        <source srcset="img/simple-img-3.webp" type="image/webp">
-                        <source srcset="img/simple-img-3.png" type="image/png">
+                        <source srcset="{{ left_image | img_url: 'master' }}" type="{{ left_image.format }}">
                         <img width="380" height="240" src="#" alt="" loading="lazy">
                     </picture>
+                    {% endif %}
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="simple-img size4">
+                    {% if right_image != blank %}
                     <picture>
-                        <source srcset="img/simple-img-4.webp" type="image/webp">
-                        <source srcset="img/simple-img-4.png" type="image/png">
+                        <source srcset="{{ left_image | img_url: 'master' }}" type="{{ right_image }}">
                         <img width="380" height="240" src="#" alt="" loading="lazy">
                     </picture>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -34,6 +38,7 @@
                     {% for block in section.blocks %}
                       {%- assign question = block.settings.question  -%}
                       {%- assign answer = block.settings.answer -%}
+                      {% if answer == blank and question == blank %} {% continue %} {% endif %}
                     <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="accordion-title" itemprop="name">
                             {{ question }}
