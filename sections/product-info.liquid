@@ -1,3 +1,10 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'collapsible_tab_a_s' -%}
+      {% assign collapsible_tab_a_s_info = block %}
+  {% endcase %}
+{% endfor %}
+
 
 <div class="section sp-sec">
     <div class="container">
@@ -41,20 +48,21 @@
                     </div>
                     <div class="swiper-pagination swiper-pagination-relative d-none"></div>
                 </div>
+
+                {% if collapsible_tab_a_s_info != blank %}
                 <div class="pd-delivery">
+                    {% for single_info in collapsible_tab_a_s_info %}
                     <div class="delivery-item">
-                        <img width="20" height="20" src="img/icons/delivery-icons-1.svg" alt="" loading="lazy">
-                        <div class="text">Swiss Engineered</div>
+                        {% if single_info.icon != blank %}
+                        <img width="20" height="20" src="{{ single_info.icon | img_url: 'master' }}" alt="{{ single_info.icon.alt }}" loading="lazy">
+                        {% endif %}
+                        {% if single_info.content != blank %}
+                        <div class="text">{{ single_info.content }}</div>
+                        {% endif %}
                     </div>
-                    <div class="delivery-item">
-                        <img width="20" height="20" src="img/icons/delivery-icons-2.svg" alt="" loading="lazy">
-                        <div class="text">14-day free returns</div>
-                    </div>
-                    <div class="delivery-item">
-                        <img width="20" height="20" src="img/icons/delivery-icons-3.svg" alt="" loading="lazy">
-                        <div class="text">2-3 days delivery</div>
-                    </div>
+                    {% endfor %}
                 </div>
+                {% endif %}
                 {% if product.media != blank %}
                 <div class="row product-row hide-lg">
                     {%- for media in product.media offset: 2 -%}
