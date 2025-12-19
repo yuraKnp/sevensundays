@@ -1,3 +1,4 @@
+
 <div class="section sp-sec">
     <div class="container">
         <div class="row justify-content-between">
@@ -54,44 +55,22 @@
                         <div class="text">2-3 days delivery</div>
                     </div>
                 </div>
+                {% if product.media != blank %}
                 <div class="row product-row hide-lg">
+                    {%- for media in product.media offset: 2 -%}
                     <div class="col-md-6">
                         <div class="simple-img size5">
+                            {%- if media.media_type == 'image' -%}
                             <picture>
-                                <source srcset="img/pd-small-img-1.webp" type="image/webp">
-                                <source srcset="img/pd-small-img-1.png" type="image/png">
+                                <source srcset="{{ media | img_url: 'master' }}" type="{{ media.format }}">
                                 <img width="380" height="240" src="#" alt="" loading="lazy">
                             </picture>
+                            {% endif %}
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="simple-img size5">
-                            <picture>
-                                <source srcset="img/pd-small-img-2.webp" type="image/webp">
-                                <source srcset="img/pd-small-img-2.png" type="image/png">
-                                <img width="380" height="240" src="#" alt="" loading="lazy">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="simple-img size5">
-                            <picture>
-                                <source srcset="img/pd-small-img-3.webp" type="image/webp">
-                                <source srcset="img/pd-small-img-3.png" type="image/png">
-                                <img width="380" height="240" src="#" alt="" loading="lazy">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="simple-img size5">
-                            <picture>
-                                <source srcset="img/pd-small-img-4.webp" type="image/webp">
-                                <source srcset="img/pd-small-img-4.png" type="image/png">
-                                <img width="380" height="240" src="#" alt="" loading="lazy">
-                            </picture>
-                        </div>
-                    </div>
+                  {% endfor %}
                 </div>
+                {%  endif %}
             </div>
             <div class="col-lg-5 col-xl-4">
                 <div class="pd-detail-info">
