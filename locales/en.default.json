@@ -242,6 +242,25 @@
       "sort_by_label": "Sort by:",
       "to": "To",
       "clear_filter": "Remove filter"
+    },
+    "reviews": {
+      "mattress_pure": "Why customers love the Pure mattress",
+      "mattress_pure_plus": "Why customers love the Pure+ mattress",
+      "mattress_classic": "Why customers love the Classic sleep system",
+      "topper_memory": "Why customers love the Memory Topper",
+      "topper_latex": "Why customers love the Latex Topper",
+      "topper_softness": "Why customers love the Softness Topper",
+      "pillow_neck": "Why customers love the Neck Pillow",
+      "pillow_side_sleeper": "Why customers love the Side Sleeper Pillow",
+      "pillow_down": "Why customers love the Down Pillow",
+      "pillow_travel": "Why customers love the Travel Pillow",
+      "pillow_spray": "Why customers love the Pillow Spray",
+      "down_duvet": "Why customers love the Down Duvet",
+      "widgets": {
+        "star_widget": {
+          "title": "Reviews"
+        }
+      }
     }
   },
   "templates": {

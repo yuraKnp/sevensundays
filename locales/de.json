@@ -242,6 +242,25 @@
       "show_more": "Mehr anzeigen",
       "show_less": "Weniger anzeigen",
       "filter_and_operator_subtitle": "Allen entsprechen"
+    },
+    "reviews": {
+      "mattress_pure": "Warum Kunden die Pure Matratze lieben",
+      "mattress_pure_plus": "Warum Kunden die Pure+ Matratze lieben",
+      "mattress_classic": "Warum Kunden das Classic-Schlafsystem lieben",
+      "topper_memory": "Warum Kunden den Memory Topper lieben",
+      "topper_latex": "Warum Kunden den latex Topper lieben",
+      "topper_softness": "Warum Kunden den Softness Topper lieben",
+      "pillow_neck": "Warum Kunden das Nackenkissen lieben",
+      "pillow_side_sleeper": "Warum Kunden das Seitenschläferkissen lieben",
+      "pillow_down": "Warum Kunden das Daunenkissen lieben",
+      "pillow_travel": "Warum Kunden das Reisekissen lieben",
+      "pillow_spray": "Warum Kunden das Kissenspray lieben",
+      "down_duvet": "Warum Kunden die Daunendecke lieben",
+      "widgets": {
+        "star_widget": {
+          "title": "Bewertungen"
+        }
+      }
     }
   },
   "templates": {
