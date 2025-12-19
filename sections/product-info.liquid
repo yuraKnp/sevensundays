@@ -66,7 +66,7 @@
                 {%- endif -%}
                 {% if product.media != blank %}
                 <div class="row product-row hide-lg">
-                    {%- for media in product.media offset: 2 -%}
+                    {%- for media in product.media offset: number_slide_images -%}
                     <div class="col-md-6">
                         <div class="simple-img size5">
                             {%- if media.media_type == 'image' -%}
@@ -361,6 +361,7 @@
     {
       "type": "number",
       "id": "number_slide_images",
+      "default": 2,
       "label": "Number of images in slider",
       "info": "If there is more images in gallery they will be shown separatly"
     },
