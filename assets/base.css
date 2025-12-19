@@ -1876,16 +1876,16 @@ input[type='checkbox'] {
 }
 
 /* component-quantity */
-.quantity {
+/* .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
   width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
   border-radius: var(--inputs-radius);
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
-}
+} */
 
-.quantity:after {
+/* .quantity:after {
   pointer-events: none;
   content: '';
   position: absolute;
@@ -1898,9 +1898,9 @@ input[type='checkbox'] {
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
-}
+} */
 
-.quantity:before {
+/* .quantity:before {
   background: rgb(var(--color-background));
   pointer-events: none;
   content: '';
@@ -1913,9 +1913,9 @@ input[type='checkbox'] {
   box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset)
     var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
   z-index: -1;
-}
+} */
 
-.quantity__input {
+/* .quantity__input {
   color: currentColor;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
@@ -2019,7 +2019,7 @@ input[type='checkbox'] {
 .product__info-container .loading__spinner:not(.hidden) ~ *,
 .quantity__rules-cart .loading__spinner:not(.hidden) ~ * {
   visibility: hidden;
-}
+} */
 
 /* component-modal */
 .modal__toggle {
