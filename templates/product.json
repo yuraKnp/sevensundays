@@ -20,6 +20,10 @@
           "type": "title",
           "settings": {}
         },
+        "description_dgLa3m": {
+          "type": "description",
+          "settings": {}
+        },
         "collapsible_tab_a_s_CrGik6": {
           "type": "collapsible_tab_a_s",
           "settings": {
@@ -45,6 +49,7 @@
       "block_order": [
         "rating_A3DAFi",
         "title_rBaRmh",
+        "description_dgLa3m",
         "collapsible_tab_a_s_CrGik6",
         "collapsible_tab_a_s_bzQkpd",
         "collapsible_tab_a_s_wjD3Yq"
