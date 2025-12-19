@@ -109,6 +109,67 @@
         "padding_bottom": 36
       }
     },
+    "product_faq_finfX4": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_4apqqi": {
+          "type": "faq",
+          "settings": {
+            "question": "FÜR ALLE SCHLAFTYPEN",
+            "answer": "<p>Ergonomischer Memory-Schaum passt sich Rücken-, Seiten- und Bauchschläfern an – umschmiegt deinen Kopf und hält die Halswirbelsäule in jeder Position optimal ausgerichtet.</p>"
+          }
+        },
+        "faq_jDcwjz": {
+          "type": "faq",
+          "settings": {
+            "question": "MODULARES DESIGN",
+            "answer": "<p>Höhenverstellbar dank herausnehmbarer 3cm-Schicht – für individuelle Unterstützung passend zu Schulterbreite und Wirbelsäule.</p>"
+          }
+        },
+        "faq_hjrC3F": {
+          "type": "faq",
+          "settings": {
+            "question": "ULTRA-ATMUNGSAKTIV",
+            "answer": "<p>Fortschrittliche Temperaturregulierung leitet Feuchtigkeit und Wärme ab für kühlen, trockenen Schlaf.</p>"
+          }
+        },
+        "faq_Dzn6hG": {
+          "type": "faq",
+          "settings": {
+            "question": "Unbelievable Cozy",
+            "answer": "<p>Ergonomic memory foam adapts to back, side, and stomach sleepers, cradling your head while maintaining optimal cervical alignment in any position.</p>"
+          }
+        },
+        "faq_wFMKMa": {
+          "type": "faq",
+          "settings": {
+            "question": "UNGLAUBLICH GEMÜTLICH",
+            "answer": "<p>Premium-Memory-Schaum aus Italien mit natürlichem Aloe-Vera-Öl für ultraweichen, luxuriösen Komfort.</p>"
+          }
+        },
+        "faq_qRfGN7": {
+          "type": "faq",
+          "settings": {
+            "question": "EINFACHE PFLEGE",
+            "answer": "<p>Bezug abnehmbar und waschbar bei 60°C (auf links, Reißverschluss zu 90% geschlossen). Im Wäschenetz trocknergeeignet. Für häufiges Waschen gemacht.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_4apqqi",
+        "faq_jDcwjz",
+        "faq_hjrC3F",
+        "faq_Dzn6hG",
+        "faq_wFMKMa",
+        "faq_qRfGN7"
+      ],
+      "name": "Product FAQ",
+      "settings": {
+        "title": "Why you will love it",
+        "left_image": "shopify://shop_images/simple-img-3.webp",
+        "right_image": "shopify://shop_images/simple-img-4.webp"
+      }
+    },
     "main": {
       "type": "main-product",
       "disabled": true,
@@ -150,6 +211,7 @@
   },
   "order": [
     "product_info_XcKJA4",
+    "product_faq_finfX4",
     "main",
     "related-products"
   ]
