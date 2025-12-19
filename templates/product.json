@@ -28,6 +28,14 @@
           "type": "description",
           "settings": {}
         },
+        "info_mR8EFU": {
+          "type": "info",
+          "settings": {
+            "right_image": "shopify://shop_images/request-appoinment-img.webp",
+            "heading": "Einklappbare Reihe",
+            "content": "<p>See how our modular system transforms your sleep quality. Our specialist bring demos to your home - experience the complete advantage firsthand!</p>"
+          }
+        },
         "collapsible_tab_a_s_CrGik6": {
           "type": "collapsible_tab_a_s",
           "settings": {
@@ -55,6 +63,7 @@
         "title_rBaRmh",
         "price_MKjNkN",
         "description_dgLa3m",
+        "info_mR8EFU",
         "collapsible_tab_a_s_CrGik6",
         "collapsible_tab_a_s_bzQkpd",
         "collapsible_tab_a_s_wjD3Yq"
