@@ -10,8 +10,16 @@
     {%- endif -%}
   {%- endfor -%}
 {%- endcapture -%}
-
 {%- assign block_ids = block_id_list | strip_newlines | replace: ' ', '' | split: ',' -%}
+
+{%- capture block_id_list_drop -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'collapsible_tab' -%}
+      {{ block.id }}{% unless forloop.last %},{% endunless %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign block_ids_drop = block_id_list_drop | strip_newlines | replace: ' ', '' | split: ',' -%}
 
 
 <div class="section sp-sec">
@@ -171,54 +179,61 @@
                         <div class="text text-sm"><span>{{- 'products.product.sold_out' | t -}}</span></div>
                     </div>
                     {%  endif %}
-                    <div class="request-appoinment">
-                        <img width="64" height="64" src="img/request-appoinment-img.webp" alt="" loading="lazy">
-                        <div class="content">
-                            <div class="text text-sm"><b>Discover our modular sleep system</b></div>
-                            <div class="text text-sm">See how our modular system transforms your sleep quality. Our specialist bring demos to your home - experience the complete advantage firsthand!</div>
-                            <a href="#" class="btn-link style4">
-                                <b>Request Appoinment</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="accordion-wrapp">
-                        <div class="motto">Product specifiactions</div>
+                    
+                    {%- for block in section.blocks -%}
+                      {%- case block.type -%}
+                        {%- when 'discover_info' -%}
+                          {%  assign image_d = block.settings.right_image %}
+                          {%  assign heading = block.settings.heading %}
+                          {%  assign content = block.settings.content %}
+                          {%  assign link = block.settings.link %}
+                          {%  assign link_text = block.settings.link_text %}
+                          <div class="request-appoinment">
+                              {% if image_d != blank %}
+                              <img width="64" height="64" src="{{ image_d | img_url: 'master' }}" alt="" loading="lazy">
+                              {%  endif %}
+                              <div class="content">
+                                  {% if heading != blank %}
+                                  <div class="text text-sm"><b>{{ heading }}</b></div>
+                                  {%  endif %}
+                                  {% if content != blank %}
+                                  <div class="text text-sm">{{ content }}</div>
+                                  {%  endif %}
+                                  {%  if link_text != blank and link != blank %}
+                                  <a href="{{ link }}" class="btn-link style4">
+                                      <b>{{ link_text }}</b>
+                                  </a>
+                                  {% endif %}
+                              </div>
+                          </div>
+                      {% endcase %}
+                    {% endfor %}
+
+                    {%- if block_ids_drop.size > 0 -%}
+                      <div class="accordion-wrapp">
+                        <div class="motto">{{ 'products.product.specifications' | t }}</div>
                         <div class="accordion type2 style2" itemscope itemtype="https://schema.org/FAQPage">
+                        {%- for id in block_ids_drop -%}
+                          {%- assign current_block = section.blocks | where: "id", id | first -%}
                             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                {%- if current_block.settings.heading != blank -%}
                                 <div class="accordion-title" itemprop="name">
-                                    Measurements & Dimensions
+                                    {{ current_block.settings.heading }}
                                     <i></i>
                                 </div>
+                                {%  endif %}
+                                {%- if current_block.settings.content != blank -%}
                                 <div class="accordion-inner" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                                     <div class="text" itemprop="text">
-                                        <p>60x40 cm, adjustable height: 9 or 12 cm</p>
+                                        <p>{{ current_block.settings.content }}</p>
                                     </div>
                                 </div>
+                                {% endif %}
                             </div>
-                            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                <div class="accordion-title" itemprop="name">
-                                    Materials & Care
-                                    <i></i>
-                                </div>
-                                <div class="accordion-inner" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <div class="text" itemprop="text">
-                                        <p>60x40 cm, adjustable height: 9 or 12 cm</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                <div class="accordion-title" itemprop="name">
-                                    Warranty, Shipping & Returns
-                                    <i></i>
-                                </div>
-                                <div class="accordion-inner" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <div class="text" itemprop="text">
-                                        <p>60x40 cm, adjustable height: 9 or 12 cm</p>
-                                    </div>
-                                </div>
-                            </div>
+                          {%  endfor %}
                         </div>
-                    </div>
+                      </div>
+                    {%- endif -%}
                 </div>
             </div>
         </div>
@@ -344,7 +359,7 @@
       ]
     },
     {
-      "type": "info",
+      "type": "discover_info",
       "name": "Discover block",
       "settings": [
         {

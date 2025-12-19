@@ -134,6 +134,7 @@
     "product": {
       "shop_now": "Shop now",
       "read_now": "Shop now",
+      "specifications" : "Product specifiactions",
       "add_to_cart": "Add to cart",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
