@@ -54,11 +54,11 @@
                 </div>
 
                 {%- if block_ids.size > 0 -%}
-                  <div class="pd-delivery {{ block_ids }}">
+                  <div class="pd-delivery">
                     {%- for id in block_ids -%}
                       {%- assign current_block = section.blocks | where: "id", id | first -%}
                       
-                      <div class="delivery-item">
+                      <div class="delivery-item {{ id }}">
                         {%- if current_block.settings.icon != blank -%}
                           <img width="20" height="20" src="{{ current_block.settings.icon | img_url: '40x40' }}" alt="">
                         {%- endif -%}
