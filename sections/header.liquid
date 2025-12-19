@@ -292,7 +292,7 @@
   {% liquid
   assign header_tag_add = ''
 
-  if section.settings.header_type != 'light' or template == '404' or template == 'blog' or template == 'page.shop' or template == 'page.experience' or template == 'page.career' or template == 'page.how' or template == 'article'
+  if template == '404' or template == 'blog' or template == 'page.shop' or template == 'page.experience' or template == 'page.career' or template == 'page.how' or template == 'article'
     assign header_tag_add = 'class="type2"'
   endif
 %}
@@ -629,22 +629,6 @@
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label",
       "info": "t:sections.header.settings.logo_help.content"
-    },
-    {
-      "type": "select",
-      "id": "header_type",
-      "options": [
-        {
-          "value": "light",
-          "label": "Light"
-        },
-        {
-          "value": "dark",
-          "label": "Dark"
-        }
-      ],
-      "default": "light",
-      "label": "Header type"
     },
     {
       "type": "header",

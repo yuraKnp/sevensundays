@@ -8,6 +8,23 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Header Light/Dark",
+    "settings": [
+      {
+        "type": "text",
+        "id": "template_list_dark",
+        "label": "Make header dark for pages",
+        "default": "404,blog,page.shop,page.career,page.how,page.experience,article"
+      },
+      {
+        "type": "text",
+        "id": "template_list_space",
+        "label": "Add aditional space after header for pages",
+        "default": "404,blog,page.shop,page.career,page.how"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
