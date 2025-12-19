@@ -1,0 +1,107 @@
+<div class="section pd-simple-img">
+    <div class="container">
+        <div class="row product-row">
+            <div class="col-md-7">
+                <div class="simple-img size3">
+                    <picture>
+                        <source srcset="img/simple-img-3.webp" type="image/webp">
+                        <source srcset="img/simple-img-3.png" type="image/png">
+                        <img width="380" height="240" src="#" alt="" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="simple-img size4">
+                    <picture>
+                        <source srcset="img/simple-img-4.webp" type="image/webp">
+                        <source srcset="img/simple-img-4.png" type="image/png">
+                        <img width="380" height="240" src="#" alt="" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="spacer-32"></div>
+        <div class="row product-row">
+            <div class="col-md-7">
+                <div class="title-shortcode">
+                    {% if section.settings.title != blank %}
+                        <div class="h3 title font-1">{{ section.settings.title }}</div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="accordion type2" itemscope itemtype="https://schema.org/FAQPage">
+                    {% for block in section.blocks %}
+                      {%- assign question = block.settings.question  -%}
+                      {%- assign answer = block.settings.answer -%}
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="accordion-title" itemprop="name">
+                            {{ question }}
+                            <i></i>
+                        </div>
+                        <div class="accordion-inner" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div class="text" itemprop="text">
+                                {{ answer }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-lg"></div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Product FAQ",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right image"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "Qustion / Answer",
+      "settings": [
+        {
+            "type": "text",
+            "id": "question",
+            "label": "Question"
+        },
+        {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Answer"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product FAQ",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
