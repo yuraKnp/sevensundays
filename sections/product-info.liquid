@@ -156,13 +156,21 @@
                             </div>
                         </div>
                     </div>
+                    {% assign current_variant = product.selected_or_first_available_variant %}
+                    {% if current_variant.available %}
                     <div class="status" style="--clr-status: 61 161 92;">
                         <i></i>
-                        <div class="text text-sm"><span>In-stock</span>, ships within 2–3 business days</div>
+                        <div class="text text-sm"><span>{{- 'products.product.inventory_in_stock' | t -}}</span>, {{- 'products.product.ship' | t -}}</div>
                     </div>
                     <div class="btn btn-block add-cart">
                         <b>Add to cart</b>
                     </div>
+                    {% else %}
+                    <div class="status" style="--clr-status: 61 161 92;">
+                        <i></i>
+                        <div class="text text-sm"><span>{{- 'products.product.inventory_in_stock' | t -}}</span></div>
+                    </div>
+                    {%  endif %}
                     <div class="request-appoinment">
                         <img width="64" height="64" src="img/request-appoinment-img.webp" alt="" loading="lazy">
                         <div class="content">
