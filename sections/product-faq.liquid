@@ -17,7 +17,7 @@
                 <div class="simple-img size4">
                     {% if right_image != blank %}
                     <picture>
-                        <source srcset="{{ right_image | img_url: 'master' }}" type="{{ right_image }}">
+                        <source srcset="{{ right_image | img_url: 'master' }}" type="{{ right_image.format  }}">
                         <img width="380" height="240" src="#" alt="" loading="lazy">
                     </picture>
                     {% endif %}
