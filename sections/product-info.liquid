@@ -1,9 +1,12 @@
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-    {%- when 'collapsible_tab_a_s' -%}
-      {% assign collapsible_tab_a_s_info = block %}
-  {% endcase %}
-{% endfor %}
+{%- capture block_id_list -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'collapsible_tab_a_s' -%}
+      {{ block.id }}{% unless forloop.last %},{% endunless %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- assign block_ids = block_id_list | split: ',' -%}
 
 
 <div class="section sp-sec">
@@ -49,20 +52,20 @@
                     <div class="swiper-pagination swiper-pagination-relative d-none"></div>
                 </div>
 
-                {% if collapsible_tab_a_s_info != blank %}
-                <div class="pd-delivery">
-                    {% for single_info in collapsible_tab_a_s_info %}
-                    <div class="delivery-item">
-                        {% if single_info.icon != blank %}
-                        <img width="20" height="20" src="{{ single_info.icon | img_url: 'master' }}" alt="{{ single_info.icon.alt }}" loading="lazy">
-                        {% endif %}
-                        {% if single_info.content != blank %}
-                        <div class="text">{{ single_info.content }}</div>
-                        {% endif %}
-                    </div>
-                    {% endfor %}
-                </div>
-                {% endif %}
+                {%- if block_ids.size > 0 -%}
+                  <div class="pd-delivery">
+                    {%- for id in block_ids -%}
+                      {%- assign current_block = section.blocks | where: "id", id | first -%}
+                      
+                      <div class="delivery-item">
+                        {%- if current_block.settings.icon != blank -%}
+                          <img width="20" height="20" src="{{ current_block.settings.icon | img_url: '40x40' }}" alt="">
+                        {%- endif -%}
+                        <div class="text">{{ current_block.settings.content }}</div>
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                {%- endif -%}
                 {% if product.media != blank %}
                 <div class="row product-row hide-lg">
                     {%- for media in product.media offset: 2 -%}
