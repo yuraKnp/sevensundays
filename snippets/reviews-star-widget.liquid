@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css"/>
+<script src="https://widget.reviews.io/rating-snippet/dist.js"></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    ratingSnippet("ruk_rating_snippet", {
+      store: "{%- if shop.domain contains ".ch" -%}my7sundays.ch{%- else -%}seven-sundays.shop-6357lJx{%- endif -%}",
+      color: "#feb85d",
+      linebreak: false,
+      usePolaris: true,
+      minRating: 3,
+      text: {{ 'products.reviews.widgets.star_widget.title' | t | json }}
+    });
+  })
+</script>

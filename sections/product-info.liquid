@@ -88,7 +88,7 @@
                         {%- for block in section.blocks -%}
                           {%- case block.type -%}
                             {%- when 'rating' -%}
-                            <div class="pd-rating">
+                            {% comment %} <div class="pd-rating">
                                 <div class="stars">
                                     <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
                                     <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
@@ -97,7 +97,8 @@
                                     <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
                                 </div>
                                 <div class="text text-sm">(177)</div>
-                            </div>
+                            </div> {% endcomment %}
+                            <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
                             {%- when 'title' -%}
                             <h1 class="h2 title">{{ product.title | escape }}</h1>
                             {%- when 'price' -%}
