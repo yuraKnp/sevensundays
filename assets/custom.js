@@ -294,11 +294,11 @@ jQuery(function ($) {
         let button = $(this);
         let desc_wrapper = button.closest('.product-description');
 
-        if(desc_wrapper.hasClass('.active')){
-            desc_wrapper.removeClass('.active');
+        if(desc_wrapper.hasClass('active')){
+            desc_wrapper.removeClass('active');
             button.html('<b>'+button.attr('data-toggle-more')+'</b>');
         }else{
-            desc_wrapper.addClass('.active');
+            desc_wrapper.addClass('active');
             button.html('<b>'+button.attr('data-toggle-less')+'</b>');
         }
 
