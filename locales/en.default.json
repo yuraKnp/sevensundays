@@ -132,6 +132,7 @@
   },
   "products": {
     "product": {
+      "quantity_new": "Select your pillow quantity",
       "shop_now": "Shop now",
       "read_now": "Shop now",
       "specifications" : "Product specifiactions",

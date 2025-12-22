@@ -132,6 +132,7 @@
   },
   "products": {
     "product": {
+      "quantity_new": "Wählen Sie Ihre Kissenmenge",
       "shop_now" : "Jetzt kaufen",
       "read_now": "Jetzt einkaufen",
       "specifications" : "PRODUKTSPEZIFIKATIONEN",
