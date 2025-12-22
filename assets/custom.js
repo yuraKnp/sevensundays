@@ -290,8 +290,15 @@ jQuery(function ($) {
         e.preventDefault();
 
         let button = $(this);
+        let desc_wrapper = button.closest('.product-description');
 
-        button.closest('.product-description').classList.toggle('active');
+        if(desc_wrapper.hasClass('.active')){
+            desc_wrapper.removeClass('.active');
+            button.html('<b>'+button.attr('data-toggle-more'+'</b>'));
+        }else{
+            desc_wrapper.addClass('.active');
+            button.html('<b>'+button.attr('data-toggle-less'+'</b>'));
+        }
 
     });
 });
