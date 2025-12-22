@@ -3666,3 +3666,7 @@ main.type2 > [id*="three_layer_banner"] > .section{
 span.price-item{
   color: #1E2227;
 }
+
+.color-scheme-1{
+  background-color: #F5F1E8;
+}
