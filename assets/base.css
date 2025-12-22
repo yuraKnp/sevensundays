@@ -3670,3 +3670,7 @@ span.price-item{
 .color-scheme-1{
   background-color: #F5F1E8;
 }
+
+cart-items{
+  padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md) - 28px);
+}
