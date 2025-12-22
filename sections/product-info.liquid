@@ -137,8 +137,8 @@
 
                             <div class="text product-description">
                               {{ product.description }}
-                              <div class="btn btn-third product-description-open" data-toggle-more="Mehr anzeigen" data-toggle-less="Weniger anzeigen">
-                                  <b>Mehr anzeigen</b>
+                              <div class="btn btn-third product-description-open" data-toggle-more="{{ 'products.facets.show_more' | t }}" data-toggle-less="{{ 'products.facets.show_less' | t -}}">
+                                  <b>{{ 'products.facets.show_more' | t }}</b>
                               </div>
                             </div>
                           {% endcase %}
