@@ -3681,7 +3681,7 @@ span.price-item{
 }
 
 .product-description:not(.active) .content{
-  max-height: 200px;
+  max-height: 100px;
   overflow: hidden;
   position: relative;
 }
