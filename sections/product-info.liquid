@@ -200,7 +200,7 @@
                         {%- when 'discover_info' -%}
                           {%  assign image_d = block.settings.right_image %}
                           {%  assign heading = block.settings.heading %}
-                          {%  assign content = block.settings.content %}
+                          {%  assign content = block.settings.content_dis %}
                           {%  assign link = block.settings.link %}
                           {%  assign link_text = block.settings.link_text %}
                           <div class="request-appoinment">
@@ -390,7 +390,7 @@
         },
         {
           "type": "richtext",
-          "id": "content",
+          "id": "content_dis",
           "default": "Dein Kissen war erst der Anfang. Lerne das modulare Schlafsystem kennen – bei einer unverbindlichen Beratung bei dir zu Hause.",
           "label": "Discrover block description"
         },
