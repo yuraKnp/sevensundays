@@ -483,7 +483,7 @@ h6:empty {
   display: none;
 }
 
-.link,
+.link:not(.h-cart),
 .customer a {
   cursor: pointer;
   display: inline-block;
