@@ -296,10 +296,10 @@ jQuery(function ($) {
 
         if(desc_wrapper.hasClass('.active')){
             desc_wrapper.removeClass('.active');
-            button.html('<b>'+button.attr('data-toggle-more'+'</b>'));
+            button.html('<b>'+button.attr('data-toggle-more')+'</b>');
         }else{
             desc_wrapper.addClass('.active');
-            button.html('<b>'+button.attr('data-toggle-less'+'</b>'));
+            button.html('<b>'+button.attr('data-toggle-less')+'</b>');
         }
 
     });
