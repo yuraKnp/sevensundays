@@ -122,7 +122,7 @@
 
 
                             {%- comment -%} 1. Convert the description into an array of words {%- endcomment -%}
-                            {%- assign all_words = product.description | split: ' ' -%}
+                            {% comment %} {%- assign all_words = product.description | split: ' ' -%}
 
                             {%- comment -%} 2. Get the first 20 words and join them with spaces {%- endcomment -%}
                             
@@ -133,18 +133,14 @@
                               {%- comment -%} 3. Get everything from word 21 to the end {%- endcomment -%}
                               {%- assign rest_of_words_count = all_words.size | minus: 20 -%}
                               {%- assign long_text = all_words | slice: 20, rest_of_words_count | join: ' ' -%}
-                            {% endif %}
+                            {% endif %} {% endcomment %}
 
-                            <div class="text">{{ short_text }}</div>
-
-                            {%- unless product.description contains '<ul>' -%}
-                            <div class="more-content">
-                                <div class="text">{{ long_text }}</div>
+                            <div class="text product-description">
+                              {{ product.description }}
+                              <div class="btn btn-third product-description-open" data-toggle-more="Mehr anzeigen" data-toggle-less="Weniger anzeigen">
+                                  <b></b>
+                              </div>
                             </div>
-                            <div class="btn btn-third more-detail js-more" data-toggle-more="More details" data-toggle-less="Hide details">
-                                <b></b>
-                            </div>
-                            {% endunless %}
                           {% endcase %}
                         {% endfor %}
                     </div>
