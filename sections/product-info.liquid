@@ -22,6 +22,8 @@
 {%- assign block_ids_drop = block_id_list_drop | strip_newlines | replace: ' ', '' | split: ',' -%}
 
 
+{%- assign product_form_id = 'product-form-' | append: section.id -%}
+
 <div class="section sp-sec">
     <div class="container">
         <div class="row justify-content-between">
@@ -199,6 +201,19 @@
                         <div class="text text-sm"><span>{{- 'products.product.sold_out' | t -}}</span></div>
                     </div>
                     {%  endif %}
+                    {% comment %} render buy buttons {% endcomment %}
+                    {%- for block in section.blocks -%}
+                      {%- case block.type -%}
+                        {%- when 'buy_buttons' -%}
+                          {%- render 'buy-buttons',
+                            block: block,
+                            product: product,
+                            product_form_id: product_form_id,
+                            section_id: section.id,
+                            show_pickup_availability: true
+                          -%}
+                      {% endcase %}
+                    {% endfor %}
                     
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
