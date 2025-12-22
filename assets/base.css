@@ -3675,3 +3675,7 @@ span.price-item{
   padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md) - 28px);
   padding-bottom: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md));
 }
+
+.product-description-open{
+  margin-top: 20px!important;
+}
