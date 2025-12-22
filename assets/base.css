@@ -3680,7 +3680,18 @@ span.price-item{
   margin-top: 20px!important;
 }
 
-.product-description.active .content{
+.product-description:not(.active) .content{
   max-height: 200px;
   overflow: hidden;
+  position: relative;
+}
+
+.product-description:not(.active) .content:after{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, #f5f1e885 0, #f5f1e8 40%);
 }
