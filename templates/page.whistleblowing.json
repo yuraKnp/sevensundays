@@ -17,14 +17,14 @@
         "padding_bottom": 28
       }
     },
-    "page_content_izA8Kj": {
-      "type": "page-content",
-      "name": "General page content",
+    "whistleblowing_q3qwzj": {
+      "type": "whistleblowing",
+      "name": "Whistleblowing",
       "settings": {}
     }
   },
   "order": [
     "main",
-    "page_content_izA8Kj"
+    "whistleblowing_q3qwzj"
   ]
 }
