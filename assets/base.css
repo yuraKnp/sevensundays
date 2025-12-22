@@ -3679,3 +3679,8 @@ span.price-item{
 .product-description-open{
   margin-top: 20px!important;
 }
+
+.product-description.active .content{
+  max-height: 200px;
+  overflow: hidden;
+}
