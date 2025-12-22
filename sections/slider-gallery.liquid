@@ -35,16 +35,14 @@
                             <div class="swiper-slide">
                                 <div class="energy-item">
                                     {% if image != blank %}
-                                        {{ image 
-                                            | image_url: width: image.width
-                                            | image_tag: 
-                                                width: image.width,
-                                                height: 'auto',
-                                                alt: image.alt,
-                                                fetchpriority: 'auto',
-                                                loading: 'lazy'
-                                        }}
-                                    {% endif %}
+                                        {% assign image_url = image | image_url  %}
+                                        {% assign image_format = image.format  %}
+                                        <picture>
+                                            <source srcset="{{ image_url }}" type="{{ image_format }}">
+                                            <img width="380" height="240" src="#" alt="{{ image.alt }}" loading="lazy">
+                                        </picture>
+                                     {% endif %}
+                                    
                                     {% if target_words.size > 0 %}
                                     <div class="tags">
                                         {% for word in target_words %}
