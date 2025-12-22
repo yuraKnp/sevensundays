@@ -192,16 +192,9 @@
                         <i></i>
                         <div class="text text-sm"><span>{{- 'products.product.inventory_in_stock' | t -}}</span>, {{- 'products.product.ship' | t -}}</div>
                     </div>
-                    <div class="btn btn-block add-cart">
+                    {% comment %} <div class="btn btn-block add-cart">
                         <b>{{ 'products.product.add_to_cart' | t }}</b>
-                    </div>
-                    {% else %}
-                    <div class="status" style="--clr-status: 185, 28, 28;">
-                        <i></i>
-                        <div class="text text-sm"><span>{{- 'products.product.sold_out' | t -}}</span></div>
-                    </div>
-                    {%  endif %}
-                    {% comment %} render buy buttons {% endcomment %}
+                    </div> {% endcomment %}
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
                         {%- when 'buy_buttons' -%}
@@ -214,6 +207,14 @@
                           -%}
                       {% endcase %}
                     {% endfor %}
+                    {% else %}
+                    <div class="status" style="--clr-status: 185, 28, 28;">
+                        <i></i>
+                        <div class="text text-sm"><span>{{- 'products.product.sold_out' | t -}}</span></div>
+                    </div>
+                    {%  endif %}
+                    {% comment %} render buy buttons {% endcomment %}
+
                     
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
