@@ -17,21 +17,14 @@
         "padding_bottom": 28
       }
     },
-    "press_aicD8y": {
-      "type": "press",
-      "name": "Press section",
-      "settings": {
-        "image": "shopify://shop_images/cta-video.webp",
-        "title": "Press & Media",
-        "subtitle": "stories worth sharing",
-        "short_description": "For media inquiries, interviews, or product information, please reach out to our communications team. We’ll gladly provide press materials, expert insights, and high-resolution imagery for your publication.",
-        "link_text": "Download Press Kit",
-        "link_url": "#test"
-      }
+    "page_content_izA8Kj": {
+      "type": "page-content",
+      "name": "General page content",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "press_aicD8y"
+    "page_content_izA8Kj"
   ]
 }
