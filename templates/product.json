@@ -28,6 +28,13 @@
           "type": "description",
           "settings": {}
         },
+        "buy_buttons_WaiNe3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
         "collapsible_tab_a_s_CrGik6": {
           "type": "collapsible_tab_a_s",
           "settings": {
@@ -76,6 +83,7 @@
         "title_rBaRmh",
         "price_MKjNkN",
         "description_dgLa3m",
+        "buy_buttons_WaiNe3",
         "collapsible_tab_a_s_CrGik6",
         "collapsible_tab_a_s_bzQkpd",
         "collapsible_tab_a_s_wjD3Yq",
