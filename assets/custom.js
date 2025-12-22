@@ -286,5 +286,13 @@ jQuery(function ($) {
     });
     
 
+    $(document).on('click', '.product-description-open', function(e){
+        e.preventDefault();
+
+        let button = $(this);
+
+        button.closest('.product-description').classList.toggle('active');
+
+    });
 });
 
