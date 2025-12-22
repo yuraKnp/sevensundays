@@ -3688,6 +3688,7 @@ span.price-item{
 
 .product-description:not(.active) .content::after{
   display: block;
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
