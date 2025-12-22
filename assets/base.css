@@ -3696,3 +3696,8 @@ span.price-item{
   left: 0;
   background: linear-gradient(180deg, #f5f1e800 0, #f5f1e8 99%);
 }
+
+
+.product-description .content span{
+  color: var(--clr-black)!important;
+}
