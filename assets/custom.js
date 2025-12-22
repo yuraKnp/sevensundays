@@ -289,6 +289,8 @@ jQuery(function ($) {
     $(document).on('click', '.product-description-open', function(e){
         e.preventDefault();
 
+        console.log('click');
+
         let button = $(this);
         let desc_wrapper = button.closest('.product-description');
 
