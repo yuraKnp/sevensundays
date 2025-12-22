@@ -426,9 +426,21 @@ jQuery(function ($) {
         $(this).find('.text-hide').slideToggle();
     });
 
+    //more-detail
+    $(document).on("click", ".js-more", function () {
+        $(this).toggleClass('is-active');
+        $(this).closest('.pd-detail-info').find('.more-content').slideToggle();
+        
+    });
+
     //select quantity
     $(document).on('click', '.quantity .quantity-item', function(){
         $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    //select pairs
+    $(document).on('click', '.pairs .pairs-item', function(){
+        $(this).toggleClass('active');
     });
 
     //cta scroll to

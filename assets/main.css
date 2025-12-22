@@ -133,7 +133,7 @@ header.open-menu.type2 .season-mode {background-color: var(--clr-grey);}
 .h-top-header .container {display: flex;justify-content: center;}
 .h-top-header span {font-size: 12px;font-style: normal;font-weight: 500;line-height: 1;letter-spacing: 0.75px;text-transform: uppercase;color: #381D0F;}
 .h-wrap {transition: var(--transition-1);}
-header.scrolled .h-inner {width: 1252px;}
+header.scrolled .h-inner {max-width: 1252px;}
 header.scrolled .h-inner::before {opacity: 1;visibility: visible;}
 header.scrolled .h-logo img:first-child {display: none;}
 header.scrolled .h-logo img:last-child {display: block;}

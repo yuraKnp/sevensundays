@@ -119,10 +119,25 @@
                               -%}
                             </div>
                             {%-  when 'description' -%}
-                            <div class="text">{{ product.description }}</div>
-                            <a href="#" class="btn btn-third">
+
+
+                            {%- comment -%} 1. Convert the description into an array of words {%- endcomment -%}
+                            {%- assign all_words = product.description | split: ' ' -%}
+
+                            {%- comment -%} 2. Get the first 20 words and join them with spaces {%- endcomment -%}
+                            {%- assign short_text = all_words | slice: 0, 20 | join: ' ' -%}
+
+                            {%- comment -%} 3. Get everything from word 21 to the end {%- endcomment -%}
+                            {%- assign rest_of_words_count = all_words.size | minus: 20 -%}
+                            {%- assign long_text = all_words | slice: 20, rest_of_words_count | join: ' ' -%}
+
+                            <div class="text">{{ short_text }}...</div>
+                            <div class="more-content">
+                                <div class="text">{{ long_text }}</div>
+                            </div>
+                            <div class="btn btn-third more-detail js-more" data-toggle-more="More details" data-toggle-less="Hide details">
                                 <b>More details</b>
-                            </a>
+                            </div>
                           {% endcase %}
                         {% endfor %}
                     </div>
