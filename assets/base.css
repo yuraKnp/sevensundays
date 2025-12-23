@@ -3709,3 +3709,19 @@ span.price-item{
   text-align: center;
   max-width: 100px;
 }
+
+
+[sticky] {
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 9rem;
+    width: 279px;
+}
+
+@media only screen and (min-width: 992px) {
+  [sticky] {
+    display: block;
+    top: 15rem; 
+  } 
+}
