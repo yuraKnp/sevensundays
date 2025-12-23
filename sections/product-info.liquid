@@ -161,12 +161,12 @@
                             </div>
                             <div class="quantity-item" data-qty="2">
                                 <div class="text"><b>{{ 'products.product.double_pack' | t }}</b></div>
-                                <div class="motto">+ {%- render 'price',
+                                <div class="motto">{%- render 'price',
                                     product: product,
                                     price: doubled_price,
                                     use_variant: true,
                                     show_badges: false,
-                                    price_class: 'price--large'
+                                    price_class: 'price--small'
                                 -%}
                               </div>
                             </div>
