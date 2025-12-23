@@ -225,7 +225,7 @@
                                           <b>+ {{ selected_product.price | money }}</b>
                                       </div>
                                   </div>
-                                  <div class="pairs-item" data-variant-id="{{ selected_product.selected_or_first_available_variant.id }}">
+                                  <div class="pairs-item" data-variant-id="{{ selected_product_sec.selected_or_first_available_variant.id }}">
                                       <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                       <div class="content">
                                           <div class="text text-sm"><b>{{ selected_product_sec.title }}</b></div>
