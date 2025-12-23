@@ -295,7 +295,7 @@
   assign header_tag_add = ''
 
   assign list = settings.template_list_dark | split: ','
-  if list contains template.name or list contains template
+  if list contains template
     assign header_tag_add = 'class="type2"'
   endif
 %}
