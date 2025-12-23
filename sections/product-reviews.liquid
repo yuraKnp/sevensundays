@@ -1,0 +1,30 @@
+{%- if section.settings.show_reviews and section.settings.collection_reviews != blank -%}
+  <div class="page-container">
+    {{ section.settings.collection_reviews }}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product Reviews",
+  "class": "index-section product-reviews-section",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "collection_reviews",
+      "label": "Product reviews snippet"
+    },
+    {
+      "type": "text",
+      "id": "sku",
+      "label": "SKU's"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reviews",
+      "label": "Show reviews section",
+      "default": true
+    }
+  ]
+}
+{% endschema %}
