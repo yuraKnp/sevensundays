@@ -57,7 +57,7 @@
       ],
       "name": "Time",
       "settings": {
-        "image": "shopify://shop_images/time-1.webp",
+        "image": "shopify://shop_images/2025_11_24_SevenSundays3833_1-gigapixel-recover_v2-1x.jpg",
         "title": "Es ist Zeit, Schlaf wieder zu zelebrieren"
       }
     },
@@ -219,6 +219,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
+            "number": "",
             "title": "  Premium-Material Qualität",
             "description": "Jedes Schlafsystem ist nur so gut wie seine Komponenten. Als unabhängiger Hersteller wählen wir immer das Beste: Kaltschäume mit der weltweit höchsten Dichte von Europas führenden Herstellern."
           }
@@ -227,6 +228,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-2_271fb58a-1317-4729-9ebf-b02049d32a00.webp",
+            "number": "",
             "title": "Schweizer Design",
             "description": "Wir sind aus einem Schweizer Schaumstoffhersteller entstanden, der seit Jahrzehnten mit Europas besten Interior-Marken arbeitet. Unser innovatives Kerndesign findet sich in Premium-Möbeln von Vitra, Walter Knoll und Rolf Benz."
           }
@@ -235,6 +237,7 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/lr-img-4_0a470568-c20b-4430-9231-b9da5271c0cd.webp",
+            "number": "",
             "title": "Revolutionär nachhaltig",
             "description": "Während 30 Millionen Matratzen jährlich in Europa verbrannt werden, definiert Seven Sundays Nachhaltigkeit neu: komplett ungeklebt, reparierbar, langlebig, jede Komponente austauschbar und recycelbar."
           }
@@ -338,7 +341,10 @@
         "slide_RRqmmB"
       ],
       "name": "Testimonial slider",
-      "settings": {}
+      "settings": {
+        "section_type": "type_1",
+        "slider_title": ""
+      }
     },
     "press_aicD8y": {
       "type": "press",
