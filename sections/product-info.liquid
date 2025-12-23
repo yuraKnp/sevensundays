@@ -52,7 +52,7 @@
                                     </div>
                                     {% endif %}
                                     <picture>
-                                        <source srcset="{{ media | img_url: 'master' }}" type="{{ media.format }}">
+                                        <source srcset="{{ media | img_url: 'master' }}" type="{{ media.preview_image.format }}">
                                         <img width="380" height="240" src="#" alt="" loading="eager">
                                     </picture>
                                 </div>
