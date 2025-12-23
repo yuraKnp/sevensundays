@@ -209,31 +209,35 @@
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
                         {%- when 'pairs_best_with' -%}
+                          {% assign selected_product = all_products[section.settings.upsell_product] %}
+                          {% assign selected_product_sec = all_products[section.settings.upsell_product_sec] %}
+                          {%  if selected_product != blank or selected_product_sec != blank %}
                           <div class="pairs-wrapp">
                               <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                               <div class="pairs">
                                   <div class="pairs-item">
-                                      <img width="72" height="40" src="img/pairs-img.webp" alt="" loading="lazy">
+                                      <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                       <div class="content">
-                                          <div class="text text-sm"><b>Spare Cover</b></div>
+                                          <div class="text text-sm"><b>{{ selected_product.title }}</b></div>
                                           <div class="text text-sm">For uninteruptted comfort while washing</div>
                                       </div>
                                       <div class="btn btn-third">
-                                          <b>+ €19</b>
+                                          <b>+ {{ selected_product.price | money }}</b>
                                       </div>
                                   </div>
                                   <div class="pairs-item">
-                                      <img width="72" height="40" src="img/pairs-img.webp" alt="" loading="lazy">
+                                      <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                       <div class="content">
-                                          <div class="text text-sm"><b>Travel Case</b></div>
+                                          <div class="text text-sm"><b>{{ selected_product_sec.title }}</b></div>
                                           <div class="text text-sm">Roll up and pack your pillow compactly</div>
                                       </div>
                                       <div class="btn btn-third">
-                                          <b>+ €19</b>
+                                          <b>+ {{ selected_product_sec.price | money }}</b>
                                       </div>
                                   </div>
                               </div>
                           </div>
+                          {%  endif %}
                     {% endcase %}
                     {% endfor %}
                     {% assign current_variant = product.selected_or_first_available_variant %}
