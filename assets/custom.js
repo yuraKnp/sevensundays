@@ -310,6 +310,8 @@ jQuery(function ($) {
         const $qtyInput = $('input[name="quantity"]');
 
         $bundleButtons.on('click', function() {
+            $('.quantity-item').removeClass('active');
+            $(this).addClass('active');
             const selectedQty = $(this).attr('data-qty');
 
             $qtyInput.val(selectedQty);
