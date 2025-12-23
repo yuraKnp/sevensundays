@@ -24,6 +24,9 @@
 
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
+{% comment %} double price {% endcomment %}
+ {%- assign doubled_price = product.selected_or_first_available_variant.price | times: 2 -%}
+
 <div class="section sp-sec">
     <div class="container">
         <div class="row justify-content-between">
@@ -148,6 +151,7 @@
                           {% endcase %}
                         {% endfor %}
                     </div>
+                    
                     <div class="quantity-wrapp">
                         <div class="motto">{{ 'products.product.quantity_new' | t }}:</div>
                         <div class="quantity-new">
@@ -157,7 +161,14 @@
                             </div>
                             <div class="quantity-item" data-qty="2">
                                 <div class="text"><b>{{ 'products.product.double_pack' | t }}</b></div>
-                                <div class="motto">+ €52.30</div>
+                                <div class="motto">+ {%- render 'price',
+                                    product: product,
+                                    price: doubled_price,
+                                    use_variant: true,
+                                    show_badges: false,
+                                    price_class: 'price--large'
+                                -%}
+                              </div>
                             </div>
                         </div>
                         <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}" style="display:none">
