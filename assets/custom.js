@@ -330,6 +330,7 @@ jQuery(function ($) {
             const $form = $(this);
             const items = [];
 
+            console.log($form.find('[name="quantity"]').val());
 
             // 1. Add the main product
             items.push({
