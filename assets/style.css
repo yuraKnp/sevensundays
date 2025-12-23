@@ -596,7 +596,7 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .more-detail.is-active::before {content: attr(data-toggle-less);}
 .quantity-wrapp {display: flex;flex-direction: column;gap: var(--sp-16);}
 .quantity-wrapp + * {margin-top: var(--sp-48);}
-.quantity {display: flex;align-items: center;padding: 4px;background-color: var(--clr-white);border-radius: var(--rd-1);}
+.quantity-new {display: flex;align-items: center;padding: 4px;background-color: var(--clr-white);border-radius: var(--rd-1);}
 .quantity-item {display: flex;flex-direction: column;justify-content: center;gap: var(--sp-12);align-items: center;padding: var(--sp-12) var(--sp-16);min-height: 72px;border-radius: var(--rd-1);background-color: var(--clr-white);cursor: pointer;transition: var(--transition-1);width: 100%;}
 .quantity-item.active {background-color: #EEEAE3;cursor: inherit;}
 .quantity-item.active .motto {color: var(--clr-text-6);}
