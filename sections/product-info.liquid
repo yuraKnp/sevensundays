@@ -209,8 +209,8 @@
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
                         {%- when 'pairs_best_with' -%}
-                          {% assign selected_product = all_products[section.settings.upsell_product] %}
-                          {% assign selected_product_sec = all_products[section.settings.upsell_product_sec] %}
+                          {% assign selected_product = block.settings.upsell_product %}
+                          {% assign selected_product_sec = block.settings.upsell_product_sec %}
                           {%  if selected_product != blank or selected_product_sec != blank %}
                           <div class="pairs-wrapp">
                               <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
