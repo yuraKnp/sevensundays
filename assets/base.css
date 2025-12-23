@@ -3701,3 +3701,11 @@ span.price-item{
 .product-description .content span{
   color: var(--clr-black)!important;
 }
+
+.quantity__input{
+  font-size: 1.4rem;
+  word-break: break-word;
+  line-height: calc(1 + .5 / var(--font-body-scale));
+  text-align: center;
+  max-width: 100px;
+}
