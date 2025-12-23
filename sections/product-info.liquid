@@ -206,31 +206,36 @@
                           </button>
                         </quantity-input>
                     </div>
-                    <div class="pairs-wrapp">
-                        <div class="motto">Pairs best with:</div>
-                        <div class="pairs">
-                            <div class="pairs-item">
-                                <img width="72" height="40" src="img/pairs-img.webp" alt="" loading="lazy">
-                                <div class="content">
-                                    <div class="text text-sm"><b>Spare Cover</b></div>
-                                    <div class="text text-sm">For uninteruptted comfort while washing</div>
-                                </div>
-                                <div class="btn btn-third">
-                                    <b>+ €19</b>
-                                </div>
-                            </div>
-                            <div class="pairs-item">
-                                <img width="72" height="40" src="img/pairs-img.webp" alt="" loading="lazy">
-                                <div class="content">
-                                    <div class="text text-sm"><b>Travel Case</b></div>
-                                    <div class="text text-sm">Roll up and pack your pillow compactly</div>
-                                </div>
-                                <div class="btn btn-third">
-                                    <b>+ €19</b>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {%- for block in section.blocks -%}
+                      {%- case block.type -%}
+                        {%- when 'pairs_best_with' -%}
+                          <div class="pairs-wrapp">
+                              <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
+                              <div class="pairs">
+                                  <div class="pairs-item">
+                                      <img width="72" height="40" src="img/pairs-img.webp" alt="" loading="lazy">
+                                      <div class="content">
+                                          <div class="text text-sm"><b>Spare Cover</b></div>
+                                          <div class="text text-sm">For uninteruptted comfort while washing</div>
+                                      </div>
+                                      <div class="btn btn-third">
+                                          <b>+ €19</b>
+                                      </div>
+                                  </div>
+                                  <div class="pairs-item">
+                                      <img width="72" height="40" src="img/pairs-img.webp" alt="" loading="lazy">
+                                      <div class="content">
+                                          <div class="text text-sm"><b>Travel Case</b></div>
+                                          <div class="text text-sm">Roll up and pack your pillow compactly</div>
+                                      </div>
+                                      <div class="btn btn-third">
+                                          <b>+ €19</b>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    {% endcase %}
+                    {% endfor %}
                     {% assign current_variant = product.selected_or_first_available_variant %}
                     {% if current_variant.available %}
                     <div class="status" style="--clr-status: 61 161 92;">
@@ -240,6 +245,7 @@
                     {% comment %} <div class="btn btn-block add-cart">
                         <b>{{ 'products.product.add_to_cart' | t }}</b>
                     </div> {% endcomment %}
+                    pairs_best_with
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
                         {%- when 'buy_buttons' -%}
@@ -436,6 +442,22 @@
           "type": "richtext",
           "id": "content",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
+        },
+      ]
+    },
+    {
+      "type": "pairs_best_with",
+      "name": "Pairs with",
+      "settings": [
+        {
+          "type": "product",
+          "id": "upsell_product",
+          "label": "Select Upsell Product"
+        },
+        {
+          "type": "product",
+          "id": "upsell_product_sec",
+          "label": "Select Upsell Product Second"
         },
       ]
     },
