@@ -74,7 +74,7 @@ jQuery(function ($) {
 
         newLine += '<a class="toc__link" href="' + link + '">' + title + "</a>";
 
-        if(newLine) ToC += newLine;
+        if(newLine && newLine != undefined) ToC += newLine;
         
         });
 
