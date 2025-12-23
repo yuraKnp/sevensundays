@@ -160,7 +160,7 @@
                                 <div class="motto">+ €52.30</div>
                             </div>
                         </div>
-                        <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
+                        <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}" style="display:none">
                           <button class="quantity__button" name="minus" type="button">
                             <span class="visually-hidden">
                               {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
