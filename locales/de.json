@@ -132,6 +132,7 @@
   },
   "products": {
     "product": {
+      "pairs_best_with": "PASST AM BESTEN ZU",
       "double_pack": "Doppelpack",
       "single_pack": "Einzelpack",
       "included": "Inbegriffen",
