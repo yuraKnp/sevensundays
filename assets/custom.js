@@ -322,5 +322,44 @@ jQuery(function ($) {
             console.log('Quantity updated to:', $qtyInput.val());
         });
     });
+
+    $(document).ready(function() {
+        // Listen for the main product form submission
+        $('form[action="/cart/add"]').on('submit', function(e) {
+            e.preventDefault();
+            const $form = $(this);
+            const items = [];
+            
+
+            // 1. Add the main product
+            items.push({
+            id: $form.find('[name="id"]').val(),
+            quantity: $form.find('[name="quantity"]').val() || 1
+            });
+
+            // 2. Add any checked upsells
+            $('.pairs-itemюactive').each(function() {
+                items.push({
+                    id: $(this).data('variant-id'),
+                    quantity: 1
+                });
+            });
+
+            // 3. Send all items to Shopify in one request
+            $.ajax({
+            type: 'POST',
+            url: '/cart/add.js',
+            data: { items: items },
+            dataType: 'json',
+            success: function() {
+                // Redirect to cart or open drawer
+                window.location.href = '/cart';
+            },
+            error: function(err) {
+                console.error("Error adding bundle:", err);
+            }
+            });
+        });
+    });
 });
 
