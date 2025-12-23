@@ -319,7 +319,7 @@ jQuery(function ($) {
             $qtyInput.val(selectedQty);
             $qtyInput.trigger('change');
 
-            console.log('Quantity updated to:', $qtyInput.val());
+            // console.log('Quantity updated to:', $qtyInput.val());
         });
     });
 
@@ -329,7 +329,7 @@ jQuery(function ($) {
             e.preventDefault();
             const $form = $(this);
             const items = [];
-            
+
 
             // 1. Add the main product
             items.push({
