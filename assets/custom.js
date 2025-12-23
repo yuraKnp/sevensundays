@@ -330,17 +330,17 @@ jQuery(function ($) {
             const $form = $(this);
             const items = [];
 
-            console.log($form.find('[name="quantity"]').val());
+            console.log($('.quantity .quantity__input').val());
 
 
             // 1. Add the main product
             items.push({
             id: $form.find('[name="id"]').val(),
-            quantity: $form.find('[name="quantity"]').val() || 1
+            quantity: $('.quantity .quantity__input').val() || 1
             });
 
             // 2. Add any checked upsells
-            $('.pairs-itemюactive').each(function() {
+            $('.pairs-item.active').each(function() {
                 items.push({
                     id: $(this).data('variant-id'),
                     quantity: 1
