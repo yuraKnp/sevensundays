@@ -332,6 +332,7 @@ jQuery(function ($) {
 
             console.log($form.find('[name="quantity"]').val());
 
+
             // 1. Add the main product
             items.push({
             id: $form.find('[name="id"]').val(),
