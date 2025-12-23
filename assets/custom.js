@@ -303,5 +303,20 @@ jQuery(function ($) {
         }
 
     });
+
+
+    $(document).ready(function() {
+        const $bundleButtons = $('.quantity-item');
+        const $qtyInput = $('input[name="quantity"]');
+
+        $bundleButtons.on('click', function() {
+            const selectedQty = $(this).attr('data-qty');
+
+            $qtyInput.val(selectedQty);
+            $qtyInput.trigger('change');
+
+            console.log('Quantity updated to:', $qtyInput.val());
+        });
+    });
 });
 

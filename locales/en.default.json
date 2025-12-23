@@ -132,6 +132,9 @@
   },
   "products": {
     "product": {
+      "double_pack": "Double pack",
+      "single_pack": "Single Pack",
+      "included": "Included",
       "quantity_new": "Select your pillow quantity",
       "shop_now": "Shop now",
       "read_now": "Shop now",

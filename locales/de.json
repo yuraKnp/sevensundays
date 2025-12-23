@@ -132,7 +132,10 @@
   },
   "products": {
     "product": {
-      "quantity_new": "Wählen Sie Ihre Kissenmenge",
+      "double_pack": "Doppelpack",
+      "single_pack": "Einzelpack",
+      "included": "Inbegriffen",
+      "quantity_new": "KISSENANZAHL WÄHLEN",
       "shop_now" : "Jetzt kaufen",
       "read_now": "Jetzt einkaufen",
       "specifications" : "PRODUKTSPEZIFIKATIONEN",
