@@ -32,7 +32,7 @@
                         {%- assign subtitle = block.settings.subtitle -%}
                         <div class="consultation-item">
                             {%  if step_number != blank %}
-                            <i class="text text-md">01</i>
+                            <i class="text text-md">{{ step_number }}</i>
                             {% endif %}
                             <div class="content">
                                 {%  if title != blank %}
