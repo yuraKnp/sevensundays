@@ -328,33 +328,37 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="footer-img">
-                        {% assign image = section.settings.footer_left_image %}
-                        {% if image != blank %}
-                            {% assign image_url = image | image_url  %}
-                            {% assign image_format = image.format  %}
-                            <picture>
-                                <source srcset="{{ image_url }}" type="{{ image_format }}">
-                                <img width="380" height="240" src="#" alt="{{ image.alt }}" loading="lazy">
-                            </picture>
+                        {% assign footer_link_text = section.settings.footer_link_text %}
+                        {% assign footer_link = section.settings.footer_link %}
+                        {% if footer_link != blank %}
+                          {% assign image = section.settings.footer_left_image %}
+                          {% if image != blank %}
+                              {% assign image_url = image | image_url  %}
+                              {% assign image_format = image.format  %}
+                              <picture>
+                                  <source srcset="{{ image_url }}" type="{{ image_format }}">
+                                  <img width="380" height="240" src="#" alt="{{ image.alt }}" loading="lazy">
+                              </picture>
+                          {% endif %}
+                          <a class="footer-logo" href="{{ footer_link }}" aria-label="Company logo">
+                            {{ section.settings.logo_white | image_url: width: 215 | image_tag:
+                              class: '',
+                              widths: widths,
+                              width: 215,
+                              height: 24,
+                              alt: logo_alt,
+                              sizes: sizes,
+                              preload: true,
+                              loading: 'lazy'
+                            }}
+                          </a>
+                          <div class="bottom-info">
+                              <div class="title h6">Start your dream career</div>
+                              <a href="{{ footer_link }}" class="btn btn-blur">
+                                  <b>{{ footer_link_text }}</b>
+                              </a>
+                          </div>
                         {% endif %}
-                        <a class="footer-logo" href="{{ shop.url }}" aria-label="Company logo">
-                          {{ section.settings.logo_white | image_url: width: 215 | image_tag:
-                            class: '',
-                            widths: widths,
-                            width: 215,
-                            height: 24,
-                            alt: logo_alt,
-                            sizes: sizes,
-                            preload: true,
-                            loading: 'lazy'
-                          }}
-                        </a>
-                        <div class="bottom-info">
-                            <div class="title h6">Start your dream career</div>
-                            <a href="#" class="btn btn-blur">
-                                <b>Learn more</b>
-                            </a>
-                        </div>
                     </div>
 
                 </div>
