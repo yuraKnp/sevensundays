@@ -9,7 +9,30 @@
   %}
 {% endcomment %}
 <div class="social">
-  <ul class="list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
+  <ul>
+      {%- if settings.social_instagram_link != blank -%}
+      <li>
+          <a href="#" target="_blank" aria-label="instagram">
+              <img width="16" height="16" src="{{- 'icon-instagram.svg' | asset_url -}}" alt="" loading="lazy">
+          </a>
+      </li>
+      {% endif %}
+      {%- if settings.social_facebook_link != blank -%}
+      <li>
+          <a href="#" target="_blank" aria-label="facebook">
+              <img width="16" height="16" src="{{- 'icon-facebook.svg' | asset_url -}}" alt="" loading="lazy">
+          </a>
+      </li>
+      {% endif %}
+      {%- if settings.social_linkedin_link != blank -%}
+      <li>
+          <a href="#" target="_blank" aria-label="linkedin">
+              <img width="16" height="16" src="{{- 'icon-linkedin.svg' | asset_url -}}" alt="" loading="lazy">
+          </a>
+      </li>
+      {% endif %}
+  </ul>
+  {% comment %} <ul class="list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
     {%- if settings.social_facebook_link != blank -%}
       <li class="list-social__item">
         <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
@@ -100,5 +123,7 @@
         </a>
       </li>
     {%- endif -%}
-  </ul>
+  </ul> {% endcomment %}
 </div>
+
+
