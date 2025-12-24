@@ -330,6 +330,7 @@
                     <div class="footer-img">
                         {% assign footer_link_text = section.settings.footer_link_text %}
                         {% assign footer_link = section.settings.footer_link %}
+                        {% assign footer_image_text = section.settings.footer_image_text %}
                         {% if footer_link != blank %}
                           {% assign image = section.settings.footer_left_image %}
                           {% if image != blank %}
@@ -353,7 +354,9 @@
                             }}
                           </a>
                           <div class="bottom-info">
-                              <div class="title h6">Start your dream career</div>
+                              {% if footer_image_text != blank %}
+                              <div class="title h6">{{ footer_image_text }}</div>
+                              {% endif %}
                               <a href="{{ footer_link }}" class="btn btn-blur">
                                   <b>{{ footer_link_text }}</b>
                               </a>
@@ -581,6 +584,11 @@
       "type": "image_picker",
       "id": "footer_left_image",
       "label": "t:sections.footer.settings.footer_left_image.label"
+    },
+    {
+      "type": "text",
+      "id": "footer_image_text",
+      "label": "Footer text on the image"
     },
     {
       "type": "text",
