@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "template_list_dark": "404,blog,page.shop,page.career,page.how,page.experience,article,product,cart,page",
-    "template_list_space": "404,blog,page.shop,page.career,page.how,product,cart,page",
+    "template_list_dark": "404,blog,page.shop,page.career,page.how,page.experience,article,product.pillow,product.pillow1,product.pillow2,product.pillow3,cart,page,product",
+    "template_list_space": "404,blog,page.shop,page.career,page.how,product.pillow,product.pillow1,product.pillow2,product.pillow3,cart,page,product",
     "logo": "shopify://shop_images/logo-black.svg",
     "logo_white": "shopify://shop_images/logo-white.svg",
     "logo_width": 220,
