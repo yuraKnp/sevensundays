@@ -30,7 +30,7 @@
       "type": "products-line",
       "name": "Featured collection new",
       "settings": {
-        "collection": "all",
+        "collection": "kissen",
         "products_to_show": 3
       }
     },
