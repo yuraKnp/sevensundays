@@ -1,0 +1,307 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_info_XcKJA4": {
+      "type": "product-info",
+      "blocks": {
+        "rating_A3DAFi": {
+          "type": "rating",
+          "settings": {}
+        },
+        "title_rBaRmh": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_MKjNkN": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_dgLa3m": {
+          "type": "description",
+          "settings": {}
+        },
+        "pairs_best_with_pQhe7V": {
+          "type": "pairs_best_with",
+          "settings": {
+            "upsell_product": "ersatzbezug-fur",
+            "upsell_product_sec": "reisetasche-kissen"
+          }
+        },
+        "buy_buttons_WaiNe3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "discover_info_Y79BnV": {
+          "type": "discover_info",
+          "settings": {
+            "right_image": "shopify://shop_images/request-appoinment-img_e53fd4cb-2cc2-43f6-b330-69f067be5562.webp",
+            "heading": "Entdecke unser modulares Schlafsystem",
+            "content_dis": "<p>Dein Kissen war erst der Anfang. Lerne das modulare Schlafsystem kennen – bei einer unverbindlichen Beratung bei dir zu Hause.</p>",
+            "link_text": "Termin anfragen",
+            "link": "#"
+          }
+        },
+        "collapsible_tab_a_s_CrGik6": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-1.svg",
+            "content": "Swiss Engineered"
+          }
+        },
+        "collapsible_tab_a_s_bzQkpd": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-2.svg",
+            "content": "14-day free returns"
+          }
+        },
+        "collapsible_tab_a_s_wjD3Yq": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-3.svg",
+            "content": "2-3 days delivery"
+          }
+        },
+        "collapsible_tab_HMwbPJ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Maße & Abmessungen",
+            "content": "<p>60×40 cm, verstellbare Höhe: 9 oder 12 cm</p>"
+          }
+        },
+        "collapsible_tab_rdVhCp": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materialien & Pflege",
+            "content": "<p>Bezug: 69% Polyester, 31% Viskose, handgefertigt und abnehmbar. Bei 60°C auf links waschen, Reißverschluss zu 90% geschlossen. Trocknergeeignet bei niedriger Temperatur im Wäschenetz.</p>"
+          }
+        },
+        "collapsible_tab_nrFNyK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Garantie, Versand & Rückgabe",
+            "content": "<p>Kostenloser Versand via DHL innerhalb von 2–3 Werktagen. 14-tägiges Rückgaberecht mit voller Rückerstattung bei Unzufriedenheit. Swiss Engineered Quality mit Premium-Herstellergarantie.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "rating_A3DAFi",
+        "title_rBaRmh",
+        "price_MKjNkN",
+        "description_dgLa3m",
+        "pairs_best_with_pQhe7V",
+        "buy_buttons_WaiNe3",
+        "discover_info_Y79BnV",
+        "collapsible_tab_a_s_CrGik6",
+        "collapsible_tab_a_s_bzQkpd",
+        "collapsible_tab_a_s_wjD3Yq",
+        "collapsible_tab_HMwbPJ",
+        "collapsible_tab_rdVhCp",
+        "collapsible_tab_nrFNyK"
+      ],
+      "name": "Single product info",
+      "settings": {
+        "number_slide_images": 2,
+        "slider_tags": "For every sleep position,swiss quality",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product_faq_finfX4": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_4apqqi": {
+          "type": "faq",
+          "settings": {
+            "question": "FÜR ALLE SCHLAFTYPEN",
+            "answer": "<p>Ergonomischer Memory-Schaum passt sich Rücken-, Seiten- und Bauchschläfern an – umschmiegt deinen Kopf und hält die Halswirbelsäule in jeder Position optimal ausgerichtet.</p>"
+          }
+        },
+        "faq_jDcwjz": {
+          "type": "faq",
+          "settings": {
+            "question": "MODULARES DESIGN",
+            "answer": "<p>Höhenverstellbar dank herausnehmbarer 3cm-Schicht – für individuelle Unterstützung passend zu Schulterbreite und Wirbelsäule.</p>"
+          }
+        },
+        "faq_hjrC3F": {
+          "type": "faq",
+          "settings": {
+            "question": "ULTRA-ATMUNGSAKTIV",
+            "answer": "<p>Fortschrittliche Temperaturregulierung leitet Feuchtigkeit und Wärme ab für kühlen, trockenen Schlaf.</p>"
+          }
+        },
+        "faq_Dzn6hG": {
+          "type": "faq",
+          "settings": {
+            "question": "Unbelievable Cozy",
+            "answer": "<p>Ergonomic memory foam adapts to back, side, and stomach sleepers, cradling your head while maintaining optimal cervical alignment in any position.</p>"
+          }
+        },
+        "faq_wFMKMa": {
+          "type": "faq",
+          "settings": {
+            "question": "UNGLAUBLICH GEMÜTLICH",
+            "answer": "<p>Premium-Memory-Schaum aus Italien mit natürlichem Aloe-Vera-Öl für ultraweichen, luxuriösen Komfort.</p>"
+          }
+        },
+        "faq_qRfGN7": {
+          "type": "faq",
+          "settings": {
+            "question": "EINFACHE PFLEGE",
+            "answer": "<p>Bezug abnehmbar und waschbar bei 60°C (auf links, Reißverschluss zu 90% geschlossen). Im Wäschenetz trocknergeeignet. Für häufiges Waschen gemacht.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_4apqqi",
+        "faq_jDcwjz",
+        "faq_hjrC3F",
+        "faq_Dzn6hG",
+        "faq_wFMKMa",
+        "faq_qRfGN7"
+      ],
+      "name": "Product FAQ",
+      "settings": {
+        "title": "Warum du es lieben wirst",
+        "left_image": "shopify://shop_images/simple-img-3.webp",
+        "right_image": "shopify://shop_images/simple-img-4.webp"
+      }
+    },
+    "product_partners_mmnBTt": {
+      "type": "product-partners",
+      "blocks": {
+        "slides_HkJcHA": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-7.svg"
+          }
+        },
+        "slides_jbm3Hk": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-8.svg"
+          }
+        },
+        "slides_NNfzcg": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-9.svg"
+          }
+        },
+        "slides_qL8Qgf": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-10.svg"
+          }
+        },
+        "slides_F4eEKx": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-11.svg"
+          }
+        },
+        "slides_JtRcmk": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-12.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slides_HkJcHA",
+        "slides_jbm3Hk",
+        "slides_NNfzcg",
+        "slides_qL8Qgf",
+        "slides_F4eEKx",
+        "slides_JtRcmk"
+      ],
+      "name": "Product Partners",
+      "settings": {
+        "title": "PROFISPORT-TEAMS VERTRAUEN Seven Sundays"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "call_to_action_DwNGgd": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "section_type": "type_1",
+        "image": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Entdecke das preisgekrönte Schlafsystem, das alles verändert",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "Lerne das modulare Schlafsystem mit all seinen Vorteilen kennen und lieben und wache auf wie an einem Sonntagmorgen, jeden Morgen.",
+        "link_text": "Get Sleep System",
+        "link_url": "#",
+        "link_text2": "",
+        "link_url2": ""
+      }
+    }
+  },
+  "order": [
+    "product_info_XcKJA4",
+    "product_faq_finfX4",
+    "product_partners_mmnBTt",
+    "main",
+    "related-products",
+    "call_to_action_DwNGgd"
+  ]
+}
