@@ -8,26 +8,44 @@
     class: 'my-class'
   %}
 {% endcomment %}
+
+{%- liquid
+  assign dark_icons = dark_icons | default: false
+-%}
+
 <div class="social">
   <ul>
       {%- if settings.social_instagram_link != blank -%}
       <li>
           <a href="{{ settings.social_instagram_link }}" target="_blank" aria-label="instagram">
-              <img width="16" height="16" src="{{- 'icon-instagram.svg' | asset_url -}}" alt="" loading="lazy">
+              {% if dark_icons %}
+                <img width="16" height="16" src="{{- 'icon-instagram-2.svg' | asset_url -}}" alt="" loading="lazy">
+              {% else %}
+                <img width="16" height="16" src="{{- 'icon-instagram.svg' | asset_url -}}" alt="" loading="lazy">
+              {% endif %}
+              
           </a>
       </li>
       {% endif %}
       {%- if settings.social_facebook_link != blank -%}
       <li>
           <a href="{{ settings.social_facebook_link }}" target="_blank" aria-label="facebook">
+              {% if dark_icons %}
+                <img width="16" height="16" src="{{- 'icon-facebook-2.svg' | asset_url -}}" alt="" loading="lazy">
+              {% else %}
               <img width="16" height="16" src="{{- 'icon-facebook.svg' | asset_url -}}" alt="" loading="lazy">
+              {% endif %}
           </a>
       </li>
       {% endif %}
       {%- if settings.social_linkedin_link != blank -%}
       <li>
           <a href="{{ settings.social_linkedin_link }}" target="_blank" aria-label="linkedin">
+            {% if dark_icons %}
+              <img width="16" height="16" src="{{- 'icon-linkedin-2.svg' | asset_url -}}" alt="" loading="lazy">
+              {% else %}
               <img width="16" height="16" src="{{- 'icon-linkedin.svg' | asset_url -}}" alt="" loading="lazy">
+              {% endif %}
           </a>
       </li>
       {% endif %}
