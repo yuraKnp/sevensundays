@@ -371,14 +371,37 @@
                     </div>
                     {% endif %}
                     <div class="lang-social">
-                        <div class="h-lang-wrap">
+                        {% comment %} <div class="h-lang-wrap">
                             <div class="current-lang">
                                 <span>English</span>
                             </div>
                             <ul class="h-lang">
                                 <li><a href="index.php"><span>German</span></a></li>
                             </ul>
-                        </div>
+                        </div> {% endcomment %}
+                        {% form 'localization' %} 
+                            <div class="h-lang-wrap">
+                                <div class="current-lang">
+                                    <span>{{ localization.language.name }}</span>
+                                </div>
+                                <ul class="h-lang">
+                                    {% for language in localization.available_languages %}
+                                        {% if language.iso_code != localization.language.iso_code %}
+                                        
+                                            <li data-lang-code="{{ language.iso_code }}">
+                                                <button type="submit" 
+                                                        name="locale_code" 
+                                                        value="{{ language.iso_code | escape }}" 
+                                                        class="lang-switch-button">
+                                                    <span>{{ language.name }}</span> 
+                                                </button>
+                                            </li>
+                                            
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endform %}
                         <div class="social">
                             <ul>
                                 <li>
