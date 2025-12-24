@@ -12,21 +12,21 @@
   <ul>
       {%- if settings.social_instagram_link != blank -%}
       <li>
-          <a href="#" target="_blank" aria-label="instagram">
+          <a href="{{ settings.social_instagram_link }}" target="_blank" aria-label="instagram">
               <img width="16" height="16" src="{{- 'icon-instagram.svg' | asset_url -}}" alt="" loading="lazy">
           </a>
       </li>
       {% endif %}
       {%- if settings.social_facebook_link != blank -%}
       <li>
-          <a href="#" target="_blank" aria-label="facebook">
+          <a href="{{ settings.social_facebook_link }}" target="_blank" aria-label="facebook">
               <img width="16" height="16" src="{{- 'icon-facebook.svg' | asset_url -}}" alt="" loading="lazy">
           </a>
       </li>
       {% endif %}
       {%- if settings.social_linkedin_link != blank -%}
       <li>
-          <a href="#" target="_blank" aria-label="linkedin">
+          <a href="{{ settings.social_linkedin_link }}" target="_blank" aria-label="linkedin">
               <img width="16" height="16" src="{{- 'icon-linkedin.svg' | asset_url -}}" alt="" loading="lazy">
           </a>
       </li>
