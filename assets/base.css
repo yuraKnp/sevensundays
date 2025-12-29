@@ -3757,3 +3757,13 @@ span.price-item{
   background-color: var(--clr-white);
   border-radius: var(--rd-1);
 }
+
+.quantity-item .motto .price-item{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: var(--clr-text);
+}
