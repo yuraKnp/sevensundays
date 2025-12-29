@@ -3728,6 +3728,9 @@ span.price-item{
 
 @media (max-width: 1199px) {
   .announcement-bar__message.h5 span {font-size: 10px;}
+  .announcement-bar__message {
+    line-height: .9;
+  }
 }
 
 .h-logo img{
