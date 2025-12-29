@@ -10,7 +10,7 @@
 {
   "current": {
     "template_list_dark": "404,blog,page.shop,page.career,page.how,page.experience,article,product.pillow,product.pillow1,product.pillow2,product.pillow3,cart,page,product,page.whistleblowing",
-    "template_list_space": "404,blog,page.shop,page.career,page.how,product.pillow,product.pillow1,product.pillow2,product.pillow3,cart,page,product,page.whistleblowing",
+    "template_list_space": "404,blog,page.shop,page.career,page.how,product.pillow,product.pillow1,product.pillow2,product.pillow3,cart,page,product,page.whistleblowing,page.experience",
     "logo": "shopify://shop_images/logo-black.svg",
     "logo_white": "shopify://shop_images/logo-white.svg",
     "logo_width": 220,
