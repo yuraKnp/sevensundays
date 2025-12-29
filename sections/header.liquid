@@ -380,7 +380,7 @@
                             </ul>
                         </div> {% endcomment %}
                         {% form 'localization', class: 'h-lang-wrap' %} 
-                            <div class="h-lang-wrap">
+                            {% comment %} <div class="h-lang-wrap"> {% endcomment %}
                                 <div class="current-lang">
                                     <span>{{ localization.language.name }}</span>
                                 </div>
@@ -400,7 +400,7 @@
                                         {% endif %}
                                     {% endfor %}
                                 </ul>
-                            </div>
+                            {% comment %} </div> {% endcomment %}
                         {% endform %}
                         {% comment %} <div class="social">
                             <ul>
@@ -434,7 +434,7 @@
                 </ul>
             </div> {% endcomment %}
             {% form 'localization', class: 'h-lang-wrap' %} 
-                <div class="h-lang-wrap">
+                {% comment %} <div class="h-lang-wrap"> {% endcomment %}
                     <div class="current-lang">
                         <span>{{ localization.language.name }}</span>
                     </div>
@@ -454,7 +454,7 @@
                             {% endif %}
                         {% endfor %}
                     </ul>
-                </div>
+                {% comment %} </div> {% endcomment %}
             {% endform %}
             {% comment %} <div class="h-cart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
