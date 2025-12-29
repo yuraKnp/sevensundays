@@ -3638,6 +3638,10 @@ main.type2 > [id*="three_layer_banner"] > .section{
   padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md) - 28px);
 }
 
+main.type2 > .section.sec-padd:first-child {
+    padding-top: calc(var(--h-top-rating) + var(--h-height) - 28px);
+}
+
 
 :is(img,svg,iframe){
   width: revert-layer;
