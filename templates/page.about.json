@@ -131,6 +131,7 @@
       "type": "background-video",
       "name": "Background video popup",
       "settings": {
+        "section_type": "type_1",
         "title": "\"Wir verbringen ein Drittel unseres Lebens schlafend, doch eine 85-jährige Person mit Arthritis schläft auf derselben Matratze wie eine 25-jährige sportliche Person. Das hat für mich nie Sinn ergeben.\"",
         "image": "shopify://shop_images/live-sleeping.webp",
         "hero_video_file": "shopify://files/videos/born-video.mp4",
@@ -144,7 +145,8 @@
         "slide_nb9JGJ": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/lr-img-1_97c37152-2593-4330-8fd1-da0ceea14a3a.webp",
+            "slide_image": "shopify://shop_images/47684317f716139f30e1ea1818e89114ce097b7a.png",
+            "number": "",
             "title": "Drei unverklebte Schichten",
             "description": ""
           }
@@ -152,7 +154,8 @@
         "slide_hN46Lk": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/about-banner-img.webp",
+            "slide_image": "shopify://shop_images/fdf059f99602ac04af36d8bd4f18e124e113becb.png",
+            "number": "",
             "title": "Unendliche Konfigurationen",
             "description": ""
           }
@@ -160,7 +163,8 @@
         "slide_hBFAaG": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/lr-img-4_0a470568-c20b-4430-9231-b9da5271c0cd.webp",
+            "slide_image": "shopify://shop_images/Info_Image_2_458b3466-49c5-4bbd-b6fa-b77933a9f045.png",
+            "number": "",
             "title": "30 Sekunden zur Transformation",
             "description": ""
           }
