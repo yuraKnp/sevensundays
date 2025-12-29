@@ -9,6 +9,9 @@
  */
 {
   "general": {
+    "banner": {
+      "trustpilot": "Auf Trustpilot mit 4,7 bewertet"
+    },
     "form":{
       "submit_form" : "Rückruf buchen",
       "name" : "NAME",
