@@ -1,14 +1,16 @@
 {% assign sec_color = '' %}
 {% assign sec_class = 'style2' %}
 {% assign third_class = '' %}
+{% assign decor = 'decor-block' %}
 {% if section.settings.section_color == 'dark' %}
     {% assign sec_color = 'sec-black' %}
     {% assign sec_class = '' %}
     {% assign third_class = 'style3' %}
+    {% assign decor = '' %}
 {% endif %}
 
 <div class="section {{ sec_color }} sec-padd sec-materials hide-xl">
-    <div class="container">
+    <div class="container {{ decor }}">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="title-shortcode text-center">
@@ -79,7 +81,7 @@
 </div>
 
 <div class="section {{ sec_color }} sec-padd sec-materials hide-top-xl">
-    <div class="container">
+    <div class="container {{ decor }}">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="title-shortcode text-center">
