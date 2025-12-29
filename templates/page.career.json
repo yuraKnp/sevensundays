@@ -48,19 +48,19 @@
         "slide_4P8i7j": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-2.webp"
+            "slide_image": "shopify://shop_images/Gallery_Image.jpg"
           }
         },
         "slide_HCKLdd": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-1.webp"
+            "slide_image": "shopify://shop_images/Gallery_Image_1.jpg"
           }
         },
         "slide_DRt46F": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-2.webp"
+            "slide_image": "shopify://shop_images/Gallery_Image.png"
           }
         }
       },
@@ -249,7 +249,7 @@
       "settings": {
         "subtitle": "Warum wir",
         "title": "Der perfekte Ort für dich, wenn du:",
-        "right_image": "shopify://shop_images/lr-img-9_43b84279-e9fc-4e12-8e1f-6849e8c459d9.webp"
+        "right_image": "shopify://shop_images/Feature_Image.png"
       }
     },
     "testimonial_slider_tniH9A": {
