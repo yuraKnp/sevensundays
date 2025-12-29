@@ -3767,3 +3767,7 @@ span.price-item{
   text-transform: uppercase;
   color: var(--clr-text);
 }
+
+.quantity-item .motto .price{
+  font-size: revert-layer;
+}
