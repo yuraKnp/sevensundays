@@ -3745,3 +3745,7 @@ span.price-item{
     align-items: center;
     z-index: 100;
 }
+
+.container, .container-fluid {
+  padding-inline: calc(var(--bs-gutter-x) * .8)!important;
+}
