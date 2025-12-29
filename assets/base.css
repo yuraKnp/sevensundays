@@ -3736,3 +3736,12 @@ span.price-item{
 .h-logo img{
   height: auto!important;
 }
+
+.utility-bar__grid{
+    position: relative;
+    height: var(--h-top-rating);
+    background-color: var(--clr-primary-3);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
