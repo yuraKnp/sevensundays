@@ -41,7 +41,7 @@
                             "1200":{"spaceBetween": 0, "slidesPerView": 1}
                         }}'>
                         <div class="swiper-wrapper">
-                            {% for media in product.media offset: 1 limit: number_slide_images %}
+                            {% for media in product.media limit: number_slide_images %}
                             {%- assign current_index = forloop.index0 -%}
                             {%- assign current_desc = slider_tags[current_index] | strip -%}
                             <div class="swiper-slide">
