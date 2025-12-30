@@ -13,8 +13,8 @@
       "type": "image-banner-new",
       "name": "Image banner new",
       "settings": {
-        "image": "shopify://shop_images/about-banner-img.webp",
-        "image_mob": "shopify://shop_images/about-banner-img-mob.webp",
+        "image": "shopify://shop_images/Main_Content.jpg",
+        "image_mob": "shopify://shop_images/Container.jpg",
         "title": "DIE SCHWEIZER SCHLAFMANUFAKTUR",
         "description": "Zwei Generationen Schweizer Handwerkskunst. Ein Durchbruch, der alles veränderte."
       }
@@ -134,7 +134,7 @@
         "section_type": "type_1",
         "title": "\"Wir verbringen ein Drittel unseres Lebens schlafend, doch eine 85-jährige Person mit Arthritis schläft auf derselben Matratze wie eine 25-jährige sportliche Person. Das hat für mich nie Sinn ergeben.\"",
         "image": "shopify://shop_images/live-sleeping.webp",
-        "hero_video_file": "shopify://files/videos/born-video.mp4",
+        "hero_video_file": "shopify://files/videos/Untitled design.mp4",
         "video_title": "Das Schlafsystem fürs Leben",
         "video_duration": "2m 42s"
       }
