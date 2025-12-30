@@ -3787,3 +3787,7 @@ span.price-item{
 }
 
 .support-item .support-img {justify-content: center;}
+
+.article .shopify-section{
+  overflow: inherit!important;
+}
