@@ -1,14 +1,15 @@
 {% assign section_type = section.settings.section_type %}
-
+{% assign inline-pad = '' %}
 {% if section_type == 'type_1' %}
   {% assign custom_class = 'top-bottom-shadow style-2' %}
   {% assign custom_class2 = 'align-top-bottom' %}
 {% elsif section_type == 'type_2' %}
   {% assign custom_class = 'bottom-shadow shadow-6' %}
   {% assign custom_class2 = 'align-middle size4' %}
+  {% assign inline-pad = 'sec-padd-inline' %}
 {% endif %}
 
-<div class="section">
+<div class="section {{ inline-pad }}">
     <div class="banner">
         <div class="banner-media {{ custom_class }}">
             {%- assign image = section.settings.image -%}
