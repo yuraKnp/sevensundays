@@ -14,6 +14,7 @@
       "name": "Press section",
       "settings": {
         "image": "shopify://shop_images/cta-video.jpg",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
         "title": "Presse & Medien",
         "subtitle": "GESCHICHTEN, DIE GETEILT WERDEN WOLLEN",
         "short_description": "Für Medienanfragen, Interviews oder Produktinformationen wenden Sie sich bitte an unser Kommunikationsteam. Wir stellen Ihnen gerne Pressematerialien, Experteneinblicke und hochauflösende Bilder zur Verfügung.",
