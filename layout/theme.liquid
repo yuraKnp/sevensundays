@@ -365,6 +365,12 @@
     </style>
   {% endif %}
 
+  <style>
+    #cart-link{
+      display: none!important;
+    }
+  </style>
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -504,11 +510,7 @@
     <script defer src="{{ 'app-swiper.js' | asset_url }}"></script>
     <script defer src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
 
-    <style>
-      #cart-link{
-        display: none!important;
-      }
-    </style>
+
 
   </body>
 </html>
