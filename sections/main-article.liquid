@@ -306,7 +306,7 @@
 <article>
   <div class="section article">
     <div class="section__wrapper">
-      <div class="section__header">
+      <header class="section__header">
         <div class="article__hero">
           {%- if article.image != nil -%}
             <img src="{{ article.image | img_url: '1217x' }}" loading="eager" class="lazyload" data-src="{{ article.image | img_url: '1217x' }}" />
@@ -315,7 +315,7 @@
         <div class="article__title">
           <h1 class="h1">{{ article.title }}</h1>
         </div>
-      </div>
+      </header>
       <div class="section__main">
         <aside class="section__aside">
           <div table-of-content>
