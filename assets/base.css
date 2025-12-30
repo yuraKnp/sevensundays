@@ -3791,3 +3791,8 @@ span.price-item{
 .article .shopify-section{
   overflow: inherit!important;
 }
+
+.share .icon{
+  width: 20px;
+  height: 20px;
+}
