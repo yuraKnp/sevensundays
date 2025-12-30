@@ -3644,7 +3644,7 @@ main.type2 > section:first-child .section.sec-padd:first-child {
 
 @media (max-width: 1199px) {
   main.type2 > section:first-child .section.sec-padd:first-child {
-    padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-64));
+    padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-64) - 28px);
   }
 }
 
