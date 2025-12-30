@@ -3648,6 +3648,10 @@ main.type2 > section:first-child .section.sec-padd:first-child {
   }
 }
 
+#MainContent > section:first-child .section.sec-cta{
+  margin-top: -28px;
+}
+
 
 :is(img,svg,iframe){
   width: revert-layer;
