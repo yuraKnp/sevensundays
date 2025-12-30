@@ -42,9 +42,13 @@ jQuery(function ($) {
 
         // generate toc
 
+        // String.prototype.repeat = function (num) {
+        // if (!num) return;
+        // return new Array(num + 1).join(this);
+        // };
         String.prototype.repeat = function (num) {
-        if (!num) return;
-        return new Array(num + 1).join(this);
+            if (num <= 0 || !num) return "";
+            return new Array(num + 1).join(this);
         };
 
         var ToC = '<p class="toc__title">Inhaltsverzeichnis</p>' + '<nav role="navigation">' + '<ul class="toc__menu">';
