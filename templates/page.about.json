@@ -13,7 +13,7 @@
       "type": "image-banner-new",
       "name": "Image banner new",
       "settings": {
-        "image": "shopify://shop_images/about-banner-img.webp",
+        "image": "shopify://shop_images/Main_Content.jpg",
         "image_mob": "shopify://shop_images/about-banner-img-mob.webp",
         "title": "DIE SCHWEIZER SCHLAFMANUFAKTUR",
         "description": "Zwei Generationen Schweizer Handwerkskunst. Ein Durchbruch, der alles veränderte."
