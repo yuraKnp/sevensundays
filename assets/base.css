@@ -3785,3 +3785,5 @@ span.price-item{
 .quantity-item .motto .price{
   font-size: revert-layer;
 }
+
+.support-item .support-img {justify-content: center;}

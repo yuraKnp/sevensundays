@@ -834,7 +834,7 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .support-items .support-item .support-img {padding-block: 4px;}
 .support-items .support-item .support-img img {height: 70px;width: 134px;}
 .support-item {position: relative;background-color: var(--clr-white);border-radius: var(--rd-1);padding: var(--sp-12);display: flex;flex-direction: column;gap: var(--sp-16);width: 100%;}
-.support-item .support-img {position: relative;background-color: var(--clr-white-2);border-radius: var(--rd-2);padding: var(--sp-12);text-align: center;display: flex;align-items: center;}
+.support-item .support-img {position: relative;background-color: var(--clr-white-2);border-radius: var(--rd-2);padding: var(--sp-12);text-align: center;display: flex;align-items: center; justify-content: center;}
 .support-item .support-img img {width: 66px;height: 66px;aspect-ratio: 1;-o-object-fit: contain;object-fit: contain;}
 .support-item .support-content {text-align: center;}
 .support-item .support-content > * {color: var(--clr-title) !important;text-wrap: balance;}
