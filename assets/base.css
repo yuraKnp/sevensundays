@@ -3760,9 +3760,9 @@ span.price-item{
     z-index: 100;
 }
 
-.container, .container-fluid {
+/* .container, .container-fluid {
   padding-inline: calc(var(--bs-gutter-x) * .8)!important;
-}
+} */
 
 .quantity-new{
   display: flex;
