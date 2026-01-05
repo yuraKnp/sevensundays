@@ -3800,3 +3800,7 @@ span.price-item{
 section:has(.sec-padd) + section .padd-lg {
     padding-top: 0;
 }
+
+.text .legal img{
+  width: auto;
+}
