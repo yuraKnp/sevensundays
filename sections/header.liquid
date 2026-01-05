@@ -314,21 +314,19 @@
                 {%- assign logo_height = 16 -%}
                 {{ settings.logo_white | image_url: width: 229 | image_tag:
                   class: '',
-                  widths: widths,
+                  width: 229,
                   height: logo_height,
                   width: settings.logo_width,
-                  alt: logo_alt,
-                  sizes: sizes,
+                  alt: 'Logo white',
                   preload: true,
                   loading: 'eager'
                 }}
                 {{ settings.logo | image_url: width: 229 | image_tag:
                   class: '',
-                  widths: widths,
+                  width: 229,
                   height: logo_height,
                   width: settings.logo_width,
-                  alt: logo_alt,
-                  sizes: sizes,
+                  alt: 'Logo black',
                   preload: true,
                   loading: 'eager'
                 }}
