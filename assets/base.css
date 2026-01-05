@@ -3639,7 +3639,7 @@ main.type2 > [id*="three_layer_banner"] > .section{
 }
 
 main.type2 > section:first-child .section.sec-padd:first-child {
-  padding-top: calc(var(--h-top-rating) + var(--h-height) - 28px);
+  padding-top: calc(var(--h-top-rating) + var(--h-height) + 1rem - 28px);
 }
 
 @media (max-width: 1199px) {

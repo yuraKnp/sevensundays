@@ -58,7 +58,7 @@ footer {margin-top: auto;}
 .seo-section {order: 1;}
 .banner-sticker {opacity: 0;}
 header.type2 + main .section:first-child {padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md));}
-header.type2 + main .section.sec-padd:first-child {padding-top: calc(var(--h-top-rating) + var(--h-height));}
+header.type2 + main .section.sec-padd:first-child {padding-top: calc(var(--h-top-rating) + var(--h-height) + 1rem);}
 header.type2 + main .section.sp-sec:first-child {padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-32));}
 .section {will-change: opacity;position: relative;overflow: clip;opacity: 0;}
 .section.animated {opacity: 1;transition: 0.15s linear opacity;}
