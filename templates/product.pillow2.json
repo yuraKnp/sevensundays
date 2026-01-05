@@ -151,13 +151,6 @@
             "answer": "<p>Fortschrittliche Temperaturregulierung leitet Feuchtigkeit und Wärme ab für kühlen, trockenen Schlaf.</p>"
           }
         },
-        "faq_Dzn6hG": {
-          "type": "faq",
-          "settings": {
-            "question": "Unbelievable Cozy",
-            "answer": "<p>Ergonomic memory foam adapts to back, side, and stomach sleepers, cradling your head while maintaining optimal cervical alignment in any position.</p>"
-          }
-        },
         "faq_wFMKMa": {
           "type": "faq",
           "settings": {
@@ -177,7 +170,6 @@
         "faq_4apqqi",
         "faq_jDcwjz",
         "faq_hjrC3F",
-        "faq_Dzn6hG",
         "faq_wFMKMa",
         "faq_qRfGN7"
       ],
