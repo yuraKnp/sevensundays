@@ -312,18 +312,19 @@
             <div class="h-burger js-open-menu"><i></i></div>
             <a class="h-logo" href="{{ shop.url }}" aria-label="Company logo">
                 {%- assign logo_height = 16 -%}
-                {{ settings.logo_white | image_url: width: 229 | image_tag:
+                {%- assign logo_width = 229 -%}
+                {{ settings.logo_white | image_url: width: logo_width | image_tag:
                   class: '',
-                  width: 229,
+                  width: logo_width,
                   height: logo_height,
                   width: settings.logo_width,
                   alt: 'Logo white',
                   preload: true,
                   loading: 'eager'
                 }}
-                {{ settings.logo | image_url: width: 229 | image_tag:
+                {{ settings.logo | image_url: width: logo_width | image_tag:
                   class: '',
-                  width: 229,
+                  width: logo_width,
                   height: logo_height,
                   width: settings.logo_width,
                   alt: 'Logo black',
