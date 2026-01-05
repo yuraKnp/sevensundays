@@ -110,7 +110,7 @@
   },
   "blogs": {
     "article": {
-      "read_now": "Read now",
+      "read_now": "Jetzt lesen",
       "blog": "Blog",
       "read_more_title": "Weiterlesen: {{ title }}",
       "comments": {
