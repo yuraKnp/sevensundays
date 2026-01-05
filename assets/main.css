@@ -111,7 +111,7 @@ header.type2 + main .section.sp-sec:first-child {padding-top: calc(var(--h-top-r
 header {position: fixed;top: 0;left: 0;width: 100%;z-index: 100;transition: var(--transition-1);}
 header.type2 .h-logo img:first-child {display: none;}
 header.type2 .h-logo img:last-child {display: block;}
-header.type2 .h-inner {margin-top: 0;}
+/* header.type2 .h-inner {margin-top: 0;} */
 header.type2 .h-links a,
 header.type2 .h-drop b {color: var(--clr-black);}
 header.type2 .h-lang-wrap {background-color: var(--clr-text-3);color: var(--clr-black);}
