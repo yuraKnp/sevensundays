@@ -119,11 +119,21 @@
             "slide_desc": "Memory-Effekt für schwereloses Liegen. Beruhigt, entlastet und fördert Durchblutung.",
             "slide_tag": "Beruhigend"
           }
+        },
+        "slide_CNpxTX": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/sleep-img-1.webp",
+            "slide_heading": "Für aktive Regeneration",
+            "slide_desc": "Federnde Unterstützung für natürliche Bewegung und dadurch die Muskel- und Faszien-Regeneration.",
+            "slide_tag": "Vitalisierend"
+          }
         }
       },
       "block_order": [
         "slide_WekHFV",
-        "slide_e7YppJ"
+        "slide_e7YppJ",
+        "slide_CNpxTX"
       ],
       "name": "Sleep system",
       "settings": {
