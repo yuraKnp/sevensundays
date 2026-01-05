@@ -3804,3 +3804,7 @@ section:has(.sec-padd) + section .padd-lg {
 .text .legal img{
   width: auto;
 }
+
+.footer-copy a{
+  text-decoration: none;
+}
