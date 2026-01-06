@@ -3812,3 +3812,7 @@ section:has(.sec-padd) + section .padd-lg {
 .swiper-entry.pd-slider .swiper-container{
   width: calc(100% - 1px);
 }
+
+.deserves-item>.text{
+  margin-bottom: 50px!important;
+}
