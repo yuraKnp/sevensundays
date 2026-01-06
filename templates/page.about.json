@@ -275,6 +275,7 @@
       "name": "Press section",
       "settings": {
         "image": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
         "title": "Sonntagmorgen. Jeden Morgen.",
         "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
         "short_description": "Das Gefühl kennst du. Wir machen es zum Alltag.",
