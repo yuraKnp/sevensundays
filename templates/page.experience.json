@@ -214,7 +214,8 @@
         "title": "Bereit für deinen besten Schlaf aller Zeiten?",
         "desc": "Lass dich zurückrufen. Wir melden uns bei dir – und vereinbaren deine persönliche Beratung zu Hause.",
         "title_before_form": "<strong>60 Sekunden bis zu deinem Schlafberatungstermin</strong>",
-        "desc_before_form": "Wir rufen dich an und vereinbaren deinen kostenlosen Termin."
+        "desc_before_form": "Wir rufen dich an und vereinbaren deinen kostenlosen Termin.",
+        "terms_and_conditions": "<p>Mit dem Absenden dieses Formulars stimme ich den Nutzungsbedingungen und der Datenschutzrichtlinie zu.</p>"
       }
     }
   },
