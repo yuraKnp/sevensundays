@@ -3840,11 +3840,11 @@ section:has(.sec-padd) + section .padd-lg {
   margin-bottom: var(--sp-32)
 }
 
-.deserves-item .deserves-info{
+/* .deserves-item .deserves-info{
   display: flex;
   flex-direction: column;
   align-items: end;
-}
+} */
 
 .deserves-item{
   display: grid;
