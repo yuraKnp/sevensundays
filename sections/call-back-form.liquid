@@ -79,7 +79,8 @@
                     <div class="ch-box-wrap">
                         <label class="ch-box">
                         <input name="contact[terms_agreed]" type="checkbox" required>
-                        <span>By sending this form, I agree to the <a href="privacy.php">Terms of Service</a> and <a href="privacy.php">Privacy Policy</a>.</span>
+                        {% comment %} <span>By sending this form, I agree to the <a href="privacy.php">Terms of Service</a> and <a href="privacy.php">Privacy Policy</a>.</span> {% endcomment %}
+                        {{ section.settings.terms_and_conditions }}
                         </label>
                     </div>
 
@@ -164,6 +165,11 @@
       "type": "inline_richtext",
       "id": "desc_before_form",
       "label": "Description before form"
+    },
+    {
+      "type": "richtext",
+      "id": "terms_and_conditions",
+      "label": "Terms and conditions text"
     },
   ],
   "blocks": [
