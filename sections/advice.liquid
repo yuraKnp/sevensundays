@@ -46,6 +46,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 align-self-end">
+                      {% if section.settings.right_image != blank %}
                         <div class="expert-block type-2">
                             {%- assign image3 = section.settings.right_image -%}
                             {% if image3 != blank %}
@@ -68,6 +69,7 @@
                                 {% endif %}
                             </div>
                         </div>
+                      {% endif %}
                     </div>
                 </div>
             </div>
