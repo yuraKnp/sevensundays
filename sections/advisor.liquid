@@ -52,6 +52,16 @@
                                         {% if desc != blank %} 
                                         <div class="title  h5">“{{ desc }}”</div>
                                         {% endif %}
+                                        {% comment %} <div class="info-bottom">
+                                            {% if heading != blank %} 
+                                            <div class="text"><b>{{ heading }}</b></div>
+                                            {% endif %}
+                                            {% if tag != blank %} 
+                                            <div class="text text-sm">{{ tag }}</div>
+                                            {% endif %}
+                                        </div> {% endcomment %}
+                                    </div>
+                                    <div class="advisor-info">
                                         <div class="info-bottom">
                                             {% if heading != blank %} 
                                             <div class="text"><b>{{ heading }}</b></div>
