@@ -3826,6 +3826,14 @@ section:has(.sec-padd) + section .padd-lg {
 }
 
 .advisor-slider .swiper-slide .advisor-item{
-  
   height: 100%!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+.advisor-info-bottom{
+  margin-top: auto!important
+}
+
+    
