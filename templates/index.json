@@ -34,8 +34,8 @@
       ],
       "name": "t:sections.image-banner-video.presets.name",
       "settings": {
-        "image": "shopify://shop_images/main-banner.webp",
-        "hero_video_file": "shopify://files/videos/main-banner.mp4",
+        "image": "shopify://shop_images/Back_1_0f842c32-9add-4f23-93a8-98dcbc032ca3.png",
+        "hero_video_file": "shopify://files/videos/Seven Sundays Header v1.mov",
         "image_overlay_opacity": 0,
         "image_left_bottom": "shopify://shop_images/banner-sticker.webp",
         "image_left_bottom_logo": "shopify://shop_images/sticker-logo.svg",
