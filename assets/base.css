@@ -3806,7 +3806,7 @@ section:has(.sec-padd) + section .padd-lg {
 }
 
 .footer-copy a{
-  text-decoration: none;
+  text-decoration: none!important;
 }
 
 .swiper-entry.pd-slider .swiper-container{
