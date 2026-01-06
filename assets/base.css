@@ -3839,4 +3839,15 @@ section:has(.sec-padd) + section .padd-lg {
 .advisor-slider .swiper-slide .advisor-info{
   margin-bottom: var(--sp-32)
 }
-    
+
+.deserves-item .deserves-info{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.deserves-item{
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: auto 1fr auto;
+}
