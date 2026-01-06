@@ -3816,3 +3816,7 @@ section:has(.sec-padd) + section .padd-lg {
 .deserves-item>.text{
   margin-bottom: 50px!important;
 }
+
+.deserves-item{
+  justify-content: flex-start!important;
+}
