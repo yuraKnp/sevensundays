@@ -3813,10 +3813,10 @@ section:has(.sec-padd) + section .padd-lg {
   width: calc(100% - 1px);
 }
 
-.deserves-item>.text{
+/* .deserves-item>.text{
   margin-bottom: 50px!important;
 }
 
 .deserves-item{
   justify-content: flex-start!important;
-}
+} */
