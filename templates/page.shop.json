@@ -93,6 +93,7 @@
       "name": "Press section",
       "settings": {
         "image": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
         "title": "Das perfekte Kissen ist erst der Anfang",
         "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
         "short_description": "Entdecke, wie das preisgekrönte modulare Schlafsystem dein Setup vervollständigt – und echte Schlafqualität freisetzt.",
