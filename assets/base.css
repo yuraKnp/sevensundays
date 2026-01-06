@@ -3824,3 +3824,7 @@ section:has(.sec-padd) + section .padd-lg {
 .advisor-slider .swiper-slide{
   height: auto!important;
 }
+
+.advisor-slider .swiper-slide .advisor-item{
+  height: 100%!important;
+}
