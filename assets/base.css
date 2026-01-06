@@ -3836,4 +3836,7 @@ section:has(.sec-padd) + section .padd-lg {
   margin-top: auto!important
 }
 
+.advisor-slider .swiper-slide .advisor-info{
+  margin-bottom: var(--sp-32)
+}
     
