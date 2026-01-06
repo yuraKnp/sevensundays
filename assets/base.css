@@ -3808,3 +3808,7 @@ section:has(.sec-padd) + section .padd-lg {
 .footer-copy a{
   text-decoration: none;
 }
+
+.swiper-entry.pd-slider .swiper-container{
+  width: calc(100% - 1px);
+}
