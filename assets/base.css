@@ -3820,3 +3820,7 @@ section:has(.sec-padd) + section .padd-lg {
 .deserves-item{
   justify-content: flex-start!important;
 } */
+
+.advisor-slider .swiper-slide{
+  height: auto!important;
+}
