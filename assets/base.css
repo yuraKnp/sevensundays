@@ -3853,6 +3853,8 @@ section:has(.sec-padd) + section .padd-lg {
   grid-template-rows: auto 1fr auto;
 }
 
-.stories-img.type-3 .content-top{
-  min-height: 165px!important;
+@media(min-width: 1200px){
+  .stories-img.type-3 .content-top{
+    min-height: 165px!important;
+  }
 }
