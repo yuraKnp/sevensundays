@@ -415,7 +415,7 @@
                                       <ul>
                                         {%- for link in block.settings.menu.links -%}
                                           <li>
-                                            <a href="{{ link.url }}"{% if link.active %} class="active"{% endif %}>{{ link.title | escape }}</a>
+                                            <a href="{{ link.url }}"{% if link.active %} class="active"{% endif %} target="_blank">{{ link.title | escape }}</a>
                                           </li>
                                         {%- endfor -%}
                                       </ul>
