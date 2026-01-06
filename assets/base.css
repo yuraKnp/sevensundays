@@ -3852,3 +3852,7 @@ section:has(.sec-padd) + section .padd-lg {
   grid-row: span 3;
   grid-template-rows: auto 1fr auto;
 }
+
+.stories-img.type-3 .content-top{
+  min-height: 165px!important;
+}
