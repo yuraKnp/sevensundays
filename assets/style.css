@@ -670,7 +670,7 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .simple-img .customer-review .text {color: var(--clr-grey-64);}
 .simple-img .customer-review .text b {color: var(--clr-grey);}
 .deserves-item {position: relative;background-color: var(--clr-white);border-radius: var(--rd-1);padding: var(--sp-32);display: flex;flex-direction: column;justify-content: space-between;gap: var(--sp-24);min-height: 224px;}
-.deserves-item > .text {margin-bottom: auto;}
+/* .deserves-item > .text {margin-bottom: auto;} */
 .deserves-item .title {font-weight: 500;line-height: 1.14;letter-spacing: -0.5px;max-width: 90%;}
 .deserves-item .deserves-info > * + * {margin-top: var(--sp-24);}
 .deserves-item.style2 {background-color: var(--bg-2);min-height: 320px;}
