@@ -3797,7 +3797,7 @@ span.price-item{
   height: 20px;
 }
 
-section:has(.sec-padd) + section .padd-lg {
+section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     padding-top: 0;
 }
 
