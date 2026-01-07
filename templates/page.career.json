@@ -25,7 +25,7 @@
         "title": "Baue deine Traumkarriere auf. Verdiene dein erstes Geld schon in wenigen Wochen.",
         "description": "Als Seven Sundays Schlafberater:in hilfst du Menschen, ihr volles Potenzial durch besseren Schlaf zu entfalten – und schaffst dir dabei unbegrenztes Einkommenspotenzial.",
         "link_text": "Karriere starten",
-        "link_url": "#",
+        "link_url": "#shopify-section-template--24161267974412__call_back_form_career_hhFxj8",
         "link_text2": "",
         "link_url2": ""
       }
@@ -315,7 +315,7 @@
         "subtitle": "HÖR AUF, VON VERÄNDERUNG ZU TRÄUMEN",
         "short_description": "Die Schlaf-Wellness-Branche explodiert. Menschen verstehen endlich, dass Schlaf nicht optional ist – er ist essentiell. Positioniere dich an der Spitze dieser enormen Chance.",
         "link_text": "Karriere starten",
-        "link_url": "#",
+        "link_url": "#shopify-section-template--24161267974412__call_back_form_career_hhFxj8",
         "link_text2": "",
         "link_url2": ""
       }
@@ -331,27 +331,16 @@
         "expert_occupation": "Miteigentümer & Verwaltungsratspräsident Seven Sundays"
       }
     },
-    "contact_form_Tx9p6U": {
-      "type": "contact-form",
-      "name": "t:sections.contact-form.presets.name",
-      "settings": {
-        "heading": "Kontaktformular",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "call_back_form_abTwcc": {
-      "type": "call-back-form",
-      "name": "Call to action form",
+    "call_back_form_career_hhFxj8": {
+      "type": "call-back-form-career",
+      "name": "CTA form career",
       "settings": {
         "subtitle": "",
-        "title": "Your dream career as a Sleep Consultant starts here",
-        "desc": "Leave your details for a free call-back. I'll reach out personally to explore your ideal start with us",
+        "title": "Hier startet deine Traumkarriere als Schlafberater:in",
+        "desc": "Hinterlasse deine Kontaktdaten – ich melde mich telefonisch bei dir, um deinen idealen Einstieg bei uns zu besprechen.",
         "title_before_form": "",
         "desc_before_form": "",
-        "terms_and_conditions": ""
+        "terms_and_conditions": "<p>Mit dem Absenden dieses Formulars stimme ich den <a href=\"https://seven-sundays.shop/pages/agb\" target=\"_blank\" title=\"https://seven-sundays.shop/pages/agb\">Nutzungsbedingungen</a> und der <a href=\"https://seven-sundays.shop/pages/datenschutz\" target=\"_blank\" title=\"https://seven-sundays.shop/pages/datenschutz\">Datenschutzrichtlinie</a> zu.</p>"
       }
     },
     "faq_GVmkW9": {
@@ -466,8 +455,7 @@
     "testimonial_slider_tniH9A",
     "call_to_action_jBeyNj",
     "insight_TNDAJw",
-    "contact_form_Tx9p6U",
-    "call_back_form_abTwcc",
+    "call_back_form_career_hhFxj8",
     "faq_GVmkW9"
   ]
 }
