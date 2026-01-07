@@ -314,10 +314,10 @@
         "title": "Deine Schlafexperten-Karriere beginnt jetzt",
         "subtitle": "HÖR AUF, VON VERÄNDERUNG ZU TRÄUMEN",
         "short_description": "Die Schlaf-Wellness-Branche explodiert. Menschen verstehen endlich, dass Schlaf nicht optional ist – er ist essentiell. Positioniere dich an der Spitze dieser enormen Chance.",
-        "link_text": "Bewerbung starten",
+        "link_text": "Karriere starten",
         "link_url": "#",
-        "link_text2": "Rückruf anfordern",
-        "link_url2": "#"
+        "link_text2": "",
+        "link_url2": ""
       }
     },
     "insight_TNDAJw": {
@@ -329,6 +329,17 @@
         "image": "shopify://shop_images/expert-photo-5.webp",
         "exper_name": "Reto von der Becke",
         "expert_occupation": "Miteigentümer & Verwaltungsratspräsident Seven Sundays"
+      }
+    },
+    "contact_form_Tx9p6U": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Kontaktformular",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "faq_GVmkW9": {
@@ -443,6 +454,7 @@
     "testimonial_slider_tniH9A",
     "call_to_action_jBeyNj",
     "insight_TNDAJw",
+    "contact_form_Tx9p6U",
     "faq_GVmkW9"
   ]
 }
