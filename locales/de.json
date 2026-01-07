@@ -21,6 +21,7 @@
       "email_p" : "Hierhin senden wir deine Bestätigung",
       "phone_p" : "Auf dieser Nummer melden wir uns bei dir",
       "city_p" : "Wo wir dich beraten dürfen",
+      "city_p_c": "Wo du wohnst",
       "thank_you_t" : "Vielen Dank für Ihre Anfrage.",
       "thank_you_d" : "Wir werden uns in Kürze mit Ihnen in Verbindung setzen."
     },

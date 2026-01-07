@@ -21,6 +21,7 @@
       "email_p": "We’ll send confirmation here",
       "phone_p": "We’ll call you here",
       "city_p": "Where the consultation will take place",
+      "city_p_c": "Where you are based",
       "thank_you_t": "Thank you for Your request",
       "thank_you_d": "We will contact you shortly"
     },
