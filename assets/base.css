@@ -3885,3 +3885,11 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .cart-item__image{
   width: auto;
 }
+
+.video-popup-container iframe {
+    all: unset !important; /* Resets inherited properties */
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    display: block !important;
+}
