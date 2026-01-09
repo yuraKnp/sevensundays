@@ -3867,3 +3867,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .banner.full .banner-media .video video{
   top: calc(var(--h-top-rating) + var(--banner-margin))!important;
 }
+
+.blog-item .blog-content .text{
+  -webkit-line-clamp: 3!important;
+}
