@@ -276,10 +276,10 @@ jQuery(function ($) {
     $(document).on('click', '.video-open', function (e) {
         e.preventDefault();
         var video = $(this).attr('data-href');
-        $('.video-popup-container iframe').attr('src', video);
-        // $('.video-popup-container').html(
-        //     '<iframe src="' + video + '" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>'
-        // );
+        // $('.video-popup-container iframe').attr('src', video);
+        $('.video-popup-container').html(
+            '<iframe src="' + video + '" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>'
+        );
         $('.video-popup').addClass('active');
         $('html').addClass('overflow-hidden');
     });
