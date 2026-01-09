@@ -3879,4 +3879,9 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   height: 100px;
   width: 100px;
   overflow: hidden !important;
+  justify-content: center!important;
+}
+
+.cart-item__image{
+  width: auto;
 }
