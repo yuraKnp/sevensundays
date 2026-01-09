@@ -3875,7 +3875,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 .cart-item__image-container{
   display: inline-flex;
-  align-items: center;
+  align-items: center!important;
   height: 100px;
   width: 100px;
   overflow: hidden !important;
