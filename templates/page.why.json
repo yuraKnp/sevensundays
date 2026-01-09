@@ -305,6 +305,7 @@
       "blocks": {
         "slide_qYBD34": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/stories-img-2.webp",
             "tags": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
@@ -316,7 +317,7 @@
         "slide_3fAjHr": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/stories-img-1.webp",
+            "image": "shopify://shop_images/Alexander-Mazza-SEVEN-SUNDAYS_24684efc-3ebe-41cc-af04-996ad0505f31.jpg",
             "tags": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
             "name": "Alexander Mazza",
             "job": "Moderator & TV-Host",
@@ -325,6 +326,7 @@
         },
         "slide_RRqmmB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/stories-img-1.webp",
             "tags": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
