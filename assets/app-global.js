@@ -277,9 +277,16 @@ jQuery(function ($) {
         e.preventDefault();
         var video = $(this).attr('data-href');
         // $('.video-popup-container iframe').attr('src', video);
-        $('.video-popup-container').html(
-            '<iframe src="' + video + '" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>'
-        );
+        // $('.video-popup-container').html(
+        //     '<iframe src="' + video + '" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>'
+        // );
+        // Instead of an iframe, inject a native video element
+        var videoHtml = `
+            <video controls autoplay playsinline style="width:100%; height:100%; display:block;">
+                <source src="${videoUrl}" type="video/mp4">
+            </video>`;
+        
+        $('.video-popup-container').html(videoHtml);
         $('.video-popup').addClass('active');
         $('html').addClass('overflow-hidden');
     });
