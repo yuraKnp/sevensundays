@@ -281,6 +281,8 @@ jQuery(function ($) {
         $('html').addClass('overflow-hidden');
     });
 
+
+
     /* Close Video Popup */
     $('.video-popup-close, .video-popup-layer').on('click', function (e) {
         $('html').removeClass('overflow-hidden');
