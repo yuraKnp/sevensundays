@@ -210,7 +210,7 @@
         "slide_kPYWcQ": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/energy-img-1.webp",
+            "slide_image": "shopify://shop_images/Athlete.jpg",
             "slide_heading": "  Für Sportler",
             "slide_desc": "Tiefe Regeneration. Aufstehen mit Energie für persönliche Bestleistungen.",
             "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
@@ -219,7 +219,7 @@
         "slide_fnEjKT": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/energy-img-3.webp",
+            "slide_image": "shopify://shop_images/50_Active.jpg",
             "slide_heading": "Für aktive 50+",
             "slide_desc": "Volle Energie für alles, was du noch vorhast – Reisen, Sport, Leben.",
             "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
@@ -237,8 +237,8 @@
         "slide_WfAtFh": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/energy-img-5.webp",
-            "slide_heading": "  Für Rückenschmerzgeplagte",
+            "slide_image": "shopify://shop_images/Back_Pain.jpg",
+            "slide_heading": "Für Rückenschmerzgeplagte",
             "slide_desc": "Dynamisierende Lamellen entlasten die Wirbelsäule und fördern Regeneration – für entspannteres Liegen und Aufwachen",
             "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
           }
