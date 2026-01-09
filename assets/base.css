@@ -3886,6 +3886,13 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   width: auto;
 }
 
+.video-popup-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    aspect-ratio: 16 / 9; 
+}
+
 .video-popup-container iframe {
     all: unset !important; /* Resets inherited properties */
     width: 100% !important;
