@@ -280,6 +280,7 @@ jQuery(function ($) {
         // $('.video-popup-container').html(
         //     '<iframe src="' + video + '" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>'
         // );
+        
         // Instead of an iframe, inject a native video element
         var videoHtml = `
             <video controls autoplay playsinline style="width:100%; height:100%; display:block;">
