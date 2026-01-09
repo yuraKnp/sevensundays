@@ -35,7 +35,7 @@
       "name": "t:sections.image-banner-video.presets.name",
       "settings": {
         "image": "shopify://shop_images/Back_1_0f842c32-9add-4f23-93a8-98dcbc032ca3.png",
-        "hero_video_file": "shopify://files/videos/Seven Sundays Header v1.mov",
+        "hero_video_file": "shopify://files/videos/Seven Sundays Header v3.mp4",
         "image_overlay_opacity": 0,
         "image_left_bottom": "shopify://shop_images/banner-sticker.webp",
         "image_left_bottom_logo": "shopify://shop_images/sticker-logo.svg",
@@ -147,7 +147,7 @@
         "slide_ejtr6k": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/lr-img-1.webp",
+            "slide_image": "shopify://shop_images/Material_Range_v02.jpg",
             "slide_heading": "Warum nur ein Material wählen?",
             "slide_desc": "Warum sich festlegen? Memory-Schaum, Latex, Kaltschaum – alle Premium-Materialien in einem System. Kein Rätselraten. Dein Körper bekommt, was er gerade braucht.",
             "slide_tag": "Alle Materialien"
@@ -156,10 +156,19 @@
         "slide_JnEm7g": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/Image_1.jpg",
+            "slide_image": "shopify://shop_images/Explosion_v02.jpg",
             "slide_heading": "Die letzte Matratze deines Lebens.",
             "slide_desc": "Klassische Matratzen verschleißen und belasten die Umwelt. Unsere nicht – du tauschst nur einzelne Teile. Gut für dich, gut für den Planeten.",
             "slide_tag": "Endlose Lebensdauer"
+          }
+        },
+        "slide_xEKfVn": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Two_Lying_Zones_v02.jpg",
+            "slide_heading": "Zusammen schlafen. Ohne Kompromisse.",
+            "slide_desc": "Jede Seite individuell konfiguriert. Keine Ritze, keine Bewegungsübertragung. Zwei Menschen, ein Bett – beide schlafen perfekt.",
+            "slide_tag": "Null Kompromisse"
           }
         },
         "slide_YtBiBB": {
@@ -170,22 +179,13 @@
             "slide_desc": "Schwangerschaft, Verletzung, Stress, Alter – dein Körper wandelt sich. Dein Schlaf sollte mitgehen. Ein System für jedes Kapitel. Keine neue Matratze nötig.",
             "slide_tag": "Lebensanpassungsfähigkeit"
           }
-        },
-        "slide_xEKfVn": {
-          "type": "slide",
-          "settings": {
-            "slide_image": "shopify://shop_images/lr-img-4.webp",
-            "slide_heading": "Zusammen schlafen. Ohne Kompromisse.",
-            "slide_desc": "Jede Seite individuell konfiguriert. Keine Ritze, keine Bewegungsübertragung. Zwei Menschen, ein Bett – beide schlafen perfekt.",
-            "slide_tag": "Null Kompromisse"
-          }
         }
       },
       "block_order": [
         "slide_ejtr6k",
         "slide_JnEm7g",
-        "slide_YtBiBB",
-        "slide_xEKfVn"
+        "slide_xEKfVn",
+        "slide_YtBiBB"
       ],
       "name": "Vertical slider",
       "settings": {
