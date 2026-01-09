@@ -3858,3 +3858,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     min-height: 165px!important;
   }
 }
+
+
+.banner-media .video video{
+  top: calc(var(--h-top-rating) + var(--banner-margin));
+}
