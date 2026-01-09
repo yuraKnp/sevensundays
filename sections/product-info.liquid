@@ -229,7 +229,7 @@
                                       <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                       <div class="content">
                                           <div class="text text-sm"><b>{{ selected_product_sec.title }}</b></div>
-                                          <div class="text text-sm">{{ selected_product.metafields.my_fields.subtitle }}</div>
+                                          <div class="text text-sm">{{ selected_product_sec.metafields.my_fields.subtitle }}</div>
                                       </div>
                                       <div class="btn btn-third">
                                           <b>+ {{ selected_product_sec.price | money }}</b>
