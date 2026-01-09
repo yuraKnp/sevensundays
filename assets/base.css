@@ -3860,6 +3860,6 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 
-.banner-media .video video{
+.banner.full .banner-media .video video{
   top: calc(var(--h-top-rating) + var(--banner-margin))!important;
 }
