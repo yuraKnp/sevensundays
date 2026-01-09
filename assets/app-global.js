@@ -286,7 +286,7 @@ jQuery(function ($) {
                 <source src="${video}" type="video/mp4">
             </video>`;
         
-        $('.video-popup-container').html(videoHtml);
+        $('.embed-responsive-16by9').html(videoHtml);
         $('.video-popup').addClass('active');
         $('html').addClass('overflow-hidden');
     });
