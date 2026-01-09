@@ -3854,8 +3854,12 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 @media(min-width: 1200px){
-  .stories-img.type-3 .content-top{
+  /* .stories-img.type-3 .content-top{
     min-height: 165px!important;
+  } */
+
+  .stories-img.type-3 .content-top .text{
+    min-height: 120px!important;
   }
 }
 
