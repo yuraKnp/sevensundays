@@ -350,6 +350,7 @@
         },
         "slide_aqjTMr": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/stories-img-2.webp",
             "tags": "ECHTER SCHLAF. ECHTE GESCHICHTEN.",
