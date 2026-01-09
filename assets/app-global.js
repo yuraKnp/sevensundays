@@ -283,7 +283,7 @@ jQuery(function ($) {
         // Instead of an iframe, inject a native video element
         var videoHtml = `
             <video controls autoplay playsinline style="width:100%; height:100%; display:block;">
-                <source src="${videoUrl}" type="video/mp4">
+                <source src="${video}" type="video/mp4">
             </video>`;
         
         $('.video-popup-container').html(videoHtml);
