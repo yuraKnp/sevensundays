@@ -135,6 +135,7 @@
       "blocks": {
         "slide_z86JBp": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "slide_image": "shopify://shop_images/advisor-img-1.webp",
             "slide_desc": "Champions werden nachts gemacht. Bei Seven Sundays stelle ich sicher, dass jede Komponente für Höchstleistung entwickelt ist. Spitzensportler haben keine Zeit für schlechten Schlaf – unsere Körper auch nicht. Das System funktioniert messbar.",
