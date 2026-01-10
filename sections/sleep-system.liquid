@@ -29,11 +29,11 @@
                         {%- assign tag = block.settings.slide_tag -%}
                         <div class="swiper-slide">
                             <div class="sleep-item">
+                                {% if tag != blank %}
                                 <div class="tags">
-                                    {% if heading != blank %}
                                     <span>{{ tag }}</span>
-                                    {% endif %}
                                 </div>
+                                {% endif %}
                                 <div class="sleep-img">
                                     {% if image != blank %}
                                         {{ image 
