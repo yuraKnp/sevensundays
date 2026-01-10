@@ -128,12 +128,22 @@
             "slide_desc": "Wirbelsäule sanft entlasten. Bei Rückenproblemen, langem Sitzen, aktivem Alltag.",
             "slide_tag": ""
           }
+        },
+        "slide_gXFwyw": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Ergonomic-min.jpg",
+            "slide_heading": "Ergonomisch",
+            "slide_desc": "Schultern und Hüften gezielt entlasten. Für Seitenschläfer und bessere Durchblutung.",
+            "slide_tag": ""
+          }
         }
       },
       "block_order": [
         "slide_WekHFV",
         "slide_e7YppJ",
-        "slide_CNpxTX"
+        "slide_CNpxTX",
+        "slide_gXFwyw"
       ],
       "name": "Sleep system",
       "settings": {
