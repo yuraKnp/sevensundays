@@ -371,6 +371,25 @@
     }
   </style>
 
+
+  
+  {% if template == 'index' %}
+
+    {% if settings.preload_home_video != blank %}
+    {% assign selected_video = settings.preload_home_video %}
+    {% assign video_url = selected_video.sources.first.url %}
+      <link
+        rel="preload"
+        as="video"
+        href="{{ video_url }}"
+        type="video/mp4"
+      >
+    {% endif %}
+
+
+  {% endif %}
+
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

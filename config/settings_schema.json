@@ -25,6 +25,16 @@
     ]
   },
   {
+    "name": "Preload videos",
+    "settings": [
+      {
+        "type": "video",
+        "id": "preload_home_video",
+        "label": "Preload homebanner video file",
+      },
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
