@@ -76,7 +76,7 @@
           {% if video_url != blank %}
             <!-- to display the video, add a class 'video-present' to the video -->
             <div class="video video-present main-banner">
-              <video muted playsinline loop preload poster="{{ section.settings.image | image_url }}" data-src="{{ video_url }}"></video>
+              <video muted playsinline loop preload preload="auto" poster="{{ section.settings.image | image_url }}" src="{{ video_url }}"></video>
             </div>
           {% endif %}
         </div>
