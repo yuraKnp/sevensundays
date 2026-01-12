@@ -378,12 +378,7 @@
     {% if settings.preload_home_video != blank %}
     {% assign selected_video = settings.preload_home_video %}
     {% assign video_url = selected_video.sources.first.url %}
-      <link
-        rel="preload"
-        as="video"
-        href="{{ video_url }}"
-        type="video/mp4"
-      >
+      <link rel="preload" as="video" href="{{ video_url }}" type="video/mp4" >
     {% endif %}
 
 
@@ -392,7 +387,7 @@
 
   </head>
 
-  <body class="{{ template }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="{{ video_url }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <div id="content-block">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
