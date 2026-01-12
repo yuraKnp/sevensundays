@@ -35,7 +35,7 @@
       "name": "t:sections.image-banner-video.presets.name",
       "settings": {
         "image": "shopify://shop_images/2025_11_24_SevenSundays3903-web.jpg",
-        "hero_video_file": "shopify://files/videos/Seven Sundays Header v3.mp4",
+        "hero_video_file": "shopify://files/videos/Seven Sundays Header v1 (1).mp4",
         "image_overlay_opacity": 0,
         "image_left_bottom": "shopify://shop_images/banner-sticker.webp",
         "image_left_bottom_logo": "shopify://shop_images/sticker-logo.svg",
