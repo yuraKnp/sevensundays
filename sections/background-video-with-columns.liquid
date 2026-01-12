@@ -17,7 +17,7 @@
 
             {% if video_url != blank %}
                 <div class="video video-present">
-                <video muted playsinline loop preload poster="{{ section.settings.image | image_url }}" data-src="{{ video_url }}"></video>
+                <video muted playsinline loop preload="metadata" poster="{{ section.settings.image | image_url }}" data-src="{{ video_url }}"></video>
                 </div>
             {% endif %}
         </div>
