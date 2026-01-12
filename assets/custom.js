@@ -5,9 +5,9 @@ jQuery(function ($) {
     document.addEventListener('DOMContentLoaded', function() {
         const formContainer = document.querySelector('.contact-form-section');
 
-        console.log(formContainer);
+        // console.log(formContainer);
 
-        console.log(formContainer.dataset.formStatus);
+        // console.log(formContainer.dataset.formStatus);
         
         if (formContainer && formContainer.dataset.formStatus === 'success') {
         _functions.openPopup('.popup-content[data-rel="1"]');
@@ -78,7 +78,7 @@ jQuery(function ($) {
 
         newLine += '<a class="toc__link" href="' + link + '">' + title + "</a>";
 
-        console.log(newLine);
+        // console.log(newLine);
 
         if(newLine && newLine != undefined) ToC += newLine;
         
@@ -295,7 +295,7 @@ jQuery(function ($) {
     $(document).on('click', '.product-description-open', function(e){
         e.preventDefault();
 
-        console.log('click2');
+        // console.log('click2');
 
         let button = $(this);
         let desc_wrapper = button.closest('.product-description');
@@ -334,7 +334,7 @@ jQuery(function ($) {
             const $form = $(this);
             const items = [];
 
-            console.log($('.quantity .quantity__input').val());
+            // console.log($('.quantity .quantity__input').val());
 
 
             // 1. Add the main product
@@ -362,7 +362,7 @@ jQuery(function ($) {
                 window.location.href = '/cart';
             },
             error: function(err) {
-                console.error("Error adding bundle:", err);
+                // console.error("Error adding bundle:", err);
             }
             });
         });
