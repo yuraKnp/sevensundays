@@ -164,7 +164,7 @@
       </a>
     {% endif %}
     <div class="blog-content">
-        <a href="{{ article.url }}" class="h5 title">{{ article.title | truncate: 50 | escape }}</a>
+        <a href="{{ article.url }}" class="h6 title">{{ article.title | truncate: 50 | escape }}</a>
           {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
             {%- if article.excerpt.size > 0 -%}
               <div class="text">{{ article.excerpt | strip_html | truncatewords: 30 }}</div>
