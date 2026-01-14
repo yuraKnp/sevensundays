@@ -85,7 +85,7 @@
       <div class="container">
           <div class="row blog-row">
               {%- for article in blog.articles -%}
-                {% if article.id != article_handle.id %}
+                {% if article.url != article_handle.url %}
                     <div class="col-md-6">
                       {%- render 'article-card',
                         article: article,
