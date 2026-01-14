@@ -74,7 +74,7 @@
     <div class="spacer-sm"></div>
 </div>
 
-{%- paginate blog.articles by 4 -%}
+{% comment %} {%- paginate blog.articles by 4 -%} {% endcomment %}
   
   {% comment %} <div class="main-blog page-width section-{{ section.id }}-padding">
     
@@ -101,7 +101,7 @@
 
       <div class="spacer-xl"></div>
   </div>
-{%- endpaginate -%}
+{% comment %} {%- endpaginate -%} {% endcomment %}
 
 {% schema %}
 {
