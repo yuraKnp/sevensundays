@@ -3902,5 +3902,5 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 .btn-link-animation{
-  cursor: pointer;
+  cursor: pointer; /* add cursor pointer for animation button */
 }
