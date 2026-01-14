@@ -3900,3 +3900,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     border: none !important;
     display: block !important;
 }
+
+.btn-link-animation{
+  cursor: pointer;
+}
