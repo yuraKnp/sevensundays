@@ -25,6 +25,14 @@
                     </div>
                 </div>
             </div>
+            {% if section.settings.scroll_text != blank %}
+            <a href="#shopify-section-template--24157039526156__horizontal_slider_8kbf6a" class="btn-link btn-link-animation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M6 2.5V9.5M6 9.5L9.5 6M6 9.5L2.5 6" stroke="#F5F1E8" stroke-opacity="0.88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <b>{{ section.settings.scroll_text }}</b>
+            </a>
+            {%  endif %}
         </div>
         {% if section.blocks != blank %}
         <div class="container">
@@ -69,6 +77,11 @@
       "type": "text",
       "id": "title",
       "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "scroll_text",
+      "label": "Scroll text"
     },
   ],
   "blocks": [
