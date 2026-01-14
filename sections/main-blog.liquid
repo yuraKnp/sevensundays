@@ -80,22 +80,24 @@
     
   </div> {% endcomment %}
 
-  
+
   <div class="section">
       <div class="container">
           <div class="row blog-row">
               {%- for article in blog.articles -%}
-                  <div class="col-md-6">
-                    {%- render 'article-card',
-                      article: article,
-                      media_height: section.settings.image_height,
-                      media_aspect_ratio: article.image.aspect_ratio,
-                      show_image: section.settings.show_image,
-                      show_date: section.settings.show_date,
-                      show_author: section.settings.show_author,
-                      show_excerpt: true
-                    -%}
-                  </div>
+                {% if article.id != article_handle.id %}
+                    <div class="col-md-6">
+                      {%- render 'article-card',
+                        article: article,
+                        media_height: section.settings.image_height,
+                        media_aspect_ratio: article.image.aspect_ratio,
+                        show_image: section.settings.show_image,
+                        show_date: section.settings.show_date,
+                        show_author: section.settings.show_author,
+                        show_excerpt: true
+                      -%}
+                    </div>
+                {% endif %}
               {%- endfor -%}
           </div>
       </div>
