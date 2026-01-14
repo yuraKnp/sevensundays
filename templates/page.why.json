@@ -58,7 +58,8 @@
       "name": "Time",
       "settings": {
         "image": "shopify://shop_images/2025_11_24_SevenSundays3833_1-gigapixel-recover_v2-1x.jpg",
-        "title": "Es ist Zeit, Schlaf wieder zu zelebrieren"
+        "title": "Es ist Zeit, Schlaf wieder zu zelebrieren",
+        "scroll_text": "nach unten scrollen"
       }
     },
     "horizontal_slider_8kbf6a": {
