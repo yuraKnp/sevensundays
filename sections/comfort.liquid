@@ -1,6 +1,6 @@
 <div class="section">
     <div class="banner">
-        <div class="banner-media bottom-shadow shadow-2">
+        <div class="banner-media bottom-shadow"> {% comment %} shadow-2 {% endcomment %}
             {% if section.settings.image != blank %}
             {{ section.settings.image 
                 | image_url: width: section.settings.image.width
