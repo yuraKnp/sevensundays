@@ -1859,7 +1859,7 @@ input[type='checkbox'] {
 
 .form-status {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .form-status-list {
@@ -3910,4 +3910,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .h2.comfort{
   text-align: left;
   line-height: 1.1;
+}
+
+.form-status p{
+  margin-left: 20px;
 }
