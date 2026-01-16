@@ -3905,6 +3905,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   cursor: pointer; /* add cursor pointer for animation button */
 }
 
+/* Comfort section update */
+
 .h2.comfort{
   text-align: left;
   line-height: 1.1;
