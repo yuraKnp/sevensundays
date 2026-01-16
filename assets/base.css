@@ -3935,5 +3935,5 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 .banner-align.align-bottom.xxl{
   vertical-align: bottom;
-  padding-bottom: var(--sp-xxl);
+  padding-bottom: var(--sp-xl);
 }
