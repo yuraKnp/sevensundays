@@ -99,7 +99,7 @@ a:hover .video-cover video {transform: scale(1.04);}
 .banner-media.bottom-shadow.shadow-6::before {height: 100%;background: linear-gradient(0deg, rgba(30, 34, 39, 0.16) 0%, rgba(30, 34, 39, 0.16) 100%);}
 .banner-media.top-bottom-shadow::before {content: "";position: absolute;z-index: 1;left: 0;width: 100%;top: 0;height: 40%;background: linear-gradient(0deg, rgba(30, 34, 39, 0) 0%, rgba(30, 34, 39, 0.88) 100%);}
 .banner-media.top-bottom-shadow.style-2::before {background: linear-gradient(0deg, rgba(30, 34, 39, 0) 0%, #1E2227 100%);}
-.banner-media.top-bottom-shadow.style-2::after {content: "";position: absolute;z-index: 1;left: 0;width: 100%;bottom: 0;height: 37%;background: linear-gradient(180deg, rgba(30, 34, 39, 0) 0%, #1E2227 100%);}
+.banner-media.top-bottom-shadow.style-2::after {content: "";position: absolute;z-index: 1;left: 0;width: 100%;bottom: 0;height: 60%;background: linear-gradient(180deg, rgba(30, 34, 39, 0) 0%, #1E2227 100%);}
 .banner-align {position: relative;z-index: 1;display: table-cell;vertical-align: middle;width: 625rem;height: 110vh;}
 .banner-align.size2 {height: 780px;}
 .banner-align.size4 {height: 800px;}
