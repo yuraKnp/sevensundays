@@ -3915,3 +3915,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .form-status p{
   margin-left: 20px;
 }
+
+.page-container h2{
+  margin-bottom: 70px;
+}
