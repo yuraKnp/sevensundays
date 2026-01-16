@@ -216,7 +216,9 @@
                               <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                               <div class="pairs">
                                   <div class="pairs-item" data-variant-id="{{ selected_product.selected_or_first_available_variant.id }}">
-                                      <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                      <div class="img-wrapper">
+                                        <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                      </div>
                                       <div class="content">
                                           <div class="text text-sm"><b>{{ selected_product.title }}</b></div>
                                           <div class="text text-sm">{{ selected_product.metafields.my_fields.subtitle }}</div>
@@ -226,7 +228,9 @@
                                       </div>
                                   </div>
                                   <div class="pairs-item" data-variant-id="{{ selected_product_sec.selected_or_first_available_variant.id }}">
-                                      <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                      <div class="img-wrapper">
+                                        <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                      </div>
                                       <div class="content">
                                           <div class="text text-sm"><b>{{ selected_product_sec.title }}</b></div>
                                           <div class="text text-sm">{{ selected_product_sec.metafields.my_fields.subtitle }}</div>
