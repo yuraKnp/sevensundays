@@ -3932,3 +3932,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   height: 100%;
   width: 100%;
 }
+
+.banner-align.align-bottom.xxl{
+  vertical-align: bottom;
+  padding-bottom: var(--sp-xxl);
+}
