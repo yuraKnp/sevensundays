@@ -3904,3 +3904,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .btn-link-animation{
   cursor: pointer; /* add cursor pointer for animation button */
 }
+
+.h2.comfort{
+  text-align: left;
+  line-height: 1.1;
+}
