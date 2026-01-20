@@ -128,30 +128,33 @@
 
 
                 {% if section.blocks != blank %}
-                <div class="support-items">
-                    {% for block in section.blocks %}
-                        {%- assign image = block.settings.image -%}
-                        {%- assign heading = block.settings.title -%}
-                        {%- assign desc = block.settings.description -%}
-                        <div class="support-item">
-                            {% if image != blank %}
-                                {% assign image_url = image | image_url  %}
-                                {% assign image_format = image.alt  %}
-                            <div class="support-img">
-                                <img width="66" height="66" src="{{ image_url }}" alt="{{ image_format }}" loading="lazy">
-                            </div>
-                            {% endif %}
-                            <div class="support-content">
-                                {% if heading != blank %}
-                                <div class="text"><b>{{ heading }}</b></div>
-                                {% endif %}
-                                {% if desc != blank %}
-                                <div class="text text-sm">{{ desc }}</div>
-                                {% endif %}
-                            </div>
+                {%- assign app_slide = section.blocks | where: "type", "slide" -%}
+                    {% if app_slide > 0 %}
+                        <div class="support-items">
+                            {% for block in section.blocks %}
+                                {%- assign image = block.settings.image -%}
+                                {%- assign heading = block.settings.title -%}
+                                {%- assign desc = block.settings.description -%}
+                                <div class="support-item">
+                                    {% if image != blank %}
+                                        {% assign image_url = image | image_url  %}
+                                        {% assign image_format = image.alt  %}
+                                    <div class="support-img">
+                                        <img width="66" height="66" src="{{ image_url }}" alt="{{ image_format }}" loading="lazy">
+                                    </div>
+                                    {% endif %}
+                                    <div class="support-content">
+                                        {% if heading != blank %}
+                                        <div class="text"><b>{{ heading }}</b></div>
+                                        {% endif %}
+                                        {% if desc != blank %}
+                                        <div class="text text-sm">{{ desc }}</div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endfor %}
                         </div>
-                    {% endfor %}
-                </div>
+                    {% endif %}
                 {% endif %}
                 
             </div>
