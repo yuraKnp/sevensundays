@@ -3925,6 +3925,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   height: 50px;
   border-radius: 100px;
   overflow: hidden;
+  min-width: 50px;
 }
 
 .pairs-item .img-wrapper img{
