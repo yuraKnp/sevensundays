@@ -3908,7 +3908,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 /* Comfort section update */
 
 .h2.comfort{
-  text-align: left;
+  /* text-align: left; */
   line-height: 1.1;
 }
 
