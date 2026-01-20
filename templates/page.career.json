@@ -333,6 +333,28 @@
     },
     "call_back_form_career_hhFxj8": {
       "type": "call-back-form-career",
+      "blocks": {
+        "forms_inline_qfAHhR": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "836344",
+            "text_color": "#202020",
+            "button_background_color": "#1e2227",
+            "button_label_color": "#f5f1e8",
+            "links_color": "#1e2227",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_qfAHhR"
+      ],
       "name": "CTA form career",
       "settings": {
         "subtitle": "",
@@ -453,7 +475,7 @@
             "button_background_color": "#1e2227",
             "button_label_color": "#f5f1e8",
             "links_color": "#1e2227",
-            "errors_color": "#E02229",
+            "errors_color": "#e02229",
             "text_alignment": "center",
             "form_alignment": "center",
             "padding_top": 50,
@@ -466,6 +488,7 @@
       "block_order": [
         "forms_inline_xDJY6g"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
