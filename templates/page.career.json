@@ -304,6 +304,33 @@
         "slider_title": "Was unsere Partner sagen"
       }
     },
+    "call_to_action_jBeyNj": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "section_type": "type_2",
+        "image": "shopify://shop_images/96e62e741c8a77e2e83cecab893fc30ebc44eb7d.jpg",
+        "image_mob": "shopify://shop_images/96e62e741c8a77e2e83cecab893fc30ebc44eb7d.jpg",
+        "title": "Deine Schlafexperten-Karriere beginnt jetzt",
+        "subtitle": "HÖR AUF, VON VERÄNDERUNG ZU TRÄUMEN",
+        "short_description": "Die Schlaf-Wellness-Branche explodiert. Menschen verstehen endlich, dass Schlaf nicht optional ist – er ist essentiell. Positioniere dich an der Spitze dieser enormen Chance.",
+        "link_text": "Karriere starten",
+        "link_url": "#shopify-section-template--24161267974412__call_back_form_career_hhFxj8",
+        "link_text2": "",
+        "link_url2": ""
+      }
+    },
+    "insight_TNDAJw": {
+      "type": "insight",
+      "name": "Insight",
+      "settings": {
+        "tag": "EXPERTENEINBLICK",
+        "main_description": "\"Nach dem Aufbau, der Führung und dem Verkauf globaler Direktvertriebsorganisationen kann ich sagen: Seven Sundays bietet das attraktivste Karrieremodell überhaupt. Jeder, der sich für Wohlbefinden und menschliche Verbindung begeistert, kann hier eine außergewöhnliche Karriere aufbauen.\"",
+        "image": "shopify://shop_images/expert-photo-5.webp",
+        "exper_name": "Reto von der Becke",
+        "expert_occupation": "Miteigentümer & Verwaltungsratspräsident Seven Sundays"
+      }
+    },
     "1768910099f86fb81f": {
       "type": "apps",
       "blocks": {
@@ -330,33 +357,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "call_to_action_jBeyNj": {
-      "type": "call-to-action",
-      "name": "Call to action",
-      "settings": {
-        "section_type": "type_2",
-        "image": "shopify://shop_images/96e62e741c8a77e2e83cecab893fc30ebc44eb7d.jpg",
-        "image_mob": "shopify://shop_images/96e62e741c8a77e2e83cecab893fc30ebc44eb7d.jpg",
-        "title": "Deine Schlafexperten-Karriere beginnt jetzt",
-        "subtitle": "HÖR AUF, VON VERÄNDERUNG ZU TRÄUMEN",
-        "short_description": "Die Schlaf-Wellness-Branche explodiert. Menschen verstehen endlich, dass Schlaf nicht optional ist – er ist essentiell. Positioniere dich an der Spitze dieser enormen Chance.",
-        "link_text": "Karriere starten",
-        "link_url": "#shopify-section-template--24161267974412__call_back_form_career_hhFxj8",
-        "link_text2": "",
-        "link_url2": ""
-      }
-    },
-    "insight_TNDAJw": {
-      "type": "insight",
-      "name": "Insight",
-      "settings": {
-        "tag": "EXPERTENEINBLICK",
-        "main_description": "\"Nach dem Aufbau, der Führung und dem Verkauf globaler Direktvertriebsorganisationen kann ich sagen: Seven Sundays bietet das attraktivste Karrieremodell überhaupt. Jeder, der sich für Wohlbefinden und menschliche Verbindung begeistert, kann hier eine außergewöhnliche Karriere aufbauen.\"",
-        "image": "shopify://shop_images/expert-photo-5.webp",
-        "exper_name": "Reto von der Becke",
-        "expert_occupation": "Miteigentümer & Verwaltungsratspräsident Seven Sundays"
       }
     },
     "call_back_form_career_hhFxj8": {
