@@ -14,7 +14,7 @@
                     {% endif %}
                 </div>
 
-                {% form 'contact', class: 'form-block white' %}
+                {% comment %} {% form 'contact', class: 'form-block white' %}
                     <input type="hidden" name="contact[form_type]" value="Career Request">
                     <input type="hidden" name="contact[subject]" value="NEW CAREER APPLICATION">
                     <input type="hidden" name="contact[tags]" value="custom_form_lead">
@@ -116,7 +116,15 @@
                         </ul>
                     {%- endif -%}
 
-                {% endform %}
+                {% endform %} {% endcomment %}
+
+                {% for block in section.blocks %}
+                    {% if block.type == '@app' %}
+                    <div class="app-container" {{ block.shopify_attributes }}>
+                        {% render block %}
+                    </div>
+                    {% endif %}
+                {% endfor %}
 
 
                 {% if section.blocks != blank %}
