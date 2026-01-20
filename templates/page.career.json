@@ -346,7 +346,7 @@
             "text_alignment": "center",
             "form_alignment": "center",
             "padding_top": 0,
-            "padding_bottom": 24,
+            "padding_bottom": 0,
             "padding_right": 0,
             "padding_left": 0
           }
@@ -463,35 +463,6 @@
       "settings": {
         "title": "FAQ"
       }
-    },
-    "1768924310fe2007f8": {
-      "type": "apps",
-      "blocks": {
-        "forms_inline_xDJY6g": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "836344",
-            "text_color": "#202020",
-            "button_background_color": "#1e2227",
-            "button_label_color": "#f5f1e8",
-            "links_color": "#1e2227",
-            "errors_color": "#e02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 50,
-            "padding_bottom": 50,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "forms_inline_xDJY6g"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -507,7 +478,6 @@
     "call_to_action_jBeyNj",
     "insight_TNDAJw",
     "call_back_form_career_hhFxj8",
-    "faq_GVmkW9",
-    "1768924310fe2007f8"
+    "faq_GVmkW9"
   ]
 }
