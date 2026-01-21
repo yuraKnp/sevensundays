@@ -50,14 +50,6 @@
         "link_url": "https://seven-sundays.shop/pages/experience"
       }
     },
-    "testimonial_slider_3Ppc9B": {
-      "type": "testimonial-slider",
-      "name": "Testimonial slider",
-      "settings": {
-        "section_type": "type_1",
-        "slider_title": ""
-      }
-    },
     "call_to_action_cpW7xW": {
       "type": "call-to-action",
       "name": "Call to action",
@@ -81,7 +73,6 @@
     "background_image_jpL9fw",
     "small_image_with_text_g4aKPC",
     "try_sleep_gWYx8e",
-    "testimonial_slider_3Ppc9B",
     "call_to_action_cpW7xW"
   ]
 }
