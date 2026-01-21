@@ -1,0 +1,61 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "background_image_jpL9fw": {
+      "type": "background-image",
+      "name": "Background image",
+      "settings": {
+        "image": "shopify://shop_images/SevenSundays_Schichten_wechseln_1_1.png"
+      }
+    },
+    "small_image_with_text_g4aKPC": {
+      "type": "small-image-with-text",
+      "name": "Small image with text",
+      "settings": {
+        "section_type": "type_1",
+        "image": "shopify://shop_images/Testimonial_Author_Image.png",
+        "title": "One smart system.  Endless Possibilites",
+        "description": "In seconds, you adapt your system to your needs."
+      }
+    },
+    "call_to_action_cpW7xW": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "section_type": "type_1",
+        "image": "shopify://shop_images/cta-video.webp",
+        "image_mob": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Teste das preisgekrönte modulare Schlafsystem bei dir zuhause – mit persönlicher Expertenberatung.",
+        "subtitle": "Überzeug dich selbst – und wach auf wie Sonntag, jeden Tag.",
+        "short_description": "✓ Keine Recherche-Odyssee✓ Dein Zuhause statt Verkaufsfläche✓ Zertifizierte Expertenberatung✓ Testen vor dem Kauf",
+        "link_text": "Schlafsystem erleben",
+        "link_url": "#",
+        "link_text2": "",
+        "link_url2": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "background_image_jpL9fw",
+    "small_image_with_text_g4aKPC",
+    "call_to_action_cpW7xW"
+  ]
+}
