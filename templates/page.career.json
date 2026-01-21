@@ -313,7 +313,7 @@
         "image_mob": "shopify://shop_images/96e62e741c8a77e2e83cecab893fc30ebc44eb7d.jpg",
         "title": "Deine Schlafexperten-Karriere beginnt jetzt",
         "subtitle": "HÖR AUF, VON VERÄNDERUNG ZU TRÄUMEN",
-        "short_description": "Die Schlaf-Wellness-Branche explodiert. Menschen verstehen endlich, dass Schlaf nicht optional ist – er ist essentiell. Positioniere dich an der Spitze dieser enormen Chance.",
+        "short_description": "<p>Die Schlaf-Wellness-Branche explodiert. Menschen verstehen endlich, dass Schlaf nicht optional ist – er ist essentiell. Positioniere dich an der Spitze dieser enormen Chance.</p>",
         "link_text": "Karriere starten",
         "link_url": "#shopify-section-template--24161267974412__call_back_form_career_hhFxj8",
         "link_text2": "",
@@ -333,33 +333,12 @@
     },
     "call_back_form_career_hhFxj8": {
       "type": "call-back-form-career",
-      "blocks": {
-        "forms_inline_qfAHhR": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "836344",
-            "text_color": "#202020",
-            "button_background_color": "#1e2227",
-            "button_label_color": "#f5f1e8",
-            "links_color": "#1e2227",
-            "errors_color": "#E02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "forms_inline_qfAHhR"
-      ],
       "name": "CTA form career",
       "settings": {
         "subtitle": "",
         "title": "Hier startet deine Traumkarriere als Schlafberater:in",
         "desc": "Hinterlasse deine Kontaktdaten – ich melde mich telefonisch bei dir, um deinen idealen Einstieg bei uns zu besprechen.",
+        "form_link": "https://formspree.io/f/mgoorooa",
         "title_before_form": "",
         "desc_before_form": "",
         "terms_and_conditions": "<p>Mit dem Absenden dieses Formulars stimme ich den <a href=\"https://seven-sundays.shop/pages/agb\" target=\"_blank\" title=\"https://seven-sundays.shop/pages/agb\">Nutzungsbedingungen</a> und der <a href=\"https://seven-sundays.shop/pages/datenschutz\" target=\"_blank\" title=\"https://seven-sundays.shop/pages/datenschutz\">Datenschutzrichtlinie</a> zu.</p>"
