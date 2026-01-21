@@ -17,6 +17,13 @@
         "padding_bottom": 28
       }
     },
+    "background_image_jpL9fw": {
+      "type": "background-image",
+      "name": "Background image",
+      "settings": {
+        "image": "shopify://shop_images/SevenSundays_Schichten_wechseln_1_1.png"
+      }
+    },
     "small_image_with_text_g4aKPC": {
       "type": "small-image-with-text",
       "name": "Small image with text",
@@ -30,6 +37,7 @@
   },
   "order": [
     "main",
+    "background_image_jpL9fw",
     "small_image_with_text_g4aKPC"
   ]
 }
