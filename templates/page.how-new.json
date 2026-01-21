@@ -61,10 +61,20 @@
             "description": "Global Medical Director Red Bull",
             "add_description": "<p>Champions werden nachts gemacht. Bei Seven Sundays stelle ich sicher, dass jede Komponente für Höchstleistung entwickelt ist. Spitzensportler haben keine Zeit für schlechten Schlaf – unsere Körper auch nicht. Das System funktioniert messbar.</p>"
           }
+        },
+        "slide_Vhi8Wi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/advisor-img-4.png",
+            "title": "Dr. Michael Feld",
+            "description": "Schlafexperte und medizinischer Beirat bei Seven Sundays",
+            "add_description": "<p>Echte Schlafoptimierung erfordert Individualisierung auf höchstem Niveau. Bei Seven Sundays bringe ich meine Expertise ein, damit das modulare System gesamtheitlich optimalen Schlaf fördert. Hier wird Schlafmedizin zur anwendbaren Innovation.</p>"
+          }
         }
       },
       "block_order": [
-        "slide_VqcaFg"
+        "slide_VqcaFg",
+        "slide_Vhi8Wi"
       ],
       "name": "Recovery experts",
       "settings": {
