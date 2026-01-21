@@ -292,8 +292,6 @@ jQuery(function ($) {
         $('html').addClass('overflow-hidden');
     });
 
-
-
     /* Close Video Popup */
     $('.video-popup-close, .video-popup-layer').on('click', function (e) {
         $('html').removeClass('overflow-hidden');
@@ -387,8 +385,6 @@ jQuery(function ($) {
     if ($('.video').length) {
         $(this).find('video').attr("autoplay", "");
     }
-
-
 
     //*=============
     //*  OTHER JS  =
@@ -698,6 +694,67 @@ jQuery(function ($) {
 
         $(item[0]).get(0)._LoopingElements = new LoopingElement(item[0], 0, spd, dir);
         $(item[1]).get(0)._LoopingElements = new LoopingElement(item[1], -100, spd, dir);
+    });
+
+    //progress layer video
+    const $video = $('#layerVideo');
+    const video = $video.get(0);
+    const $layers = $('.layer-item');
+
+    if (!video || $layers.length < 2) return;
+
+    let targetTime = 0;
+    let currentTime = 0;
+    let isAnimating = false;
+
+    video.addEventListener('loadedmetadata', function () {
+        const duration = video.duration;
+
+        video.play();
+        video.pause();
+
+        const $first = $layers.first();
+        const $last = $layers.last();
+
+        const start = $first.offset().top;
+        const end = $last.offset().top + $last.outerHeight()/2;
+
+        function animate() {
+            currentTime += (targetTime - currentTime) * 0.1; //smoothing
+            video.currentTime = currentTime;
+
+            if (Math.abs(targetTime - currentTime) > 0.001) {
+                requestAnimationFrame(animate);
+            } else {
+                isAnimating = false;
+            }
+        }
+
+        $(window).on('scroll', function () {
+            const scrollY = $(window).scrollTop() + $(window).height() * 0.3;
+
+            const progress = Math.min(
+                Math.max((scrollY - start) / (end - start), 0),
+                1
+            );
+
+            targetTime = duration * progress;
+
+            if (!isAnimating) {
+                isAnimating = true;
+                requestAnimationFrame(animate);
+            }
+        });
+    });
+
+    // choose-layer
+    $(document).on('click', '.choose-layer .item', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    // advisor more info
+    $(document).on('click', '.js-advisor-info', function(){
+        $(this).closest('.advisor-item').toggleClass('open');
     });
 
 });

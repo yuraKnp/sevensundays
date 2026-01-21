@@ -67,6 +67,7 @@ header.type2 + main .section.sp-sec:first-child {padding-top: calc(var(--h-top-r
 .section.sec-black .text {color: var(--clr-white-3);}
 .section.sec-black .motto {color: var(--clr-white-3);}
 .section.sec-dark-grey {background-color: var(--bg-3);}
+.section.sec-black-gradient {background: linear-gradient(180deg, #434A54 0%, #1E2228 100%);}
 .section.sec-padd {padding-block: var(--sp-xl);}
 .section.sec-padd + .padd-xl {padding-top: 0;}
 .section.sec-padd + .padd-lg {padding-top: 0;}
@@ -111,7 +112,6 @@ header.type2 + main .section.sp-sec:first-child {padding-top: calc(var(--h-top-r
 header {position: fixed;top: 0;left: 0;width: 100%;z-index: 100;transition: var(--transition-1);}
 header.type2 .h-logo img:first-child {display: none;}
 header.type2 .h-logo img:last-child {display: block;}
-/* header.type2 .h-inner {margin-top: 0;} */
 header.type2 .h-links a,
 header.type2 .h-drop b {color: var(--clr-black);}
 header.type2 .h-lang-wrap {background-color: var(--clr-text-3);color: var(--clr-black);}
@@ -373,6 +373,7 @@ h6,
 .btn-secondary svg *[stroke] {stroke: var(--clr-primary) !important;}
 .btn-secondary svg *[fill] {fill: var(--clr-primary) !important;}
 .btn-third {background-color: var(--clr-text-3);color: var(--clr-black);}
+.btn-four {background-color: var(--clr-white);color: var(--clr-black);}
 .btn-blur {background-color: rgba(245, 241, 232, 0.04);-webkit-backdrop-filter: blur(8px);backdrop-filter: blur(8px);color: var(--clr-white-2);font-size: 14px;line-height: 18px;padding-inline: var(--sp-16);}
 .btn-blur.size2 {padding: 11px 16px 13px;font-size: 16px;line-height: 20px;}
 .btn svg {color: currentColor;margin-top: 2px;}
@@ -416,6 +417,7 @@ h6,
 .btn-primary:hover {color: var(--clr-white-2);background-color: var(--clr-black);}
 .btn-secondary:hover {color: var(--clr-white-2);background-color: var(--clr-title);}
 .btn-third:hover {color: var(--clr-white-2);background-color: var(--clr-text);}
+.btn-four:hover {color: var(--clr-black);background-color: var(--clr-primary);}
 .btn-close:hover {color: var(--clr-black);background-color: var(--clr-primary);}
 .btn-link:hover {color: var(--clr-primary);}
 .btn-link.color2:hover {color: var(--clr-black);}
