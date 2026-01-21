@@ -50,6 +50,15 @@
         "link_url": "https://seven-sundays.shop/pages/experience"
       }
     },
+    "recovery_experts_ppafPD": {
+      "type": "recovery-experts",
+      "name": "Recovery experts",
+      "settings": {
+        "subtitle": "Experten für Wiederherstellung an Ihrer Seite",
+        "title": "Unser wissenschaftlicher Beirat",
+        "description": "Seven Sundays hat sich mit renommierten Medizinexperten zusammengeschlossen, die führend auf ihren jeweiligen Gebieten sind. Sie unterstützen Seven Sundays bei der Weiterentwicklung des modularen Schlafsystems auf Basis modernster Wissenschaft."
+      }
+    },
     "call_to_action_cpW7xW": {
       "type": "call-to-action",
       "name": "Call to action",
@@ -73,6 +82,7 @@
     "background_image_jpL9fw",
     "small_image_with_text_g4aKPC",
     "try_sleep_gWYx8e",
+    "recovery_experts_ppafPD",
     "call_to_action_cpW7xW"
   ]
 }
