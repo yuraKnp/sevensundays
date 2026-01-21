@@ -119,9 +119,8 @@
                 {% endform %} {% endcomment %}
 
                 <form action="https://formspree.io/f/mgoorooa"  method="POST" class="form-block white">
-                    <input type="hidden" name="contact[form_type]" value="Career Request">
-                    <input type="hidden" name="contact[subject]" value="NEW CAREER APPLICATION">
-
+                    <input type="hidden" name="form_type" value="Career Request">
+                    <input type="hidden" name="subject" value="NEW CAREER APPLICATION">
 
                     <div class="form-expert-block">
                         <div class="content">
@@ -144,35 +143,35 @@
                         <div class="col-12">
                         <label class="input-field">
                             <div class="label">{{ 'general.form.name' | t }}</div>
-                            <input name="contact[name]" class="input" type="text" placeholder="{{ 'general.form.name_p' | t }}" required>
+                            <input name="name" class="input" type="text" placeholder="{{ 'general.form.name_p' | t }}" required>
                             {% comment %} <div class="input-error">Please fill in this field</div> {% endcomment %}
                         </label>
                         </div>
                         <div class="col-12">
                         <label class="input-field">
                             <div class="label">email</div>
-                            <input name="contact[email]" class="input" type="email" placeholder="{{ 'general.form.email_p' | t }}" required>
+                            <input name="email" class="input" type="email" placeholder="{{ 'general.form.email_p' | t }}" required>
                             {% comment %} <div class="input-error">Please fill in this field</div> {% endcomment %}
                         </label>
                         </div>
                         <div class="col-12">
                         <label class="input-field">
                             <div class="label">{{ 'general.form.phone' | t }}</div>
-                            <input name="contact[phone]" class="input" type="tel" placeholder="{{ 'general.form.phone_p' | t }}" required>
+                            <input name="phone" class="input" type="tel" placeholder="{{ 'general.form.phone_p' | t }}" required>
                             {% comment %} <div class="input-error">Please fill in this field</div> {% endcomment %}
                         </label>
                         </div>
                         <div class="col-12">
                         <label class="input-field">
                             <div class="label">{{ 'general.form.city' | t }}</div>
-                            <input name="contact[city]" class="input" type="text" placeholder="{{ 'general.form.city_p_c' | t }}" required>
+                            <input name="city" class="input" type="text" placeholder="{{ 'general.form.city_p_c' | t }}" required>
                             {% comment %} <div class="input-error">Please fill in this field</div> {% endcomment %}
                         </label>
                         </div>
                     </div>
                     <div class="ch-box-wrap">
                         <label class="ch-box">
-                        <input name="contact[terms_agreed]" type="checkbox" required>
+                        <input name="terms_agreed" type="checkbox" required>
                         {% comment %} <span>By sending this form, I agree to the <a href="privacy.php">Terms of Service</a> and <a href="privacy.php">Privacy Policy</a>.</span> {% endcomment %}
                         <span>{{ section.settings.terms_and_conditions }}</span>
                         </label>
