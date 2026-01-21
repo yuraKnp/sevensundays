@@ -19,29 +19,31 @@
             <div class="marquee-item">
                 <div class="marquee-content marq-review-wrap">
                     {% for block in section.blocks %}
-                        {%- assign image = block.settings.image -%}
-                        {%- assign heading = block.settings.title -%}
-                        {%- assign desc = block.settings.description -%}
-                        <div class="marq-review">
-                            <div class="marq-review-img">
-                                {% if image != blank %}
-                                    {% assign image_url = image | image_url  %}
-                                    {% assign image_format = image.alt  %}
-                                <picture>
-                                    <source srcset="{{ image_url }}" type="{{ image_format }}">
-                                    <img width="380" height="240" src="#" alt="" loading="lazy">
-                                </picture>
-                                {% endif %}
+                        {% if block.type == 'slide' %}
+                            {%- assign image = block.settings.image -%}
+                            {%- assign heading = block.settings.title -%}
+                            {%- assign desc = block.settings.description -%}
+                            <div class="marq-review">
+                                <div class="marq-review-img">
+                                    {% if image != blank %}
+                                        {% assign image_url = image | image_url  %}
+                                        {% assign image_format = image.alt  %}
+                                    <picture>
+                                        <source srcset="{{ image_url }}" type="{{ image_format }}">
+                                        <img width="380" height="240" src="#" alt="" loading="lazy">
+                                    </picture>
+                                    {% endif %}
+                                </div>
+                                <div class="marq-review-content">
+                                    {% if heading != blank %}
+                                    <div class="text"><b>{{ heading }}</b></div>
+                                    {% endif %}
+                                    {% if desc != blank %}
+                                    <div class="text text-sm">{{ desc }}</div>
+                                    {% endif %}
+                                </div>
                             </div>
-                            <div class="marq-review-content">
-                                {% if heading != blank %}
-                                <div class="text"><b>{{ heading }}</b></div>
-                                {% endif %}
-                                {% if desc != blank %}
-                                <div class="text text-sm">{{ desc }}</div>
-                                {% endif %}
-                            </div>
-                        </div>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>
@@ -49,13 +51,68 @@
     </div>
     {% endif %}
     <div class="spacer-lg"></div>
+    {% assign image_blocks = section.blocks | where: "type", "image" %}
+    {% if image_blocks.size > 0 %}
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-7 col-sm-12">
-                {% comment %} <?php include 'template-parts/_awards.php'; ?> {% endcomment %}
+                <div class="swiper-entry awards-slider">
+                    <div class="swiper-controls-wrap d-none">
+                        <div class="swiper-button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-container overflow-visible" data-options='{ 
+                        "slidesPerView": 1,
+                        "spaceBetween": 12,
+                        "breakpoints":{
+                            "576":{"spaceBetween": 16, "slidesPerView": 4},
+                            "992":{"spaceBetween": 16, "slidesPerView": 4},
+                            "1200":{"spaceBetween": 16, "slidesPerView": 4}
+                        }}'>
+                        <div class="swiper-wrapper">
+                            {% for block in section.blocks %}
+                            {% if block.type == 'slide' %}
+                                {%- assign image = block.settings.image -%}
+                                {%- assign caption = block.settings.caption -%}
+                                {%- assign year = block.settings.year -%}
+                                <div class="swiper-slide">
+                                    <div class="award-item">
+                                        {% if image != blank %}
+                                        {% assign image_url = image | image_url  %}
+                                        <div class="award-img">
+                                            <img width="380" height="240" src="{{ image_url }}" alt="" loading="lazy">
+                                        </div>
+                                        {% endif %}
+                                        <div class="award-info">
+                                            {% if caption != blank %}
+                                            <div class="text">{{ caption }}</div>
+                                            {% endif %}
+                                            {% if year != blank %}
+                                            <div class="text text-sm">2024</div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+                </div>
             </div>
         </div>
     </div>
+    {% endif %}
 </div>
 
 {% schema %}
@@ -98,6 +155,27 @@
                 "id": "description",
                 "label": "Position"
             },
+            ]
+        },
+        {
+            "type": "image",
+            "name": "Bottom Gallery Item",
+            "settings": [
+                {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+                },
+                {
+                "type": "textarea",
+                "id": "caption",
+                "label": "Caption"
+                },
+                {
+                "type": "url",
+                "id": "year",
+                "label": "Year"
+                }
             ]
         }
   ],
