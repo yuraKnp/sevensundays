@@ -33,11 +33,29 @@
         "title": "One smart system.  Endless Possibilites",
         "description": "In seconds, you adapt your system to your needs."
       }
+    },
+    "call_to_action_cpW7xW": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "section_type": "type_1",
+        "image": "shopify://shop_images/cta-video.webp",
+        "image_mob": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Teste das preisgekrönte modulare Schlafsystem bei dir zuhause – mit persönlicher Expertenberatung.",
+        "subtitle": "Überzeug dich selbst – und wach auf wie Sonntag, jeden Tag.",
+        "short_description": "✓ Keine Recherche-Odyssee✓ Dein Zuhause statt Verkaufsfläche✓ Zertifizierte Expertenberatung✓ Testen vor dem Kauf",
+        "link_text": "Schlafsystem erleben",
+        "link_url": "#",
+        "link_text2": "",
+        "link_url2": ""
+      }
     }
   },
   "order": [
     "main",
     "background_image_jpL9fw",
-    "small_image_with_text_g4aKPC"
+    "small_image_with_text_g4aKPC",
+    "call_to_action_cpW7xW"
   ]
 }
