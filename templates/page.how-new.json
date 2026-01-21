@@ -52,6 +52,19 @@
     },
     "recovery_experts_ppafPD": {
       "type": "recovery-experts",
+      "blocks": {
+        "slide_VqcaFg": {
+          "type": "slide",
+          "settings": {
+            "title": "Dr. Helge Riepenhof",
+            "description": "Global Medical Director Red Bull",
+            "add_description": "<p>Champions werden nachts gemacht. Bei Seven Sundays stelle ich sicher, dass jede Komponente für Höchstleistung entwickelt ist. Spitzensportler haben keine Zeit für schlechten Schlaf – unsere Körper auch nicht. Das System funktioniert messbar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_VqcaFg"
+      ],
       "name": "Recovery experts",
       "settings": {
         "subtitle": "Experten für Wiederherstellung an Ihrer Seite",
