@@ -16,9 +16,20 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "small_image_with_text_g4aKPC": {
+      "type": "small-image-with-text",
+      "name": "Small image with text",
+      "settings": {
+        "section_type": "type_1",
+        "image": "shopify://shop_images/Testimonial_Author_Image.png",
+        "title": "One smart system.  Endless Possibilites",
+        "description": "In seconds, you adapt your system to your needs."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "small_image_with_text_g4aKPC"
   ]
 }
