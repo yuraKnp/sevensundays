@@ -41,7 +41,7 @@
       "name": "Try sleep section",
       "settings": {
         "subtitle": "The good sleep starts here",
-        "title": "Try the sleep system at home, with our expert guidance",
+        "title": "Try the sleep system  at home, with our  expert guidance",
         "description": "Experience the award-winning modular sleep system for yourself. Tell us a bit about your sleep. We’ll reach out to arrange a home consultation.",
         "image": "shopify://shop_images/exclusive-banner-img_62fb54c6-8045-4919-968c-ec7e5d671922.webp",
         "small_top_img": "shopify://shop_images/sec-try-small-img.webp",
@@ -109,6 +109,54 @@
         "link_text2": "",
         "link_url2": ""
       }
+    },
+    "real_sleep_iA7keG": {
+      "type": "real-sleep",
+      "blocks": {
+        "slide_NhFTH7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
+            "title": "Thomas Koht",
+            "description": "Tech Executive"
+          }
+        },
+        "slide_JEqaRJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-1_c542d519-1ce8-4bed-986c-d9b8d73afc1d.webp",
+            "title": "Jan Donovan",
+            "description": "Olympic Swimmer"
+          }
+        },
+        "image_7bUEMR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/award-1.svg",
+            "caption": "German Brand Winner 2024",
+            "year": ""
+          }
+        },
+        "image_dCmgKy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/award-2.svg",
+            "caption": "Europas am schnellsten wachsende Unternehmen",
+            "year": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_NhFTH7",
+        "slide_JEqaRJ",
+        "image_7bUEMR",
+        "image_dCmgKy"
+      ],
+      "name": "Real sleep testimonial",
+      "settings": {
+        "subtitle": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
+        "title": "Bewertungen von außergewöhnlichen Menschen wie dir."
+      }
     }
   },
   "order": [
@@ -117,6 +165,7 @@
     "small_image_with_text_g4aKPC",
     "try_sleep_gWYx8e",
     "recovery_experts_ppafPD",
-    "call_to_action_cpW7xW"
+    "call_to_action_cpW7xW",
+    "real_sleep_iA7keG"
   ]
 }
