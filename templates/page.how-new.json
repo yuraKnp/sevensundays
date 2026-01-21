@@ -70,11 +70,21 @@
             "description": "Schlafexperte und medizinischer Beirat bei Seven Sundays",
             "add_description": "<p>Echte Schlafoptimierung erfordert Individualisierung auf höchstem Niveau. Bei Seven Sundays bringe ich meine Expertise ein, damit das modulare System gesamtheitlich optimalen Schlaf fördert. Hier wird Schlafmedizin zur anwendbaren Innovation.</p>"
           }
+        },
+        "slide_KUd3U6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/advisor-img-2.png",
+            "title": "Dr. Michael Feld",
+            "description": "Schlafexperte und medizinischer Beirat bei Seven Sundays",
+            "add_description": "<p>Der Rücken trägt uns durchs Leben – und verdient nachts besondere Fürsorge. Bei Seven Sundays bringe ich meine Erfahrung ein, um jede Komponente ergonomisch zu optimieren – etwa die Stretch Schicht. Was mich antreibt: dass man sich hinlegt und spürt – hier kann mein Rücken loslassen.</p>"
+          }
         }
       },
       "block_order": [
         "slide_VqcaFg",
-        "slide_Vhi8Wi"
+        "slide_Vhi8Wi",
+        "slide_KUd3U6"
       ],
       "name": "Recovery experts",
       "settings": {
