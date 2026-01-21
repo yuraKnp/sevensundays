@@ -109,6 +109,14 @@
         "link_text2": "",
         "link_url2": ""
       }
+    },
+    "real_sleep_U9hg97": {
+      "type": "real-sleep",
+      "name": "Real sleep testimonial",
+      "settings": {
+        "subtitle": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
+        "title": "Bewertungen von außergewöhnlichen Menschen wie dir."
+      }
     }
   },
   "order": [
@@ -117,6 +125,7 @@
     "small_image_with_text_g4aKPC",
     "try_sleep_gWYx8e",
     "recovery_experts_ppafPD",
-    "call_to_action_cpW7xW"
+    "call_to_action_cpW7xW",
+    "real_sleep_U9hg97"
   ]
 }
