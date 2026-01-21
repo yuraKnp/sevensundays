@@ -128,11 +128,20 @@
             "title": "Jan Donovan",
             "description": "Olympic Swimmer"
           }
+        },
+        "image_7bUEMR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/award-1.svg",
+            "caption": "German Brand Winner 2024",
+            "year": ""
+          }
         }
       },
       "block_order": [
         "slide_NhFTH7",
-        "slide_JEqaRJ"
+        "slide_JEqaRJ",
+        "image_7bUEMR"
       ],
       "name": "Real sleep testimonial",
       "settings": {
