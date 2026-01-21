@@ -3,6 +3,8 @@
 {% if image != blank %}
 {% assign image_url = image | image_url  %}
 {% assign image_format = image.format  %}
+{% assign selected_video = section.settings.hero_video_file %}
+{% assign video_url = selected_video.sources.first.url %}
 <div class="section">
     <div class="banner">
         <div class="banner-media">
@@ -15,10 +17,17 @@
                 {% endif %}
                 <img width="380" height="240" src="#" alt="" loading="eager">
             </picture>
+
+            {% if video_url != blank %}
+            <div class="video video-present">
+              <video muted playsinline loop preload poster="{{ image_url }}" data-src="{{ video_url }}"></video>
+            </div>
+            {% endif %}
         </div>
-        <div class="banner-align size4"></div>
+        <div class="banner-align size6"></div>
     </div>
 </div>
+
 {% endif %}
 
 {% schema %}
@@ -39,6 +48,11 @@
         "type": "image_picker",
         "id": "image_mob",
         "label": "Background image mobile"
+    },
+    {
+        "type": "video",
+        "id": "hero_video_file",
+        "label": "Background video"
     },
   ],
   "presets": [
