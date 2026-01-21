@@ -1,7 +1,7 @@
 {% assign section_type = section.settings.section_type %}
 
 {% if section_type == 'type_1' %}
-<div class="section sec-black">
+{% comment %} <div class="section sec-black">
     <div class="banner">
         <div class="banner-media"></div>
         <div class="banner-align">
@@ -25,6 +25,36 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<div class="section sec-black smart-sec">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <div class="banner-info text-center">
+                    {% if section.settings.title != blank %}
+                    <div class="h1 title text-balance">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.description != blank %}
+                    <div class="text text-md">{{ section.settings.description }}</div>
+                    {% endif %}
+                    {% if section.settings.image != blank %}
+                    {%- assign image = section.settings.image -%}
+                    {% assign image_url = image | image_url  %}
+                    {% assign selected_video = section.settings.hero_video_file %}
+                    {% assign video_url = selected_video.sources.first.url %}
+                    {% if video_url != blank %}
+                    <div class="smart-video-block video-block">
+                        <img width="380" height="240" src="{{ image_url }}" alt="" loading="lazy">
+                        <div class="video video-present">
+                            <video muted playsinline loop preload poster="{{ image_url }}" data-src="{{ video_url }}"></video>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -91,6 +121,11 @@
         "type": "image_picker",
         "id": "image",
         "label": "Small image"
+    },
+    {
+      "type": "video",
+      "id": "hero_video_file",
+      "label": "Background video",
     },
     {
         "type": "text",
