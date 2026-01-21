@@ -50,12 +50,47 @@
         "link_url": "https://seven-sundays.shop/pages/experience"
       }
     },
-    "testimonial_slider_3Ppc9B": {
-      "type": "testimonial-slider",
-      "name": "Testimonial slider",
+    "recovery_experts_ppafPD": {
+      "type": "recovery-experts",
+      "blocks": {
+        "slide_VqcaFg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/advisor-img-1_1106b847-5bd4-4841-b8a0-9bfd9fe9a0a9.webp",
+            "title": "Dr. Helge Riepenhof",
+            "description": "Global Medical Director Red Bull",
+            "add_description": "<p>Champions werden nachts gemacht. Bei Seven Sundays stelle ich sicher, dass jede Komponente für Höchstleistung entwickelt ist. Spitzensportler haben keine Zeit für schlechten Schlaf – unsere Körper auch nicht. Das System funktioniert messbar.</p>"
+          }
+        },
+        "slide_Vhi8Wi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/advisor-img-4.png",
+            "title": "Dr. Michael Feld",
+            "description": "Schlafexperte und medizinischer Beirat bei Seven Sundays",
+            "add_description": "<p>Echte Schlafoptimierung erfordert Individualisierung auf höchstem Niveau. Bei Seven Sundays bringe ich meine Expertise ein, damit das modulare System gesamtheitlich optimalen Schlaf fördert. Hier wird Schlafmedizin zur anwendbaren Innovation.</p>"
+          }
+        },
+        "slide_KUd3U6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/advisor-img-2.png",
+            "title": "Dr. Michael Feld",
+            "description": "Schlafexperte und medizinischer Beirat bei Seven Sundays",
+            "add_description": "<p>Der Rücken trägt uns durchs Leben – und verdient nachts besondere Fürsorge. Bei Seven Sundays bringe ich meine Erfahrung ein, um jede Komponente ergonomisch zu optimieren – etwa die Stretch Schicht. Was mich antreibt: dass man sich hinlegt und spürt – hier kann mein Rücken loslassen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_VqcaFg",
+        "slide_Vhi8Wi",
+        "slide_KUd3U6"
+      ],
+      "name": "Recovery experts",
       "settings": {
-        "section_type": "type_1",
-        "slider_title": ""
+        "subtitle": "Experten für Wiederherstellung an Ihrer Seite",
+        "title": "Unser wissenschaftlicher Beirat",
+        "description": "Seven Sundays hat sich mit renommierten Medizinexperten zusammengeschlossen, die führend auf ihren jeweiligen Gebieten sind. Sie unterstützen Seven Sundays bei der Weiterentwicklung des modularen Schlafsystems auf Basis modernster Wissenschaft."
       }
     },
     "call_to_action_cpW7xW": {
@@ -81,7 +116,7 @@
     "background_image_jpL9fw",
     "small_image_with_text_g4aKPC",
     "try_sleep_gWYx8e",
-    "testimonial_slider_3Ppc9B",
+    "recovery_experts_ppafPD",
     "call_to_action_cpW7xW"
   ]
 }
