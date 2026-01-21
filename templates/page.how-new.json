@@ -36,6 +36,28 @@
         "description": "In wenigen Sekunden passt du dein System an deine Bedürfnisse an."
       }
     },
+    "try_sleep_gWYx8e": {
+      "type": "try-sleep",
+      "name": "Try sleep section",
+      "settings": {
+        "subtitle": "The good sleep starts here",
+        "title": "Try the sleep system  at home, with our  expert guidance",
+        "description": "Experience the award-winning modular sleep system for yourself. Tell us a bit about your sleep. We’ll reach out to arrange a home consultation.",
+        "image": "shopify://shop_images/exclusive-banner-img_62fb54c6-8045-4919-968c-ec7e5d671922.webp",
+        "small_top_img": "shopify://shop_images/sec-try-small-img.webp",
+        "small_bottom_img": "shopify://shop_images/sec-try-small-img-2.webp",
+        "link_text": "Book an at-home demo",
+        "link_url": "https://seven-sundays.shop/pages/experience"
+      }
+    },
+    "testimonial_slider_3Ppc9B": {
+      "type": "testimonial-slider",
+      "name": "Testimonial slider",
+      "settings": {
+        "section_type": "type_1",
+        "slider_title": ""
+      }
+    },
     "call_to_action_cpW7xW": {
       "type": "call-to-action",
       "name": "Call to action",
@@ -58,6 +80,8 @@
     "main",
     "background_image_jpL9fw",
     "small_image_with_text_g4aKPC",
+    "try_sleep_gWYx8e",
+    "testimonial_slider_3Ppc9B",
     "call_to_action_cpW7xW"
   ]
 }
