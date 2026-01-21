@@ -30,8 +30,8 @@
       "settings": {
         "section_type": "type_1",
         "image": "shopify://shop_images/Testimonial_Author_Image.png",
-        "title": "One smart system.  Endless Possibilites",
-        "description": "In seconds, you adapt your system to your needs."
+        "title": "Ein smartes System. Unendliche Möglichkeiten",
+        "description": "In wenigen Sekunden passt du dein System an deine Bedürfnisse an."
       }
     },
     "call_to_action_cpW7xW": {
@@ -44,9 +44,9 @@
         "hero_video_file": "shopify://files/videos/cta-video.mp4",
         "title": "Teste das preisgekrönte modulare Schlafsystem bei dir zuhause – mit persönlicher Expertenberatung.",
         "subtitle": "Überzeug dich selbst – und wach auf wie Sonntag, jeden Tag.",
-        "short_description": "✓ Keine Recherche-Odyssee✓ Dein Zuhause statt Verkaufsfläche✓ Zertifizierte Expertenberatung✓ Testen vor dem Kauf",
+        "short_description": "<p>✓ Keine Recherche-Odyssee</p><p>✓ Dein Zuhause statt Verkaufsfläche</p><p>✓ Zertifizierte Expertenberatung</p><p>✓ Testen vor dem Kauf</p>",
         "link_text": "Schlafsystem erleben",
-        "link_url": "#",
+        "link_url": "https://seven-sundays.shop/pages/experience",
         "link_text2": "",
         "link_url2": ""
       }
