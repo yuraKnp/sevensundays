@@ -136,12 +136,21 @@
             "caption": "German Brand Winner 2024",
             "year": ""
           }
+        },
+        "image_dCmgKy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/award-2.svg",
+            "caption": "Europas am schnellsten wachsende Unternehmen",
+            "year": ""
+          }
         }
       },
       "block_order": [
         "slide_NhFTH7",
         "slide_JEqaRJ",
-        "image_7bUEMR"
+        "image_7bUEMR",
+        "image_dCmgKy"
       ],
       "name": "Real sleep testimonial",
       "settings": {
