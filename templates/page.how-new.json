@@ -16,15 +16,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "page_content_izA8Kj": {
-      "type": "page-content",
-      "name": "General page content",
-      "settings": {}
     }
   },
   "order": [
-    "main",
-    "page_content_izA8Kj"
+    "main"
   ]
 }
