@@ -93,23 +93,6 @@
         "description": "Seven Sundays hat sich mit renommierten Medizinexperten zusammengeschlossen, die führend auf ihren jeweiligen Gebieten sind. Sie unterstützen Seven Sundays bei der Weiterentwicklung des modularen Schlafsystems auf Basis modernster Wissenschaft."
       }
     },
-    "call_to_action_cpW7xW": {
-      "type": "call-to-action",
-      "name": "Call to action",
-      "settings": {
-        "section_type": "type_1",
-        "image": "shopify://shop_images/cta-video.webp",
-        "image_mob": "shopify://shop_images/cta-video.webp",
-        "hero_video_file": "shopify://files/videos/cta-video.mp4",
-        "title": "Teste das preisgekrönte modulare Schlafsystem bei dir zuhause – mit persönlicher Expertenberatung.",
-        "subtitle": "Überzeug dich selbst – und wach auf wie Sonntag, jeden Tag.",
-        "short_description": "<p>✓ Keine Recherche-Odyssee</p><p>✓ Dein Zuhause statt Verkaufsfläche</p><p>✓ Zertifizierte Expertenberatung</p><p>✓ Testen vor dem Kauf</p>",
-        "link_text": "Schlafsystem erleben",
-        "link_url": "https://seven-sundays.shop/pages/experience",
-        "link_text2": "",
-        "link_url2": ""
-      }
-    },
     "real_sleep_iA7keG": {
       "type": "real-sleep",
       "blocks": {
@@ -132,9 +115,9 @@
         "image_7bUEMR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/award-4.svg",
-            "caption": "German Design Award 2019",
-            "year": "2019"
+            "image": "shopify://shop_images/award-1.svg",
+            "caption": "German Brand Winner 2024",
+            "year": "2024"
           }
         },
         "image_dCmgKy": {
@@ -152,6 +135,14 @@
             "caption": "Innovation Ergonomics 2023",
             "year": "2022"
           }
+        },
+        "image_MxAj8b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/award-4.svg",
+            "caption": "German Design Award 2019",
+            "year": "2019"
+          }
         }
       },
       "block_order": [
@@ -159,12 +150,30 @@
         "slide_JEqaRJ",
         "image_7bUEMR",
         "image_dCmgKy",
-        "image_nRa8xA"
+        "image_nRa8xA",
+        "image_MxAj8b"
       ],
       "name": "Real sleep testimonial",
       "settings": {
         "subtitle": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
         "title": "Bewertungen von außergewöhnlichen Menschen wie dir."
+      }
+    },
+    "call_to_action_cpW7xW": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "section_type": "type_1",
+        "image": "shopify://shop_images/cta-video.webp",
+        "image_mob": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Teste das preisgekrönte modulare Schlafsystem bei dir zuhause – mit persönlicher Expertenberatung.",
+        "subtitle": "Überzeug dich selbst – und wach auf wie Sonntag, jeden Tag.",
+        "short_description": "<p>✓ Keine Recherche-Odyssee</p><p>✓ Dein Zuhause statt Verkaufsfläche</p><p>✓ Zertifizierte Expertenberatung</p><p>✓ Testen vor dem Kauf</p>",
+        "link_text": "Schlafsystem erleben",
+        "link_url": "https://seven-sundays.shop/pages/experience",
+        "link_text2": "",
+        "link_url2": ""
       }
     }
   },
@@ -174,7 +183,7 @@
     "small_image_with_text_g4aKPC",
     "try_sleep_gWYx8e",
     "recovery_experts_ppafPD",
-    "call_to_action_cpW7xW",
-    "real_sleep_iA7keG"
+    "real_sleep_iA7keG",
+    "call_to_action_cpW7xW"
   ]
 }
