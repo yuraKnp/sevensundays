@@ -1,0 +1,124 @@
+{%- assign image = section.settings.image -%}
+{%- assign small_top_img = section.settings.small_top_img -%}
+{%- assign small_bottom_img = section.settings.small_bottom_img -%}
+<div class="section sec-black sec-try">
+    <div class="banner">
+        {% if small_top_img != blank %}
+            {% assign image_url = small_top_img | image_url  %}
+            {% assign image_format = small_top_img.format  %}
+        <div class="small-img top">
+            <picture>
+                <source srcset="{{ image_url }}" type="{{ image_format }}">
+                <img width="380" height="240" src="#" alt="" loading="lazy">
+            </picture>
+        </div>
+        {% endif %}
+        {% if small_bottom_img != blank %}
+            {% assign image_url = small_bottom_img | image_url  %}
+            {% assign image_format = small_bottom_img.format  %}
+        <div class="small-img">
+            <picture>
+                <source srcset="{{ image_url }}" type="{{ image_format }}">
+                <img width="380" height="240" src="#" alt="" loading="lazy">
+            </picture>
+        </div>
+        {% endif %}
+        <div class="banner-align size5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="banner-info">
+                            {% if section.settings.subtitle != blank %}
+                            <div class="motto">{{ section.settings.subtitle }}</div>
+                            {% endif %}
+                            {% if section.settings.title != blank %}
+                            <div class="h2 title">{{ section.settings.title }}</div>
+                            {% endif %}
+                            {% if section.settings.description != blank %}
+                            <div class="text text-md">{{ section.settings.description }}</div>
+                            {% endif %}
+                            {% if section.settings.link_text != blank and section.settings.link_url != blank %}
+                            <a href="{{ section.settings.link_url }}" class="btn btn-four">
+                                <b>{{ section.settings.link_text }}</b>
+                                {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
+                                {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                                {%- assign final_svg_url = url_no_version | append: '#btn-arrow' -%}
+                                <svg width="12" height="12"><use href="{{ final_svg_url }}"></use></svg>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-media">
+            {% if image != blank %}
+                {% assign image_url = image | image_url  %}
+                {% assign image_format = image.format  %}
+            <picture>
+                <source srcset="{{ image_url }}" type="{{ image_format }}">
+                <img width="380" height="240" src="#" alt="" loading="lazy">
+            </picture>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Try sleep section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Big right image"
+    },
+    {
+        "type": "image_picker",
+        "id": "small_top_img",
+        "label": "Small top image"
+    },
+    {
+        "type": "image_picker",
+        "id": "small_bottom_img",
+        "label": "Small bottom image"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "text",
+      "id": "link_url",
+      "label": "Link url"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Try sleep section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
