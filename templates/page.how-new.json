@@ -134,7 +134,7 @@
           "settings": {
             "image": "shopify://shop_images/award-1.svg",
             "caption": "German Brand Winner 2024",
-            "year": ""
+            "year": "2024"
           }
         },
         "image_dCmgKy": {
@@ -142,7 +142,15 @@
           "settings": {
             "image": "shopify://shop_images/award-2.svg",
             "caption": "Europas am schnellsten wachsende Unternehmen",
-            "year": ""
+            "year": "2023"
+          }
+        },
+        "image_nRa8xA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/award-3.svg",
+            "caption": "Innovation Ergonomics 2023",
+            "year": "2022"
           }
         }
       },
@@ -150,7 +158,8 @@
         "slide_NhFTH7",
         "slide_JEqaRJ",
         "image_7bUEMR",
-        "image_dCmgKy"
+        "image_dCmgKy",
+        "image_nRa8xA"
       ],
       "name": "Real sleep testimonial",
       "settings": {
