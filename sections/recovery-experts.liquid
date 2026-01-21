@@ -16,75 +16,72 @@
             </div>
         </div>
         {% if section.blocks != blank %}
-        {%- assign app_slide = section.blocks | where: "type", "slide" -%}
-            {% if app_slide > 0 %}
-                <div class="row justify-content-center">
-                    <div class="col-10 col-sm-12">
-                        <div class="swiper-entry advisor2-slider">
-                            <div class="swiper-container" data-options='{ 
-                                "slidesPerView": 1,
-                                "spaceBetween": 16,
-                                "breakpoints":{
-                                    "576":{"spaceBetween": 16, "slidesPerView": 1.8},
-                                    "992":{"spaceBetween": 24, "slidesPerView": 2.5},
-                                    "1200":{"spaceBetween": 24, "slidesPerView": 3}
-                                }}'>
-                                <div class="swiper-wrapper">
-                                    {% for block in section.blocks %}
-                                    {%- assign image = block.settings.image -%}
-                                    {%- assign heading = block.settings.title -%}
-                                    {%- assign desc = block.settings.description -%}
-                                    {%- assign add_description = block.settings.add_description -%}
-                                    <div class="swiper-slide">
-                                        <div class="advisor-item type3">
-                                            <div class="advisor-img">
-                                                {% if image != blank %}
-                                                    {% assign image_url = image | image_url  %}
-                                                    {% assign image_format = image.alt  %}
-                                                    <picture>
-                                                        <source srcset="{{ image_url }}" type="{{ image_format }}">
-                                                        <img width="380" height="240" src="#" alt="" loading="lazy">
-                                                    </picture>
-                                                {% endif %}
-                                                {% if add_description != blank %}
-                                                    <div class="advisor-info">
-                                                        <div class="text">“{{ add_description }}”</div>
-                                                    </div>
-                                                {% endif %}
-                                                <div class="more-info js-advisor-info"></div>
-                                            </div>
-                                            <div class="info-bottom">
-                                                {% if heading != blank %}
-                                                <div class="text"><b>{{ heading }}</b></div>
-                                                {% endif %}
-                                                {% if desc != blank %}
-                                                <div class="text text-sm">{{ desc }}</div>
-                                                {% endif %}
-                                            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-12">
+                    <div class="swiper-entry advisor2-slider">
+                        <div class="swiper-container" data-options='{ 
+                            "slidesPerView": 1,
+                            "spaceBetween": 16,
+                            "breakpoints":{
+                                "576":{"spaceBetween": 16, "slidesPerView": 1.8},
+                                "992":{"spaceBetween": 24, "slidesPerView": 2.5},
+                                "1200":{"spaceBetween": 24, "slidesPerView": 3}
+                            }}'>
+                            <div class="swiper-wrapper">
+                                {% for block in section.blocks %}
+                                {%- assign image = block.settings.image -%}
+                                {%- assign heading = block.settings.title -%}
+                                {%- assign desc = block.settings.description -%}
+                                {%- assign add_description = block.settings.add_description -%}
+                                <div class="swiper-slide">
+                                    <div class="advisor-item type3">
+                                        <div class="advisor-img">
+                                            {% if image != blank %}
+                                                {% assign image_url = image | image_url  %}
+                                                {% assign image_format = image.alt  %}
+                                                <picture>
+                                                    <source srcset="{{ image_url }}" type="{{ image_format }}">
+                                                    <img width="380" height="240" src="#" alt="" loading="lazy">
+                                                </picture>
+                                            {% endif %}
+                                            {% if add_description != blank %}
+                                                <div class="advisor-info">
+                                                    <div class="text">“{{ add_description }}”</div>
+                                                </div>
+                                            {% endif %}
+                                            <div class="more-info js-advisor-info"></div>
+                                        </div>
+                                        <div class="info-bottom">
+                                            {% if heading != blank %}
+                                            <div class="text"><b>{{ heading }}</b></div>
+                                            {% endif %}
+                                            {% if desc != blank %}
+                                            <div class="text text-sm">{{ desc }}</div>
+                                            {% endif %}
                                         </div>
                                     </div>
-                                    {% endfor %}
                                 </div>
+                                {% endfor %}
                             </div>
-                            <div class="swiper-controls-wrap text-center">
-                                <div class="swiper-button-prev style5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div class="swiper-button-next style5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination swiper-pagination-relative d-none"></div>
                         </div>
+                        <div class="swiper-controls-wrap text-center">
+                            <div class="swiper-button-prev style5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next style5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-relative d-none"></div>
                     </div>
                 </div>
-            {% endif %}
+            </div>
         {% endif %}
     </div>
 </div>

@@ -199,8 +199,8 @@
 
 
                 {% if section.blocks != blank %}
-                {%- assign app_slide = section.blocks | where: "type", "slide" -%}
-                    {% if app_slide > 0 %}
+                {% comment %} {%- assign app_slide = section.blocks | where: "type", "slide" -%}
+                    {% if app_slide > 0 %} {% endcomment %}
                         <div class="support-items">
                             {% for block in section.blocks %}
                                 {%- assign image = block.settings.image -%}
@@ -225,7 +225,7 @@
                                 </div>
                             {% endfor %}
                         </div>
-                    {% endif %}
+                    {% comment %} {% endif %} {% endcomment %}
                 {% endif %}
                 
             </div>
