@@ -17,6 +17,27 @@
         "padding_bottom": 28
       }
     },
+    "how_it_works_banner_3MKw7e": {
+      "type": "how-it-works-banner",
+      "blocks": {
+        "slide_A7rxbL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/frame-001.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_A7rxbL"
+      ],
+      "name": "How it works banner",
+      "settings": {
+        "title": "Meet the world's most personal mattress",
+        "subtitle": "engineered in switzerland",
+        "title_under_img": "Sleep the way you deserve",
+        "short_desc_under_img": "Your body and needs change - over years, sometimesovernight. With the modular sleep system form SevenSundays, you adapt to it."
+      }
+    },
     "background_image_jpL9fw": {
       "type": "background-image",
       "name": "Background image",
@@ -179,6 +200,7 @@
   },
   "order": [
     "main",
+    "how_it_works_banner_3MKw7e",
     "background_image_jpL9fw",
     "small_image_with_text_g4aKPC",
     "try_sleep_gWYx8e",
