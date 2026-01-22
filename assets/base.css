@@ -3876,6 +3876,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   align-items: center!important;
   height: 100px;
   width: 100px;
+  border-radius: 100px;
   overflow: hidden !important;
   justify-content: center!important;
 }
@@ -3987,13 +3988,16 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   clip-path: inset(0 round var(--rd-1));
 }
 
-/* .cart-item__image-container{
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  overflow: hidden;
-  min-width: 50px;
-} */
+@media(max-width: 767px){
+  .cart-item__image-container{
+    width: 50px;
+    height: 50px;
+    
+    overflow: hidden;
+    min-width: 50px;
+  }
+}
+
 
 #main-cart-items{
   margin-top: 20px;
