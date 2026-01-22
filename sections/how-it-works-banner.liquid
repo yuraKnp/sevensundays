@@ -12,15 +12,7 @@
                 </div>
             </div>
             {% if section.blocks != blank %}
-                {% capture comma_list %}
-                {% for block in section.blocks %}
-                    {%- assign image = block.settings.image -%}
-                        {% if image != blank %}
-                            {% assign image_url = image | image_url  %}
-                            {{ image_url }}{% unless forloop.last %},{% endunless %}
-                        {% endif %}
-                {% endfor %}
-                {% endcapture %}
+                {% capture comma_list %}{% for block in section.blocks %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}
                 {% assign comma_list = comma_list | strip | replace: ' ', '' %}
                 {% for block in section.blocks limit: 1 %}
                     {%- assign image = block.settings.image -%}
