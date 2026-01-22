@@ -649,6 +649,16 @@
         "link_text2": "",
         "link_url2": ""
       }
+    },
+    "four_ways_wT6Fpg": {
+      "type": "four-ways",
+      "name": "Four ways section",
+      "settings": {
+        "title": "Sleep sensations thatgive you more thanjust comfort",
+        "subtitle": "OPEN. RECONFIGURE. RECOVER.",
+        "bottom_title": "Design your sleep. For life",
+        "bottom_description": "With Seven Sundays, you'll never buy another mattress. Yoursleep system grows with you."
+      }
     }
   },
   "order": [
@@ -660,6 +670,7 @@
     "try_sleep_gWYx8e",
     "recovery_experts_ppafPD",
     "real_sleep_iA7keG",
-    "call_to_action_cpW7xW"
+    "call_to_action_cpW7xW",
+    "four_ways_wT6Fpg"
   ]
 }
