@@ -1,0 +1,202 @@
+<div class="section padd-lg gradient-1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="title-shortcode text-center mb-64">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h2 title"> {{ section.settings.title }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-xl-8">
+                <div class="sensation-block">
+                    <div class="sticky-block">
+                        <div class="video-block max-506 mb-48">
+                            {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation1' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+                            {% assign comma_list = comma_list | strip | replace: ' ', '' %}
+                            {% for block in section.blocks %}
+                                {% if block.type == 'animation1' %}
+                                        {%- assign image = block.settings.image -%}
+                                        {% if image != blank %}
+                                        {% assign image_url = image | image_url  %}
+                                            <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="animation frame" />
+                                        {% endif %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                            {% comment %} <img class="auto-scroll-imgs" data-frame="20" data-folder="frame-3" src="frames/frame-3/frame-001.png" alt="animation frame" /> {% endcomment %}
+                            <!-- <div class="video video-present">
+                                <video muted playsinline loop preload poster="img/mattress-img-1.webp" data-src="video/A1_layers_explode_WEBM.webm"></video>
+                            </div> -->
+                        </div>
+                    </div>
+                    {% if section.blocks != blank %}
+                        {% for block in section.blocks %}
+                            {% if block.type == 'slides' %}
+                                {%- assign title = block.settings.title -%}
+                                {%- assign subtitle = block.settings.subtitle -%}
+                                {%- assign desc = block.settings.description -%}
+                                {%- assign link_text = block.settings.link_text -%}
+                                {%- assign link_url = block.settings.link_url -%}
+                                {%- assign add_text = block.settings.add_text -%}
+                                <div class="sensation-item">
+                                    {% if subtitle != blank %}
+                                    <div class="motto">Deep relaxation</div>
+                                    {% endif %}
+                                    {% if title != blank %}
+                                    <div class="title h3">{{ title }}</div>
+                                    {% endif %}
+                                    {% if desc != blank %}
+                                    <div class="text">{{ desc }}</div>
+                                    {% endif %}
+                                    {% if link_text != blank and link_url != blank %}
+                                    <a href="{{ link_url }}" class="btn">
+                                        <b>{{ link_text }}</b>
+                                        {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
+                                        {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                                        {%- assign final_svg_url = url_no_version | append: '#btn-arrow' -%}
+                                        <svg width="12" height="12"><use href="{{ final_svg_url }}"></use></svg>
+                                    </a>
+                                    {% endif %}
+                                    {% if add_text != blank %}
+                                    <div class="text">{{ add_text }}</div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="title-shortcode text-center mb-48">
+                    {% if section.settings.bottom_title != blank %}
+                    <div class="h2 title">{{ section.settings.bottom_title }}</div>
+                    {% endif %}
+                    {% if section.settings.bottom_description != blank %}
+                    <div class="text text-md">{{ section.settings.bottom_description }}</div>
+                    {% endif %}
+                </div>
+                <div class="video-block">
+                    {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation2' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+                        {% assign comma_list = comma_list | strip | replace: ' ', '' %}
+                        {% for block in section.blocks %}
+                            {% if block.type == 'animation2' %}
+                                    {%- assign image = block.settings.image -%}
+                                    {% if image != blank %}
+                                    {% assign image_url = image | image_url  %}
+                                        <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-2" src="{{ image_url }}" alt="animation frame" />
+                                    {% endif %}
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+                    {% comment %} <img class="auto-scroll-imgs" data-frame="20" data-folder="frame-3" src="frames/frame-3/frame-001.png" alt="animation frame" /> {% endcomment %}
+                    <!-- <div class="video video-present">
+                        <video muted playsinline loop preload poster="img/mattress-img-1.webp" data-src="video/A1_layers_explode_WEBM.webm"></video>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Four ways section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "bottom_title",
+      "label": "Bottom title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "bottom_description",
+      "label": "Bottom description"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "animation1",
+      "name": "First animation item",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+      ]
+    },
+    {
+      "type": "animation2",
+      "name": "Second animation item",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+      ]
+    },
+    {
+      "type": "slides",
+      "name": "Right info",
+      "settings": [
+        {
+            "type": "inline_richtext",
+            "id": "subtitle",
+            "label": "Subtitle"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "description",
+            "label": "Description"
+        },
+        {
+            "type": "text",
+            "id": "add_text",
+            "label": "Text after button"
+        },
+        {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link text"
+        },
+        {
+            "type": "text",
+            "id": "link_url",
+            "label": "Link url"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Four ways section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
