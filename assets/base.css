@@ -3944,3 +3944,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   object-fit: contain;
   object-position: center;
 }
+
+.h-menu-bottom .product-img{
+  top: 15px;
+} 
