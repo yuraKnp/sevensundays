@@ -4001,7 +4001,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 @media(max-width: 1100px){
   .cart-item__name.h4.break{
-    font-size: var(--h6);
+    font-size: 16px;
   }
 }
 
