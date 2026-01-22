@@ -3948,3 +3948,9 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .h-menu-bottom .product-img{
   top: 15px;
 } 
+
+
+@media (max-width: 767px) {
+  .hide-sm {display: none;}
+  .mr-bt {margin-bottom: var(--sp-24);}
+}
