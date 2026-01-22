@@ -510,6 +510,91 @@
         "description": "In wenigen Sekunden passt du dein System an deine Bedürfnisse an."
       }
     },
+    "four_ways_wT6Fpg": {
+      "type": "four-ways",
+      "blocks": {
+        "animation2_CBGL8Q": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-020.png"
+          }
+        },
+        "animation2_rzWbDn": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-019.png"
+          }
+        },
+        "animation2_LnbncM": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-018.png"
+          }
+        },
+        "animation1_NMAHYk": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-001.png"
+          }
+        },
+        "animation1_H7zVeL": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-002.png"
+          }
+        },
+        "slides_TyByFe": {
+          "type": "slides",
+          "settings": {
+            "subtitle": "Deep relaxation",
+            "title": "Calming",
+            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
+            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
+        },
+        "slides_RFtqPU": {
+          "type": "slides",
+          "settings": {
+            "subtitle": "Deep relaxation",
+            "title": "Calming",
+            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
+            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
+        },
+        "slides_n8ND4w": {
+          "type": "slides",
+          "settings": {
+            "subtitle": "Deep relaxation",
+            "title": "Calming",
+            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
+            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "animation2_CBGL8Q",
+        "animation2_rzWbDn",
+        "animation2_LnbncM",
+        "animation1_NMAHYk",
+        "animation1_H7zVeL",
+        "slides_TyByFe",
+        "slides_RFtqPU",
+        "slides_n8ND4w"
+      ],
+      "name": "Four ways section",
+      "settings": {
+        "title": "Sleep sensations thatgive you more thanjust comfort",
+        "subtitle": "OPEN. RECONFIGURE. RECOVER.",
+        "bottom_title": "Design your sleep. For life",
+        "bottom_description": "With Seven Sundays, you'll never buy another mattress. Yoursleep system grows with you."
+      }
+    },
     "try_sleep_gWYx8e": {
       "type": "try-sleep",
       "name": "Try sleep section",
@@ -649,16 +734,6 @@
         "link_text2": "",
         "link_url2": ""
       }
-    },
-    "four_ways_wT6Fpg": {
-      "type": "four-ways",
-      "name": "Four ways section",
-      "settings": {
-        "title": "Sleep sensations thatgive you more thanjust comfort",
-        "subtitle": "OPEN. RECONFIGURE. RECOVER.",
-        "bottom_title": "Design your sleep. For life",
-        "bottom_description": "With Seven Sundays, you'll never buy another mattress. Yoursleep system grows with you."
-      }
     }
   },
   "order": [
@@ -667,10 +742,10 @@
     "how_it_works_scroll_QjqedW",
     "background_image_jpL9fw",
     "small_image_with_text_g4aKPC",
+    "four_ways_wT6Fpg",
     "try_sleep_gWYx8e",
     "recovery_experts_ppafPD",
     "real_sleep_iA7keG",
-    "call_to_action_cpW7xW",
-    "four_ways_wT6Fpg"
+    "call_to_action_cpW7xW"
   ]
 }
