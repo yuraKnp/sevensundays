@@ -329,6 +329,18 @@
         "link_text2": "",
         "link_url2": ""
       }
+    },
+    "how_it_works_scroll_QjqedW": {
+      "type": "how-it-works-scroll",
+      "name": "How it works scroll",
+      "settings": {
+        "title": "Your three layers. Made for you.",
+        "subtitle": "Each layer server its purpose for comfort and ergonomics. You choose what suits you.",
+        "title_under_img": "Choose Your Comfort Layer",
+        "short_desc_under_img": "How do you feel after waking up?",
+        "first_tab_name": "Ehxausted",
+        "second_tab_name": "Stiff"
+      }
     }
   },
   "order": [
@@ -339,6 +351,7 @@
     "try_sleep_gWYx8e",
     "recovery_experts_ppafPD",
     "real_sleep_iA7keG",
-    "call_to_action_cpW7xW"
+    "call_to_action_cpW7xW",
+    "how_it_works_scroll_QjqedW"
   ]
 }
