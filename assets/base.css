@@ -4008,3 +4008,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .cart-item__quantity-wrapper{
   flex-wrap: nowrap;
 }
+
+.price.price--end{
+  font-size: 1rem;
+}
