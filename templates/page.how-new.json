@@ -314,6 +314,126 @@
           "settings": {
             "image": "shopify://shop_images/frame-020.png"
           }
+        },
+        "animation2_dYcT8p": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-001.png"
+          }
+        },
+        "animation2_FewtUn": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-002.png"
+          }
+        },
+        "animation2_damjgd": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-003.png"
+          }
+        },
+        "animation2_4jGKB8": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-004.png"
+          }
+        },
+        "animation2_LDy8Pa": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-005.png"
+          }
+        },
+        "animation2_BcecMk": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-006.png"
+          }
+        },
+        "animation2_DTWEmz": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-007.png"
+          }
+        },
+        "animation2_h4Gir7": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-008.png"
+          }
+        },
+        "animation2_HUYnKi": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-009.png"
+          }
+        },
+        "animation2_rj4gkq": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-010.png"
+          }
+        },
+        "animation2_9m8Jie": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-011.png"
+          }
+        },
+        "animation2_k9PpxH": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-012.png"
+          }
+        },
+        "animation2_Rj7eBf": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-013.png"
+          }
+        },
+        "animation2_acH8n7": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-014.png"
+          }
+        },
+        "animation2_w7TtU3": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-015.png"
+          }
+        },
+        "animation2_g4wmCb": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-016.png"
+          }
+        },
+        "animation2_TyzLLG": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-017.png"
+          }
+        },
+        "animation2_6GUnNC": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-018.png"
+          }
+        },
+        "animation2_kp8FcW": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-019.png"
+          }
+        },
+        "animation2_B4WHYi": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-020.png"
+          }
         }
       },
       "block_order": [
@@ -339,7 +459,27 @@
         "animation1_kxmjip",
         "animation1_VPWwbU",
         "animation1_tHPgig",
-        "animation1_W7jUqc"
+        "animation1_W7jUqc",
+        "animation2_dYcT8p",
+        "animation2_FewtUn",
+        "animation2_damjgd",
+        "animation2_4jGKB8",
+        "animation2_LDy8Pa",
+        "animation2_BcecMk",
+        "animation2_DTWEmz",
+        "animation2_h4Gir7",
+        "animation2_HUYnKi",
+        "animation2_rj4gkq",
+        "animation2_9m8Jie",
+        "animation2_k9PpxH",
+        "animation2_Rj7eBf",
+        "animation2_acH8n7",
+        "animation2_w7TtU3",
+        "animation2_g4wmCb",
+        "animation2_TyzLLG",
+        "animation2_6GUnNC",
+        "animation2_kp8FcW",
+        "animation2_B4WHYi"
       ],
       "name": "How it works scroll",
       "settings": {
