@@ -314,6 +314,12 @@
           "settings": {
             "image": "shopify://shop_images/frame-020.png"
           }
+        },
+        "animation2_dYcT8p": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-001.png"
+          }
         }
       },
       "block_order": [
@@ -339,7 +345,8 @@
         "animation1_kxmjip",
         "animation1_VPWwbU",
         "animation1_tHPgig",
-        "animation1_W7jUqc"
+        "animation1_W7jUqc",
+        "animation2_dYcT8p"
       ],
       "name": "How it works scroll",
       "settings": {
