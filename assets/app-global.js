@@ -699,66 +699,237 @@ jQuery(function ($) {
         $(item[0]).get(0)._LoopingElements = new LoopingElement(item[0], 0, spd, dir);
         $(item[1]).get(0)._LoopingElements = new LoopingElement(item[1], -100, spd, dir);
     });
-
-    //progress layer video
-    const $video = $('#layerVideo');
-    const video = $video.get(0);
-    const $layers = $('.layer-item');
-
-    if (!video || $layers.length < 2) return;
-
-    let targetTime = 0;
-    let currentTime = 0;
-    let isAnimating = false;
-
-    video.addEventListener('loadedmetadata', function () {
-        const duration = video.duration;
-
-        video.play();
-        video.pause();
-
-        const $first = $layers.first();
-        const $last = $layers.last();
-
-        const start = $first.offset().top;
-        const end = $last.offset().top + $last.outerHeight()/2;
-
-        function animate() {
-            currentTime += (targetTime - currentTime) * 0.1; //smoothing
-            video.currentTime = currentTime;
-
-            if (Math.abs(targetTime - currentTime) > 0.001) {
-                requestAnimationFrame(animate);
-            } else {
-                isAnimating = false;
-            }
-        }
-
-        $(window).on('scroll', function () {
-            const scrollY = $(window).scrollTop() + $(window).height() * 0.3;
-
-            const progress = Math.min(
-                Math.max((scrollY - start) / (end - start), 0),
-                1
-            );
-
-            targetTime = duration * progress;
-
-            if (!isAnimating) {
-                isAnimating = true;
-                requestAnimationFrame(animate);
-            }
-        });
-    });
+    
 
     // choose-layer
     $(document).on('click', '.choose-layer .item', function(){
         $(this).addClass('active').siblings().removeClass('active');
+
+        const i = $(this).index();
+        $('.layer-video-block .scroll-imgs').removeClass('active').eq(i).addClass('active');
     });
 
     // advisor more info
     $(document).on('click', '.js-advisor-info', function(){
         $(this).closest('.advisor-item').toggleClass('open');
+    });
+
+    //progress layer video
+    // const $video = $('#layerVideo');
+    // const video = $video.get(0);
+    // const $layers = $('.layer-item');
+
+    // if (!video || $layers.length < 2) return;
+
+    // let targetTime = 0;
+    // let currentTime = 0;
+    // let isAnimating = false;
+
+    // video.addEventListener('loadedmetadata', function () {
+    //     const duration = video.duration;
+
+    //     video.play();
+    //     video.pause();
+
+    //     const $first = $layers.first();
+    //     const $last = $layers.last();
+
+    //     const start = $first.offset().top;
+    //     const end = $last.offset().top + $last.outerHeight()/2;
+
+    //     function animate() {
+    //         currentTime += (targetTime - currentTime) * 0.1; //smoothing
+    //         video.currentTime = currentTime;
+
+    //         if (Math.abs(targetTime - currentTime) > 0.001) {
+    //             requestAnimationFrame(animate);
+    //         } else {
+    //             isAnimating = false;
+    //         }
+    //     }
+
+    //     $(window).on('scroll', function () {
+    //         const scrollY = $(window).scrollTop() + $(window).height() * 0.3;
+
+    //         const progress = Math.min(
+    //             Math.max((scrollY - start) / (end - start), 0),
+    //             1
+    //         );
+
+    //         targetTime = duration * progress;
+
+    //         if (!isAnimating) {
+    //             isAnimating = true;
+    //             requestAnimationFrame(animate);
+    //         }
+    //     });
+    // });
+
+
+    // auto scroll imgs
+    $('.auto-scroll-imgs').each(function () {
+        const $img = $(this);
+        const frameCount = parseInt($img.data('frame')) || 20;
+        let frames = [];
+
+        const imgFolder = $(this).attr('data-folder');
+
+        for (let i = 1; i <= frameCount; i++) {
+            const num = String(i).padStart(3, '0');
+            const img = new Image();
+            img.src = `frames/${imgFolder}/frame-${num}.png`;
+            frames.push(img.src);
+        }
+
+        let currentIndex = 0;
+        let intervalId = null;
+
+        function startLoop() {
+            if (!intervalId) {
+                intervalId = setInterval(() => {
+                    $img.attr('src', frames[currentIndex]);
+                    currentIndex = (currentIndex + 1) % frames.length;
+                }, 200);
+            }
+        }
+
+        function stopLoop() {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        }
+
+        // IntersectionObserver
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startLoop();
+                } else {
+                    stopLoop();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe($img[0]);
+    });
+
+
+
+    //progress layer IMGS
+    $('.scroll-imgs').each(function () {
+        const $img = $(this);
+        const $layers = $('.scroll-layers .layer-item');
+
+        if ($img.length < 1) return;
+
+        let frames = [];
+        let frameCount = parseInt($img.data('frame')) || 20;
+        const imgFolder = $(this).attr('data-folder');
+
+        for (let i = 1; i <= frameCount; i++) {
+            const num = String(i).padStart(3, '0');
+            const img = new Image();
+            img.src = `frames/${imgFolder}/frame-${num}.png`;
+            frames.push(img.src);
+        }
+
+        function initScroll() {
+            const start = $layers.first().offset().top;
+            const end = $layers.last().offset().top + $layers.last().outerHeight() / 2;
+
+            let targetProgress = 0;
+            let currentProgress = 0;
+            let animating = false;
+
+            function animate() {
+                currentProgress += (targetProgress - currentProgress) * 0.12; // smoothing
+
+                if ($img.length > 0) {
+                    const frameIndex = Math.floor(currentProgress * frameCount);
+                    $img.attr('src', frames[frameIndex]);
+                }
+
+                if (Math.abs(targetProgress - currentProgress) > 0.001) {
+                    requestAnimationFrame(animate);
+                } else {
+                    animating = false;
+                }
+            }
+
+            $(window).on('scroll', function () {
+                const scrollY = $(window).scrollTop() + window.innerHeight * 0.3;
+
+                targetProgress = Math.min(
+                    Math.max((scrollY - start) / (end - start), 0),
+                    1
+                );
+
+                if (!animating) {
+                    animating = true;
+                    requestAnimationFrame(animate);
+                }
+            });
+        }
+
+        if ($img.length > 0) {
+            initScroll();
+        }
+    });
+
+
+
+
+    //fixed progress layer video
+    const $sticky = $('.layers-sec .sticky-block');
+    const $section = $('.layers-sec');
+    const $header = $('.header');
+
+    if (!$sticky.length || !$section.length) return;
+
+    const isMobile = window.matchMedia('(max-width: 991px)').matches;
+    if (!isMobile) return;
+
+    const $placeholder = $sticky.parent();
+
+    function recalc() {
+        const headerHeight = $header.outerHeight() || 0;
+
+        const stickyTop = $placeholder.offset().top;
+        const stickyHeight = $sticky.outerHeight();
+
+        const sectionTop = $section.offset().top;
+        const sectionBottom = sectionTop + $section.outerHeight();
+
+        return {
+            headerHeight,
+            stickyTop,
+            stickyHeight,
+            sectionBottom
+        };
+    }
+
+    let metrics = recalc();
+
+    $placeholder.height(metrics.stickyHeight);
+
+    $(window).on('resize orientationchange', function () {
+        metrics = recalc();
+        $placeholder.height(metrics.stickyHeight);
+    });
+
+
+    $(window).on('scroll', function () {
+        const scrollY = $(window).scrollTop();
+
+        const startFix = metrics.stickyTop - metrics.headerHeight;
+        const endFix = metrics.sectionBottom - metrics.stickyHeight - metrics.headerHeight;
+
+        if (scrollY >= metrics.stickyTop - 104 && scrollY < endFix) {
+            $sticky.addClass('fixed');
+        } else {
+            $sticky.removeClass('fixed');
+        }
     });
 
 });
