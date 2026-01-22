@@ -4042,7 +4042,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
     .whistleblowing-documents-item{
       margin-top: 20px;
-      padding: 30px;
+      padding: 30px!important;
       border-radius: 12px;
     }
 }
