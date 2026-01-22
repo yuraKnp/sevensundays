@@ -4021,6 +4021,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .cart-item__media{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 
