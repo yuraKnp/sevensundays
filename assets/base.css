@@ -4009,7 +4009,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   flex-wrap: nowrap!important;
 }
 
-.price.price--end{
+.price.price--end,
+.product-option{
   font-size: 1rem;
 }
 
