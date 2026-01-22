@@ -299,7 +299,7 @@ jQuery(function ($) {
         $('html').removeClass('overflow-hidden');
         $('.video-popup').removeClass('active');
         video.pause();
-        // video.currentTime = 0;
+        console.log('test');
         $('.video-popup-container iframe').attr('src', 'about:blank');
         e.preventDefault();
     });
