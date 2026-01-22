@@ -294,8 +294,12 @@ jQuery(function ($) {
 
     /* Close Video Popup */
     $('.video-popup-close, .video-popup-layer').on('click', function (e) {
+        const wrapper = $(this).closest('.video-popup');
+        const video = wrapper.find('video');
         $('html').removeClass('overflow-hidden');
         $('.video-popup').removeClass('active');
+        video.pause();
+        // video.currentTime = 0;
         $('.video-popup-container iframe').attr('src', 'about:blank');
         e.preventDefault();
     });
