@@ -1,0 +1,197 @@
+<div class="section sec-black sec-black-gradient padd-lg layers-sec">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.title != blank %}
+                    <div class="h1 title font-1">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.subtitle != blank %}
+                    <div class="h5 title">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="layer-item type2 hide">
+            <div class="title-shortcode mb-64">
+                {% if section.settings.title_under_img != blank %}
+                <div class="h2 title">{{ section.settings.title_under_img }}</div>
+                {% endif %}
+                {% if section.settings.short_desc_under_img != blank %}
+                <div class="h4 title">{{ section.settings.short_desc_under_img }}</div>
+                {% endif %}
+                </div>
+            <div class="choose-layer">
+                <div class="item active">{{ section.settings.first_tab_name  }}</div>
+                <div class="item">{{ section.settings.second_tab_name  }}</div>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-lg-6 order-lg-2">
+                <div class="sticky-block">
+                    <div class="layer-video-block">
+                        {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation1' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+                        {% assign comma_list = comma_list | strip | replace: ' ', '' %}
+                        {% for block in section.blocks limit: 1 %}
+                            {%- assign image = block.settings.image -%}
+                                {% if image != blank %}
+                                {% assign image_url = image | image_url  %}
+                                    <img class="scroll-imgs active" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="animation frame" />
+                                {% endif %}
+                        {% endfor %}
+                        {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation2' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+                        {% assign comma_list = comma_list | strip | replace: ' ', '' %}
+                        {% for block in section.blocks limit: 1 %}
+                            {%- assign image = block.settings.image -%}
+                                {% if image != blank %}
+                                {% assign image_url = image | image_url  %}
+                                    <img class="scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-2" src="{{ image_url }}" alt="animation frame" />
+                                {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="scroll-layers">
+                    {% if section.blocks != blank %}
+                    {% for block in section.blocks %}
+                        {% if block.type == 'slides' %}
+                        {% assign first_slide = block %}
+                        {%- assign title = block.settings.title -%}
+                        {%- assign desc = block.settings.description -%}
+                        <div class="layer-item type2">
+                            <div class="title-shortcode mb-64 hide-lg">
+                                {% if section.settings.title_under_img != blank %}
+                                <div class="h2 title">{{ section.settings.title_under_img }}</div>
+                                {% endif %}
+                                {% if section.settings.short_desc_under_img != blank %}
+                                <div class="h4 title">{{ section.settings.short_desc_under_img }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="choose-layer hide-lg">
+                                <div class="item active">{{ section.settings.first_tab_name  }}</div>
+                                <div class="item">{{ section.settings.second_tab_name  }}</div>
+                            </div>
+                            {% if title != blank %}
+                            <div class="h2 title">{{ title }}</div>
+                            {% endif %}
+                            {% if desc != blank %}
+                            <div class="text text-md">
+                                {{ desc }}
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                        {% break %}
+                    {% endfor %}
+                    {% for block in section.blocks offset: 1 %}
+                        {% if block.type == 'slides' and block.id != first_slide.id %}
+                        {%- assign title = block.settings.title -%}
+                        {%- assign desc = block.settings.description -%}
+                        <div class="layer-item type2">
+                            {% if title != blank %}
+                            <div class="title h2">{{ title }}</div>
+                            {% endif %}
+                            {% if desc != blank %}
+                            <div class="text text-md">
+                                {{ desc }}
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "How it works scroll",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title_under_img",
+      "label": "Second title"
+    },
+    {
+      "type": "text",
+      "id": "short_desc_under_img",
+      "label": "Text after second title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "first_tab_name",
+      "label": "First tab name"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "second_tab_name",
+      "label": "Second tab name"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "animation1",
+      "name": "First animation item",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+      ]
+    },
+    {
+      "type": "animation2",
+      "name": "Second animation item",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+      ]
+    },
+    {
+      "type": "slides",
+      "name": "Right info",
+      "settings": [
+        {
+            "type": "inline_richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "description",
+            "label": "Description"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works scroll",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
