@@ -21,7 +21,7 @@
 .form-block .submit-form {top: 20px;right: var(--sp-24);font-size: 14px;line-height: 18px;}
 }
 @media (max-width: 767px) {
-.form-expert-block img {display: none;}
+/* .form-expert-block img {display: none;} */
 }
 /*--------------------*/
 /*  Inputs            */
