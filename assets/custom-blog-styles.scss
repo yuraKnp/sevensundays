@@ -1003,8 +1003,8 @@ html {
 .article__title {
   background: #faf6f2;
   position: relative;
-  -webkit-transform: translateY(-3.5rem);
-  transform: translateY(-3.5rem);
+  -webkit-transform: translateY(-1rem);
+  transform: translateY(-1rem);
   padding: 1rem 1rem 0 1rem;
   text-align: center;
   margin: 0 1rem; }
@@ -1018,8 +1018,8 @@ html {
     margin: 0 1.5rem; } }
 @media only screen and (min-width: 768px) {
   .article__title {
-    -webkit-transform: translateY(-7.75rem);
-    transform: translateY(-7.75rem);
+    // -webkit-transform: translateY(-7.75rem);
+    // transform: translateY(-7.75rem);
     padding: 3rem 3rem 0 3rem;
     margin: 0 6.5rem; } }
 .article__footer > div:first-of-type {
