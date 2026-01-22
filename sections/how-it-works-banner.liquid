@@ -12,13 +12,22 @@
                 </div>
             </div>
             {% if section.blocks != blank %}
+                {% for block in section.blocks %}
+                    {%- assign image = block.settings.image -%}
+                        {% if image != blank %}
+                            {% capture comma_list %}
+                                {% assign image_url = image | image_url  %}
+                                {{ image_url }}{% unless forloop.last %}, {% endunless %}
+                            {% endcapture %}
+                        {% endif %}
+                {% endfor %}
                 {% for block in section.blocks limit: 1 %}
                     {%- assign image = block.settings.image -%}
                         {% if image != blank %}
                         {% assign image_url = image | image_url  %}
                             <div class="col-xl-11">
                                 <div class="mattress-img mt-200 decor video-block">
-                                    <img class="auto-scroll-imgs" data-frame="20" data-folder="frame-2" src="{{ image_url }} alt="animation frame" />
+                                    <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-2" src="{{ image_url }}" alt="animation frame" />
                                 </div>
                             </div>
                         {% endif %}
