@@ -513,6 +513,18 @@
     "four_ways_wT6Fpg": {
       "type": "four-ways",
       "blocks": {
+        "animation1_NMAHYk": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-001.png"
+          }
+        },
+        "animation1_H7zVeL": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-002.png"
+          }
+        },
         "slides_TyByFe": {
           "type": "slides",
           "settings": {
@@ -548,6 +560,8 @@
         }
       },
       "block_order": [
+        "animation1_NMAHYk",
+        "animation1_H7zVeL",
         "slides_TyByFe",
         "slides_RFtqPU",
         "slides_n8ND4w"
