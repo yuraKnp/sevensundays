@@ -4012,3 +4012,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .price.price--end{
   font-size: 1rem;
 }
+
+.cart-item__media{
+  display: flex;
+  align-items: center;
+}
