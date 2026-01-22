@@ -3990,8 +3990,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 @media(max-width: 767px){
   .cart-item__image-container{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     
     overflow: hidden;
     min-width: 50px;
