@@ -12,15 +12,15 @@
                 </div>
             </div>
             {% if section.blocks != blank %}
+                {% capture comma_list %}
                 {% for block in section.blocks %}
                     {%- assign image = block.settings.image -%}
                         {% if image != blank %}
-                            {% capture comma_list %}
-                                {% assign image_url = image | image_url  %}
-                                {{ image_url }}{% unless forloop.last %}, {% endunless %}
-                            {% endcapture %}
+                            {% assign image_url = image | image_url  %}
+                            {{ image_url }}{% unless forloop.last %}, {% endunless %}
                         {% endif %}
                 {% endfor %}
+                {% endcapture %}
                 {% for block in section.blocks limit: 1 %}
                     {%- assign image = block.settings.image -%}
                         {% if image != blank %}
