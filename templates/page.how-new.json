@@ -339,10 +339,26 @@
             "title": "Memory-Schicht",
             "description": "Your body can't find rest at night. Memory brings you back into balance.Gentle sinking into memory foam catches you, calms your body and relieves pressure - you lie as if weightless."
           }
+        },
+        "slides_zVjYcD": {
+          "type": "slides",
+          "settings": {
+            "title": "5-Zone Layer",
+            "description": "Ergonomics is the foundation. The 5-zone layer aligns sensitive areas of your body.Five coordinated zones let shoulders and hips sink in while keeping your spine aligned - you lie in perfect balance."
+          }
+        },
+        "slides_kBJr8k": {
+          "type": "slides",
+          "settings": {
+            "title": "Stretch Layer",
+            "description": "Inspired by Dorn-Breuss method, developed with Prof. Dr. Grönemeyer.Counter-rotating slats gently stretch your spine and promote disc regeneration - you relax, your back regenerates."
+          }
         }
       },
       "block_order": [
-        "slides_gE39m9"
+        "slides_gE39m9",
+        "slides_zVjYcD",
+        "slides_kBJr8k"
       ],
       "name": "How it works scroll",
       "settings": {
