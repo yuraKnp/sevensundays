@@ -777,7 +777,7 @@ jQuery(function ($) {
 
         // const imgFolder = $(this).attr('data-folder');
 
-        console.log(comma_list);
+        console.log(img_array);
 
         if(img_array.length == 0) return;
         for (let i = 0; i < img_array.length; i++) {
