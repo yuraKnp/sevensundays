@@ -4038,5 +4038,5 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 .title .legal br, .text .legal br{
-  display: block;
+  display: block!important;
 }
