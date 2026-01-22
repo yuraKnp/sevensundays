@@ -523,10 +523,34 @@
             "link_text": "Who is it for?",
             "link_url": "#"
           }
+        },
+        "slides_RFtqPU": {
+          "type": "slides",
+          "settings": {
+            "subtitle": "Deep relaxation",
+            "title": "Calming",
+            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
+            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
+        },
+        "slides_n8ND4w": {
+          "type": "slides",
+          "settings": {
+            "subtitle": "Deep relaxation",
+            "title": "Calming",
+            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
+            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
+            "link_text": "Who is it for?",
+            "link_url": "#"
+          }
         }
       },
       "block_order": [
-        "slides_TyByFe"
+        "slides_TyByFe",
+        "slides_RFtqPU",
+        "slides_n8ND4w"
       ],
       "name": "Four ways section",
       "settings": {
