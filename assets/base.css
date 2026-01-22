@@ -3938,7 +3938,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   padding-bottom: var(--sp-xl);
 }
 
-.product-item-wrapp.type2 picture img{
+.product-item-wrapp.type2 .product-img picture img{
   width: 100%;
   height: 100%;
   object-fit: contain;
