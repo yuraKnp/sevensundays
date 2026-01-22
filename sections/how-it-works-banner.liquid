@@ -1,0 +1,84 @@
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="title-shortcode text-center mb-0">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <h1 class="h1 size2 title no-balance">{{ section.settings.title }}</h1>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-xl-11">
+                <div class="mattress-img mt-200 decor video-block">
+                    <img class="auto-scroll-imgs" data-frame="20" data-folder="frame-2" src="frames/frame-2/frame-001.png" alt="animation frame" />
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="title-shortcode mb-0 text-center mt-64 mt-des-32">
+                    {% if section.settings.title_under_img != blank %}
+                    <div class="h2 h3-mob title font-1 fw-500 ls-2">{{ section.settings.title_under_img }}</div>
+                    {% endif %}
+                    {% if section.settings.short_desc_under_img != blank %}
+                    <div class="text text-md">{{ section.settings.short_desc_under_img }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-lg"></div>
+</div>
+
+{% schema %}
+{
+  "name": "How it works banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title_under_img",
+      "label": "Title under images"
+    },
+    {
+      "type": "text",
+      "id": "short_desc_under_img",
+      "label": "Short description under images"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Images for animation",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works banner",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
