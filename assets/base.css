@@ -4030,4 +4030,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
         align-items: center;
         justify-content: flex-end;
     }
+
+    .totals>*+*{
+      margin-left: 0px!important;
+    }
 }
