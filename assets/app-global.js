@@ -775,10 +775,6 @@ jQuery(function ($) {
         const comma_list = $img.attr('data-images');
         const img_array = comma_list.split(',').map(s => s.trim());
 
-        // const imgFolder = $(this).attr('data-folder');
-
-        console.log(img_array);
-
         if(img_array.length == 0) return;
         for (let i = 0; i < img_array.length; i++) {
             console.log(img_array[i]);
@@ -786,6 +782,8 @@ jQuery(function ($) {
             img.src = img_array[i];
             frames.push(img.src);
         }
+
+        // const imgFolder = $(this).attr('data-folder');
 
         // for (let i = 1; i <= frameCount; i++) {
         //     const num = String(i).padStart(3, '0');
@@ -838,14 +836,27 @@ jQuery(function ($) {
 
         let frames = [];
         let frameCount = parseInt($img.data('frame')) || 20;
-        const imgFolder = $(this).attr('data-folder');
 
-        for (let i = 1; i <= frameCount; i++) {
-            const num = String(i).padStart(3, '0');
+        
+        const comma_list = $img.attr('data-images');
+        const img_array = comma_list.split(',').map(s => s.trim());
+
+        if(img_array.length == 0) return;
+        for (let i = 0; i < img_array.length; i++) {
+            console.log(img_array[i]);
             const img = new Image();
-            img.src = `frames/${imgFolder}/frame-${num}.png`;
+            img.src = img_array[i];
             frames.push(img.src);
         }
+
+        // const imgFolder = $(this).attr('data-folder');
+
+        // for (let i = 1; i <= frameCount; i++) {
+        //     const num = String(i).padStart(3, '0');
+        //     const img = new Image();
+        //     img.src = `frames/${imgFolder}/frame-${num}.png`;
+        //     frames.push(img.src);
+        // }
 
         function initScroll() {
             const start = $layers.first().offset().top;
