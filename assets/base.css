@@ -3995,3 +3995,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   overflow: hidden;
   min-width: 50px;
 }
+
+#main-cart-items{
+  margin-top: 20px;
+}
