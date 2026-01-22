@@ -11,11 +11,19 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-xl-11">
-                <div class="mattress-img mt-200 decor video-block">
-                    <img class="auto-scroll-imgs" data-frame="20" data-folder="frame-2" src="frames/frame-2/frame-001.png" alt="animation frame" />
-                </div>
-            </div>
+            {% if section.blocks != blank %}
+                {% for block in section.blocks limit: 1 %}
+                    {%- assign image = block.settings.image -%}
+                        {% if image != blank %}
+                        {% assign image_url = image | image_url  %}
+                            <div class="col-xl-11">
+                                <div class="mattress-img mt-200 decor video-block">
+                                    <img class="auto-scroll-imgs" data-frame="20" data-folder="frame-2" src="{{ image_url }} alt="animation frame" />
+                                </div>
+                            </div>
+                        {% endif %}
+                {% endfor %}
+            {% endif %}
             <div class="col-lg-7">
                 <div class="title-shortcode mb-0 text-center mt-64 mt-des-32">
                     {% if section.settings.title_under_img != blank %}
