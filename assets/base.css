@@ -4039,6 +4039,10 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     .whistleblowing-documents-item__img{
       max-width: 70px;
     }
+
+    .whistleblowing-documents-item{
+      margin-top: 20px;
+    }
 }
 
 .title .legal br, .text .legal br{
