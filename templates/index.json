@@ -41,7 +41,7 @@
         "image_left_bottom_logo": "shopify://shop_images/sticker-logo.svg",
         "image_left_bottom_description": "Schlafe 20% besser mit Seven Sundays",
         "image_left_bottom_text": "Studie lesen",
-        "image_left_bottom_link": "shopify://collections/frontpage",
+        "image_left_bottom_link": "https://seven-sundays.shop/blogs/news/seven-sundays-sleep-study",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
@@ -96,7 +96,7 @@
       "settings": {
         "image": "shopify://shop_images/55031103752_8d347ab44e_b.jpg",
         "hero_video_file": "shopify://files/videos/Bedroom_Animation_LQ (1)_d3fb2470-77ff-4928-a199-4b453e52136d.mp4",
-        "confort_title": "Passe deinen Komfort in 30 Sekunden an. <br>Perfekte Regeneration.<br>Jede Nacht."
+        "confort_title": "Passe deinen Komfort in 30 Sekunden an. Perfekte Regeneration. Jede Nacht."
       }
     },
     "sleep_system_cXWBy3": {
@@ -434,7 +434,7 @@
         "hero_video_file": "shopify://files/videos/cta-video.mp4",
         "title": "Entdecke das preisgekrönte Schlafsystem, das alles verändert",
         "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
-        "short_description": "Jetzt entdecken. Jeden Morgen wie Sonntag aufwachen.",
+        "short_description": "<p>Jetzt entdecken. Jeden Morgen wie Sonntag aufwachen.</p>",
         "link_text": "Schlafsystem entdecken",
         "link_url": "https://seven-sundays.shop/blogs/news/seven-sundays-sleep-study",
         "link_text2": "",
