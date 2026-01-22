@@ -19,6 +19,17 @@
     },
     "how_it_works_banner_3MKw7e": {
       "type": "how-it-works-banner",
+      "blocks": {
+        "slide_A7rxbL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/frame-001.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_A7rxbL"
+      ],
       "name": "How it works banner",
       "settings": {
         "title": "Meet the world's most personal mattress",
