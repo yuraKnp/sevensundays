@@ -171,6 +171,186 @@
         "short_desc_under_img": "Your body and needs change - over years, sometimesovernight. With the modular sleep system form SevenSundays, you adapt to it."
       }
     },
+    "how_it_works_scroll_QjqedW": {
+      "type": "how-it-works-scroll",
+      "blocks": {
+        "slides_gE39m9": {
+          "type": "slides",
+          "settings": {
+            "title": "Memory-Schicht",
+            "description": "Your body can't find rest at night. Memory brings you back into balance.Gentle sinking into memory foam catches you, calms your body and relieves pressure - you lie as if weightless."
+          }
+        },
+        "slides_zVjYcD": {
+          "type": "slides",
+          "settings": {
+            "title": "5-Zone Layer",
+            "description": "Ergonomics is the foundation. The 5-zone layer aligns sensitive areas of your body.Five coordinated zones let shoulders and hips sink in while keeping your spine aligned - you lie in perfect balance."
+          }
+        },
+        "slides_kBJr8k": {
+          "type": "slides",
+          "settings": {
+            "title": "Stretch Layer",
+            "description": "Inspired by Dorn-Breuss method, developed with Prof. Dr. Grönemeyer.Counter-rotating slats gently stretch your spine and promote disc regeneration - you relax, your back regenerates."
+          }
+        },
+        "animation1_RDdFM6": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-001.png"
+          }
+        },
+        "animation1_Vydzwn": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-002.png"
+          }
+        },
+        "animation1_YzdgMN": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-003.png"
+          }
+        },
+        "animation1_x9YzCi": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-004.png"
+          }
+        },
+        "animation1_zHx9Lz": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-005.png"
+          }
+        },
+        "animation1_wTqfRQ": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-006.png"
+          }
+        },
+        "animation1_q9F6DD": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-007.png"
+          }
+        },
+        "animation1_Lm7Pag": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-008.png"
+          }
+        },
+        "animation1_yqtthy": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-009.png"
+          }
+        },
+        "animation1_yAKygB": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-010.png"
+          }
+        },
+        "animation1_QtMm9f": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-011.png"
+          }
+        },
+        "animation1_FqKezf": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-012.png"
+          }
+        },
+        "animation1_w8UDdV": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-013.png"
+          }
+        },
+        "animation1_tYUk9H": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-014.png"
+          }
+        },
+        "animation1_npePFA": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-015.png"
+          }
+        },
+        "animation1_KrCEm6": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-016.png"
+          }
+        },
+        "animation1_kxmjip": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-017.png"
+          }
+        },
+        "animation1_VPWwbU": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-018.png"
+          }
+        },
+        "animation1_tHPgig": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-019.png"
+          }
+        },
+        "animation1_W7jUqc": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-020.png"
+          }
+        }
+      },
+      "block_order": [
+        "slides_gE39m9",
+        "slides_zVjYcD",
+        "slides_kBJr8k",
+        "animation1_RDdFM6",
+        "animation1_Vydzwn",
+        "animation1_YzdgMN",
+        "animation1_x9YzCi",
+        "animation1_zHx9Lz",
+        "animation1_wTqfRQ",
+        "animation1_q9F6DD",
+        "animation1_Lm7Pag",
+        "animation1_yqtthy",
+        "animation1_yAKygB",
+        "animation1_QtMm9f",
+        "animation1_FqKezf",
+        "animation1_w8UDdV",
+        "animation1_tYUk9H",
+        "animation1_npePFA",
+        "animation1_KrCEm6",
+        "animation1_kxmjip",
+        "animation1_VPWwbU",
+        "animation1_tHPgig",
+        "animation1_W7jUqc"
+      ],
+      "name": "How it works scroll",
+      "settings": {
+        "title": "Your three layers. Made for you.",
+        "subtitle": "Each layer server its purpose for comfort and ergonomics. You choose what suits you.",
+        "title_under_img": "Choose Your Comfort Layer",
+        "short_desc_under_img": "How do you feel after waking up?",
+        "first_tab_name": "Ehxausted",
+        "second_tab_name": "Stiff"
+      }
+    },
     "background_image_jpL9fw": {
       "type": "background-image",
       "name": "Background image",
@@ -334,6 +514,7 @@
   "order": [
     "main",
     "how_it_works_banner_3MKw7e",
+    "how_it_works_scroll_QjqedW",
     "background_image_jpL9fw",
     "small_image_with_text_g4aKPC",
     "try_sleep_gWYx8e",
