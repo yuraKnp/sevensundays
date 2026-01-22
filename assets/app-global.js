@@ -781,7 +781,7 @@ jQuery(function ($) {
 
         if(img_array.length == 0) return;
         for (let i = 0; i < img_array.length; i++) {
-            console.log(images[i]);
+            console.log(img_array[i]);
             const img = new Image();
             img.src = img_array[i];
             frames.push(img.src);
