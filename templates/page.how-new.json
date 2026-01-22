@@ -332,6 +332,18 @@
     },
     "how_it_works_scroll_QjqedW": {
       "type": "how-it-works-scroll",
+      "blocks": {
+        "slides_gE39m9": {
+          "type": "slides",
+          "settings": {
+            "title": "Memory-Schicht",
+            "description": "Your body can't find rest at night. Memory brings you back into balance.Gentle sinking into memory foam catches you, calms your body and relieves pressure - you lie as if weightless."
+          }
+        }
+      },
+      "block_order": [
+        "slides_gE39m9"
+      ],
       "name": "How it works scroll",
       "settings": {
         "title": "Your three layers. Made for you.",
