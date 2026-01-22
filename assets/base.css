@@ -4004,3 +4004,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     font-size: var(--h6);
   }
 }
+
+.cart-item__quantity-wrapper{
+  flex-wrap: nowrap;
+}
