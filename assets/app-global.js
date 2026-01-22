@@ -295,7 +295,7 @@ jQuery(function ($) {
     /* Close Video Popup */
     $('.video-popup-close, .video-popup-layer').on('click', function (e) {
         const wrapper = $(this).closest('.video-popup');
-        const video = wrapper.find('video');
+        const video = wrapper.find('video').get(0);
         $('html').removeClass('overflow-hidden');
         $('.video-popup').removeClass('active');
         video.pause();
