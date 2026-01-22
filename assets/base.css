@@ -3969,3 +3969,17 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   opacity: 1!important;
   background: linear-gradient(180deg, rgb(30 34 39 / 0%), rgb(30 34 39 / 30%))!important;
 }
+
+.energy-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background: var(--clr-gold-50);
+  z-index: 1;
+  opacity: 1;
+  transition: var(--transition-1);
+}
