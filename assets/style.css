@@ -1089,7 +1089,16 @@ footer .form-block {max-width: 100%;}
 footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .footer-caption {font-size: 10px;margin-bottom: var(--sp-16);}
 .footer-links a {font-size: 14px;line-height: 20px;}
-.mob-two {-moz-column-count: 2;column-count: 2;-moz-column-gap: var(--sp-24);column-gap: var(--sp-24);}
+.footer-links + .footer-links{
+    margin: 0;
+}
+.mob-two{
+    /* // column-count: 2;
+    // column-gap: var(--sp-24); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-24);
+  }
 .social a {width: 24px;height: 24px;}
 .footer-bottom {flex-direction: column;gap: var(--sp-24);padding-top: var(--sp-64);align-items: flex-start;}
 .footer-bottom a {font-size: 12px;line-height: 16px;}
