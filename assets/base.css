@@ -3960,3 +3960,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   .hide-sm {display: none;}
   .mr-bt {margin-bottom: var(--sp-24);}
 }
+
+.energy-item .tags{
+  display: none;
+}
