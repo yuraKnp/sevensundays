@@ -3998,3 +3998,9 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 #main-cart-items{
   margin-top: 20px;
 }
+
+@media(max-width: 1000px){
+  .cart-item__name.h4.break{
+    font-size: var(--h6);
+  }
+}
