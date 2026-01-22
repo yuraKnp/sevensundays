@@ -772,14 +772,25 @@ jQuery(function ($) {
         const frameCount = parseInt($img.data('frame')) || 20;
         let frames = [];
 
-        const imgFolder = $(this).attr('data-folder');
+        const comma_list = $img.attr('data-images');
+        const img_array = comma_list.split(',').map(s => s.trim());
 
-        for (let i = 1; i <= frameCount; i++) {
-            const num = String(i).padStart(3, '0');
+        // const imgFolder = $(this).attr('data-folder');
+
+        if(img_array.length == 0) return;
+        for (let i = 0; i < img_array.length; i++) {
+            console.log(images[i]);
             const img = new Image();
-            img.src = `frames/${imgFolder}/frame-${num}.png`;
+            img.src = img_array[i];
             frames.push(img.src);
         }
+
+        // for (let i = 1; i <= frameCount; i++) {
+        //     const num = String(i).padStart(3, '0');
+        //     const img = new Image();
+        //     img.src = `frames/${imgFolder}/frame-${num}.png`;
+        //     frames.push(img.src);
+        // }
 
         let currentIndex = 0;
         let intervalId = null;
