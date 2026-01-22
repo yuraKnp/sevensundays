@@ -3938,6 +3938,12 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   padding-bottom: var(--sp-xl);
 }
 
+@media(max-width: 767px){
+  .banner-align.align-bottom.xxl{
+    padding-bottom: 124px;
+  }
+}
+
 .product-item-wrapp.type2 .product-img picture img{
   width: 100%;
   height: 100%;
