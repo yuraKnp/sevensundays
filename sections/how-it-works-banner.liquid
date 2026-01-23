@@ -28,7 +28,7 @@
                 {% endfor %}
             {% endif %}
 
-              {%- assign test_img = block.settings.test_img -%}
+              {%- assign test_img = section.settings.test_img -%}
               {% if test_image != blank %}
               {% assign test_image = image | image_url  %}
               <div class="col-lg-10 col-xl-8">
