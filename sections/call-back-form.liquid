@@ -14,7 +14,7 @@
                     {% endif %}
                 </div>
 
-                {% form 'contact', class: 'form-block white' %}
+                {% comment %} {% form 'contact', class: 'form-block white' %}
 
                     {% comment %} {% if form.posted_successfully? %}
                         <p class="form-success">Thank you for contacting us! We will be in touch soon.</p>
@@ -114,7 +114,70 @@
                         </ul>
                     {%- endif -%}
 
-                {% endform %}
+                {% endform %} {% endcomment %}
+
+                {% if section.settings.form_link != blank %}
+                <form action="{{ section.settings.form_link }}"  method="POST" class="form-block white">
+
+                    <div class="form-expert-block">
+                        <div class="content">
+                            {% if section.settings.title_before_form != blank %}
+                            <div class="text text-md"><b>{{ section.settings.title_before_form }}</b></div>
+                            {% endif %}
+                            {% if section.settings.desc_before_form != blank %}
+                            <div class="text text-sm">{{ section.settings.desc_before_form }}</div>
+                        {% endif %}
+                        </div>
+                        {% assign image_before_form = section.settings.image_before_form %}
+                        
+                        {% if image_before_form != blank %}
+                            {% assign image_b_url = image_before_form | image_url  %}
+                            {% assign image_b_alt = image_before_form.alt  %}
+                            <img width="64" height="64" src="{{ image_b_url }}" alt="{{ image_b_alt }}" loading="lazy">
+                        {% endif %}
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                        <label class="input-field">
+                            <div class="label">{{ 'general.form.name' | t }}</div>
+                            <input name="name" class="input" type="text" placeholder="{{ 'general.form.name_p' | t }}" required>
+                        </label>
+                        </div>
+                        <div class="col-12">
+                        <label class="input-field">
+                            <div class="label">email</div>
+                            <input name="email" class="input" type="email" placeholder="{{ 'general.form.email_p' | t }}" required>
+                        </label>
+                        </div>
+                        <div class="col-12">
+                        <label class="input-field">
+                            <div class="label">{{ 'general.form.phone' | t }}</div>
+                            <input name="phone" class="input" type="tel" placeholder="{{ 'general.form.phone_p' | t }}" required>
+                        </label>
+                        </div>
+                        <div class="col-12">
+                        <label class="input-field">
+                            <div class="label">{{ 'general.form.city' | t }}</div>
+                            <input name="city" class="input" type="text" placeholder="{{ 'general.form.city_p' | t }}" required>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="ch-box-wrap">
+                        <label class="ch-box">
+                        <input name="terms_agreed" type="checkbox" required>
+                        <span>{{ section.settings.terms_and_conditions }}</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">
+                        <b>{{ 'general.form.submit_form' | t }}</b>
+                        {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
+                        {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                        {%- assign final_svg_url = url_no_version | append: '#btn-arrow' -%}
+                        <svg width="12" height="12"><use href="{{ final_svg_url }}"></use></svg>
+                    </button>
+
+                </form>
 
 
                 {% if section.blocks != blank %}
@@ -180,6 +243,11 @@
       "type": "image_picker",
       "id": "image_before_form",
       "label": "Image before form"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "form_link",
+      "label": "Link for your form"
     },
     {
       "type": "inline_richtext",
