@@ -4111,3 +4111,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 @media (max-width: 991px) {
 .shopify-policy__body br {display: none;}
 }
+
+.shopify-policy__title{
+  margin-bottom: 24px;
+}
