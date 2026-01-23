@@ -11,7 +11,7 @@
                     {% endif %}
                 </div>
             </div>
-            {% if section.blocks != blank %}
+            {% comment %} {% if section.blocks != blank %}
                 {% assign image_count = 0 %}
                 {% capture comma_list %}{% for block in section.blocks %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count = image_count | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}
                 {% assign comma_list = comma_list | strip | replace: ' ', '' %}
@@ -26,14 +26,14 @@
                             </div>
                         {% endif %}
                 {% endfor %}
-            {% endif %}
+            {% endif %} {% endcomment %}
 
-              {%- assign test_img = section.settings.test_img -%}
-              {% if test_img != blank %}
-              {% assign test_image = test_img | image_url  %}
+            {%- assign test_img = section.settings.back_img -%}
+              {% if back_img != blank %}
+              {% assign gif_image = back_img | image_url  %}
               <div class="col-lg-10 col-xl-8">
                   <div class="mattress-img mt-200 decor video-block">
-                      <img class="test" src="{{ test_image }}" alt="frame" />
+                      <img width="700" height="394" src="{{ gif_image }}" alt="gif" loading="lazy" />
                   </div>
               </div>
               {% endif %}
@@ -63,7 +63,7 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "test_img",
+      "id": "back_img",
       "label": "test image"
     },
     {
