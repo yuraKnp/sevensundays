@@ -207,10 +207,10 @@
       ],
       "name": "How it works banner",
       "settings": {
-        "title": "Meet the world's most personal mattress",
-        "subtitle": "engineered in switzerland",
-        "title_under_img": "Sleep the way you deserve",
-        "short_desc_under_img": "Your body and needs change - over years, sometimesovernight. With the modular sleep system form SevenSundays, you adapt to it."
+        "title": "Das persönlichste Schlafsystem der Welt",
+        "subtitle": "ENGINEERED IN SWITZERLAND",
+        "title_under_img": "Schlaf, wie du ihn verdienst",
+        "short_desc_under_img": "Körper und Bedürfnisse ändern sich – über Jahre, manchmal über Nacht. Mit dem modularen Schlafsystem von Seven Sundays reagierst du darauf."
       }
     },
     "how_it_works_scroll_QjqedW": {
@@ -219,8 +219,8 @@
         "slides_gE39m9": {
           "type": "slides",
           "settings": {
-            "title": "Memory-Schicht",
-            "description": "Your body can't find rest at night. Memory brings you back into balance.Gentle sinking into memory foam catches you, calms your body and relieves pressure - you lie as if weightless."
+            "title": "Speicherschicht",
+            "description": "Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos."
           }
         },
         "slides_zVjYcD": {
@@ -1050,10 +1050,10 @@
       ],
       "name": "How it works scroll",
       "settings": {
-        "title": "Your three layers. Made for you.",
-        "subtitle": "Each layer server its purpose for comfort and ergonomics. You choose what suits you.",
-        "title_under_img": "Choose Your Comfort Layer",
-        "short_desc_under_img": "How do you feel after waking up?",
+        "title": "Deine drei Schichten. Wie für dich gemacht.",
+        "subtitle": "Jede Schicht hat ihren Zweck für Komfort und Ergonomie. Du wählst, was zu dir passt.",
+        "title_under_img": "Wähle Deine Komfort-Schicht",
+        "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
         "first_tab_name": "Ehxausted",
         "second_tab_name": "Stiff"
       }
