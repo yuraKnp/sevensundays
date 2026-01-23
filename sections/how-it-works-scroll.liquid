@@ -32,7 +32,7 @@
                     <div class="layer-video-block">
                         {% assign image_count1 = 0 %}
                         {% assign image_count2 = 0 %}
-                        {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation1' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count1 = image_count | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+                        {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation1' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count1 = image_count1 | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
                         {% assign comma_list = comma_list | strip | replace: ' ', '' %}
                         {% for block in section.blocks %}
                             {% if block.type == 'animation1' %}
@@ -44,7 +44,7 @@
                                 {% break %}
                             {% endif %}
                         {% endfor %}
-                        {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation2' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count2 = image_count | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+                        {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation2' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count2 = image_count2 | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
                         {% assign comma_list = comma_list | strip | replace: ' ', '' %}
                         {% for block in section.blocks %}
                             {% if block.type == 'animation2' %}
