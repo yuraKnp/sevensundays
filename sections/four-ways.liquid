@@ -24,12 +24,12 @@
                                         {%- assign image = block.settings.image -%}
                                         {% if image != blank %}
                                         {% assign image_url = image | image_url  %}
-                                            <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="animation frame" />
+                                            <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
                                         {% endif %}
                                     {% break %}
                                 {% endif %}
                             {% endfor %}
-                            {% comment %} <img class="auto-scroll-imgs" data-frame="20" data-folder="frame-3" src="frames/frame-3/frame-001.png" alt="animation frame" /> {% endcomment %}
+                            {% comment %} <img class="auto-scroll-imgs" data-frame="20" data-folder="frame-3" src="frames/frame-3/frame-001.png" alt="frame" /> {% endcomment %}
                             <!-- <div class="video video-present">
                                 <video muted playsinline loop preload poster="img/mattress-img-1.webp" data-src="video/A1_layers_explode_WEBM.webm"></video>
                             </div> -->
@@ -87,7 +87,7 @@
                                     {%- assign image = block.settings.image -%}
                                     {% if image != blank %}
                                     {% assign image_url = image | image_url  %}
-                                        <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-2" src="{{ image_url }}" alt="animation frame" />
+                                        <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-2" src="{{ image_url }}" alt="frame" />
                                     {% endif %}
                                 {% break %}
                             {% endif %}
