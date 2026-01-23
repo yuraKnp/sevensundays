@@ -318,7 +318,7 @@
         "animation1_3MtVBY": {
           "type": "animation1",
           "settings": {
-            "image": "shopify://shop_images/frame-014.png"
+            "image": "shopify://shop_images/frame-014_c7cdac7d-7e47-446f-8e48-759f85e14268.png"
           }
         },
         "animation1_CJdALP": {
@@ -462,7 +462,7 @@
         "animation1_xqM6JX": {
           "type": "animation1",
           "settings": {
-            "image": "shopify://shop_images/frame-009_038afd40-8166-41c4-b0a7-fed958fd1076.png"
+            "image": "shopify://shop_images/frame-038.png"
           }
         },
         "animation1_RAnenX": {
@@ -578,6 +578,354 @@
           "settings": {
             "image": "shopify://shop_images/frame-057.png"
           }
+        },
+        "animation2_URjTVw": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-001_412f5f61-eb54-41b4-9c85-8637ca632b06.png"
+          }
+        },
+        "animation2_jWgaRD": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-002_eac12b31-d8b8-4d44-9b30-b2c9ddb84140.png"
+          }
+        },
+        "animation2_KMbXhc": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-003_ac28206d-a282-4af5-beab-7cb303c0425b.png"
+          }
+        },
+        "animation2_jcgVyk": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-004_64b6a85c-a2a3-4cec-aa68-152fd9e1d470.png"
+          }
+        },
+        "animation2_dTFMA8": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-005_f37d019c-6997-49d8-b8da-1a5908fc891f.png"
+          }
+        },
+        "animation2_HgkLjG": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-001_412f5f61-eb54-41b4-9c85-8637ca632b06.png"
+          }
+        },
+        "animation2_RU9HR9": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-007_ea9ce085-b424-4605-ba97-232af8fcc8f8.png"
+          }
+        },
+        "animation2_xq83Gd": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-008_8cb655e7-9195-46e3-aa98-43ba4dac8136.png"
+          }
+        },
+        "animation2_VJCrgH": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-009_956f6877-d3e7-40b6-ac31-8b0a54cf6332.png"
+          }
+        },
+        "animation2_tTG6x9": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-010_7ebfa084-c3b3-4c97-ace6-0656136c82dd.png"
+          }
+        },
+        "animation2_EhhMP7": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-011_19f5b532-f024-4532-8a82-67ec6f1d11dd.png"
+          }
+        },
+        "animation2_meRRQN": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-012_9ea04f33-2a78-4c58-9267-8e6b85ff3725.png"
+          }
+        },
+        "animation2_nFggPJ": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-013_abbef60f-b419-4c5e-bc0e-11e02b00b28e.png"
+          }
+        },
+        "animation2_byFYmn": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-014_dc4157a0-dcdf-4486-91a1-05819fa834a0.png"
+          }
+        },
+        "animation2_dANmM8": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-015_dd402a3c-b069-4be7-858f-6590e7dac166.png"
+          }
+        },
+        "animation2_3zAxry": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-016_065e94e3-1dcb-441a-a473-89543210ce67.png"
+          }
+        },
+        "animation2_8z6qjG": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-017_c59cbff9-259a-4e9c-8345-ff7835f96305.png"
+          }
+        },
+        "animation2_ddjGTY": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-018_ba4e0f5e-8e5e-4d98-babf-34476bb95dab.png"
+          }
+        },
+        "animation2_fLaCeT": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-019_d18260f4-103d-4bdd-9a39-663fdb14afc6.png"
+          }
+        },
+        "animation2_hRdMbq": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-020_441bacbd-3898-42cd-a9b4-4055febfa28f.png"
+          }
+        },
+        "animation2_KzqB6e": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-021_96045944-e634-4016-8ba4-deb8ccc64b6c.png"
+          }
+        },
+        "animation2_DUiRfY": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-022_d0db77af-fc69-4630-85fe-ac635d680d83.png"
+          }
+        },
+        "animation2_4pFHhH": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-023_eab2fd8d-9bb8-40bc-905b-581cdbb79a83.png"
+          }
+        },
+        "animation2_c6wfKK": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-024_d7517268-653c-42c3-b38f-b8d1c325ff72.png"
+          }
+        },
+        "animation2_4KtWcL": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-025_d00c62eb-62fd-4b9d-b4d9-ce343939f11c.png"
+          }
+        },
+        "animation2_NzfUAT": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-026_5816f2ee-615c-442a-aa90-d2b831368d06.png"
+          }
+        },
+        "animation2_AHLpHz": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-027_49d620a1-2489-4cbc-bef6-1dd8071b3fda.png"
+          }
+        },
+        "animation2_gaQd9z": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-028_79fd6e66-e275-4480-b6e2-4e4dbcb3eb2e.png"
+          }
+        },
+        "animation2_w638VV": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-028_79fd6e66-e275-4480-b6e2-4e4dbcb3eb2e.png"
+          }
+        },
+        "animation2_TRpQ4y": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-029_6f03ee33-0c88-439e-9241-af69fba51203.png"
+          }
+        },
+        "animation2_t7feqP": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-030_f688c9ff-6faf-4f8c-8c6d-c94a9b604db4.png"
+          }
+        },
+        "animation2_hq6X4T": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-031_82fa0506-8c25-40d8-b095-448401090669.png"
+          }
+        },
+        "animation2_AexkLt": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-032_1c252a26-15ad-41bd-aab3-77fc234b729f.png"
+          }
+        },
+        "animation2_tnWWKY": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-033_fab15c88-7c50-4828-a977-d5fcca740fe9.png"
+          }
+        },
+        "animation2_DrwNr8": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-034_f191e19a-f29e-4724-83ec-f84aab4801d9.png"
+          }
+        },
+        "animation2_3YUGnx": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-035_c82c816c-a609-4721-8dd9-b36b107747b6.png"
+          }
+        },
+        "animation2_3MR8Rd": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-036_e29dda68-0031-4ab4-9e82-f0a23ceab53a.png"
+          }
+        },
+        "animation2_tDf6Mr": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-037_ae19c2d2-e32b-4d1b-bfd2-68ca300f0707.png"
+          }
+        },
+        "animation2_QQgLc4": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-038_72c83415-a935-4d17-8fab-dc54bc4c8c12.png"
+          }
+        },
+        "animation2_DWEDNT": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-039_6637ba95-5e85-4ad1-8e85-5e3a4df9e603.png"
+          }
+        },
+        "animation2_bQXt4V": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-040_4e65896a-403a-4baf-9e15-2dd5f77ef94e.png"
+          }
+        },
+        "animation2_7baWYC": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-041_a3b13164-6029-49da-9344-252c57f755af.png"
+          }
+        },
+        "animation2_rVDzPw": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-042_c6aab435-1dea-4b95-b213-55df7d35060c.png"
+          }
+        },
+        "animation2_QVVEYB": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-043_88e90bc3-1441-41e1-8c3e-ae6f9629f556.png"
+          }
+        },
+        "animation2_GE8tmw": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-044_8a96efbb-bcb1-4ad1-b88f-b02995cf6304.png"
+          }
+        },
+        "animation2_h6HAUn": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-045_59335b7e-e4cf-4fd6-bdd0-5bea11b12fa9.png"
+          }
+        },
+        "animation2_wpLdiT": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-046_bb67eb95-4199-4752-afb6-fd8a22b2cc00.png"
+          }
+        },
+        "animation2_jejFg3": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-047_51006535-c954-4dd5-a848-bc178134f46b.png"
+          }
+        },
+        "animation2_xhcjQ3": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-048_b9d0c28c-ea8d-4871-8489-b8ae7c5e118b.png"
+          }
+        },
+        "animation2_AfMznC": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-049_5123ead4-cd48-4e39-b751-259501f6dad0.png"
+          }
+        },
+        "animation2_CwiM7g": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-050_c6174749-798a-4aa8-a734-6eb6039304db.png"
+          }
+        },
+        "animation2_xtX8y8": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-051_19ad27cd-5c53-45b9-b38a-1bb5b34bfc92.png"
+          }
+        },
+        "animation2_6xrHJC": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-052_44938393-b372-406d-83a4-e6df7725db72.png"
+          }
+        },
+        "animation2_FFMj48": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-053_222a4913-3827-45ee-a2e9-c3317ccff92f.png"
+          }
+        },
+        "animation2_4Try88": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-054_557dfbe6-667d-46df-82df-816a44f17a45.png"
+          }
+        },
+        "animation2_jaY8Nk": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-055_7389c5a5-0624-4cc9-b813-ec88313741ce.png"
+          }
+        },
+        "animation2_regjKJ": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-056_07765878-dcf7-4635-b495-3bafcbd37f8f.png"
+          }
+        },
+        "animation2_V4ihtK": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-057_547329c8-6011-4221-8dca-b35040dbcafa.png"
+          }
         }
       },
       "block_order": [
@@ -640,7 +988,65 @@
         "animation1_X6dk6F",
         "animation1_zdGxtb",
         "animation1_tcyb3i",
-        "animation1_4HLcGM"
+        "animation1_4HLcGM",
+        "animation2_URjTVw",
+        "animation2_jWgaRD",
+        "animation2_KMbXhc",
+        "animation2_jcgVyk",
+        "animation2_dTFMA8",
+        "animation2_HgkLjG",
+        "animation2_RU9HR9",
+        "animation2_xq83Gd",
+        "animation2_VJCrgH",
+        "animation2_tTG6x9",
+        "animation2_EhhMP7",
+        "animation2_meRRQN",
+        "animation2_nFggPJ",
+        "animation2_byFYmn",
+        "animation2_dANmM8",
+        "animation2_3zAxry",
+        "animation2_8z6qjG",
+        "animation2_ddjGTY",
+        "animation2_fLaCeT",
+        "animation2_hRdMbq",
+        "animation2_KzqB6e",
+        "animation2_DUiRfY",
+        "animation2_4pFHhH",
+        "animation2_c6wfKK",
+        "animation2_4KtWcL",
+        "animation2_NzfUAT",
+        "animation2_AHLpHz",
+        "animation2_gaQd9z",
+        "animation2_w638VV",
+        "animation2_TRpQ4y",
+        "animation2_t7feqP",
+        "animation2_hq6X4T",
+        "animation2_AexkLt",
+        "animation2_tnWWKY",
+        "animation2_DrwNr8",
+        "animation2_3YUGnx",
+        "animation2_3MR8Rd",
+        "animation2_tDf6Mr",
+        "animation2_QQgLc4",
+        "animation2_DWEDNT",
+        "animation2_bQXt4V",
+        "animation2_7baWYC",
+        "animation2_rVDzPw",
+        "animation2_QVVEYB",
+        "animation2_GE8tmw",
+        "animation2_h6HAUn",
+        "animation2_wpLdiT",
+        "animation2_jejFg3",
+        "animation2_xhcjQ3",
+        "animation2_AfMznC",
+        "animation2_CwiM7g",
+        "animation2_xtX8y8",
+        "animation2_6xrHJC",
+        "animation2_FFMj48",
+        "animation2_4Try88",
+        "animation2_jaY8Nk",
+        "animation2_regjKJ",
+        "animation2_V4ihtK"
       ],
       "name": "How it works scroll",
       "settings": {
@@ -657,7 +1063,7 @@
       "name": "Background image",
       "settings": {
         "image": "shopify://shop_images/SevenSundays_Schichten_wechseln_1_1.png",
-        "hero_video_file": "shopify://files/videos/main-banner.mp4"
+        "hero_video_file": "shopify://files/videos/smart-system.mp4"
       }
     },
     "small_image_with_text_g4aKPC": {
@@ -674,34 +1080,160 @@
     "four_ways_wT6Fpg": {
       "type": "four-ways",
       "blocks": {
-        "animation2_CBGL8Q": {
-          "type": "animation2",
-          "settings": {
-            "image": "shopify://shop_images/frame-020.png"
-          }
-        },
-        "animation2_rzWbDn": {
-          "type": "animation2",
-          "settings": {
-            "image": "shopify://shop_images/frame-019.png"
-          }
-        },
-        "animation2_LnbncM": {
-          "type": "animation2",
-          "settings": {
-            "image": "shopify://shop_images/frame-018.png"
-          }
-        },
         "animation1_NMAHYk": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-001_53b353d7-3ab5-4e3a-b780-1455f58366c2.png"
+          }
+        },
+        "animation1_efjeQA": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-002_e84aedd7-6e73-4d00-a601-07eccbbca3c7.png"
+          }
+        },
+        "animation1_bbPt4F": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-003_406fdf9f-b911-40fb-912e-fd39194b7536.png"
+          }
+        },
+        "animation1_R6JXhE": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-004_d5c0f850-1312-455f-8b7b-219f69bdfdcd.png"
+          }
+        },
+        "animation1_kWtMrY": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-005_8aefa74d-86fb-4e09-8454-8485bd6dd6b9.png"
+          }
+        },
+        "animation1_bKzKhR": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-006_ef02b056-c40f-4842-9983-450c3d0f5f25.png"
+          }
+        },
+        "animation1_YjkQKH": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-007_1d6f4f98-4a14-4ab6-b964-b682976a2b61.png"
+          }
+        },
+        "animation1_QRjmag": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-008_26c4bc3e-1df9-4933-9706-01043f8b44dc.png"
+          }
+        },
+        "animation1_PUNCz6": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-009_166136aa-775a-4300-b923-3619ee7e1f3b.png"
+          }
+        },
+        "animation1_6xL4fh": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-010_af83e794-9a55-4347-8e87-0f439293aab8.png"
+          }
+        },
+        "animation1_wTR6WN": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-011_cf8d8bc9-32b7-439a-90d0-f13a44af9748.png"
+          }
+        },
+        "animation1_AnQE63": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-012_59e2f309-a4c9-49bc-8411-4a297f99042b.png"
+          }
+        },
+        "animation1_CFJhbw": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-013_5b856572-b1e4-4573-b360-21d5d43303c8.png"
+          }
+        },
+        "animation1_RLeWdQ": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-014_af814a07-3469-49b2-9892-5c9176aa3bb4.png"
+          }
+        },
+        "animation1_8DkgNU": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-015_1ba71fab-b8ca-4cb6-bc17-60bfd18c3500.png"
+          }
+        },
+        "animation1_Uarhyx": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-016_d2b40493-a0bb-4288-9fc4-e8dba6203947.png"
+          }
+        },
+        "animation1_QLqe4U": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-017_cc05125f-85b8-45f8-89db-c5dad4d0dfbf.png"
+          }
+        },
+        "animation1_4CmhP6": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-018_5277d9bf-3fcd-4482-8074-edb69e67959e.png"
+          }
+        },
+        "animation1_zFeqbG": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-019_b064b395-fcc1-4100-abab-1297b9db17c6.png"
+          }
+        },
+        "animation1_zbQMkY": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-020_31d92985-dc53-4eb6-a633-1e69c02e25cf.png"
+          }
+        },
+        "animation1_tNWgjh": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-021.png"
+          }
+        },
+        "animation1_qwttJf": {
           "type": "animation1",
           "settings": {
             "image": "shopify://shop_images/frame-001.png"
           }
         },
-        "animation1_H7zVeL": {
+        "animation1_XaJKxi": {
           "type": "animation1",
           "settings": {
-            "image": "shopify://shop_images/frame-002.png"
+            "image": "shopify://shop_images/frame-023.png"
+          }
+        },
+        "animation1_i6MBrN": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-024.png"
+          }
+        },
+        "animation1_URbDPk": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-025.png"
+          }
+        },
+        "animation1_8B6K8U": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-026.png"
           }
         },
         "slides_TyByFe": {
@@ -739,11 +1271,32 @@
         }
       },
       "block_order": [
-        "animation2_CBGL8Q",
-        "animation2_rzWbDn",
-        "animation2_LnbncM",
         "animation1_NMAHYk",
-        "animation1_H7zVeL",
+        "animation1_efjeQA",
+        "animation1_bbPt4F",
+        "animation1_R6JXhE",
+        "animation1_kWtMrY",
+        "animation1_bKzKhR",
+        "animation1_YjkQKH",
+        "animation1_QRjmag",
+        "animation1_PUNCz6",
+        "animation1_6xL4fh",
+        "animation1_wTR6WN",
+        "animation1_AnQE63",
+        "animation1_CFJhbw",
+        "animation1_RLeWdQ",
+        "animation1_8DkgNU",
+        "animation1_Uarhyx",
+        "animation1_QLqe4U",
+        "animation1_4CmhP6",
+        "animation1_zFeqbG",
+        "animation1_zbQMkY",
+        "animation1_tNWgjh",
+        "animation1_qwttJf",
+        "animation1_XaJKxi",
+        "animation1_i6MBrN",
+        "animation1_URbDPk",
+        "animation1_8B6K8U",
         "slides_TyByFe",
         "slides_RFtqPU",
         "slides_n8ND4w"
