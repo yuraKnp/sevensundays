@@ -3632,7 +3632,8 @@ body {font-family: "BasisGrotesqueArabicPro";font-weight: 400;font-size: var(--h
 }
 
 main.type2 > .section:first-child:not([id*="three_layer_banner"]):not([id*="image_banner_right_info"]),
-main.type2 > [id*="three_layer_banner"] > .section{
+main.type2 > [id*="three_layer_banner"] > .section,
+main.type2 > .shopify-policy__container{
   padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-md) - 28px);
 }
 

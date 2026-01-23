@@ -413,7 +413,7 @@
       endif
     %}
 
-    <main id="MainContent" class="{{ template }} {{ template.name }} content-for-layout focus-none {{ header_tag_add }}" role="main" tabindex="-1">
+    <main id="MainContent" class="{{ request.page_type }}{{ template }} {{ template.name }} content-for-layout focus-none {{ header_tag_add }}" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
