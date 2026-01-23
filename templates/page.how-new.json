@@ -1375,6 +1375,17 @@
             "link_url": "#"
           }
         },
+        "slides_HWbqWY": {
+          "type": "slides",
+          "settings": {
+            "subtitle": "Aktive Regeneration",
+            "title": "Revitalisierend",
+            "description": "Leicht federndes Liegen mit Latex-Effekt. Sanfte Mikrobewegungen halten Muskeln und Faszien aktiv – du wachst beweglich auf, nicht eingerostet.",
+            "add_text": "Sportler, Menschen mit Morgensteifigkeit, Bewegungsschläfer",
+            "link_text": "Für wen ist es?",
+            "link_url": "#"
+          }
+        },
         "slides_RFtqPU": {
           "type": "slides",
           "settings": {
@@ -1446,6 +1457,7 @@
         "animation1_URbDPk",
         "animation1_8B6K8U",
         "slides_TyByFe",
+        "slides_HWbqWY",
         "slides_RFtqPU",
         "slides_n8ND4w"
       ],
