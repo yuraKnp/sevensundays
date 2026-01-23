@@ -37,7 +37,7 @@
                                     {%- assign image = block.settings.image -%}
                                     {% if image != blank %}
                                     {% assign image_url = image | image_url  %}
-                                        <img class="scroll-imgs active" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="animation frame" />
+                                        <img class="scroll-imgs active" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
                                     {% endif %}
                                 {% break %}
                             {% endif %}
@@ -49,7 +49,7 @@
                                     {%- assign image = block.settings.image -%}
                                     {% if image != blank %}
                                     {% assign image_url = image | image_url  %}
-                                        <img class="scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-2" src="{{ image_url }}" alt="animation frame" />
+                                        <img class="scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-2" src="{{ image_url }}" alt="frame" />
                                     {% endif %}
                                 {% break %}
                             {% endif %}
