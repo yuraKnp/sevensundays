@@ -1462,12 +1462,12 @@
       "name": "Try sleep section",
       "settings": {
         "subtitle": "GUTER SCHLAF BEGINNT HIER",
-        "title": "Try the sleep system  at home, with our  expert guidance",
-        "description": "Experience the award-winning modular sleep system for yourself. Tell us a bit about your sleep. We’ll reach out to arrange a home consultation.",
+        "title": "Teste das Schlafsystem zu Hause – mit unserer Expertenberatung",
+        "description": "Erlebst du das preisgekrönte modulare Schlafsystem selbst. Wir melden uns bei dir, um eine Beratung bei dir zu Hause zu vereinbaren.",
         "image": "shopify://shop_images/exclusive-banner-img_62fb54c6-8045-4919-968c-ec7e5d671922.webp",
         "small_top_img": "shopify://shop_images/sec-try-small-img.webp",
         "small_bottom_img": "shopify://shop_images/sec-try-small-img-2.webp",
-        "link_text": "Book an at-home demo",
+        "link_text": "Beratung zu Hause buchen",
         "link_url": "https://seven-sundays.shop/pages/experience"
       }
     },
