@@ -4056,7 +4056,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 /*  Typography policies */
 /*--------------------*/
 
-.shopify-policy__body {--text-space: var(--sp-16);--text-rd: var(--rd-2);--text-li-padding: 36px;--text-th-height: 50px;--text-th-padding: 20px;font-size: var(--text);line-height: 1.5;font-weight: 400;color: var(--clr-black);}
+.shopify-policy__body {--text-space: var(--sp-16);--text-rd: var(--rd-2);--text-li-padding: 36px;--text-th-height: 50px;--text-th-padding: 20px;font-size: var(--text);line-height: 1.5;font-weight: 400;color: var(--clr-black); padding-bottom: 20px;}
 .shopify-policy__body * + :where(*) {margin-top: calc(var(--text-space) * 1);}
 .shopify-policy__body * + :is(p, ul, ol) {margin-top: calc(var(--text-space) * 3);}
 .shopify-policy__body * + :is(p + p) {margin-top: var(--text-space);}
