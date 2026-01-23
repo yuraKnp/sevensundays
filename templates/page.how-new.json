@@ -227,7 +227,7 @@
           "type": "slides",
           "settings": {
             "title": "Latex-Schicht",
-            "description": "<p>Ergonomics is the foundation. The 5-zone layer aligns sensitive areas of your body.Five coordinated zones let shoulders and hips sink in while keeping your spine aligned - you lie in perfect balance.</p>"
+            "description": "<p>Dein Körper bewegt sich nachts zu wenig – Latex aktiviert dich sanft.<br/><br/>Leichtfedernder Naturkautschuk hält Muskeln und Faszien in sanfter Mikrobewegung und aktiviert deinen Körper – du liegst wie auf Wolken.</p>"
           }
         },
         "slides_AXiRid": {
@@ -1062,7 +1062,7 @@
         "subtitle": "Jede Schicht hat ihren Zweck für Komfort und Ergonomie. Du wählst, was zu dir passt.",
         "title_under_img": "Wähle Deine Komfort-Schicht",
         "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
-        "first_tab_name": "Ehxausted",
+        "first_tab_name": "Erschöpft",
         "second_tab_name": "Eingerostet"
       }
     },
@@ -1375,6 +1375,17 @@
             "link_url": "#"
           }
         },
+        "slides_HWbqWY": {
+          "type": "slides",
+          "settings": {
+            "subtitle": "Aktive Regeneration",
+            "title": "Revitalisierend",
+            "description": "Leicht federndes Liegen mit Latex-Effekt. Sanfte Mikrobewegungen halten Muskeln und Faszien aktiv – du wachst beweglich auf, nicht eingerostet.",
+            "add_text": "Sportler, Menschen mit Morgensteifigkeit, Bewegungsschläfer",
+            "link_text": "Für wen ist es?",
+            "link_url": "#"
+          }
+        },
         "slides_RFtqPU": {
           "type": "slides",
           "settings": {
@@ -1446,6 +1457,7 @@
         "animation1_URbDPk",
         "animation1_8B6K8U",
         "slides_TyByFe",
+        "slides_HWbqWY",
         "slides_RFtqPU",
         "slides_n8ND4w"
       ],
@@ -1464,9 +1476,7 @@
         "subtitle": "GUTER SCHLAF BEGINNT HIER",
         "title": "Teste das Schlafsystem zu Hause – mit unserer Expertenberatung",
         "description": "Erlebst du das preisgekrönte modulare Schlafsystem selbst. Wir melden uns bei dir, um eine Beratung bei dir zu Hause zu vereinbaren.",
-        "image": "shopify://shop_images/exclusive-banner-img_62fb54c6-8045-4919-968c-ec7e5d671922.webp",
-        "small_top_img": "shopify://shop_images/sec-try-small-img.webp",
-        "small_bottom_img": "shopify://shop_images/sec-try-small-img-2.webp",
+        "image": "shopify://shop_images/Gallery_Image_1.jpg",
         "link_text": "Beratung zu Hause buchen",
         "link_url": "https://seven-sundays.shop/pages/experience"
       }
