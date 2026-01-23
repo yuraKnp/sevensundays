@@ -12,7 +12,8 @@
                 </div>
             </div>
             {% if section.blocks != blank %}
-                {% capture comma_list %}{% for block in section.blocks %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}
+                {% assign image_count = 0 %}
+                {% capture comma_list %}{% for block in section.blocks %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count = image_count | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}
                 {% assign comma_list = comma_list | strip | replace: ' ', '' %}
                 {% for block in section.blocks limit: 1 %}
                     {%- assign image = block.settings.image -%}
@@ -20,7 +21,7 @@
                         {% assign image_url = image | image_url  %}
                             <div class="col-xl-11">
                                 <div class="mattress-img mt-200 decor video-block">
-                                    <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-2" src="{{ image_url }}" alt="animation frame" />
+                                    <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="{{ image_count }}" data-folder="frame-2" src="{{ image_url }}" alt="animation frame" />
                                 </div>
                             </div>
                         {% endif %}
