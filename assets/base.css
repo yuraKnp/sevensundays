@@ -4115,3 +4115,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .shopify-policy__title{
   margin-bottom: 24px;
 }
+
+.shopify-policy__title h1{
+  font-size: var(--h3);
+}
