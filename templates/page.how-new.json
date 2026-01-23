@@ -1386,17 +1386,6 @@
             "link_url": "#"
           }
         },
-        "slides_RFtqPU": {
-          "type": "slides",
-          "settings": {
-            "subtitle": "Aktive Regeneration",
-            "title": "Revitalisierend",
-            "description": "Leicht federndes Liegen mit Latex-Effekt. Sanfte Mikrobewegungen halten Muskeln und Faszien aktiv – du wachst beweglich auf, nicht eingerostet.",
-            "add_text": "Sportler, Menschen mit Morgensteifigkeit, Bewegungsschläfer",
-            "link_text": "Für wen ist es?",
-            "link_url": "#"
-          }
-        },
         "slides_n8ND4w": {
           "type": "slides",
           "settings": {
@@ -1404,6 +1393,17 @@
             "title": "Ergonomisch",
             "description": "Präzise Zonierung mit 5-Zonen-Technologie. Entlastet Schultern und Hüften, fördert die Durchblutung – du wachst auf ohne Verspannungen und taube Gliedmaßen.",
             "add_text": "Seitenschläfer, Menschen mit Schulter-/Hüftproblemen, Ergonomie-Bewusste",
+            "link_text": "Für wen ist es?",
+            "link_url": "#"
+          }
+        },
+        "slides_RFtqPU": {
+          "type": "slides",
+          "settings": {
+            "subtitle": "Gezielte Wirbelsäulen-Regeneration",
+            "title": "Rücken-Regeneration",
+            "description": "Sanfter Dehneffekt mit Stretch-Technologie. Aktiviert den Stoffwechsel in sensiblen Bandscheiben – du regenerierst deinen Rücken im Schlaf.",
+            "add_text": "Menschen mit Rückenproblemen, Schreibtischarbeiter, Vielfahrer",
             "link_text": "Für wen ist es?",
             "link_url": "#"
           }
@@ -1458,8 +1458,8 @@
         "animation1_8B6K8U",
         "slides_TyByFe",
         "slides_HWbqWY",
-        "slides_RFtqPU",
-        "slides_n8ND4w"
+        "slides_n8ND4w",
+        "slides_RFtqPU"
       ],
       "name": "Four ways section",
       "settings": {
