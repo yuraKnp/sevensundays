@@ -4064,7 +4064,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .shopify-policy__body :is(img, table, iframe, figure, picture, blockquote, .swiper-entry) + *:not(figcaption) {margin-top: calc(var(--text-space) * 3);}
 .shopify-policy__body .swiper-entry > * * {margin-top: 0;}
 .shopify-policy__body b {font-weight: 700;}
-.shopify-policy__body span {color: var(--clr-primary);}
+.shopify-policy__body span {color: #1e2227;}
 .shopify-policy__body strong {font-weight: 700;}
 .shopify-policy__body em {font-style: italic;font-weight: 500;}
 .shopify-policy__body a:not(.btn) {display: inline;font-weight: 400;color: var(--clr-black);text-decoration: underline;text-decoration-color: currentColor;text-underline-offset: 2px;}
