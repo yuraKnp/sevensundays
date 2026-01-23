@@ -4051,3 +4051,63 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .title .legal br, .text .legal br{
   display: block!important;
 }
+
+/*--------------------*/
+/*  Typography policies */
+/*--------------------*/
+
+.legal-new {--text-space: var(--sp-16);--text-rd: var(--rd-2);--text-li-padding: 36px;--text-th-height: 50px;--text-th-padding: 20px;font-size: var(--text);line-height: 1.5;font-weight: 400;color: var(--clr-black);}
+.legal-new * + :where(*) {margin-top: calc(var(--text-space) * 6);}
+.legal-new * + :is(p, ul, ol) {margin-top: calc(var(--text-space) * 3);}
+.legal-new * + :is(p + p) {margin-top: var(--text-space);}
+.legal-new * + :is(li) {margin-top: calc(var(--text-space) * 0.4);}
+.legal-new :is(img, table, iframe, figure, picture, blockquote, .swiper-entry) + *:not(figcaption) {margin-top: calc(var(--text-space) * 3);}
+.legal-new .swiper-entry > * * {margin-top: 0;}
+.legal-new b {font-weight: 700;}
+.legal-new span {color: var(--clr-primary);}
+.legal-new strong {font-weight: 700;}
+.legal-new em {font-style: italic;font-weight: 500;}
+.legal-new a:not(.btn) {display: inline;font-weight: 400;color: var(--clr-black);text-decoration: underline;text-decoration-color: currentColor;text-underline-offset: 2px;}
+.legal-new ul li,
+.legal-new ol li {position: relative;padding-left: var(--text-li-padding);}
+.legal-new ul li {padding-left: var(--text-li-padding);}
+.legal-new ul li:before {content: "";position: absolute;left: 15px;top: 11px;width: 4px;height: 4px;border-radius: 50%;background-color: currentColor;}
+.legal-new ol {counter-reset: number;}
+.legal-new ol li:before {counter-increment: number;content: counter(number, decimal-leading-zero) ".";display: inline-block;position: absolute;left: 0;font-weight: 500;line-height: inherit;color: var(--clr-black);}
+.legal-new img {display: block;width: 100%;border-radius: var(--text-rd);}
+.legal-new figure {line-height: 0;width: 100%;}
+.legal-new figure.aligncenter {text-align: center;}
+.legal-new figure.alignright {text-align: right;}
+.legal-new figure > img {width: auto;}
+.legal-new figure figcaption {font-size: 12px;font-weight: 500;line-height: 16px;letter-spacing: 0.96px;text-transform: uppercase;color: var(--clr-black);margin-top: 16px;}
+.legal-new iframe {display: block;max-width: 100%;width: 100%;height: 100%;aspect-ratio: 16/9;border: 0;border-radius: var(--text-rd);}
+.legal-new blockquote {text-align: left;font-weight: 500;padding-block: calc(var(--text-space) * 3);padding-inline: clamp(1rem, -6.54rem + 15.6vw, var(--text-space) * 6);color: var(--clr-black);background-color: var(--clr-grey);border-radius: var(--text-rd);}
+.legal-new table {border-collapse: collapse;width: 100%;}
+.legal-new tbody tr {text-align: left;}
+.legal-new tbody tr:nth-child(even) th,
+.legal-new tbody tr:nth-child(even) td {background-color: var(--clr-grey);}
+.legal-new tbody tr:last-child:not(:nth-child(even)) {border-bottom: 0.0625rem solid var(--clr-grey);}
+.legal-new thead tr {border: none;}
+.legal-new thead th,
+.legal-new thead td {height: var(--text-th-height);font-weight: 500;color: var(--clr-black);background-color: var(--clr-grey);}
+.legal-new td,
+.legal-new th {vertical-align: middle;height: calc(var(--text-th-height) / 1.4);padding: calc(var(--text-th-padding) / 3);font-size: inherit;line-height: inherit;font-weight: inherit;color: var(--clr-text);}
+.legal-new td:first-child,
+.legal-new th:first-child {padding-left: var(--text-th-padding);border-radius: var(--text-rd) 0 0 var(--text-rd);}
+.legal-new td:last-child,
+.legal-new th:last-child {padding-right: var(--text-th-padding);border-radius: 0 var(--text-rd) var(--text-rd) 0;}
+.legal-new *:first-child img {margin-top: 0;}
+@media (min-width: 1200px) {
+.legal-new a:not(.btn):hover {text-decoration-color: transparent;}
+}
+@media (max-width: 1199px) {
+.legal-new {--text-li-padding: 28px;}
+.legal-new * + :where(*) {margin-top: calc(var(--text-space) * 4);}
+.legal-new * + :is(p, ul, ol) {margin-top: calc(var(--text-space) * 2.4);}
+.legal-new * + :is(li) {margin-top: 2px;}
+.legal-new ul li:before {top: 9px;left: 10px;}
+.legal-new figure figcaption {font-size: 10px;line-height: 12px;letter-spacing: 0.8px;margin-top: 8px;}
+}
+@media (max-width: 991px) {
+.legal-new br {display: none;}
+}
