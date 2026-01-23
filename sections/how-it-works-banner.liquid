@@ -28,15 +28,15 @@
                 {% endfor %}
             {% endif %}
 
-            {%- assign test_img = block.settings.test_img -%}
-            {% if test_image != blank %}
-                  {% assign test_image = image | image_url  %}
-            <div class="col-lg-10 col-xl-8">
-                <div class="mattress-img mt-200 decor video-block">
-                    <img class="test" src="{{ image_url }}" alt="frame" />
-                </div>
-            </div>
-            {% endif %}
+              {%- assign test_img = block.settings.test_img -%}
+              {% if test_image != blank %}
+              {% assign test_image = image | image_url  %}
+              <div class="col-lg-10 col-xl-8">
+                  <div class="mattress-img mt-200 decor video-block">
+                      <img class="test" src="{{ test_image }}" alt="frame" />
+                  </div>
+              </div>
+              {% endif %}
             <div class="col-lg-7">
                 <div class="title-shortcode mb-0 text-center mt-64 mt-des-32">
                     {% if section.settings.title_under_img != blank %}
