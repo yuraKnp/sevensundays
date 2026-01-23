@@ -3985,9 +3985,9 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   transition: var(--transition-1);
 }
 
-.banner-media .video{
+/* .banner-media .video{
   clip-path: inset(0 round var(--rd-1));
-}
+} */
 
 @media(max-width: 767px){
   .cart-item__image-container{
