@@ -28,7 +28,7 @@
                 {% endfor %}
             {% endif %} {% endcomment %}
 
-            {%- assign test_img = section.settings.back_img -%}
+            {%- assign back_img = section.settings.back_img -%}
               {% if back_img != blank %}
               {% assign gif_image = back_img | image_url  %}
               <div class="col-lg-10 col-xl-8">
