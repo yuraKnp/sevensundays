@@ -39,8 +39,8 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "header_type": "light",
         "featured_product": "boxspringmatratze",
+        "featured_product_link": "https://seven-sundays.shop/pages/experience",
         "mobile_logo_position": "center",
         "menu": "updated-main-menu",
         "menu_type_desktop": "dropdown",
