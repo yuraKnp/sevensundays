@@ -207,7 +207,7 @@
       ],
       "name": "How it works banner",
       "settings": {
-        "test_img": "shopify://shop_images/A1_MP4_700px.gif",
+        "back_img": "shopify://shop_images/personal-mattress.gif",
         "title": "Das persönlichste Schlafsystem der Welt",
         "subtitle": "ENGINEERED IN SWITZERLAND",
         "title_under_img": "Schlaf, wie du ihn verdienst",
