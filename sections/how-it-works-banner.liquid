@@ -29,8 +29,8 @@
             {% endif %}
 
               {%- assign test_img = section.settings.test_img -%}
-              {% if test_image != blank %}
-              {% assign test_image = image | image_url  %}
+              {% if test_img != blank %}
+              {% assign test_image = test_img | image_url  %}
               <div class="col-lg-10 col-xl-8">
                   <div class="mattress-img mt-200 decor video-block">
                       <img class="test" src="{{ test_image }}" alt="frame" />
