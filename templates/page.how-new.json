@@ -226,8 +226,15 @@
         "slides_zVjYcD": {
           "type": "slides",
           "settings": {
-            "title": "5-Zone Layer",
+            "title": "Latex-Schicht",
             "description": "<p>Ergonomics is the foundation. The 5-zone layer aligns sensitive areas of your body.Five coordinated zones let shoulders and hips sink in while keeping your spine aligned - you lie in perfect balance.</p>"
+          }
+        },
+        "slides_AXiRid": {
+          "type": "slides",
+          "settings": {
+            "title": "5-Zonen-Schicht",
+            "description": "<p>Ergonomie ist die Basis. Die 5-Zonen-Schicht richtet sensible Bereiche deines Körpers aus.<br/><br/>Fünf abgestimmte Zonen lassen Schultern und Hüften einsinken und halten deine Wirbelsäule ausgerichtet – du liegst in perfekter Balance.</p>"
           }
         },
         "slides_kBJr8k": {
@@ -931,6 +938,7 @@
       "block_order": [
         "slides_gE39m9",
         "slides_zVjYcD",
+        "slides_AXiRid",
         "slides_kBJr8k",
         "animation1_ddxENW",
         "animation1_Yg4kmd",
@@ -1055,7 +1063,7 @@
         "title_under_img": "Wähle Deine Komfort-Schicht",
         "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
         "first_tab_name": "Ehxausted",
-        "second_tab_name": "Stiff"
+        "second_tab_name": "Eingerostet"
       }
     },
     "background_image_jpL9fw": {
