@@ -17,14 +17,15 @@
                 <div class="sensation-block">
                     <div class="sticky-block">
                         <div class="video-block max-506 mb-48">
-                            {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation1' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+                            {% assign image_count1 = 0 %}
+                            {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation1' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count = image_count | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
                             {% assign comma_list = comma_list | strip | replace: ' ', '' %}
                             {% for block in section.blocks %}
                                 {% if block.type == 'animation1' %}
                                         {%- assign image = block.settings.image -%}
                                         {% if image != blank %}
                                         {% assign image_url = image | image_url  %}
-                                            <img class="scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
+                                            <img class="scroll-imgs" data-images="{{ comma_list }}" data-frame="{{ image_count }}" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
                                         {% endif %}
                                     {% break %}
                                 {% endif %}

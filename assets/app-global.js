@@ -830,7 +830,8 @@ jQuery(function ($) {
     //progress layer IMGS
     $('.scroll-imgs').each(function () {
         const $img = $(this);
-        const $layers = $('.scroll-layers .layer-item');
+        // const $layers = $('.scroll-layers .layer-item');
+        const $layers = $img.closest('.section').find('.scroll-layers .layer-item, .sensation-block .sensation-item');
 
         if ($img.length < 1) return;
 
@@ -900,6 +901,7 @@ jQuery(function ($) {
             initScroll();
         }
     });
+
 
 
 
