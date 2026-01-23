@@ -220,21 +220,28 @@
           "type": "slides",
           "settings": {
             "title": "Speicherschicht",
-            "description": "Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos."
+            "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>"
           }
         },
         "slides_zVjYcD": {
           "type": "slides",
           "settings": {
-            "title": "5-Zone Layer",
-            "description": "Ergonomics is the foundation. The 5-zone layer aligns sensitive areas of your body.Five coordinated zones let shoulders and hips sink in while keeping your spine aligned - you lie in perfect balance."
+            "title": "Latex-Schicht",
+            "description": "<p>Ergonomics is the foundation. The 5-zone layer aligns sensitive areas of your body.Five coordinated zones let shoulders and hips sink in while keeping your spine aligned - you lie in perfect balance.</p>"
+          }
+        },
+        "slides_AXiRid": {
+          "type": "slides",
+          "settings": {
+            "title": "5-Zonen-Schicht",
+            "description": "<p>Ergonomie ist die Basis. Die 5-Zonen-Schicht richtet sensible Bereiche deines Körpers aus.<br/><br/>Fünf abgestimmte Zonen lassen Schultern und Hüften einsinken und halten deine Wirbelsäule ausgerichtet – du liegst in perfekter Balance.</p>"
           }
         },
         "slides_kBJr8k": {
           "type": "slides",
           "settings": {
-            "title": "Stretch Layer",
-            "description": "Inspired by Dorn-Breuss method, developed with Prof. Dr. Grönemeyer.Counter-rotating slats gently stretch your spine and promote disc regeneration - you relax, your back regenerates."
+            "title": "Stretch-Schicht",
+            "description": "<p>Inspiriert von der Dorn-Breuss-Methode, entwickelt mit Prof. Dr. Grönemeyer.<br/><br/>Gegenläufige Lamellen dehnen sanft deine Wirbelsäule und fördern die Regeneration der Bandscheiben – du entspannst, dein Rücken regeneriert.</p>"
           }
         },
         "animation1_ddxENW": {
@@ -931,6 +938,7 @@
       "block_order": [
         "slides_gE39m9",
         "slides_zVjYcD",
+        "slides_AXiRid",
         "slides_kBJr8k",
         "animation1_ddxENW",
         "animation1_Yg4kmd",
@@ -1055,7 +1063,7 @@
         "title_under_img": "Wähle Deine Komfort-Schicht",
         "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
         "first_tab_name": "Ehxausted",
-        "second_tab_name": "Stiff"
+        "second_tab_name": "Eingerostet"
       }
     },
     "background_image_jpL9fw": {
@@ -1359,33 +1367,33 @@
         "slides_TyByFe": {
           "type": "slides",
           "settings": {
-            "subtitle": "Deep relaxation",
-            "title": "Calming",
-            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
-            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
-            "link_text": "Who is it for?",
+            "subtitle": "Tiefe Entspannung",
+            "title": "Beruhigend",
+            "description": "Schwereloses Liegen mit Memory-Effekt. Reduziert Druckpunkte, beruhigt unruhige Nächte – für die perfekte Balance aus Ruhe und Regeneration.",
+            "add_text": "Unruhige Schläfer, druckempfindliche Menschen, Ruhesuchende",
+            "link_text": "Für wen ist es?",
             "link_url": "#"
           }
         },
         "slides_RFtqPU": {
           "type": "slides",
           "settings": {
-            "subtitle": "Deep relaxation",
-            "title": "Calming",
-            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
-            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
-            "link_text": "Who is it for?",
+            "subtitle": "Aktive Regeneration",
+            "title": "Revitalisierend",
+            "description": "Leicht federndes Liegen mit Latex-Effekt. Sanfte Mikrobewegungen halten Muskeln und Faszien aktiv – du wachst beweglich auf, nicht eingerostet.",
+            "add_text": "Sportler, Menschen mit Morgensteifigkeit, Bewegungsschläfer",
+            "link_text": "Für wen ist es?",
             "link_url": "#"
           }
         },
         "slides_n8ND4w": {
           "type": "slides",
           "settings": {
-            "subtitle": "Deep relaxation",
-            "title": "Calming",
-            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
-            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
-            "link_text": "Who is it for?",
+            "subtitle": "Optimale Körperpositionierung",
+            "title": "Ergonomisch",
+            "description": "Präzise Zonierung mit 5-Zonen-Technologie. Entlastet Schultern und Hüften, fördert die Durchblutung – du wachst auf ohne Verspannungen und taube Gliedmaßen.",
+            "add_text": "Seitenschläfer, Menschen mit Schulter-/Hüftproblemen, Ergonomie-Bewusste",
+            "link_text": "Für wen ist es?",
             "link_url": "#"
           }
         }
@@ -1443,23 +1451,23 @@
       ],
       "name": "Four ways section",
       "settings": {
-        "title": "Sleep sensations thatgive you more thanjust comfort",
-        "subtitle": "OPEN. RECONFIGURE. RECOVER.",
-        "bottom_title": "Design your sleep. For life",
-        "bottom_description": "With Seven Sundays, you'll never buy another mattress. Yoursleep system grows with you."
+        "title": "Liegegefühle, die dir mehr bringen als Gemütlichkeit",
+        "subtitle": "AUFMACHEN. NEU KONFIGURIEREN. REGENERIEREN.",
+        "bottom_title": "Designe deinen Schlaf. Ein Leben lang.",
+        "bottom_description": "Mit Seven Sundays kaufst du nie wieder eine Matratze. Dein Schlafsystem wächst mit dir."
       }
     },
     "try_sleep_gWYx8e": {
       "type": "try-sleep",
       "name": "Try sleep section",
       "settings": {
-        "subtitle": "The good sleep starts here",
-        "title": "Try the sleep system  at home, with our  expert guidance",
-        "description": "Experience the award-winning modular sleep system for yourself. Tell us a bit about your sleep. We’ll reach out to arrange a home consultation.",
+        "subtitle": "GUTER SCHLAF BEGINNT HIER",
+        "title": "Teste das Schlafsystem zu Hause – mit unserer Expertenberatung",
+        "description": "Erlebst du das preisgekrönte modulare Schlafsystem selbst. Wir melden uns bei dir, um eine Beratung bei dir zu Hause zu vereinbaren.",
         "image": "shopify://shop_images/exclusive-banner-img_62fb54c6-8045-4919-968c-ec7e5d671922.webp",
         "small_top_img": "shopify://shop_images/sec-try-small-img.webp",
         "small_bottom_img": "shopify://shop_images/sec-try-small-img-2.webp",
-        "link_text": "Book an at-home demo",
+        "link_text": "Beratung zu Hause buchen",
         "link_url": "https://seven-sundays.shop/pages/experience"
       }
     },
@@ -1501,9 +1509,9 @@
       ],
       "name": "Recovery experts",
       "settings": {
-        "subtitle": "Experten für Wiederherstellung an Ihrer Seite",
+        "subtitle": "REGENERATIONSEXPERTEN AN DEINER SEITE",
         "title": "Unser wissenschaftlicher Beirat",
-        "description": "Seven Sundays hat sich mit renommierten Medizinexperten zusammengeschlossen, die führend auf ihren jeweiligen Gebieten sind. Sie unterstützen Seven Sundays bei der Weiterentwicklung des modularen Schlafsystems auf Basis modernster Wissenschaft."
+        "description": "Seven Sundays arbeitet mit renommierten Medizinexperten zusammen, die führend in ihren jeweiligen Fachgebieten sind. Sie unterstützen Seven Sundays bei der Entwicklung des modularen Schlafsystems auf Basis präziser, modernster Wissenschaft in den Bereichen Gesundheit und Longevity."
       }
     },
     "real_sleep_iA7keG": {
@@ -1569,7 +1577,7 @@
       "name": "Real sleep testimonial",
       "settings": {
         "subtitle": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
-        "title": "Bewertungen von außergewöhnlichen Menschen wie dir."
+        "title": "Bewertungen von außergewöhnlichen Menschen wie dir"
       }
     },
     "call_to_action_cpW7xW": {
@@ -1580,10 +1588,10 @@
         "image": "shopify://shop_images/cta-video.webp",
         "image_mob": "shopify://shop_images/cta-video.webp",
         "hero_video_file": "shopify://files/videos/cta-video.mp4",
-        "title": "Teste das preisgekrönte modulare Schlafsystem bei dir zuhause – mit persönlicher Expertenberatung.",
-        "subtitle": "Überzeug dich selbst – und wach auf wie Sonntag, jeden Tag.",
-        "short_description": "<p>✓ Keine Recherche-Odyssee</p><p>✓ Dein Zuhause statt Verkaufsfläche</p><p>✓ Zertifizierte Expertenberatung</p><p>✓ Testen vor dem Kauf</p>",
-        "link_text": "Schlafsystem erleben",
+        "title": "Bereit, das preisgekrönte Schlafsystem zu Hause zu erleben?",
+        "subtitle": "ENTWICKELT, UM ALLES ZU VERÄNDERN",
+        "short_description": "<p>Teile uns deine Daten mit und wir kontaktieren dich, um eine persönliche Beratung bei dir zu Hause mit einem zertifizierten Schlafexperten zu vereinbaren.<br/></p>",
+        "link_text": "Beratung zu Hause vereinbaren",
         "link_url": "https://seven-sundays.shop/pages/experience",
         "link_text2": "",
         "link_url2": ""
