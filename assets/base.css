@@ -4120,3 +4120,11 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .shopify-policy__body h2{
   font-size: var(--h3);
 }
+
+
+@media(max-width: 768px){
+  .shopify-policy__body > div{
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
