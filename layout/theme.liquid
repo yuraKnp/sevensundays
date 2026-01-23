@@ -408,6 +408,9 @@
       if list contains template
         assign header_tag_add = 'type2'
       endif
+      if request.page_type == 'policy'
+        assign header_tag_add = 'type2'
+      endif
     %}
 
     <main id="MainContent" class="{{ template }} {{ template.name }} content-for-layout focus-none {{ header_tag_add }}" role="main" tabindex="-1">

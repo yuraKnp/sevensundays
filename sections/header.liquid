@@ -298,6 +298,9 @@
   if list contains template
     assign header_tag_add = 'class="type2"'
   endif
+  if request.page_type == 'policy'
+        assign header_tag_add = 'class="type2"'
+  endif
 %}
 <header {{ header_tag_add }}>
 <div class="h-top-header {{ template }}">
