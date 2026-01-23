@@ -1367,33 +1367,33 @@
         "slides_TyByFe": {
           "type": "slides",
           "settings": {
-            "subtitle": "Deep relaxation",
-            "title": "Calming",
-            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
-            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
-            "link_text": "Who is it for?",
+            "subtitle": "Tiefe Entspannung",
+            "title": "Beruhigend",
+            "description": "Schwereloses Liegen mit Memory-Effekt. Reduziert Druckpunkte, beruhigt unruhige Nächte – für die perfekte Balance aus Ruhe und Regeneration.",
+            "add_text": "Unruhige Schläfer, druckempfindliche Menschen, Ruhesuchende",
+            "link_text": "Für wen ist es?",
             "link_url": "#"
           }
         },
         "slides_RFtqPU": {
           "type": "slides",
           "settings": {
-            "subtitle": "Deep relaxation",
-            "title": "Calming",
-            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
-            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
-            "link_text": "Who is it for?",
+            "subtitle": "Aktive Regeneration",
+            "title": "Revitalisierend",
+            "description": "Leicht federndes Liegen mit Latex-Effekt. Sanfte Mikrobewegungen halten Muskeln und Faszien aktiv – du wachst beweglich auf, nicht eingerostet.",
+            "add_text": "Sportler, Menschen mit Morgensteifigkeit, Bewegungsschläfer",
+            "link_text": "Für wen ist es?",
             "link_url": "#"
           }
         },
         "slides_n8ND4w": {
           "type": "slides",
           "settings": {
-            "subtitle": "Deep relaxation",
-            "title": "Calming",
-            "description": "Weightless lying with memory effect. Reduces pressure points, calms restless nights - for the perfect balance of rest and regeneration.",
-            "add_text": "Restless sleepers, pressure-sensitive people,those seeking rest",
-            "link_text": "Who is it for?",
+            "subtitle": "Optimale Körperpositionierung",
+            "title": "Ergonomisch",
+            "description": "Präzise Zonierung mit 5-Zonen-Technologie. Entlastet Schultern und Hüften, fördert die Durchblutung – du wachst auf ohne Verspannungen und taube Gliedmaßen.",
+            "add_text": "Seitenschläfer, Menschen mit Schulter-/Hüftproblemen, Ergonomie-Bewusste",
+            "link_text": "Für wen ist es?",
             "link_url": "#"
           }
         }
@@ -1451,8 +1451,8 @@
       ],
       "name": "Four ways section",
       "settings": {
-        "title": "Sleep sensations thatgive you more thanjust comfort",
-        "subtitle": "OPEN. RECONFIGURE. RECOVER.",
+        "title": "Liegegefühle, die dir mehr bringen als Gemütlichkeit",
+        "subtitle": "AUFMACHEN. NEU KONFIGURIEREN. REGENERIEREN.",
         "bottom_title": "Design your sleep. For life",
         "bottom_description": "With Seven Sundays, you'll never buy another mattress. Yoursleep system grows with you."
       }
