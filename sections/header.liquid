@@ -334,6 +334,7 @@
             </a>
 
             {% assign featured_product = section.settings.featured_product %}
+            {% assign featured_product_link = section.settings.featured_product_link %}
 
             <div class="h-menu">
                 <nav class="h-links">
@@ -353,7 +354,7 @@
                                 <div class="text"><b>{{ 'general.menu.from' | t }} {{ featured_product.price | money }}</b></div>
                                 <div class="text">{{ featured_product.title }}</div>
                             </div>
-                            <a href="{{ featured_product.url }}" class="btn">
+                            <a href="{{ featured_product_link }}" class="btn">
                                 <b>{{ 'general.menu.get_sleep_system' | t }}</b>
                             </a>
                             {% if thumbnail_image != blank %}
@@ -682,6 +683,11 @@
       "type": "product",
       "id": "featured_product",
       "label": "Select a Featured Product"
+    },
+    {
+      "type": "text",
+      "id": "featured_product_link",
+      "label": "Featured product link"
     },
     {
       "type": "select",
