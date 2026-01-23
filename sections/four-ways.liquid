@@ -24,7 +24,7 @@
                                         {%- assign image = block.settings.image -%}
                                         {% if image != blank %}
                                         {% assign image_url = image | image_url  %}
-                                            <img class="auto-scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
+                                            <img class="scroll-imgs" data-images="{{ comma_list }}" data-frame="20" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
                                         {% endif %}
                                     {% break %}
                                 {% endif %}
