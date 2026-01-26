@@ -1059,7 +1059,7 @@
       ],
       "name": "How it works scroll",
       "settings": {
-        "title": "Deine drei Schichten. Wie für dich gemacht.",
+        "title": "Drei Schichten.<br>Wie für dich gemacht.",
         "subtitle": "Jede Schicht hat ihren Zweck für Komfort und Ergonomie. Du wählst, was zu dir passt.",
         "title_under_img": "Wähle Deine Komfort-Schicht",
         "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
@@ -1338,7 +1338,7 @@
         "animation1_qwttJf": {
           "type": "animation1",
           "settings": {
-            "image": "shopify://shop_images/frame-001.png"
+            "image": "shopify://shop_images/frame-022.png"
           }
         },
         "animation1_XaJKxi": {
