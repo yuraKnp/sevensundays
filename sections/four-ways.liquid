@@ -89,7 +89,7 @@
                 <div class="sensation-block">
                     <div class="sticky-block">
                         <div class="video-block max-700 mb-48">
-                            {% assign image_count1 = 0 %}
+                            {% comment %} {% assign image_count1 = 0 %} {% endcomment %}
                             {% comment %} {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation1' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count = image_count | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %} {% endcomment %}
                             {% comment %} {% assign comma_list = comma_list | strip | replace: ' ', '' %} {% endcomment %}
                             {% for block in section.blocks %}

@@ -469,7 +469,7 @@ table:not([class]) th {
 a:empty,
 ul:empty,
 dl:empty,
-div:empty:not(.block-blur):not([class^="spacer-"]):not(.video-popup-overlay):not(.video-popup-layer):not(.banner-align):not(.video-popup-close):not(.js-advisor-info),
+div:empty:not(.block-blur):not([class^="spacer-"]):not(.video-popup-overlay):not(.video-popup-layer):not(.banner-align):not(.video-popup-close):not(.js-advisor-info):not(.line),
 section:empty,
 article:empty,
 p:empty,
