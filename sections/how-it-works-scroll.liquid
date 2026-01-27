@@ -9,18 +9,7 @@
 {% assign gallery6 = page.metafields.custom.slideshow_how_page_tab_1_six_part.value | default: empty %}
 
 
-{% assign gallery_sec = page.metafields.custom.slideshow_how_page_tab_2_first.value | default: empty %}
-{% assign gallery2_sec = page.metafields.custom.slideshow_how_page_tab_2_second.value | default: empty %}
-{% assign gallery3_sec = page.metafields.custom.slideshow_how_page_tab_2_third.value | default: empty %}
-{% assign gallery4_sec = page.metafields.custom.slideshow_how_page_tab_2_forth.value | default: empty %}
-{% assign gallery5_sec = page.metafields.custom.slideshow_how_page_tab_2_fifth.value | default: empty %}
-{% assign gallery6_sec = page.metafields.custom.slideshow_how_page_tab_2_six.value | default: empty %}
-
-
-
 {% assign comma_list = '' %}
-{% assign comma_list_sec = '' %}
-
 
 {% if gallery != blank %}
     {% for image in gallery %}
@@ -74,60 +63,6 @@
     {% endfor %}
 {% endif %}
 
-
-{% if gallery_sec != blank %}
-    {% for image in gallery_sec %}
-    {% assign img_url = image | image_url %}
-    {% if forloop.first %}
-        {% assign comma_list_sec = img_url %}
-    {% else %}
-        {% assign comma_list_sec = comma_list_sec | append: ',' | append: img_url %}
-        {% assign image_count2 = image_count2 | plus: 1 %}
-    {% endif %}
-    {% endfor %}
-{% endif %}
-
-{% if gallery2_sec != blank %}
-    {% for image in gallery2_sec %}
-        {% assign img_url = image | image_url %}
-            {% assign comma_list_sec = comma_list_sec | append: ',' | append: img_url %}
-            {% assign image_count2 = image_count2 | plus: 1 %}
-    {% endfor %}
-{% endif %}
-
-{% if gallery3_sec != blank %}
-    {% for image in gallery3_sec %}
-        {% assign img_url = image | image_url %}
-            {% assign comma_list_sec = comma_list_sec | append: ',' | append: img_url %}
-            {% assign image_count2 = image_count2 | plus: 1 %}
-    {% endfor %}
-{% endif %}
-
-{% if gallery4_sec != blank %}
-    {% for image in gallery4_sec %}
-        {% assign img_url = image | image_url %}
-            {% assign comma_list_sec = comma_list_sec | append: ',' | append: img_url %}
-            {% assign image_count2 = image_count2 | plus: 1 %}
-    {% endfor %}
-{% endif %}
-
-{% if gallery5_sec != blank %}
-    {% for image in gallery5_sec %}
-        {% assign img_url = image | image_url %}
-            {% assign comma_list_sec = comma_list_sec | append: ',' | append: img_url %}
-            {% assign image_count2 = image_count2 | plus: 1 %}
-    {% endfor %}
-{% endif %}
-
-{% if gallery6_sec != blank %}
-    {% for image in gallery6_sec %}
-        {% assign img_url = image | image_url %}
-            {% assign comma_list_sec = comma_list_sec | append: ',' | append: img_url %}
-            {% assign image_count2 = image_count2 | plus: 1 %}
-    {% endfor %}
-{% endif %}
-
-
 <div class="section sec-black sec-black-gradient padd-lg layers-sec">
     <div class="container">
         <div class="row justify-content-center">
@@ -175,14 +110,14 @@
                                 {% break %}
                             {% endif %}
                         {% endfor %}
-                        {% comment %} {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation2' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count2 = image_count2 | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
-                        {% assign comma_list = comma_list | strip | replace: ' ', '' %} {% endcomment %}
+                        {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation2' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_count2 = image_count2 | plus: 1 %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+                        {% assign comma_list = comma_list | strip | replace: ' ', '' %}
                         {% for block in section.blocks %}
                             {% if block.type == 'animation2' %}
                                     {%- assign image = block.settings.image -%}
                                     {% if image != blank %}
                                     {% assign image_url = image | image_url  %}
-                                        <img class="scroll-imgs" data-scroll-offset="0.44" data-scroll-offset-mob="0.5" data-images="{{ comma_list_sec }}" data-frame="{{ image_count2 }}" data-folder="frame-2" src="{{ image_url }}" alt="frame" />
+                                        <img class="scroll-imgs" data-scroll-offset="0.44" data-scroll-offset-mob="0.5" data-images="{{ comma_list }}" data-frame="{{ image_count2 }}" data-folder="frame-2" src="{{ image_url }}" alt="frame" />
                                     {% endif %}
                                 {% break %}
                             {% endif %}
