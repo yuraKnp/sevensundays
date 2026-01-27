@@ -905,39 +905,45 @@ jQuery(function ($) {
         }
     });
 
-    //opacity sensation item
-    $(document).ready(function() {
-        var $stickyBlock = $('.sensation-block .sticky-block');
-        var $sensationItems = $('.sensation-item');
-        var $header = $('header');
+    //opacity for each children sensation item
+    $(document).ready(function () {
+        var $items = $('.sensation-item');
 
-        var headerHeight = $header.length ? $header.outerHeight() : 0;
+        $(window).on('scroll', function () {
+            var scrollTop = $(window).scrollTop();
+            var windowHeight = $(window).height();
 
-        $(window).on('scroll', function() {
-            var stickyTop = $stickyBlock.offset().top - $(window).scrollTop();
-            var limitY = stickyTop + $stickyBlock.outerHeight() + headerHeight;
-
-            $sensationItems.each(function() {
+            $items.each(function () {
                 var $item = $(this);
-                var itemTop = $item.offset().top - $(window).scrollTop();
+                var itemTop = $item.offset().top;
+                var itemHeight = $item.outerHeight();
 
-                if (itemTop <= limitY) {
-                    var distance = Math.max(0, itemTop - stickyTop);
+                var start = itemTop - windowHeight + 400;
+                var end = itemTop + itemHeight - 360;
+                var progress = (scrollTop - start) / (end - start);
+                progress = Math.max(0, Math.min(1, progress));
 
-                    var fadeOffset = $item.outerHeight() * 0.5;
+                var $children = $item.children();
+                var count = $children.length;
+                var step = 1 / count;
+
+                $children.each(function (index) {
+                    var childStart = step * index;
+                    var speedFactor = 1 + index * 0.2;
 
                     var opacity = 1;
-                    if(distance < fadeOffset) {
-                        opacity = distance / fadeOffset;
+
+                    if (progress > childStart) {
+                        var local = (progress - childStart) / step * speedFactor;
+                        opacity = Math.max(0, 1 - local);
                     }
 
-                    $item.css('opacity', opacity);
-                } else {
-                    $item.css('opacity', 1);
-                }
+                    $(this).css('opacity', opacity);
+                });
             });
         });
     });
+
 
 
 
