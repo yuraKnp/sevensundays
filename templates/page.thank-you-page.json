@@ -53,11 +53,28 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "call_to_action_AxitXL": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "section_type": "type_1",
+        "image": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Entdecke das preisgekrönte Schlafsystem, das alles verändert",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "<p>Jetzt entdecken. Jeden Morgen wie Sonntag aufwachen.</p>",
+        "link_text": "Schlafsystem entdecken",
+        "link_url": "https://seven-sundays.shop/blogs/news/seven-sundays-sleep-study",
+        "link_text2": "",
+        "link_url2": ""
+      }
     }
   },
   "order": [
     "main",
     "page_content_izA8Kj",
-    "rich_text_nRcebr"
+    "rich_text_nRcebr",
+    "call_to_action_AxitXL"
   ]
 }
