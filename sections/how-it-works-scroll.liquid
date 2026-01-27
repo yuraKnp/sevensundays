@@ -2,20 +2,38 @@
 {% assign image_count2 = 1 %}
 
 {% assign gallery = page.metafields.custom.custom_gallery.value | default: empty %}
-{% assign gallery = gallery | concat: page.metafields.custom.slideshow_how_page_tab_2.value | default: empty %}
-{% assign gallery = gallery | concat: page.metafields.custom.slideshow_how_page_tab_1_third_part.value | default: empty %}
+{% assign gallery2 = page.metafields.custom.slideshow_how_page_tab_2.value | default: empty %}
+{% assign gallery3 = page.metafields.custom.slideshow_how_page_tab_1_third_part.value | default: empty %}
 
 {% assign comma_list = '' %}
 
-{% for image in gallery %}
-  {% assign img_url = image | image_url %}
-  {% if forloop.first %}
-    {% assign comma_list = img_url %}
-  {% else %}
-    {% assign comma_list = comma_list | append: ',' | append: img_url %}
-    {% assign image_count1 = image_count1 | plus: 1 %}
-  {% endif %}
-{% endfor %}
+{% if gallery != blank %}
+    {% for image in gallery %}
+    {% assign img_url = image | image_url %}
+    {% if forloop.first %}
+        {% assign comma_list = img_url %}
+    {% else %}
+        {% assign comma_list = comma_list | append: ',' | append: img_url %}
+        {% assign image_count1 = image_count1 | plus: 1 %}
+    {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if gallery2 != blank %}
+    {% for image in gallery2 %}
+        {% assign img_url = image | image_url %}
+            {% assign comma_list = comma_list | append: ',' | append: img_url %}
+            {% assign image_count1 = image_count1 | plus: 1 %}
+    {% endfor %}
+{% endif %}
+
+{% if gallery3 != blank %}
+    {% for image in gallery2 %}
+        {% assign img_url = image | image_url %}
+            {% assign comma_list = comma_list | append: ',' | append: img_url %}
+            {% assign image_count1 = image_count1 | plus: 1 %}
+    {% endfor %}
+{% endif %}
 
 
 <div class="section sec-black sec-black-gradient padd-lg layers-sec">
