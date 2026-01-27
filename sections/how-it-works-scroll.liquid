@@ -28,7 +28,7 @@
 {% endif %}
 
 {% if gallery3 != blank %}
-    {% for image in gallery2 %}
+    {% for image in gallery3 %}
         {% assign img_url = image | image_url %}
             {% assign comma_list = comma_list | append: ',' | append: img_url %}
             {% assign image_count1 = image_count1 | plus: 1 %}
