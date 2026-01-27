@@ -207,7 +207,7 @@
       ],
       "name": "How it works banner",
       "settings": {
-        "back_img": "shopify://shop_images/personal-mattress.gif",
+        "back_img": "shopify://shop_images/layers_explode_GIF_900px.gif",
         "title": "Das persönlichste Schlafsystem der Welt",
         "subtitle": "ENGINEERED IN SWITZERLAND",
         "title_under_img": "Schlaf, wie du ihn verdienst",
@@ -1059,7 +1059,7 @@
       ],
       "name": "How it works scroll",
       "settings": {
-        "title": "Drei Schichten.<br>Wie für dich gemacht.",
+        "title": "Drei Schichten.Wie für dich gemacht.",
         "subtitle": "Jede Schicht hat ihren Zweck für Komfort und Ergonomie. Du wählst, was zu dir passt.",
         "title_under_img": "Wähle Deine Komfort-Schicht",
         "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
