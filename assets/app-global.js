@@ -863,6 +863,9 @@ jQuery(function ($) {
             const start = $layers.first().offset().top;
             const end = $layers.last().offset().top + $layers.last().outerHeight() / 2;
 
+            const isMobile = window.matchMedia('(max-width: 991px)').matches;
+            const scrollOffset = isMobile ? parseFloat($img.data('scroll-offset-mob')) || 0.3 : parseFloat($img.data('scroll-offset')) || 0.3;
+
             let targetProgress = 0;
             let currentProgress = 0;
             let animating = false;
@@ -883,7 +886,7 @@ jQuery(function ($) {
             }
 
             $(window).on('scroll', function () {
-                const scrollY = $(window).scrollTop() + window.innerHeight * 0.3;
+                const scrollY = $(window).scrollTop() + window.innerHeight * scrollOffset;
 
                 targetProgress = Math.min(
                     Math.max((scrollY - start) / (end - start), 0),
@@ -902,6 +905,40 @@ jQuery(function ($) {
         }
     });
 
+    //opacity sensation item
+    $(document).ready(function() {
+        var $stickyBlock = $('.sensation-block .sticky-block');
+        var $sensationItems = $('.sensation-item');
+        var $header = $('header');
+
+        var headerHeight = $header.length ? $header.outerHeight() : 0;
+
+        $(window).on('scroll', function() {
+            var stickyTop = $stickyBlock.offset().top - $(window).scrollTop();
+            var limitY = stickyTop + $stickyBlock.outerHeight() + headerHeight;
+
+            $sensationItems.each(function() {
+                var $item = $(this);
+                var itemTop = $item.offset().top - $(window).scrollTop();
+
+                if (itemTop <= limitY) {
+                    var distance = Math.max(0, itemTop - stickyTop);
+
+                    var fadeOffset = $item.outerHeight() * 0.5;
+
+                    var opacity = 1;
+                    if(distance < fadeOffset) {
+                        opacity = distance / fadeOffset;
+                    }
+
+                    $item.css('opacity', opacity);
+                } else {
+                    $item.css('opacity', 1);
+                }
+            });
+        });
+    });
+
 
 
 
@@ -910,6 +947,8 @@ jQuery(function ($) {
     const $sticky = $('.layers-sec .sticky-block');
     const $section = $('.layers-sec');
     const $header = $('.header');
+    const $layers = $('.layer-item:not(.hide)');
+    const fadeDistance = 70;
 
     if (!$sticky.length || !$section.length) return;
 
@@ -948,7 +987,7 @@ jQuery(function ($) {
     $(window).on('scroll', function () {
         const scrollY = $(window).scrollTop();
 
-        const startFix = metrics.stickyTop - metrics.headerHeight;
+        // const startFix = metrics.stickyTop - metrics.headerHeight;
         const endFix = metrics.sectionBottom - metrics.stickyHeight - metrics.headerHeight;
 
         if (scrollY >= metrics.stickyTop - 104 && scrollY < endFix) {
@@ -956,6 +995,26 @@ jQuery(function ($) {
         } else {
             $sticky.removeClass('fixed');
         }
+
+        // opacity text
+        const stickyBottom = scrollY + metrics.headerHeight + metrics.stickyHeight;
+
+        $layers.each(function () {
+            const $item = $(this);
+            const itemTop = $item.offset().top;
+            const itemBottom = itemTop;
+
+            const distance = stickyBottom - itemBottom;
+
+            if (distance > 0 && distance < fadeDistance) {
+                const opacity = 1 - (distance / fadeDistance);
+                $item.css('opacity', opacity);
+            } else if (distance >= fadeDistance) {
+                $item.css('opacity', 0);
+            } else {
+                $item.css('opacity', 1);
+            }
+        });
     });
 
 });
