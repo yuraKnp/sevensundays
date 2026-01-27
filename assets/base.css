@@ -480,7 +480,6 @@ h4:empty,
 h5:empty,
 h6:empty {
   display: none;
-  
 }
 
 .link:not(.h-cart),
