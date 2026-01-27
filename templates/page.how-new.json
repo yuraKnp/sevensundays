@@ -217,18 +217,6 @@
     "how_it_works_scroll_QjqedW": {
       "type": "how-it-works-scroll",
       "blocks": {
-        "animation2_whEjFW": {
-          "type": "animation2",
-          "settings": {
-            "image": "shopify://shop_images/frame-001_8536f41d-2859-4175-a03b-e8959602dccc.png"
-          }
-        },
-        "animation1_8kzLJd": {
-          "type": "animation1",
-          "settings": {
-            "image": "shopify://shop_images/frame-001_ac5453b7-876f-489a-a525-e4ec772c6e47.png"
-          }
-        },
         "slides_gE39m9": {
           "type": "slides",
           "settings": {
@@ -256,15 +244,27 @@
             "title": "Stretch-Schicht",
             "description": "<p>Inspiriert von der Dorn-Breuss-Methode, entwickelt mit Prof. Dr. Grönemeyer.<br/><br/>Gegenläufige Lamellen dehnen sanft deine Wirbelsäule und fördern die Regeneration der Bandscheiben – du entspannst, dein Rücken regeneriert.</p>"
           }
+        },
+        "animation2_whEjFW": {
+          "type": "animation2",
+          "settings": {
+            "image": "shopify://shop_images/frame-001_8536f41d-2859-4175-a03b-e8959602dccc.png"
+          }
+        },
+        "animation1_8kzLJd": {
+          "type": "animation1",
+          "settings": {
+            "image": "shopify://shop_images/frame-001_ac5453b7-876f-489a-a525-e4ec772c6e47.png"
+          }
         }
       },
       "block_order": [
-        "animation2_whEjFW",
-        "animation1_8kzLJd",
         "slides_gE39m9",
         "slides_zVjYcD",
         "slides_AXiRid",
-        "slides_kBJr8k"
+        "slides_kBJr8k",
+        "animation2_whEjFW",
+        "animation1_8kzLJd"
       ],
       "name": "How it works scroll",
       "settings": {
