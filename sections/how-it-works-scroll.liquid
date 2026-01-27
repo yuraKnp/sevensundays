@@ -2,8 +2,8 @@
 {% assign image_count2 = 1 %}
 
 {% assign gallery = page.metafields.custom.custom_gallery.value | default: empty %}
-{% assign gallery = gallery | concat: page.custom.slideshow_how_page_tab_2.value | default: empty %}
-{% assign gallery = gallery | concat: page.custom.slideshow_how_page_tab_1_third_part.value | default: empty %}
+{% assign gallery = gallery | concat: page.metafields.custom.slideshow_how_page_tab_2.value | default: empty %}
+{% assign gallery = gallery | concat: page.metafields.custom.slideshow_how_page_tab_1_third_part.value | default: empty %}
 
 {% assign comma_list = '' %}
 
