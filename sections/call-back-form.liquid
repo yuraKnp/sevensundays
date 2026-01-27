@@ -152,7 +152,7 @@
                         <div class="col-12">
                         <label class="input-field">
                             <div class="label">{{ 'general.form.phone' | t }}</div>
-                            <input name="phone" class="input" type="tel" placeholder="{{ 'general.form.phone_p' | t }}" required>
+                            <input name="phone" class="input" type="tel" placeholder="{{ 'general.form.phone_p' | t }}" pattern="^\+?[0-9\s\-]{7,15}$" required>
                         </label>
                         </div>
                         <div class="col-12">
