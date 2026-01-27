@@ -153,7 +153,7 @@
                     <div class="text text-md">{{ section.settings.bottom_description }}</div>
                     {% endif %}
                 </div>
-                <div class="video-block">
+                {% comment %} <div class="video-block">
                     {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation2' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
                         {% assign comma_list = comma_list | strip | replace: ' ', '' %}
                         {% for block in section.blocks %}
@@ -170,7 +170,7 @@
                     <!-- <div class="video video-present">
                         <video muted playsinline loop preload poster="img/mattress-img-1.webp" data-src="video/A1_layers_explode_WEBM.webm"></video>
                     </div> -->
-                </div>
+                </div> {% endcomment %}
             </div>
         </div>
     </div>
@@ -210,17 +210,6 @@
     {
       "type": "animation1",
       "name": "First animation item",
-      "settings": [
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-        },
-      ]
-    },
-    {
-      "type": "animation2",
-      "name": "Second animation item",
       "settings": [
         {
             "type": "image_picker",
