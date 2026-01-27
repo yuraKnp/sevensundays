@@ -944,18 +944,18 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .sec-try .small-img.top {left: auto;right: var(--sp-24);top: -30px;}
 .smart-sec {padding-block: var(--sp-xxl);}
 .video-block {position: relative;aspect-ratio: 16/9;}
-.video-block.max-506 {max-width: 506px;margin-inline: auto;}
+.video-block.max-700 {max-width: 700px;margin-inline: auto;}
 .video-block .video {position: absolute;inset: 0;clip: rect(auto, auto, auto, auto);display: none;border-radius: inherit;}
 .video-block .video.video-present {display: block;overflow: hidden;}
 .video-block .video video {position: absolute;left: 0;top: 0;width: 100%;height: 100%;border-radius: inherit;-o-object-fit: cover;object-fit: cover;}
 .smart-video-block {position: relative;width: 256px;border-radius: var(--rd-1);overflow: hidden;margin-inline: auto;}
 .smart-video-block img {position: absolute;left: 0;top: 0;width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;}
 .sensation-block + * {padding-top: var(--sp-lg);}
-.sensation-block .sticky-block {position: sticky;top: var(--h-height);background-color: var(--bg-1);z-index: 2;}
-.sensation-item {position: relative;text-align: center;display: flex;flex-direction: column;gap: var(--sp-16);}
+.sensation-block .sticky-block {position: sticky;top: var(--h-height);z-index: 2;}
+.sensation-item {position: relative;text-align: center;display: flex;flex-direction: column;gap: var(--sp-16);transition: opacity 0.2s linear;will-change: opacity;}
 .sensation-item .text {max-width: 564px;margin-inline: auto;}
 .sensation-item .btn {margin-top: var(--sp-16);width: -moz-fit-content;width: fit-content;margin-inline: auto;}
-.sensation-item::after {content: "";position: relative;width: 1px;height: 220px;background-color: var(--clr-black);margin-block: var(--sp-32) var(--sp-48);margin-inline: auto;}
+.sensation-item::after {content: "";position: relative;width: 1px;height: 170px;background-color: var(--clr-black);margin-block: var(--sp-32) var(--sp-48);margin-inline: auto;}
 .sensation-item:last-child::after {content: none;}
 @media (min-width: 992px) {
 .hide {display: none;}
