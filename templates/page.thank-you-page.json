@@ -38,23 +38,11 @@
           "settings": {
             "text": "<p>Wir haben Ihre Informationen erfolgreich erhalten. Unser Team wird diese prüfen und sich in Kürze bei Ihnen melden.</p>"
           }
-        },
-        "button_HizhDK": {
-          "type": "button",
-          "settings": {
-            "button_label": "Schaltflächenbeschriftung",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_rLyyHj",
-        "text_QWQmVy",
-        "button_HizhDK"
+        "text_QWQmVy"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
