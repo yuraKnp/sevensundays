@@ -8,7 +8,7 @@
 {% assign comma_list = '' %}
 
 {% for image in gallery %}
-  {% assign img_url = image | image_url: width: 900 %}
+  {% assign img_url = image | image_url %}
   {% if forloop.first %}
     {% assign comma_list = img_url %}
   {% else %}
