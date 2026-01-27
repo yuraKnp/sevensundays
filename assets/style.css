@@ -1016,6 +1016,7 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .layer-item.type2 .title-shortcode {margin-bottom: var(--sp-48);}
 .layer-item.type2 .h2 {font-size: var(--h3);}
 .layer-item.type2 .h4 {font-size: var(--h5);}
+.scroll-layers .layer-item {transition: opacity 0.2s linear;}
 .scroll-layers .layer-item:first-child {padding-top: 4px;}
 .scroll-layers .layer-item + .layer-item {padding-top: 64px;}
 .scroll-layers .h2 {font-size: var(--h4);}
