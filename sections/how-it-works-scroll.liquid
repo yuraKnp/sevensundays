@@ -1,4 +1,4 @@
-{% comment %} {% assign image_count1 = 1 %}
+{% assign image_count1 = 1 %}
 {% assign image_count2 = 1 %}
 
 {% assign gallery = page.metafields.custom.custom_gallery.value | default: empty %}
@@ -15,7 +15,7 @@
     {% assign comma_list = comma_list | append: ',' | append: img_url %}
     {% assign image_count1 = image_count1 | plus: 1 %}
   {% endif %}
-{% endfor %} {% endcomment %}
+{% endfor %}
 
 
 <div class="section sec-black sec-black-gradient padd-lg layers-sec">
