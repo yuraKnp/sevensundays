@@ -240,7 +240,7 @@ header {opacity: 1;transition: var(--transition-1);}
 body {font-family: var(--ff-1);font-weight: 400;font-size: var(--h6);line-height: 1.4em;color: var(--clr-text);background-color: var(--bg-1);}
 .title,
 .font-1 {font-family: var(--ff-1);}
-.title-shortcode {position: relative;z-index: 1;display: flex;gap: var(--sp-24);flex-direction: column;margin-bottom: var(--sp-md);}
+.title-shortcode {position: relative;z-index: 3;display: flex;gap: var(--sp-24);flex-direction: column;margin-bottom: var(--sp-md);}
 .title-shortcode.text-center {justify-content: center;}
 .title-shortcode.text-center .btn {margin-inline: auto;}
 .title-shortcode.text-center .tags {justify-content: center;}
