@@ -1,0 +1,80 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "page_content_izA8Kj": {
+      "type": "page-content",
+      "disabled": true,
+      "name": "General page content",
+      "settings": {}
+    },
+    "rich_text_nRcebr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rLyyHj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Vielen Dank für Ihre Einreichung!",
+            "heading_size": "h1"
+          }
+        },
+        "text_QWQmVy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir haben Ihre Informationen erfolgreich erhalten. Unser Team wird diese prüfen und sich in Kürze bei Ihnen melden.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rLyyHj",
+        "text_QWQmVy"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "call_to_action_AxitXL": {
+      "type": "call-to-action",
+      "name": "Call to action",
+      "settings": {
+        "section_type": "type_1",
+        "image": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Entdecke das preisgekrönte Schlafsystem, das alles verändert",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "<p>Jetzt entdecken. Jeden Morgen wie Sonntag aufwachen.</p>",
+        "link_text": "Schlafsystem entdecken",
+        "link_url": "https://seven-sundays.shop/blogs/news/seven-sundays-sleep-study",
+        "link_text2": "",
+        "link_url2": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "page_content_izA8Kj",
+    "rich_text_nRcebr",
+    "call_to_action_AxitXL"
+  ]
+}
