@@ -219,6 +219,7 @@
       "blocks": {
         "slides_gE39m9": {
           "type": "slides",
+          "disabled": true,
           "settings": {
             "title": "Speicherschicht",
             "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>"
