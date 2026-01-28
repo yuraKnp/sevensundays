@@ -36,7 +36,7 @@
 .swiper-controls-wrap.pos-2 {position: absolute;bottom: var(--sp-24);right: var(--sp-24);z-index: 2;}
 .swiper-controls-wrap.pos-3 {position: absolute;top: calc(var(--sw-btn) * -1 + var(--sp-48) * -1);right: 0;}
 .section:has(.swiper-button-lock) .swiper-wrapper {cursor: default !important;}
-.section:has(.swiper-button-lock) .swiper-controls-wrap {display: none !important;}
+/* .section:has(.swiper-button-lock) .swiper-controls-wrap {display: none !important;} */
 .swiper-button-lock {display: none !important;}
 @media (min-width: 1200px) {
 [class*=swiper-button]:hover {background-color: var(--clr-black);color: var(--clr-white);}
@@ -89,7 +89,7 @@ button.swiper-pagination-bullet {border: none;margin: 0;padding: 0;box-shadow: n
 .swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {display: inline-block;transition: 200ms transform,200ms top;}
 /* For Lock */
 .section:has(.swiper-pagination-lock) .swiper-wrapper {cursor: default !important;}
-.section:has(.swiper-pagination-lock) .swiper-controls-wrap {display: none !important;}
+/* .section:has(.swiper-pagination-lock) .swiper-controls-wrap {display: none !important;} */
 .swiper-pagination-lock {display: none !important;}
 @media (max-width: 1199px) {
 .swiper-pagination:not(.swiper-pagination-relative) {bottom: 20px;}

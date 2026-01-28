@@ -908,6 +908,9 @@ jQuery(function ($) {
     //opacity for each children sensation item
     $(document).ready(function () {
         var $items = $('.sensation-item');
+        
+        var offsetStart = $(window).width() < 768 ? 200 : 400;
+        var offsetEnd = $(window).width() < 768 ? 300 : 460;
 
         $(window).on('scroll', function () {
             var scrollTop = $(window).scrollTop();
@@ -918,8 +921,8 @@ jQuery(function ($) {
                 var itemTop = $item.offset().top;
                 var itemHeight = $item.outerHeight();
 
-                var start = itemTop - windowHeight + 400;
-                var end = itemTop + itemHeight - 360;
+                var start = itemTop - windowHeight + offsetStart;
+                var end = itemTop + itemHeight - offsetEnd;
                 var progress = (scrollTop - start) / (end - start);
                 progress = Math.max(0, Math.min(1, progress));
 

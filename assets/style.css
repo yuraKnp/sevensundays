@@ -852,6 +852,13 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .marq-review-content {position: relative;padding: var(--sp-24);}
 .marq-review-content > * + * {margin-top: 6px;}
 .marq-review-content .text-sm {color: var(--clr-black-50);}
+.section:has(.swiper-button-lock) .review-wrap-slider::before,
+.section:has(.swiper-button-lock) .review-wrap-slider::after {height: calc(100% - var(--sw-btn) - var(--sp-md));}
+.review-wrap-slider::before,
+.review-wrap-slider::after {content: "";position: absolute;top: 0;left: calc((100vh - var(--container-width) - 40px) / 2);width: var(--sp-xl);height: 100%;background: linear-gradient(90deg, #F5F1E8 0%, rgba(245, 241, 232, 0.6) 70%, rgba(245, 241, 232, 0) 100%);pointer-events: none;z-index: 2;}
+.review-wrap-slider::after {left: auto;right: calc((100vh - var(--container-width) - 40px) / 2);background: linear-gradient(270deg, #F5F1E8 0%, rgba(245, 241, 232, 0.6) 70%, rgba(245, 241, 232, 0) 100%);}
+.review-wrap-slider .swiper-slide:nth-child(2n) .marq-review {flex-direction: column-reverse;}
+.review-wrap-slider .swiper-slide:nth-child(2n) .marq-review .marq-review-img {border-radius: 0 0 var(--rd-1) var(--rd-1);}
 .marq-review-wrap .marq-review:nth-child(2n) {flex-direction: column-reverse;}
 .marq-review-wrap .marq-review:nth-child(2n) .marq-review-img {border-radius: 0 0 var(--rd-1) var(--rd-1);}
 .born-item {position: relative;display: flex;flex-direction: column;gap: var(--sp-16);z-index: 8;}
@@ -975,7 +982,7 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .sec-try .banner-info {max-width: 510px;}
 .sec-try .banner-info .text {max-width: 420px;}
 .mt-des-32 {margin-top: -32px;}
-.layer-item.type2 {min-height: 520px;}
+/* .layer-item.type2 {min-height: 520px;} */
 }
 @media (max-width: 1199px) {
 .hide-xl {display: none;}
@@ -987,6 +994,10 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .step-item::after {height: 238px;}
 .smart-sec {padding-block: 120px;}
 .sensation-block .sticky-block {top: calc(var(--h-height) + 30px);}
+.section:has(.swiper-button-lock) .review-wrap-slider::before,
+.section:has(.swiper-button-lock) .review-wrap-slider::after {height: calc(100% - var(--sw-btn) - var(--sp-32));}
+.review-wrap-slider::before {left: -16px;}
+.review-wrap-slider::after {right: -16px;}
 }
 @media (max-width: 991px) {
 .hide-lg {display: none;}
@@ -1021,6 +1032,8 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .scroll-layers .layer-item + .layer-item {padding-top: 64px;}
 .scroll-layers .h2 {font-size: var(--h4);}
 .scroll-layers .text {font-size: var(--text);}
+.review-wrap-slider::before,
+.review-wrap-slider::after {content: none;}
 }
 @media (max-width: 767px) {
 .awards-slider .swiper-slide {opacity: 0.4;transition: var(--transition-1);}
