@@ -219,6 +219,7 @@
       "blocks": {
         "slides_gE39m9": {
           "type": "slides",
+          "disabled": true,
           "settings": {
             "title": "Speicherschicht",
             "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>"
@@ -268,7 +269,7 @@
       ],
       "name": "How it works scroll",
       "settings": {
-        "title": "Drei Schichten.Wie für dich gemacht.",
+        "title": "Drei Schichten.<br>Wie für dich gemacht.",
         "subtitle": "Jede Schicht hat ihren Zweck für Komfort und Ergonomie. Du wählst, was zu dir passt.",
         "title_under_img": "Wähle Deine Komfort-Schicht",
         "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
