@@ -423,12 +423,12 @@
     "real_sleep_iA7keG": {
       "type": "real-sleep",
       "blocks": {
-        "slide_NhFTH7": {
+        "slide_QnJAM9": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
-            "title": "Thomas Koht",
-            "description": "Tech Executive"
+            "image": "shopify://shop_images/stories-img-1_c542d519-1ce8-4bed-986c-d9b8d73afc1d.webp",
+            "title": "Jan Donovan",
+            "description": "Olympic Swimmer"
           }
         },
         "slide_JEqaRJ": {
@@ -437,6 +437,14 @@
             "image": "shopify://shop_images/stories-img-1_c542d519-1ce8-4bed-986c-d9b8d73afc1d.webp",
             "title": "Jan Donovan",
             "description": "Olympic Swimmer"
+          }
+        },
+        "slide_NhFTH7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
+            "title": "Thomas Koht",
+            "description": "Tech Executive"
           }
         },
         "image_7bUEMR": {
@@ -473,8 +481,9 @@
         }
       },
       "block_order": [
-        "slide_NhFTH7",
+        "slide_QnJAM9",
         "slide_JEqaRJ",
+        "slide_NhFTH7",
         "image_7bUEMR",
         "image_dCmgKy",
         "image_nRa8xA",
