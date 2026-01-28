@@ -97,7 +97,7 @@
                                         {%- assign image = block.settings.image -%}
                                         {% if image != blank %}
                                         {% assign image_url = image | image_url  %}
-                                            <img class="scroll-imgs" data-images="{{ comma_list }}" data-frame="{{ image_count1 }}" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
+                                            <img class="scroll-imgs" data-images="{{ comma_list }}" data-frame="{{ image_count1 }}" data-folder="frame-1" src="{{ image_url }}" alt="frame" data-scroll-offset="0.2" data-scroll-offset-mob="0.1" />
                                         {% endif %}
                                     {% break %}
                                 {% endif %}

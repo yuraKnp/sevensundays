@@ -964,6 +964,10 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .sensation-item .btn {margin-top: var(--sp-16);width: -moz-fit-content;width: fit-content;margin-inline: auto;}
 .sensation-item .line {position: relative;width: 1px;height: 170px;background-color: var(--clr-black);margin-block: var(--sp-32) var(--sp-48);margin-inline: auto;}
 .sensation-item:last-child .line {display: none;}
+@media (min-width: 1200px) and (max-width: 1440px) {
+.review-wrap-slider::before {left: -32px;}
+.review-wrap-slider::after {right: -32px;}
+}
 @media (min-width: 992px) {
 .hide {display: none;}
 .sticky-block {position: sticky;top: calc(var(--h-height) + 40px);}
