@@ -29,14 +29,14 @@
         "heading_rLyyHj": {
           "type": "heading",
           "settings": {
-            "heading": "Vielen Dank für Ihre Einreichung!",
+            "heading": "Vielen Dank für Deine Anfrage!",
             "heading_size": "h1"
           }
         },
         "text_QWQmVy": {
           "type": "text",
           "settings": {
-            "text": "<p>Wir haben Ihre Informationen erfolgreich erhalten. Unser Team wird diese prüfen und sich in Kürze bei Ihnen melden.</p>"
+            "text": "<p>Wir melden uns in Kürze unter der angegebenen Telefonnummer bei Dir.</p>"
           }
         }
       },
@@ -51,7 +51,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 100
       }
     },
     "call_to_action_AxitXL": {
