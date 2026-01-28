@@ -89,9 +89,18 @@
                                     <div class="award-item">
                                         {% if image != blank %}
                                             {% assign image_url = image | image_url  %}
-                                        <div class="award-img">
-                                            <img width="380" height="240" src="{{ image_url }}" alt="" loading="lazy">
-                                        </div>
+                                            <div class="award-img">
+                                                {% comment %} <img width="380" height="240" src="{{ image_url }}" alt="" loading="lazy"> {% endcomment %}
+                                                {{ image 
+                                                    | image_url: width: image.width
+                                                    | image_tag: 
+                                                        width: image.width,
+                                                        height: image.height,
+                                                        alt: image.alt,
+                                                        fetchpriority: 'auto',
+                                                        loading: 'lazy'
+                                                }}
+                                            </div>
                                         {% endif %}
                                         <div class="award-info">
                                             {% if caption != blank %}
