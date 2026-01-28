@@ -131,13 +131,13 @@
 <div class="section sec-black sec-black-gradient padd-lg layers-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-xl-6">
                 <div class="title-shortcode text-center">
                     {% if section.settings.title != blank %}
-                    <div class="h1 title font-1">{{ section.settings.title }}</div>
+                    <div class="h2 title">{{ section.settings.title }}</div>
                     {% endif %}
                     {% if section.settings.subtitle != blank %}
-                    <div class="h5 title">{{ section.settings.subtitle }}</div>
+                    <div class="text text-md">{{ section.settings.subtitle }}</div>
                     {% endif %}
                 </div>
             </div>
@@ -148,7 +148,7 @@
                 <div class="h2 title">{{ section.settings.title_under_img }}</div>
                 {% endif %}
                 {% if section.settings.short_desc_under_img != blank %}
-                <div class="h4 title">{{ section.settings.short_desc_under_img }}</div>
+                <div class="text text-md">{{ section.settings.short_desc_under_img }}</div>
                 {% endif %}
                 </div>
             <div class="choose-layer">
@@ -170,7 +170,7 @@
                                     {%- assign image = block.settings.image -%}
                                     {% if image != blank %}
                                     {% assign image_url = image | image_url  %}
-                                        <img class="scroll-imgs active " data-scroll-offset="0.44" data-scroll-offset-mob="0.5" data-images="{{ comma_list }}" data-frame="{{ image_count1 }}" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
+                                        <img class="scroll-imgs active " data-scroll-offset="0.25" data-scroll-offset-mob="0.5" data-images="{{ comma_list }}" data-frame="{{ image_count1 }}" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
                                     {% endif %}
                                 {% break %}
                             {% endif %}
@@ -182,7 +182,7 @@
                                     {%- assign image = block.settings.image -%}
                                     {% if image != blank %}
                                     {% assign image_url = image | image_url  %}
-                                        <img class="scroll-imgs" data-scroll-offset="0.44" data-scroll-offset-mob="0.5" data-images="{{ comma_list_sec }}" data-frame="{{ image_count2 }}" data-folder="frame-2" src="{{ image_url }}" alt="frame" />
+                                        <img class="scroll-imgs" data-scroll-offset="0.25" data-scroll-offset-mob="0.5" data-images="{{ comma_list_sec }}" data-frame="{{ image_count2 }}" data-folder="frame-2" src="{{ image_url }}" alt="frame" />
                                     {% endif %}
                                 {% break %}
                             {% endif %}
@@ -204,7 +204,7 @@
                                 <div class="h2 title">{{ section.settings.title_under_img }}</div>
                                 {% endif %}
                                 {% if section.settings.short_desc_under_img != blank %}
-                                <div class="h4 title">{{ section.settings.short_desc_under_img }}</div>
+                                <div class="text text-md">{{ section.settings.short_desc_under_img }}</div>
                                 {% endif %}
                             </div>
                             <div class="choose-layer hide-lg">
