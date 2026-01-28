@@ -423,12 +423,28 @@
     "real_sleep_iA7keG": {
       "type": "real-sleep",
       "blocks": {
+        "slide_NhFTH7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
+            "title": "Thomas Koht",
+            "description": "Tech Executive"
+          }
+        },
         "slide_QnJAM9": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/stories-img-1_c542d519-1ce8-4bed-986c-d9b8d73afc1d.webp",
             "title": "Jan Donovan",
             "description": "Olympic Swimmer"
+          }
+        },
+        "slide_6pFEtq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
+            "title": "Thomas Koht",
+            "description": "Tech Executive"
           }
         },
         "slide_JEqaRJ": {
@@ -439,7 +455,23 @@
             "description": "Olympic Swimmer"
           }
         },
-        "slide_NhFTH7": {
+        "slide_YaErLU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
+            "title": "Thomas Koht",
+            "description": "Tech Executive"
+          }
+        },
+        "slide_XbbGqG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stories-img-1_c542d519-1ce8-4bed-986c-d9b8d73afc1d.webp",
+            "title": "Jan Donovan",
+            "description": "Olympic Swimmer"
+          }
+        },
+        "slide_MizUAy": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
@@ -481,9 +513,13 @@
         }
       },
       "block_order": [
-        "slide_QnJAM9",
-        "slide_JEqaRJ",
         "slide_NhFTH7",
+        "slide_QnJAM9",
+        "slide_6pFEtq",
+        "slide_JEqaRJ",
+        "slide_YaErLU",
+        "slide_XbbGqG",
+        "slide_MizUAy",
         "image_7bUEMR",
         "image_dCmgKy",
         "image_nRa8xA",
