@@ -32,7 +32,7 @@
 .swiper-controls-wrap.text-center {justify-content: center;}
 .swiper-controls-wrap .swiper-button-prev,
 .swiper-controls-wrap .swiper-button-next {position: relative;top: 0;left: 0;right: 0;transform: none;}
-.swiper-controls-wrap.pos-1 {position: absolute;top: calc(var(--sw-btn) * -1 + var(--sp-md) * -1);right: 0;}
+.swiper-controls-wrap.pos-1 {position: absolute;top: calc(var(--sw-btn) * -1 + var(--sp-md) * -1);right: 0;z-index: 4;}
 .swiper-controls-wrap.pos-2 {position: absolute;bottom: var(--sp-24);right: var(--sp-24);z-index: 2;}
 .swiper-controls-wrap.pos-3 {position: absolute;top: calc(var(--sw-btn) * -1 + var(--sp-48) * -1);right: 0;}
 .section:has(.swiper-button-lock) .swiper-wrapper {cursor: default !important;}
