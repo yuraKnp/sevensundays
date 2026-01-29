@@ -152,8 +152,8 @@
                 {% endif %}
                 </div>
             <div class="choose-layer">
-                <div class="item active">{{ section.settings.first_tab_name  }}</div>
-                <div class="item">{{ section.settings.second_tab_name  }}</div>
+                <div class="item active" data-layer="exhausted">{{ section.settings.first_tab_name  }}</div>
+                <div class="item" data-layer="stiff">{{ section.settings.second_tab_name  }}</div>
             </div>
         </div>
         <div class="row justify-content-between">
@@ -170,7 +170,7 @@
                                     {%- assign image = block.settings.image -%}
                                     {% if image != blank %}
                                     {% assign image_url = image | image_url  %}
-                                        <img class="scroll-imgs active " data-scroll-offset="0.25" data-scroll-offset-mob="0.5" data-images="{{ comma_list }}" data-frame="{{ image_count1 }}" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
+                                        <img class="scroll-imgs active " data-scroll-offset="0.11" data-scroll-offset-mob="0.5" data-images="{{ comma_list }}" data-frame="{{ image_count1 }}" data-folder="frame-1" src="{{ image_url }}" alt="frame" />
                                     {% endif %}
                                 {% break %}
                             {% endif %}
@@ -182,7 +182,7 @@
                                     {%- assign image = block.settings.image -%}
                                     {% if image != blank %}
                                     {% assign image_url = image | image_url  %}
-                                        <img class="scroll-imgs" data-scroll-offset="0.25" data-scroll-offset-mob="0.5" data-images="{{ comma_list_sec }}" data-frame="{{ image_count2 }}" data-folder="frame-2" src="{{ image_url }}" alt="frame" />
+                                        <img class="scroll-imgs" data-scroll-offset="0.11" data-scroll-offset-mob="0.5" data-images="{{ comma_list_sec }}" data-frame="{{ image_count2 }}" data-folder="frame-2" src="{{ image_url }}" alt="frame" />
                                     {% endif %}
                                 {% break %}
                             {% endif %}
@@ -198,6 +198,8 @@
                         {% assign first_slide = block %}
                         {%- assign title = block.settings.title -%}
                         {%- assign desc = block.settings.description -%}
+                        {%- assign second_title = block.settings.second_title -%}
+                        {%- assign second_desc = block.settings.second_description -%}
                         <div class="layer-item type2">
                             <div class="title-shortcode mb-64 hide-lg">
                                 {% if section.settings.title_under_img != blank %}
@@ -208,17 +210,30 @@
                                 {% endif %}
                             </div>
                             <div class="choose-layer hide-lg">
-                                <div class="item active">{{ section.settings.first_tab_name  }}</div>
-                                <div class="item">{{ section.settings.second_tab_name  }}</div>
+                                <div class="item active" data-layer="exhausted">{{ section.settings.first_tab_name  }}</div>
+                                <div class="item" data-layer="stiff">{{ section.settings.second_tab_name  }}</div>
                             </div>
-                            {% if title != blank %}
-                            <div class="h2 title">{{ title }}</div>
-                            {% endif %}
-                            {% if desc != blank %}
-                            <div class="text text-md">
-                                {{ desc }}
+                            <div class="change-content active" data-layer-content="exhausted">
+                                {% if title != blank %}
+                                <div class="h2 title">{{ title }}</div>
+                                {% endif %}
+                                {% if desc != blank %}
+                                <div class="text text-md">
+                                    {{ desc }}
+                                </div>
+                                {% endif %}
+                                </div>
                             </div>
-                            {% endif %}
+                            <div class="change-content" data-layer-content="stiff">
+                                {% if second_title != blank %}
+                                <div class="h2 title">{{ second_title }}</div>
+                                {% endif %}
+                                {% if second_desc != blank %}
+                                <div class="text text-md">
+                                    {{ second_desc }}
+                                </div>
+                                {% endif %}
+                            </div>
                         </div>
                         {% endif %}
                         {% break %}
@@ -227,15 +242,29 @@
                         {% if block.type == 'slides' and block.id != first_slide.id %}
                         {%- assign title = block.settings.title -%}
                         {%- assign desc = block.settings.description -%}
+                        {%- assign second_title = block.settings.second_title -%}
+                        {%- assign second_desc = block.settings.second_description -%}
                         <div class="layer-item type2">
-                            {% if title != blank %}
-                            <div class="title h2">{{ title }}</div>
-                            {% endif %}
-                            {% if desc != blank %}
-                            <div class="text text-md">
-                                {{ desc }}
+                            <div class="change-content active" data-layer-content="exhausted">
+                                {% if title != blank %}
+                                <div class="title h2">{{ title }}</div>
+                                {% endif %}
+                                {% if desc != blank %}
+                                <div class="text text-md">
+                                    {{ desc }}
+                                </div>
+                                {% endif %}
                             </div>
-                            {% endif %}
+                            <div class="change-content" data-layer-content="stiff">
+                                {% if second_title != blank %}
+                                <div class="title h2">{{ second_title }}</div>
+                                {% endif %}
+                                {% if second_desc != blank %}
+                                <div class="text text-md">
+                                    {{ second_desc }}
+                                </div>
+                                {% endif %}
+                            </div>
                         </div>
                         {% endif %}
                     {% endfor %}
@@ -322,6 +351,16 @@
             "type": "richtext",
             "id": "description",
             "label": "Description"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "second_title",
+            "label": "Second Title"
+        },
+        {
+            "type": "richtext",
+            "id": "sedond_description",
+            "label": "Second description"
         },
       ]
     }

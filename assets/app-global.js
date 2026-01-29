@@ -706,7 +706,12 @@ jQuery(function ($) {
         $(this).addClass('active').siblings().removeClass('active');
 
         const i = $(this).index();
+        const layer = $(this).data('layer');
         $('.layer-video-block .scroll-imgs').removeClass('active').eq(i).addClass('active');
+
+        $('.change-content').removeClass('active');
+        $('.change-content[data-layer-content="' + layer + '"]').addClass('active');
+
     });
 
     // advisor more info
@@ -909,8 +914,26 @@ jQuery(function ($) {
     $(document).ready(function () {
         var $items = $('.sensation-item');
         
-        var offsetStart = $(window).width() < 768 ? 200 : 400;
-        var offsetEnd = $(window).width() < 768 ? 300 : 460;
+        var windowHeight = $(window).height();
+        var offsetStart = 0;
+        var offsetEnd   = 0;
+
+        if($(window).width() > 2600){
+            offsetStart = windowHeight * 0.75;
+            offsetEnd   = windowHeight * 0.3;
+        }
+        else if($(window).width() > 1920){
+            offsetStart = windowHeight * 0.65;
+            offsetEnd   = windowHeight * 0.3;
+        }
+        else if($(window).width() < 1920 && $(window).width() > 768){
+            offsetStart = windowHeight * 0.4;
+            offsetEnd   = windowHeight * 0.5;
+        }   
+        else{
+            offsetStart = windowHeight * 0.5;
+            offsetEnd   = windowHeight * 0.5;
+        }
 
         $(window).on('scroll', function () {
             var scrollTop = $(window).scrollTop();
@@ -932,7 +955,7 @@ jQuery(function ($) {
 
                 $children.each(function (index) {
                     var childStart = step * index;
-                    var speedFactor = 1 + index * 0.2;
+                    var speedFactor = 0.8 + index * 2;
 
                     var opacity = 1;
 
