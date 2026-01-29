@@ -222,28 +222,36 @@
           "disabled": true,
           "settings": {
             "title": "Speicherschicht",
-            "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>"
+            "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>",
+            "second_title": "",
+            "sedond_description": ""
           }
         },
         "slides_zVjYcD": {
           "type": "slides",
           "settings": {
-            "title": "Latex-Schicht",
-            "description": "<p>Dein Körper bewegt sich nachts zu wenig – Latex aktiviert dich sanft.<br/><br/>Leichtfedernder Naturkautschuk hält Muskeln und Faszien in sanfter Mikrobewegung und aktiviert deinen Körper – du liegst wie auf Wolken.</p>"
+            "title": "Memory-Schicht",
+            "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>",
+            "second_title": "Latex-Schicht",
+            "sedond_description": "<p>Dein Körper bewegt sich nachts zu wenig – Latex aktiviert dich sanft.<br/><br/>Leichtfedernder Naturkautschuk hält Muskeln und Faszien in sanfter Mikrobewegung und aktiviert deinen Körper – du liegst wie auf Wolken.</p>"
           }
         },
         "slides_AXiRid": {
           "type": "slides",
           "settings": {
             "title": "5-Zonen-Schicht",
-            "description": "<p>Ergonomie ist die Basis. Die 5-Zonen-Schicht richtet sensible Bereiche deines Körpers aus.<br/><br/>Fünf abgestimmte Zonen lassen Schultern und Hüften einsinken und halten deine Wirbelsäule ausgerichtet – du liegst in perfekter Balance.</p>"
+            "description": "<p>Ergonomie ist die Basis. Die 5-Zonen-Schicht richtet sensible Bereiche deines Körpers aus.<br/><br/>Fünf abgestimmte Zonen lassen Schultern und Hüften einsinken und halten deine Wirbelsäule ausgerichtet – du liegst in perfekter Balance.</p>",
+            "second_title": "",
+            "sedond_description": ""
           }
         },
         "slides_kBJr8k": {
           "type": "slides",
           "settings": {
             "title": "Stretch-Schicht",
-            "description": "<p>Inspiriert von der Dorn-Breuss-Methode, entwickelt mit Prof. Dr. Grönemeyer.<br/><br/>Gegenläufige Lamellen dehnen sanft deine Wirbelsäule und fördern die Regeneration der Bandscheiben – du entspannst, dein Rücken regeneriert.</p>"
+            "description": "<p>Inspiriert von der Dorn-Breuss-Methode, entwickelt mit Prof. Dr. Grönemeyer.<br/><br/>Gegenläufige Lamellen dehnen sanft deine Wirbelsäule und fördern die Regeneration der Bandscheiben – du entspannst, dein Rücken regeneriert.</p>",
+            "second_title": "",
+            "sedond_description": ""
           }
         },
         "animation1_8kzLJd": {
@@ -269,7 +277,7 @@
       ],
       "name": "How it works scroll",
       "settings": {
-        "title": "Drei Schichten.<br>Wie für dich gemacht.",
+        "title": "Drei Schichten.Wie für dich gemacht.",
         "subtitle": "Jede Schicht hat ihren Zweck für Komfort und Ergonomie. Du wählst, was zu dir passt.",
         "title_under_img": "Wähle Deine Komfort-Schicht",
         "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
