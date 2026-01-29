@@ -366,7 +366,10 @@
       "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet."
     },
     "footer": {
-      "payment": "Zahlungsmethoden"
+      "payment": "Zahlungsmethoden",
+      "form_input": "E-Mail-Adresse",
+      "form_submit": "Absenden",
+      "footer_additional_text": "Melden Sie sich an und erfahren Sie als Erste*r von neuen Produkten, Veranstaltungen und exklusiven Angeboten. Sie können sich jederzeit abmelden.",
     },
     "featured_blog": {
       "view_all": "Alle anzeigen",
