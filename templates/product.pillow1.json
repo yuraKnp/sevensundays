@@ -77,7 +77,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Maße & Abmessungen",
-            "content": "<p>60×40 cm, verstellbare Höhe: 9 oder 12 cm</p>"
+            "content": "<p>45×24 cm, verstellbare Höhe: 4 oder 8 cm</p>"
           }
         },
         "collapsible_tab_rdVhCp": {
@@ -91,7 +91,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Garantie, Versand & Rückgabe",
-            "content": "<p>Kostenloser Versand via DHL innerhalb von 2–3 Werktagen. 14-tägiges Rückgaberecht mit voller Rückerstattung bei Unzufriedenheit. Swiss Engineered Quality mit Premium-Herstellergarantie.</p>"
+            "content": "<p>Kostenloser Versand via DHL (ab € 120,00 Warenwert) innerhalb von 2–3 Werktagen. 14-tägiges Rückgaberecht mit voller Rückerstattung bei Unzufriedenheit. Swiss Engineered Quality mit Premium-Herstellergarantie.</p>"
           }
         }
       },
@@ -183,6 +183,12 @@
     "product_partners_mmnBTt": {
       "type": "product-partners",
       "blocks": {
+        "slides_HkJcHA": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-7.svg"
+          }
+        },
         "slides_jbm3Hk": {
           "type": "slides",
           "settings": {
@@ -193,6 +199,12 @@
           "type": "slides",
           "settings": {
             "image": "shopify://shop_images/brand-logo-9.svg"
+          }
+        },
+        "slides_qL8Qgf": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-10.svg"
           }
         },
         "slides_F4eEKx": {
@@ -209,8 +221,10 @@
         }
       },
       "block_order": [
+        "slides_HkJcHA",
         "slides_jbm3Hk",
         "slides_NNfzcg",
+        "slides_qL8Qgf",
         "slides_F4eEKx",
         "slides_JtRcmk"
       ],

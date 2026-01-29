@@ -31,7 +31,7 @@
         "pairs_best_with_pQhe7V": {
           "type": "pairs_best_with",
           "settings": {
-            "upsell_product": "ersatzbezug-fur",
+            "upsell_product": "ersatzbezug-fur-copy",
             "upsell_product_sec": "reisetasche-kissen-1"
           }
         },
@@ -77,7 +77,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Maße & Abmessungen",
-            "content": "<p>60×40 cm, verstellbare Höhe: 9 oder 12 cm</p>"
+            "content": "<p>52x32 cm, verstellbare Höhe: 9 oder 12 cm</p>"
           }
         },
         "collapsible_tab_rdVhCp": {
@@ -91,7 +91,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Garantie, Versand & Rückgabe",
-            "content": "<p>Kostenloser Versand via DHL innerhalb von 2–3 Werktagen. 14-tägiges Rückgaberecht mit voller Rückerstattung bei Unzufriedenheit. Swiss Engineered Quality mit Premium-Herstellergarantie.</p>"
+            "content": "<p>Kostenloser Versand via DHL (ab € 120,00 Warenwert) innerhalb von 2–3 Werktagen. 14-tägiges Rückgaberecht mit voller Rückerstattung bei Unzufriedenheit. Swiss Engineered Quality mit Premium-Herstellergarantie.</p>"
           }
         }
       },
@@ -289,7 +289,7 @@
         "hero_video_file": "shopify://files/videos/cta-video.mp4",
         "title": "Entdecke das preisgekrönte Schlafsystem, das alles verändert",
         "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
-        "short_description": "Lerne das modulare Schlafsystem mit all seinen Vorteilen kennen und lieben und wache auf wie an einem Sonntagmorgen, jeden Morgen.",
+        "short_description": "<p>Lerne das modulare Schlafsystem mit all seinen Vorteilen kennen und lieben und wache auf wie an einem Sonntagmorgen, jeden Morgen.</p>",
         "link_text": "Get Sleep System",
         "link_url": "https://seven-sundays.shop/pages/experience",
         "link_text2": "",
