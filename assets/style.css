@@ -913,6 +913,7 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .layer-item .motto + * {margin-top: var(--sp-32);}
 .layers-sec .sticky-block {position: sticky;top: calc(var(--h-height) + 40px);z-index: 1;}
 .layer-item.type2 {padding-block: var(--sp-64);text-align: center;margin: 0;border: none;}
+.layer-item.type2 + .layer-item.type2 {padding-top: calc(var(--sp-64) * 2);}
 .layer-item.type2 .title-shortcode {gap: var(--sp-16);}
 .layer-item.type2 .title {font-family: var(--ff-1);}
 .layer-item.type2 .title.h2 {letter-spacing: -2px;}
@@ -961,17 +962,17 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .video-block .video video {position: absolute;left: 0;top: 0;width: 100%;height: 100%;border-radius: inherit;-o-object-fit: cover;object-fit: cover;}
 .smart-video-block {position: relative;width: 256px;border-radius: var(--rd-1);overflow: hidden;margin-inline: auto;}
 .smart-video-block img {position: absolute;left: 0;top: 0;width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;}
-.sensation-block + * {padding-top: var(--sp-lg);}
+.sensation-block + * {padding-top: var(--sp-md);}
 .sensation-block .sticky-block {position: sticky;top: var(--h-height);z-index: 2;}
 .sensation-item {position: relative;text-align: center;display: flex;flex-direction: column;gap: var(--sp-16);transition: opacity 0.2s linear;will-change: opacity;}
 .sensation-item .text {max-width: 564px;margin-inline: auto;}
 .sensation-item .btn {margin-top: var(--sp-16);width: -moz-fit-content;width: fit-content;margin-inline: auto;}
 .sensation-item .line {position: relative;width: 1px;height: 170px;background-color: var(--clr-black);margin-block: var(--sp-32) var(--sp-48);margin-inline: auto;}
 .sensation-item:last-child .line {display: none;}
-@media (min-width: 1200px) and (max-width: 1440px) {
+/* @media (min-width: 1200px) and (max-width: 1440px) {
 .review-wrap-slider::before {left: -32px;}
 .review-wrap-slider::after {right: -32px;}
-}
+} */
 @media (min-width: 992px) {
 .hide {display: none;}
 .sticky-block {position: sticky;top: calc(var(--h-height) + 40px);}
