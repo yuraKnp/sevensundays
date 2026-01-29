@@ -232,8 +232,8 @@
           "settings": {
             "title": "Memory-Schicht",
             "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>",
-            "second_title": "Latex-Schicht",
-            "sedond_description": "<p>Dein Körper bewegt sich nachts zu wenig – Latex aktiviert dich sanft.<br/><br/>Leichtfedernder Naturkautschuk hält Muskeln und Faszien in sanfter Mikrobewegung und aktiviert deinen Körper – du liegst wie auf Wolken.</p>"
+            "second_title": "",
+            "sedond_description": ""
           }
         },
         "slides_AXiRid": {
