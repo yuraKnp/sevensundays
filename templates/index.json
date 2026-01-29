@@ -39,7 +39,7 @@
         "image_overlay_opacity": 0,
         "image_left_bottom": "shopify://shop_images/banner-sticker.webp",
         "image_left_bottom_logo": "shopify://shop_images/sticker-logo.svg",
-        "image_left_bottom_description": "Schlafe 20% besser mit Seven Sundays",
+        "image_left_bottom_description": "Schlafe 18% besser mit Seven Sundays",
         "image_left_bottom_text": "Studie lesen",
         "image_left_bottom_link": "https://seven-sundays.shop/blogs/news/seven-sundays-sleep-study",
         "desktop_content_position": "middle-center",
@@ -107,7 +107,7 @@
           "settings": {
             "slide_image": "shopify://shop_images/Revitalizing-min.jpg",
             "slide_heading": "Für aktive Regeneration",
-            "slide_desc": "Federnde Unterstützung für natürliche Bewegung und dadurch die Muskel- und Faszien-Regeneration.",
+            "slide_desc": "Federnde Unterstützung für natürliche Bewegung und optimale Muskel- und Faszien-Regeneration.",
             "slide_tag": "Vitalisierend"
           }
         },
@@ -133,8 +133,8 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify://shop_images/Ergonomic-min.jpg",
-            "slide_heading": "Für druckfreien Schlaf Gezielte",
-            "slide_desc": "Entlastung von Schultern und Hüften. Für Seitenschläfer und bessere Durchblutung",
+            "slide_heading": "Für druckfreien Schlaf",
+            "slide_desc": "Gezielte entlastung von Schultern und Hüften. Für Seitenschläfer und bessere Durchblutung",
             "slide_tag": "Ergonomisch"
           }
         }
@@ -387,7 +387,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-1.svg",
-            "name": "German Brand Winner 2024",
+            "name": "German Brand Award Gewinner",
             "year": "2024"
           }
         },
@@ -403,7 +403,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-3.svg",
-            "name": "Innovation Ergonomics 2023",
+            "name": "Innovation Ergonomics Award",
             "year": "2023"
           }
         },
@@ -411,7 +411,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/award-4.svg",
-            "name": "German Design Award 2019",
+            "name": "German Design Award",
             "year": "2019"
           }
         }

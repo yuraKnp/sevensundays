@@ -183,12 +183,6 @@
     "product_partners_mmnBTt": {
       "type": "product-partners",
       "blocks": {
-        "slides_HkJcHA": {
-          "type": "slides",
-          "settings": {
-            "image": "shopify://shop_images/brand-logo-7.svg"
-          }
-        },
         "slides_jbm3Hk": {
           "type": "slides",
           "settings": {
@@ -199,12 +193,6 @@
           "type": "slides",
           "settings": {
             "image": "shopify://shop_images/brand-logo-9.svg"
-          }
-        },
-        "slides_qL8Qgf": {
-          "type": "slides",
-          "settings": {
-            "image": "shopify://shop_images/brand-logo-10.svg"
           }
         },
         "slides_F4eEKx": {
@@ -221,10 +209,8 @@
         }
       },
       "block_order": [
-        "slides_HkJcHA",
         "slides_jbm3Hk",
         "slides_NNfzcg",
-        "slides_qL8Qgf",
         "slides_F4eEKx",
         "slides_JtRcmk"
       ],
@@ -289,7 +275,7 @@
         "hero_video_file": "shopify://files/videos/cta-video.mp4",
         "title": "Entdecke das preisgekrönte Schlafsystem, das alles verändert",
         "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
-        "short_description": "Lerne das modulare Schlafsystem mit all seinen Vorteilen kennen und lieben und wache auf wie an einem Sonntagmorgen, jeden Morgen.",
+        "short_description": "<p>Lerne das modulare Schlafsystem mit all seinen Vorteilen kennen und lieben und wache auf wie an einem Sonntagmorgen, jeden Morgen.</p>",
         "link_text": "Get Sleep System",
         "link_url": "https://seven-sundays.shop/pages/experience",
         "link_text2": "",

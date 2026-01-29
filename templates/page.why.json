@@ -123,8 +123,8 @@
       "settings": {
         "image": "shopify://shop_images/why-banner-1.webp",
         "left_image": "shopify://shop_images/sticker-logo_65784ff8-3aa8-432d-ba32-8d01f2c30583.svg",
-        "left_title": "Schlafe 20% besser mit Seven Sundays",
-        "left_desctription": "Schneller einschlafen. Tiefer schlafen. Besser regenerieren. Wissenschaftlich belegt in einer 90-Tage-Studie mit 43 Profi-Athleten.",
+        "left_title": "Schlafe 18% besser mit Seven Sundays",
+        "left_desctription": "Schneller einschlafen. Tiefer schlafen. Besser regenerieren. Wissenschaftlich belegt in einer Studie mit 43 Profi-Athleten.",
         "left_button_link": "shopify://blogs/news/seven-sundays-sleep-study",
         "left_button_link_text": "Studie lesen",
         "right_doc_name": "",
@@ -181,26 +181,49 @@
         "slide_ipAGWr": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-4.svg"
+            "slide_image": "shopify://shop_images/brand-logo-8.svg"
           }
         },
         "slide_LkBwwL": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-5.svg"
+            "slide_image": "shopify://shop_images/brand-logo-7.svg"
           }
         },
         "slide_4mmnzn": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-6.svg"
+            "slide_image": "shopify://shop_images/brand-logo-9.svg"
+          }
+        },
+        "slide_qnDQ9G": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "slide_image": "shopify://shop_images/brand-logo-10.svg"
+          }
+        },
+        "slide_64wp36": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/brand-logo-11.svg"
+          }
+        },
+        "slide_drRLxi": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/brand-logo-12.svg"
           }
         }
       },
       "block_order": [
         "slide_ipAGWr",
         "slide_LkBwwL",
-        "slide_4mmnzn"
+        "slide_4mmnzn",
+        "slide_qnDQ9G",
+        "slide_64wp36",
+        "slide_drRLxi"
       ],
       "name": "Supplier",
       "settings": {
