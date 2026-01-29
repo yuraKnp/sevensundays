@@ -373,7 +373,10 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "form_input": "Email address",
+      "form_submit": "Submit",
+      "footer_additional_text": "Sign up and be the first to hear about new products, events and exclusive offers. Unsubscribe anytime.",
     },
     "featured_blog": {
       "view_all": "View all",
