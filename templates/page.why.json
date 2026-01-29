@@ -186,6 +186,7 @@
         },
         "slide_LkBwwL": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "slide_image": "shopify://shop_images/brand-logo-7.svg"
           }
@@ -198,6 +199,7 @@
         },
         "slide_qnDQ9G": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "slide_image": "shopify://shop_images/brand-logo-10.svg"
           }
