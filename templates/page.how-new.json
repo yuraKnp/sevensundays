@@ -217,23 +217,13 @@
     "how_it_works_scroll_QjqedW": {
       "type": "how-it-works-scroll",
       "blocks": {
-        "slides_gE39m9": {
-          "type": "slides",
-          "disabled": true,
-          "settings": {
-            "title": "Speicherschicht",
-            "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>",
-            "second_title": "",
-            "sedond_description": ""
-          }
-        },
         "slides_zVjYcD": {
           "type": "slides",
           "settings": {
             "title": "Memory-Schicht",
             "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>",
-            "second_title": "",
-            "sedond_description": ""
+            "second_title": "Latex-Schicht",
+            "sedond_description": "<p>Dein Körper bewegt sich nachts zu wenig – Latex aktiviert dich sanft.<br/><br/>Leichtfedernder Naturkautschuk hält Muskeln und Faszien in sanfter Mikrobewegung und aktiviert deinen Körper – du liegst wie auf Wolken.</p>"
           }
         },
         "slides_AXiRid": {
@@ -268,7 +258,6 @@
         }
       },
       "block_order": [
-        "slides_gE39m9",
         "slides_zVjYcD",
         "slides_AXiRid",
         "slides_kBJr8k",
