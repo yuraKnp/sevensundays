@@ -4133,3 +4133,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .marquee.type-2 img{
   max-height: 40px;
 }
+
+.swiper-controls-wrap.pos-1{
+  z-index: 999;
+}
