@@ -919,15 +919,15 @@ jQuery(function ($) {
         var offsetEnd   = 0;
 
         if($(window).width() > 2600){
-            offsetStart = windowHeight * 0.75;
+            offsetStart = windowHeight * 0.8;
             offsetEnd   = windowHeight * 0.3;
         }
         else if($(window).width() > 1920){
             offsetStart = windowHeight * 0.65;
-            offsetEnd   = windowHeight * 0.3;
+            offsetEnd   = windowHeight * 0.25;
         }
         else if($(window).width() < 1920 && $(window).width() > 768){
-            offsetStart = windowHeight * 0.4;
+            offsetStart = windowHeight * 0.45;
             offsetEnd   = windowHeight * 0.5;
         }   
         else{
