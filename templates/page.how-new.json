@@ -499,7 +499,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/award-3.svg",
-            "caption": "Innovation Ergonomics 2022",
+            "caption": "Innovation Ergonomics Award",
             "year": "2022"
           }
         },
@@ -507,7 +507,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/award-4.svg",
-            "caption": "German Design Award 2019",
+            "caption": "German Design Award",
             "year": "2019"
           }
         }
