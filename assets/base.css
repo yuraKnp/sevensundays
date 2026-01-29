@@ -4128,3 +4128,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     word-break: break-word;
   }
 }
+
+
+.marquee.type-2 img{
+  max-height: 40px;
+}
