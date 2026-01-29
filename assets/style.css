@@ -916,6 +916,10 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .layer-item.type2 .title-shortcode {gap: var(--sp-16);}
 .layer-item.type2 .title {font-family: var(--ff-1);}
 .layer-item.type2 .title.h2 {letter-spacing: -2px;}
+.layer-item.type2:not(:first-child) .change-content + .change-content {margin-top: 0;}
+.layer-item.type2 .change-content {display: none;}
+.layer-item.type2 .change-content > * + * {margin-top: var(--sp-24);}
+.layer-item.type2 .change-content.active {display: block;}
 .choose-layer {position: relative;z-index: 1;display: flex;align-items: center;justify-content: center;margin-inline: auto;width: -moz-fit-content;width: fit-content;gap: 4px;padding: var(--sp-8);background-color: var(--clr-white);border-radius: 32px;}
 .choose-layer .item {padding: 12px;font-size: 14px;line-height: 18px;font-weight: 700;color: var(--clr-black);background-color: transparent;border-radius: 21px;cursor: pointer;transition: var(--transition-1);}
 .choose-layer .item.active {background-color: var(--clr-text);color: var(--clr-white-2);cursor: inherit;}
