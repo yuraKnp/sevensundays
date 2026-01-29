@@ -183,12 +183,6 @@
     "product_partners_mmnBTt": {
       "type": "product-partners",
       "blocks": {
-        "slides_HkJcHA": {
-          "type": "slides",
-          "settings": {
-            "image": "shopify://shop_images/brand-logo-7.svg"
-          }
-        },
         "slides_jbm3Hk": {
           "type": "slides",
           "settings": {
@@ -215,7 +209,6 @@
         }
       },
       "block_order": [
-        "slides_HkJcHA",
         "slides_jbm3Hk",
         "slides_NNfzcg",
         "slides_F4eEKx",
