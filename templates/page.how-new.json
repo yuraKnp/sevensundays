@@ -483,7 +483,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/award-1.svg",
-            "caption": "German Brand Winner 2024",
+            "caption": "German Brand Award Gewinner",
             "year": "2024"
           }
         },
@@ -499,7 +499,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/award-3.svg",
-            "caption": "Innovation Ergonomics 2023",
+            "caption": "Innovation Ergonomics 2022",
             "year": "2022"
           }
         },
