@@ -181,26 +181,47 @@
         "slide_ipAGWr": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-4.svg"
+            "slide_image": "shopify://shop_images/brand-logo-8.svg"
           }
         },
         "slide_LkBwwL": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-5.svg"
+            "slide_image": "shopify://shop_images/brand-logo-6_74776744-dcf3-46a7-ae1e-bc58e8d0e742.svg"
           }
         },
         "slide_4mmnzn": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/partner-logo-6.svg"
+            "slide_image": "shopify://shop_images/brand-logo-3_f7f8c183-5b24-45dd-914c-b75747715372.svg"
+          }
+        },
+        "slide_qnDQ9G": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/brand-logo-10.svg"
+          }
+        },
+        "slide_64wp36": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/brand-logo-11.svg"
+          }
+        },
+        "slide_drRLxi": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/brand-logo-4_36ff8e01-f637-48a8-baaa-12b539f1002c.svg"
           }
         }
       },
       "block_order": [
         "slide_ipAGWr",
         "slide_LkBwwL",
-        "slide_4mmnzn"
+        "slide_4mmnzn",
+        "slide_qnDQ9G",
+        "slide_64wp36",
+        "slide_drRLxi"
       ],
       "name": "Supplier",
       "settings": {
