@@ -965,19 +965,20 @@ jQuery(function ($) {
     const $header = $('.header');
     const $layers = $('.layer-item:not(.hide)');
     const fadeDistance = 70;
+    // const $placeholder = $sticky.parent();
 
     if (!$sticky.length || !$section.length) return;
 
     const isMobile = window.matchMedia('(max-width: 991px)').matches;
     if (!isMobile) return;
 
-    const $placeholder = $sticky.parent();
+    const $placeholder = $('.layers-sec .sticky-block').parent();
 
     function recalc() {
         const headerHeight = $header.outerHeight() || 0;
 
         const stickyTop = $placeholder.offset().top;
-        const stickyHeight = $sticky.outerHeight();
+        const stickyHeight = $sticky.find('.layer-video-block').outerHeight();
 
         const sectionTop = $section.offset().top;
         const sectionBottom = sectionTop + $section.outerHeight();
