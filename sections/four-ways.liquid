@@ -144,8 +144,7 @@
                             {% endif %}
                         {% endfor %}
                     {% endif %}
-                </div>
-                <div class="title-shortcode text-center mb-0">
+                    <div class="title-shortcode text-center mb-0">
                     {% if section.settings.bottom_title != blank %}
                     <div class="h2 title">{{ section.settings.bottom_title }}</div>
                     {% endif %}
@@ -153,6 +152,8 @@
                     <div class="text text-md">{{ section.settings.bottom_description }}</div>
                     {% endif %}
                 </div>
+                </div>
+                
                 {% comment %} <div class="video-block">
                     {% capture comma_list %}{% for block in section.blocks %}{% if block.type == 'animation2' %}{%- assign image = block.settings.image -%}{% if image != blank %}{% assign image_url = image | image_url  %}{{ image_url }}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
                         {% assign comma_list = comma_list | strip | replace: ' ', '' %}
