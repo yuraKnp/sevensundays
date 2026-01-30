@@ -913,41 +913,26 @@ jQuery(function ($) {
     //opacity for each children sensation item
     $(document).ready(function () {
         var $items = $('.sensation-item');
-        
-        var windowHeight = $(window).height();
-        var offsetStart = 0;
-        var offsetEnd   = 0;
+        var isMobile = window.matchMedia('(max-width: 768px)').matches;
+        var vh = window.innerHeight;
 
-        if($(window).width() > 2600){
-            offsetStart = windowHeight * 0.8;
-            offsetEnd   = windowHeight * 0.3;
-        }
-        else if($(window).width() > 1920){
-            offsetStart = windowHeight * 0.65;
-            offsetEnd   = windowHeight * 0.25;
-        }
-        else if($(window).width() < 1920 && $(window).width() > 768){
-            offsetStart = windowHeight * 0.45;
-            offsetEnd   = windowHeight * 0.5;
-        }   
-        else{
-            offsetStart = windowHeight * 0.5;
-            offsetEnd   = windowHeight * 0.5;
-        }
+        var fadeStart = isMobile ? vh * 0.3 : 250;
+        var fadeEnd   = isMobile ? vh * 0.05  : 100;
 
         $(window).on('scroll', function () {
-            var scrollTop = $(window).scrollTop();
-            var windowHeight = $(window).height();
-
             $items.each(function () {
                 var $item = $(this);
-                var itemTop = $item.offset().top;
-                var itemHeight = $item.outerHeight();
+                var rect = this.getBoundingClientRect();
+                var top = rect.top;
 
-                var start = itemTop - windowHeight + offsetStart;
-                var end = itemTop + itemHeight - offsetEnd;
-                var progress = (scrollTop - start) / (end - start);
-                progress = Math.max(0, Math.min(1, progress));
+                var progress;
+                if (top >= fadeStart) {
+                    progress = 0;
+                } else if (top <= fadeEnd) {
+                    progress = 1;
+                } else {
+                    progress = (fadeStart - top) / (fadeStart - fadeEnd);
+                }
 
                 var $children = $item.children();
                 var count = $children.length;
@@ -955,10 +940,9 @@ jQuery(function ($) {
 
                 $children.each(function (index) {
                     var childStart = step * index;
-                    var speedFactor = 0.8 + index * 2;
+                    var speedFactor = isMobile ? 1 : 1.5 + index * 0.6;
 
                     var opacity = 1;
-
                     if (progress > childStart) {
                         var local = (progress - childStart) / step * speedFactor;
                         opacity = Math.max(0, 1 - local);
@@ -1017,7 +1001,8 @@ jQuery(function ($) {
 
 
     $(window).on('scroll', function () {
-        const scrollY = $(window).scrollTop();
+        // const scrollY = $(window).scrollTop();
+        const scrollY = Math.max(0, $(window).scrollTop());
 
         // const startFix = metrics.stickyTop - metrics.headerHeight;
         const endFix = metrics.sectionBottom - metrics.stickyHeight - metrics.headerHeight;
