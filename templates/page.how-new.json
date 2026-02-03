@@ -379,6 +379,7 @@
       "blocks": {
         "slide_VqcaFg": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/advisor-img-1_1106b847-5bd4-4841-b8a0-9bfd9fe9a0a9.webp",
             "title": "Dr. Helge Riepenhof",
