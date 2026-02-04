@@ -358,6 +358,16 @@
             "slide_desc": "Wenn man viel Zeit auf der Bühne oder vor der Kamera verbringt, wird Qualitätsschlaf essentiell. Seven Sundays ist genau die nachhaltige Lösung, nach der ich immer gesucht habe."
           }
         },
+        "slide_LTRrDr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2026-02-03_at_10.47.59.jpg",
+            "tags": "",
+            "name": "Anita Tillmann",
+            "job": "Gründerin PREMIUM Group",
+            "slide_desc": "Ich kuratiere seit 20 Jahren, was gut ist. Bei Schlaf war ich überrascht, wie viel Potenzial ich verschenkt habe – bis ich Florian kennengelernt und Seven Sundays entdeckt habe."
+          }
+        },
         "slide_aqjTMr": {
           "type": "slide",
           "disabled": true,
@@ -372,6 +382,7 @@
       },
       "block_order": [
         "slide_CT7bNr",
+        "slide_LTRrDr",
         "slide_aqjTMr"
       ],
       "name": "Testimonial slider",
