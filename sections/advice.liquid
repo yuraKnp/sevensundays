@@ -39,7 +39,7 @@
                             {% endif %}
                             {% if section.settings.left_button_link != blank %}
                             {% assign link_text = section.settings.left_button_link_text | default: 'Read Study' %}
-                            <a href="{{ section.settings.left_button_link }}" class="btn btn-blur">
+                            <a href="{{ section.settings.left_button_link }}" class="btn btn-blur" target="_blank">
                                 <b>{{ link_text }}</b>
                             </a>
                             {% endif %}
