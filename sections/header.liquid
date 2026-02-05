@@ -338,6 +338,7 @@
 
             {% assign featured_product = section.settings.featured_product %}
             {% assign featured_product_link = section.settings.featured_product_link %}
+            {% assign featured_product_price = section.settings.featured_product_price %}
 
             <div class="h-menu">
                 <nav class="h-links">
@@ -354,7 +355,8 @@
                     <div class="product-item-wrapp">
                         <div class="product-item">
                             <div class="pr-content">
-                                <div class="text"><b>{{ 'general.menu.from' | t }} {{ featured_product.price | money }}</b></div>
+                                {% comment %} <div class="text"><b>{{ 'general.menu.from' | t }} {{ featured_product.price | money }}</b></div> {% endcomment %}
+                                 <div class="text"><b>{{ featured_product_price }}</b></div>
                                 <div class="text">{{ featured_product.title }}</div>
                             </div>
                             <a href="{{ featured_product_link }}" class="btn">
