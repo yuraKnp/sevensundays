@@ -3652,7 +3652,7 @@ main.type2 > section:first-child .section.sec-padd:first-child {
 }
 
 
-:is(img,svg,iframe){
+:is(img,svg,iframe):not(.sensation-img){
   width: revert-layer;
   height: revert-layer;
 }
