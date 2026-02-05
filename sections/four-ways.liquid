@@ -117,12 +117,7 @@
                                             {% assign image_url = image | image_url  %}
                                             {% assign image_format = image.format  %}
                                             <picture>
-                                                <source srcset="{{ image_url }}" type="{{ image_format }}"  media="(min-width:768px)">
-                                                {% if image_mob != blank %}
-                                                    {% assign image_url = image_mob | image_url  %}
-                                                    {% assign image_format = image_mob.format  %}
-                                                <source srcset="{{ image_url }}" type="{{ image_format }}" media="(max-width:767px)">
-                                                {% endif %}
+                                                <source srcset="{{ image_url }}" type="{{ image_format }}">
                                                 <img width="380" height="240" src="#" alt="" loading="lazy" class="sensation-img-c">
                                             </picture>
                                         </div>
