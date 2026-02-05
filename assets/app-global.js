@@ -836,7 +836,8 @@ jQuery(function ($) {
     $('.scroll-imgs').each(function () {
         const $img = $(this);
         // const $layers = $('.scroll-layers .layer-item');
-        const $layers = $img.closest('.section').find('.scroll-layers .layer-item, .sensation-block .sensation-item');
+        // const $layers = $img.closest('.section').find('.scroll-layers .layer-item, .sensation-block .sensation-item');
+        const $layers = $img.closest('.section').find('.scroll-layers .layer-item');
 
         if ($img.length < 1) return;
 
@@ -911,48 +912,48 @@ jQuery(function ($) {
     });
 
     //opacity for each children sensation item
-    $(document).ready(function () {
-        var $items = $('.sensation-item');
-        var isMobile = window.matchMedia('(max-width: 768px)').matches;
-        var vh = window.innerHeight;
+    // $(document).ready(function () {
+    //     var $items = $('.sensation-item');
+    //     var isMobile = window.matchMedia('(max-width: 768px)').matches;
+    //     var vh = window.innerHeight;
 
-        var fadeStart = isMobile ? vh * 0.3 : 250;
-        var fadeEnd   = isMobile ? vh * 0.05  : 100;
+    //     var fadeStart = isMobile ? vh * 0.3 : 250;
+    //     var fadeEnd   = isMobile ? vh * 0.05  : 100;
 
-        $(window).on('scroll', function () {
-            $items.each(function () {
-                var $item = $(this);
-                var rect = this.getBoundingClientRect();
-                var top = rect.top;
+    //     $(window).on('scroll', function () {
+    //         $items.each(function () {
+    //             var $item = $(this);
+    //             var rect = this.getBoundingClientRect();
+    //             var top = rect.top;
 
-                var progress;
-                if (top >= fadeStart) {
-                    progress = 0;
-                } else if (top <= fadeEnd) {
-                    progress = 1;
-                } else {
-                    progress = (fadeStart - top) / (fadeStart - fadeEnd);
-                }
+    //             var progress;
+    //             if (top >= fadeStart) {
+    //                 progress = 0;
+    //             } else if (top <= fadeEnd) {
+    //                 progress = 1;
+    //             } else {
+    //                 progress = (fadeStart - top) / (fadeStart - fadeEnd);
+    //             }
 
-                var $children = $item.children();
-                var count = $children.length;
-                var step = 1 / count;
+    //             var $children = $item.children();
+    //             var count = $children.length;
+    //             var step = 1 / count;
 
-                $children.each(function (index) {
-                    var childStart = step * index;
-                    var speedFactor = isMobile ? 1 : 1.5 + index * 0.6;
+    //             $children.each(function (index) {
+    //                 var childStart = step * index;
+    //                 var speedFactor = isMobile ? 1 : 1.5 + index * 0.6;
 
-                    var opacity = 1;
-                    if (progress > childStart) {
-                        var local = (progress - childStart) / step * speedFactor;
-                        opacity = Math.max(0, 1 - local);
-                    }
+    //                 var opacity = 1;
+    //                 if (progress > childStart) {
+    //                     var local = (progress - childStart) / step * speedFactor;
+    //                     opacity = Math.max(0, 1 - local);
+    //                 }
 
-                    $(this).css('opacity', opacity);
-                });
-            });
-        });
-    });
+    //                 $(this).css('opacity', opacity);
+    //             });
+    //         });
+    //     });
+    // });
 
 
 
