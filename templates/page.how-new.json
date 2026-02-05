@@ -305,6 +305,7 @@
         "slides_TyByFe": {
           "type": "slides",
           "settings": {
+            "image": "shopify://shop_images/sensation-img-1.webp",
             "subtitle": "Tiefe Entspannung",
             "title": "Beruhigend",
             "description": "Schwereloses Liegen mit Memory-Effekt. Reduziert Druckpunkte, beruhigt unruhige Nächte – für die perfekte Balance aus Ruhe und Regeneration.",
@@ -316,6 +317,7 @@
         "slides_HWbqWY": {
           "type": "slides",
           "settings": {
+            "image": "shopify://shop_images/sensation-img-2.webp",
             "subtitle": "Aktive Regeneration",
             "title": "Revitalisierend",
             "description": "Leicht federndes Liegen mit Latex-Effekt. Sanfte Mikrobewegungen halten Muskeln und Faszien aktiv – du wachst beweglich auf, nicht eingerostet.",
@@ -327,6 +329,7 @@
         "slides_n8ND4w": {
           "type": "slides",
           "settings": {
+            "image": "shopify://shop_images/sensation-img-3.webp",
             "subtitle": "Optimale Körperpositionierung",
             "title": "Ergonomisch",
             "description": "Präzise Zonierung mit 5-Zonen-Technologie. Entlastet Schultern und Hüften, fördert die Durchblutung – du wachst auf ohne Verspannungen und taube Gliedmaßen.",
@@ -338,6 +341,7 @@
         "slides_RFtqPU": {
           "type": "slides",
           "settings": {
+            "image": "shopify://shop_images/sensation-img-4.webp",
             "subtitle": "Gezielte Wirbelsäulen-Regeneration",
             "title": "Rücken-Regeneration",
             "description": "Sanfter Dehneffekt mit Stretch-Technologie. Aktiviert den Stoffwechsel in sensiblen Bandscheiben – du regenerierst deinen Rücken im Schlaf.",
