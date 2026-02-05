@@ -962,11 +962,14 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .video-block .video video {position: absolute;left: 0;top: 0;width: 100%;height: 100%;border-radius: inherit;-o-object-fit: cover;object-fit: cover;}
 .smart-video-block {position: relative;width: 256px;border-radius: var(--rd-1);overflow: hidden;margin-inline: auto;}
 .smart-video-block img {position: absolute;left: 0;top: 0;width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;}
-.sensation-block {height: 95%;}
+/* .sensation-block {height: 95%;} */
 .sensation-block + * {padding-top: var(--sp-md);}
 .sensation-block .sticky-block {position: sticky;top: var(--h-height);z-index: 2;}
 .sensation-block .title-shortcode {padding-top: var(--sp-lg);}
 .sensation-item {position: relative;text-align: center;display: flex;flex-direction: column;gap: var(--sp-16);transition: opacity 0.2s linear;will-change: opacity;}
+.sensation-item + .sensation-item {margin-top: -60px;}
+.sensation-item .sensation-img {margin-top: -60px;}
+.sensation-item .sensation-img + * {margin-top: -80px;}
 .sensation-item .text {max-width: 564px;margin-inline: auto;}
 .sensation-item .btn {margin-top: var(--sp-16);width: -moz-fit-content;width: fit-content;margin-inline: auto;}
 .sensation-item .line {position: relative;width: 1px;height: 170px;background-color: var(--clr-black);margin-block: var(--sp-32) var(--sp-48);margin-inline: auto;}
@@ -1044,6 +1047,9 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .scroll-layers .layer-item + .layer-item {padding-top: 64px;}
 .scroll-layers .h2 {font-size: var(--h4);}
 .scroll-layers .text {font-size: var(--text);}
+.sensation-item .sensation-img {margin-top: -20px;}
+.sensation-item .sensation-img + * {margin-top: -30px;}
+.sensation-item + .sensation-item {margin-top: -50px;}
 .review-wrap-slider::before,
 .review-wrap-slider::after {content: none;}
 }
@@ -1062,7 +1068,8 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .layer-item {margin-top: calc(var(--sp-xl) * 1.2);}
 .control-slider {padding: 4px;gap: 2px;}
 .control-slider .item {padding: 8px 6px;font-size: 12px;line-height: 16px;}
-.sensation-block {height: 92%;}
+/* .sensation-block {height: 92%;} */
+.sensation-item + .sensation-item {margin-top: -20px;}
 .sensation-item .line {height: 120px;}
 }
 /*--------------------*/

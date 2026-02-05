@@ -117,7 +117,23 @@
                                 {%- assign link_text = block.settings.link_text -%}
                                 {%- assign link_url = block.settings.link_url -%}
                                 {%- assign add_text = block.settings.add_text -%}
+                                {%- assign image = block.settings.image -%}
                                 <div class="sensation-item">
+                                    {% if image != blank %}
+                                    <div class="sensation-img">
+                                    {% assign image_url = image | image_url  %}
+                                    {% assign image_format = image.format  %}
+                                    <picture>
+                                        <source srcset="{{ image_url }}" type="{{ image_format }}"  media="(min-width:768px)">
+                                        {% if image_mob != blank %}
+                                            {% assign image_url = image_mob | image_url  %}
+                                            {% assign image_format = image_mob.format  %}
+                                        <source srcset="{{ image_url }}" type="{{ image_format }}" media="(max-width:767px)">
+                                        {% endif %}
+                                        <img width="380" height="240" src="#" alt="" loading="lazy">
+                                    </picture>
+                                    </div>
+                                    {% endif %}
                                     {% if subtitle != blank %}
                                     <div class="motto">{{ subtitle }}</div>
                                     {% endif %}
@@ -223,6 +239,11 @@
       "type": "slides",
       "name": "Slides info",
       "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
         {
             "type": "inline_richtext",
             "id": "subtitle",
