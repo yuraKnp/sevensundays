@@ -428,57 +428,17 @@
         "slide_NhFTH7": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
-            "title": "Thomas Koht",
-            "description": "Tech Executive"
+            "image": "shopify://shop_images/Alexander-Mazza-SEVEN-SUNDAYS_24684efc-3ebe-41cc-af04-996ad0505f31.jpg",
+            "title": "Alexander Mazza",
+            "description": "Moderator & TV-Host"
           }
         },
         "slide_QnJAM9": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/stories-img-1_c542d519-1ce8-4bed-986c-d9b8d73afc1d.webp",
-            "title": "Jan Donovan",
-            "description": "Olympic Swimmer"
-          }
-        },
-        "slide_6pFEtq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
-            "title": "Thomas Koht",
-            "description": "Tech Executive"
-          }
-        },
-        "slide_JEqaRJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/stories-img-1_c542d519-1ce8-4bed-986c-d9b8d73afc1d.webp",
-            "title": "Jan Donovan",
-            "description": "Olympic Swimmer"
-          }
-        },
-        "slide_YaErLU": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
-            "title": "Thomas Koht",
-            "description": "Tech Executive"
-          }
-        },
-        "slide_XbbGqG": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/stories-img-1_c542d519-1ce8-4bed-986c-d9b8d73afc1d.webp",
-            "title": "Jan Donovan",
-            "description": "Olympic Swimmer"
-          }
-        },
-        "slide_MizUAy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/stories-img-2_1e278ccb-9965-4ef9-a567-2b726fa31654.webp",
-            "title": "Thomas Koht",
-            "description": "Tech Executive"
+            "image": "shopify://shop_images/WhatsApp_Image_2026-02-03_at_10.47.59.jpg",
+            "title": "Anita Tillmann",
+            "description": "Gründerin PREMIUM Group"
           }
         },
         "image_7bUEMR": {
@@ -517,11 +477,6 @@
       "block_order": [
         "slide_NhFTH7",
         "slide_QnJAM9",
-        "slide_6pFEtq",
-        "slide_JEqaRJ",
-        "slide_YaErLU",
-        "slide_XbbGqG",
-        "slide_MizUAy",
         "image_7bUEMR",
         "image_dCmgKy",
         "image_nRa8xA",
