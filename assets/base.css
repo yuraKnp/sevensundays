@@ -4142,3 +4142,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .price__badge-sold-out{
   margin-top: 0px;
 }
+
+.articlearticle .grid__item{
+  border-radius: 36px;
+}
