@@ -3652,10 +3652,10 @@ main.type2 > section:first-child .section.sec-padd:first-child {
 }
 
 
-/* :is(img,svg,iframe):not(.sensation-img-c):not(.cart-item__image){
+:is(img,svg,iframe):not(.sensation-img-c, .cart-item__image){
   width: revert-layer;
   height: revert-layer;
-} */
+}
 
 .h-lang button{
   cursor: pointer;
