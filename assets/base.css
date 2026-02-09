@@ -4149,4 +4149,5 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 .articlearticle .toc__wrapper{
   padding: 1rem;
+  border: none;
 }
