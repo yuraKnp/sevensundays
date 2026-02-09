@@ -417,7 +417,11 @@
                                         {%- for link in block.settings.menu.links -%}
                                           
                                           <li>
-                                            <a href="{{ link.url }}"{% if link.active %} class="active {{ link.type }}"{% endif %} {% if link.type != 'page_link' and link.type != 'blog_link' and link.type != 'http_link' %}target="_blank"{% endif %}>{{ link.title | escape }}</a>
+                                            {% if link.url contains shop_domain %}
+                                              <a href="{{ link.url }}"{% if link.active %} class="active {{ link.type }}"{% endif %}>{{ link.title | escape }}</a>
+                                            {% else %}
+                                              <a href="{{ link.url }}"{% if link.active %} class="active {{ link.type }}"{% endif %} target="_blank">{{ link.title | escape }}</a>
+                                            {% endif %}
                                           </li>
                                         {%- endfor -%}
                                       </ul>
