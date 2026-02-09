@@ -4145,6 +4145,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 .articlearticle .grid__item{
   border-radius: 36px;
+  border-color: rgba(30, 34, 39, .16);
 }
 
 .articlearticle .toc__wrapper{
