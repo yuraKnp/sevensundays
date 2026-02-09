@@ -412,15 +412,15 @@
                                 {%- if block.settings.menu != blank -%}
                                   <div class="footer-links">  
                                     <div class="footer-caption">{{ block.settings.heading | escape }}</div>
-                                    {% assign shop_domain = shop.url | replace: 'https://', '' | replace: 'http://', '' %}
+                                    {% comment %} {% assign shop_domain = shop.url | replace: 'https://', '' | replace: 'http://', '' %} {% endcomment %}
                                       <ul>
                                         {%- for link in block.settings.menu.links -%}
-                                          
+                      
                                           <li>
-                                            {% if link.url contains shop_domain %}
-                                              <a href="{{ link.url }}"{% if link.active %} class="active {{ link.type }}"{% endif %}>{{ link.title | escape }}</a>
-                                            {% else %}
+                                            {% if link.url contains '://' %}
                                               <a href="{{ link.url }}"{% if link.active %} class="active {{ link.type }}"{% endif %} target="_blank">{{ link.title | escape }}</a>
+                                            {% else %}
+                                              <a href="{{ link.url }}"{% if link.active %} class="active {{ link.type }}"{% endif %}>{{ link.title | escape }}</a>
                                             {% endif %}
                                           </li>
                                         {%- endfor -%}
