@@ -4152,3 +4152,9 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   padding: 1rem;
   border: none;
 }
+
+@media(min-width: 768px){
+  .advisor-item.type3 .advisor-info .text{
+    font-size: 14px;
+  }
+}
