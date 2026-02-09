@@ -417,7 +417,7 @@
                                         {%- for link in block.settings.menu.links -%}
                                           
                                           <li>
-                                            <a href="{{ link.url }}"{% if link.active %} class="active"{% endif %} {% if link.type != 'page_link' %}target="_blank"{% endif %}>{{ link.title | escape }}</a>
+                                            <a href="{{ link.url }}"{% if link.active %} class="active {{ link.type }}"{% endif %} {% if link.type != 'page_link' %}target="_blank"{% endif %}>{{ link.title | escape }}</a>
                                           </li>
                                         {%- endfor -%}
                                       </ul>
