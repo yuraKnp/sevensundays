@@ -4138,3 +4138,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .swiper-controls-wrap.pos-1{
   z-index: 999;
 }
+
+.price__badge-sold-out{
+  margin-top: 0px;
+}
