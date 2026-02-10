@@ -88,6 +88,30 @@
         "subtitle": "",
         "layout": "type-1"
       }
+    },
+    "insight_L9YUQT": {
+      "type": "insight",
+      "name": "Insight",
+      "settings": {
+        "tag": "Experteneinblick",
+        "main_description": "Unser Nacken trägt die Last des Tages. Nachts verdient er Unterstützung, die die Selbstheilungskräfte des Körpers aktiviert. Das richtige Kissen löst nicht nur Verspannungen – es hilft dem Körper dabei, das zu tun, was er am besten kann: regenerieren.",
+        "image": "shopify://shop_images/expert-photo.webp",
+        "exper_name": "Prof. Dr. Dietrich Grönemeyer",
+        "expert_occupation": "Rückenexperte und medizinischer Berater Seven Sundays"
+      }
+    },
+    "press_cwLRRP": {
+      "type": "press",
+      "name": "Press section",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Das perfekte Kissen ist erst der Anfang",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "Entdecke, wie das preisgekrönte modulare Schlafsystem dein Setup vervollständigt – und echte Schlafqualität freisetzt.",
+        "link_text": "Schlafsystem entdecken",
+        "link_url": "https://seven-sundays.shop/pages/experience"
+      }
     }
   },
   "order": [
@@ -95,6 +119,8 @@
     "product-grid",
     "heading_A8THTn",
     "products_line_WFmThn",
-    "slider_gallery_CUk3XY"
+    "slider_gallery_CUk3XY",
+    "insight_L9YUQT",
+    "press_cwLRRP"
   ]
 }
