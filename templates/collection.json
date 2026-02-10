@@ -11,6 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -38,6 +39,15 @@
         "padding_bottom": 36
       }
     },
+    "heading_A8THTn": {
+      "type": "heading",
+      "name": "Heading",
+      "settings": {
+        "discover_subtitle": "Kissen Shop",
+        "discover_title": "Entdecke unsere Kissen",
+        "discover_text_before_gallery": "So einzigartig wie dein Körper ist auch die ideale Positionierung von Kopf und Nacken. Wie du schläfst, bestimmt, was du brauchst."
+      }
+    },
     "products_line_WFmThn": {
       "type": "products-line",
       "name": "Featured collection new",
@@ -50,6 +60,7 @@
   "order": [
     "banner",
     "product-grid",
+    "heading_A8THTn",
     "products_line_WFmThn"
   ]
 }
