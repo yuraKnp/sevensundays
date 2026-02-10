@@ -55,12 +55,36 @@
         "collection": "kissen",
         "products_to_show": 4
       }
+    },
+    "slider_gallery_CUk3XY": {
+      "type": "slider-gallery",
+      "blocks": {
+        "slide_N9LLpU": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Back_cfe6a486-3559-408a-bcde-7a86b3cb84a0.png",
+            "slide_heading": "Wissenschaftlich entwickelt",
+            "slide_desc": "Von Experten für gesunden Schlaf mitentwickelt  – und so kuschelig, wie ein Kissen sein sollte.",
+            "tags": "WISSENSCHAFTLICH FUNDIERT"
+          }
+        }
+      },
+      "block_order": [
+        "slide_N9LLpU"
+      ],
+      "name": "Gallery slider",
+      "settings": {
+        "title": "Warum Seven Sundays Kissen?",
+        "subtitle": "",
+        "layout": "type-1"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
     "heading_A8THTn",
-    "products_line_WFmThn"
+    "products_line_WFmThn",
+    "slider_gallery_CUk3XY"
   ]
 }
