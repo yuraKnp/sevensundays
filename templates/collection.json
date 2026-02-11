@@ -1,7 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -10,23 +20,107 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "",
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "none",
         "enable_filtering": true,
+        "filter_type": "horizontal",
         "enable_sorting": true,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "heading_A8THTn": {
+      "type": "heading",
+      "name": "Heading",
+      "settings": {
+        "discover_subtitle": "Kissen Shop",
+        "discover_title": "Entdecke unsere Kissen",
+        "discover_text_before_gallery": "So einzigartig wie dein Körper ist auch die ideale Positionierung von Kopf und Nacken. Wie du schläfst, bestimmt, was du brauchst."
+      }
+    },
+    "products_line_WFmThn": {
+      "type": "products-line",
+      "name": "Featured collection new",
+      "settings": {
+        "collection": "kissen",
+        "products_to_show": 4
+      }
+    },
+    "slider_gallery_CUk3XY": {
+      "type": "slider-gallery",
+      "blocks": {
+        "slide_N9LLpU": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Back_cfe6a486-3559-408a-bcde-7a86b3cb84a0.png",
+            "slide_heading": "Wissenschaftlich entwickelt",
+            "slide_desc": "Von Experten für gesunden Schlaf mitentwickelt  – und so kuschelig, wie ein Kissen sein sollte.",
+            "tags": "WISSENSCHAFTLICH FUNDIERT"
+          }
+        },
+        "slide_GGXT9D": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Back_1_0f842c32-9add-4f23-93a8-98dcbc032ca3.png",
+            "slide_heading": "Schweizer Design & Handwerkskunst",
+            "slide_desc": "Premium-Materialien, handgefertigt mit Schweizer Präzision für überlegenen Komfort und Langlebigkeit.",
+            "tags": "SCHWEIZER QUALITÄT"
+          }
+        }
+      },
+      "block_order": [
+        "slide_N9LLpU",
+        "slide_GGXT9D"
+      ],
+      "name": "Gallery slider",
+      "settings": {
+        "title": "Warum Seven Sundays Kissen?",
+        "subtitle": "",
+        "layout": "type-2"
+      }
+    },
+    "insight_L9YUQT": {
+      "type": "insight",
+      "name": "Insight",
+      "settings": {
+        "tag": "Experteneinblick",
+        "main_description": "Unser Nacken trägt die Last des Tages. Nachts verdient er Unterstützung, die die Selbstheilungskräfte des Körpers aktiviert. Das richtige Kissen löst nicht nur Verspannungen – es hilft dem Körper dabei, das zu tun, was er am besten kann: regenerieren.",
+        "image": "shopify://shop_images/expert-photo.webp",
+        "exper_name": "Prof. Dr. Dietrich Grönemeyer",
+        "expert_occupation": "Rückenexperte und medizinischer Berater Seven Sundays"
+      }
+    },
+    "press_cwLRRP": {
+      "type": "press",
+      "name": "Press section",
+      "settings": {
+        "image": "shopify://shop_images/cta-video.webp",
+        "hero_video_file": "shopify://files/videos/cta-video.mp4",
+        "title": "Das perfekte Kissen ist erst der Anfang",
+        "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
+        "short_description": "Entdecke, wie das preisgekrönte modulare Schlafsystem dein Setup vervollständigt – und echte Schlafqualität freisetzt.",
+        "link_text": "Schlafsystem entdecken",
+        "link_url": "https://seven-sundays.shop/pages/experience"
       }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "heading_A8THTn",
+    "products_line_WFmThn",
+    "slider_gallery_CUk3XY",
+    "insight_L9YUQT",
+    "press_cwLRRP"
   ]
 }
