@@ -100,7 +100,7 @@
         "slide_pQBnUQ": {
           "type": "slide",
           "settings": {
-            "number": "",
+            "number": "1",
             "slide_heading": "Anmelden",
             "slide_desc": "Doppelte Chance wählen"
           }
@@ -108,7 +108,7 @@
         "slide_bRenHA": {
           "type": "slide",
           "settings": {
-            "number": "",
+            "number": "2",
             "slide_heading": "Termin vereinbaren",
             "slide_desc": "Wir rufen dich an"
           }
@@ -116,7 +116,7 @@
         "slide_ywnpaM": {
           "type": "slide",
           "settings": {
-            "number": "",
+            "number": "3",
             "slide_heading": "Beratung erleben",
             "slide_desc": "60 Min. bei dir zu Hause"
           }
@@ -124,7 +124,7 @@
         "slide_XfcEbq": {
           "type": "slide",
           "settings": {
-            "number": "",
+            "number": "✓",
             "slide_heading": "Doppelt gewinnen",
             "slide_desc": "Schlafsystem + Kissen"
           }
