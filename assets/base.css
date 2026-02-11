@@ -4193,7 +4193,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .top-info img{
