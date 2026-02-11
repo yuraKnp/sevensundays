@@ -23,12 +23,16 @@
                 <div class="row">
                     <div class="col-lg-7 col-xl-7">
                         <div class="banner-info">
+                            {%- if section.settings.subtitle != blank -%}
+                            <div class="motto">{{ section.settings.subtitle }}</div>
+                            {% endif %}
                             {% if section.settings.title != blank %}
                             <h1 class="h1 title text-balance">{{ section.settings.title }}</h1>
                             {% endif %}
                             {% if section.settings.description != blank %}
                             <div class="text text-md">{{ section.settings.description }}</div>
                             {% endif %}
+                            {% if section.settings.button_link_1 != blank and section.settings.button_label_1 != blank %}
                             <div class="banner-btn">
                                 <div class="button-wrapp">
                                     <a href="{{ section.settings.button_link_1 }}" class="btn">
@@ -40,6 +44,7 @@
                                     </a>
                                 </div>
                             </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
