@@ -1,0 +1,107 @@
+<div class="section sec-born">
+    <div class="banner">
+        <div class="banner-media top-bottom-shadow">
+        </div>
+        <div class="banner-align align-top-bottom">
+            <div class="align-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-7 col-xl-6">
+                            <div class="banner-info">
+                                {% if section.settings.subtitle != blank %}
+                                <div class="motto">{{ section.settings.subtitle }}</div>
+                                {% endif %}
+                                {% if section.settings.title != blank %}
+                                <div class="h2 title text-balance">{{ section.settings.title }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if section.blocks != blank %}
+            <div class="align-bottom">
+                <div class="container">
+                    <div class="row">
+                        {% for block in section.blocks %}
+                          {%- assign heading = block.settings.slide_heading -%}
+                          {%- assign desc = block.settings.slide_desc -%}
+                          {%- assign number = block.settings.number -%}
+                          <div class="col-lg-4">
+                              <div class="born-item">
+                                  {% if number != blank %}
+                                  <div class="number">{{ number }}</div>
+                                  {% endif %}
+                                  {% if heading != blank %}
+                                  <div class="h5 title">{{ heading }}</div>
+                                  {% endif %}
+                                  {% if desc != blank %}
+                                  <div class="text">{{ desc }}</div>
+                                  {% endif %}
+                              </div>
+                          </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Back video columns red",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "bottom_description",
+      "label": "Bottom description"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+        },
+        {
+          "type": "text",
+          "id": "slide_heading",
+          "label": "Title",
+        },
+        {
+          "type": "inline_richtext",
+          "id": "slide_desc",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Back video columns red",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
