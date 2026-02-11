@@ -4168,3 +4168,15 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .banner-info .button-wrapp.left{
   justify-content: flex-start;
 }
+
+.bottom-patch{
+  width: auto;
+  height: auto;
+}
+
+.bottom-right{
+  margin-right: 0px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
