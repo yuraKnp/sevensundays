@@ -73,7 +73,7 @@
       ],
       "name": "Three columns section red",
       "settings": {
-        "section_type": "light",
+        "section_type": "dark",
         "subtitle": "Deine Gewinnchance",
         "title": "Wähle deine Option",
         "short_desc": ""
