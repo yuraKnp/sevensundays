@@ -49,7 +49,9 @@
       "settings": {
         "section_type": "type_1",
         "title": "",
-        "video_title": "",
+        "image": "shopify://shop_images/gxM09j.png",
+        "hero_video_file": "shopify://files/videos/smart-system.mp4",
+        "video_title": "Max Finkgräfe über die Partnerschaft",
         "video_duration": ""
       }
     }
