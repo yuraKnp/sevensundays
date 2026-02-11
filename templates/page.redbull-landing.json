@@ -17,14 +17,18 @@
         "padding_bottom": 28
       }
     },
-    "page_content_izA8Kj": {
-      "type": "page-content",
-      "name": "General page content",
-      "settings": {}
+    "image_banner_new_MYyUAq": {
+      "type": "image-banner-new",
+      "name": "Image banner new",
+      "settings": {
+        "image": "shopify://shop_images/gxM09j.png",
+        "title": "Besser schlafen. Besser spielen.",
+        "description": "Melde dich jetzt an und sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – oder gewinne ein komplettes Schlafsystem nach Wahl."
+      }
     }
   },
   "order": [
     "main",
-    "page_content_izA8Kj"
+    "image_banner_new_MYyUAq"
   ]
 }
