@@ -101,13 +101,40 @@
           "type": "slide",
           "settings": {
             "number": "",
-            "slide_heading": "",
+            "slide_heading": "Anmelden",
+            "slide_desc": ""
+          }
+        },
+        "slide_bRenHA": {
+          "type": "slide",
+          "settings": {
+            "number": "",
+            "slide_heading": "Termin vereinbaren",
+            "slide_desc": ""
+          }
+        },
+        "slide_ywnpaM": {
+          "type": "slide",
+          "settings": {
+            "number": "",
+            "slide_heading": "Beratung erleben",
+            "slide_desc": ""
+          }
+        },
+        "slide_XfcEbq": {
+          "type": "slide",
+          "settings": {
+            "number": "",
+            "slide_heading": "Doppelt gewinnen",
             "slide_desc": ""
           }
         }
       },
       "block_order": [
-        "slide_pQBnUQ"
+        "slide_pQBnUQ",
+        "slide_bRenHA",
+        "slide_ywnpaM",
+        "slide_XfcEbq"
       ],
       "name": "Back video columns red",
       "settings": {
