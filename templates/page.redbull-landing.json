@@ -64,7 +64,10 @@
           "settings": {
             "number": "Option A",
             "title": "Nackenkissen gewinnen",
-            "description": "Sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – individuell anpassbar für einen entspannten Nacken."
+            "description": "Sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – individuell anpassbar für einen entspannten Nacken.",
+            "prize_label": "Deine Gewinnchance",
+            "prize_value": "<b>1 von 11 Nackenkissen</b> (Wert: 159 €)",
+            "note": ""
           }
         },
         "slide_AWUkJC": {
@@ -72,7 +75,10 @@
           "settings": {
             "number": "Option B",
             "title": "Doppelt gewinnen",
-            "description": "Kostenlose Schlafberatung bei dir zu Hause + doppelte Gewinnchance. Schweizer Manufakturqualität, individuell anpassbar."
+            "description": "Kostenlose Schlafberatung bei dir zu Hause + doppelte Gewinnchance. Schweizer Manufakturqualität, individuell anpassbar.",
+            "prize_label": "Deine Gewinnchancen",
+            "prize_value": "<b>1 modulares Schlafsystem</b> + 1 von 11 Kissen",
+            "note": "Schon vor der Verlosung ein Schlafsystem gekauft? Bei Gewinn wird der Rechnungsbetrag erstattet (exkl. Spedition)."
           }
         }
       },
@@ -86,6 +92,15 @@
         "subtitle": "Deine Gewinnchance",
         "title": "Wähle deine Option",
         "short_desc": ""
+      }
+    },
+    "background_video_columns_red_BEhMa8": {
+      "type": "background-video-columns-red",
+      "name": "Back video columns red",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "bottom_description": ""
       }
     },
     "call_back_form_career_yUbGrw": {
@@ -127,6 +142,7 @@
     "banner_text_BgixF4",
     "background_video_aHGzxG",
     "three_columns_red_Lj3EhD",
+    "background_video_columns_red_BEhMa8",
     "call_back_form_career_yUbGrw",
     "faq_Xh9LWR"
   ]
