@@ -55,12 +55,23 @@
         "video_title": "",
         "video_duration": ""
       }
+    },
+    "three_columns_red_Lj3EhD": {
+      "type": "three-columns-red",
+      "name": "Three columns section red",
+      "settings": {
+        "section_type": "light",
+        "subtitle": "Deine Gewinnchance",
+        "title": "Wähle deine Option",
+        "short_desc": ""
+      }
     }
   },
   "order": [
     "main",
     "image_banner_new_red_Q6MWzb",
     "banner_text_BgixF4",
-    "background_video_aHGzxG"
+    "background_video_aHGzxG",
+    "three_columns_red_Lj3EhD"
   ]
 }
