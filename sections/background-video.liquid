@@ -52,6 +52,7 @@
                             {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
                             <img width="20" height="20" src="{{ url_no_version }}" alt="icon" loading="lazy">
                         </div>
+                        {% if section.settings.video_title != blank or section.settings.video_duration != blank %}
                         <div class="content">
                             {% if section.settings.video_title != blank %}
                             <div class="text"><b>{{ section.settings.video_title }}</b></div>
@@ -60,6 +61,7 @@
                             <div class="text">{{ section.settings.video_duration }}</div>
                             {% endif %}
                         </div>
+                        {% endif %}
                     </div>
                     {% endif %}
                 </div>
@@ -73,6 +75,7 @@
                             {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
                             <img width="20" height="20" src="{{ url_no_version }}" alt="icon" loading="lazy">
                         </div>
+                        {% if section.settings.video_title != blank or section.settings.video_duration != blank %}
                         <div class="content">
                             {% if section.settings.video_title != blank %}
                             <div class="text"><b>{{ section.settings.video_title }}</b></div>
@@ -81,6 +84,7 @@
                             <div class="text">{{ section.settings.video_duration }}</div>
                             {% endif %}
                         </div>
+                        {% endif %}
                     </div>
                 {% endif %}
             </div>
