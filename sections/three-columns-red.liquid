@@ -126,6 +126,9 @@
                       {%- assign number = block.settings.number  -%}
                       {%- assign heading = block.settings.title -%}
                       {%- assign desc = block.settings.description -%}
+                      {%- assign prize_label = block.settings.prize_label  -%}
+                      {%- assign prize_value = block.settings.prize_value -%}
+                      {%- assign note = block.settings.note -%}
                     <div class="swiper-slide">
                         <div class="deserves-item">
                             {% if number != blank %}
@@ -139,6 +142,17 @@
                                 <div class="text">{{ desc }}</div>
                                 {% endif %}
                             </div>
+                            {% if prize_label != blank or prize_value != blank %}
+                            <div class="deserves-info">
+                                <span>{{ prize_label }}</span>
+                                {{ prize_value }}
+                            </div>
+                            {% endif %}
+                            {% if note != blank %}
+                            <div class="note text">
+                                {{ note }}
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                     {% endfor %}
@@ -235,6 +249,21 @@
             "type": "inline_richtext",
             "id": "description",
             "label": "Description"
+        },
+        {
+            "type": "text",
+            "id": "prize_label",
+            "label": "Prize label"
+        },
+        {
+            "type": "text",
+            "id": "prize_value",
+            "label": "Prize value"
+        },
+        {
+            "type": "text",
+            "id": "note",
+            "label": "Note"
         },
       ]
     }
