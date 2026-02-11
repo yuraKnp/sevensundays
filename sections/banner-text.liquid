@@ -1,3 +1,5 @@
+
+{% if section.settings.section_type == 'type_1' %}
 <div class="section">
     <div class="container">
         <div class="row justify-content-center">
@@ -33,6 +35,43 @@
         </div>
     </div>
 </div>
+{% elseif section.settings.section_type == 'type_2' %}
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <div class="title-shortcode text-center mb-64">
+                    {% if section.settings.description != blank %}
+                    <div class="text">{{ section.settings.description }}</div>
+                    {% endif %}
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <h1 class="h1 title">{{ section.settings.title }}</h1>
+                    {% endif %}
+                    <div class="button-wrapp gap-16">
+                        {% if section.settings.link_text != blank and section.settings.link_url != blank %}
+                        <a href="{{ section.settings.link_url }}" class="btn">
+                            <b>{{ section.settings.link_text }}</b>
+                            {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
+                            {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                            {%- assign final_svg_url = url_no_version | append: '#btn-arrow' -%}
+                            <svg width="12" height="12"><use href="{{ final_svg_url }}"></use></svg>
+                        </a>
+                        {% endif %}
+                        {% if section.settings.link_text2 != blank and section.settings.link_url2 != blank %}
+                        <a href="{{ section.settings.link_url2 }}" class="btn btn-third">
+                            <b>{{ section.settings.link_text2 }}</b>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 {% schema %}
 {
@@ -43,6 +82,22 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "type_1",
+          "label": "Type 1"
+        },
+        {
+          "value": "type_2",
+          "label": "Type 2"
+        },
+      ],
+      "default": "type_1",
+      "label": "Section type"
+    },
     {
       "type": "text",
       "id": "subtitle",
