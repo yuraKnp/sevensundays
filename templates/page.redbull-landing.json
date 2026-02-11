@@ -62,22 +62,24 @@
         "slide_TwpGgY": {
           "type": "slide",
           "settings": {
+            "slide_image": "shopify://shop_images/Nackenkissen_Seven-Sundays_Hero.webp",
             "number": "Option A",
             "title": "Nackenkissen gewinnen",
             "description": "Sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – individuell anpassbar für einen entspannten Nacken.",
             "prize_label": "Deine Gewinnchance",
-            "prize_value": "<b>1 von 11 Nackenkissen</b> (Wert: 159 €)",
+            "prize_value": "1 von 11 Nackenkissen (Wert: 159 €)",
             "note": ""
           }
         },
         "slide_AWUkJC": {
           "type": "slide",
           "settings": {
+            "slide_image": "shopify://shop_images/Nackenkissen_Seven-Sundays_Hohe-reduzierbar.webp",
             "number": "Option B",
             "title": "Doppelt gewinnen",
             "description": "Kostenlose Schlafberatung bei dir zu Hause + doppelte Gewinnchance. Schweizer Manufakturqualität, individuell anpassbar.",
             "prize_label": "Deine Gewinnchancen",
-            "prize_value": "<b>1 modulares Schlafsystem</b> + 1 von 11 Kissen",
+            "prize_value": "1 modulares Schlafsystem + 1 von 11 Kissen",
             "note": "Schon vor der Verlosung ein Schlafsystem gekauft? Bei Gewinn wird der Rechnungsbetrag erstattet (exkl. Spedition)."
           }
         }
