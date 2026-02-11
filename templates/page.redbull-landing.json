@@ -58,6 +58,19 @@
     },
     "three_columns_red_Lj3EhD": {
       "type": "three-columns-red",
+      "blocks": {
+        "slide_TwpGgY": {
+          "type": "slide",
+          "settings": {
+            "number": "Option A",
+            "title": "Nackenkissen gewinnen",
+            "description": "Sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – individuell anpassbar für einen entspannten Nacken."
+          }
+        }
+      },
+      "block_order": [
+        "slide_TwpGgY"
+      ],
       "name": "Three columns section red",
       "settings": {
         "section_type": "light",
