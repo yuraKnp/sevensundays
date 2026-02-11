@@ -1,7 +1,12 @@
+{% if section.settings.section_type == 'normal' %}
+  {% assign class = 'col-lg-8 col-xl-6' %}
+{% elsif section.settings.section_type == 'full' %}
+  {% assign class = 'col-lg-12' %}
+{% endif %}
 <div class="section padd-lg">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-xl-6">
+            <div class="{{ class }}">
                 {%  if section.settings.title != blank %}
                 <div class="title-shortcode mb-64 text-center">
                     <div class="h2 title">{{ section.settings.title }}</div>
@@ -47,6 +52,22 @@
         "type": "text",
         "id": "title",
         "label": "Title",
+    },
+    {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "full",
+          "label": "Full"
+        },
+      ],
+      "default": "normal",
+      "label": "Width"
     },
   ],
   "blocks": [
