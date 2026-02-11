@@ -4160,6 +4160,6 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 
-.pagepage.redbull-landing .banner-info .motto{
+.banner-info .motto.light{
   color: var(--clr-white-2);
 }
