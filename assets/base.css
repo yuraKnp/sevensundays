@@ -4177,3 +4177,14 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .bottom-right{
   margin: auto 0 0 auto !important;
 }
+
+.sec-red .born-item .title,
+.sec-red .born-item .text{
+  color: var(--clr-text);
+}
+
+.sec-red .born-item {
+  background-color: var(--clr-white);
+  border-radius: var(--rd-1);
+  padding: var(--sp-32);
+}
