@@ -22,6 +22,7 @@
       "name": "Image banner red",
       "settings": {
         "image": "shopify://shop_images/gxM09j.png",
+        "bottom_path": "shopify://shop_images/kYeUKi.png",
         "subtitle": "Partneraktion",
         "title": "Besser schlafen. Besser spielen.",
         "description": "Melde dich jetzt an und sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – oder gewinne ein komplettes Schlafsystem nach Wahl.",
