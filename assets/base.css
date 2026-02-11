@@ -4216,3 +4216,11 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .deserves-info.bottom span{
   font-weight: 600;
 }
+
+.sec-red .align-bottom.mt-sm ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+}
