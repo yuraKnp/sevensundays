@@ -4158,3 +4158,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     font-size: 14px;
   }
 }
+
+
+.pagepage.redbull-landing .banner-info .motto{
+  color: var(--clr-white-2);
+}
