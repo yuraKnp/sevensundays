@@ -1,0 +1,249 @@
+{% assign section_type = section.settings.section_type %}
+
+{% if section_type == 'light' %}
+    {% assign add_class = 'sec-padd' %}
+    {% assign add_class2 = 'button-wrapp pos-3' %}
+    {% assign add_class3 = '' %}
+{% elsif section_type == 'dark'  %}
+    {% assign add_class = 'sec-black' %}
+    {% assign add_class2 = 'swiper-controls-wrap mt-md' %}
+    {% assign add_class3 = ' style3' %}
+{% endif %}
+
+{% if section_type == 'light' or section_type == 'dark' %}
+  <div class="section {{ add_class }} padd-xl-lg">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-xl-6">
+                  <div class="title-shortcode text-center">
+                      {% if section.settings.subtitle != blank %}
+                      <div class="motto">{{ section.settings.subtitle }}</div>
+                      {% endif %}
+                      {% if section.settings.title != blank %}
+                      <div class="h2 title no-balance">{{ section.settings.title }}</div>
+                      {% endif %}
+                      {% if section.settings.short_desc != blank %}
+                      <div class="text text-md">{{ section.settings.short_desc }}</div>
+                      {% endif %}
+                  </div>
+              </div>
+          </div>
+          {% if section.blocks != blank %}
+          <div class="swiper-entry">
+              <div class="swiper-container" data-options='{
+                  "slidesPerView": 1.07,
+                  "spaceBetween": 24,
+                  "breakpoints":{
+                      "576":{"spaceBetween": 16, "slidesPerView": 1.6},
+                      "992":{"spaceBetween": 16, "slidesPerView": 2.4},
+                      "1200":{"spaceBetween": 16, "slidesPerView": 3}
+                  }}'>
+                  <div class="swiper-wrapper">
+                      {% for block in section.blocks %}
+                          {%- assign image = block.settings.slide_image -%}
+                          {%- assign heading = block.settings.title -%}
+                          {%- assign desc = block.settings.description -%}
+                      <div class="swiper-slide">
+                          <div class="stories-img type-3">
+                              {% if image != blank %}
+                                  {{ image 
+                                      | image_url: width: image.width
+                                      | image_tag: 
+                                          width: image.width,
+                                          height: 'auto',
+                                          alt: image.alt,
+                                          fetchpriority: 'auto',
+                                          loading: 'lazy'
+                                  }}
+                              {% endif %}
+                              <div class="content-top">
+                                  <div class="block-blurs">
+                                      <div class="block-blur"></div>
+                                      <div class="block-blur"></div>
+                                      <div class="block-blur"></div>
+                                      <div class="block-blur"></div>
+                                      <div class="block-blur"></div>
+                                  </div>
+                                  {% if heading != blank %}
+                                  <div class="title h6">{{ heading }}</div>
+                                  {% endif %}
+                                  {% if desc != blank %}
+                                  <div class="text">{{ desc }}</div>
+                                  {% endif %}
+                              </div>
+                          </div>
+                      </div>
+                      {% endfor %}
+                  </div>
+              </div>
+              <div class="{{ add_class2 }}">
+                  <div class="swiper-button-prev{{ add_class3 }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M9.99935 15.8332L4.16602 9.99984M4.16602 9.99984L9.99935 4.1665M4.16602 9.99984H15.8327" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <div class="swiper-button-next{{ add_class3 }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M4.16602 9.99984H15.8327M15.8327 9.99984L9.99935 4.1665M15.8327 9.99984L9.99935 15.8332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+          </div>
+          {% endif %}
+      </div>
+  </div>
+{% elsif section_type == 'light2' %}
+<div class="section padd-lg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h2 title">{{ section.settings.title }}</div>
+                    {% endif %}
+                    {% if section.settings.short_desc != blank %}
+                    <div class="text">{{ section.settings.short_desc }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% if section.blocks != blank %}
+        <div class="swiper-entry">
+            <div class="swiper-container overflow-visible" data-options='{ 
+                "slidesPerView": 1.07,
+                "spaceBetween": 12,
+                "breakpoints":{
+                    "576":{"spaceBetween": 16, "slidesPerView": 1.5},
+                    "992":{"spaceBetween": 16, "slidesPerView": 2},
+                    "1200":{"spaceBetween": 16, "slidesPerView": 3}
+                }}'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                      {%- assign number = block.settings.number  -%}
+                      {%- assign heading = block.settings.title -%}
+                      {%- assign desc = block.settings.description -%}
+                    <div class="swiper-slide">
+                        <div class="deserves-item">
+                            {% if number != blank %}
+                            <div class="text text-sm">{{ number }}</div>
+                            {%  endif %}
+                            <div class="deserves-info">
+                                {% if heading != blank %}
+                                <div class="title h5">{{ heading }}</div>
+                                {% endif %}
+                                {% if desc != blank %}
+                                <div class="text">{{ desc }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="swiper-controls-wrap mt-sm">
+                <div class="swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Three columns section red",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "light",
+          "label": "Light"
+        },
+        {
+          "value": "light2",
+          "label": "Light second"
+        },
+        {
+          "value": "dark",
+          "label": "Dark"
+        },
+      ],
+      "default": "light",
+      "label": "Section type"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "short_desc",
+      "label": "Short description"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Item",
+      "limit": 5,
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "slide_image",
+            "label": "Slide Image"
+        },
+        {
+            "type": "text",
+            "id": "number",
+            "label": "Slide number"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "description",
+            "label": "Description"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Three columns section red",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
