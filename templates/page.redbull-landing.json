@@ -43,6 +43,19 @@
         "link_url2": ""
       }
     },
+    "banner_text_BgixF4": {
+      "type": "banner-text",
+      "name": "Banner text",
+      "settings": {
+        "subtitle": "Exklusiv",
+        "title": "Max Finkgräfe über die Partnerschaft",
+        "description": "",
+        "link_text": "",
+        "link_url": "",
+        "link_text2": "",
+        "link_url2": ""
+      }
+    },
     "background_video_aHGzxG": {
       "type": "background-video",
       "name": "Background video popup",
@@ -60,6 +73,7 @@
     "main",
     "image_banner_new_red_Q6MWzb",
     "banner_text_DTMLeT",
+    "banner_text_BgixF4",
     "background_video_aHGzxG"
   ]
 }
