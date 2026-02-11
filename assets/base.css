@@ -4188,3 +4188,15 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   border-radius: var(--rd-1);
   padding: var(--sp-32);
 }
+
+.top-info{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.top-info img{
+  max-width: 100px;
+  border-radius: var(--rd-1);
+}
