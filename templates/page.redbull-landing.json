@@ -56,10 +56,10 @@
         "video_duration": ""
       }
     },
-    "three_columns_section_dark_ErkjLj": {
-      "type": "three-columns-section-dark",
+    "three_columns_red_Lj3EhD": {
+      "type": "three-columns-red",
       "blocks": {
-        "slide_wKNVYP": {
+        "slide_TwpGgY": {
           "type": "slide",
           "settings": {
             "number": "Option A",
@@ -67,7 +67,7 @@
             "description": "Sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – individuell anpassbar für einen entspannten Nacken."
           }
         },
-        "slide_YUYU3e": {
+        "slide_AWUkJC": {
           "type": "slide",
           "settings": {
             "number": "Option B",
@@ -77,13 +77,15 @@
         }
       },
       "block_order": [
-        "slide_wKNVYP",
-        "slide_YUYU3e"
+        "slide_TwpGgY",
+        "slide_AWUkJC"
       ],
-      "name": "Three columns dark",
+      "name": "Three columns section red",
       "settings": {
+        "section_type": "light2",
         "subtitle": "Deine Gewinnchance",
-        "title": "Wähle deine Option"
+        "title": "Wähle deine Option",
+        "short_desc": ""
       }
     }
   },
@@ -92,6 +94,6 @@
     "image_banner_new_red_Q6MWzb",
     "banner_text_BgixF4",
     "background_video_aHGzxG",
-    "three_columns_section_dark_ErkjLj"
+    "three_columns_red_Lj3EhD"
   ]
 }
