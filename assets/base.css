@@ -4170,8 +4170,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 .bottom-patch{
-  width: auto;
-  height: auto;
+  width: auto!important;
+  height: auto!important;
 }
 
 .bottom-right{
