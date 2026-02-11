@@ -174,7 +174,8 @@
       ],
       "name": "FAQ section",
       "settings": {
-        "title": ""
+        "title": "",
+        "section_type": "full"
       }
     }
   },
