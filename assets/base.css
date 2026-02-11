@@ -4201,3 +4201,6 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   border-radius: var(--rd-1);
 }
 
+.sec-red .container{
+  max-width: 1252px;
+}
