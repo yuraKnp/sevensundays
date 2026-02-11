@@ -5,15 +5,8 @@
             {% assign full_image_url = image_object | img_url: 'master' %}
             {% assign image_format = image_object.format %}
             {% if full_image_url != blank %}
-
-            {% assign image_object_mob = section.settings.image_mob %}
-            {% assign full_image_url_mob = image_object | img_url: 'master' %}
-            {% assign image_format_mob = image_object.format %}
             <picture>
                 <source srcset="{{ full_image_url }}" type="{{ image_format }}"  media="(min-width:768px)">
-                {% if full_image_url_mob != blank %}
-                <source srcset="{{ full_image_url_mob }}" type="{{ image_format_mob }}" media="(max-width:767px)">
-                {% endif %}
                 <img width="380" height="240" src="#" alt="" loading="eager">
             </picture>
             {% endif %}
@@ -47,6 +40,17 @@
                             {% endif %}
                         </div>
                     </div>
+                    <div class="col-lg-3">
+                        {% assign image_object_p = section.settings.bottom_path %}
+                        {% assign full_image_url_p = image_object_p | img_url: 'master' %}
+                        {% assign image_format_p = image_object_p.format %}
+                        {% if full_image_url_p != blank %}
+                        <picture>
+                            <source srcset="{{ full_image_url_p }}" type="{{ image_format_p }}"  media="(min-width:768px)">
+                            <img width="380" height="240" src="#" alt="" loading="eager">
+                        </picture>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,8 +73,8 @@
     },
     {
       "type": "image_picker",
-      "id": "image_mob",
-      "label": "Background image mob"
+      "id": "bottom_path",
+      "label": "Bottom left patch"
     },
     {
       "type": "text",
