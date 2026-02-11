@@ -87,6 +87,19 @@
         "title": "Wähle deine Option",
         "short_desc": ""
       }
+    },
+    "call_back_form_career_yUbGrw": {
+      "type": "call-back-form-career",
+      "name": "CTA form career",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "desc": "",
+        "form_link": "",
+        "title_before_form": "",
+        "desc_before_form": "",
+        "terms_and_conditions": ""
+      }
     }
   },
   "order": [
@@ -94,6 +107,7 @@
     "image_banner_new_red_Q6MWzb",
     "banner_text_BgixF4",
     "background_video_aHGzxG",
-    "three_columns_red_Lj3EhD"
+    "three_columns_red_Lj3EhD",
+    "call_back_form_career_yUbGrw"
   ]
 }
