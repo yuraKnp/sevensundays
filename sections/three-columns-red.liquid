@@ -123,6 +123,7 @@
                 }}'>
                 <div class="swiper-wrapper">
                     {% for block in section.blocks %}
+                      {%- assign image = block.settings.slide_image -%}
                       {%- assign number = block.settings.number  -%}
                       {%- assign heading = block.settings.title -%}
                       {%- assign desc = block.settings.description -%}
@@ -131,16 +132,29 @@
                       {%- assign note = block.settings.note -%}
                     <div class="swiper-slide">
                         <div class="deserves-item">
-                            {% if number != blank %}
-                            <div class="text text-sm">{{ number }}</div>
-                            {%  endif %}
-                            <div class="deserves-info">
-                                {% if heading != blank %}
-                                <div class="title h5">{{ heading }}</div>
-                                {% endif %}
-                                {% if desc != blank %}
-                                <div class="text">{{ desc }}</div>
-                                {% endif %}
+                            <div class="top-info">
+                                {{ image 
+                                    | image_url: width: image.width
+                                    | image_tag: 
+                                        width: image.width,
+                                        height: 'auto',
+                                        alt: image.alt,
+                                        fetchpriority: 'auto',
+                                        loading: 'lazy'
+                                }}
+                                <div class="add-content">
+                                    {% if number != blank %}
+                                    <div class="text text-sm">{{ number }}</div>
+                                    {%  endif %}
+                                    <div class="deserves-info">
+                                        {% if heading != blank %}
+                                        <div class="title h5">{{ heading }}</div>
+                                        {% endif %}
+                                        {% if desc != blank %}
+                                        <div class="text">{{ desc }}</div>
+                                        {% endif %}
+                                    </div>
+                                </div>
                             </div>
                             {% if prize_label != blank or prize_value != blank %}
                             <div class="deserves-info">
