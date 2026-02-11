@@ -4212,3 +4212,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .pd-b-0{
   padding-bottom: 0px;
 }
+
+.deserves-info.bottom span{
+  font-weight: 600;
+}
