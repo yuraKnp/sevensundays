@@ -29,67 +29,67 @@
               </div>
           </div>
           {% if section.blocks != blank %}
-                <div class="swiper-entry">
-                        <div class="swiper-container" data-options='{
-                            "slidesPerView": 1.07,
-                            "spaceBetween": 24,
-                            "breakpoints":{
-                                "576":{"spaceBetween": 16, "slidesPerView": 1.6},
-                                "992":{"spaceBetween": 16, "slidesPerView": 2.4},
-                                "1200":{"spaceBetween": 16, "slidesPerView": 3}
-                            }}'>
-                            <div class="swiper-wrapper">
-                                {% for block in section.blocks %}
-                                    {%- assign image = block.settings.slide_image -%}
-                                    {%- assign heading = block.settings.title -%}
-                                    {%- assign desc = block.settings.description -%}
-                                <div class="swiper-slide">
-                                    <div class="stories-img type-3">
-                                        {% if image != blank %}
-                                            {{ image 
-                                                | image_url: width: image.width
-                                                | image_tag: 
-                                                    width: image.width,
-                                                    height: 'auto',
-                                                    alt: image.alt,
-                                                    fetchpriority: 'auto',
-                                                    loading: 'lazy'
-                                            }}
-                                        {% endif %}
-                                        <div class="content-top">
-                                            <div class="block-blurs">
-                                                <div class="block-blur"></div>
-                                                <div class="block-blur"></div>
-                                                <div class="block-blur"></div>
-                                                <div class="block-blur"></div>
-                                                <div class="block-blur"></div>
-                                            </div>
-                                            {% if heading != blank %}
-                                            <div class="title h6">{{ heading }}</div>
-                                            {% endif %}
-                                            {% if desc != blank %}
-                                            <div class="text">{{ desc }}</div>
-                                            {% endif %}
+            <div class="swiper-entry">
+                    <div class="swiper-container" data-options='{
+                        "slidesPerView": 1.07,
+                        "spaceBetween": 24,
+                        "breakpoints":{
+                            "576":{"spaceBetween": 16, "slidesPerView": 1.6},
+                            "992":{"spaceBetween": 16, "slidesPerView": 2.4},
+                            "1200":{"spaceBetween": 16, "slidesPerView": 3}
+                        }}'>
+                        <div class="swiper-wrapper">
+                            {% for block in section.blocks %}
+                                {%- assign image = block.settings.slide_image -%}
+                                {%- assign heading = block.settings.title -%}
+                                {%- assign desc = block.settings.description -%}
+                            <div class="swiper-slide">
+                                <div class="stories-img type-3">
+                                    {% if image != blank %}
+                                        {{ image 
+                                            | image_url: width: image.width
+                                            | image_tag: 
+                                                width: image.width,
+                                                height: 'auto',
+                                                alt: image.alt,
+                                                fetchpriority: 'auto',
+                                                loading: 'lazy'
+                                        }}
+                                    {% endif %}
+                                    <div class="content-top">
+                                        <div class="block-blurs">
+                                            <div class="block-blur"></div>
+                                            <div class="block-blur"></div>
+                                            <div class="block-blur"></div>
+                                            <div class="block-blur"></div>
+                                            <div class="block-blur"></div>
                                         </div>
+                                        {% if heading != blank %}
+                                        <div class="title h6">{{ heading }}</div>
+                                        {% endif %}
+                                        {% if desc != blank %}
+                                        <div class="text">{{ desc }}</div>
+                                        {% endif %}
                                     </div>
                                 </div>
-                                {% endfor %}
                             </div>
+                            {% endfor %}
                         </div>
-                        <div class="{{ add_class2 }}">
-                            <div class="swiper-button-prev{{ add_class3 }}">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M9.99935 15.8332L4.16602 9.99984M4.16602 9.99984L9.99935 4.1665M4.16602 9.99984H15.8327" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="swiper-button-next{{ add_class3 }}">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4.16602 9.99984H15.8327M15.8327 9.99984L9.99935 4.1665M15.8327 9.99984L9.99935 15.8332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
+                    </div>
+                    <div class="{{ add_class2 }}">
+                        <div class="swiper-button-prev{{ add_class3 }}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M9.99935 15.8332L4.16602 9.99984M4.16602 9.99984L9.99935 4.1665M4.16602 9.99984H15.8327" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
-                        <div class="swiper-pagination swiper-pagination-relative d-none"></div>
-                </div>
+                        <div class="swiper-button-next{{ add_class3 }}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.16602 9.99984H15.8327M15.8327 9.99984L9.99935 4.1665M15.8327 9.99984L9.99935 15.8332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+            </div>
           {% endif %}
       </div>
   </div>
