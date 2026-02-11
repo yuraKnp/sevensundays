@@ -29,10 +29,35 @@
         "button_link_1": "#form",
         "button_label_1": "Jetzt teilnehmen"
       }
+    },
+    "banner_text_DTMLeT": {
+      "type": "banner-text",
+      "name": "Banner text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "description": "Schlaf ist die Basis für Höchstleistung – auf dem Platz und im Alltag. SEVEN SUNDAYS verlost im Rahmen der Partnerschaft mit RB Leipzig Produkte aus dem modularen Schlafsystem, damit auch du jede Nacht das Beste aus deinem Schlaf herausholst.",
+        "link_text": "",
+        "link_url": "",
+        "link_text2": "",
+        "link_url2": ""
+      }
+    },
+    "background_video_aHGzxG": {
+      "type": "background-video",
+      "name": "Background video popup",
+      "settings": {
+        "section_type": "type_1",
+        "title": "",
+        "video_title": "",
+        "video_duration": ""
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_new_red_Q6MWzb"
+    "image_banner_new_red_Q6MWzb",
+    "banner_text_DTMLeT",
+    "background_video_aHGzxG"
   ]
 }
