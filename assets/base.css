@@ -4163,3 +4163,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .banner-info .motto.light{
   color: var(--clr-white-2);
 }
+
+.banner-info .button-wrapp.left{
+  justify-content: flex-start;
+}
