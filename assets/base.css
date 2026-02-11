@@ -4207,6 +4207,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 .sec-red .deserves-item .title{
   width: 100%;
+  max-width: none;
 }
 
 .pd-b-0{
