@@ -4200,3 +4200,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   max-width: 100px;
   border-radius: var(--rd-1);
 }
+
+.section.sec-red{
+  max-width: 1252px;
+}
