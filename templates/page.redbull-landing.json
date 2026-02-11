@@ -55,12 +55,43 @@
         "video_title": "",
         "video_duration": ""
       }
+    },
+    "three_columns_section_dark_ErkjLj": {
+      "type": "three-columns-section-dark",
+      "blocks": {
+        "slide_wKNVYP": {
+          "type": "slide",
+          "settings": {
+            "number": "Option A",
+            "title": "Nackenkissen gewinnen",
+            "description": "Sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – individuell anpassbar für einen entspannten Nacken."
+          }
+        },
+        "slide_YUYU3e": {
+          "type": "slide",
+          "settings": {
+            "number": "Option B",
+            "title": "Doppelt gewinnen",
+            "description": "Kostenlose Schlafberatung bei dir zu Hause + doppelte Gewinnchance. Schweizer Manufakturqualität, individuell anpassbar."
+          }
+        }
+      },
+      "block_order": [
+        "slide_wKNVYP",
+        "slide_YUYU3e"
+      ],
+      "name": "Three columns dark",
+      "settings": {
+        "subtitle": "Deine Gewinnchance",
+        "title": "Wähle deine Option"
+      }
     }
   },
   "order": [
     "main",
     "image_banner_new_red_Q6MWzb",
     "banner_text_BgixF4",
-    "background_video_aHGzxG"
+    "background_video_aHGzxG",
+    "three_columns_section_dark_ErkjLj"
   ]
 }
