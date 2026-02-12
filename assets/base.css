@@ -4418,3 +4418,19 @@ body.red .form-block.white:before{
 body.red .form-block .ch-box-wrap{
   margin-top: 8px;
 }
+
+@media(min-width: 486px){
+  .hd-mb{
+    display: none;
+  }
+}
+
+@media(max-width: 486px){
+  .hd-pc{
+    display: none;
+  }
+}
+
+.radio-tag.hd-pc{
+  margin: 0px 5px;
+}
