@@ -4211,7 +4211,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 .pd-b-0{
-  padding-bottom: 0px;
+  padding-bottom: 0px!important;
 }
 
 .deserves-info.bottom span{
