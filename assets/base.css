@@ -4230,7 +4230,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 /* countdown */
 
 .countdown-wrapper {
-    padding: 60px 20px;
+    padding: 32px 0px;
     display: flex;
     justify-content: flex-start;
 }
@@ -4281,4 +4281,8 @@ body.red{
 
 body.red .title-shortcode *{
   color: var(--clr-white-2)!important;
+}
+
+body.red .banner-media.top-bottom-shadow.style-2:after{
+  height: 80%;
 }
