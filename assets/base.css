@@ -4379,3 +4379,7 @@ body.red .tags.dark{
 body.red .deserves-item .deserves-info{
   margin-bottom: unset;
 }
+
+body.red .form-block.white:before{
+  display: none;
+}
