@@ -21,8 +21,8 @@
       "type": "image-banner-new-red",
       "name": "Image banner red",
       "settings": {
-        "image": "shopify://shop_images/gxM09j.png",
-        "bottom_path": "shopify://shop_images/kYeUKi.png",
+        "image": "shopify://shop_images/MS205565_new.jpg",
+        "bottom_path": "shopify://shop_images/Official-Supplier_Batch_RB-Leipzig.png",
         "subtitle": "Partneraktion",
         "title": "Besser schlafen. Besser spielen.",
         "description": "Melde dich jetzt an und sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – oder gewinne ein komplettes Schlafsystem nach Wahl.",
@@ -148,6 +148,21 @@
         "bottom_description": "<p>Unsere zertifizierten Schlafberater:innen analysieren deine individuellen Schlafbedürfnisse und lassen dich unser modulares Schlafsystem direkt Probe liegen. Für alle, die nachts mehr aus ihrem Schlaf herausholen wollen.</p><ul><li>100 % kostenlos & unverbindlich</li><li>Individuelle Schlafberatung</li><li>Probeliegen inklusive</li><li>Entspannt & unaufdringlich</li></ul>"
       }
     },
+    "call_back_form_red_RTb3eY": {
+      "type": "call-back-form-red",
+      "name": "CTA form redbull",
+      "settings": {
+        "subtitle": "Anmeldung",
+        "title": "Jetzt teilnehmen",
+        "desc": "Fülle das Formular aus und wähle deine Gewinnchance. Teilnahme bis 16.05.2026.",
+        "form_link": "https://formspree.io/f/xwvnlkeb",
+        "title_before_form": "",
+        "desc_before_form": "",
+        "terms_and_conditions_optional": "",
+        "terms_and_conditions": "",
+        "terms_and_conditions_second": ""
+      }
+    },
     "faq_Xh9LWR": {
       "type": "faq",
       "blocks": {
@@ -166,21 +181,6 @@
       "settings": {
         "title": "",
         "section_type": "full"
-      }
-    },
-    "call_back_form_red_RTb3eY": {
-      "type": "call-back-form-red",
-      "name": "CTA form redbull",
-      "settings": {
-        "subtitle": "Anmeldung",
-        "title": "Jetzt teilnehmen",
-        "desc": "Fülle das Formular aus und wähle deine Gewinnchance. Teilnahme bis 16.05.2026.",
-        "form_link": "https://formspree.io/f/xwvnlkeb",
-        "title_before_form": "",
-        "desc_before_form": "",
-        "terms_and_conditions_optional": "",
-        "terms_and_conditions": "",
-        "terms_and_conditions_second": ""
       }
     }
   },
