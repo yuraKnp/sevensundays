@@ -4244,11 +4244,20 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     font-family: var(--ff-2);
 }
 
+
+
 .countdown-wrapper .time-box {
     text-align: center;
-    min-width: 80px;
+    /* min-width: 80px; */
     color: #F5F1E8;
 }
+
+@media(min-width: 769px){
+  .countdown-wrapper .time-box {
+    min-width: 80px;
+  }
+}
+
 
 .countdown-wrapper .number {
     font-size: 48px;
@@ -4292,4 +4301,14 @@ body.red .banner-media.top-bottom-shadow.style-2:after{
 body.red .btn{
   color: #ffffff;
   background-color: #dc052d;
+}
+
+@media(max-width: 768px){
+  .countdown-wrapper .countdown{
+    gap: 0px;
+    justify-content: baseline;
+  }
+  .countdown-wrapper .label {
+    font-size: 10px;
+  }
 }

@@ -14,7 +14,7 @@
         <div class="banner-align align-bottom xxl">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 col-xl-7">
+                    <div class="col-lg-7 col-xl-7 col-8">
                         <div class="banner-info">
                             {%- if section.settings.subtitle != blank -%}
                             <div class="motto light">{{ section.settings.subtitle }}</div>
@@ -77,7 +77,7 @@
                     {% if full_image_url_p != blank %}
                     <div class="col-lg-3 bottom-right">
                         <picture>
-                            <source srcset="{{ full_image_url_p }}" type="{{ image_format_p }}"  media="(min-width:768px)">
+                            <source srcset="{{ full_image_url_p }}" type="{{ image_format_p }}">
                             <img width="380" height="240" src="#" alt="" loading="eager" class="bottom-patch">
                         </picture>
                     </div>
