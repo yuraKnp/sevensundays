@@ -4196,6 +4196,13 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   min-height: 64px;
 }
 
+@media (max-width: 486px){
+  .sec-red .born-item .title,
+  .sec-red .born-item .text{
+    min-height: 40px;
+  }
+}
+
 .sec-red .born-item {
   background-color: var(--clr-white);
   border-radius: var(--rd-1);
