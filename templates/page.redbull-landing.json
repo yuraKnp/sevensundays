@@ -148,19 +148,6 @@
         "bottom_description": "<p>Unsere zertifizierten Schlafberater:innen analysieren deine individuellen Schlafbedürfnisse und lassen dich unser modulares Schlafsystem direkt Probe liegen. Für alle, die nachts mehr aus ihrem Schlaf herausholen wollen.</p><ul><li>100 % kostenlos & unverbindlich</li><li>Individuelle Schlafberatung</li><li>Probeliegen inklusive</li><li>Entspannt & unaufdringlich</li></ul>"
       }
     },
-    "call_back_form_career_yUbGrw": {
-      "type": "call-back-form-career",
-      "name": "CTA form career",
-      "settings": {
-        "subtitle": "",
-        "title": "",
-        "desc": "",
-        "form_link": "",
-        "title_before_form": "",
-        "desc_before_form": "",
-        "terms_and_conditions": ""
-      }
-    },
     "faq_Xh9LWR": {
       "type": "faq",
       "blocks": {
@@ -180,6 +167,21 @@
         "title": "",
         "section_type": "full"
       }
+    },
+    "call_back_form_red_RTb3eY": {
+      "type": "call-back-form-red",
+      "name": "CTA form redbull",
+      "settings": {
+        "subtitle": "Anmeldung",
+        "title": "Jetzt teilnehmen",
+        "desc": "Fülle das Formular aus und wähle deine Gewinnchance. Teilnahme bis 16.05.2026.",
+        "form_link": "https://formspree.io/f/xwvnlkeb",
+        "title_before_form": "",
+        "desc_before_form": "",
+        "terms_and_conditions_optional": "",
+        "terms_and_conditions": "",
+        "terms_and_conditions_second": ""
+      }
     }
   },
   "order": [
@@ -189,7 +191,7 @@
     "background_video_aHGzxG",
     "three_columns_red_Lj3EhD",
     "background_video_columns_red_BEhMa8",
-    "call_back_form_career_yUbGrw",
+    "call_back_form_red_RTb3eY",
     "faq_Xh9LWR"
   ]
 }
