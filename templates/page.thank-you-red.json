@@ -38,11 +38,18 @@
           "settings": {
             "text": "<p>Vielen Dank für deine Teilnahme. Wir haben dir eine Bestätigung per E-Mail gesendet. Die Gewinner:innen werden nach dem 16.05.2026 per Zufall ermittelt und benachrichtigt.</p>"
           }
+        },
+        "text_xBhpce": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unser Team wird sich in Kürze bei dir melden, um einen Termin für deine Schlafberatung zu vereinbaren.</p>"
+          }
         }
       },
       "block_order": [
         "heading_rLyyHj",
-        "text_QWQmVy"
+        "text_QWQmVy",
+        "text_xBhpce"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
