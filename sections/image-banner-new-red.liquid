@@ -39,6 +39,37 @@
                             </div>
                             {% endif %}
                         </div>
+                        {% if section.settings.countdown_date != blank %}
+                        <div class="countdown-wrapper">
+                            <div class="countdown">
+                                <div class="time-box">
+                                    <span class="number" id="days">00</span>
+                                    <span class="label">TAGE</span>
+                                </div>
+
+                                <div class="separator">:</div>
+
+                                <div class="time-box">
+                                    <span class="number" id="hours">00</span>
+                                    <span class="label">STUNDEN</span>
+                                </div>
+
+                                <div class="separator">:</div>
+
+                                <div class="time-box">
+                                    <span class="number" id="minutes">00</span>
+                                    <span class="label">MINUTEN</span>
+                                </div>
+
+                                <div class="separator">:</div>
+
+                                <div class="time-box">
+                                    <span class="number" id="seconds">00</span>
+                                    <span class="label">SEKUNDEN</span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
                     </div>
                     {% assign image_object_p = section.settings.bottom_path %}
                     {% assign full_image_url_p = image_object_p | img_url: 'master' %}
@@ -51,37 +82,7 @@
                         </picture>
                     </div>
                     {% endif %}
-                    {% if section.settings.countdown_date != blank %}
-                    <div class="countdown-wrapper">
-                        <div class="countdown">
-                            <div class="time-box">
-                                <span class="number" id="days">00</span>
-                                <span class="label">TAGE</span>
-                            </div>
 
-                            <div class="separator">:</div>
-
-                            <div class="time-box">
-                                <span class="number" id="hours">00</span>
-                                <span class="label">STUNDEN</span>
-                            </div>
-
-                            <div class="separator">:</div>
-
-                            <div class="time-box">
-                                <span class="number" id="minutes">00</span>
-                                <span class="label">MINUTEN</span>
-                            </div>
-
-                            <div class="separator">:</div>
-
-                            <div class="time-box">
-                                <span class="number" id="seconds">00</span>
-                                <span class="label">SEKUNDEN</span>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
                 </div>
             </div>
         </div>
