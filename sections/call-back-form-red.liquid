@@ -105,6 +105,49 @@
     </div>
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+    const radios = document.querySelectorAll('input[name="radio"]');
+    const phoneField = document.querySelector('input[name="phone"]').closest('.col-12');
+    const additionalText = document.querySelector('.additional-message-text.text');
+    const optionalTerms = document.querySelector('input[name="terms_agreed_optional"]').closest('.ch-box');
+
+    const phoneInput = document.querySelector('input[name="phone"]');
+    const optionalCheckbox = document.querySelector('input[name="terms_agreed_optional"]');
+
+    function toggleFields() {
+        const selected = document.querySelector('input[name="radio"]:checked').value;
+
+        if (selected === "Gewinnspiel + Schlafberatung") {
+        // SHOW
+        phoneField.style.display = "block";
+        additionalText.style.display = "block";
+        optionalTerms.style.display = "flex";
+
+        phoneInput.required = true;
+        optionalCheckbox.required = true;
+
+        } else {
+        // HIDE
+        phoneField.style.display = "none";
+        additionalText.style.display = "none";
+        optionalTerms.style.display = "none";
+
+        phoneInput.required = false;
+        optionalCheckbox.required = false;
+        }
+    }
+
+    radios.forEach(radio => {
+        radio.addEventListener("change", toggleFields);
+    });
+
+    toggleFields(); // run on page load
+    });
+</script>
+
+
 {% schema %}
 {
   "name": "CTA form redbull",
