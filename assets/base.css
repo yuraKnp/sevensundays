@@ -4192,6 +4192,10 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   color: var(--clr-text);
 }
 
+.sec-red .born-item .title{
+  min-height: 64px;
+}
+
 .sec-red .born-item {
   background-color: var(--clr-white);
   border-radius: var(--rd-1);
@@ -4228,7 +4232,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     padding-bottom: 32px!important;
   }
   .sec-red .row>*{
-    margin-top: 10px;
+    margin-top: calc(var(--bs-gutter-x) * 1);
   }
 }
 
