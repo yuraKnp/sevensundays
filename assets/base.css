@@ -4388,7 +4388,8 @@ body.red .form-block.white:before{
   background-color: #1e2227;
   color: #F5F1E8;    
   border-radius: 12px;
-  padding: 8px 5px;
+  padding: 8px 10px;
+  width: 100%;
 }
 
 .ch-box-wrap.radio .ch-box .label{
