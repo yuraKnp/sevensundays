@@ -4414,3 +4414,7 @@ body.red .form-block.white:before{
 .form-block .ch-box-wrap.radio{
   margin-top: 8px;
 }
+
+body.red .form-block .ch-box-wrap{
+  margin-top: 8px;
+}
