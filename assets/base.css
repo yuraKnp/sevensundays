@@ -4427,7 +4427,7 @@ body.red .form-block .ch-box-wrap{
 
 @media (max-width: 486px){
   .hd-pc{
-    display: none;
+    display: none!important;
   }
 }
 
