@@ -4175,9 +4175,12 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   height: auto!important;
 }
 
-.bottom-right{
-  margin: auto 0 0 auto !important;
+@media(min-width: 768px){
+  .bottom-right{
+    margin: auto 0 0 auto !important;
+  }
 }
+
 
 .sec-red .born-item .title,
 .sec-red .born-item .text{
