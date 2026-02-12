@@ -4316,6 +4316,9 @@ body.red .deserves-item{
   .countdown-wrapper .label {
     font-size: 10px;
   }
+  body.red .deserves-item{
+    min-height: 330px;
+  }
 }
 
 .deserves-info.bottom{
