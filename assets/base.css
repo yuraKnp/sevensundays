@@ -4306,6 +4306,11 @@ body.red .btn{
 
 body.red .deserves-item{
   min-height: 400px;
+  justify-content: flex-start;
+}
+
+body.red .deserves-item>.text{
+  margin-bottom: unset;
 }
 
 @media(max-width: 768px){
