@@ -4334,7 +4334,7 @@ body.red .deserves-item>.text{
 body.red .tags.dark{
   position: absolute;
   right: 24px;
-  top:0px;
+  top: 24px;
   background-color: #1e2227;
   color: #f5f1e8;
   padding: 8px 12px;
