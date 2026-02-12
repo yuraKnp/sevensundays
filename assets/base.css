@@ -4273,3 +4273,12 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .banner.red .button-wrapp svg{
   transform: rotate(90deg);
 }
+
+
+body.red{
+  background-color: #1E2227!important;
+}
+
+body.red .title-shortcode *{
+  color: var(--clr-white-2)!important;
+}
