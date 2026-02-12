@@ -4225,3 +4225,43 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   display: flex;
   align-items: baseline;
 }
+
+
+/* countdown */
+
+.countdown-wrapper {
+    background: linear-gradient(180deg, #020b1a, #061a35);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.time-box {
+    text-align: center;
+    min-width: 80px;
+}
+
+.number {
+    font-size: 48px;
+    font-weight: 700;
+    display: block;
+}
+
+.label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+.separator {
+    font-size: 32px;
+    opacity: 0.6;
+}

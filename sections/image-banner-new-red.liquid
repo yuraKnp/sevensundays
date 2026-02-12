@@ -51,11 +51,68 @@
                         </picture>
                     </div>
                     {% endif %}
+                    <div class="countdown-wrapper">
+                        <div class="countdown">
+                            <div class="time-box">
+                                <span class="number" id="days">00</span>
+                                <span class="label">TAGE</span>
+                            </div>
+
+                            <div class="separator">:</div>
+
+                            <div class="time-box">
+                                <span class="number" id="hours">00</span>
+                                <span class="label">STUNDEN</span>
+                            </div>
+
+                            <div class="separator">:</div>
+
+                            <div class="time-box">
+                                <span class="number" id="minutes">00</span>
+                                <span class="label">MINUTEN</span>
+                            </div>
+
+                            <div class="separator">:</div>
+
+                            <div class="time-box">
+                                <span class="number" id="seconds">00</span>
+                                <span class="label">SEKUNDEN</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    // Set target date (YYYY-MM-DDTHH:MM:SS)
+    const targetDate = new Date("2026-03-01T00:00:00").getTime();
+
+    const countdown = setInterval(function () {
+
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+            clearInterval(countdown);
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((distance / (1000 * 60)) % 60);
+        const seconds = Math.floor((distance / 1000) % 60);
+
+        document.getElementById("days").innerText = String(days).padStart(2, '0');
+        document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+        document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+        document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+
+    }, 1000);
+</script>
+
 
 {% schema %}
 {
