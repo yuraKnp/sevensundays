@@ -4502,3 +4502,8 @@ body.red .form-block .ch-box-wrap{
     object-fit: cover;
     object-position: center;
 }
+
+
+body.red:not(.fixed-header) .h-lang button span{
+  color: #E7D39A;
+}
