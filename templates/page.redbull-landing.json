@@ -28,7 +28,7 @@
         "description": "Melde dich jetzt an und sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – oder gewinne ein komplettes Schlafsystem nach Wahl.",
         "button_link_1": "#form",
         "button_label_1": "Jetzt teilnehmen",
-        "countdown_date": "2026-03-01T00:00:00"
+        "countdown_date": "2026-02-25T00:00:00"
       }
     },
     "banner_text_BgixF4": {
@@ -64,7 +64,7 @@
           "type": "slide",
           "settings": {
             "show_banner": false,
-            "slide_image": "shopify://shop_images/Nackenkissen_Seven-Sundays_Hero.webp",
+            "slide_image": "shopify://shop_images/Back.png",
             "number": "Option A",
             "title": "Nackenkissen gewinnen",
             "description": "Sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – individuell anpassbar für einen entspannten Nacken.",
@@ -77,7 +77,7 @@
           "type": "slide",
           "settings": {
             "show_banner": true,
-            "slide_image": "shopify://shop_images/Nackenkissen_Seven-Sundays_Hohe-reduzierbar.webp",
+            "slide_image": "shopify://shop_images/Main_Image.jpg",
             "number": "Option B",
             "title": "Doppelt gewinnen",
             "description": "Kostenlose Schlafberatung bei dir zu Hause + doppelte Gewinnchance. Schweizer Manufakturqualität, individuell anpassbar.",
