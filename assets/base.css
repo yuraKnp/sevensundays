@@ -4304,6 +4304,10 @@ body.red .btn{
   background-color: #dc052d;
 }
 
+body.red .deserves-item{
+  min-height: 400px;
+}
+
 @media(max-width: 768px){
   /* .countdown-wrapper .countdown{
     gap: 0px;
@@ -4318,3 +4322,4 @@ body.red .btn{
   display: flex;
   flex-direction: column;
 }
+
