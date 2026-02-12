@@ -137,15 +137,19 @@
                                 <div class="tags dark">{{ 'sections.red.badge' | t }}</div>
                             {% endif %}
                             <div class="top-info">
-                                {{ image 
-                                    | image_url: width: image.width
-                                    | image_tag: 
-                                        width: image.width,
-                                        height: 'auto',
-                                        alt: image.alt,
-                                        fetchpriority: 'auto',
-                                        loading: 'lazy'
-                                }}
+                                {% if image != blank %}
+                                    <div class="img-wrapper">
+                                        {{ image 
+                                            | image_url: width: image.width
+                                            | image_tag: 
+                                                width: image.width,
+                                                height: 'auto',
+                                                alt: image.alt,
+                                                fetchpriority: 'auto',
+                                                loading: 'lazy'
+                                        }}
+                                    </div>
+                                {% endif %}
                                 <div class="add-content">
                                     {% if number != blank %}
                                     <div class="text text-sm">{{ number }}</div>
