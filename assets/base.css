@@ -4313,3 +4313,8 @@ body.red .btn{
     font-size: 10px;
   }
 }
+
+.deserves-info.bottom{
+  display: flex;
+  flex-direction: column;
+}
