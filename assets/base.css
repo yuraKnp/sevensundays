@@ -4434,3 +4434,15 @@ body.red .form-block .ch-box-wrap{
     margin-bottom: 5px;
   }
 }
+
+.additional-message-text svg{
+  max-width: 20px;
+}
+.additional-message-text .text{
+  margin-top: 0px;
+}
+
+.add-text-wrapper{
+  display: flex;
+  gap: 15px;
+}
