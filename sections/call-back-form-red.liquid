@@ -54,23 +54,23 @@
                         </div>
                         <div class="ch-box-wrap radio">
                             <label class="ch-box">
-                                <input name="radio" value="Gewinnspiel – Kissenverlosung" class="input" type="radio" checked>
+                                <input name="radio" value="Option A – Nackenkissen gewinnen" class="input" type="radio" checked>
                                 <span>
                                     <div class="label">{{ 'sections.form.radio_f' | t }}*</div>
-                                    <div class="radio-desc text text-sm">Ich möchte an der Verlosung von 11 SEVEN SUNDAYS Nackenkissen teilnehmen.</div>
+                                    <div class="radio-desc text text-sm">{{ 'sections.form.radio_f_desc' | t }}.</div>
                                 </span>
                             </label>
                             <label class="ch-box">
-                                <input name="radio" value="Gewinnspiel + Schlafberatung" class="input" type="radio">
+                                <input name="radio" value="Option B – Doppelte Chance" class="input" type="radio">
                                 <span>
-                                    <div class="label">{{ 'sections.form.radio_s' | t }}*<div class="radio-tag">Doppelte Chance</div></div>
-                                    <div class="radio-desc text text-sm">Ich möchte teilnehmen UND mich für eine kostenlose Schlafberatung registrieren (Schlafsystem- & Kissenverlosung).</div>
+                                    <div class="label">{{ 'sections.form.radio_s' | t }}*<div class="radio-tag">{{ 'sections.form.radio_tag' | t }}</div></div>
+                                    <div class="radio-desc text text-sm">{{ 'sections.form.radio_s_desc' | t }}.</div>
                                 </span>
                             </label>
                         </div>
                         <div class="col-12">
                             <div class="additional-message-text text">
-                                So geht's weiter: Nach deiner Anmeldung wird sich unser Team persönlich bei dir melden, um einen passenden Termin für deine kostenlose und unverbindliche Schlafberatung bei dir zu Hause zu vereinbaren.
+                                {{ 'sections.form.radio_s_additional_text' | t }}
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
     function toggleFields() {
         const selected = document.querySelector('input[name="radio"]:checked').value;
 
-        if (selected === "Gewinnspiel + Schlafberatung") {
+        if (selected === "Option B – Doppelte Chance") {
         // SHOW
         phoneField.style.display = "block";
         additionalText.style.display = "block";
