@@ -4275,7 +4275,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 
-body.red{
+body.red,
+body.red footer{
   background-color: #1E2227!important;
 }
 
@@ -4286,3 +4287,4 @@ body.red .title-shortcode *{
 body.red .banner-media.top-bottom-shadow.style-2:after{
   height: 80%;
 }
+
