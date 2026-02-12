@@ -4236,6 +4236,11 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   align-items: baseline;
 }
 
+@media(max-width: 768px){
+  .sec-red .align-bottom.mt-sm ul{
+    flex-direction: column;
+  }
+}
 
 /* countdown */
 
