@@ -461,6 +461,7 @@
                               {%- render 'social-icons', class: 'footer__list-social' -%}
                             {%- endif -%}
                         </div>
+                        {% if section.settings.footer_logo != blank %}
                         <div class="footer-add-logo" style="display:none">
                           {{ section.settings.footer_logo | image_url: width: 215 | image_tag:
                               class: 'ft-lg',
@@ -473,6 +474,7 @@
                               loading: 'lazy'
                             }}
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
