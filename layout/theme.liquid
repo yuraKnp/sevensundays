@@ -388,7 +388,12 @@
 
   </head>
 
-  <body class="{{ template }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  {% assign class_red = '' %}
+  {% if template == 'page.redbull-landing' %}
+    {% assign class_red = 'red' %}
+  {% endif %}
+
+  <body class="{{ class_red }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <div id="content-block">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
