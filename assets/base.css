@@ -4408,7 +4408,7 @@ body.red .form-block.white:before{
 }
 
 .ch-box input[type=radio]{
-  border: 1px solid #E7D39A;
+  border: 1px solid #E7D39A!important;
 }
 
 .radio-desc.text{
