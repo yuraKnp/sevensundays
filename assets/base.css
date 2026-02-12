@@ -4326,6 +4326,7 @@ body.red .deserves-item{
 body.red .tags.dark{
   position: absolute;
   right: 24px;
+  top:0px;
   background-color: #1e2227;
   color: #f5f1e8;
   padding: 8px 12px;
@@ -4344,3 +4345,6 @@ body.red .tags.dark{
     }
 }
 
+body.red .deserves-item .deserves-info{
+  margin-bottom: unset;
+}
