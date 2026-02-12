@@ -6,7 +6,7 @@
             {% assign image_format = image_object.format %}
             {% if full_image_url != blank %}
             <picture>
-                <source srcset="{{ full_image_url }}" type="{{ image_format }}"  media="(min-width:768px)">
+                <source srcset="{{ full_image_url }}" type="{{ image_format }}">
                 <img width="380" height="240" src="#" alt="" loading="eager">
             </picture>
             {% endif %}

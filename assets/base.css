@@ -4280,7 +4280,8 @@ body.red footer{
   background-color: #1E2227!important;
 }
 
-body.red .title-shortcode *{
+body.red .title-shortcode *,
+body.red .text.light{
   color: var(--clr-white-2)!important;
 }
 
