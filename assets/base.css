@@ -4419,18 +4419,7 @@ body.red .form-block .ch-box-wrap{
   margin-top: 8px;
 }
 
-@media (max-width: 486px){
-  .hd-mb{
-    display: none!important;
-  }
-}
-
-@media (min-width: 486px){
-  .hd-pc{
-    display: none!important;
-  }
-}
-
-.radio-tag.hd-pc{
-  margin: 0px 5px!important;
+.label.fl{
+  display: flex;
+  gap: 15px;
 }
