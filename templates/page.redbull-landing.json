@@ -158,9 +158,9 @@
         "form_link": "https://formspree.io/f/xwvnlkeb",
         "title_before_form": "",
         "desc_before_form": "",
-        "terms_and_conditions_optional": "",
-        "terms_and_conditions": "",
-        "terms_and_conditions_second": ""
+        "terms_and_conditions_optional": "<p>Ich akzeptiere die Teilnahmebedingungen und die Datenschutzerklärung.</p>",
+        "terms_and_conditions": "<p>Ich bin damit einverstanden, dass SEVEN SUNDAYS mich telefonisch kontaktiert, um einen Termin für eine kostenlose, unverbindliche Schlafberatung zu vereinbaren.</p>",
+        "terms_and_conditions_second": "<p>Ich möchte den SEVEN SUNDAYS Newsletter erhalten und über Angebote, Tipps und Neuigkeiten rund um besseren Schlaf informiert werden.</p>"
       }
     },
     "faq_Xh9LWR": {
