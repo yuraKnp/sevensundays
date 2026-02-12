@@ -14,7 +14,7 @@
                     {% endif %}
                 </div>
                 {% if section.settings.form_link != blank %}
-                <form action="{{ section.settings.form_link }}"  method="POST" class="form-block white">
+                <form id="form" action="{{ section.settings.form_link }}"  method="POST" class="form-block white">
                     <input type="hidden" name="form_type" value="Redbull page form">
                     <input type="hidden" name="subject" value="Redbull form APPLICATION">
 
