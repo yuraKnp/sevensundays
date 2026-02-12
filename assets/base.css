@@ -4385,16 +4385,16 @@ body.red .form-block.white:before{
 }
 
 .ch-box-wrap.radio .ch-box{
-  background-color: #1e2227;
-  color: #F5F1E8;    
+  background-color: #F5F1E8;
+  /* color: #F5F1E8;     */
   border-radius: 12px;
   padding: 16px 10px;
   width: 100%;
 }
 
-.ch-box-wrap.radio .ch-box .label{
+/* .ch-box-wrap.radio .ch-box .label{
   color: #F5F1E8; 
-}
+} */
 
 .ch-box-wrap.radio .radio-tag{
   display: inline-block;
@@ -4404,6 +4404,10 @@ body.red .form-block.white:before{
   border-radius: 12px;
   /* margin-left: 10px; */
   font-size: 10px;
+}
+
+.ch-box input[type=radio]{
+  border: 1px solid #E7D39A;
 }
 
 .radio-desc.text{
