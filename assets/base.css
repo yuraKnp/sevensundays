@@ -4390,3 +4390,15 @@ body.red .form-block.white:before{
   border-radius: 12px;
   padding: 8px 5px;
 }
+
+.ch-box-wrap.radio .ch-box .label{
+  color: #F5F1E8; 
+}
+
+.ch-box-wrap.radio .radio-tag{
+  display: inline-block;
+  color: #E7D39A;
+  border: 1px solid #E7D39A;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
