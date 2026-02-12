@@ -380,6 +380,10 @@
     },
     "red": {
       "badge": "Recommended",
+      "days": "DAYS",
+      "hours": "HOURS",
+      "minutes": "MINUTES",
+      "seconds": "SECONDS",
     },
     "featured_blog": {
       "view_all": "View all",

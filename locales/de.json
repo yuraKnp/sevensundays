@@ -373,6 +373,10 @@
     },
     "red": {
       "badge": "Empfohlen",
+      "days": "TAGE",
+      "hours": "STUNDEN",
+      "minutes": "MINUTEN",
+      "seconds": "SEKUNDEN",
     },
     "featured_blog": {
       "view_all": "Alle anzeigen",
