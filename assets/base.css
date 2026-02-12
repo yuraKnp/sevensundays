@@ -4449,3 +4449,26 @@ body.red .form-block .ch-box-wrap{
   padding: 10px;
   border-radius: 12px;
 }
+
+.footer-bottom{
+  position: relative;
+}
+
+.footer-bottom .footer-add-logo{
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+}
+.footer-bottom .footer-add-logo  img{
+  max-width: 100px;
+}
+
+@media (max-width: 486px){
+  .footer-bottom .footer-add-logo  img{
+    max-width: 50px;
+  }
+  .footer-bottom .footer-add-logo{
+    right: 0px;
+    bottom: 0px;
+  }
+}
