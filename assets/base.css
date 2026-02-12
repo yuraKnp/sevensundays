@@ -4402,3 +4402,7 @@ body.red .form-block.white:before{
   padding: 5px 10px;
   border-radius: 12px;
 }
+
+.radio-desc.text{
+  color: #F5F1E8; 
+}
