@@ -4230,38 +4230,42 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 /* countdown */
 
 .countdown-wrapper {
-    background: linear-gradient(180deg, #020b1a, #061a35);
     padding: 60px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.countdown {
+.countdown-wrapper .countdown {
     display: flex;
     align-items: center;
     gap: 25px;
-    color: #ffffff;
+    color: #F5F1E8;
     font-family: Arial, sans-serif;
+    font-family: var(--ff-2);
 }
 
-.time-box {
+.countdown-wrapper .time-box {
     text-align: center;
     min-width: 80px;
+    color: #F5F1E8;
 }
 
-.number {
+.countdown-wrapper .number {
     font-size: 48px;
     font-weight: 700;
     display: block;
 }
 
-.label {
+.countdown-wrapper .label {
     font-size: 12px;
     letter-spacing: 2px;
     opacity: 0.7;
+    font-weight: 600;
+    color:#F5F1E8;
+    font-family: var(--ff-2);
 }
 
-.separator {
+.countdown-wrapper .separator {
     font-size: 32px;
     opacity: 0.6;
 }

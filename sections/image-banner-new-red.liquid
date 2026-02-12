@@ -51,6 +51,7 @@
                         </picture>
                     </div>
                     {% endif %}
+                    {% if section.settings.countdown_date != blank %}
                     <div class="countdown-wrapper">
                         <div class="countdown">
                             <div class="time-box">
@@ -80,15 +81,17 @@
                             </div>
                         </div>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+{% if section.settings.countdown_date != blank %}
 <script>
-    // Set target date (YYYY-MM-DDTHH:MM:SS)
-    const targetDate = new Date("2026-03-01T00:00:00").getTime();
+    const targetDate = new Date("{{ section.settings.countdown_date }}").getTime();
+    {% comment %} const targetDate = new Date("2026-03-01T00:00:00").getTime(); {% endcomment %}
 
     const countdown = setInterval(function () {
 
@@ -112,6 +115,7 @@
 
     }, 1000);
 </script>
+{% endif %}
 
 
 {% schema %}
@@ -158,6 +162,14 @@
       "id": "button_label_1",
       "label": "Button label"
     },
+    {
+      "type": "text",
+      "id": "countdown_date",
+      "label": "Countdown date (YYYY-MM-DDTHH:MM:SS)",
+      "info": "Format: YYYY-MM-DD",
+      "default": "2026-03-01T00:00:00"
+      
+    }
   ],
   "presets": [
     {
