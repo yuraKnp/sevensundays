@@ -4310,7 +4310,7 @@ body.red .deserves-item{
 }
 
 body.red .deserves-item>.text{
-  margin-bottom: unset;
+  margin-bottom: unset!important;
 }
 
 @media(max-width: 768px){
