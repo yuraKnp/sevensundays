@@ -29,14 +29,14 @@
         "heading_rLyyHj": {
           "type": "heading",
           "settings": {
-            "heading": "Vielen Dank für Deine Anfrage!",
+            "heading": "Du bist dabei!",
             "heading_size": "h1"
           }
         },
         "text_QWQmVy": {
           "type": "text",
           "settings": {
-            "text": "<p>Wir melden uns in Kürze unter der angegebenen Telefonnummer bei Dir.</p>"
+            "text": "<p>Vielen Dank für deine Teilnahme. Wir haben dir eine Bestätigung per E-Mail gesendet. Die Gewinner:innen werden nach dem 16.05.2026 per Zufall ermittelt und benachrichtigt.</p>"
           }
         }
       },
