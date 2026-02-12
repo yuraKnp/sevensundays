@@ -378,6 +378,9 @@
       "form_submit": "Submit",
       "footer_additional_text": "Sign up and be the first to hear about new products, events and exclusive offers. Unsubscribe anytime.",
     },
+    "red": {
+      "badge": "Recommended",
+    },
     "featured_blog": {
       "view_all": "View all",
       "onboarding_title": "Blog post",

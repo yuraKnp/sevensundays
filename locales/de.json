@@ -371,6 +371,9 @@
       "form_submit": "Absenden",
       "footer_additional_text": "Melde dich an und erfahre als Erster von neuen Produkten, Veranstaltungen und exklusiven Angeboten. Jederzeit abmeldbar.",
     },
+    "red": {
+      "badge": "Empfohlen",
+    },
     "featured_blog": {
       "view_all": "Alle anzeigen",
       "onboarding_title": "Blog-Beitrag",

@@ -134,6 +134,9 @@
                     
                     <div class="swiper-slide">
                         <div class="deserves-item">
+                            {% if show_banner %}
+                                <div class="tags dark">{{ 'sections.red.badge' | t }}</div>
+                            {% endif %}
                             <div class="top-info">
                                 {{ image 
                                     | image_url: width: image.width
