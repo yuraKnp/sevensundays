@@ -4504,6 +4504,8 @@ body.red .form-block .ch-box-wrap{
 }
 
 
-body.red:not(.fixed-header) .h-lang button span{
-  color: #E7D39A;
+@media (min-width: 1200px){
+  body.red:not(.fixed-header) .h-lang button span{
+    color: #E7D39A;
+  }
 }
