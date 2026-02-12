@@ -4514,3 +4514,7 @@ body.red .form-block .ch-box-wrap{
 body.red .text *+:where(*){
   margin-top: calc(var(--text-space) * 3);
 }
+
+/* body.red .text *+:where(*) {
+    margin-top: calc(var(--text-space) * 1);
+} */
