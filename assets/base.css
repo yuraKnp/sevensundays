@@ -4269,3 +4269,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     font-size: 32px;
     opacity: 0.6;
 }
+
+.banner.red .button-wrapp svg{
+  transform: rotate(90deg);
+}
