@@ -4428,5 +4428,9 @@ body.red .form-block .ch-box-wrap{
 @media (max-width: 486px){
   .label.fl{
     flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 5px;
   }
 }
