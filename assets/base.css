@@ -4401,6 +4401,8 @@ body.red .form-block.white:before{
   border: 1px solid #E7D39A;
   padding: 5px 10px;
   border-radius: 12px;
+  margin-left: 10px;
+  font-size: 10px;
 }
 
 .radio-desc.text{
