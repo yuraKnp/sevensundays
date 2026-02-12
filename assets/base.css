@@ -4215,6 +4215,15 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   padding-bottom: 0px!important;
 }
 
+@media(max-width: 768px){
+  .pd-b-0{
+    padding-bottom: 32px!important;
+  }
+  .sec-red .row>*{
+    margin-top: 10px;
+  }
+}
+
 .deserves-info.bottom span{
   font-weight: 600;
 }
