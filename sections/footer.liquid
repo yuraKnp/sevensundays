@@ -450,17 +450,7 @@
                               {%- endfor -%}
                             </ul>
                         </div>
-                         {%- endif -%}
-                        <div class="footer-right-part">
-                            {%- if section.settings.footer_copyright_text != blank -%}
-                            <div class="footer-copy">
-                              {{ section.settings.footer_copyright_text }}
-                            </div>
-                            {%- endif -%}
-                            {%- if has_social_icons -%}
-                              {%- render 'social-icons', class: 'footer__list-social' -%}
-                            {%- endif -%}
-                        </div>
+                        {%- endif -%}
                         {% if section.settings.footer_logo != blank %}
                         <div class="footer-add-logo" style="display:none">
                           {{ section.settings.footer_logo | image_url: width: 215 | image_tag:
@@ -475,6 +465,16 @@
                             }}
                         </div>
                         {% endif %}
+                        <div class="footer-right-part">
+                            {%- if section.settings.footer_copyright_text != blank -%}
+                            <div class="footer-copy">
+                              {{ section.settings.footer_copyright_text }}
+                            </div>
+                            {%- endif -%}
+                            {%- if has_social_icons -%}
+                              {%- render 'social-icons', class: 'footer__list-social' -%}
+                            {%- endif -%}
+                        </div>
                     </div>
                 </div>
             </div>
