@@ -180,6 +180,21 @@
         "title": "",
         "section_type": "full"
       }
+    },
+    "call_back_form_red_RTb3eY": {
+      "type": "call-back-form-red",
+      "name": "CTA form redbull",
+      "settings": {
+        "subtitle": "Anmeldung",
+        "title": "Jetzt teilnehmen",
+        "desc": "Fülle das Formular aus und wähle deine Gewinnchance. Teilnahme bis 16.05.2026.",
+        "form_link": "https://formspree.io/f/xwvnlkeb",
+        "title_before_form": "",
+        "desc_before_form": "",
+        "terms_and_conditions_optional": "",
+        "terms_and_conditions": "",
+        "terms_and_conditions_second": ""
+      }
     }
   },
   "order": [
@@ -190,6 +205,7 @@
     "three_columns_red_Lj3EhD",
     "background_video_columns_red_BEhMa8",
     "call_back_form_career_yUbGrw",
-    "faq_Xh9LWR"
+    "faq_Xh9LWR",
+    "call_back_form_red_RTb3eY"
   ]
 }
