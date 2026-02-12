@@ -4509,3 +4509,8 @@ body.red .form-block .ch-box-wrap{
     color: #E7D39A;
   }
 }
+
+
+body.red .text *+:where(*){
+  margin-top: calc(var(--text-space) * 3);
+}
