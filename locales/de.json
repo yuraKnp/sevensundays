@@ -383,6 +383,7 @@
       "name": "Vorname",
       "last_name": "Nachname",
       "ort": "PLZ / Ort",
+      "email": "E-Mail-Adresse",
       "phone": "Telefonnummer",
       "name_p": "Dein Vorname",
       "last_name_p": "Dein Nachname",

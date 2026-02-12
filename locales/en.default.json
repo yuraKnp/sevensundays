@@ -390,6 +390,7 @@
       "name": "First name",
       "last_name": "Last name",
       "ort": "Postal code / City",
+      "email": "Email address",
       "phone": "Phone number",
       "name_p": "Your first name",
       "last_name_p": "Your last name",
