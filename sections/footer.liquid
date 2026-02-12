@@ -461,6 +461,18 @@
                               {%- render 'social-icons', class: 'footer__list-social' -%}
                             {%- endif -%}
                         </div>
+                        <div class="footer-add-logo" style="display:none">
+                          {{ section.settings.footer_logo | image_url: width: 215 | image_tag:
+                              class: 'ft-lg',
+                              widths: widths,
+                              width: 215,
+                              height: 24,
+                              alt: logo_alt,
+                              sizes: sizes,
+                              preload: true,
+                              loading: 'lazy'
+                            }}
+                        </div>
                     </div>
                 </div>
             </div>
