@@ -27,7 +27,8 @@
         "title": "Besser schlafen. Besser spielen.",
         "description": "Melde dich jetzt an und sichere dir die Chance auf eines von 11 SEVEN SUNDAYS Nackenkissen – oder gewinne ein komplettes Schlafsystem nach Wahl.",
         "button_link_1": "#form",
-        "button_label_1": "Jetzt teilnehmen"
+        "button_label_1": "Jetzt teilnehmen",
+        "countdown_date": "2026-03-01T00:00:00"
       }
     },
     "banner_text_BgixF4": {
@@ -62,6 +63,7 @@
         "slide_TwpGgY": {
           "type": "slide",
           "settings": {
+            "show_banner": false,
             "slide_image": "shopify://shop_images/Nackenkissen_Seven-Sundays_Hero.webp",
             "number": "Option A",
             "title": "Nackenkissen gewinnen",
@@ -74,6 +76,7 @@
         "slide_AWUkJC": {
           "type": "slide",
           "settings": {
+            "show_banner": true,
             "slide_image": "shopify://shop_images/Nackenkissen_Seven-Sundays_Hohe-reduzierbar.webp",
             "number": "Option B",
             "title": "Doppelt gewinnen",
