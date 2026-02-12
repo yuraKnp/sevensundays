@@ -4419,13 +4419,13 @@ body.red .form-block .ch-box-wrap{
   margin-top: 8px;
 }
 
-@media(min-width: 486px){
+@media (min-width: 486px){
   .hd-mb{
-    display: none;
+    display: none!important;
   }
 }
 
-@media(max-width: 486px){
+@media (max-width: 486px){
   .hd-pc{
     display: none;
   }
