@@ -4175,9 +4175,14 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   height: auto!important;
 }
 
-@media(min-width: 768px){
+
+.bottom-right{
+  margin: auto 0 0 auto !important;
+}
+
+@media(max-width: 768px){
   .bottom-right{
-    margin: auto 0 0 auto !important;
+    margin: 0 0 auto 0 !important;
   }
 }
 
