@@ -1,0 +1,165 @@
+<div class="section padd-lg d-n-hide" >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 col-xl-6">
+                <div class="title-shortcode text-center">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h2 title">{{ section.settings.title }}</div> 
+                    {% endif %}
+                    {% if section.settings.desc != blank %}
+                    <div class="text text-md">{{ section.settings.desc }}</div>
+                    {% endif %}
+                </div>
+                {% if section.settings.form_link != blank %}
+                <form action="{{ section.settings.form_link }}"  method="POST" class="form-block white">
+                    <input type="hidden" name="form_type" value="Redbull page form">
+                    <input type="hidden" name="subject" value="Redbull form APPLICATION">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="input-field">
+                                <div class="label">{{ 'sections.form.name' | t }}</div>
+                                <input name="name" class="input" type="text" placeholder="{{ 'sections.form.name_p' | t }}" required>
+                            </label>
+                        </div>
+                        <div class="col-6">
+                            <label class="input-field">
+                                <div class="label">{{ 'sections.form.last_name' | t }}</div>
+                                <input name="last_name" class="input" type="text" placeholder="{{ 'sections.form.last_name_p' | t }}" required>
+                            </label>
+                        </div>
+                        <div class="col-6">
+                            <label class="input-field">
+                                <div class="label">email</div>
+                                <input name="email" class="input" type="email" placeholder="{{ 'sections.form.email_p' | t }}" required>
+                            </label>
+                        </div>
+                        <div class="col-6">
+                            <label class="input-field">
+                                <div class="label">{{ 'sections.form.ort' | t }}</div>
+                                <input name="postcode" class="input" type="email" placeholder="{{ 'sections.form.ort_p' | t }}" required>
+                            </label>
+                        </div>
+                        <div class="col-12">
+                        <label class="input-field">
+                            <div class="label">{{ 'sections.form.phone' | t }}</div>
+                            <input name="phone" class="input" type="tel" placeholder="{{ 'sections.form.phone_p' | t }}" pattern="^(\+|00)?[0-9\s\-()]{7,20}$" required>
+                        </label>
+                        </div>
+                        <div class="col-12">
+                            <label class="input-field">
+                                <div class="label">{{ 'sections.form.city' | t }}</div>
+                                <input name="city" class="input" type="text" placeholder="{{ 'sections.form.city_p_c' | t }}" required>
+                            </label>
+                        </div>
+                        <div class="col-12">
+                            <div class="label">{{ 'sections.form.radio_l' | t }}*</div>
+                            <label class="input-field">
+                                <div class="label">{{ 'sections.form.radio_f' | t }}*</div>
+                                <input name="radio" value="Gewinnspiel – Kissenverlosung" class="input" type="radio">
+                            </label>
+                            <label class="input-field">
+                                <div class="label">{{ 'sections.form.radio_s' | t }}*</div>
+                                <input name="radio" value="Gewinnspiel + Schlafberatung" class="input" type="radio">
+                            </label>
+                        </div>
+                        <div class="col-12">
+                            <div class="additional-message-text">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ch-box-wrap">
+                        <label class="ch-box">
+                            <input name="terms_agreed" type="checkbox" required>
+                            <span>{{ section.settings.terms_and_conditions }}</span>
+                        </label>
+                        <label class="ch-box">
+                            <input name="terms_agreed_second" type="checkbox" required>
+                            <span>{{ section.settings.terms_and_conditions_second }}</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">
+                        <b>{{ 'general.form.submit_form' | t }}</b>
+                        {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
+                        {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
+                        {%- assign final_svg_url = url_no_version | append: '#btn-arrow' -%}
+                        <svg width="12" height="12"><use href="{{ final_svg_url }}"></use></svg>
+                    </button>
+                </form>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "CTA form redbull",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "desc",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before_form",
+      "label": "Image before form"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "form_link",
+      "info": "link to a form https://formspree.io/",
+      "label": "Link for your form"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title_before_form",
+      "label": "Title before form"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "desc_before_form",
+      "label": "Description before form"
+    },
+    {
+      "type": "richtext",
+      "id": "terms_and_conditions",
+      "label": "Terms and conditions text"
+    },
+    {
+      "type": "richtext",
+      "id": "terms_and_conditions_second",
+      "label": "Terms and conditions text second"
+    },
+  ],
+  "presets": [
+    {
+      "name": "CTA form redbull",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
