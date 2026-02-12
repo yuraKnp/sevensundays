@@ -4322,7 +4322,7 @@ body.red .banner-media.top-bottom-shadow.style-2:after{
   height: 80%;
 }
 
-body.red .btn{
+body.red .banner-btn .btn{
   color: #ffffff;
   background-color: #dc052d;
 }
