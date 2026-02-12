@@ -4259,7 +4259,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .countdown-wrapper .label {
     font-size: 12px;
     letter-spacing: 2px;
-    opacity: 0.7;
+    opacity: 1;
     font-weight: 600;
     color:#F5F1E8;
     font-family: var(--ff-2);
