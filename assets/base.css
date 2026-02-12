@@ -4304,10 +4304,10 @@ body.red .btn{
 }
 
 @media(max-width: 768px){
-  .countdown-wrapper .countdown{
+  /* .countdown-wrapper .countdown{
     gap: 0px;
     justify-content: baseline;
-  }
+  } */
   .countdown-wrapper .label {
     font-size: 10px;
   }
