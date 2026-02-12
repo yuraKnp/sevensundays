@@ -1,9 +1,11 @@
 {% if section.settings.section_type == 'normal' %}
   {% assign class = 'col-lg-8 col-xl-6' %}
+  {% assign padding = 'padd-lg' %}
 {% elsif section.settings.section_type == 'full' %}
   {% assign class = 'col-lg-12' %}
+  {% assign padding = 'padd-sm' %}
 {% endif %}
-<div class="section padd-lg">
+<div class="section {{ padding }}">
     <div class="container">
         <div class="row justify-content-center">
             <div class="{{ class }}">
