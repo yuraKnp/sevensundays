@@ -75,6 +75,10 @@
 
                     <div class="ch-box-wrap">
                         <label class="ch-box">
+                            <input name="terms_agreed_optional" type="checkbox" required>
+                            <span>{{ section.settings.terms_and_conditions }}</span>
+                        </label>
+                        <label class="ch-box">
                             <input name="terms_agreed" type="checkbox" required>
                             <span>{{ section.settings.terms_and_conditions }}</span>
                         </label>
@@ -143,6 +147,11 @@
       "type": "inline_richtext",
       "id": "desc_before_form",
       "label": "Description before form"
+    },
+    {
+      "type": "richtext",
+      "id": "terms_and_conditions_optional",
+      "label": "Terms and conditions text optional"
     },
     {
       "type": "richtext",
