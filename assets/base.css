@@ -4444,7 +4444,7 @@ body.red .form-block .ch-box-wrap{
 
 .add-text-wrapper{
   display: flex;
-  gap: 15px;
+  gap: 10px;
   background-color: #e7d39a;
   padding: 10px;
   border-radius: 12px;
