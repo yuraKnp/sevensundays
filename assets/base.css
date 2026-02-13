@@ -4391,6 +4391,7 @@ body.red .banner-btn .btn{
 body.red .deserves-item{
   min-height: 400px;
   justify-content: flex-start;
+  background-color: #f5f1e8;
 }
 
 body.red .deserves-item>.text{
