@@ -4313,6 +4313,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    min-width: 40px;
 }
 
 @media(min-width: 769px){
