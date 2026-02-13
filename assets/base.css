@@ -4328,7 +4328,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     display: block;
 }
 
-@media(max-width: 769){
+@media (max-width: 769px){
   .countdown-wrapper .number{
     font-size: 35px;
   }
