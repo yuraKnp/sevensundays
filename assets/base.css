@@ -4521,6 +4521,7 @@ body.red .form-block .ch-box-wrap{
   background-color: #e7d39a;
   padding: 10px;
   border-radius: 12px;
+  margin-top: 0px;
 }
 
 .footer-bottom{
@@ -4586,3 +4587,4 @@ body.red .text *+:where(*){
 body.red form .btn b{
   text-transform: none;
 }
+
