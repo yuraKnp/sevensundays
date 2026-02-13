@@ -4512,7 +4512,7 @@ body.red .form-block .ch-box-wrap{
   max-width: 20px;
 }
 .additional-message-text .text{
-  margin-top: 0px;
+  margin-top: 0px!important;
 }
 
 .add-text-wrapper{
