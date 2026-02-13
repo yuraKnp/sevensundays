@@ -4302,9 +4302,17 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 
 .countdown-wrapper .time-box {
-    text-align: center;
+    /* text-align: center; */
     /* min-width: 80px; */
-    color: #F5F1E8;
+    /* color: #F5F1E8; */
+    text-align: center;
+    color: #f5f1e8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(min-width: 769px){
@@ -4318,6 +4326,12 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
     font-size: 48px;
     font-weight: 700;
     display: block;
+}
+
+@media(max-width: 769){
+  .countdown-wrapper .number{
+    font-size: 35px;
+  }
 }
 
 .countdown-wrapper .label {
