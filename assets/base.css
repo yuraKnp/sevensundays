@@ -4330,7 +4330,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 
 @media (max-width: 769px){
   .countdown-wrapper .number{
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
