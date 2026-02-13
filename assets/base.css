@@ -4582,3 +4582,7 @@ body.red .text *+:where(*){
   padding: 32px;
   border-radius: 12px;
 }
+
+body.red form .btn b{
+  text-transform: none;
+}
