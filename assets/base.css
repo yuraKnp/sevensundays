@@ -4238,6 +4238,9 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   .pd-b-0{
     padding-bottom: 32px!important;
   }
+}
+
+@media(max-width: 991px){
   .sec-red .row>*{
     margin-top: calc(var(--bs-gutter-x) * 1);
   }
