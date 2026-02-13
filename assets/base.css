@@ -4273,6 +4273,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 .sec-red .align-bottom.mt-sm ul li {
     position: relative;
     padding-left: 25px;
+    margin-top: 0px!important;
 }
 
 .sec-red .align-bottom.mt-sm ul li::before {
