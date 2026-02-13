@@ -4356,6 +4356,7 @@ body.red .banner-media.top-bottom-shadow.style-2:after{
 body.red .banner-btn .btn{
   color: #ffffff;
   background-color: #dc052d;
+  text-transform: none;
 }
 
 body.red .deserves-item{
