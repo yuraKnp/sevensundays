@@ -4411,6 +4411,12 @@ body.red .deserves-item>.text{
   }
 }
 
+@media(max-width: 475px){
+  body.red .deserves-item{
+    min-height: 430px;
+  }
+}
+
 .deserves-info.bottom{
   display: flex;
   flex-direction: column;
