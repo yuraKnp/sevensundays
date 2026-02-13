@@ -2,51 +2,53 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-              <div class="title-shortcode">
-                  {% if section.settings.subtitle != blank %}
-                  <div class="motto">{{ section.settings.subtitle }}</div>
-                  {% endif %}
-                  {% if section.settings.title != blank %}
-                  <div class="h2 title text-balance">{{ section.settings.title }}</div>
-                  {% endif %}
+              <div class="section-wrapper">
+                <div class="title-shortcode">
+                    {% if section.settings.subtitle != blank %}
+                    <div class="motto">{{ section.settings.subtitle }}</div>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                    <div class="h2 title text-balance">{{ section.settings.title }}</div>
+                    {% endif %}
+                </div>
+                {% if section.blocks != blank %}
+                <div class="align-bottom">
+                    <div class="container">
+                        <div class="row">
+                            {% for block in section.blocks %}
+                                {%- assign heading = block.settings.slide_heading -%}
+                                {%- assign desc = block.settings.slide_desc -%}
+                                {%- assign number = block.settings.number -%}
+                                <div class="col-lg-3 col-6">
+                                    <div class="born-item">
+                                        {% if number != blank %}
+                                        <div class="number">{{ number }}</div>
+                                        {% endif %}
+                                        {% if heading != blank %}
+                                        <div class="h6 title">{{ heading }}</div>
+                                        {% endif %}
+                                        {% if desc != blank %}
+                                        <div class="text">{{ desc }}</div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% if section.settings.bottom_description != blank %}
+                <div class="align-bottom mt-sm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text light">{{ section.settings.bottom_description }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
               </div>
-              {% if section.blocks != blank %}
-              <div class="align-bottom">
-                  <div class="container">
-                      <div class="row">
-                          {% for block in section.blocks %}
-                              {%- assign heading = block.settings.slide_heading -%}
-                              {%- assign desc = block.settings.slide_desc -%}
-                              {%- assign number = block.settings.number -%}
-                              <div class="col-lg-3 col-6">
-                                  <div class="born-item">
-                                      {% if number != blank %}
-                                      <div class="number">{{ number }}</div>
-                                      {% endif %}
-                                      {% if heading != blank %}
-                                      <div class="h6 title">{{ heading }}</div>
-                                      {% endif %}
-                                      {% if desc != blank %}
-                                      <div class="text">{{ desc }}</div>
-                                      {% endif %}
-                                  </div>
-                              </div>
-                          {% endfor %}
-                      </div>
-                  </div>
-              </div>
-              {% endif %}
-              {% if section.settings.bottom_description != blank %}
-              <div class="align-bottom mt-sm">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-12">
-                              <div class="text light">{{ section.settings.bottom_description }}</div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              {% endif %}
           </div>
         </div>
     </div>

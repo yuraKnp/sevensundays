@@ -4554,3 +4554,10 @@ body.red .text *+:where(*){
 /* body.red .text *+:where(*) {
     margin-top: calc(var(--text-space) * 1);
 } */
+
+
+.sec-red .section-wrapper{
+  background: #2b2f34;
+  padding: 10px;
+  border-radius: 12px;
+}
