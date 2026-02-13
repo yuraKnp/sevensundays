@@ -4250,6 +4250,10 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   .sec-red .align-bottom .container{
     padding: 0px!important;
   }
+
+  .sec-red .born-item {
+    padding: 12px;
+  }
 }
 
 .deserves-info.bottom span{
