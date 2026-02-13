@@ -4253,6 +4253,7 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
   margin: 0;
   display: flex;
   align-items: baseline;
+  justify-content: center;
 }
 
 
