@@ -4222,7 +4222,8 @@ section:has(.sec-padd) + section .padd-lg:not(.d-n-hide) {
 }
 
 .sec-red .container{
-  max-width: -webkit-fill-available;;
+  max-width: -webkit-fill-available;
+  max-width: -moz-available;
 }
 
 .sec-red .deserves-item .title{
