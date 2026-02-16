@@ -94,7 +94,7 @@
                             <span>{{ section.settings.terms_and_conditions }}</span>
                         </label>
                         <label class="ch-box">
-                            <input name="terms_agreed_second" type="checkbox" required>
+                            <input name="terms_agreed_second" type="checkbox">
                             <span>{{ section.settings.terms_and_conditions_second }}</span>
                         </label>
                     </div>
@@ -120,10 +120,10 @@
     const radios = document.querySelectorAll('input[name="radio"]');
     const phoneField = document.querySelector('input[name="phone"]').closest('.col-12');
     const additionalText = document.querySelector('.additional-message-text.text');
-    const optionalTerms = document.querySelector('input[name="terms_agreed_optional"]').closest('.ch-box');
+    const optionalTerms = document.querySelector('input[name="terms_agreed"]').closest('.ch-box');
 
     const phoneInput = document.querySelector('input[name="phone"]');
-    const optionalCheckbox = document.querySelector('input[name="terms_agreed_optional"]');
+    const optionalCheckbox = document.querySelector('input[name="terms_agreed"]');
 
     function toggleFields() {
         const selected = document.querySelector('input[name="radio"]:checked').value;
