@@ -20,7 +20,7 @@
             {% endif %}
 
             {% assign selected_video = section.settings.hero_video_file %}
-            {% assign video_url = selected_video.sources.first.url %}
+            {% assign video_url = selected_video.sources.first.url | prepend: 'https:' %}
 
             {% if video_url != blank %}
                 <div class="video video-present">
