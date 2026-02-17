@@ -75,7 +75,7 @@
                     {% assign full_image_url_p = image_object_p | img_url: 'master' %}
                     {% assign image_format_p = image_object_p.format %}
                     {% if full_image_url_p != blank %}
-                    <div class="col-lg-3 col-5 bottom-right">
+                    <div class="col-lg-2 col-3 bottom-right">
                         <picture>
                             <source srcset="{{ full_image_url_p }}" type="{{ image_format_p }}">
                             <img width="380" height="240" src="#" alt="" loading="eager" class="bottom-patch">
