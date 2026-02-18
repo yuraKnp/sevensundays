@@ -221,7 +221,7 @@
           "type": "slides",
           "settings": {
             "title": "Memory-Schicht",
-            "description": "<p>Dein Körper kommt nachts nicht zur Ruhe. Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>",
+            "description": "<p>Dein Körper kommt nachts nicht zur Ruhe.  Memory bringt dich zurück in die Balance.<br/><br/>Sanftes Einsinken im Memory-Schaum fängt dich auf, beruhigt deinen Körper und reduziert Druck – du liegst wie schwerelos.</p>",
             "second_title": "Latex-Schicht",
             "second_description": "<p>Dein Körper bewegt sich nachts zu wenig – Latex aktiviert dich sanft.<br/><br/>Leichtfedernder Naturkautschuk hält Muskeln und Faszien in sanfter Mikrobewegung und aktiviert deinen Körper – du liegst wie auf Wolken.</p>"
           }
@@ -266,7 +266,7 @@
       ],
       "name": "How it works scroll",
       "settings": {
-        "title": "Drei Schichten.Wie für dich gemacht.",
+        "title": "Drei Schichten. Wie für dich gemacht.",
         "subtitle": "Jede Schicht hat ihren Zweck für Komfort und Ergonomie. Du wählst, was zu dir passt.",
         "title_under_img": "Wähle Deine Komfort-Schicht",
         "short_desc_under_img": "Wie fühlst du dich nach dem Aufwachen?",
