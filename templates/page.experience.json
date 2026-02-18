@@ -56,21 +56,13 @@
           "settings": {
             "step_number": "02",
             "title": "Hausbesuch",
-            "subtitle": "Dein zertifizierter Berater kommt mit einem kompletten Demo-Schlafsystem"
-          }
-        },
-        "slide_qj8ef6": {
-          "type": "slide",
-          "settings": {
-            "step_number": "03",
-            "title": "Test zu Hause",
-            "subtitle": "Entdecke die Schweizer Schlaf-Innovation in einer 60-minütigen Beratung."
+            "subtitle": "60-minütige Beratung mit komplettem Demo-Schlafsystem bei dir zu Hause"
           }
         },
         "slide_y9KPAB": {
           "type": "slide",
           "settings": {
-            "step_number": "04",
+            "step_number": "03",
             "title": "In Ruhe entscheiden",
             "subtitle": "Bestelle nur, wenn du 100% überzeugt bist – kein Druck"
           }
@@ -78,7 +70,7 @@
         "slide_hzPQWt": {
           "type": "slide",
           "settings": {
-            "step_number": "05",
+            "step_number": "04",
             "title": "Premium Lieferung",
             "subtitle": "Handgefertigt für dich, geliefert bis ins Schlafzimmer – inkl. Altmatratzen-Mitnahme."
           }
@@ -87,7 +79,6 @@
       "block_order": [
         "slide_f8qXQd",
         "slide_rhLaJP",
-        "slide_qj8ef6",
         "slide_y9KPAB",
         "slide_hzPQWt"
       ],
