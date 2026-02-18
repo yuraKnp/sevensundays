@@ -85,7 +85,7 @@
         "image_UzawPb"
       ],
       "settings": {
-        "discover_subtitle": "ENTDECKE DAS GEHEIMNIS ERHOLSAMER NÄCHTE",
+        "discover_subtitle": "ENTDECKE DAS GEHEIMNIS ERHOLSAMER verändern",
         "discover_title": "Eine Matratze, unzählige Konfigurationen. Unser 3-Schichten-System passt sich in Sekunden an, um die natürliche Regeneration deines Körpers zu unterstützen – Nacht für Nacht.",
         "discover_text_before_gallery": "Bekannt aus"
       }
@@ -125,7 +125,7 @@
           "settings": {
             "slide_image": "shopify://shop_images/Back-Regeneration-min.jpg",
             "slide_heading": "Für einen starken Rücken",
-            "slide_desc": "Sanfte Dehnung regt den Rückenapparat zur Regeneration an. Bei Rückenproblemen, langem Sitzen, aktivem Alltag",
+            "slide_desc": "Sanfte Dehnung regt den Rückenapparat zur Regeneration an. Bei Rückenproblemen, langem Sitzen, aktivem Alltag.",
             "slide_tag": "Rücken-Regeneration"
           }
         },
@@ -134,7 +134,7 @@
           "settings": {
             "slide_image": "shopify://shop_images/Ergonomic-min.jpg",
             "slide_heading": "Für druckfreien Schlaf",
-            "slide_desc": "Gezielte entlastung von Schultern und Hüften. Für Seitenschläfer und bessere Durchblutung",
+            "slide_desc": "Gezielte entlastung von Schultern und Hüften. Für Seitenschläfer und bessere Durchblutung.",
             "slide_tag": "Ergonomisch"
           }
         }
@@ -148,7 +148,7 @@
       "name": "Sleep system",
       "settings": {
         "title": "Ein Schlafsystem, endlose Liegegefühle",
-        "description": "Wähle drei aus fünf einzigartigen Schichten – und kreiere das perfekte Gefühl und die perfekte Ergonomie für deinen Körper."
+        "description": "Wähle drei einzigartige Schichten und kreiere das perfekte Gefühl und die perfekte Ergonomie für deinen Körper."
       }
     },
     "horizontal_slider_ezYgWk": {
@@ -249,7 +249,7 @@
           "settings": {
             "slide_image": "shopify://shop_images/Back_Pain.jpg",
             "slide_heading": "Für den Rücken",
-            "slide_desc": "Dynamisierende Lamellen entlasten die Wirbelsäule und fördern Regeneration – für entspannteres Liegen und Aufwachen",
+            "slide_desc": "Dynamisierende Lamellen entlasten die Wirbelsäule und fördern Regeneration – für entspannteres Liegen und Aufwachen.",
             "tags": "Bei Rückenproblemen, langem Sitzen, aktivem Alltag."
           }
         },
@@ -446,7 +446,7 @@
         "title": "Entdecke das preisgekrönte Schlafsystem, das alles verändert",
         "subtitle": "GEMACHT, UM ALLES ZU VERÄNDERN",
         "short_description": "<p>Jetzt entdecken. Jeden Morgen wie Sonntag aufwachen.</p>",
-        "link_text": "Schlafsystem entdecken",
+        "link_text": "Schlafsystem verändern",
         "link_url": "https://seven-sundays.shop/blogs/news/seven-sundays-sleep-study",
         "link_text2": "",
         "link_url2": ""
