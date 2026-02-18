@@ -21,7 +21,8 @@
       "type": "banner-text",
       "name": "Banner text",
       "settings": {
-        "subtitle": "DURCH SCHLAF DAS LEBEN ANDERER VERÄNDERN",
+        "section_type": "type_1",
+        "subtitle": "DURCH SCHLAF DAS LEBEN ANDERER NÄCHTE",
         "title": "Baue deine Traumkarriere auf. Verdiene dein erstes Geld schon in wenigen Wochen.",
         "description": "Als Seven Sundays Schlafberater:in hilfst du Menschen, ihr volles Potenzial durch besseren Schlaf zu entfalten – und schaffst dir dabei unbegrenztes Einkommenspotenzial.",
         "link_text": "Karriere starten",
@@ -440,7 +441,8 @@
       ],
       "name": "FAQ section",
       "settings": {
-        "title": "FAQ"
+        "title": "FAQ",
+        "section_type": "normal"
       }
     }
   },
