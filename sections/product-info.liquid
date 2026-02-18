@@ -211,6 +211,8 @@
                         {%- when 'pairs_best_with' -%}
                           {% assign selected_product = block.settings.upsell_product %}
                           {% assign selected_product_sec = block.settings.upsell_product_sec %}
+                          {% assign selected_product_third = block.settings.upsell_product_third %}
+                          
                           {%  if selected_product != blank or selected_product_sec != blank %}
                           <div class="pairs-wrapp">
                               <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
@@ -240,6 +242,20 @@
                                       </div>
                                       <div class="btn btn-third">
                                           <b>+ {{ selected_product_sec.price | money }}</b>
+                                      </div>
+                                  </div>
+                                  {% endif %}
+                                  {% if selected_product_third != blank %}
+                                  <div class="pairs-item" data-variant-id="{{ selected_product_third.selected_or_first_available_variant.id }}">
+                                      <div class="img-wrapper">
+                                        <img width="72" height="40" src="{{ selected_product_third.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                      </div>
+                                      <div class="content">
+                                          <div class="text text-sm"><b>{{ selected_product_third.title }}</b></div>
+                                          <div class="text text-sm">{{ selected_product_third.metafields.my_fields.subtitle }}</div>
+                                      </div>
+                                      <div class="btn btn-third">
+                                          <b>+ {{ selected_product_third.price | money }}</b>
                                       </div>
                                   </div>
                                   {% endif %}
@@ -469,6 +485,11 @@
           "type": "product",
           "id": "upsell_product_sec",
           "label": "Select Upsell Product Second"
+        },
+        {
+          "type": "product",
+          "id": "upsell_product_third",
+          "label": "Select Upsell Product third"
         },
       ]
     },
