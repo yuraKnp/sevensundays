@@ -152,7 +152,11 @@
                         {% endfor %}
                     </div>
                     
-                    <div class="quantity-wrapp">
+                    {% assign hide = '' %}
+                    {% if template = 'product.pillow-cover' %}
+                      {% assign hide = 'style="display:none"' %}
+                    {% endif %}
+                    <div class="quantity-wrapp" {{ hide }} >
                         <div class="motto">{{ 'products.product.quantity_new' | t }}:</div>
                         <div class="quantity-new">
                             <div class="quantity-item active" data-qty="1">
