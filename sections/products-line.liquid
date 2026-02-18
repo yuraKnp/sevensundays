@@ -8,7 +8,7 @@
                     {% if lazy_load == false and forloop.index > max_columns_to_show %}
                         {% assign lazy_load = true %}
                     {% endif %}
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-3">
                         {% render 'card-product-second',
                         card_product: product,
                         media_aspect_ratio: section.settings.image_ratio,
