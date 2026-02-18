@@ -4589,3 +4589,23 @@ body.red form .btn b{
   text-transform: none;
 }
 
+
+/* 1. Hide the element by default on large screens */
+@media screen and (min-width: 991px) {
+  .mobile-only-info {
+    display: none !important;
+  }
+  .hide-mobile{
+    display: block !important;
+  }
+}
+
+/* 2. Show the element on screens smaller than 991px */
+@media screen and (max-width: 990px) {
+  .mobile-only-info {
+    display: block !important; /* or 'flex' / 'inline-block' depending on layout */
+  }
+  .hide-mobile{
+    display: none !important;
+  }
+}
