@@ -32,7 +32,8 @@
           "type": "pairs_best_with",
           "settings": {
             "upsell_product": "ersatzbezug-fur-copy",
-            "upsell_product_sec": "reisetasche-nackenkissen-und-seitenschlaferkissen-copy"
+            "upsell_product_sec": "reisetasche-nackenkissen-und-seitenschlaferkissen-copy",
+            "upsell_product_third": "ersatzbezug-fur-copy-1"
           }
         },
         "buy_buttons_WaiNe3": {
