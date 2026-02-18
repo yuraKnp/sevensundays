@@ -47,6 +47,7 @@
     },
     "background_video_aHGzxG": {
       "type": "background-video",
+      "disabled": true,
       "name": "Background video popup",
       "settings": {
         "section_type": "type_2",
