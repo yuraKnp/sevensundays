@@ -35,6 +35,20 @@
             "upsell_product_sec": ""
           }
         },
+        "pairs_best_with_FNHhVk": {
+          "type": "pairs_best_with",
+          "settings": {
+            "upsell_product": "ersatzbezug-fur-copy-1",
+            "upsell_product_sec": ""
+          }
+        },
+        "pairs_best_with_zexyYE": {
+          "type": "pairs_best_with",
+          "settings": {
+            "upsell_product": "ersatzbezug-fur-copy-1",
+            "upsell_product_sec": ""
+          }
+        },
         "buy_buttons_WaiNe3": {
           "type": "buy_buttons",
           "settings": {
@@ -101,6 +115,8 @@
         "price_MKjNkN",
         "description_dgLa3m",
         "pairs_best_with_pQhe7V",
+        "pairs_best_with_FNHhVk",
+        "pairs_best_with_zexyYE",
         "buy_buttons_WaiNe3",
         "discover_info_Y79BnV",
         "collapsible_tab_a_s_CrGik6",
