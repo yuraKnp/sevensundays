@@ -180,7 +180,7 @@ a:hover .video-cover video {transform: scale(1.04);}
 .lr-content-1 .benefit-items,
 .lr-content-1 .author {margin-top: 48px;}
 @media (min-width: 992px) {
-.content-top-bottom {display: flex;flex-direction: column;justify-content: space-between;height: 100%;}
+.content-top-bottom {display: flex;flex-direction: column;justify-content: center;height: 100%;}
 }
 @media (max-width: 991px) {
 .lr-img-1 {padding-top: 134%;}
