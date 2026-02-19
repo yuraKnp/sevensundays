@@ -36,7 +36,7 @@
                             <div class="text">{{ section.settings.short_description }}</div>
                             {% endif %}
                             {% if section.settings.link_text != blank and section.settings.link_url != blank %}
-                            <a href="{{ section.settings.link_url }}" class="btn">
+                            <a href="{{ section.settings.link_url }}" class="btn test123">
                                 <b style="text-transform: none;">{{ section.settings.link_text }}</b>
                                 {%- assign svg_icon_url = 'icons_global.svg' | asset_url -%}
                                 {%- assign url_no_version = svg_icon_url | split: '?' | first -%}
