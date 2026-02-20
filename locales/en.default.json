@@ -137,6 +137,7 @@
   "products": {
     "product": {
       "pairs_best_with": "PAIRS BEST WITH",
+      "pairs_best_with_ver": "WITH",
       "double_pack": "Double pack",
       "single_pack": "Single Pack",
       "included": "Included",
