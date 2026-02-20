@@ -49,6 +49,15 @@
                             <input name="phone" class="input" type="tel" placeholder="{{ 'sections.form.phone_p' | t }}" pattern="^(\+|00)?[0-9\s\-()]{7,20}$" required>
                         </label>
                         </div>
+
+                        <div class="ch-box-wrap">
+                            <label class="ch-box">
+                                <div class="label">{{ 'sections.form.add_checkbox' | t }}</div>
+                                <input name="add_checkbox" type="checkbox">
+                                <span>{{ section.settings.add_checkbox_desc }}</span>
+                            </label>
+                        </div>
+
                         <div class="col-12">
                             <div class="label">{{ 'sections.form.radio_l' | t }}*</div>
                         </div>
@@ -119,6 +128,7 @@
 
     const radios = document.querySelectorAll('input[name="radio"]');
     const phoneField = document.querySelector('input[name="phone"]').closest('.col-12');
+    const addcheckboxField = document.querySelector('input[name="add_checkbox"]').closest('.ch-box-wrap');
     const additionalText = document.querySelector('.additional-message-text.text');
     const optionalTerms = document.querySelector('input[name="terms_agreed"]').closest('.ch-box');
 
@@ -131,6 +141,7 @@
         if (selected === "Option B – Doppelte Chance") {
         // SHOW
         phoneField.style.display = "block";
+        addcheckboxField.style.display = "block";
         additionalText.style.display = "block";
         optionalTerms.style.display = "flex";
 
@@ -140,6 +151,7 @@
         } else {
         // HIDE
         phoneField.style.display = "none";
+        addcheckboxField.style.display = "none";
         additionalText.style.display = "none";
         optionalTerms.style.display = "none";
 
@@ -201,6 +213,11 @@
       "type": "inline_richtext",
       "id": "desc_before_form",
       "label": "Description before form"
+    },
+    {
+      "type": "richtext",
+      "id": "add_checkbox_desc",
+      "label": "Additional checkbox text"
     },
     {
       "type": "richtext",

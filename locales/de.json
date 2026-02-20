@@ -398,7 +398,8 @@
       "radio_f_desc":"Nimm an der Verlosung von 11 Nackenkissen teil",
       "radio_s":"Option B – Doppelte Chance",
       "radio_s_desc":"Schlafsystem + Kissenverlosung + kostenlose Schlafberatung",
-      "radio_s_additional_text":"Nach deiner Anmeldung wird sich unser Team persönlich bei dir melden, um einen passenden Termin für deine kostenlose und unverbindliche Schlafberatung bei dir zu Hause zu vereinbaren."
+      "radio_s_additional_text":"Nach deiner Anmeldung wird sich unser Team persönlich bei dir melden, um einen passenden Termin für deine kostenlose und unverbindliche Schlafberatung bei dir zu Hause zu vereinbaren.",
+      "add_checkbox": "KUNDENSTATUS",
     },
     "featured_blog": {
       "view_all": "Alle anzeigen",

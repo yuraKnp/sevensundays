@@ -405,7 +405,8 @@
       "radio_f_desc":"Enter the draw for 11 neck pillows",
       "radio_s":"Option B – Doppelte Chance",
       "radio_s_desc":"Sleep system + pillow draw + free sleep consultation",
-      "radio_s_additional_text":"After your registration, our team will personally contact you to arrange a suitable appointment for your free and non-binding sleep consultation at your home."
+      "radio_s_additional_text":"After your registration, our team will personally contact you to arrange a suitable appointment for your free and non-binding sleep consultation at your home.",
+      "add_checkbox": "CUSTOMER STATUS",
     },
     "featured_blog": {
       "view_all": "View all",
