@@ -273,7 +273,7 @@
                             </div>
                           {%  endif %}
                     {% endcase %}
-
+                    {% endfor %}
                     
                     {% comment %} {% if variant %} {% endcomment %}
                       <div class="pairs-wrapp">
@@ -298,7 +298,7 @@
                     {% comment %} {% endif %} {% endcomment %}
                     
 
-                    {% endfor %}
+                    
                     {% assign current_variant = product.selected_or_first_available_variant %}
                     {% if current_variant.available %}
                     <div class="status" style="--clr-status: 61 161 92;">
