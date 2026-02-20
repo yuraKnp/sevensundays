@@ -24,8 +24,7 @@
 
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-{% comment %} double price {% endcomment %}
- {%- assign doubled_price = product.selected_or_first_available_variant.price | times: 2 -%}
+{%- assign doubled_price = product.selected_or_first_available_variant.price | times: 2 -%}
 
 <div class="section sp-sec">
     <div class="container">
@@ -132,16 +131,7 @@
                         {%- for block in section.blocks -%}
                           {%- case block.type -%}
                             {%- when 'rating' -%}
-                            {% comment %} <div class="pd-rating">
-                                <div class="stars">
-                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                    <img width="16" height="16" src="img/icons/star-icon.svg" alt="" loading="lazy">
-                                </div>
-                                <div class="text text-sm">(177)</div>
-                            </div> {% endcomment %}
+
                             <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
                             {%- when 'title' -%}
                             <h1 class="h2 title">{{ product.title | escape }}</h1>
@@ -155,21 +145,6 @@
                               -%}
                             </div>
                             {%-  when 'description' -%}
-
-
-                            {%- comment -%} 1. Convert the description into an array of words {%- endcomment -%}
-                            {% comment %} {%- assign all_words = product.description | split: ' ' -%}
-
-                            {%- comment -%} 2. Get the first 20 words and join them with spaces {%- endcomment -%}
-                            
-                            {%- if product.description contains '<ul>' -%}
-                              {%- assign short_text = product.description -%}
-                            {% else %}
-                              {%- assign short_text = all_words | slice: 0, 20 | join: ' ' -%}
-                              {%- comment -%} 3. Get everything from word 21 to the end {%- endcomment -%}
-                              {%- assign rest_of_words_count = all_words.size | minus: 20 -%}
-                              {%- assign long_text = all_words | slice: 20, rest_of_words_count | join: ' ' -%}
-                            {% endif %} {% endcomment %}
 
                             <div class="text product-description">
                               <div class="content">
@@ -249,55 +224,78 @@
                           {% assign selected_product_third = block.settings.upsell_product_third %}
                           
                           {%  if selected_product != blank or selected_product_sec != blank %}
-                          <div class="pairs-wrapp">
-                              <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
-                              <div class="pairs">
-                                  {%  if selected_product != blank %}
-                                  <div class="pairs-item" data-variant-id="{{ selected_product.selected_or_first_available_variant.id }}">
-                                      <div class="img-wrapper">
-                                        <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
-                                      </div>
-                                      <div class="content">
-                                          <div class="text text-sm"><b>{{ selected_product.title }}</b></div>
-                                          <div class="text text-sm">{{ selected_product.metafields.my_fields.subtitle }}</div>
-                                      </div>
-                                      <div class="btn btn-third">
-                                          <b>+ {{ selected_product.price | money }}</b>
-                                      </div>
-                                  </div>
-                                  {% endif %}
-                                  {% if selected_product_sec != blank %}
-                                  <div class="pairs-item" data-variant-id="{{ selected_product_sec.selected_or_first_available_variant.id }}">
-                                      <div class="img-wrapper">
-                                        <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
-                                      </div>
-                                      <div class="content">
-                                          <div class="text text-sm"><b>{{ selected_product_sec.title }}</b></div>
-                                          <div class="text text-sm">{{ selected_product_sec.metafields.my_fields.subtitle }}</div>
-                                      </div>
-                                      <div class="btn btn-third">
-                                          <b>+ {{ selected_product_sec.price | money }}</b>
-                                      </div>
-                                  </div>
-                                  {% endif %}
-                                  {% if selected_product_third != blank %}
-                                  <div class="pairs-item " data-variant-id="{{ selected_product_third.selected_or_first_available_variant.id }}">
-                                      <div class="img-wrapper">
-                                        <img width="72" height="40" src="{{ selected_product_third.featured_image | img_url: 'small' }}" alt="" loading="lazy">
-                                      </div>
-                                      <div class="content">
-                                          <div class="text text-sm"><b>{{ selected_product_third.title }}</b></div>
-                                          <div class="text text-sm">{{ selected_product_third.metafields.my_fields.subtitle }}</div>
-                                      </div>
-                                      <div class="btn btn-third">
-                                          <b>+ {{ selected_product_third.price | money }}</b>
-                                      </div>
-                                  </div>
-                                  {% endif %}
-                              </div>
-                          </div>
+                            <div class="pairs-wrapp">
+                                <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
+                                <div class="pairs">
+                                    {%  if selected_product != blank %}
+                                    <div class="pairs-item" data-variant-id="{{ selected_product.selected_or_first_available_variant.id }}">
+                                        <div class="img-wrapper">
+                                          <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                        </div>
+                                        <div class="content">
+                                            <div class="text text-sm"><b>{{ selected_product.title }}</b></div>
+                                            <div class="text text-sm">{{ selected_product.metafields.my_fields.subtitle }}</div>
+                                        </div>
+                                        <div class="btn btn-third">
+                                            <b>+ {{ selected_product.price | money }}</b>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                    {% if selected_product_sec != blank %}
+                                    <div class="pairs-item" data-variant-id="{{ selected_product_sec.selected_or_first_available_variant.id }}">
+                                        <div class="img-wrapper">
+                                          <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                        </div>
+                                        <div class="content">
+                                            <div class="text text-sm"><b>{{ selected_product_sec.title }}</b></div>
+                                            <div class="text text-sm">{{ selected_product_sec.metafields.my_fields.subtitle }}</div>
+                                        </div>
+                                        <div class="btn btn-third">
+                                            <b>+ {{ selected_product_sec.price | money }}</b>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                    {% if selected_product_third != blank %}
+                                    <div class="pairs-item " data-variant-id="{{ selected_product_third.selected_or_first_available_variant.id }}">
+                                        <div class="img-wrapper">
+                                          <img width="72" height="40" src="{{ selected_product_third.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                        </div>
+                                        <div class="content">
+                                            <div class="text text-sm"><b>{{ selected_product_third.title }}</b></div>
+                                            <div class="text text-sm">{{ selected_product_third.metafields.my_fields.subtitle }}</div>
+                                        </div>
+                                        <div class="btn btn-third">
+                                            <b>+ {{ selected_product_third.price | money }}</b>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
                           {%  endif %}
                     {% endcase %}
+
+                    {% if variant %}
+                      <div class="pairs-wrapp">
+                          <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
+                          <div class="pairs">
+                              {% for variant in product.variants %}
+                              <div class="pairs-item {% unless variant.available %}disabled{% endunless %}" data-variant-id="{{ variant.id }}">
+                                  <div class="img-wrapper">
+                                    <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                  </div>
+                                  <div class="content">
+                                      <div class="text text-sm"><b>{{ variant.title }}</b></div>
+                                      <div class="text text-sm">{{ variant.metafields.custom.additional_description }}</div>
+                                  </div>
+                                  <div class="btn btn-third">
+                                      <b>{{ variant.price | money }}</b>
+                                  </div>
+                              </div>
+                              {% endfor %}
+                          </div>
+                      </div>
+                    {% endif %}
+
                     {% endfor %}
                     {% assign current_variant = product.selected_or_first_available_variant %}
                     {% if current_variant.available %}
@@ -305,9 +303,6 @@
                         <i></i>
                         <div class="text text-sm"><span>{{- 'products.product.inventory_in_stock' | t -}}</span>,&nbsp;{{- 'products.product.ship' | t -}}</div>
                     </div>
-                    {% comment %} <div class="btn btn-block add-cart">
-                        <b>{{ 'products.product.add_to_cart' | t }}</b>
-                    </div> {% endcomment %}
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
                         {%- when 'buy_buttons' -%}
@@ -326,7 +321,6 @@
                         <div class="text text-sm"><span>{{- 'products.product.sold_out' | t -}}</span></div>
                     </div>
                     {%  endif %}
-                    {% comment %} render buy buttons {% endcomment %}
 
                     
                     {%- for block in section.blocks -%}
