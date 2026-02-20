@@ -4621,3 +4621,7 @@ body.red form .btn b{
   display: flex;
   gap: var(--sp-12);
 }
+
+.mr-top-new{
+  margin-top: var(--bs-gutter-y);
+}
