@@ -28,14 +28,6 @@
           "type": "description",
           "settings": {}
         },
-        "pairs_best_with_pQhe7V": {
-          "type": "pairs_best_with",
-          "settings": {
-            "upsell_product": "ersatzbezug-fur-copy-1",
-            "upsell_product_sec": "ersatzbezug-fur",
-            "upsell_product_third": "ersatzbezug-fur-copy"
-          }
-        },
         "buy_buttons_WaiNe3": {
           "type": "buy_buttons",
           "settings": {
@@ -101,7 +93,6 @@
         "title_rBaRmh",
         "price_MKjNkN",
         "description_dgLa3m",
-        "pairs_best_with_pQhe7V",
         "buy_buttons_WaiNe3",
         "discover_info_Y79BnV",
         "collapsible_tab_a_s_CrGik6",
