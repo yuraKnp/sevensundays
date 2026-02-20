@@ -277,7 +277,7 @@
                     
                     {% comment %} {% if variant %} {% endcomment %}
                       <div class="pairs-wrapp">
-                          <div class="motto ">{{ 'products.product.pairs_best_with' | t }}:</div>
+                          <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                           <div class="pairs">
                               {% for variant in product.variants %}
                               <div class="pairs-item {% unless variant.available %}disabled{% endunless %}" data-variant-id="{{ variant.id }}">
