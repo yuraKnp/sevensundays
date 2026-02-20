@@ -4625,3 +4625,7 @@ body.red form .btn b{
 .mr-top-new{
   margin-top: var(--bs-gutter-y)!important;
 }
+
+.ch-box-wrap .label{
+  color: var(--clr-text-6)!important;
+}
