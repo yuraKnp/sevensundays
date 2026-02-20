@@ -328,17 +328,6 @@
     "testimonial_slider_WQiFem": {
       "type": "testimonial-slider",
       "blocks": {
-        "slide_qYBD34": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/stories-img-2.webp",
-            "tags": "ECHTER SCHLAF, ECHTE GESCHICHTEN",
-            "name": "Thomas K.",
-            "job": "Tech Executive",
-            "slide_desc": "Die beste Investition meiner Karriere? Nicht ein Deal – sondern endlich richtig zu schlafen. Seven Sundays war überfällig."
-          }
-        },
         "slide_3fAjHr": {
           "type": "slide",
           "settings": {
@@ -359,6 +348,16 @@
             "slide_desc": "Ich kuratiere seit über 20 Jahren, was gut ist. Bei Schlaf war ich überrascht, wie viel Potenzial ich verschenkt habe – bis ich Seven Sundays entdeckt habe."
           }
         },
+        "slide_qYBD34": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/seven-sundays-testimonial-steven-wilson.jpg",
+            "tags": "",
+            "name": "Steven Wilson",
+            "job": "Personal Trainer & Performance Coach",
+            "slide_desc": "Bei meinen Klienten – ob CEO, Profisportler oder Schauspielerin – geht es längst nicht mehr um Optik. Es geht um maximale Power, jederzeit abrufbar. Körperlich und mental. Und genau da setzt SEVEN SUNDAYS an: Personalisierte Regeneration statt One-Size-Fits-All. So simpel, so logisch – und so überfällig. Für mich keine Nacht mehr ohne."
+          }
+        },
         "slide_RRqmmB": {
           "type": "slide",
           "disabled": true,
@@ -372,9 +371,9 @@
         }
       },
       "block_order": [
-        "slide_qYBD34",
         "slide_3fAjHr",
         "slide_VnCRdg",
+        "slide_qYBD34",
         "slide_RRqmmB"
       ],
       "name": "Testimonial slider",

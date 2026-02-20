@@ -370,13 +370,12 @@
         },
         "slide_aqjTMr": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/stories-img-2.webp",
-            "tags": "ECHTER SCHLAF. ECHTE GESCHICHTEN.",
-            "name": "Ben Zwiehoff",
-            "job": "Profi-Radsportler, BORA–Hansgrohe Team",
-            "slide_desc": "Als Profi-Radsportler ist Erholung genauso wichtig wie Training. Das Seven Sundays Schlafsystem hilft mir, voll aufgeladen aufzuwachen. So kann ich guten Gewissens meinem Körper und Geist Spitzenleistungen abverlangen."
+            "image": "shopify://shop_images/seven-sundays-testimonial-steven-wilson.jpg",
+            "tags": "",
+            "name": "Steven Wilson",
+            "job": "Personal Trainer & Performance Coach",
+            "slide_desc": "Bei meinen Klienten – ob CEO, Profisportler oder Schauspielerin – geht es längst nicht mehr um Optik. Es geht um maximale Power, jederzeit abrufbar. Körperlich und mental. Und genau da setzt SEVEN SUNDAYS an: Personalisierte Regeneration statt One-Size-Fits-All. So simpel, so logisch – und so überfällig. Für mich keine Nacht mehr ohne."
           }
         }
       },
