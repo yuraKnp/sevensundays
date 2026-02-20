@@ -429,6 +429,14 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Logo_001.png",
+            "name": "Innovative Unternehmen",
+            "year": "2026"
+          }
+        },
+        "slide_X6pxai": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Logo_002.png",
             "name": "Unternehmen der Zukunft",
             "year": "2026"
           }
@@ -439,7 +447,8 @@
         "slide_g3ygYL",
         "slide_WebKEa",
         "slide_RL7VPk",
-        "slide_jhzQC3"
+        "slide_jhzQC3",
+        "slide_X6pxai"
       ],
       "name": "Awards slider",
       "settings": {}
