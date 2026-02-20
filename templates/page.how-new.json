@@ -488,6 +488,14 @@
             "caption": "Innovative Unternehmen",
             "year": "2026"
           }
+        },
+        "image_XzAR4p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Logo_002.png",
+            "caption": "Unternehmen der Zukunft",
+            "year": "2026"
+          }
         }
       },
       "block_order": [
@@ -498,7 +506,8 @@
         "image_dCmgKy",
         "image_nRa8xA",
         "image_MxAj8b",
-        "image_hVm9fx"
+        "image_hVm9fx",
+        "image_XzAR4p"
       ],
       "name": "Real sleep testimonial",
       "settings": {
