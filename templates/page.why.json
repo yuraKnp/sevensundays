@@ -322,6 +322,14 @@
             "name": "Innovative Unternehmen",
             "year": "2019"
           }
+        },
+        "slide_gG3gzF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Logo_002.png",
+            "name": "Unternehmen der Zukunft",
+            "year": "2019"
+          }
         }
       },
       "block_order": [
@@ -329,7 +337,8 @@
         "slide_VdRxjP",
         "slide_kNJwxe",
         "slide_Lk3Wfw",
-        "slide_XPW6Bt"
+        "slide_XPW6Bt",
+        "slide_gG3gzF"
       ],
       "name": "Awards slider",
       "settings": {}
