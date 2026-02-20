@@ -276,25 +276,26 @@
                     {% endfor %}
                     
                     {% comment %} {% if variant %} {% endcomment %}
-                      <div class="pairs-wrapp">
-                          {% comment %} <div class="motto">{{ 'products.product.pairs_best_with_ver' | t }}:</div> {% endcomment %}
-                          <div class="pairs">
-                              {% for variant in product.variants %}
-                              <div class="pairs-item {% unless variant.available %}disabled{% endunless %}" data-variant-id="{{ variant.id }}">
-                                  <div class="img-wrapper">
-                                    <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="" loading="lazy">
-                                  </div>
-                                  <div class="content">
-                                      <div class="text text-sm"><b>{{ variant.title }}</b></div>
-                                      <div class="text text-sm">{{ variant.metafields.custom.additional_description }}</div>
-                                  </div>
-                                  <div class="btn btn-third">
-                                      <b>{{ variant.price | money }}</b>
-                                  </div>
-                              </div>
-                              {% endfor %}
-                          </div>
-                      </div>
+                    {% assign current_variant = product.selected_or_first_available_variant %}
+                    <div class="pairs-wrapp">
+                        {% comment %} <div class="motto">{{ 'products.product.pairs_best_with_ver' | t }}:</div> {% endcomment %}
+                        <div class="pairs">
+                            {% for variant in product.variants %}
+                            <div class="pairs-item {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}" data-variant-id="{{ variant.id }}">
+                                <div class="img-wrapper">
+                                  <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <div class="text text-sm"><b>{{ variant.title }}</b></div>
+                                    <div class="text text-sm">{{ variant.metafields.custom.additional_description }}</div>
+                                </div>
+                                <div class="btn btn-third">
+                                    <b>{{ variant.price | money }}</b>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
                     {% comment %} {% endif %} {% endcomment %}
                     
 
