@@ -314,13 +314,22 @@
             "name": "German Design Award Winner",
             "year": "2019"
           }
+        },
+        "slide_XPW6Bt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Logo_001.png",
+            "name": "Innovative Unternehmen",
+            "year": "2019"
+          }
         }
       },
       "block_order": [
         "slide_YtVD9P",
         "slide_VdRxjP",
         "slide_kNJwxe",
-        "slide_Lk3Wfw"
+        "slide_Lk3Wfw",
+        "slide_XPW6Bt"
       ],
       "name": "Awards slider",
       "settings": {}
