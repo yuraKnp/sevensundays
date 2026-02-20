@@ -274,7 +274,8 @@
                           {%  endif %}
                     {% endcase %}
 
-                    {% if variant %}
+                    
+                    {% comment %} {% if variant %} {% endcomment %}
                       <div class="pairs-wrapp">
                           <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                           <div class="pairs">
@@ -294,7 +295,8 @@
                               {% endfor %}
                           </div>
                       </div>
-                    {% endif %}
+                    {% comment %} {% endif %} {% endcomment %}
+                    
 
                     {% endfor %}
                     {% assign current_variant = product.selected_or_first_available_variant %}
