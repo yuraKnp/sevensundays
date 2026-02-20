@@ -480,6 +480,22 @@
             "caption": "German Design Award",
             "year": "2019"
           }
+        },
+        "image_hVm9fx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Logo_001.png",
+            "caption": "Innovative Unternehmen",
+            "year": "2026"
+          }
+        },
+        "image_XzAR4p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Logo_002.png",
+            "caption": "Unternehmen der Zukunft",
+            "year": "2026"
+          }
         }
       },
       "block_order": [
@@ -489,7 +505,9 @@
         "image_7bUEMR",
         "image_dCmgKy",
         "image_nRa8xA",
-        "image_MxAj8b"
+        "image_MxAj8b",
+        "image_hVm9fx",
+        "image_XzAR4p"
       ],
       "name": "Real sleep testimonial",
       "settings": {
