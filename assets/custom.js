@@ -374,17 +374,6 @@ jQuery(function ($) {
 
     $(document).on('click', '.pairs-item.variant:not(.disabled)', function() {
 
-        
-        function formatMoney(cents, format) {
-            if (typeof cents === 'string') {
-                cents = cents.replace('.', '');
-            }
-
-            let value = (cents / 100).toFixed(2);
-
-            return format.replace('{{amount}}', value);
-        }
-
         const $this = $(this);
         const variantId = parseInt($this.data('variant-id'), 10);
 

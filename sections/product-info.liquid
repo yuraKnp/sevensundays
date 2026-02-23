@@ -137,12 +137,14 @@
                             <h1 class="h2 title">{{ product.title | escape }}</h1>
                             {%- when 'price' -%}
                             <div class="text text-md">
-                              {%- render 'price',
-                                product: product,
-                                use_variant: true,
-                                show_badges: true,
-                                price_class: 'price--large'
-                              -%}
+                              <div id="price-{{ section.id }}">
+                                {%- render 'price',
+                                  product: product,
+                                  use_variant: true,
+                                  show_badges: true,
+                                  price_class: 'price--large'
+                                -%}
+                              </div>
                             </div>
                             {%-  when 'description' -%}
 
@@ -389,6 +391,45 @@
 
 <script>
   window.productData = {{ product | json }};
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const sectionId = "{{ section.id }}";
+
+  document.querySelectorAll('.pairs-item.variant').forEach(item => {
+    item.addEventListener('click', function () {
+
+      if (this.classList.contains('disabled')) return;
+
+      const variantId = this.dataset.variantId;
+
+      fetch(`${window.location.pathname}?variant=${variantId}&section_id=${sectionId}`)
+        .then(response => response.text())
+        .then(html => {
+
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+
+          const newPrice = doc.querySelector('#price-' + sectionId);
+          const currentPrice = document.querySelector('#price-' + sectionId);
+
+          if (newPrice && currentPrice) {
+            currentPrice.innerHTML = newPrice.innerHTML;
+          }
+
+        });
+
+      // update hidden input
+      const idInput = document.querySelector('input[name="id"]');
+      if (idInput) idInput.value = variantId;
+
+    });
+  });
+
+});
 </script>
 
 {% schema %}
