@@ -371,7 +371,19 @@ jQuery(function ($) {
 
     // Variation product js
 
+
     $(document).on('click', '.pairs-item.variant:not(.disabled)', function() {
+
+        
+        function formatMoney(cents, format) {
+            if (typeof cents === 'string') {
+                cents = cents.replace('.', '');
+            }
+
+            let value = (cents / 100).toFixed(2);
+
+            return format.replace('{{amount}}', value);
+        }
 
         const $this = $(this);
         const variantId = parseInt($this.data('variant-id'), 10);
@@ -388,6 +400,8 @@ jQuery(function ($) {
         const variant = window.productData.variants.find(v => v.id === variantId);
 
         if (!variant) return;
+
+        console.log(variant.price);
 
         // ✅ Update price
         const formattedPrice = Shopify.formatMoney(
