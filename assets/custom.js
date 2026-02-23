@@ -367,5 +367,44 @@ jQuery(function ($) {
             });
         });
     });
+
+
+    // Variation product js
+
+    $(document).on('click', '.pairs-item.variant:not(.disabled)', function() {
+
+        const $this = $(this);
+        const variantId = parseInt($this.data('variant-id'), 10);
+
+        // Remove active from siblings
+        $this
+            .closest('.pairs')
+            .find('.pairs-item.variant')
+            .removeClass('active');
+
+        $this.addClass('active');
+
+        // Find variant in product JSON
+        const variant = window.productData.variants.find(v => v.id === variantId);
+
+        if (!variant) return;
+
+        // ✅ Update price
+        const formattedPrice = Shopify.formatMoney(
+            variant.price,
+            window.Shopify.money_format
+        );
+
+        $('.price--large').html(formattedPrice);
+
+        // ✅ Update hidden input in product form
+        $('form[action="/cart/add"] input[name="id"]').val(variant.id);
+
+        // ✅ Update URL (optional but recommended)
+        const url = new URL(window.location);
+        url.searchParams.set('variant', variant.id);
+        window.history.replaceState({}, '', url);
+
+    });
 });
 
