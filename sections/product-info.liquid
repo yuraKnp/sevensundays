@@ -281,7 +281,7 @@
                         {% comment %} <div class="motto">{{ 'products.product.pairs_best_with_ver' | t }}:</div> {% endcomment %}
                         <div class="pairs">
                             {% for variant in product.variants %}
-                            <div class="pairs-item {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}" data-variant-id="{{ variant.id }}">
+                            <div class="pairs-item variant {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}" data-variant-id="{{ variant.id }}">
                                 <div class="img-wrapper">
                                   <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                 </div>

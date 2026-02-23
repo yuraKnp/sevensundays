@@ -339,12 +339,12 @@ jQuery(function ($) {
 
             // 1. Add the main product
             items.push({
-            id: $form.find('[name="id"]').val(),
-            quantity: $('.quantity .quantity__input').val() || 1
+                id: $form.find('[name="id"]').val(),
+                quantity: $('.quantity .quantity__input').val() || 1
             });
 
             // 2. Add any checked upsells
-            $('.pairs-item.active').each(function() {
+            $('.pairs-item.active:not(.variant)').each(function() {
                 items.push({
                     id: $(this).data('variant-id'),
                     quantity: 1
