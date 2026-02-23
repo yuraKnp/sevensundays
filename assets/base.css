@@ -4629,3 +4629,9 @@ body.red form .btn b{
 .ch-box-wrap .label{
   color: var(--clr-text-6)!important;
 }
+
+.pairs-item.disabled{
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
