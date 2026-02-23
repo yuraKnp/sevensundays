@@ -452,7 +452,7 @@ jQuery(function ($) {
     });
 
     //select pairs
-    $(document).on('click', '.pairs .pairs-item', function(){
+    $(document).on('click', '.pairs .pairs-item:not(.variant)', function(){
         $(this).toggleClass('active');
     });
 
