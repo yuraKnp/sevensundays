@@ -230,20 +230,20 @@
 
                           {% assign variant_id = selected_product.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id != blank %}
-                            {% assign variant_id = upsell_variant_id %}
+                            {% assign variant_id = upsell_variant_id | plus: 0 %}
                             {% assign test = selected_product.variants | where: "id", variant_id | first %}
-                            <pre>{{ selected_product.variants | json }}</pre>
+                            {% comment %} <pre>{{ selected_product.variants | json }}</pre> {% endcomment %}
                           {% endif %}
 
                           {% assign variant_id_sec = selected_product_sec.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_sec != blank %}
-                            {% assign variant_id_sec = upsell_variant_id_sec %}
+                            {% assign variant_id_sec = upsell_variant_id_sec | plus: 0 %}
                             {% assign selected_product_sec = selected_product_sec.variants | where: "id", variant_id_sec | first %}
                           {% endif %}
 
                           {% assign variant_id_third = selected_product_third.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_third != blank %}
-                            {% assign variant_id_third = upsell_variant_id_third %}
+                            {% assign variant_id_third = upsell_variant_id_third | plus: 0 %}
                             {% assign selected_product_third = selected_product_third.variants | where: "id", variant_id_third | first %}
                           {% endif %}
 
