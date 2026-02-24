@@ -121,9 +121,10 @@
     },
     "product_faq_finfX4": {
       "type": "product-faq",
+      "disabled": true,
       "name": "Product FAQ",
       "settings": {
-        "title": "Warum du es lieben wirst",
+        "title": "",
         "left_image": "shopify://shop_images/2025_11_24_SevenSundays3470-web.jpg",
         "right_image": "shopify://shop_images/2025_11_24_SevenSundays3161-web.jpg"
       }
