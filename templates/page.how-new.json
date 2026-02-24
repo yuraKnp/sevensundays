@@ -449,6 +449,14 @@
             "description": "Personal Trainer & Performance Coach"
           }
         },
+        "slide_KwWhnx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ben-zwiehoff-seven-sundays-modular-sleep-system.jpg",
+            "title": "Ben Zwiehoff",
+            "description": "Profi-Radsportler, BORA–Hansgrohe Team"
+          }
+        },
         "image_7bUEMR": {
           "type": "image",
           "settings": {
@@ -502,6 +510,7 @@
         "slide_NhFTH7",
         "slide_QnJAM9",
         "slide_6LeGy4",
+        "slide_KwWhnx",
         "image_7bUEMR",
         "image_dCmgKy",
         "image_nRa8xA",

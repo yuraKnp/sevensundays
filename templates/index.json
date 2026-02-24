@@ -116,7 +116,7 @@
           "settings": {
             "slide_image": "shopify://shop_images/Calming-min.jpg",
             "slide_heading": "Für tiefe Entspannung",
-            "slide_desc": "Memory-Effekt für schwereloses Liegen. Beruhigt, entlastet und fördert Durchblutung.",
+            "slide_desc": "Memory-Effekt für schwereloses Liegen. Reduziert Bewegungen, entlastet und fördert die Durchblutung.",
             "slide_tag": "Beruhigend"
           }
         },
@@ -377,12 +377,23 @@
             "job": "Personal Trainer & Performance Coach",
             "slide_desc": "Bei meinen Klienten – ob CEO, Profisportler oder Schauspielerin – geht es längst nicht mehr um Optik. Es geht um maximale Power, jederzeit abrufbar. Körperlich und mental. Und genau da setzt SEVEN SUNDAYS an: Personalisierte Regeneration statt One-Size-Fits-All. So simpel, so logisch – und so überfällig. Für mich keine Nacht mehr ohne."
           }
+        },
+        "slide_RgcYr8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ben-zwiehoff-seven-sundays-modular-sleep-system.jpg",
+            "tags": "",
+            "name": "Ben Zwiehoff",
+            "job": "Profi-Radsportler, BORA–Hansgrohe Team",
+            "slide_desc": "Erholung ist für mich genauso entscheidend wie Training. Seit ich auf dem Seven Sundays System schlafe, wache ich spürbar erholter auf – und kann im Training voll angreifen."
+          }
         }
       },
       "block_order": [
         "slide_CT7bNr",
         "slide_LTRrDr",
-        "slide_aqjTMr"
+        "slide_aqjTMr",
+        "slide_RgcYr8"
       ],
       "name": "Testimonial slider",
       "settings": {
