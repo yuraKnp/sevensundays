@@ -235,7 +235,7 @@
 
                           {% endif %}
 
-                          {% assign variant_id_sec = selected_product.selected_or_first_available_variant.id %}
+                          {% assign variant_id_sec = selected_product_sec.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_sec != blank %}
                             {% assign variant_id_sec = upsell_variant_id_sec %}
                             {% assign selected_product_sec = selected_product.variants | where: "id", variant_id_sec | first %}
