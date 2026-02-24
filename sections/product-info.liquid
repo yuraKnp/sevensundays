@@ -230,17 +230,17 @@
 
                           {% assign variant_id = selected_product.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id != blank %}
-                            {% variant_id = upsell_variant_id %}
+                            {% assign variant_id = upsell_variant_id %}
                           {% endif %}
 
                           {% assign variant_id_sec = selected_product.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_sec != blank %}
-                            {% variant_id_sec = upsell_variant_id_sec %}
+                            {% assign variant_id_sec = upsell_variant_id_sec %}
                           {% endif %}
 
                           {% assign variant_id_third = selected_product_third.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_third != blank %}
-                            {% variant_id_third = upsell_variant_id_third %}
+                            {% assign variant_id_third = upsell_variant_id_third %}
                           {% endif %}
                           
                           {%  if selected_product != blank or selected_product_sec != blank %}
