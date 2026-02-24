@@ -231,24 +231,30 @@
                           {% assign variant_id = selected_product.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id != blank %}
                             {% assign variant_id = upsell_variant_id %}
+                            
                           {% endif %}
 
                           {% assign variant_id_sec = selected_product.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_sec != blank %}
                             {% assign variant_id_sec = upsell_variant_id_sec %}
+                            
                           {% endif %}
 
                           {% assign variant_id_third = selected_product_third.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_third != blank %}
                             {% assign variant_id_third = upsell_variant_id_third %}
                           {% endif %}
+
+                          {% assign variant_f = product.variants | where: "id", variant_id | first %}
+                          {% assign variant_s = product.variants | where: "id", variant_id_sec | first %}
+                          {% assign variant_t = product.variants | where: "id", variant_id_third | first %}
                           
                           {%  if selected_product != blank or selected_product_sec != blank %}
                             <div class="pairs-wrapp">
                                 <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                                 <div class="pairs">
                                     {%  if selected_product != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ variant_id }}">
+                                    <div class="pairs-item {% if !variant_f %} disabled {% endif %}" data-variant-id="{{ variant_id }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -262,7 +268,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_sec != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ variant_id_sec }}">
+                                    <div class="pairs-item {% if !variant_s %} disabled {% endif %}" data-variant-id="{{ variant_id_sec }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -276,7 +282,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_third != blank %}
-                                    <div class="pairs-item " data-variant-id="{{ variant_id_third }}">
+                                    <div class="pairs-item {% if !variant_t %} disabled {% endif %}" data-variant-id="{{ variant_id_third }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_third.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
