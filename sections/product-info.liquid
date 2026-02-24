@@ -229,22 +229,28 @@
                           {% assign upsell_variant_id_third = block.settings.upsell_variant_id_third %}
 
                           {% assign variant_id = selected_product.selected_or_first_available_variant.id %}
+                          {% assign subttile = selected_product.metafields.my_fields.subtitle %}
                           {% if upsell_variant_id != blank %}
                             {% assign variant_id = upsell_variant_id | plus: 0 %}
                             {% assign selected_product = selected_product.variants | where: "id", variant_id | first %}
                             {% comment %} <pre>{{ selected_product.variants | json }}</pre> {% endcomment %}
+                            {% assign subttile = selected_product.metafields.custom.subtitle%}
                           {% endif %}
 
+                          {% assign subttile_sec = selected_product_sec.metafields.my_fields.subtitle %}
                           {% assign variant_id_sec = selected_product_sec.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_sec != blank %}
                             {% assign variant_id_sec = upsell_variant_id_sec | plus: 0 %}
                             {% assign selected_product_sec = selected_product_sec.variants | where: "id", variant_id_sec | first %}
+                            {% assign subttile_sec = selected_product_sec.metafields.custom.subtitle%}
                           {% endif %}
 
+                          {% assign subttile_third = selected_product_third.metafields.my_fields.subtitle %}
                           {% assign variant_id_third = selected_product_third.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_third != blank %}
                             {% assign variant_id_third = upsell_variant_id_third | plus: 0 %}
                             {% assign selected_product_third = selected_product_third.variants | where: "id", variant_id_third | first %}
+                            {% assign subttile_third = selected_product_third.metafields.custom.subtitle%}
                           {% endif %}
 
                           
@@ -264,7 +270,7 @@
                                         </div>
                                         <div class="content">
                                             <div class="text text-sm"><b>{{ selected_product.title }}</b></div>
-                                            <div class="text text-sm">{{ selected_product.metafields.my_fields.subtitle }}</div>
+                                            <div class="text text-sm">{{ subttile }}</div>
                                         </div>
                                         <div class="btn btn-third">
                                             <b>+ {{ selected_product.price | money }}</b>
@@ -278,7 +284,7 @@
                                         </div>
                                         <div class="content">
                                             <div class="text text-sm"><b>{{ selected_product_sec.title }}</b></div>
-                                            <div class="text text-sm">{{ selected_product_sec.metafields.my_fields.subtitle }}</div>
+                                            <div class="text text-sm">{{ subttile_sec }}</div>
                                         </div>
                                         <div class="btn btn-third">
                                             <b>+ {{ selected_product_sec.price | money }}</b>
@@ -292,7 +298,7 @@
                                         </div>
                                         <div class="content">
                                             <div class="text text-sm"><b>{{ selected_product_third.title }}</b></div>
-                                            <div class="text text-sm">{{ selected_product_third.metafields.my_fields.subtitle }}</div>
+                                            <div class="text text-sm">{{ subttile_third }}</div>
                                         </div>
                                         <div class="btn btn-third">
                                             <b>+ {{ selected_product_third.price | money }}</b>
