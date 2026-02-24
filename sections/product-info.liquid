@@ -254,7 +254,7 @@
                                 <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                                 <div class="pairs">
                                     {%  if selected_product != blank %}
-                                    <div class="pairs-item {% if !variant_f %} disabled {% endif %}" data-variant-id="{{ variant_id }}">
+                                    <div class="pairs-item {% if variant_f and variant_f.available == false %} disabled {% endif %}" data-variant-id="{{ variant_id }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -268,7 +268,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_sec != blank %}
-                                    <div class="pairs-item {% if !variant_s %} disabled {% endif %}" data-variant-id="{{ variant_id_sec }}">
+                                    <div class="pairs-item {% if variant_s and variant_s.available == false %} disabled {% endif %}" data-variant-id="{{ variant_id_sec }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -282,7 +282,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_third != blank %}
-                                    <div class="pairs-item {% if !variant_t %} disabled {% endif %}" data-variant-id="{{ variant_id_third }}">
+                                    <div class="pairs-item {% if variant_t and variant_t.available == false %} disabled {% endif %}" data-variant-id="{{ variant_id_third }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_third.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
