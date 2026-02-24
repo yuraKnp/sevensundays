@@ -31,9 +31,12 @@
         "pairs_best_with_pQhe7V": {
           "type": "pairs_best_with",
           "settings": {
-            "upsell_product": "ersatzbezug-fur-copy",
+            "upsell_product": "pillow-cover",
             "upsell_product_sec": "reisetasche-nackenkissen-und-seitenschlaferkissen-copy",
-            "upsell_product_third": ""
+            "upsell_product_third": "",
+            "upsell_variant_id": "54689386365196",
+            "upsell_variant_id_sec": "",
+            "upsell_variant_id_third": ""
           }
         },
         "buy_buttons_WaiNe3": {
