@@ -238,13 +238,13 @@
                           {% assign variant_id_sec = selected_product_sec.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_sec != blank %}
                             {% assign variant_id_sec = upsell_variant_id_sec %}
-                            {% assign selected_product_sec = selected_product.variants | where: "id", variant_id_sec | first %}
+                            {% assign selected_product_sec = selected_product_sec.variants | where: "id", variant_id_sec | first %}
                           {% endif %}
 
                           {% assign variant_id_third = selected_product_third.selected_or_first_available_variant.id %}
                           {% if upsell_variant_id_third != blank %}
                             {% assign variant_id_third = upsell_variant_id_third %}
-                            {% assign selected_product_third = selected_product.variants | where: "id", variant_id_third | first %}
+                            {% assign selected_product_third = selected_product_third.variants | where: "id", variant_id_third | first %}
                           {% endif %}
 
                           
@@ -272,7 +272,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_sec != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ selected_product_sec.selected_or_first_available_variant.id }}">
+                                    <div class="pairs-item" data-variant-id="{{ variant_id_sec }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
