@@ -264,7 +264,7 @@
                                 <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                                 <div class="pairs">
                                     {%  if selected_product != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ variant_id }}">
+                                    <div class="pairs-item {% unless selected_product.available %}disabled{% endunless %}" data-variant-id="{{ variant_id }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -278,7 +278,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_sec != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ variant_id_sec }}">
+                                    <div class="pairs-item {% unless selected_product_sec.available %}disabled{% endunless %}" data-variant-id="{{ variant_id_sec }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -292,7 +292,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_third != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ variant_id_third }}">
+                                    <div class="pairs-item {% unless selected_product_third.available %}disabled{% endunless %}" data-variant-id="{{ variant_id_third }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_third.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
