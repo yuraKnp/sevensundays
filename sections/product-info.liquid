@@ -232,7 +232,7 @@
                           {% if upsell_variant_id != blank %}
                             {% assign variant_id = upsell_variant_id %}
                             {% assign test = selected_product.variants | where: "id", variant_id | first %}
-                            <pre>{{ test | json }}</pre>
+                            <pre>{{ selected_product.variants | json }}</pre>
                           {% endif %}
 
                           {% assign variant_id_sec = selected_product_sec.selected_or_first_available_variant.id %}
