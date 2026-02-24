@@ -254,7 +254,7 @@
                           {% assign variant_t = product.variants | where: "id", variant_id_third | first %} {% endcomment %}
                           
                           {%  if selected_product != blank or selected_product_sec != blank %}
-                            <div class="pairs-wrapp">
+                            <div class="pairs-wrapp {{ variant_id }}">
                                 <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                                 <div class="pairs">
                                     {%  if selected_product != blank %}
