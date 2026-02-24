@@ -224,13 +224,31 @@
                           {% assign selected_product = block.settings.upsell_product %}
                           {% assign selected_product_sec = block.settings.upsell_product_sec %}
                           {% assign selected_product_third = block.settings.upsell_product_third %}
+                          {% assign upsell_variant_id = block.settings.upsell_variant_id %}
+                          {% assign upsell_variant_id_sec = block.settings.upsell_variant_id_sec %}
+                          {% assign upsell_variant_id_third = block.settings.upsell_variant_id_third %}
+
+                          {% assign variant_id = selected_product.selected_or_first_available_variant.id %}
+                          {% if upsell_variant_id != blank %}
+                            {% variant_id = upsell_variant_id %}
+                          {% endif %}
+
+                          {% assign variant_id_sec = selected_product.selected_or_first_available_variant.id %}
+                          {% if upsell_variant_id_sec != blank %}
+                            {% variant_id = upsell_variant_id_sec %}
+                          {% endif %}
+
+                          {% assign variant_id_third = selected_product_third.selected_or_first_available_variant.id %}
+                          {% if upsell_variant_id_third != blank %}
+                            {% variant_id_third = upsell_variant_id_third %}
+                          {% endif %}
                           
                           {%  if selected_product != blank or selected_product_sec != blank %}
                             <div class="pairs-wrapp">
                                 <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                                 <div class="pairs">
                                     {%  if selected_product != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ selected_product.selected_or_first_available_variant.id }}">
+                                    <div class="pairs-item" data-variant-id="{{ variant_id }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -244,7 +262,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_sec != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ selected_product_sec.selected_or_first_available_variant.id }}">
+                                    <div class="pairs-item" data-variant-id="{{ variant_id_sec }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -258,7 +276,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_third != blank %}
-                                    <div class="pairs-item " data-variant-id="{{ selected_product_third.selected_or_first_available_variant.id }}">
+                                    <div class="pairs-item " data-variant-id="{{ variant_id_third }}">
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_third.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -567,6 +585,21 @@ document.addEventListener('DOMContentLoaded', function () {
           "type": "product",
           "id": "upsell_product_third",
           "label": "Select Upsell Product third"
+        },
+        {
+          "type": "text",
+          "id": "upsell_variant_id",
+          "label": "Upsell Variant ID"
+        },
+        {
+          "type": "text",
+          "id": "upsell_variant_id_sec",
+          "label": "Upsell Variant ID Sec"
+        },
+        {
+          "type": "text",
+          "id": "upsell_variant_id_third",
+          "label": "Upsell Variant ID Third"
         },
       ]
     },
