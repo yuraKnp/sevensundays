@@ -4635,3 +4635,7 @@ body.red form .btn b{
   pointer-events: none;
   cursor: default;
 }
+
+.product-form__submit.btn{
+  text-transform: none!important;
+}
