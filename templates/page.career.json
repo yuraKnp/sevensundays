@@ -339,9 +339,10 @@
         "subtitle": "",
         "title": "Hier startet deine Traumkarriere als Schlafberater:in",
         "desc": "Hinterlasse deine Kontaktdaten – ich melde mich telefonisch bei dir, um deinen idealen Einstieg bei uns zu besprechen.",
+        "image_before_form": "shopify://shop_images/Form_Field_image_Home_Career_Buy_box.png",
         "form_link": "https://formspree.io/f/xlgjjkbb",
-        "title_before_form": "",
-        "desc_before_form": "",
+        "title_before_form": "Hier fragst du deinen Kennenlern-Call an",
+        "desc_before_form": "Ich melde mich bei Dir – für Deine Fragen und die nächsten Schritte.",
         "terms_and_conditions": "<p>Mit dem Absenden dieses Formulars stimme ich den <a href=\"https://seven-sundays.shop/policies/terms-of-service\" target=\"_blank\">Nutzungsbedingungen</a> und der <a href=\"https://seven-sundays.shop/policies/privacy-policy\" target=\"_blank\" title=\"https://seven-sundays.shop/policies/privacy-policy\">Datenschutzrichtlinie</a> zu.</p>"
       }
     },
