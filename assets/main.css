@@ -370,7 +370,7 @@ h6,
 /*--------------------*/
 /*  Buttons           */
 /*--------------------*/
-.btn {z-index: 1;position: relative;-webkit-user-select: none;-moz-user-select: none;user-select: none;cursor: pointer;overflow: hidden;font-size: 16px;line-height: 20px;font-weight: 700;color: var(--clr-black);text-decoration: none;padding: 11px 16px 13px;padding-left: 20px;border: none;border-radius: 22px;background-color: var(--clr-gold);transition: var(--transition-1);flex-shrink: 0;display: inline-flex;align-items: center;justify-content: center;text-transform: capitalize;}
+.btn {z-index: 1;position: relative;-webkit-user-select: none;-moz-user-select: none;user-select: none;cursor: pointer;overflow: hidden;font-size: 16px;line-height: 20px;font-weight: 700;color: var(--clr-black);text-decoration: none;padding: 11px 16px 13px;padding-left: 20px;border: none;border-radius: 22px;background-color: var(--clr-gold);transition: var(--transition-1);flex-shrink: 0;display: inline-flex;align-items: center;justify-content: center;}
 .btn b {display: inline-block;line-height: inherit;font-weight: inherit;color: currentColor;}
 .btn > * + * {margin-left: 8px;}
 .btn-primary {background-color: var(--clr-white-2);color: var(--clr-black);}
