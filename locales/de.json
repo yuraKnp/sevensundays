@@ -23,7 +23,9 @@
       "city_p" : "Wo wir dich beraten dürfen",
       "city_p_c": "Wo du wohnst",
       "thank_you_t" : "Vielen Dank für Ihre Anfrage.",
-      "thank_you_d" : "Wir werden uns in Kürze mit Ihnen in Verbindung setzen."
+      "thank_you_d" : "Wir werden uns in Kürze mit Ihnen in Verbindung setzen.",
+      "partner": "PARTNER-CODE",
+      "partner_p": "Falls Du von einem unserer Partner empfohlen wurdest",
     },
     "menu":{
       "get_sleep_system": "Schlafsystem",

@@ -23,7 +23,9 @@
       "city_p": "Where the consultation will take place",
       "city_p_c": "Where you are based",
       "thank_you_t": "Thank you for Your request",
-      "thank_you_d": "We will contact you shortly"
+      "thank_you_d": "We will contact you shortly",
+      "partner": "PARTNER CODE",
+      "partner_p": "If you were referred by one of our partners",
     },
     "menu": {
       "get_sleep_system": "Get Sleep System",
