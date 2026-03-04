@@ -172,13 +172,15 @@ header.scrolled .h-lang a:hover {color: var(--clr-primary);}
 @media (min-width: 1200px) and (max-width: 1400px) {
 .h-inner::before {left: -20px;right: -20px;}
 }
-header.type2:not(.scrolled) .h-links a {color: #de702e;}
+header.scrolled .h-links ul li:last-child a,
+header.open-menu .h-links ul li:last-child a {color: #de702e;}
+
 @media (min-width: 1200px) {
 header.scrolled {transform: translateY(calc(var(--h-top-rating) * -1));}
 header .h-links a:hover,
 header.scrolled .h-links a:hover {color: var(--clr-primary);}
-header.scrolled .h-links ul li:last-child a:hover {color: var(--clr-primary);}
 
+header.type2:not(.scrolled) .h-links a {color: var(--clr-text-4);}
 .h-cart:hover {background-color: var(--clr-title);}
 }
 @media (max-width: 1199px) {
