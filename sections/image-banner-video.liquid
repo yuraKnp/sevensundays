@@ -87,7 +87,7 @@
                         <div class="banner-info text-center">
                             <div class="rating">
                                 {%- assign svg_icon_url = 'icon-rating.svg' | asset_url -%}
-                                <img width="380" height="240" src="{{ svg_icon_url }}" alt="icon" loading="lazy">
+                                {% comment %} <img width="380" height="240" src="{{ svg_icon_url }}" alt="icon" loading="lazy"> {% endcomment %}
                                 <span>{{ 'general.banner.trustpilot' | t }}</span>
                             </div>
                             {%- for block in section.blocks -%}
