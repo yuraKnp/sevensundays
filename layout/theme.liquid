@@ -378,7 +378,8 @@
 
     {% if settings.preload_home_video != blank %}
     {% assign selected_video = settings.preload_home_video %}
-    {% assign video_url = selected_video.sources.first.url %}
+    {% comment %} {% assign video_url = selected_video.sources.first.url %} {% endcomment %}
+    {% assign video_url = selected_video.sources[1].url %}
       <link rel="preload" as="video" href="{{ video_url }}" type="video/mp4" >
     {% endif %}
 

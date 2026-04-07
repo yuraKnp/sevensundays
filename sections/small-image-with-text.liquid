@@ -45,7 +45,8 @@
                     {%- assign image = section.settings.image -%}
                     {% assign image_url = image | image_url  %}
                     {% assign selected_video = section.settings.hero_video_file %}
-                    {% assign video_url = selected_video.sources.first.url %}
+                    {% comment %} {% assign video_url = selected_video.sources.first.url %} {% endcomment %}
+                    {% assign video_url = selected_video.sources[1].url %}
                     {% if video_url != blank %}
                     <div class="smart-video-block video-block">
                         <img width="380" height="240" src="{{ image_url }}" alt="" loading="lazy">

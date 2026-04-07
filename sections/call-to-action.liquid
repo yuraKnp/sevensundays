@@ -14,7 +14,8 @@
             }}
             {% endif %}
             {% assign selected_video = section.settings.hero_video_file %}
-            {% assign video_url = selected_video.sources.first.url %}
+            {% comment %} {% assign video_url = selected_video.sources.first.url %} {% endcomment %}
+            {% assign video_url = selected_video.sources[1].url %}
 
             {% if video_url != blank %}
                 <div class="video video-present">

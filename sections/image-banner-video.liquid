@@ -71,7 +71,8 @@
           
           {% assign selected_video = section.settings.hero_video_file %}
           {% comment %} Get the URL of the first source (often the main .mp4) {% endcomment %}
-          {% assign video_url = selected_video.sources.first.url %}
+          {% comment %} {% assign video_url = selected_video.sources.first.url %} {% endcomment %}
+          {% assign video_url = selected_video.sources[1].url %}
 
           {% if video_url != blank %}
             <!-- to display the video, add a class 'video-present' to the video -->
