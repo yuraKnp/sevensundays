@@ -445,3 +445,7 @@ h6,
 .btn-close {--bw: 32px;}
 .video-btn {--size: 32px;}
 }
+
+.pd-main-img .tags{
+    display: none;
+}
