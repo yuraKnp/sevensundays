@@ -49,7 +49,7 @@
           "type": "collapsible_tab_a_s",
           "settings": {
             "icon": "shopify://shop_images/delivery-icons-1.svg",
-            "content": "Schweizer Präzision"
+            "content": "Swiss Engineering"
           }
         },
         "collapsible_tab_a_s_bzQkpd": {
@@ -63,7 +63,7 @@
           "type": "collapsible_tab_a_s",
           "settings": {
             "icon": "shopify://shop_images/delivery-icons-3.svg",
-            "content": "Lieferung in 2–3 Tagen"
+            "content": "Lieferung in 3–4 Werktagen"
           }
         },
         "collapsible_tab_HMwbPJ": {
@@ -84,7 +84,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Garantie, Versand & Rückgabe",
-            "content": "<p>Kostenloser Versand via DHL (ab € 120,00 Warenwert) innerhalb von 2–3 Werktagen. 14-tägiges Rückgaberecht mit voller Rückerstattung bei Unzufriedenheit. Swiss Engineered Quality mit Premium-Herstellergarantie.</p>"
+            "content": "<p>Kostenloser Versand via DHL (ab € 120,00 Warenwert) innerhalb von 3–4 Werktagen. 14-tägiges Rückgaberecht mit voller Rückerstattung bei Unzufriedenheit. Swiss Engineered Quality mit Premium-Herstellergarantie.</p>"
           }
         }
       },
