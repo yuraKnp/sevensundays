@@ -157,7 +157,7 @@
       "inventory_low_stock_show_count": "Low stock: {{ quantity }} left",
       "inventory_out_of_stock": "Out of stock",
       "inventory_out_of_stock_continue_selling": "In stock",
-      "ship": "ships within 2–3 business days",
+      "ship": "ships within 3–4 business days",
       "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
