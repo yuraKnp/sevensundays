@@ -20,13 +20,21 @@
             "text": "18 % besserer Schlaf – wissenschaftlich belegt",
             "link": ""
           }
+        },
+        "announcement_FKdwYg": {
+          "type": "announcement",
+          "settings": {
+            "text": "Bewertet mit 4,5/5 auf Trustpilot – \"Exzellent\"",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_FKdwYg"
       ],
       "settings": {
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "color_scheme": "scheme-d671c85e-3608-43fd-b840-a146f19e890b",
         "show_line_separator": true,
