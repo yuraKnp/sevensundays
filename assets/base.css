@@ -4651,3 +4651,8 @@ body.red form .btn b{
 .announcement-bar__message svg{
   display: none!important;
 }
+
+.tp-widget-trustscore {
+    font-family: var(--ff-1);
+    text-transform: uppercase;
+}
