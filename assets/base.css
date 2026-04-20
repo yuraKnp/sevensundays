@@ -4643,3 +4643,7 @@ body.red form .btn b{
 .form-expert-block{
   justify-content: space-between;
 }
+
+.announcement-bar-slider .slider-button{
+  display: none!important;
+}
