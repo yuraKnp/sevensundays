@@ -338,6 +338,9 @@
 
 <footer itemscope itemtype="http://schema.org/Organization">
 
+    {%- if template == 'product' or template == 'product.pillow' or template == 'product.pillow1' or template == 'product.pillow2' or template == 'product.pillow3' -%}
+    {%- render 'reviews-star-widget' -%}
+    {%- endif -%}
 
 
     <meta itemprop="name" content="Name company">
@@ -485,9 +488,7 @@
     </div>
 </footer>
 
-  {%- if template == 'product' or template == 'product.pillow' or template == 'product.pillow1' or template == 'product.pillow2' or template == 'product.pillow3' -%}
-      {%- render 'reviews-star-widget' -%}
-  {%- endif -%}
+
 
 {% schema %}
 {
