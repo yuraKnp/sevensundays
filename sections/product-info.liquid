@@ -132,8 +132,8 @@
                           {%- case block.type -%}
                             {%- when 'rating' -%}
 
-                            <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
-                            
+                            {% comment %} <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div> {% endcomment %}
+                            <div class="ruk_rating_snippet" data-sku="[{{ product.variants | map: 'sku' | join: ';' }}]"></div>
                             {%- when 'title' -%}
                             <h1 class="h2 title">{{ product.title | escape }}</h1>
                             {%- when 'price' -%}
