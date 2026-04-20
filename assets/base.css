@@ -4647,3 +4647,7 @@ body.red form .btn b{
 .announcement-bar-slider .slider-button{
   display: none!important;
 }
+
+.announcement-bar__message svg{
+  display: none!important;
+}
