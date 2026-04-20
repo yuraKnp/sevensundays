@@ -4,10 +4,10 @@
 <script>
   window.addEventListener('DOMContentLoaded', function () {
     ratingSnippet("ruk_rating_snippet", {
-      store: "{%- if shop.domain contains ".ch" -%}my7sundays.ch{%- else -%}seven-sundays.shop-6357lJx{%- endif -%}",
+      store: "seven-sundays.shop-6357lJx",
       color: "#feb85d",
       linebreak: false,
-      usePolaris: false,
+      usePolaris: true,
       minRating: 4,
       text: {{ 'products.reviews.widgets.star_widget.title' | t | json }}
     });
