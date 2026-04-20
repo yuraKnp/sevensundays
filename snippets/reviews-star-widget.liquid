@@ -7,8 +7,8 @@
       store: "{%- if shop.domain contains ".ch" -%}my7sundays.ch{%- else -%}seven-sundays.shop-6357lJx{%- endif -%}",
       color: "#feb85d",
       linebreak: false,
-      usePolaris: true,
-      {% comment %} minRating: 4, {% endcomment %}
+      usePolaris: false,
+      minRating: 4,
       text: {{ 'products.reviews.widgets.star_widget.title' | t | json }}
     });
   })
