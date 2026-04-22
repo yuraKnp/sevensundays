@@ -622,6 +622,11 @@ document.addEventListener('DOMContentLoaded', function () {
     updateAvailability(variant);
   }
 
+  window.translations = {
+    inStock: {{ 'products.product.inventory_in_stock' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }}
+  };
+
   function updateAvailability(variant) {
     const statusEl = document.querySelector('.status');
 
@@ -629,10 +634,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (variant.available) {
       statusEl.style.setProperty('--clr-status', '61 161 92');
-      statusEl.querySelector('span').textContent = 'In stock';
+      statusEl.querySelector('span').textContent = window.translations.inStock;
     } else {
       statusEl.style.setProperty('--clr-status', '185 28 28');
-      statusEl.querySelector('span').textContent = 'Sold out';
+      statusEl.querySelector('span').textContent = window.translations.soldOut;
     }
   }
 
