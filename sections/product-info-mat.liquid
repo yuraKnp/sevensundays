@@ -294,9 +294,12 @@
                             section_id: section.id,
                             show_pickup_availability: true
                           -%}
-                        <div class="btn btn-secondary btn-block add-cart">
-                            <b>Schlafberatung anfragen</b>
-                        </div>
+                          
+                        {% if section.settings.button_after_add_to_cart != blank and section.settings.button_after_add_to_cart_text != blank %}
+                        <a href="{{ section.settings.button_after_add_to_cart }}" target="_blank" class="btn btn-secondary btn-block add-cart">
+                            <b>{{ section.settings.button_after_add_to_cart_text }}</b>
+                        </a>
+                        {% endif %}
                       {% endcase %}
                     {% endfor %}
                     {% else %}
@@ -824,6 +827,11 @@ document.addEventListener('DOMContentLoaded', function () {
       "id": "slider_tags",
       "label": "Slider gallery tags",
       "info": "Add comma separated list of tags, each will be show on single image in gallery"
+    },
+    {
+      "type": "url",
+      "id": "button_after_add_to_cart_text",
+      "label": "Button after add to cart text"
     },
     {
       "type": "url",
