@@ -1237,3 +1237,8 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .btn-secondary.add-cart{
     margin-top: 0px;
 }
+
+.text.text-md .price-item{
+    font-size: var(--text-md);
+    line-height: 1.4;
+}
