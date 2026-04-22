@@ -593,10 +593,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     if (descEl) {
-        descEl.textContent = variant.additional_label_desc || '';
+        descEl.innerHTML = variant.additional_label_desc || '';
     }
     if (descElSec) {
-        descElSec.textContent = variant.additional_label_sec || '';
+        descElSec.innerHTML = variant.additional_label_sec || '';
     }
 
     fetch(`${window.location.pathname}?variant=${variant.id}&section_id=${sectionId}`)
