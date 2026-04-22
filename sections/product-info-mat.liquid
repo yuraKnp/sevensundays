@@ -513,6 +513,97 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const product = window.productData;
+  const sectionId = "{{ section.id }}";
+
+  // store selected options (same order as Shopify)
+  let selectedOptions = new Array(product.options.length).fill(null);
+
+  // init from active items
+  document.querySelectorAll('.product-option').forEach((optionEl, index) => {
+    const active = optionEl.querySelector('.quantity-item.active');
+    if (active) {
+      selectedOptions[index] = active.dataset.value;
+    }
+  });
+
+  updateVariant(); // 🔥 set correct variant on load
+
+  // click handler
+  document.querySelectorAll('.quantity-item').forEach(item => {
+    item.addEventListener('click', function () {
+
+      const parent = this.closest('.product-option');
+      const optionIndex = parseInt(parent.dataset.optionIndex);
+
+      // UI active state
+      parent.querySelectorAll('.quantity-item').forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+
+      // update selected option
+      selectedOptions[optionIndex] = this.dataset.value;
+
+      updateVariant();
+    });
+  });
+
+  function updateVariant() {
+    const variant = product.variants.find(v => {
+      return v.options.every((opt, i) => opt === selectedOptions[i]);
+    });
+
+    if (!variant) {
+      console.log('No matching variant', selectedOptions);
+      return;
+    }
+
+    // ✅ update hidden input (CRITICAL)
+    const idInput = document.querySelector('input[name="id"]');
+    if (idInput) idInput.value = variant.id;
+
+    // ✅ update price (your existing method)
+    fetch(`${window.location.pathname}?variant=${variant.id}&section_id=${sectionId}`)
+      .then(res => res.text())
+      .then(html => {
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+
+        const newPrice = doc.querySelector('#price-' + sectionId);
+        const currentPrice = document.querySelector('#price-' + sectionId);
+
+        if (newPrice && currentPrice) {
+          currentPrice.innerHTML = newPrice.innerHTML;
+        }
+      });
+
+    // ✅ update URL (optional but recommended)
+    const url = new URL(window.location);
+    url.searchParams.set('variant', variant.id);
+    window.history.replaceState({}, '', url);
+
+    // ✅ optional: update availability UI
+    updateAvailability(variant);
+  }
+
+  function updateAvailability(variant) {
+    const statusEl = document.querySelector('.status');
+
+    if (!statusEl) return;
+
+    if (variant.available) {
+      statusEl.style.setProperty('--clr-status', '61 161 92');
+      statusEl.querySelector('span').textContent = 'In stock';
+    } else {
+      statusEl.style.setProperty('--clr-status', '185 28 28');
+      statusEl.querySelector('span').textContent = 'Sold out';
+    }
+  }
+
+});
+</script>
+
 {% schema %}
 {
   "name": "Single product info mat",
