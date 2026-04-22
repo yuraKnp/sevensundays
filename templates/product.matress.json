@@ -154,25 +154,25 @@
             "show_gift_card_recipient": true
           }
         },
-        "collapsible_tab_a_s_Bz9krc": {
+        "collapsible_tab_a_s_QjDJMC": {
           "type": "collapsible_tab_a_s",
           "settings": {
-            "icon": "shopify://shop_images/delivery-icons-3.svg",
-            "content": "14 Tage kostenlose Rückgabe"
+            "icon": "shopify://shop_images/delivery-icons-1.svg",
+            "content": "Concierge Service"
           }
         },
         "collapsible_tab_a_s_grG98L": {
           "type": "collapsible_tab_a_s",
           "settings": {
             "icon": "shopify://shop_images/delivery-icons-2.svg",
-            "content": "Lieferung in 3–4 Werktagen"
+            "content": "Hauslieferung"
           }
         },
-        "collapsible_tab_a_s_QjDJMC": {
+        "collapsible_tab_a_s_Bz9krc": {
           "type": "collapsible_tab_a_s",
           "settings": {
-            "icon": "shopify://shop_images/delivery-icons-1.svg",
-            "content": "Swiss Engineering"
+            "icon": "shopify://shop_images/delivery-icons-3.svg",
+            "content": "14 Tage kostenlose Rückgabe"
           }
         },
         "pairs_best_with_h9Dapm": {
@@ -191,9 +191,9 @@
         "title_MqJ34a",
         "price_i3XCtQ",
         "buy_buttons_zh8geh",
-        "collapsible_tab_a_s_Bz9krc",
-        "collapsible_tab_a_s_grG98L",
         "collapsible_tab_a_s_QjDJMC",
+        "collapsible_tab_a_s_grG98L",
+        "collapsible_tab_a_s_Bz9krc",
         "pairs_best_with_h9Dapm"
       ],
       "name": "Single product info mat",
