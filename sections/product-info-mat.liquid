@@ -129,7 +129,7 @@
                                 <div class="trustpilot-widget" data-locale="de-DE" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5ff5d1f3b391a00001aac82e" data-style-height="40px" data-style-width="100%" data-token="4af8d245-a721-439b-962b-55d6ee830678">  <a href="" target="_blank" rel="noopener">Trustpilot</a></div>
                               {%- endif -%}
                             </div>
-                            {%- when 'price' -%}
+                            {% comment %} {%- when 'price' -%}
                             <div class="text text-md">
                               <div id="price-{{ section.id }}">
                                 {%- render 'price',
@@ -139,7 +139,7 @@
                                   price_class: 'price--large'
                                 -%}
                               </div>
-                            </div>
+                            </div> {% endcomment %}
                             {%-  when 'description' -%}
                             {%- if product.description -%}
                             <div class="text product-description">
@@ -266,6 +266,29 @@
                         <i></i>
                         <div class="text text-sm"><span>{{- 'products.product.inventory_in_stock' | t -}}</span>,&nbsp;{{- 'products.product.ship' | t -}}</div>
                     </div>
+                    {%- for block in section.blocks -%}
+                      {%- case block.type -%}
+                        {%- when 'price' -%}
+                            <div class="price-block">
+                                <div class="price">
+                                    <div class="caption">Gesamtpreis</div>
+                                    <div class="text text-md"><b>
+                                {%- render 'price',
+                                  product: product,
+                                  use_variant: true,
+                                  show_badges: true,
+                                  price_class: 'price--large'
+                                -%}
+                            </b></div>
+                                </div>
+                                <div class="delivery">
+                                    <div class="caption">Spedition</div>
+                                    <div class="text text-sm"><b>zzgl. 149 €</b></div>
+                                    <div class="text text-sm">inkl. Altmatrazen-Mitnahme</div>
+                                </div>
+                            </div>
+                      {% endcase %}
+                    {% endfor %}
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
                         {%- when 'buy_buttons' -%}
