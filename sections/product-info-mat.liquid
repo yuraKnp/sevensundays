@@ -266,7 +266,7 @@
                         {%- when 'price' -%}
                             <div class="price-block">
                                 <div class="price">
-                                    <div class="caption">Gesamtpreis</div>
+                                    <div class="caption">{{ 'products.product.total_price' | t }}</div>
                                     <div class="text text-md" id="price-{{ section.id }}"><b>
                                 {%- render 'price',
                                   product: product,
