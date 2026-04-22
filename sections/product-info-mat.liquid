@@ -496,6 +496,10 @@
       {% endfor %}
     ]
   };
+  window.translations = {
+    inStock: {{ 'products.product.inventory_in_stock' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }}
+  };
 </script>
 
 <script>
@@ -618,10 +622,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updateAvailability(variant);
   }
 
-  window.translations = {
-    inStock: {{ 'products.product.inventory_in_stock' | t | json }},
-    soldOut: {{ 'products.product.sold_out' | t | json }}
-  };
+
 
   function updateAvailability(variant) {
     const statusEl = document.querySelector('.status');
