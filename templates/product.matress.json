@@ -22,10 +22,6 @@
             "trustpilot": true
           }
         },
-        "price_MKjNkN": {
-          "type": "price",
-          "settings": {}
-        },
         "description_dgLa3m": {
           "type": "description",
           "settings": {}
@@ -40,6 +36,10 @@
             "upsell_variant_id_sec": "",
             "upsell_variant_id_third": ""
           }
+        },
+        "price_MKjNkN": {
+          "type": "price",
+          "settings": {}
         },
         "buy_buttons_WaiNe3": {
           "type": "buy_buttons",
@@ -104,9 +104,9 @@
       "block_order": [
         "rating_A3DAFi",
         "title_rBaRmh",
-        "price_MKjNkN",
         "description_dgLa3m",
         "pairs_best_with_pQhe7V",
+        "price_MKjNkN",
         "buy_buttons_WaiNe3",
         "discover_info_Y79BnV",
         "collapsible_tab_a_s_CrGik6",
