@@ -523,10 +523,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const product = window.productData;
   const sectionId = "{{ section.id }}";
 
-  // store selected options (same order as Shopify)
   let selectedOptions = new Array(product.options.length).fill(null);
 
-  // init from active items
   document.querySelectorAll('.product-option').forEach((optionEl, index) => {
     const active = optionEl.querySelector('.quantity-item.active');
     if (active) {
@@ -534,20 +532,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  updateVariant(); // 🔥 set correct variant on load
+  updateVariant();
 
-  // click handler
   document.querySelectorAll('.quantity-item').forEach(item => {
     item.addEventListener('click', function () {
 
       const parent = this.closest('.product-option');
       const optionIndex = parseInt(parent.dataset.optionIndex);
 
-      // UI active state
       parent.querySelectorAll('.quantity-item').forEach(el => el.classList.remove('active'));
       this.classList.add('active');
 
-      // update selected option
       selectedOptions[optionIndex] = this.dataset.value;
 
       updateVariant();
@@ -555,8 +550,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function updateVariant() {
-    console.log(product.variants);
-    console.log(selectedOptions);
     const variant = product.variants.find(v => {
       return v.options.every((opt, i) => opt === selectedOptions[i]);
     });
@@ -566,11 +559,9 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    // ✅ update hidden input (CRITICAL)
     const idInput = document.querySelector('input[name="id"]');
     if (idInput) idInput.value = variant.id;
 
-    // ✅ update price (your existing method)
     fetch(`${window.location.pathname}?variant=${variant.id}&section_id=${sectionId}`)
       .then(res => res.text())
       .then(html => {
@@ -584,12 +575,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
-    // ✅ update URL (optional but recommended)
     const url = new URL(window.location);
     url.searchParams.set('variant', variant.id);
     window.history.replaceState({}, '', url);
 
-    // ✅ optional: update availability UI
     updateAvailability(variant);
   }
 
