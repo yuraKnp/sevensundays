@@ -1211,3 +1211,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .ch-box-tooltip[data-tooltip-txt]:hover::before {opacity: 1;visibility: visible;}
 
 .pd-slider + .product-row {margin-top: var(--sp-8);}
+
+@media (min-width: 1200px) {
+    .pd-detail-info {
+        margin-left: var(--sp-xs);
+    }
+}
