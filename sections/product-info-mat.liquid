@@ -490,14 +490,13 @@
         {
           ...{{ variant | json }},
           additional_label: {{ variant.metafields.custom.additional_label_modular_sleep_system | json }},
-          additional_label_desc: {{ variant.metafields.custom.custom.additional_description_modular_sleep_system | json }},
+          additional_label_desc: {{ variant.metafields.custom.additional_description_modular_sleep_system | json }},
           additional_label_sec: {{ variant.metafields.custom.additional_description_komfort_layer | json }}
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ]
   };
 </script>
-
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
