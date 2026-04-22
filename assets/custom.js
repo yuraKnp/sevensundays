@@ -317,7 +317,7 @@ jQuery(function ($) {
 
         $bundleButtons.on('click', function() {
             // $('.quantity-item').removeClass('active');
-            $(this).closest('.quantity').find('.quantity-item').removeClass('active');
+            $(this).closest('.quantity-new').find('.quantity-item').removeClass('active');
             $(this).addClass('active');
             const selectedQty = $(this).attr('data-qty');
 
