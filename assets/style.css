@@ -1230,9 +1230,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .pd-delivery {overflow-y: clip;overflow-x: auto;scroll-snap-type: x mandatory;padding: 16px;margin-inline: -16px;}
 }
 
-/* .add-cart .shopify-payment-button{
+.add-cart .shopify-payment-button{
     display: none;
-} */
+}
 
 .btn-secondary.add-cart{
     margin-top: 0px;
@@ -1241,4 +1241,8 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .text.text-md .price-item{
     font-size: var(--text-md);
     line-height: 1.4;
+}
+
+.price-block .price__container{
+    display: block;
 }
