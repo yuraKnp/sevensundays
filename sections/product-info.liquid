@@ -136,7 +136,7 @@
                             <div class="ruk_rating_snippet" data-sku="{{ product.id }};{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
 
                             {%- when 'title' -%}
-                            <div class="title-wrapper">
+                            <div class="title-with-rating">
                               <h1 class="h2 title">{{ product.title | escape }}</h1>
                               {%- if block.settings.trustpilot -%}
                                 <div class="trustpilot-widget" data-locale="de-DE" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5ff5d1f3b391a00001aac82e" data-style-height="150px" data-style-width="100%" data-token="4af8d245-a721-439b-962b-55d6ee830678">  <a href="" target="_blank" rel="noopener">Trustpilot</a></div>
@@ -154,7 +154,7 @@
                               </div>
                             </div>
                             {%-  when 'description' -%}
-
+                            {%- if product.description -%}
                             <div class="text product-description">
                               <div class="content">
                               {{ product.description }}
@@ -163,6 +163,7 @@
                                   <b>{{ 'products.facets.show_more' | t }}</b>
                               </div>
                             </div>
+                            {%- endif -%}
                           {% endcase %}
                         {% endfor %}
                     </div>
