@@ -1209,3 +1209,5 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .ch-box-tooltip svg {display: block;width: 16px;height: 16px;}
 .ch-box-tooltip[data-tooltip-txt]:hover {color: var(--clr-red);}
 .ch-box-tooltip[data-tooltip-txt]:hover::before {opacity: 1;visibility: visible;}
+
+.pd-slider + .product-row {margin-top: var(--sp-8);}
