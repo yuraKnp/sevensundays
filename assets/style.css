@@ -1273,3 +1273,8 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
         font-size: var(--h3);
     }
 }
+
+
+.status{
+    margin-top: var(--sp-24);
+}
