@@ -1223,6 +1223,11 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .price-block .delivery {text-align: right;}
 .price-block + * {margin-top: var(--sp-32);}
 
+.pd-delivery {display: flex;align-items: center;justify-content: space-between;gap: 16px;padding-bottom: 16px;margin-block: var(--sp-16);border-bottom: 1px solid var(--clr-border);}
+
 @media (max-width: 767px) {
 .price-block .caption {font-size: 10px;}
+.pd-delivery {overflow-y: clip;overflow-x: auto;scroll-snap-type: x mandatory;padding: 16px;margin-inline: -16px;}
 }
+
+
