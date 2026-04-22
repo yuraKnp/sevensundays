@@ -555,6 +555,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function updateVariant() {
+    console.log(product.variants);
+    console.log(selectedOptions);
     const variant = product.variants.find(v => {
       return v.options.every((opt, i) => opt === selectedOptions[i]);
     });
