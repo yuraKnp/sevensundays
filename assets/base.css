@@ -1875,7 +1875,7 @@ input[type='checkbox'] {
 }
 
 /* component-quantity */
-.quantity {
+.quantity:not(.number) {
   color: rgba(var(--color-foreground));
   position: relative;
   width: calc(11rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
