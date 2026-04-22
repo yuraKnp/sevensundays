@@ -1217,3 +1217,12 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
         margin-left: var(--sp-xs);
     }
 }
+
+.price-block {display: flex;align-items: center;gap: var(--sp-8);flex-wrap: wrap;justify-content: space-between;padding: var(--sp-16);background-color: var(--clr-white);border-radius: var(--rd-1);}
+.price-block .caption {font-size: 12px;font-style: normal;font-weight: 500;line-height: 16px;letter-spacing: 0.75px;text-transform: uppercase;color: var(--clr-text);}
+.price-block .delivery {text-align: right;}
+.price-block + * {margin-top: var(--sp-32);}
+
+@media (max-width: 767px) {
+.price-block .caption {font-size: 10px;}
+}
