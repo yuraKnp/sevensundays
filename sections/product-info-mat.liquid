@@ -206,11 +206,6 @@
                           {% endif %}
 
                           
-
-                          {% comment %} {% assign variant_f = product.variants | where: "id", variant_id | first %}
-                          {% assign variant_s = product.variants | where: "id", variant_id_sec | first %}
-                          {% assign variant_t = product.variants | where: "id", variant_id_third | first %} {% endcomment %}
-                          
                           {%  if selected_product != blank or selected_product_sec != blank %}
                             <div class="pairs-wrapp">
                                 <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
