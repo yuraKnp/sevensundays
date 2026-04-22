@@ -1233,3 +1233,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .add-cart .shopify-payment-button{
     display: none;
 }
+
+.btn-secondary.add-cart{
+    margin-top: 0px;
+}
