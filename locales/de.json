@@ -139,6 +139,8 @@
   "products": {
     "product": {
       "pairs_best_with": "PASST AM BESTEN ZU",
+      "pairs_best_with_mat": "Dazu passend: Kissen",
+      "pairs_best_with_mat_right": "Modular · Memory · Schaum ",
       "pairs_best_with_ver": "ZU",
       "double_pack": "Doppelpack",
       "single_pack": "Einzelpack",

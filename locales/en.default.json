@@ -139,6 +139,8 @@
   "products": {
     "product": {
       "pairs_best_with": "PAIRS BEST WITH",
+      "pairs_best_with_mat": "Dazu passend: Kissen",
+      "pairs_best_with_mat_right": "Modular · Memory · Foam",
       "pairs_best_with_ver": "WITH",
       "double_pack": "Double pack",
       "single_pack": "Single Pack",
