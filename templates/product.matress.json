@@ -137,6 +137,12 @@
     "product_info_mat_kdx8Aa": {
       "type": "product-info-mat",
       "blocks": {
+        "title_MqJ34a": {
+          "type": "title",
+          "settings": {
+            "trustpilot": true
+          }
+        },
         "price_i3XCtQ": {
           "type": "price",
           "settings": {}
@@ -146,12 +152,6 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
-          }
-        },
-        "title_MqJ34a": {
-          "type": "title",
-          "settings": {
-            "trustpilot": true
           }
         },
         "collapsible_tab_a_s_Bz9krc": {
@@ -188,9 +188,9 @@
         }
       },
       "block_order": [
+        "title_MqJ34a",
         "price_i3XCtQ",
         "buy_buttons_zh8geh",
-        "title_MqJ34a",
         "collapsible_tab_a_s_Bz9krc",
         "collapsible_tab_a_s_grG98L",
         "collapsible_tab_a_s_QjDJMC",
