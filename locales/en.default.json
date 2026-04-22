@@ -138,6 +138,8 @@
   },
   "products": {
     "product": {
+      "shipping": "Shipping",
+      "remove_matrass": "including old mattress removal",
       "pairs_best_with": "PAIRS BEST WITH",
       "pairs_best_with_mat": "Dazu passend: Kissen",
       "pairs_best_with_mat_right": "Modular · Memory · Foam",

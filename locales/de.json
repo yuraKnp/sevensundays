@@ -138,6 +138,8 @@
   },
   "products": {
     "product": {
+      "shipping": "Spedition",
+      "remove_matrass": "inkl. Altmatrazen-Mitnahme",
       "pairs_best_with": "PASST AM BESTEN ZU",
       "pairs_best_with_mat": "Dazu passend: Kissen",
       "pairs_best_with_mat_right": "Modular · Memory · Schaum ",
