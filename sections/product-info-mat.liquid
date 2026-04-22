@@ -157,7 +157,7 @@
                         {% endfor %}
                     </div>
                     {% for option in product.options_with_values %}
-                    <div class="quantity-wrapp size2" data-option-index="{{ forloop.index0 }}">
+                    <div class="quantity-wrapp product-option size2" data-option-index="{{ forloop.index0 }}">
                           {% if option.name == "Size" %}
                             <div class="text"><b>Größe</b></div>
                             <div class="motto">Einzelbett</div>
@@ -523,7 +523,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let selectedOptions = new Array(product.options.length).fill(null);
 
   // init from active items
-  document.querySelectorAll('.product-option').forEach((optionEl, index) => {
+  document.querySelectorAll('.quantity-wrapp').forEach((optionEl, index) => {
     const active = optionEl.querySelector('.quantity-item.active');
     if (active) {
       selectedOptions[index] = active.dataset.value;
