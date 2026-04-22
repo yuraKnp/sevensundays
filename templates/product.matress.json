@@ -200,7 +200,8 @@
       "settings": {
         "number_slide_images": 2,
         "slider_tags": "",
-        "left_button_link": "shopify://pages/experience",
+        "button_after_add_to_cart_text": "Schlafberatung anfragen",
+        "button_after_add_to_cart": "shopify://pages/experience",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
