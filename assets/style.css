@@ -1203,3 +1203,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .quantity-wrapp.size2 .quantity {flex-wrap: wrap;}
 .quantity-wrapp.size2 .quantity-item {min-height: 42px;width: 50%;}
 .quantity-wrapp + *:not(.text) {margin-top: var(--sp-24);}
+
+.ch-box-tooltip {--size: 1rem;position: relative;cursor: pointer;z-index: 3;transition: var(--transition-1);display: inline-block;vertical-align: bottom;width: var(--size);height: var(--size);flex-shrink: 0;color: var(--clr-text);}
+.ch-box-tooltip::before {content: attr(data-tooltip-txt);position: absolute;z-index: 3;bottom: 100%;left: 50%;transform: translateX(-50%);transition: var(--transition-1);opacity: 0;visibility: hidden;width: 12.875rem;border-radius: 12px;background-color: var(--clr-white);font-size: 12px;line-height: 1.2em;font-weight: 400;color: var(--clr-text);padding: 8px;margin-bottom: 6px;text-transform: none;}
+.ch-box-tooltip svg {display: block;width: 16px;height: 16px;}
+.ch-box-tooltip[data-tooltip-txt]:hover {color: var(--clr-red);}
+.ch-box-tooltip[data-tooltip-txt]:hover::before {opacity: 1;visibility: visible;}
