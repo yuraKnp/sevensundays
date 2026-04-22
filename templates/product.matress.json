@@ -172,15 +172,15 @@
           "type": "collapsible_tab_a_s",
           "settings": {
             "icon": "shopify://shop_images/delivery-icons-3.svg",
-            "content": "14 Tage kostenlose Rückgabe"
+            "content": "Swiss Engineered"
           }
         },
         "pairs_best_with_h9Dapm": {
           "type": "pairs_best_with",
           "settings": {
-            "upsell_product": "",
-            "upsell_product_sec": "",
-            "upsell_product_third": "",
+            "upsell_product": "pillow-cover",
+            "upsell_product_sec": "nackenkissen",
+            "upsell_product_third": "reisekissen",
             "upsell_variant_id": "",
             "upsell_variant_id_sec": "",
             "upsell_variant_id_third": ""
