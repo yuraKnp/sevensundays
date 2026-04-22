@@ -1199,7 +1199,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 
 
 /* New styles for matracess */
-.title-with-rating {display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: var(--sp-16);}
+.title-with-rating {display: flex;align-items: center;justify-content: space-between;gap: var(--sp-10);}
 .quantity-wrapp.size2 .quantity {flex-wrap: wrap;}
 .quantity-wrapp.size2 .quantity-item {min-height: 42px;width: 50%;}
 .quantity-wrapp + *:not(.text) {margin-top: var(--sp-24);}

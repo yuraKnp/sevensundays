@@ -100,7 +100,7 @@ header.type2 + main .section.sp-sec:first-child {padding-top: calc(var(--h-top-r
 .container {padding-inline: 32px;}
 }
 @media (max-width: 1199px) {
-:root {--h0: 44px;--h1: 40px;--h2: 40px;--h3: 28px;--h4: 24px;--h5: 20px;--h6: 18px;--text: 14px;--text-md: 16px;--text-sm: 12px;--sp-xxl: 64px;--sp-xl: 64px;--sp-lg: 64px;--sp-md: 48px;--sp-sm: 32px;--sp-xs: 32px;--sp-64: 48px;--sp-48: 32px;--sp-32: 24px;--sp-24: 16px;--sp-16: 12px;}
+:root {--h0: 44px;--h1: 40px;--h2: 40px;--h3: 28px;--h4: 24px;--h5: 20px;--h6: 18px;--text: 14px;--text-md: 16px;--text-sm: 12px;--sp-xxl: 64px;--sp-xl: 64px;--sp-lg: 64px;--sp-md: 48px;--sp-sm: 32px;--sp-xs: 32px;--sp-64: 48px;--sp-48: 32px;--sp-32: 24px;--sp-24: 16px;--sp-16: 12px;--sp-10: 10px;}
 header.type2 + main .section.sec-padd:first-child {padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-64));}
 header.type2 + main .section.sp-sec:first-child {padding-top: calc(var(--h-top-rating) + var(--h-height));}
 .section.sec-padd-inline {padding-inline: var(--sp-24);}
