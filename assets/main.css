@@ -450,3 +450,6 @@ h6,
     display: none;
 }
 
+.price-block .price__container{
+    display: block;
+}
