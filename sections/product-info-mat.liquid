@@ -527,7 +527,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let selectedOptions = new Array(product.options.length).fill(null);
 
   // init from active items
-  document.querySelectorAll('.quantity-wrapp').forEach((optionEl, index) => {
+  document.querySelectorAll('.product-option').forEach((optionEl, index) => {
     const active = optionEl.querySelector('.quantity-item.active');
     if (active) {
       selectedOptions[index] = active.dataset.value;
