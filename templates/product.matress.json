@@ -116,10 +116,90 @@
         "collapsible_tab_rdVhCp",
         "collapsible_tab_nrFNyK"
       ],
+      "disabled": true,
       "name": "Single product info",
       "settings": {
         "number_slide_images": 2,
         "slider_tags": "Für Seitenschläfer,Schweizer Qualität",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product_info_mat_kdx8Aa": {
+      "type": "product-info-mat",
+      "blocks": {
+        "price_i3XCtQ": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons_zh8geh": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "title_MqJ34a": {
+          "type": "title",
+          "settings": {
+            "trustpilot": true
+          }
+        },
+        "collapsible_tab_a_s_Bz9krc": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-3.svg",
+            "content": "14 Tage kostenlose Rückgabe"
+          }
+        },
+        "collapsible_tab_a_s_grG98L": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-2.svg",
+            "content": "Lieferung in 3–4 Werktagen"
+          }
+        },
+        "collapsible_tab_a_s_QjDJMC": {
+          "type": "collapsible_tab_a_s",
+          "settings": {
+            "icon": "shopify://shop_images/delivery-icons-1.svg",
+            "content": "Swiss Engineering"
+          }
+        },
+        "pairs_best_with_h9Dapm": {
+          "type": "pairs_best_with",
+          "settings": {
+            "upsell_product": "",
+            "upsell_product_sec": "",
+            "upsell_product_third": "",
+            "upsell_variant_id": "",
+            "upsell_variant_id_sec": "",
+            "upsell_variant_id_third": ""
+          }
+        }
+      },
+      "block_order": [
+        "price_i3XCtQ",
+        "buy_buttons_zh8geh",
+        "title_MqJ34a",
+        "collapsible_tab_a_s_Bz9krc",
+        "collapsible_tab_a_s_grG98L",
+        "collapsible_tab_a_s_QjDJMC",
+        "pairs_best_with_h9Dapm"
+      ],
+      "name": "Single product info mat",
+      "settings": {
+        "number_slide_images": 2,
+        "slider_tags": "",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -305,6 +385,7 @@
   },
   "order": [
     "product_info_XcKJA4",
+    "product_info_mat_kdx8Aa",
     "product_faq_finfX4",
     "product_partners_mmnBTt",
     "product_reviews_UxBRNm",
