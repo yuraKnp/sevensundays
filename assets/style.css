@@ -1265,3 +1265,5 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .btn-secondary.add-cart {
     margin-top: var(--sp-16);
 }
+
+.additional-caption {display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: var(--sp-8);}
