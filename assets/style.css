@@ -1260,3 +1260,8 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .product-option{
     margin-top: var(--sp-24);
 }
+
+
+.btn-secondary.add-cart {
+    margin-top: var(--sp-16);
+}
