@@ -26,6 +26,8 @@
 
 {%- assign doubled_price = product.selected_or_first_available_variant.price | times: 2 -%}
 
+
+
 <div class="section sp-sec">
     <div class="container">
         <div class="row justify-content-between">
@@ -154,18 +156,19 @@
                           {% endcase %}
                         {% endfor %}
                     </div>
-                    <div class="quantity-wrapp size2">
-                        <div class="motto">Modulares Schlafsystem:</div>
+                    {% for option in product.options_with_values %}
+                    <div class="quantity-wrapp size2" data-option-index="{{ forloop.index0 }}">
+                        <div class="motto">{{ option.name }}:</div>
                         <div class="quantity number">
-                            <div class="quantity-item active">
-                                <div class="text"><b>Liberta Boxspring</b></div>
+                            {% for value in option.values %}
+                            <div class="quantity-item {% if forloop.first %}active{% endif %}" data-value="{{ value }}">
+                                <div class="text"><b>{{ value }}</b></div>
                             </div>
-                            <div class="quantity-item">
-                                <div class="text"><b>Classic</b></div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
-                    <div class="quantity-wrapp size2">
+                    {% endfor %}
+                    {% comment %} <div class="quantity-wrapp size2">
                         <div class="motto">Classic · 21 cm Höhe
                             <span class="ch-box-tooltip" data-tooltip-txt="Immer enthalten: 5-Zonen-Layer und Stretch-Layer – sie bilden die ergonomische Basis. Der individuelle Komfort wird über den Komfort-Layer gesteuert.">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -232,7 +235,7 @@
                                 <div class="text"><b>200×200 cm</b></div>
                             </div>
                         </div>
-                    </div>
+                    </div> {% endcomment %}
                     
                     
                     {% unless product.has_only_default_variant %}
