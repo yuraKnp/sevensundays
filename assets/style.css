@@ -615,7 +615,6 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .pd-main-img .tags {position: absolute;top: var(--sp-24);left: var(--sp-24);right: var(--sp-24);z-index: 1;justify-content: end;}
 .pd-main-img img {position: absolute;left: 0;top: 0;width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;}
 .pd-rating {display: flex;align-items: center;gap: var(--sp-8);}
-.title-with-rating {display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: var(--sp-16);}
 .stars {display: flex;align-items: center;gap: 2px;}
 .stars img {width: 16px;height: 16px;-o-object-fit: contain;object-fit: contain;flex-shrink: 0;}
 .more-content {display: none;}
@@ -1196,3 +1195,10 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .page-404-inner-2 {max-width: 560px;width: 100%;margin-inline: auto;text-align: center;}
 .page-404-inner-2 .text {margin-top: 16px;}
 .page-404-inner-2 .btn {margin-top: 20px;}
+
+
+
+/* New styles for matracess */
+.title-with-rating {display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: var(--sp-16);}
+.quantity-wrapp.size2 .quantity {flex-wrap: wrap;}
+.quantity-wrapp.size2 .quantity-item {min-height: 42px;width: 50%;}
