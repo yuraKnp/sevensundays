@@ -1267,3 +1267,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 }
 
 .additional-caption {display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: var(--sp-8);}
+
+@media(max-width: 460px){
+    .title-with-rating .h2{
+        font-size: var(--h3);
+    }
+}
