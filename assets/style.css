@@ -1246,3 +1246,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .price-block .price__container{
     display: block;
 }
+
+.quantity-wrapp .quantity-wrapp{
+    margin-top: var(--sp-24);
+}
