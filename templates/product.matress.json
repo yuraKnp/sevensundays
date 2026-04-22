@@ -18,7 +18,9 @@
         },
         "title_rBaRmh": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "trustpilot": true
+          }
         },
         "price_MKjNkN": {
           "type": "price",
