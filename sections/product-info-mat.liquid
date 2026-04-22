@@ -158,14 +158,44 @@
                     </div>
                     {% for option in product.options_with_values %}
                     <div class="quantity-wrapp size2" data-option-index="{{ forloop.index0 }}">
-                        <div class="motto">{{ option.name }}:</div>
-                        <div class="quantity number">
+                          {% if option.name == "Size" %}
+                            <div class="text"><b>Größe</b></div>
+                            <div class="motto">Einzelbett</div>
+                            <div class="quantity number">
                             {% for value in option.values %}
-                            <div class="quantity-item {% if forloop.first %}active{% endif %}" data-value="{{ value }}">
-                                <div class="text"><b>{{ value }}</b></div>
-                            </div>
+                                {% if value contains '(Single)' %}
+                                <div class="quantity-item" data-value="{{ value }}">
+                                    <div class="text">
+                                    <b>{{ value | remove: ' (Single)' }}</b>
+                                    </div>
+                                </div>
+                                {% endif %}
                             {% endfor %}
-                        </div>
+                            </div>
+
+                            <div class="motto">Doppelbett</div>
+                            <div class="quantity number">
+                            {% for value in option.values %}
+                                {% if value contains '(Double)' %}
+                                <div class="quantity-item" data-value="{{ value }}">
+                                    <div class="text">
+                                    <b>{{ value | remove: ' (Double)' }}</b>
+                                    </div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                            </div>
+                        {% else %}
+                            <div class="motto">{{ option.name }}:</div>
+                            <div class="quantity number">
+                                {% for value in option.values %}
+                                <div class="quantity-item {% if forloop.first %}active{% endif %}" data-value="{{ value }}">
+                                    <div class="text"><b>{{ value }}</b></div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
                     </div>
                     {% endfor %}
                     {% comment %} <div class="quantity-wrapp size2">
