@@ -195,6 +195,7 @@
                                 {% endfor %}
                             </div>
                             <div id="classic-mode-desc-sec" class="text text-sm"></div>
+                            <div id="classic-mode-desc-tag" class="text text-sm type-tag"></div>
                           {% endif %}
                           {% if option.name == "Size" or option.name == "Größe" %}
                             <div class="motto">{{ option.name }}</div>
@@ -503,7 +504,9 @@
           additional_label: {{ variant.metafields.custom.additional_label_modular_sleep_system | json }},
           additional_label_desc: {{ variant.metafields.custom.additional_description_modular_sleep_system.value | json }},
           additional_label_sec: {{ variant.metafields.custom.additional_description_komfort_layer.value | json }},
-          additional_label_icon: {{ variant.metafields.custom.image_for_comfort_level | image_url: width: 100 | json }}
+          additional_label_icon: {{ variant.metafields.custom.image_for_comfort_level | image_url: width: 100 | json }},
+          comfort_type_desc: {{ variant.metafields.custom.comfort_type_description | json }}
+          comfort_type_tag: {{ variant.metafields.custom.comfort_type_tag | json }}
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ]
@@ -597,22 +600,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const idInput = document.querySelector('input[name="id"]');
     if (idInput) idInput.value = variant.id;
 
-    {% comment %} const labelEl = document.getElementById('classic-mode');
-    const descEl = document.getElementById('classic-mode-desc');
     const descElSec = document.getElementById('classic-mode-desc-sec');
+    const descElTag = document.getElementById('classic-mode-desc-tag');
     
-    if (labelEl) {
-        const span = labelEl.querySelector('.data');
-        if (span) {
-            span.textContent = variant.additional_label || '';
-        }
-    }
-    if (descEl) {
-        descEl.textContent = variant.additional_label_desc || '';
-    }
     if (descElSec) {
-        descElSec.textContent = variant.additional_label_sec || '';
-    } {% endcomment %}
+        descElSec.textContent = variant.comfort_type_desc || '';
+    }
+    if (descElTag) {
+        descElTag.textContent = variant.comfort_type_tag || '';
+    }
 
     fetch(`${window.location.pathname}?variant=${variant.id}&section_id=${sectionId}`)
       .then(res => res.text())
