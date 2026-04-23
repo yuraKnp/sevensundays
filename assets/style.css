@@ -1336,3 +1336,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     border-radius: 8px;
     background-color: #eeeae3;
 }
+
+#classic-mode-desc-tag .data{
+    color: rgba(30, 34, 39, 0.88);
+}
