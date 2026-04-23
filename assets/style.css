@@ -1322,7 +1322,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     padding-top: 100%;
 }
 
-.type-tag{
+.type-tag span{
     display: inline-block;
     padding: 5px 12px;
     font-size: var(--sp-12);
@@ -1334,4 +1334,5 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     font-size: 14px;
     padding: 16px;
     border-radius: 8px;
+    background-color: #eeeae3;
 }
