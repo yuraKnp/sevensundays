@@ -155,6 +155,16 @@
         "section_type": "left"
       }
     },
+    "left_right_ccrAe9": {
+      "type": "left-right",
+      "name": "Left Right section",
+      "settings": {
+        "title": "Why the climate under your duvet decides everything",
+        "content": "<p>There is a rule in sleep that most people have never consciously experienced: the body lowers its core temperature to slide into deep sleep phases. This process — finely regulated, biologically precise — needs the right environment. And it begins directly under your duvet.If the sleep climate is too warm, the body works against itself. It sweats. It regulates. It invests energy in thermoregulation instead of regeneration. The result: you wake up — somehow tired, somehow exhausted, without knowing why.<br/><br/>Too cool is the opposite — but no advantage. The body contracts, muscles tense, sleep stays shallow. Energy lost here too.<br/><br/>The comfort climate — that's the space in between. And it's different for every person.<br/><br/><br/><br/></p>",
+        "right_image": "shopify://shop_images/Product_image_bbc5ea69-3c99-4ef9-a015-440b7e962ac7.png",
+        "section_type": "right"
+      }
+    },
     "product_partners_mmnBTt": {
       "type": "product-partners",
       "blocks": {
@@ -276,6 +286,7 @@
     "product_info_XcKJA4",
     "product_faq_finfX4",
     "left_right_FeDt8n",
+    "left_right_ccrAe9",
     "product_partners_mmnBTt",
     "product_reviews_idGUyy",
     "main",
