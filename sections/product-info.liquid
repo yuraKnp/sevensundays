@@ -176,7 +176,7 @@
                     {% if hide_def_variants %}
                     {% for option in product.options_with_values %}
                       <div class="quantity-wrapp product-option size2" data-option-index="{{ forloop.index0 }}">
-                            {% if option.name == "Komfort layer" or option.name == "Type" %}
+                          {% if option.name == "Komfort layer" or option.name == "Type" %}
                             <div class="motto">{{ option.name }}:</div>
                             <div class="quantity number">
                                 {% for value in option.values %}
@@ -677,6 +677,33 @@ document.addEventListener('DOMContentLoaded', function () {
     return map;
   }
 
+  function renderOptionIcons(optionMap) {
+    document.querySelectorAll('.product-option').forEach(optionEl => {
+      const optionIndex = parseInt(optionEl.dataset.optionIndex);
+
+      const items = optionEl.querySelectorAll('.quantity-item');
+
+      items.forEach(item => {
+        const value = item.dataset.value;
+        const data = optionMap[optionIndex]?.[value];
+
+        if (!data) return;
+
+        // ICON
+        const iconEl = item.querySelector('.icon');
+        if (iconEl && data.icon) {
+          iconEl.innerHTML = `<img src="${data.icon}" alt="${value}" />`;
+        }
+
+        // DESCRIPTION (desc2)
+        const descEl = item.querySelector('.description');
+        if (descEl && data.desc2) {
+          descEl.textContent = data.desc2;
+        }
+      });
+    });
+  }
+
   function initVariantMetaUI() {
     const variants = buildVariantData();
     const optionMap = buildOptionValueMap(variants);
@@ -684,7 +711,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Variant data:', variants);
     console.log('Option map:', optionMap);
 
-    {% comment %} renderOptionIcons(optionMap); {% endcomment %}
+    renderOptionIcons(optionMap);
   }
   
   document.addEventListener('DOMContentLoaded', initVariantMetaUI);
