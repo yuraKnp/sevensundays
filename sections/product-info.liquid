@@ -176,6 +176,7 @@
                     {% if template == 'product.pillow-cover' %}
                       {% assign hide = 'style="display:none"' %}
                     {% endif %}
+                    {% if section.settings.hide_doublepack != true %}
                     <div class="quantity-wrapp {{ template }}" {{ hide }} >
                         <div class="motto">{{ 'products.product.quantity_new' | t }}:</div>
                         <div class="quantity-new">
@@ -230,6 +231,7 @@
                           </button>
                         </quantity-input>
                     </div>
+                    {% endif %}
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
                         {%- when 'pairs_best_with' -%}
