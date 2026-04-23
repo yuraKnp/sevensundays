@@ -640,7 +640,7 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .status i {display: inline-block;position: relative;width: 14px;height: 14px;border-radius: 50%;background-color: rgb(var(--clr-status));}
 .status i::before {content: "";position: absolute;top: -5px;left: -5px;width: 24px;height: 24px;border-radius: 50%;background-color: rgb(var(--clr-status)/0.25);}
 .status .text span {color: var(--clr-status);}
-.add-cart + * {margin-top: var(--sp-64);}
+/* .add-cart + * {margin-top: var(--sp-64);} */
 .request-appoinment {position: relative;background-color: #EEEAE3;border-radius: var(--rd-2);padding: var(--sp-16);display: flex;align-items: flex-start;gap: var(--sp-16);}
 .request-appoinment + * {margin-top: var(--sp-64);}
 .request-appoinment img {width: 64px;aspect-ratio: 1;flex-shrink: 0;-o-object-fit: cover;object-fit: cover;border-radius: 50%;}
@@ -1339,4 +1339,8 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 
 #classic-mode-desc-tag .data{
     color: rgba(30, 34, 39, 0.88);
+}
+
+.request-appoinment{
+    margin-top: var(--sp-64);
 }
