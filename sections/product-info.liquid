@@ -31,6 +31,12 @@
   {%- assign hide_def_variants = true -%}
 {% endif %}
 
+{%- assign size_class = 'size2' -%}
+
+{% if section.settings.three_elements %}
+  {%- assign size_class = 'size3' -%}
+{% endif %}
+
 <div class="section sp-sec">
     <div class="container">
         <div class="row justify-content-between">
@@ -175,7 +181,8 @@
 
                     {% if hide_def_variants %}
                     {% for option in product.options_with_values %}
-                      <div class="quantity-wrapp product-option size2" data-option-index="{{ forloop.index0 }}">
+                      
+                      <div class="quantity-wrapp product-option {{ size_class }}" data-option-index="{{ forloop.index0 }}">
                           {% if option.name == "Komfort layer" or option.name == "Type" %}
                             <div class="motto">{{ option.name }}:</div>
                             <div class="quantity number">
@@ -943,6 +950,12 @@ document.addEventListener('DOMContentLoaded', function () {
       "id": "hide_doublepack",
       "default": false,
       "label": "Hide double pack"
+    },
+    {
+      "type": "checkbox",
+      "id": "three_elements",
+      "default": false,
+      "label": "Three option elements in a row"
     },
     {
       "type": "text",
