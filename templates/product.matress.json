@@ -90,6 +90,17 @@
         "padding_bottom": 36
       }
     },
+    "how_it_works_banner_b6JQX4": {
+      "type": "how-it-works-banner",
+      "name": "How it works banner",
+      "settings": {
+        "back_img": "shopify://shop_images/layers_explode_GIF_900px.gif",
+        "title": "Das persönlichste Schlafsystem der Welt",
+        "subtitle": "ENGINEERED IN SWITZERLAND",
+        "title_under_img": "Schlaf, wie du ihn verdienst",
+        "short_desc_under_img": "Körper und Bedürfnisse ändern sich – über Jahre, manchmal über Nacht. Mit dem modularen Schlafsystem von Seven Sundays reagierst du darauf."
+      }
+    },
     "product_faq_finfX4": {
       "type": "product-faq",
       "blocks": {
@@ -262,6 +273,7 @@
   },
   "order": [
     "product_info_mat_kdx8Aa",
+    "how_it_works_banner_b6JQX4",
     "product_faq_finfX4",
     "product_partners_mmnBTt",
     "product_reviews_UxBRNm",
