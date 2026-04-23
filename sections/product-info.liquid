@@ -473,6 +473,26 @@
   window.productData = {{ product | json }};
 </script>
 
+<script>
+  window.productData = {
+    ...{{ product | json }},
+    variants: [
+      {% for variant in product.variants %}
+        {
+          ...{{ variant | json }},
+          additional_label: {{ variant.metafields.custom.additional_label_modular_sleep_system | json }},
+          additional_label_desc: {{ variant.metafields.custom.additional_description_modular_sleep_system.value | json }},
+          additional_label_sec: {{ variant.metafields.custom.additional_description_komfort_layer.value | json }},
+          additional_label_icon: {{ variant.metafields.custom.image_for_comfort_level | image_url: width: 100 | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  };
+  window.translations = {
+    inStock: {{ 'products.product.inventory_in_stock' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }}
+  };
+</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -508,6 +528,163 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
   });
+
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const product = window.productData;
+  const sectionId = "{{ section.id }}";
+
+  let selectedOptions = new Array(product.options.length).fill(null);
+
+  document.querySelectorAll('.product-option').forEach((optionEl, index) => {
+    const active = optionEl.querySelector('.quantity-item.active');
+    if (active) {
+      selectedOptions[index] = active.dataset.value;
+    }
+  });
+
+  updateVariant();
+
+  document.querySelectorAll('.quantity-item').forEach(item => {
+    item.addEventListener('click', function () {
+
+      const parent = this.closest('.product-option');
+      const optionIndex = parseInt(parent.dataset.optionIndex);
+
+      parent.querySelectorAll('.quantity-item').forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+
+      selectedOptions[optionIndex] = this.dataset.value;
+
+      updateVariant();
+    });
+  });
+
+  function updateVariant() {
+    const variant = product.variants.find(v => {
+      return v.options.every((opt, i) => opt === selectedOptions[i]);
+    });
+
+    if (!variant) {
+      console.log('No matching variant', selectedOptions);
+      return;
+    }
+
+    const idInput = document.querySelector('input[name="id"]');
+    if (idInput) idInput.value = variant.id;
+
+    {% comment %} const labelEl = document.getElementById('classic-mode');
+    const descEl = document.getElementById('classic-mode-desc');
+    const descElSec = document.getElementById('classic-mode-desc-sec');
+    
+    if (labelEl) {
+        const span = labelEl.querySelector('.data');
+        if (span) {
+            span.textContent = variant.additional_label || '';
+        }
+    }
+    if (descEl) {
+        descEl.textContent = variant.additional_label_desc || '';
+    }
+    if (descElSec) {
+        descElSec.textContent = variant.additional_label_sec || '';
+    } {% endcomment %}
+
+    fetch(`${window.location.pathname}?variant=${variant.id}&section_id=${sectionId}`)
+      .then(res => res.text())
+      .then(html => {
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+
+        const newPrice = doc.querySelector('#price-' + sectionId);
+        const currentPrice = document.querySelector('#price-' + sectionId);
+
+        if (newPrice && currentPrice) {
+          currentPrice.innerHTML = newPrice.innerHTML;
+        }
+      });
+
+    const url = new URL(window.location);
+    url.searchParams.set('variant', variant.id);
+    window.history.replaceState({}, '', url);
+
+    updateAvailability(variant);
+  }
+
+
+
+  function updateAvailability(variant) {
+    const statusEl = document.querySelector('.status');
+
+    if (!statusEl) return;
+
+    console.log(variant.available);
+
+    if (variant.available) {
+      statusEl.style.setProperty('--clr-status', '61 161 92');
+      statusEl.querySelector('span').textContent = window.translations.inStock;
+    } else {
+      statusEl.style.setProperty('--clr-status', '185 28 28');
+      statusEl.querySelector('span').textContent = window.translations.soldOut;
+    }
+  }
+
+
+  function buildVariantData() {
+    return window.productData.variants.map(variant => ({
+      id: variant.id,
+
+      option1: variant.option1,
+      option2: variant.option2,
+      option3: variant.option3,
+
+      label: variant.additional_label,
+      desc: variant.additional_label_desc,
+      desc2: variant.additional_label_sec,
+      icon: variant.additional_label_icon || null
+    }));
+  }
+
+  function buildOptionValueMap(variants) {
+    const map = {};
+
+    variants.forEach(variant => {
+      ['option1', 'option2', 'option3'].forEach((key, index) => {
+        const value = variant[key];
+        if (!value) return;
+
+        if (!map[index]) map[index] = {};
+
+        // only assign once per value (avoid overrides)
+        if (!map[index][value]) {
+          map[index][value] = {
+            icon: variant.icon,
+            label: variant.label,
+            desc: variant.desc,
+            desc2: variant.desc2
+          };
+        }
+      });
+    });
+
+    return map;
+  }
+
+  function initVariantMetaUI() {
+    const variants = buildVariantData();
+    const optionMap = buildOptionValueMap(variants);
+
+    console.log('Variant data:', variants);
+    console.log('Option map:', optionMap);
+
+    {% comment %} renderOptionIcons(optionMap); {% endcomment %}
+  }
+  
+  document.addEventListener('DOMContentLoaded', initVariantMetaUI);
+  document.addEventListener('shopify:section:load', initVariantMetaUI);
 
 });
 </script>
