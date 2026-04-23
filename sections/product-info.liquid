@@ -505,7 +505,7 @@
           additional_label_desc: {{ variant.metafields.custom.additional_description_modular_sleep_system.value | json }},
           additional_label_sec: {{ variant.metafields.custom.additional_description_komfort_layer.value | json }},
           additional_label_icon: {{ variant.metafields.custom.image_for_comfort_level | image_url: width: 100 | json }},
-          comfort_type_desc: {{ variant.metafields.custom.comfort_type_description | json }}
+          comfort_type_desc: {{ variant.metafields.custom.comfort_type_description | json }},
           comfort_type_tag: {{ variant.metafields.custom.comfort_type_tag | json }}
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
