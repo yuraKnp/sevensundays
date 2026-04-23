@@ -26,6 +26,7 @@
 
 {%- assign doubled_price = product.selected_or_first_available_variant.price | times: 2 -%}
 
+{%- assign hide_def_variants = false -%}
 {% if product.options.size > 1 %}
   {%- assign hide_def_variants = true -%}
 {% endif %}
@@ -172,6 +173,7 @@
                         {% endfor %}
                     </div>
 
+                    {% if hide_def_variants %}
                     {% for option in product.options_with_values %}
                       <div class="quantity-wrapp product-option size2" data-option-index="{{ forloop.index0 }}">
                           {% if option.name == "Size" %}
@@ -188,6 +190,7 @@
                           {% endif %}
                       </div>
                     {% endfor %}
+                    {% endif %}
                     
                     {% assign hide = '' %}
                     {% if template == 'product.pillow-cover' %}
