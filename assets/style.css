@@ -1278,3 +1278,10 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     margin-top: var(--sp-24);
 }
 
+.quantity-wrapp.product-option.size3 .quantity.number{
+    flex-wrap: wrap;
+}
+
+.quantity-wrapp.product-option.size3 .quantity.number .quantity-item {
+    flex: 0 0 calc(33.333% - 10px);
+}
