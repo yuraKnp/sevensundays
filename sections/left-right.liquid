@@ -1,0 +1,88 @@
+{% assign type = 'order-lg-1' %}
+{% if section.settings.section_type == 'right' %}
+{% assign type = 'order-lg-2' %}
+{% endif %}
+
+<div class="section padd-lg">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 {{ type }}">
+                <div class="lr-img-1">
+                    {% assign right_image = section.settings.right_image %}
+                    {% if right_image != blank %}
+                        {% assign image_url = right_image | image_url  %}
+                        {% assign image_format = right_image.format  %}
+                        <picture>
+                            <source srcset="{{ image_url }}" type="{{ image_format }}">
+                            <img width="380" height="240" src="#" alt="" loading="lazy">
+                        </picture>
+                    {%  endif %}
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-5 order-lg-1 align-self-center">
+                <div class="content-top-bottom">
+                    <div class="title-shortcode">
+                        {% if section.settings.title != blank %}
+                        <div class="h2 title">{{ section.settings.title }}</div>
+                        {% endif %}
+                    </div>
+                    {% if section.settings.content != blank %}
+                    <div class="text text-md">
+                        {{ section.settings.content }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Left Right section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+    "type": "richtext",
+    "id": "content",
+    "label": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "section_type",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+      ],
+      "default": "left",
+      "label": "Image side"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Left Right section",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
