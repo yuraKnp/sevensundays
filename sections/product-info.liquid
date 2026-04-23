@@ -176,6 +176,19 @@
                     {% if hide_def_variants %}
                     {% for option in product.options_with_values %}
                       <div class="quantity-wrapp product-option size2" data-option-index="{{ forloop.index0 }}">
+                            {% if option.name == "Komfort layer" %}
+                            <div class="motto">{{ option.name }}:</div>
+                            <div class="quantity number">
+                                {% for value in option.values %}
+                                <div class="quantity-item comfort {% if forloop.first %}active{% endif %}" data-value="{{ value }}">
+                                    <div class="icon"></div>
+                                    <div class="text"><b>{{ value }}</b></div>
+                                    <div class="description"></div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <div id="classic-mode-desc-sec" class="text text-sm"></div>
+                          {% endif %}
                           {% if option.name == "Size" or option.name == "Größe" %}
                             <div class="motto">{{ option.name }}</div>
                             <div class="quantity number">
