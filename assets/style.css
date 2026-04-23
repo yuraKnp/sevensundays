@@ -1348,3 +1348,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .mrt-16{
     margin-top: 16px;
 }
+
+@media(max-width: 560px){
+    .quantity-item.comfort .text{
+        font-size: 12px;
+    }
+}
