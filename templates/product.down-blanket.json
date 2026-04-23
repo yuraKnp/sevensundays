@@ -137,12 +137,67 @@
     },
     "product_faq_finfX4": {
       "type": "product-faq",
-      "disabled": true,
+      "blocks": {
+        "faq_c38MRJ": {
+          "type": "faq",
+          "settings": {
+            "question": "Your personal sleep climate",
+            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+          }
+        },
+        "faq_mJ8ckL": {
+          "type": "faq",
+          "settings": {
+            "question": "Intelligent chamber system",
+            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+          }
+        },
+        "faq_E6fRxp": {
+          "type": "faq",
+          "settings": {
+            "question": "Natural temperature regulation",
+            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+          }
+        },
+        "faq_k7fxNK": {
+          "type": "faq",
+          "settings": {
+            "question": "Swiss engineering · Made in Germany",
+            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_c38MRJ",
+        "faq_mJ8ckL",
+        "faq_E6fRxp",
+        "faq_k7fxNK"
+      ],
       "name": "Product FAQ",
       "settings": {
-        "title": "",
-        "left_image": "shopify://shop_images/2025_11_24_SevenSundays3470-web.jpg",
-        "right_image": "shopify://shop_images/2025_11_24_SevenSundays3161-web.jpg"
+        "title": "Why you will love it",
+        "left_image": "shopify://shop_images/Product_image_1.png",
+        "right_image": "shopify://shop_images/Product_image_2.png"
+      }
+    },
+    "left_right_FeDt8n": {
+      "type": "left-right",
+      "name": "Left Right section",
+      "settings": {
+        "title": "Temperature decides. So does sleep.",
+        "content": "<p>Restorative sleep doesn't start with falling asleep. It starts with the right climate under the duvet.That's exactly why we developed the SEVEN SUNDAYS Premium Down Duvet. Not in one size, but in three precisely calibrated warmth levels: the Summer duvet with no-wall chambers for maximum air circulation. The All-Year duvet with 2 cm walls for balanced warmth. The Winter duvet with 6 cm walls for maximum heat retention.The 100% down fill uses the natural intelligence of the feather: hygroscopic, breathable, light. The organic cotton cover creates a microclimate that regulates moisture and is gentle on skin.Developed in Switzerland. Handcrafted in Germany. For the nights that matter.<br/><br/></p>",
+        "right_image": "shopify://shop_images/seven-sundays-premium-daunendecke-schlafklima.png",
+        "section_type": "left"
+      }
+    },
+    "left_right_ccrAe9": {
+      "type": "left-right",
+      "name": "Left Right section",
+      "settings": {
+        "title": "Why the climate under your duvet decides everything",
+        "content": "<p>There is a rule in sleep that most people have never consciously experienced: the body lowers its core temperature to slide into deep sleep phases. This process — finely regulated, biologically precise — needs the right environment. And it begins directly under your duvet.If the sleep climate is too warm, the body works against itself. It sweats. It regulates. It invests energy in thermoregulation instead of regeneration. The result: you wake up — somehow tired, somehow exhausted, without knowing why.<br/><br/>Too cool is the opposite — but no advantage. The body contracts, muscles tense, sleep stays shallow. Energy lost here too.<br/><br/>The comfort climate — that's the space in between. And it's different for every person.<br/><br/><br/><br/></p>",
+        "right_image": "shopify://shop_images/Product_image_bbc5ea69-3c99-4ef9-a015-440b7e962ac7.png",
+        "section_type": "right"
       }
     },
     "product_partners_mmnBTt": {
@@ -265,6 +320,8 @@
   "order": [
     "product_info_XcKJA4",
     "product_faq_finfX4",
+    "left_right_FeDt8n",
+    "left_right_ccrAe9",
     "product_partners_mmnBTt",
     "product_reviews_idGUyy",
     "main",
