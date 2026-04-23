@@ -120,6 +120,7 @@
       "settings": {
         "number_slide_images": 2,
         "hide_doublepack": true,
+        "three_elements": true,
         "slider_tags": "Für jede Schlafposition,Schweizer Qualität",
         "media_size": "large",
         "constrain_to_viewport": true,
