@@ -633,6 +633,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
+
+
+});
+
   function buildVariantData() {
     return window.productData.variants.map(variant => ({
       id: variant.id,
@@ -685,8 +689,6 @@ document.addEventListener('DOMContentLoaded', function () {
   
   document.addEventListener('DOMContentLoaded', initVariantMetaUI);
   document.addEventListener('shopify:section:load', initVariantMetaUI);
-
-});
 </script>
 
 {% schema %}
