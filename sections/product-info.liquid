@@ -26,6 +26,10 @@
 
 {%- assign doubled_price = product.selected_or_first_available_variant.price | times: 2 -%}
 
+{% if product.options.size > 1 %}
+  {%- assign hide_def_variants = true -%}
+{% endif %}
+
 <div class="section sp-sec">
     <div class="container">
         <div class="row justify-content-between">
@@ -321,8 +325,7 @@
                     
                     {% unless product.has_only_default_variant %}
                     {% assign current_variant = product.selected_or_first_available_variant %}
-                    <div class="pairs-wrapp variants">
-                        {% comment %} <div class="motto">{{ 'products.product.pairs_best_with_ver' | t }}:</div> {% endcomment %}
+                    <div class="pairs-wrapp" {% if hide_def_variants %}style="display: none"{% endif %}>
                         <div class="pairs">
                             {% for variant in product.variants %}
                             <div class="pairs-item variant {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}" data-variant-id="{{ variant.id }}">
