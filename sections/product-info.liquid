@@ -176,7 +176,7 @@
                     {% if hide_def_variants %}
                     {% for option in product.options_with_values %}
                       <div class="quantity-wrapp product-option size2" data-option-index="{{ forloop.index0 }}">
-                            {% if option.name == "Komfort layer" %}
+                            {% if option.name == "Komfort layer" or option.name == "Type" %}
                             <div class="motto">{{ option.name }}:</div>
                             <div class="quantity number">
                                 {% for value in option.values %}
