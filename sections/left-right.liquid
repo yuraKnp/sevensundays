@@ -3,7 +3,16 @@
 {% assign type = 'order-lg-2' %}
 {% endif %}
 
-<div class="section padd-lg">
+{% assign top_padding = '' %}
+{% assign bottom_padding = '' %}
+{% if section.settings.section_type == 'right' %}
+{% assign top_padding = 'padding-top: 0px;' %}
+{% endif %}
+{% if section.settings.section_type == 'right' %}
+{% assign bottom_padding = 'padding-bottom: 0px;' %}
+{% endif %}
+
+<div class="section padd-lg" style="{{top_padding}}{{bottom_padding}}">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-6 {{ type }}">
@@ -77,6 +86,18 @@
       "default": "left",
       "label": "Image side"
     },
+    {
+        "type": "checkbox",
+        "id": "remove_top_padding",
+        "default": false,
+        "label": "Remove top padding",
+    },
+    {
+        "type": "checkbox",
+        "id": "remove_bottom_padding",
+        "default": false,
+        "label": "Remove bottom padding",
+    }
   ],
   "presets": [
     {
