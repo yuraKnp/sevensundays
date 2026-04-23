@@ -1344,3 +1344,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .request-appoinment{
     margin-top: var(--sp-64);
 }
+
+.mrt-16{
+    margin-top: 16px;
+}
