@@ -189,7 +189,7 @@
         "right_image": "shopify://shop_images/seven-sundays-premium-daunendecke-schlafklima.png",
         "section_type": "left",
         "remove_top_padding": true,
-        "remove_bottom_padding": false
+        "remove_bottom_padding": true
       }
     },
     "left_right_ccrAe9": {
