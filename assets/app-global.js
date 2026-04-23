@@ -454,6 +454,12 @@ jQuery(function ($) {
     //select pairs
     $(document).on('click', '.pairs .pairs-item:not(.variant)', function(){
         $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).find('input[type="checkbox"]').prop('checked', true);
+        }else{
+            $(this).find('input[type="checkbox"]').prop('checked', false);
+        }
+        
     });
 
     //cta scroll to
