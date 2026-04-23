@@ -423,6 +423,9 @@
                           -%}
                       {% endcase %}
                     {% endfor %}
+                    {% if section.settings.text_after_add_to_cart != blank %}
+                    <div class="text text-center">{{ section.settings.text_after_add_to_cart }}</div>
+                    </div>
                     {% else %}
                     <div class="status" style="--clr-status: 185, 28, 28;">
                         <i></i>
@@ -973,6 +976,11 @@ document.addEventListener('DOMContentLoaded', function () {
       "id": "three_elements",
       "default": false,
       "label": "Three option elements in a row"
+    },
+    {
+      "type": "text",
+      "id": "text_after_add_to_cart",
+      "label": "Text after add to cart button",
     },
     {
       "type": "text",
