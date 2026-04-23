@@ -137,6 +137,18 @@
     },
     "product_faq_finfX4": {
       "type": "product-faq",
+      "blocks": {
+        "faq_c38MRJ": {
+          "type": "faq",
+          "settings": {
+            "question": "Your personal sleep climate",
+            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_c38MRJ"
+      ],
       "name": "Product FAQ",
       "settings": {
         "title": "Why you will love it",
