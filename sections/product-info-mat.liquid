@@ -238,6 +238,9 @@
                         <div class="pairs">
                             {% for variant in product.variants %}
                             <div class="pairs-item variant {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}" data-variant-id="{{ variant.id }}">
+                                <div class="ch-wrapper">
+                                    <input type="checkbox" value="">
+                                </div>
                                 <div class="img-wrapper">
                                   <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                 </div>
