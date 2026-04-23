@@ -317,7 +317,7 @@
                             <div class="pairs-wrapp">
                                 <div class="additional-caption">
                                     <div class="motto">{{ 'products.product.pairs_best_with' | t }}</div>
-                                    <div class="text text-sm">{{ 'products.product.pairs_best_with_right' | t }}</div>
+                                    <div class="text text-sm bundle-tag">{{ 'products.product.pairs_best_with_right' | t }}</div>
                                 </div>
                                 <div class="pairs">
                                     {%  if selected_product != blank %}
@@ -339,6 +339,9 @@
                                     {% endif %}
                                     {% if selected_product_sec != blank %}
                                     <div class="pairs-item" data-variant-id="{{ variant_id_sec }}">
+                                        <div class="ch-wrapper">
+                                            <input type="checkbox" value="">
+                                        </div>
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_sec.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
@@ -353,6 +356,9 @@
                                     {% endif %}
                                     {% if selected_product_third != blank %}
                                     <div class="pairs-item" data-variant-id="{{ variant_id_third }}">
+                                        <div class="ch-wrapper">
+                                            <input type="checkbox" value="">
+                                        </div>
                                         <div class="img-wrapper">
                                           <img width="72" height="40" src="{{ selected_product_third.featured_image | img_url: 'small' }}" alt="" loading="lazy">
                                         </div>
