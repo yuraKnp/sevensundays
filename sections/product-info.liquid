@@ -322,9 +322,6 @@
                                 <div class="pairs">
                                     {%  if selected_product != blank %}
                                     <div class="pairs-item {% unless selected_product.available %}disabled{% endunless %}" data-variant-id="{{ variant_id }}">
-                                        <div class="ch-wrapper">
-                                            <input type="checkbox" value="">
-                                        </div>
                                         <label class="ch-box">
                                             <input type="checkbox">
                                             <span></span>
@@ -343,7 +340,7 @@
                                     {% endif %}
                                     {% if selected_product_sec != blank %}
                                     <div class="pairs-item" data-variant-id="{{ variant_id_sec }}">
-                                        <div class="ch-wrapper">
+                                        <div class="ch-box">
                                             <input type="checkbox" value="">
                                         </div>
                                         <div class="img-wrapper">
@@ -360,7 +357,7 @@
                                     {% endif %}
                                     {% if selected_product_third != blank %}
                                     <div class="pairs-item" data-variant-id="{{ variant_id_third }}">
-                                        <div class="ch-wrapper">
+                                        <div class="ch-box">
                                             <input type="checkbox" value="">
                                         </div>
                                         <div class="img-wrapper">
