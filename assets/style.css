@@ -1309,3 +1309,8 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     border-radius: 100px;
     padding: 5px 12px;
 }
+
+.pairs-item.active.checkbox{
+    background-color: var(--clr-white);
+}
+    

@@ -321,7 +321,7 @@
                                 </div>
                                 <div class="pairs">
                                     {%  if selected_product != blank %}
-                                    <div class="pairs-item {% unless selected_product.available %}disabled{% endunless %}" data-variant-id="{{ variant_id }}">
+                                    <div class="pairs-item checkbox {% unless selected_product.available %}disabled{% endunless %}" data-variant-id="{{ variant_id }}">
                                         <label class="ch-box">
                                             <input type="checkbox">
                                             <span></span>
@@ -339,7 +339,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_sec != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ variant_id_sec }}">
+                                    <div class="pairs-item checkbox" data-variant-id="{{ variant_id_sec }}">
                                         <div class="ch-box">
                                             <input type="checkbox" value="">
                                         </div>
@@ -356,7 +356,7 @@
                                     </div>
                                     {% endif %}
                                     {% if selected_product_third != blank %}
-                                    <div class="pairs-item" data-variant-id="{{ variant_id_third }}">
+                                    <div class="pairs-item checkbox" data-variant-id="{{ variant_id_third }}">
                                         <div class="ch-box">
                                             <input type="checkbox" value="">
                                         </div>
