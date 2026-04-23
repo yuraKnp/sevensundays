@@ -144,10 +144,26 @@
             "question": "Your personal sleep climate",
             "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
           }
+        },
+        "faq_mJ8ckL": {
+          "type": "faq",
+          "settings": {
+            "question": "Intelligent chamber system",
+            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+          }
+        },
+        "faq_E6fRxp": {
+          "type": "faq",
+          "settings": {
+            "question": "Natural temperature regulation",
+            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+          }
         }
       },
       "block_order": [
-        "faq_c38MRJ"
+        "faq_c38MRJ",
+        "faq_mJ8ckL",
+        "faq_E6fRxp"
       ],
       "name": "Product FAQ",
       "settings": {
