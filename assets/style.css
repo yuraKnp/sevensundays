@@ -1274,7 +1274,10 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     }
 }
 
-
 .status{
     margin-top: var(--sp-24);
+}
+
+.pairs-wrapp.variants{
+    display: none;
 }
