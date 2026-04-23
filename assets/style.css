@@ -1317,4 +1317,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .pairs-item.checkbox .ch-box{
     gap: 0px;
 }
-    
+
+.lr-img-wr .lr-img-1{
+    padding-top: 100%;
+}
