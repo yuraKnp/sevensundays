@@ -145,6 +145,16 @@
         "right_image": "shopify://shop_images/2025_11_24_SevenSundays3161-web.jpg"
       }
     },
+    "left_right_FeDt8n": {
+      "type": "left-right",
+      "name": "Left Right section",
+      "settings": {
+        "title": "Temperature decides. So does sleep.",
+        "content": "<p>Restorative sleep doesn't start with falling asleep. It starts with the right climate under the duvet.That's exactly why we developed the SEVEN SUNDAYS Premium Down Duvet. Not in one size, but in three precisely calibrated warmth levels: the Summer duvet with no-wall chambers for maximum air circulation. The All-Year duvet with 2 cm walls for balanced warmth. The Winter duvet with 6 cm walls for maximum heat retention.The 100% down fill uses the natural intelligence of the feather: hygroscopic, breathable, light. The organic cotton cover creates a microclimate that regulates moisture and is gentle on skin.Developed in Switzerland. Handcrafted in Germany. For the nights that matter.<br/><br/></p>",
+        "right_image": "shopify://shop_images/seven-sundays-premium-daunendecke-schlafklima.png",
+        "section_type": "left"
+      }
+    },
     "product_partners_mmnBTt": {
       "type": "product-partners",
       "blocks": {
@@ -265,6 +275,7 @@
   "order": [
     "product_info_XcKJA4",
     "product_faq_finfX4",
+    "left_right_FeDt8n",
     "product_partners_mmnBTt",
     "product_reviews_idGUyy",
     "main",
