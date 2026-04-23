@@ -1329,3 +1329,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 100px;
 }
+
+.type-add-text{
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 8px;
+}
