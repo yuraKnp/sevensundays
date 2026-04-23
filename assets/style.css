@@ -1283,5 +1283,6 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 }
 
 .quantity-wrapp.product-option.size3 .quantity.number .quantity-item {
-    flex: 0 0 calc(33.333% - 10px);
+    flex: 0 0 calc(33.333%);
+    min-height: 42px;
 }
