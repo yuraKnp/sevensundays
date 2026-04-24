@@ -1296,10 +1296,10 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     padding: 16px;
 }
 
-.pd-detail-info .pairs-wrapp.background{
+/* .pd-detail-info .pairs-wrapp.background{
     background-color: rgba(238, 234, 227, 1);
     padding: var(--sp-16);
-}
+}*/
 
 
 .bundle-tag{
