@@ -200,7 +200,7 @@
                             </div>
                           {% endif %}
                           {% if option.name == "Size" or option.name == "Größe" %}
-                            <div class="motto">{{ option.name }}</div>
+                            <div class="motto">{{ option.name }}:</div>
                             <div class="quantity number">
                             {% for value in option.values %}
                                 <div class="quantity-item {% if forloop.first %}active{% endif %}" data-value="{{ value }}">
@@ -319,7 +319,7 @@
                           {%  if selected_product != blank or selected_product_sec != blank %}
                             <div class="pairs-wrapp background">
                                 <div class="additional-caption">
-                                    <div class="motto">{{ 'products.product.pairs_best_with' | t }}</div>
+                                    <div class="motto">{{ 'products.product.pairs_best_with' | t }}:</div>
                                     <div class="text text-sm bundle-tag">{{ 'products.product.pairs_best_with_right' | t }}</div>
                                 </div>
                                 <div class="pairs">
