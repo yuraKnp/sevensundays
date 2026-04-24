@@ -1333,8 +1333,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .type-add-text{
     font-size: 14px;
     padding: 16px;
+    padding-top: 0px;
     border-radius: 8px;
-    background-color: #eeeae3;
+    /* background-color: #eeeae3; */
 }
 
 #classic-mode-desc-tag .data{
