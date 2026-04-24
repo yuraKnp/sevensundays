@@ -1360,3 +1360,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
         padding: 6px;
     }
 }
+
+.quantity.number .quantity-item{
+    gap: 0px;
+}   
