@@ -339,6 +339,27 @@
 
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
+                        {%- when 'info_after_add_to_cart' -%}
+                          {% assign icon = block.settings.icon %}
+                          {% assign title = block.settings.title %}
+                          {% assign content = block.settings.content %}
+
+                          {%  if icon != blank and title != blank %}
+                            <div class="pairs-wrapp">                             
+                                <div class="pairs">
+                                    <div class="pairs-item-add">
+                                        <div class="img-wrapper">
+                                          <img width="72" height="40" src="{{ icon | img_url: 'small' }}" alt="" loading="lazy">
+                                        </div>
+                                        <div class="content">
+                                            <div class="text text-sm"><b>{{ title }}</b></div>
+                                            <div class="text text-sm">{{ content }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          {%  endif %}
+
                         {%- when 'pairs_best_with' -%}
                           {% assign selected_product = block.settings.upsell_product %}
                           {% assign selected_product_sec = block.settings.upsell_product_sec %}
@@ -973,6 +994,27 @@ document.addEventListener('DOMContentLoaded', function () {
           "type": "image_picker",
           "id": "icon",
           "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Description"
+        },
+      ]
+    },
+    {
+      "type": "info_after_add_to_cart",
+      "name": "Free product info",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
         },
         {
           "type": "text",
