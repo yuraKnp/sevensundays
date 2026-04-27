@@ -1,0 +1,165 @@
+{% comment %}
+  UTM Gift Auto-Add
+  ─────────────────────────────────────────────────────────────────────────────
+  Configured via Theme Settings → UTM Gift in the Shopify customizer.
+  Renders nothing when no gift product is set.
+{% endcomment %}
+
+{%- assign utm_gift_product   = settings.utm_gift_product -%}
+{%- assign utm_trigger_product = settings.utm_trigger_product -%}
+
+{% if utm_gift_product != blank %}
+
+{%- comment -%}
+  Resolve the gift variant ID:
+  Use the manual override if provided, otherwise fall back to the gift
+  product's first available variant.
+{%- endcomment -%}
+{%- if settings.utm_gift_variant_id != blank -%}
+  {%- assign utm_gift_variant_id = settings.utm_gift_variant_id | plus: 0 -%}
+{%- else -%}
+  {%- assign utm_gift_variant_id = utm_gift_product.selected_or_first_available_variant.id -%}
+{%- endif -%}
+
+<script>
+(function () {
+  'use strict';
+
+  var GIFT_VARIANT_ID    = {{ utm_gift_variant_id }};
+  var TRIGGER_PRODUCT_ID = {% if utm_trigger_product != blank %}{{ utm_trigger_product.id }}{% else %}null{% endif %};
+  var STORAGE_KEY        = 'ss_utm';
+  var EXPIRY_MS          = 30 * 24 * 60 * 60 * 1000; // 30 days
+
+  // Keep a reference to the real fetch so our internal cart calls
+  // don't re-trigger the sync (avoid recursive loops).
+  var _fetch = window.fetch.bind(window);
+
+  // ── UTM ────────────────────────────────────────────────────────────────────
+
+  function captureUTM() {
+    var p = new URLSearchParams(window.location.search);
+    if (!p.get('utm_source')) return;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        source:   p.get('utm_source'),
+        medium:   p.get('utm_medium'),
+        campaign: p.get('utm_campaign'),
+        expires:  Date.now() + EXPIRY_MS
+      }));
+    } catch (_) {}
+  }
+
+  function hasUTM() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return false;
+      var d = JSON.parse(raw);
+      if (Date.now() > d.expires) {
+        localStorage.removeItem(STORAGE_KEY);
+        return false;
+      }
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  // ── Cart API (uses _fetch to bypass our own patch) ──────────────────────────
+
+  function getCart() {
+    return _fetch('/cart.js').then(function (r) { return r.json(); });
+  }
+
+  function cartAdd(variantId) {
+    return _fetch('/cart/add.js', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ items: [{ id: variantId, quantity: 1 }] })
+    }).then(function (r) { return r.json(); });
+  }
+
+  function cartRemove(variantId) {
+    return _fetch('/cart/change.js', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ id: variantId, quantity: 0 })
+    }).then(function (r) { return r.json(); });
+  }
+
+  function giftIsInCart(cart) {
+    return cart.items.some(function (i) { return i.variant_id === GIFT_VARIANT_ID; });
+  }
+
+  function triggerIsInCart(cart) {
+    if (!TRIGGER_PRODUCT_ID) return true; // no trigger required — UTM alone qualifies
+    return cart.items.some(function (i) { return i.product_id === TRIGGER_PRODUCT_ID; });
+  }
+
+  // ── Sync ───────────────────────────────────────────────────────────────────
+
+  var syncing    = false;
+  var syncQueued = false;
+
+  function sync() {
+    if (syncing) { syncQueued = true; return; }
+    syncing = true;
+
+    getCart()
+      .then(function (cart) {
+        var qualify = hasUTM() && triggerIsInCart(cart);
+        var hasGift = giftIsInCart(cart);
+
+        if (qualify && !hasGift)  return cartAdd(GIFT_VARIANT_ID);
+        if (!qualify && hasGift)  return cartRemove(GIFT_VARIANT_ID);
+        // No change needed — resolve with falsy so refreshCartUI is skipped
+      })
+      .then(function (result) {
+        syncing = false;
+        if (syncQueued) { syncQueued = false; sync(); return; }
+        if (result) refreshCartUI();
+      })
+      .catch(function () {
+        syncing = false;
+      });
+  }
+
+  function refreshCartUI() {
+    document.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true }));
+    document.dispatchEvent(new CustomEvent('cart:updated', { bubbles: true }));
+
+    // Dawn-style cart-drawer web component
+    var drawer = document.querySelector('cart-drawer');
+    if (drawer && typeof drawer.renderContents === 'function') {
+      getCart().then(function (cart) { drawer.renderContents({ sections: cart.sections }); });
+    }
+  }
+
+  // ── Patch window.fetch to detect external cart mutations ───────────────────
+
+  var CART_WRITE = ['/cart/add', '/cart/change', '/cart/update', '/cart/clear'];
+
+  window.fetch = function (input, init) {
+    var url = typeof input === 'string' ? input
+            : (input instanceof Request ? input.url : '');
+
+    var isWrite = CART_WRITE.some(function (u) { return url.indexOf(u) !== -1; });
+
+    return _fetch(input, init).then(function (response) {
+      if (isWrite) setTimeout(sync, 400);
+      return response;
+    });
+  };
+
+  // ── Boot ───────────────────────────────────────────────────────────────────
+
+  captureUTM();
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sync);
+  } else {
+    sync();
+  }
+
+}());
+</script>
+{% endif %}

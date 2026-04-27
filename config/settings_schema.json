@@ -1489,5 +1489,36 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "UTM Gift",
+    "settings": [
+      {
+        "type": "header",
+        "content": "UTM Gift Auto-Add"
+      },
+      {
+        "type": "paragraph",
+        "content": "Adds a free gift to the cart when a visitor arrives via a UTM link and the trigger product is in the cart. Gift is removed automatically when the trigger product is removed or the UTM session expires (30 days)."
+      },
+      {
+        "type": "product",
+        "id": "utm_trigger_product",
+        "label": "Trigger product",
+        "info": "The gift is added only when this product is in the cart. Leave empty to require only a UTM visit."
+      },
+      {
+        "type": "product",
+        "id": "utm_gift_product",
+        "label": "Gift product",
+        "info": "The product to add for free. Use the field below to target a specific variant, otherwise the first available variant is used."
+      },
+      {
+        "type": "text",
+        "id": "utm_gift_variant_id",
+        "label": "Gift variant ID (optional)",
+        "info": "Override to a specific variant. Find the ID in the product URL in Shopify admin: /variants/XXXXXXXXXX"
+      }
+    ]
   }
 ]
