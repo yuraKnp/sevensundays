@@ -50,6 +50,14 @@
             "content": "Swiss Engineered"
           }
         },
+        "info_after_add_to_cart_G6trQV": {
+          "type": "info_after_add_to_cart",
+          "settings": {
+            "icon": "shopify://shop_images/Back_2.png",
+            "title": "LIBERTA’S GOODIE: GRATIS NACKENKISSEN",
+            "content": "Erhalte ein gratis Nackenkissen beim kauf einer Matratze"
+          }
+        },
         "pairs_best_with_h9Dapm": {
           "type": "pairs_best_with",
           "settings": {
@@ -69,6 +77,7 @@
         "collapsible_tab_a_s_QjDJMC",
         "collapsible_tab_a_s_grG98L",
         "collapsible_tab_a_s_Bz9krc",
+        "info_after_add_to_cart_G6trQV",
         "pairs_best_with_h9Dapm"
       ],
       "name": "Single product info mat",
