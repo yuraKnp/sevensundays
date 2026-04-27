@@ -596,7 +596,9 @@
     z-index: 100;
   }
   .size-select-wrap.open .size-custom-dropdown {
-    display: block;
+    {% comment %} display: block; {% endcomment %}
+    display: flex;
+    flex-direction: column;
   }
   .size-custom-option {
     padding: var(--sp-12) var(--sp-16);
