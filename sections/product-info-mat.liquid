@@ -161,12 +161,12 @@
                           {% if option.name == "Size" %}
                             <div class="text"><b>Größe</b></div>
 
-                            <div class="size-type-buttons">
+                            <div class="size-type-buttons text">
                               <button type="button" class="size-type-btn active" data-type="Single">Einzelbett</button>
                               <button type="button" class="size-type-btn" data-type="Double">Doppelbett</button>
                             </div>
 
-                            <div class="size-select-wrap">
+                            <div class="size-select-wrap text">
                               <select class="size-select">
                                 {% for value in option.values %}
                                   {% if value contains '(Single)' %}
@@ -536,14 +536,19 @@
   .size-select {
     width: 100%;
     min-height: 42px;
-    padding: var(--sp-12) var(--sp-16);
+    padding: var(--sp-12) 40px var(--sp-12) var(--sp-16);
     border-radius: var(--rd-1);
     background-color: var(--clr-white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3 6l5 5 5-5' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--sp-16) center;
     border: none;
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
     font-weight: 700;
+    appearance: none;
+    -webkit-appearance: none;
   }
   @media (max-width: 767px) {
     .size-type-btn { min-height: 60px; padding-block: 10px; }
