@@ -160,30 +160,40 @@
                     <div class="quantity-wrapp product-option size2" data-option-index="{{ forloop.index0 }}">
                           {% if option.name == "Size" %}
                             <div class="text"><b>Größe</b></div>
-                            <div class="motto">Einzelbett</div>
-                            <div class="quantity number">
-                            {% for value in option.values %}
-                                {% if value contains '(Single)' %}
-                                <div class="quantity-item {% if forloop.first %}active{% endif %}" data-value="{{ value }}">
-                                    <div class="text">
-                                    <b>{{ value | remove: ' (Single)' }}</b>
-                                    </div>
-                                </div>
-                                {% endif %}
-                            {% endfor %}
+
+                            <div class="size-type-buttons">
+                              <button type="button" class="size-type-btn active" data-type="Single">Einzelbett</button>
+                              <button type="button" class="size-type-btn" data-type="Double">Doppelbett</button>
                             </div>
 
-                            <div class="motto">Doppelbett</div>
-                            <div class="quantity number">
-                            {% for value in option.values %}
-                                {% if value contains '(Double)' %}
-                                <div class="quantity-item" data-value="{{ value }}">
-                                    <div class="text">
-                                    <b>{{ value | remove: ' (Double)' }}</b>
-                                    </div>
-                                </div>
+                            <select class="size-select">
+                              {% for value in option.values %}
+                                {% if value contains '(Single)' %}
+                                  <option value="{{ value }}" data-size-type="Single">{{ value | remove: ' (Single)' }}</option>
                                 {% endif %}
-                            {% endfor %}
+                              {% endfor %}
+                              {% for value in option.values %}
+                                {% if value contains '(Double)' %}
+                                  <option value="{{ value }}" data-size-type="Double">{{ value | remove: ' (Double)' }}</option>
+                                {% endif %}
+                              {% endfor %}
+                            </select>
+
+                            {% comment %} Hidden items keep the existing variant JS working unchanged {% endcomment %}
+                            <div class="quantity number" style="display:none">
+                              {% assign size_first_single_active = false %}
+                              {% for value in option.values %}
+                                {% if value contains '(Single)' and size_first_single_active == false %}
+                                  <div class="quantity-item active" data-value="{{ value }}">
+                                    <div class="text"><b>{{ value }}</b></div>
+                                  </div>
+                                  {% assign size_first_single_active = true %}
+                                {% else %}
+                                  <div class="quantity-item" data-value="{{ value }}">
+                                    <div class="text"><b>{{ value }}</b></div>
+                                  </div>
+                                {% endif %}
+                              {% endfor %}
                             </div>
                         {% elsif option.name == "Modular sleep system" %}
                             <div class="motto">{{ option.name }}:</div>
@@ -478,6 +488,40 @@
     <div class="spacer-xl"></div>
 </div>
 
+<style>
+  .size-type-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .size-type-btn {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid currentColor;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    opacity: 0.35;
+    transition: opacity 0.2s;
+  }
+  .size-type-btn.active {
+    opacity: 1;
+  }
+  .size-select {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid currentColor;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+</style>
+
 <script>
   window.productData = {{ product | json }};
 </script>
@@ -640,6 +684,55 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const sizeSelect = document.querySelector('.size-select');
+  const typeButtons = document.querySelectorAll('.size-type-btn');
+
+  if (!sizeSelect || !typeButtons.length) return;
+
+  // Snapshot all options from the server-rendered select before any filtering
+  const allSizeOptions = Array.from(sizeSelect.options).map(function (opt) {
+    return { value: opt.value, text: opt.textContent, type: opt.dataset.sizeType };
+  });
+
+  // Start showing only Single options (matching the default active type button)
+  filterSizeOptions('Single');
+
+  typeButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      typeButtons.forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      filterSizeOptions(this.dataset.type);
+      triggerHiddenItem(sizeSelect.value);
+    });
+  });
+
+  sizeSelect.addEventListener('change', function () {
+    triggerHiddenItem(this.value);
+  });
+
+  function filterSizeOptions(type) {
+    sizeSelect.innerHTML = '';
+    allSizeOptions
+      .filter(function (opt) { return opt.type === type; })
+      .forEach(function (opt) {
+        var el = document.createElement('option');
+        el.value = opt.value;
+        el.textContent = opt.text;
+        el.dataset.sizeType = opt.type;
+        sizeSelect.appendChild(el);
+      });
+  }
+
+  // Delegates to the hidden .quantity-item so the existing variant JS handles everything
+  function triggerHiddenItem(value) {
+    var item = document.querySelector('.quantity-item[data-value="' + value + '"]');
+    if (item) item.click();
+  }
 });
 </script>
 
