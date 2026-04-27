@@ -166,7 +166,7 @@
                               <button type="button" class="size-type-btn" data-type="Double">Doppelbett</button>
                             </div>
 
-                            <select class="size-select" hidden>
+                            <select class="size-select" style="display:none" hidden>
                               {% for value in option.values %}
                                 {% if value contains '(Single)' %}
                                   <option value="{{ value }}" data-size-type="Single">{{ value | remove: ' (Single)' }}</option>
