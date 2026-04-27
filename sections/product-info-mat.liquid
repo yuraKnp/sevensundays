@@ -178,7 +178,7 @@
                                 {% endif %}
                               {% endfor %}
                             </select>
-                            <div class="size-select-wrap"></div>
+                            <div class="size-select-wrap text"></div>
 
                             {% comment %} Hidden items keep the existing variant JS working unchanged {% endcomment %}
                             <div class="quantity number" style="display:none">
@@ -615,6 +615,10 @@
   @media (max-width: 767px) {
     .size-type-btn       { min-height: 60px; padding-block: 10px; }
     .size-custom-trigger { min-height: 60px; }
+  }
+
+  .size-custom-trigger .text span{
+    color: #1E2227;
   }
 </style>
 
