@@ -166,20 +166,19 @@
                               <button type="button" class="size-type-btn" data-type="Double">Doppelbett</button>
                             </div>
 
-                            <div class="size-select-wrap text">
-                              <select class="size-select">
-                                {% for value in option.values %}
-                                  {% if value contains '(Single)' %}
-                                    <option value="{{ value }}" data-size-type="Single">{{ value | remove: ' (Single)' }}</option>
-                                  {% endif %}
-                                {% endfor %}
-                                {% for value in option.values %}
-                                  {% if value contains '(Double)' %}
-                                    <option value="{{ value }}" data-size-type="Double">{{ value | remove: ' (Double)' }}</option>
-                                  {% endif %}
-                                {% endfor %}
-                              </select>
-                            </div>
+                            <select class="size-select" hidden>
+                              {% for value in option.values %}
+                                {% if value contains '(Single)' %}
+                                  <option value="{{ value }}" data-size-type="Single">{{ value | remove: ' (Single)' }}</option>
+                                {% endif %}
+                              {% endfor %}
+                              {% for value in option.values %}
+                                {% if value contains '(Double)' %}
+                                  <option value="{{ value }}" data-size-type="Double">{{ value | remove: ' (Double)' }}</option>
+                                {% endif %}
+                              {% endfor %}
+                            </select>
+                            <div class="size-select-wrap"></div>
 
                             {% comment %} Hidden items keep the existing variant JS working unchanged {% endcomment %}
                             <div class="quantity number" style="display:none">
@@ -546,34 +545,74 @@
     .size-type-btn:not(.active):hover { opacity: 0.8; }
   }
 
-  /* Size select — mirror .quantity container, select itself mirrors .quantity-item */
+  /* Custom size dropdown */
   .size-select-wrap {
     display: flex;
     align-items: center;
     padding: 4px;
     background-color: var(--clr-white);
     border-radius: var(--rd-1);
+    position: relative;
   }
-  .size-select {
+  .size-select-wrap.open {
+    border-radius: var(--rd-1) var(--rd-1) 0 0;
+  }
+  .size-custom-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
     width: 100%;
     min-height: 42px;
-    padding: var(--sp-12) 40px var(--sp-12) var(--sp-16);
+    padding: var(--sp-12) var(--sp-16);
     border-radius: var(--rd-1);
     background-color: var(--clr-white);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3 6l5 5 5-5' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right var(--sp-16) center;
-    border: none;
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
     font-weight: 700;
-    appearance: none;
-    -webkit-appearance: none;
+    user-select: none;
+    transition: border-radius 0.15s;
+  }
+  .size-select-wrap.open .size-custom-trigger {
+    border-radius: var(--rd-1) var(--rd-1) 0 0;
+  }
+  .size-custom-trigger svg {
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .size-select-wrap.open .size-custom-trigger svg {
+    transform: rotate(180deg);
+  }
+  .size-custom-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% - 4px);
+    left: 0;
+    right: 0;
+    background-color: var(--clr-white);
+    border-radius: 0 0 var(--rd-1) var(--rd-1);
+    overflow: hidden;
+    z-index: 100;
+  }
+  .size-select-wrap.open .size-custom-dropdown {
+    display: block;
+  }
+  .size-custom-option {
+    padding: var(--sp-12) var(--sp-16);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    transition: background-color 0.15s;
+  }
+  .size-custom-option:hover,
+  .size-custom-option.active {
+    background-color: #EEEAE3;
   }
   @media (max-width: 767px) {
-    {% comment %} .size-type-btn { min-height: 60px; padding-block: 10px; } {% endcomment %}
-    {% comment %} .size-select   { min-height: 60px; } {% endcomment %}
+    .size-type-btn       { min-height: 60px; padding-block: 10px; }
+    .size-custom-trigger { min-height: 60px; }
   }
 </style>
 
@@ -744,47 +783,85 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const sizeSelect = document.querySelector('.size-select');
-  const typeButtons = document.querySelectorAll('.size-type-btn');
+  var hiddenSelect = document.querySelector('.size-select');
+  var typeButtons  = document.querySelectorAll('.size-type-btn');
+  var selectWrap   = document.querySelector('.size-select-wrap');
 
-  if (!sizeSelect || !typeButtons.length) return;
+  if (!hiddenSelect || !typeButtons.length || !selectWrap) return;
 
-  // Snapshot all options from the server-rendered select before any filtering
-  const allSizeOptions = Array.from(sizeSelect.options).map(function (opt) {
-    return { value: opt.value, text: opt.textContent, type: opt.dataset.sizeType };
+  // Snapshot all options from the server-rendered hidden select
+  var allSizeOptions = Array.from(hiddenSelect.options).map(function (opt) {
+    return { value: opt.value, text: opt.textContent.trim(), type: opt.dataset.sizeType };
   });
 
-  // Start showing only Single options (matching the default active type button)
-  filterSizeOptions('Single');
+  // Build custom dropdown inside .size-select-wrap
+  var trigger = document.createElement('div');
+  trigger.className = 'size-custom-trigger';
+  trigger.innerHTML =
+    '<span class="size-custom-value"></span>' +
+    '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">' +
+      '<path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</svg>';
 
+  var dropdown = document.createElement('div');
+  dropdown.className = 'size-custom-dropdown';
+
+  selectWrap.appendChild(trigger);
+  selectWrap.appendChild(dropdown);
+
+  var valueSpan = trigger.querySelector('.size-custom-value');
+
+  // Init with Single options
+  populateDropdown(optionsFor('Single'));
+
+  // Open / close
+  trigger.addEventListener('click', function () {
+    selectWrap.classList.toggle('open');
+  });
+  document.addEventListener('click', function (e) {
+    if (!selectWrap.contains(e.target)) selectWrap.classList.remove('open');
+  });
+
+  // Type button clicks
   typeButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
       typeButtons.forEach(function (b) { b.classList.remove('active'); });
       this.classList.add('active');
-      filterSizeOptions(this.dataset.type);
-      triggerHiddenItem(sizeSelect.value);
+      var opts = optionsFor(this.dataset.type);
+      populateDropdown(opts);
+      if (opts.length) selectValue(opts[0].value);
     });
   });
 
-  sizeSelect.addEventListener('change', function () {
-    triggerHiddenItem(this.value);
-  });
-
-  function filterSizeOptions(type) {
-    sizeSelect.innerHTML = '';
-    allSizeOptions
-      .filter(function (opt) { return opt.type === type; })
-      .forEach(function (opt) {
-        var el = document.createElement('option');
-        el.value = opt.value;
-        el.textContent = opt.text;
-        el.dataset.sizeType = opt.type;
-        sizeSelect.appendChild(el);
-      });
+  function optionsFor(type) {
+    return allSizeOptions.filter(function (o) { return o.type === type; });
   }
 
-  // Delegates to the hidden .quantity-item so the existing variant JS handles everything
-  function triggerHiddenItem(value) {
+  function populateDropdown(options) {
+    dropdown.innerHTML = '';
+    options.forEach(function (opt, i) {
+      var el = document.createElement('div');
+      el.className = 'size-custom-option' + (i === 0 ? ' active' : '');
+      el.dataset.value = opt.value;
+      el.textContent = opt.text;
+      el.addEventListener('click', function () {
+        selectValue(opt.value);
+        selectWrap.classList.remove('open');
+      });
+      dropdown.appendChild(el);
+    });
+    if (options.length) valueSpan.textContent = options[0].text;
+  }
+
+  function selectValue(value) {
+    var opt = allSizeOptions.find(function (o) { return o.value === value; });
+    if (opt) valueSpan.textContent = opt.text;
+
+    dropdown.querySelectorAll('.size-custom-option').forEach(function (el) {
+      el.classList.toggle('active', el.dataset.value === value);
+    });
+
+    // Delegate to hidden .quantity-item — existing variant JS handles everything from here
     var item = document.querySelector('.quantity-item[data-value="' + value + '"]');
     if (item) item.click();
   }
