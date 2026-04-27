@@ -1367,7 +1367,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 }   
 
 
-.pairs-item-add {display: flex;justify-content: flex-start;gap: var(--sp-8);align-items: center;padding-block: var(--sp-16);padding-inline: var(--sp-12) 20px;border-radius: var(--rd-1);background-color: var(--clr-white);transition: var(--transition-1);width: 100%;cursor: pointer;}
+.pairs-item-add {display: flex;justify-content: flex-start;gap: var(--sp-8);align-items: center;padding-block: var(--sp-16);padding-inline: var(--sp-12) 20px;border-radius: var(--rd-1);background-color: var(--clr-white);transition: var(--transition-1);width: 100%;cursor: pointer;border: 1px solid #e7d39a;}
 
 .pairs-item-add .img-wrapper img{
     object-fit: cover;
