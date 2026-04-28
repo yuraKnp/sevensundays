@@ -214,6 +214,28 @@
                       </div>
                     {% endfor %}
                     {% endif %}
+
+                    {% unless product.has_only_default_variant %}
+                    {% assign current_variant = product.selected_or_first_available_variant %}
+                    <div class="pairs-wrapp" {% if hide_def_variants %}style="display: none"{% endif %}>
+                        <div class="pairs">
+                            {% for variant in product.variants %}
+                            <div class="pairs-item variant {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}" data-variant-id="{{ variant.id }}">
+                                <div class="img-wrapper">
+                                  <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <div class="text text-sm"><b>{{ variant.title }}</b></div>
+                                    <div class="text text-sm">{{ variant.metafields.custom.additional_description }}</div>
+                                </div>
+                                <div class="btn btn-third">
+                                    <b>{{ variant.price | money }}</b>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endunless %}
                     
                     {% assign hide = '' %}
                     {% if template == 'product.pillow-cover' %}
@@ -384,27 +406,7 @@
                     {% endcase %}
                     {% endfor %}
                     
-                    {% unless product.has_only_default_variant %}
-                    {% assign current_variant = product.selected_or_first_available_variant %}
-                    <div class="pairs-wrapp" {% if hide_def_variants %}style="display: none"{% endif %}>
-                        <div class="pairs">
-                            {% for variant in product.variants %}
-                            <div class="pairs-item variant {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}" data-variant-id="{{ variant.id }}">
-                                <div class="img-wrapper">
-                                  <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="" loading="lazy">
-                                </div>
-                                <div class="content">
-                                    <div class="text text-sm"><b>{{ variant.title }}</b></div>
-                                    <div class="text text-sm">{{ variant.metafields.custom.additional_description }}</div>
-                                </div>
-                                <div class="btn btn-third">
-                                    <b>{{ variant.price | money }}</b>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    {% endunless %}
+
                     
 
                     
