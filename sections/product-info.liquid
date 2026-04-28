@@ -217,7 +217,11 @@
 
                     {% unless product.has_only_default_variant %}
                     {% assign current_variant = product.selected_or_first_available_variant %}
-                    <div class="pairs-wrapp test123" {% if hide_def_variants %}style="display: none"{% endif %}>
+                    {% assign replace_gallery_info = section.settings.replace_gallery_info %}
+                    {% if replace_gallery_info %}
+                      
+                    {% else %}
+                    <div class="pairs-wrapp" {% if hide_def_variants %}style="display: none"{% endif %}>
                         <div class="pairs">
                             {% for variant in product.variants %}
                             <div class="pairs-item variant {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}" data-variant-id="{{ variant.id }}">
@@ -235,6 +239,7 @@
                             {% endfor %}
                         </div>
                     </div>
+                    {% endif %}
                     {% endunless %}
                     
                     {% assign hide = '' %}
@@ -969,6 +974,12 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": 2,
       "label": "Number of images in slider",
       "info": "If there is more images in gallery they will be shown separatly"
+    },
+    {
+      "type": "checkbox",
+      "id": "replace_gallery_info",
+      "default": false,
+      "label": "Replace gallery info"
     },
     {
       "type": "checkbox",
