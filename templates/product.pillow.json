@@ -153,7 +153,7 @@
       "type": "left-right",
       "name": "Left Right section",
       "settings": {
-        "title": "Unser Nacken trägt mehr, als wir ihmzumuten sollten.",
+        "title": "",
         "content": "<p><strong>„Ich knautsche es mir jeden Abend zurecht – manchmal als Stütze beim Lesen, manchmal einfach, weil es so schön weich ist. Für mich fühlt es sich an, als würde ich den Kopf auf einer kleinen Wolke ablegen.</strong></p>",
         "right_image": "shopify://shop_images/width_800.webp",
         "section_type": "right",
