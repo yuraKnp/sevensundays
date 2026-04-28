@@ -812,13 +812,27 @@ document.addEventListener('DOMContentLoaded', function () {
     defaultProductRowImages.push(source.getAttribute('srcset'));
   });
 
+  function applyVariation(item) {
+    const changeTitle = item.dataset.changeTitle || '';
+    const customGallery = JSON.parse(item.dataset.gallery || '[]');
+
+    const titleEl = document.querySelector('.title-with-rating .title');
+    if (titleEl) {
+      titleEl.innerHTML = changeTitle.trim() ? changeTitle : product.defaultProductTitle;
+    }
+
+    updateGallery(customGallery);
+  }
+
+  // Apply on page load if a variant is pre-selected via URL
+  const activeVariationItem = document.querySelector('.variation-item.active');
+  if (activeVariationItem) applyVariation(activeVariationItem);
+
   document.querySelectorAll('.variation-item').forEach(item => {
     item.addEventListener('click', function () {
       if (this.classList.contains('disabled')) return;
 
       const variantId = parseInt(this.dataset.variantId);
-      const changeTitle = this.dataset.changeTitle || '';
-      const customGallery = JSON.parse(this.dataset.gallery || '[]');
 
       // Active state
       document.querySelectorAll('.variation-item').forEach(el => el.classList.remove('active'));
@@ -828,14 +842,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const idInput = document.querySelector('input[name="id"]');
       if (idInput) idInput.value = variantId;
 
-      // Title
-      const titleEl = document.querySelector('.title-with-rating .title');
-      if (titleEl) {
-        titleEl.innerHTML = changeTitle.trim() ? changeTitle : product.defaultProductTitle;
-      }
-
-      // Gallery
-      updateGallery(customGallery);
+      applyVariation(this);
 
       // Price
       fetch(`${window.location.pathname}?variant=${variantId}&section_id=${sectionId}`)
