@@ -122,6 +122,15 @@
                 <div class="row product-row hide-lg">
                     {%- assign start_index = number_slide_images -%}
                     {%- for media in product.media offset: start_index -%}
+                      {%- assign is_variant_image = false -%}
+                      {%- if section.settings.replace_gallery_info -%}
+                        {%- for variant in product.variants -%}
+                          {%- if variant.featured_media.id == media.id -%}
+                            {%- assign is_variant_image = true -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                      {%- endif -%}
+                      {%- unless is_variant_image -%}
                     <div class="col-md-6">
                         <div class="simple-img size5">
                             {%- if media.media_type == 'image' -%}
@@ -132,6 +141,7 @@
                             {% endif %}
                         </div>
                     </div>
+                      {%- endunless -%}
                   {% endfor %}
                 </div>
                 {%  endif %}
