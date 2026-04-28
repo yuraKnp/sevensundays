@@ -146,6 +146,7 @@
         "right_image": "shopify://shop_images/SEVEN-SUNDAYS-Dietrich-Gronemeyer-nackenkissen_cd08e65f-bd9e-4705-a1a3-5659b936bdb7.jpg",
         "section_type": "left",
         "image_full_width": false,
+        "variation_connection": "54774300147980",
         "remove_top_padding": true,
         "remove_bottom_padding": true
       }
@@ -159,7 +160,8 @@
         "right_image": "shopify://shop_images/width_800.webp",
         "section_type": "right",
         "image_full_width": true,
-        "remove_top_padding": false,
+        "variation_connection": "54774300147980",
+        "remove_top_padding": true,
         "remove_bottom_padding": false
       }
     },
