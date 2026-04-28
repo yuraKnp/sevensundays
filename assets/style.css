@@ -1397,7 +1397,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 
 .variation-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: var(--sp-12);
     align-items: center;
@@ -1420,4 +1420,12 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     flex-direction: column;
     gap: var(--sp-16);
     margin-bottom: var(--sp-24);
+}
+
+.variation-item .img-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    overflow: hidden;
+    min-width: 50px;
 }
