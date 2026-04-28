@@ -864,6 +864,10 @@ document.addEventListener('DOMContentLoaded', function () {
           const newPrice = doc.querySelector('#price-' + sectionId);
           const currentPrice = document.querySelector('#price-' + sectionId);
           if (newPrice && currentPrice) currentPrice.innerHTML = newPrice.innerHTML;
+
+          const newDoubled = doc.querySelector('[data-qty="2"] .motto');
+          const currentDoubled = document.querySelector('[data-qty="2"] .motto');
+          if (newDoubled && currentDoubled) currentDoubled.innerHTML = newDoubled.innerHTML;
         });
 
       // URL
