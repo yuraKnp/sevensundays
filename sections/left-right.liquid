@@ -12,6 +12,12 @@
 {% assign bottom_padding = 'padding-bottom: 0px;' %}
 {% endif %}
 
+{% assign image_full = '' %}
+{% if section.settings.image_full_width  %}
+{% assign image_full = 'object-fit: contain;' %}
+{% endif %}
+
+
 <div class="section padd-lg lr-img-wr" style="{{top_padding}}{{bottom_padding}}">
     <div class="container">
         <div class="row justify-content-between">
@@ -23,7 +29,7 @@
                         {% assign image_format = right_image.format  %}
                         <picture>
                             <source srcset="{{ image_url }}" type="{{ image_format }}">
-                            <img width="380" height="240" src="#" alt="" loading="lazy">
+                            <img width="380" height="240" src="#" alt="" loading="lazy" style="{{ image_full }}">
                         </picture>
                     {%  endif %}
                 </div>
@@ -85,6 +91,12 @@
       ],
       "default": "left",
       "label": "Image side"
+    },
+    {
+        "type": "checkbox",
+        "id": "image_full_width",
+        "default": false,
+        "label": "Image 100% width",
     },
     {
         "type": "checkbox",
