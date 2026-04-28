@@ -234,7 +234,7 @@
                         <div class="variations">
                           {% for variant in product.variants %}
                           {%- capture var_gallery_json -%}[{%- for img in variant.metafields.custom.variation_gallery.value -%}{%- unless forloop.first -%},{%- endunless -%}"{{ img | image_url: width: 1200 }}"{%- endfor -%}]{%- endcapture -%}
-                          <div class="variation-item {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}"
+                          <div class="variation-item  {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}"
                                data-variant-id="{{ variant.id }}"
                                data-change-title="{{ variant.metafields.custom.change_title_on_click | escape }}"
                                data-gallery='{{ var_gallery_json }}'
