@@ -238,7 +238,7 @@
                                data-variant-id="{{ variant.id }}"
                                data-change-title="{{ variant.metafields.custom.change_title_on_click | escape }}"
                                data-gallery='{{ var_gallery_json }}'
-                               data-description="{{ variant.metafields.custom.custom_short_description | escape }}">
+                               data-description="{{ variant.metafields.custom.custom_short_description.value | escape }}">
                             <div class="img-wrapper">
                               <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="{{ variant.title | escape }}" loading="lazy">
                             </div>
