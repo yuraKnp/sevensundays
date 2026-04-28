@@ -17,8 +17,10 @@
 {% assign image_full = 'object-fit: contain;' %}
 {% endif %}
 
+{% assign variation_connection = section.settings.variation_connection %}
 
-<div class="section padd-lg lr-img-wr" style="{{top_padding}}{{bottom_padding}}">
+
+<div class="section padd-lg lr-img-wr" style="{{top_padding}}{{bottom_padding}}" data-variation_connection="{{ variation_connection }}">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-6 {{ type }}">
@@ -97,6 +99,11 @@
         "id": "image_full_width",
         "default": false,
         "label": "Image 100% width",
+    },
+    {
+        "type": "text",
+        "id": "variation_connection",
+        "label": "Variation connection"
     },
     {
         "type": "checkbox",
