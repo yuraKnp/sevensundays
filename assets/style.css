@@ -1386,3 +1386,31 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .quantity.variations{
     width: 100%;
 }
+
+.variations {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background-color: var(--clr-white);
+    border-radius: var(--rd-1);
+}
+
+.variation-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--sp-12);
+    align-items: center;
+    padding: var(--sp-12) var(--sp-16);
+    min-height: 72px;
+    border-radius: var(--rd-1);
+    background-color: var(--clr-white);
+    cursor: pointer;
+    transition: var(--transition-1);
+    width: 100%;
+}
+
+.variation-item.active {
+    background-color: #eeeae3;
+    cursor: inherit;
+}
