@@ -18,7 +18,9 @@
         },
         "title_rBaRmh": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "trustpilot": false
+          }
         },
         "price_MKjNkN": {
           "type": "price",
@@ -117,6 +119,10 @@
       "name": "Single product info",
       "settings": {
         "number_slide_images": 2,
+        "replace_gallery_info": true,
+        "hide_doublepack": false,
+        "three_elements": false,
+        "text_after_add_to_cart": "",
         "slider_tags": "Für jede Schlafposition,Schweizer Qualität",
         "media_size": "large",
         "constrain_to_viewport": true,
