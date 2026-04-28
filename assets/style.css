@@ -1435,3 +1435,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     height: 100%;
     width: 100%;
 }
+
+.h2.title i{
+    font-family: 'reviewsio-font';
+    font-style: italic !important;
+    font-weight: 100;
+}
