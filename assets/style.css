@@ -1415,7 +1415,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     cursor: inherit;
 }
 
-.variation-wrapp {
+.variations-wrapp {
     display: flex;
     flex-direction: column;
     gap: var(--sp-16);
