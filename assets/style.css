@@ -1398,7 +1398,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 .variation-item {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: var(--sp-12);
     align-items: center;
     padding: var(--sp-12) var(--sp-16);
