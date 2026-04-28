@@ -162,19 +162,19 @@
                             <div class="text"><b>Größe</b></div>
 
                             <div class="size-type-buttons text">
-                              <button type="button" class="size-type-btn active" data-type="Single">Einzelbett</button>
                               <button type="button" class="size-type-btn" data-type="Double">Doppelbett</button>
+                              <button type="button" class="size-type-btn active" data-type="Single">Einzelbett</button>
                             </div>
 
                             <select class="size-select" style="display:none" hidden>
                               {% for value in option.values %}
-                                {% if value contains '(Single)' %}
-                                  <option value="{{ value }}" data-size-type="Single">{{ value | remove: ' (Single)' }}</option>
+                                {% if value contains '(Double)' %}
+                                  <option value="{{ value }}" data-size-type="Double">{{ value | remove: ' (Double)' }}</option>
                                 {% endif %}
                               {% endfor %}
                               {% for value in option.values %}
-                                {% if value contains '(Double)' %}
-                                  <option value="{{ value }}" data-size-type="Double">{{ value | remove: ' (Double)' }}</option>
+                                {% if value contains '(Single)' %}
+                                  <option value="{{ value }}" data-size-type="Single">{{ value | remove: ' (Single)' }}</option>
                                 {% endif %}
                               {% endfor %}
                             </select>
