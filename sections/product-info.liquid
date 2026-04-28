@@ -815,6 +815,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function applyVariation(item) {
     const changeTitle = item.dataset.changeTitle || '';
     const customGallery = JSON.parse(item.dataset.gallery || '[]');
+    const variantId = item.dataset.variantId;
 
     const titleEl = document.querySelector('.title-with-rating .title');
     if (titleEl) {
@@ -822,11 +823,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     updateGallery(customGallery);
+    updateVariationSections(variantId);
+  }
+
+  function updateVariationSections(variantId) {
+    document.querySelectorAll('[data-variation_connection]').forEach(el => {
+      el.style.display = el.dataset.variation_connection === String(variantId) ? '' : 'none';
+    });
   }
 
   // Apply on page load if a variant is pre-selected via URL
   const activeVariationItem = document.querySelector('.variation-item.active');
-  if (activeVariationItem) applyVariation(activeVariationItem);
+  if (activeVariationItem) {
+    applyVariation(activeVariationItem);
+  } else {
+    updateVariationSections(null);
+  }
 
   document.querySelectorAll('.variation-item').forEach(item => {
     item.addEventListener('click', function () {
