@@ -149,6 +149,18 @@
         "remove_bottom_padding": false
       }
     },
+    "left_right_RTiFwY": {
+      "type": "left-right",
+      "name": "Left Right section",
+      "settings": {
+        "title": "Unser Nacken trägt mehr, als wir ihmzumuten sollten.",
+        "content": "<p><strong>„Ich knautsche es mir jeden Abend zurecht – manchmal als Stütze beim Lesen, manchmal einfach, weil es so schön weich ist. Für mich fühlt es sich an, als würde ich den Kopf auf einer kleinen Wolke ablegen.</strong></p>",
+        "right_image": "shopify://shop_images/width_800.webp",
+        "section_type": "right",
+        "remove_top_padding": false,
+        "remove_bottom_padding": false
+      }
+    },
     "product_faq_finfX4": {
       "type": "product-faq",
       "blocks": {
@@ -322,6 +334,7 @@
   "order": [
     "product_info_XcKJA4",
     "left_right_AQJY6X",
+    "left_right_RTiFwY",
     "product_faq_finfX4",
     "product_partners_mmnBTt",
     "product_reviews_rdGL4V",
