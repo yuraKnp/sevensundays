@@ -219,7 +219,23 @@
                     {% assign current_variant = product.selected_or_first_available_variant %}
                     {% assign replace_gallery_info = section.settings.replace_gallery_info %}
                     {% if replace_gallery_info %}
-                      
+                      <div class="quantity-wrapp variations-wrapp">
+                        <div class="motto">Variation:</div>
+                        <div class="quantity variations">
+                          {% for variant in product.variants %}
+                          <div class="quantity-item variation-item {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}"
+                               data-variant-id="{{ variant.id }}">
+                            <div class="img-wrapper">
+                              <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="{{ variant.title | escape }}" loading="lazy">
+                            </div>
+                            <div class="content">
+                              <div class="text text-sm"><b>{{ variant.metafields.custom.change_title_on_click | default: variant.title }}</b></div>
+                              <div class="text text-sm">{{ variant.metafields.custom.additional_description }}</div>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
                     {% else %}
                     <div class="pairs-wrapp" {% if hide_def_variants %}style="display: none"{% endif %}>
                         <div class="pairs">
@@ -512,6 +528,7 @@
 <script>
   window.productData = {
     ...{{ product | json }},
+    defaultProductTitle: {{ product.title | json }},
     variants: [
       {% for variant in product.variants %}
         {
@@ -521,7 +538,9 @@
           additional_label_sec: {{ variant.metafields.custom.additional_description_komfort_layer.value | json }},
           additional_label_icon: {{ variant.metafields.custom.image_for_comfort_level | image_url: width: 100 | json }},
           comfort_type_desc: {{ variant.metafields.custom.comfort_type_description | json }},
-          comfort_type_tag: {{ variant.metafields.custom.comfort_type_tag.value | json }}
+          comfort_type_tag: {{ variant.metafields.custom.comfort_type_tag.value | json }},
+          variation_gallery: [{% for img in variant.metafields.custom.variation_gallery.value %}{% unless forloop.first %},{% endunless %}"{{ img | image_url: width: 1200 }}"{% endfor %}],
+          change_title: {{ variant.metafields.custom.change_title_on_click | json }}
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ]
@@ -753,6 +772,92 @@ document.addEventListener('DOMContentLoaded', function () {
   
   document.addEventListener('DOMContentLoaded', initVariantMetaUI);
   document.addEventListener('shopify:section:load', initVariantMetaUI);
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const sectionId = "{{ section.id }}";
+  const product = window.productData;
+
+  // Capture default gallery srcs from initial DOM before any changes
+  const defaultSlides = [];
+  document.querySelectorAll('.pd-slider .swiper-slide').forEach(slide => {
+    const source = slide.querySelector('source');
+    const img = slide.querySelector('img');
+    if (source) {
+      defaultSlides.push({
+        srcset: source.getAttribute('srcset'),
+        src: img ? img.getAttribute('src') : '#'
+      });
+    }
+  });
+
+  document.querySelectorAll('.variation-item').forEach(item => {
+    item.addEventListener('click', function () {
+      if (this.classList.contains('disabled')) return;
+
+      const variantId = parseInt(this.dataset.variantId);
+      const variant = product.variants.find(v => v.id === variantId);
+      if (!variant) return;
+
+      // Active state
+      document.querySelectorAll('.variation-item').forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+
+      // Hidden form input
+      const idInput = document.querySelector('input[name="id"]');
+      if (idInput) idInput.value = variantId;
+
+      // Title
+      const titleEl = document.querySelector('.title-with-rating .title');
+      if (titleEl) {
+        titleEl.textContent = (variant.change_title && variant.change_title.trim())
+          ? variant.change_title
+          : product.defaultProductTitle;
+      }
+
+      // Gallery
+      updateGallery(variant);
+
+      // Price
+      fetch(`${window.location.pathname}?variant=${variantId}&section_id=${sectionId}`)
+        .then(res => res.text())
+        .then(html => {
+          const doc = new DOMParser().parseFromString(html, 'text/html');
+          const newPrice = doc.querySelector('#price-' + sectionId);
+          const currentPrice = document.querySelector('#price-' + sectionId);
+          if (newPrice && currentPrice) currentPrice.innerHTML = newPrice.innerHTML;
+        });
+
+      // URL
+      const url = new URL(window.location);
+      url.searchParams.set('variant', variantId);
+      window.history.replaceState({}, '', url);
+    });
+  });
+
+  function buildSlideHTML(srcset, src) {
+    return `<div class="swiper-slide"><div class="pd-main-img"><picture><source srcset="${srcset}"><img width="380" height="240" src="${src}" alt="" loading="lazy"></picture></div></div>`;
+  }
+
+  function updateGallery(variant) {
+    const customGallery = variant.variation_gallery;
+    const hasCustom = customGallery && customGallery.length > 0;
+
+    const slides = hasCustom
+      ? customGallery.map(src => buildSlideHTML(src, src))
+      : defaultSlides.map(d => buildSlideHTML(d.srcset, d.src));
+
+    document.querySelectorAll('.pd-slider .swiper-container').forEach(container => {
+      const swiper = container.swiper;
+      if (!swiper) return;
+      swiper.removeAllSlides();
+      swiper.appendSlide(slides.map(s => s));
+      swiper.update();
+      swiper.slideTo(0, 0);
+    });
+  }
+});
 </script>
 
 {% schema %}
