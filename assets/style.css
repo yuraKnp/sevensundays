@@ -1429,3 +1429,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     overflow: hidden;
     min-width: 50px;
 }
+
+.variation-item .img-wrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
