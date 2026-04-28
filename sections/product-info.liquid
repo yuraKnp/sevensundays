@@ -223,8 +223,11 @@
                         <div class="motto">Variation:</div>
                         <div class="variations">
                           {% for variant in product.variants %}
+                          {%- capture var_gallery_json -%}[{%- for img in variant.metafields.custom.variation_gallery.value -%}{%- unless forloop.first -%},{%- endunless -%}"{{ img | image_url: width: 1200 }}"{%- endfor -%}]{%- endcapture -%}
                           <div class="variation-item {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}"
-                               data-variant-id="{{ variant.id }}">
+                               data-variant-id="{{ variant.id }}"
+                               data-change-title="{{ variant.metafields.custom.change_title_on_click | escape }}"
+                               data-gallery='{{ var_gallery_json }}'>
                             <div class="img-wrapper">
                               <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="{{ variant.title | escape }}" loading="lazy">
                             </div>
@@ -637,7 +640,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const descElSec = document.getElementById('classic-mode-desc-sec');
     const descElTag = document.getElementById('classic-mode-desc-tag');
     
-    console.log(variant);
+    {% comment %} console.log(variant); {% endcomment %}
     if (descElSec) {
         descElSec.textContent = variant.comfort_type_desc || '';
     }
@@ -764,8 +767,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const variants = buildVariantData();
     const optionMap = buildOptionValueMap(variants);
 
-    console.log('Variant data:', variants);
-    console.log('Option map:', optionMap);
+    {% comment %} console.log('Variant data:', variants);
+    console.log('Option map:', optionMap); {% endcomment %}
 
     renderOptionIcons(optionMap);
   }
@@ -797,8 +800,8 @@ document.addEventListener('DOMContentLoaded', function () {
       if (this.classList.contains('disabled')) return;
 
       const variantId = parseInt(this.dataset.variantId);
-      const variant = product.variants.find(v => v.id === variantId);
-      if (!variant) return;
+      const changeTitle = this.dataset.changeTitle || '';
+      const customGallery = JSON.parse(this.dataset.gallery || '[]');
 
       // Active state
       document.querySelectorAll('.variation-item').forEach(el => el.classList.remove('active'));
@@ -808,17 +811,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const idInput = document.querySelector('input[name="id"]');
       if (idInput) idInput.value = variantId;
 
-      console.log(variant);
       // Title
       const titleEl = document.querySelector('.title-with-rating .title');
       if (titleEl) {
-        titleEl.textContent = (variant.change_title && variant.change_title.trim())
-          ? variant.change_title
-          : product.defaultProductTitle;
+        titleEl.textContent = changeTitle.trim() ? changeTitle : product.defaultProductTitle;
       }
 
       // Gallery
-      updateGallery(variant);
+      updateGallery(customGallery);
 
       // Price
       fetch(`${window.location.pathname}?variant=${variantId}&section_id=${sectionId}`)
@@ -841,8 +841,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return `<div class="swiper-slide"><div class="pd-main-img"><picture><source srcset="${srcset}"><img width="380" height="240" src="${src}" alt="" loading="lazy"></picture></div></div>`;
   }
 
-  function updateGallery(variant) {
-    const customGallery = variant.variation_gallery;
+  function updateGallery(customGallery) {
     const hasCustom = customGallery && customGallery.length > 0;
 
     const slides = hasCustom
