@@ -185,12 +185,12 @@
                               {% assign size_first_single_active = false %}
                               {% for value in option.values %}
                                 {% if value contains '(Single)' and size_first_single_active == false %}
-                                  <div class="quantity-item active" data-value="{{ value }}">
+                                  <div class="quantity-item" data-value="{{ value }}">
                                     <div class="text"><b>{{ value }}</b></div>
                                   </div>
                                   {% assign size_first_single_active = true %}
                                 {% else %}
-                                  <div class="quantity-item" data-value="{{ value }}">
+                                  <div class="quantity-item active" data-value="{{ value }}">
                                     <div class="text"><b>{{ value }}</b></div>
                                   </div>
                                 {% endif %}
