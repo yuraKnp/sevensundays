@@ -237,7 +237,8 @@
                           <div class="variation-item {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}"
                                data-variant-id="{{ variant.id }}"
                                data-change-title="{{ variant.metafields.custom.change_title_on_click | escape }}"
-                               data-gallery='{{ var_gallery_json }}'>
+                               data-gallery='{{ var_gallery_json }}'
+                               data-description="{{ variant.metafields.custom.custom_short_description | escape }}">
                             <div class="img-wrapper">
                               <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="{{ variant.title | escape }}" loading="lazy">
                             </div>
@@ -812,14 +813,22 @@ document.addEventListener('DOMContentLoaded', function () {
     defaultProductRowImages.push(source.getAttribute('srcset'));
   });
 
+  const defaultDescription = document.querySelector('.product-description .content')?.innerHTML || '';
+
   function applyVariation(item) {
     const changeTitle = item.dataset.changeTitle || '';
     const customGallery = JSON.parse(item.dataset.gallery || '[]');
     const variantId = item.dataset.variantId;
+    const customDescription = item.dataset.description || '';
 
     const titleEl = document.querySelector('.title-with-rating .title');
     if (titleEl) {
       titleEl.innerHTML = changeTitle.trim() ? changeTitle : product.defaultProductTitle;
+    }
+
+    const descEl = document.querySelector('.product-description .content');
+    if (descEl) {
+      descEl.innerHTML = customDescription.trim() ? customDescription : defaultDescription;
     }
 
     updateGallery(customGallery);
