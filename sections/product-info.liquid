@@ -219,11 +219,11 @@
                     {% assign current_variant = product.selected_or_first_available_variant %}
                     {% assign replace_gallery_info = section.settings.replace_gallery_info %}
                     {% if replace_gallery_info %}
-                      <div class="quantity-wrapp variations-wrapp">
+                      <div class="variations-wrapp">
                         <div class="motto">Variation:</div>
-                        <div class="quantity variations">
+                        <div class="variations">
                           {% for variant in product.variants %}
-                          <div class="quantity-item variation-item {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}"
+                          <div class="variation-item {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}"
                                data-variant-id="{{ variant.id }}">
                             <div class="img-wrapper">
                               <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="{{ variant.title | escape }}" loading="lazy">
