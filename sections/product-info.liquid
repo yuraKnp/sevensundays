@@ -782,9 +782,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const sectionId = "{{ section.id }}";
   const product = window.productData;
 
+  const numSlideImages = {{ section.settings.number_slide_images }};
+
   // Capture default gallery srcs from initial DOM before any changes
   const defaultSlides = [];
-  document.querySelectorAll('.pd-slider .swiper-slide').forEach(slide => {
+  document.querySelectorAll('.pd-slider.hide-mobile .swiper-slide').forEach(slide => {
     const source = slide.querySelector('source');
     const img = slide.querySelector('img');
     if (source) {
@@ -793,6 +795,11 @@ document.addEventListener('DOMContentLoaded', function () {
         src: img ? img.getAttribute('src') : '#'
       });
     }
+  });
+
+  const defaultProductRowImages = [];
+  document.querySelectorAll('.product-row .simple-img picture source').forEach(source => {
+    defaultProductRowImages.push(source.getAttribute('srcset'));
   });
 
   document.querySelectorAll('.variation-item').forEach(item => {
@@ -841,11 +848,23 @@ document.addEventListener('DOMContentLoaded', function () {
     return `<div class="swiper-slide"><div class="pd-main-img"><picture><source srcset="${srcset}"><img width="380" height="240" src="${src}" alt="" loading="lazy"></picture></div></div>`;
   }
 
+  function buildProductRowHTML(srcs) {
+    return srcs.map(src => `
+      <div class="col-md-6">
+        <div class="simple-img size5">
+          <picture>
+            <source srcset="${src}">
+            <img width="380" height="240" src="${src}" alt="" loading="lazy">
+          </picture>
+        </div>
+      </div>`).join('');
+  }
+
   function updateGallery(customGallery) {
     const hasCustom = customGallery && customGallery.length > 0;
 
     const slides = hasCustom
-      ? customGallery.map(src => buildSlideHTML(src, src))
+      ? customGallery.slice(0, numSlideImages).map(src => buildSlideHTML(src, src))
       : defaultSlides.map(d => buildSlideHTML(d.srcset, d.src));
 
     document.querySelectorAll('.pd-slider .swiper-container').forEach(container => {
@@ -856,6 +875,13 @@ document.addEventListener('DOMContentLoaded', function () {
       swiper.update();
       swiper.slideTo(0, 0);
     });
+
+    const productRow = document.querySelector('.product-row');
+    if (productRow) {
+      productRow.innerHTML = hasCustom
+        ? buildProductRowHTML(customGallery.slice(numSlideImages))
+        : buildProductRowHTML(defaultProductRowImages);
+    }
   }
 });
 </script>
