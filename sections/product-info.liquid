@@ -230,7 +230,7 @@
                     {% assign replace_gallery_info = section.settings.replace_gallery_info %}
                     {% if replace_gallery_info %}
                       <div class="variations-wrapp">
-                        <div class="motto">Variation:</div>
+                        <div class="motto">{{ product.options.first }}:</div>
                         <div class="variations">
                           {% for variant in product.variants %}
                           {%- capture var_gallery_json -%}[{%- for img in variant.metafields.custom.variation_gallery.value -%}{%- unless forloop.first -%},{%- endunless -%}"{{ img | image_url: width: 1200 }}"{%- endfor -%}]{%- endcapture -%}
