@@ -232,7 +232,7 @@
                               <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="{{ variant.title | escape }}" loading="lazy">
                             </div>
                             <div class="content">
-                              <div class="text text-sm"><b>{{ variant.metafields.custom.change_title_on_click | default: variant.title }}</b></div>
+                              <div class="text text-sm"><b>{{ variant.title }}</b></div>
                               <div class="text text-sm">{{ variant.metafields.custom.additional_description }}</div>
                             </div>
                           </div>
