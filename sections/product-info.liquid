@@ -237,8 +237,7 @@
                           <div class="variation-item  {% unless variant.available %}disabled{% endunless %} {% if variant.id == current_variant.id %}active{% endif %}"
                                data-variant-id="{{ variant.id }}"
                                data-change-title="{{ variant.metafields.custom.change_title_on_click | escape }}"
-                               data-gallery='{{ var_gallery_json }}'
-                               data-description="{{ variant.metafields.custom.custom_short_description.value | escape }}">
+                               data-gallery='{{ var_gallery_json }}'>
                             <div class="img-wrapper">
                               <img width="72" height="40" src="{{ variant.featured_image | img_url: 'small' }}" alt="{{ variant.title | escape }}" loading="lazy">
                             </div>
@@ -247,6 +246,11 @@
                               <div class="text text-sm">{{ variant.metafields.custom.additional_description }}</div>
                             </div>
                           </div>
+                          {% endfor %}
+                        </div>
+                        <div class="variation-descriptions" style="display:none">
+                          {% for variant in product.variants %}
+                          <div data-variant-desc-id="{{ variant.id }}">{{ variant.metafields.custom.custom_short_description | metafield_tag }}</div>
                           {% endfor %}
                         </div>
                       </div>
@@ -819,8 +823,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const changeTitle = item.dataset.changeTitle || '';
     const customGallery = JSON.parse(item.dataset.gallery || '[]');
     const variantId = item.dataset.variantId;
-    const customDescription = item.dataset.description || '';
-
     const titleEl = document.querySelector('.title-with-rating .title');
     if (titleEl) {
       titleEl.innerHTML = changeTitle.trim() ? changeTitle : product.defaultProductTitle;
@@ -828,7 +830,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const descEl = document.querySelector('.product-description .content');
     if (descEl) {
-      descEl.innerHTML = customDescription.trim() ? customDescription : defaultDescription;
+      const descSource = document.querySelector(`.variation-descriptions [data-variant-desc-id="${variantId}"]`);
+      const customDescription = descSource ? descSource.innerHTML.trim() : '';
+      descEl.innerHTML = customDescription ? customDescription : defaultDescription;
     }
 
     updateGallery(customGallery);
