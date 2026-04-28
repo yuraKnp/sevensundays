@@ -145,8 +145,8 @@
         "content": "<p>Viel Sitzen, Bildschirmarbeit, wenig Bewegung – die Halswirbelsäule<br/>gehört zu den meistbelasteten Bereichen unseres Alltags. Dabei<br/>liegt die Lösung nicht im Tag, sondern in der Nacht. Wer wirklich<br/>zur Ruhe kommt, gibt seinem Körper die Chance, das zu tun, was<br/>er am besten kann: sich selbst zu heilen.<br/><br/><br/>Das hat mich angetrieben, dieses Kissen mit SEVEN SUNDAYS zu<br/>entwickeln. Bewährte Ergonomie – und ein neues Material, das alles<br/>verändert: der Malve-Hybridschaum. Anschmiegsam, unglaublich<br/>weich, kuschelig wie eine Umarmung. Er schmiegt sich exakt an<br/>Kopf und Nacken, stützt präzise – und lädt jeden Abend dazu ein,<br/>einfach loszulassen.</p>",
         "right_image": "shopify://shop_images/SEVEN-SUNDAYS-Dietrich-Gronemeyer-nackenkissen_cd08e65f-bd9e-4705-a1a3-5659b936bdb7.jpg",
         "section_type": "left",
-        "remove_top_padding": false,
-        "remove_bottom_padding": false
+        "remove_top_padding": true,
+        "remove_bottom_padding": true
       }
     },
     "left_right_RTiFwY": {
