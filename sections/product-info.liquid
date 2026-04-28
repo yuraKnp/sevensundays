@@ -814,7 +814,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Title
       const titleEl = document.querySelector('.title-with-rating .title');
       if (titleEl) {
-        titleEl.textContent = changeTitle.trim() ? changeTitle : product.defaultProductTitle;
+        titleEl.innerHTML = changeTitle.trim() ? changeTitle : product.defaultProductTitle;
       }
 
       // Gallery
