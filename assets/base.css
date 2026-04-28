@@ -3763,7 +3763,8 @@ span.price-item{
   padding-inline: calc(var(--bs-gutter-x) * .8)!important;
 } */
 
-.quantity-new{
+.quantity-new,
+.quantity.variations{
   display: flex;
   align-items: center;
   padding: 4px;
