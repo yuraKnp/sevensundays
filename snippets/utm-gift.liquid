@@ -130,7 +130,9 @@
       .then(function (result) {
         syncing = false;
         if (syncQueued) { syncQueued = false; sync(); return; }
-        if (result) refreshCartUI();
+        // Shopify error responses carry a `status` >= 400 — don't refresh on failure
+        var isError = result && result.status && result.status >= 400;
+        if (result && !isError) refreshCartUI();
       })
       .catch(function () {
         syncing = false;
