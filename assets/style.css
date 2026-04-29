@@ -1443,6 +1443,12 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     word-spacing: -15px;
 }
 
+@media(max-width: 768px){
+    .h2.title i{
+        word-spacing: -10px;
+    }
+}
+
 .pd-detail-info .h2.title{
     font-size: 50px;
 }
