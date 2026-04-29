@@ -1440,6 +1440,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     font-family: 'reviewsio-font';
     font-style: italic !important;
     font-weight: 100;
+    word-spacing: -10px;
 }
 
 .pd-detail-info .h2.title{
