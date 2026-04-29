@@ -138,6 +138,12 @@
   }
 
   function refreshCartUI() {
+    // On the cart page the template won't react to custom events — just reload
+    if (window.location.pathname === '/cart') {
+      window.location.reload();
+      return;
+    }
+
     document.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true }));
     document.dispatchEvent(new CustomEvent('cart:updated', { bubbles: true }));
 
@@ -163,6 +169,34 @@
       return response;
     });
   };
+
+  // ── Patch XMLHttpRequest (jQuery / legacy themes) ──────────────────────────
+
+  var _xhrOpen = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function (method, url) {
+    this._cartUrl = url;
+    return _xhrOpen.apply(this, arguments);
+  };
+
+  var _xhrSend = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.send = function () {
+    var url = this._cartUrl || '';
+    var isWrite = CART_WRITE.some(function (u) { return url.indexOf(u) !== -1; });
+    if (isWrite) {
+      this.addEventListener('load', function () { setTimeout(sync, 400); });
+    }
+    return _xhrSend.apply(this, arguments);
+  };
+
+  // ── Detect form-based /cart/add (themes that do a full-page redirect) ──────
+
+  document.addEventListener('submit', function (e) {
+    var form = e.target;
+    if (form && typeof form.action === 'string' && form.action.indexOf('/cart/add') !== -1) {
+      // Page will redirect to /cart — sync will run again on that page via DOMContentLoaded.
+      // Nothing extra needed here; the boot block below handles it.
+    }
+  });
 
   // ── Boot ───────────────────────────────────────────────────────────────────
 
