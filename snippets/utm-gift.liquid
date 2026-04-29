@@ -140,8 +140,10 @@
   }
 
   function refreshCartUI() {
-    // On the cart page the template won't react to custom events — just reload
+    // On the cart page the template won't react to custom events — reload once.
+    // Set a flag first so the next page load skips the initial sync and won't loop.
     if (window.location.pathname === '/cart') {
+      sessionStorage.setItem('utm_gift_synced', '1');
       window.location.reload();
       return;
     }
@@ -229,10 +231,16 @@
   captureUTM();
   saveUTMToCart();
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', sync);
+  // Skip the initial sync on the reload we triggered ourselves — the cart is
+  // already correct and re-running sync would cause another reload.
+  if (sessionStorage.getItem('utm_gift_synced')) {
+    sessionStorage.removeItem('utm_gift_synced');
   } else {
-    sync();
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', sync);
+    } else {
+      sync();
+    }
   }
 
 }());
