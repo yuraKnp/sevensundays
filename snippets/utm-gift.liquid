@@ -198,9 +198,34 @@
     }
   });
 
+  // ── Persist UTM to cart attributes (saved on order) ───────────────────────
+
+  function saveUTMToCart() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      var d = JSON.parse(raw);
+      if (Date.now() > d.expires) return;
+
+      _fetch('/cart/update.js', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          attributes: {
+            utm_source:   d.source   || '',
+            utm_medium:   d.medium   || '',
+            utm_campaign: d.campaign || '',
+            utm_content:  d.content  || ''
+          }
+        })
+      });
+    } catch (_) {}
+  }
+
   // ── Boot ───────────────────────────────────────────────────────────────────
 
   captureUTM();
+  saveUTMToCart();
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', sync);
