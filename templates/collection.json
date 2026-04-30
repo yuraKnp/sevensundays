@@ -242,6 +242,13 @@
         "button_label": "KISSEN ENTDECKEN",
         "button_url": ""
       }
+    },
+    "ss_trustpilot_pWR9Qw": {
+      "type": "ss-trustpilot",
+      "name": "SS Trustpilot",
+      "settings": {
+        "text": "Review integration from Trustpilot"
+      }
     }
   },
   "order": [
@@ -250,6 +257,7 @@
     "ss_shop_hero_EhyBeh",
     "ss_schlafsystem_bnpLgV",
     "ss_dream_cozy_DdkReU",
-    "ss_pillow_talk_Gegg7n"
+    "ss_pillow_talk_Gegg7n",
+    "ss_trustpilot_pWR9Qw"
   ]
 }
