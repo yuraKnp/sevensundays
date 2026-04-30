@@ -13,41 +13,30 @@
       {%- endif -%}
     </div>
 
-    {%- if section.blocks.size > 0 -%}
-    <div class="swiper-entry">
-      <div class="swiper-container" data-options='{
-        "slidesPerView": 1.2,
-        "spaceBetween": 8,
-        "breakpoints":{
-          "576":{"spaceBetween": 16, "slidesPerView": 1.5},
-          "992":{"spaceBetween": 16, "slidesPerView": 2.5},
-          "1200":{"spaceBetween": 16, "slidesPerView": 2.8}
-        }}'>
-        <div class="swiper-wrapper">
-          {%- for block in section.blocks -%}
-            <div class="swiper-slide" {{ block.shopify_attributes }}>
-              <a href="{{ block.settings.item_url }}" class="product-category">
-                {%- if block.settings.item_image != blank -%}
-                  {{ block.settings.item_image
-                    | image_url: width: block.settings.item_image.width
-                    | image_tag:
-                        loading: 'lazy',
-                        alt: block.settings.item_image.alt
-                  }}
-                {%- endif -%}
-                <div class="product-info no-transform">
-                  {%- if block.settings.item_label != blank -%}
-                  <div class="btn">
-                    <b>{{ block.settings.item_label }}</b>
-                  </div>
-                  {%- endif -%}
-                </div>
-              </a>
-            </div>
-          {%- endfor -%}
-        </div>
-      </div>
-      <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+    {%- if section.settings.collection.products.size > 0 -%}
+    {% assign lazy_load = false %}
+    <div class="row product-row">
+      {% paginate section.settings.collection.products by section.settings.products_to_show %}
+        {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+          {% if lazy_load == false and forloop.index > max_columns_to_show %}
+            {% assign lazy_load = true %}
+          {% endif %}
+          <div class="col-md-6 col-lg-3">
+            {% render 'card-product-second',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              image_shape: section.settings.image_shape,
+              lazy_load: lazy_load,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              skip_styles: skip_card_product_styles,
+              section_id: section.id,
+              quick_add: section.settings.quick_add
+            %}
+          </div>
+        {%- endfor -%}
+      {% endpaginate %}
     </div>
     {%- endif -%}
   </div>
@@ -79,39 +68,81 @@
       "type": "inline_richtext",
       "id": "description",
       "label": "Description"
-    }
-  ],
-  "blocks": [
+    },
     {
-      "type": "item",
-      "name": "Product Item",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "item_image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "item_label",
-          "label": "Button Label"
-        },
-        {
-          "type": "url",
-          "id": "item_url",
-          "label": "Link URL"
-        }
-      ]
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 25,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.products_to_show.label"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        { "value": "adapt", "label": "t:sections.featured-collection.settings.image_ratio.options__1.label" },
+        { "value": "portrait", "label": "t:sections.featured-collection.settings.image_ratio.options__2.label" },
+        { "value": "square", "label": "t:sections.featured-collection.settings.image_ratio.options__3.label" }
+      ],
+      "default": "adapt",
+      "label": "t:sections.featured-collection.settings.image_ratio.label"
+    },
+    {
+      "type": "select",
+      "id": "image_shape",
+      "options": [
+        { "value": "default", "label": "t:sections.all.image_shape.options__1.label" },
+        { "value": "arch", "label": "t:sections.all.image_shape.options__2.label" },
+        { "value": "blob", "label": "t:sections.all.image_shape.options__3.label" },
+        { "value": "chevronleft", "label": "t:sections.all.image_shape.options__4.label" },
+        { "value": "chevronright", "label": "t:sections.all.image_shape.options__5.label" },
+        { "value": "diamond", "label": "t:sections.all.image_shape.options__6.label" },
+        { "value": "parallelogram", "label": "t:sections.all.image_shape.options__7.label" },
+        { "value": "round", "label": "t:sections.all.image_shape.options__8.label" }
+      ],
+      "default": "default",
+      "label": "t:sections.all.image_shape.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_rating.label"
+    },
+    {
+      "type": "select",
+      "id": "quick_add",
+      "options": [
+        { "value": "none", "label": "t:sections.main-collection-product-grid.settings.quick_add.options__1.label" },
+        { "value": "standard", "label": "t:sections.main-collection-product-grid.settings.quick_add.options__2.label" },
+        { "value": "bulk", "label": "t:sections.main-collection-product-grid.settings.quick_add.options__3.label" }
+      ],
+      "default": "none",
+      "label": "t:sections.featured-collection.settings.quick_add.label"
     }
   ],
   "presets": [
     {
-      "name": "SS Routine Products",
-      "blocks": [
-        { "type": "item", "settings": { "item_label": "KISSENSPRAY" } },
-        { "type": "item", "settings": { "item_label": "SUPPLEMENT" } },
-        { "type": "item", "settings": { "item_label": "SCHLAFMASKE" } }
-      ]
+      "name": "SS Routine Products"
     }
   ]
 }
