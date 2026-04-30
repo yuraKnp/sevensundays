@@ -63,31 +63,36 @@
         "tab_9p4mPb": {
           "type": "tab",
           "settings": {
-            "tab_label": "Alle Produkte"
+            "tab_label": "Alle Produkte",
+            "tab_url": ""
           }
         },
         "tab_DcbTr6": {
           "type": "tab",
           "settings": {
-            "tab_label": "Schlafsystem"
+            "tab_label": "Schlafsystem",
+            "tab_url": ""
           }
         },
         "tab_FX6EE9": {
           "type": "tab",
           "settings": {
-            "tab_label": "Decken"
+            "tab_label": "Decken",
+            "tab_url": ""
           }
         },
         "tab_RcCgJL": {
           "type": "tab",
           "settings": {
-            "tab_label": "Kissen"
+            "tab_label": "Kissen",
+            "tab_url": ""
           }
         },
         "tab_Lmthqh": {
           "type": "tab",
           "settings": {
-            "tab_label": "Zubehör"
+            "tab_label": "Zubehör",
+            "tab_url": ""
           }
         },
         "stat_XBUUxz": {
@@ -247,7 +252,45 @@
       "type": "ss-trustpilot",
       "name": "SS Trustpilot",
       "settings": {
+        "custom_script": "<div class=\"trustpilot-widget\" data-locale=\"de-DE\" data-template-id=\"53aa8807dec7e10d38f59f32\" data-businessunit-id=\"5ff5d1f3b391a00001aac82e\" data-style-height=\"73px\" data-style-width=\"140px\" data-token=\"4af8d245-a721-439b-962b-55d6ee830678\">  <a href=\"\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>",
         "text": "Review integration from Trustpilot"
+      }
+    },
+    "ss_routine_products_HAUmYF": {
+      "type": "ss-routine-products",
+      "blocks": {
+        "item_Fz9aGP": {
+          "type": "item",
+          "settings": {
+            "item_label": "KISSENSPRAY",
+            "item_url": ""
+          }
+        },
+        "item_QVXfrm": {
+          "type": "item",
+          "settings": {
+            "item_label": "SUPPLEMENT",
+            "item_url": ""
+          }
+        },
+        "item_AXiDQK": {
+          "type": "item",
+          "settings": {
+            "item_label": "SCHLAFMASKE",
+            "item_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_Fz9aGP",
+        "item_QVXfrm",
+        "item_AXiDQK"
+      ],
+      "name": "SS Routine Products",
+      "settings": {
+        "motto": "Seven Sundays",
+        "title": "FÜR DEINE ROUTINE",
+        "description": "Vervollständige deine Schlafroutine und hol dir dein extra Wellness-Moment ins Schlafzimmer"
       }
     }
   },
@@ -258,6 +301,7 @@
     "ss_schlafsystem_bnpLgV",
     "ss_dream_cozy_DdkReU",
     "ss_pillow_talk_Gegg7n",
-    "ss_trustpilot_pWR9Qw"
+    "ss_trustpilot_pWR9Qw",
+    "ss_routine_products_HAUmYF"
   ]
 }
