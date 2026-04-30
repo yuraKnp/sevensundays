@@ -2,7 +2,9 @@
 <section class="section sr-trustpilot">
   <div class="container">
     <div class="sr-trustpilot__inner">
-      {%- if section.settings.icon != blank -%}
+      {%- if section.settings.custom_script != blank -%}
+        {{ section.settings.custom_script }}
+      {%- elsif section.settings.icon != blank -%}
         {{ section.settings.icon
           | image_url: width: 32
           | image_tag:
@@ -31,9 +33,16 @@
   },
   "settings": [
     {
+      "type": "html",
+      "id": "custom_script",
+      "label": "Custom Widget Code",
+      "info": "Paste the Trustpilot widget HTML here. When set, it replaces the icon."
+    },
+    {
       "type": "image_picker",
       "id": "icon",
-      "label": "Icon"
+      "label": "Icon",
+      "info": "Used only when no custom widget code is provided."
     },
     {
       "type": "text",
