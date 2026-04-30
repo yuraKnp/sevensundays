@@ -42,6 +42,24 @@
     "ss_shop_hero_EhyBeh": {
       "type": "ss-shop-hero",
       "blocks": {
+        "slide_hhidiN": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/sleep-img-2.png"
+          }
+        },
+        "slide_RfCFxt": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-2_988c355a-4ff9-4bc0-98b6-53a37130484e.webp"
+          }
+        },
+        "slide_9NMNx7": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/lr-img-3_f8f9244e-bc1f-41e6-91df-b0fc46eb447c.webp"
+          }
+        },
         "tab_9p4mPb": {
           "type": "tab",
           "settings": {
@@ -98,6 +116,9 @@
         }
       },
       "block_order": [
+        "slide_hhidiN",
+        "slide_RfCFxt",
+        "slide_9NMNx7",
         "tab_9p4mPb",
         "tab_DcbTr6",
         "tab_FX6EE9",
