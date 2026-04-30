@@ -169,12 +169,43 @@
         "button_label": "MEHR DAZU",
         "button_url": ""
       }
+    },
+    "ss_dream_cozy_DdkReU": {
+      "type": "ss-dream-cozy",
+      "blocks": {
+        "slide_ib7CBJ": {
+          "type": "slide",
+          "settings": {}
+        },
+        "slide_enYriR": {
+          "type": "slide",
+          "settings": {}
+        },
+        "slide_CghGm6": {
+          "type": "slide",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "slide_ib7CBJ",
+        "slide_enYriR",
+        "slide_CghGm6"
+      ],
+      "name": "SS Dream Cozy",
+      "settings": {
+        "motto": "Seven Sundays",
+        "title": "DREAM COZY",
+        "description": "Das einzige Schlafsystem, das Dich besucht, bevor Du bestellst",
+        "button_label": "MEHR DAZU",
+        "button_url": ""
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
     "ss_shop_hero_EhyBeh",
-    "ss_schlafsystem_bnpLgV"
+    "ss_schlafsystem_bnpLgV",
+    "ss_dream_cozy_DdkReU"
   ]
 }
