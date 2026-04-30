@@ -17,9 +17,13 @@
     {%- if tab_blocks.size > 0 -%}
     <div class="sr-tabs">
       {%- for block in tab_blocks -%}
-        <div class="sr-tab{% if forloop.first %} is-active{% endif %}" {{ block.shopify_attributes }}>
+        <a
+          href="{{ block.settings.tab_url | default: '#' }}"
+          class="sr-tab{% if forloop.first %} is-active{% endif %}"
+          {{ block.shopify_attributes }}
+        >
           {{ block.settings.tab_label }}
-        </div>
+        </a>
       {%- endfor -%}
     </div>
     {%- endif -%}
@@ -108,6 +112,11 @@
           "type": "text",
           "id": "tab_label",
           "label": "Tab Label"
+        },
+        {
+          "type": "url",
+          "id": "tab_url",
+          "label": "Tab URL"
         }
       ]
     },
