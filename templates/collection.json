@@ -206,6 +206,36 @@
         "button_label": "MEHR DAZU",
         "button_url": ""
       }
+    },
+    "ss_pillow_talk_Gegg7n": {
+      "type": "ss-pillow-talk",
+      "blocks": {
+        "slide_qXkwHV": {
+          "type": "slide",
+          "settings": {}
+        },
+        "slide_BB4YWG": {
+          "type": "slide",
+          "settings": {}
+        },
+        "slide_cY7y4N": {
+          "type": "slide",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "slide_qXkwHV",
+        "slide_BB4YWG",
+        "slide_cY7y4N"
+      ],
+      "name": "SS Pillow Talk",
+      "settings": {
+        "motto": "Seven Sundays",
+        "title": "PILLOW TALK",
+        "description": "So einzigartig wie dein Körper ist auch die ideale Positionierung von Kopf und Nacken. Wie du schläfst, bestimmt, was du brauchst.",
+        "button_label": "KISSEN ENTDECKEN",
+        "button_url": ""
+      }
     }
   },
   "order": [
@@ -213,6 +243,7 @@
     "product-grid",
     "ss_shop_hero_EhyBeh",
     "ss_schlafsystem_bnpLgV",
-    "ss_dream_cozy_DdkReU"
+    "ss_dream_cozy_DdkReU",
+    "ss_pillow_talk_Gegg7n"
   ]
 }
