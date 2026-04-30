@@ -133,11 +133,42 @@
         "title": "Für deine Schlafroutine",
         "description": "Es ist Zeit, Schlaf wieder zu zelebrieren. Personalisierte, modulare Schlafsysteme geben dir endlich die Kontrolle zurück – sie geben dir den Schlüssel zu erholsamer Ruhe, maßgeschneidert für deinen Körper. Zurück zum ursprünglichen Zweck des Schlafs: Regeneration."
       }
+    },
+    "ss_schlafsystem_bnpLgV": {
+      "type": "ss-schlafsystem",
+      "blocks": {
+        "slide_q48yCk": {
+          "type": "slide",
+          "settings": {}
+        },
+        "slide_FbdnRq": {
+          "type": "slide",
+          "settings": {}
+        },
+        "slide_jrwDEn": {
+          "type": "slide",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "slide_q48yCk",
+        "slide_FbdnRq",
+        "slide_jrwDEn"
+      ],
+      "name": "SS Schlafsystem",
+      "settings": {
+        "motto": "Seven Sundays",
+        "title": "SCHLAFSYSTEM",
+        "description": "",
+        "button_label": "MEHR DAZU",
+        "button_url": ""
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "ss_shop_hero_EhyBeh"
+    "ss_shop_hero_EhyBeh",
+    "ss_schlafsystem_bnpLgV"
   ]
 }
