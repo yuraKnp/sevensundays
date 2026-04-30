@@ -133,11 +133,131 @@
         "title": "Für deine Schlafroutine",
         "description": "Es ist Zeit, Schlaf wieder zu zelebrieren. Personalisierte, modulare Schlafsysteme geben dir endlich die Kontrolle zurück – sie geben dir den Schlüssel zu erholsamer Ruhe, maßgeschneidert für deinen Körper. Zurück zum ursprünglichen Zweck des Schlafs: Regeneration."
       }
+    },
+    "ss_schlafsystem_bnpLgV": {
+      "type": "ss-schlafsystem",
+      "blocks": {
+        "slide_q48yCk": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.webp"
+          }
+        },
+        "slide_FbdnRq": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-2.webp"
+          }
+        },
+        "slide_jrwDEn": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_q48yCk",
+        "slide_FbdnRq",
+        "slide_jrwDEn"
+      ],
+      "name": "SS Schlafsystem",
+      "settings": {
+        "motto": "Seven Sundays",
+        "title": "SCHLAFSYSTEM",
+        "description": "Das einzige Schlafsystem, das Dich besucht, bevor Du bestellst",
+        "button_label": "MEHR DAZU",
+        "button_url": ""
+      }
+    },
+    "ss_dream_cozy_DdkReU": {
+      "type": "ss-dream-cozy",
+      "blocks": {
+        "slide_ib7CBJ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.webp"
+          }
+        },
+        "slide_enYriR": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-2.webp"
+          }
+        },
+        "slide_CghGm6": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ib7CBJ",
+        "slide_enYriR",
+        "slide_CghGm6"
+      ],
+      "name": "SS Dream Cozy",
+      "settings": {
+        "main_image": "shopify://shop_images/simple-img-1.webp",
+        "motto": "Seven Sundays",
+        "title": "DREAM COZY",
+        "description": "Das einzige Schlafsystem, das Dich besucht, bevor Du bestellst",
+        "button_label": "MEHR DAZU",
+        "button_url": ""
+      }
+    },
+    "ss_pillow_talk_Gegg7n": {
+      "type": "ss-pillow-talk",
+      "blocks": {
+        "slide_qXkwHV": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.webp"
+          }
+        },
+        "slide_BB4YWG": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-2.webp"
+          }
+        },
+        "slide_cY7y4N": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qXkwHV",
+        "slide_BB4YWG",
+        "slide_cY7y4N"
+      ],
+      "name": "SS Pillow Talk",
+      "settings": {
+        "motto": "Seven Sundays",
+        "title": "PILLOW TALK",
+        "description": "So einzigartig wie dein Körper ist auch die ideale Positionierung von Kopf und Nacken. Wie du schläfst, bestimmt, was du brauchst.",
+        "button_label": "KISSEN ENTDECKEN",
+        "button_url": ""
+      }
+    },
+    "ss_trustpilot_pWR9Qw": {
+      "type": "ss-trustpilot",
+      "name": "SS Trustpilot",
+      "settings": {
+        "text": "Review integration from Trustpilot"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "ss_shop_hero_EhyBeh"
+    "ss_shop_hero_EhyBeh",
+    "ss_schlafsystem_bnpLgV",
+    "ss_dream_cozy_DdkReU",
+    "ss_pillow_talk_Gegg7n",
+    "ss_trustpilot_pWR9Qw"
   ]
 }
