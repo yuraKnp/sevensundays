@@ -44,15 +44,67 @@
       "name": "SS Hero",
       "settings": {
         "pill_text": "Sleep Suite · Seven Sundays",
-        "heading": "<p>Unlock <em>Better Sleep.</em><br>Discover your best self.</p>",
+        "heading": "<p>Unlock <em>Better Sleep.</em><br/>Discover your best self.</p>",
         "subtext": "Jeder Mensch ist einzigartig – deshalb ist personalisierter Schlaf der Schlüssel zu maximaler Regeneration.",
         "quote_text": "<p><strong>Erst wenn der Körper ideal gelagert ist</strong>, Muskeln, Sehnen und Faszien maximal entspannt sind – erst dann entfaltet sich das volle Regenerationspotential.</p>"
+      }
+    },
+    "ss_journey_tabs_NHz9gN": {
+      "type": "ss-journey-tabs",
+      "blocks": {
+        "tab_Viz8j9": {
+          "type": "tab",
+          "settings": {
+            "filter": "system",
+            "number": "01",
+            "name": "Das System",
+            "description": "Ideale Körperlage. Rücken, Nacken & Wirbelsäule perfekt gestützt."
+          }
+        },
+        "tab_46tQR6": {
+          "type": "tab",
+          "settings": {
+            "filter": "schlafklima",
+            "number": "02",
+            "name": "Schlafklima",
+            "description": "Richtige Temperatur. Muskeln entspannen, Tiefschlaf wird möglich."
+          }
+        },
+        "tab_jgUU83": {
+          "type": "tab",
+          "settings": {
+            "filter": "sinne",
+            "number": "03",
+            "name": "Sinne & Geist",
+            "description": "Ruhe für alle Sinne. Psyche entlastet, natürlich einschlafen."
+          }
+        },
+        "tab_6xiHdH": {
+          "type": "tab",
+          "settings": {
+            "filter": "recovery",
+            "number": "04",
+            "name": "Recovery",
+            "description": "Von innen regenerieren. Körper mit dem Richtigen versorgen."
+          }
+        }
+      },
+      "block_order": [
+        "tab_Viz8j9",
+        "tab_46tQR6",
+        "tab_jgUU83",
+        "tab_6xiHdH"
+      ],
+      "name": "SS Journey Tabs",
+      "settings": {
+        "label": "Der Weg zu tiefem, erholsamem Schlaf"
       }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "ss_hero_iHCV7z"
+    "ss_hero_iHCV7z",
+    "ss_journey_tabs_NHz9gN"
   ]
 }
