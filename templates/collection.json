@@ -39,72 +39,84 @@
         "padding_bottom": 36
       }
     },
-    "ss_hero_iHCV7z": {
-      "type": "ss-hero",
-      "name": "SS Hero",
-      "settings": {
-        "pill_text": "Sleep Suite · Seven Sundays",
-        "heading": "<p>Unlock <em>Better Sleep.</em><br/>Discover your best self.</p>",
-        "subtext": "Jeder Mensch ist einzigartig – deshalb ist personalisierter Schlaf der Schlüssel zu maximaler Regeneration.",
-        "quote_text": "<p><strong>Erst wenn der Körper ideal gelagert ist</strong>, Muskeln, Sehnen und Faszien maximal entspannt sind – erst dann entfaltet sich das volle Regenerationspotential.</p>"
-      }
-    },
-    "ss_journey_tabs_NHz9gN": {
-      "type": "ss-journey-tabs",
+    "ss_shop_hero_EhyBeh": {
+      "type": "ss-shop-hero",
       "blocks": {
-        "tab_Viz8j9": {
+        "tab_9p4mPb": {
           "type": "tab",
           "settings": {
-            "filter": "system",
-            "number": "01",
-            "name": "Das System",
-            "description": "Ideale Körperlage. Rücken, Nacken & Wirbelsäule perfekt gestützt."
+            "tab_label": "Alle Produkte"
           }
         },
-        "tab_46tQR6": {
+        "tab_DcbTr6": {
           "type": "tab",
           "settings": {
-            "filter": "schlafklima",
-            "number": "02",
-            "name": "Schlafklima",
-            "description": "Richtige Temperatur. Muskeln entspannen, Tiefschlaf wird möglich."
+            "tab_label": "Schlafsystem"
           }
         },
-        "tab_jgUU83": {
+        "tab_FX6EE9": {
           "type": "tab",
           "settings": {
-            "filter": "sinne",
-            "number": "03",
-            "name": "Sinne & Geist",
-            "description": "Ruhe für alle Sinne. Psyche entlastet, natürlich einschlafen."
+            "tab_label": "Decken"
           }
         },
-        "tab_6xiHdH": {
+        "tab_RcCgJL": {
           "type": "tab",
           "settings": {
-            "filter": "recovery",
-            "number": "04",
-            "name": "Recovery",
-            "description": "Von innen regenerieren. Körper mit dem Richtigen versorgen."
+            "tab_label": "Kissen"
+          }
+        },
+        "tab_Lmthqh": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Zubehör"
+          }
+        },
+        "stat_XBUUxz": {
+          "type": "stat",
+          "settings": {
+            "stat_number": "250.000+",
+            "stat_label": "Loyale Kunden",
+            "stat_desc": "bei Seven Sundays zeigen ihr Vertrauen in unsere hohe Qualität."
+          }
+        },
+        "stat_FcnBxb": {
+          "type": "stat",
+          "settings": {
+            "stat_number": "18%",
+            "stat_label": "Verbesserte Schlafqualität",
+            "stat_desc": "Wissenschaftlich belegt in einer Studie mit 43 Profi-Athleten"
+          }
+        },
+        "stat_JD9UmL": {
+          "type": "stat",
+          "settings": {
+            "stat_number": "10+",
+            "stat_label": "Jahre sind wir erfolgreich",
+            "stat_desc": "AM AWRKT und entwickeln unsere Produkte stetig weiter."
           }
         }
       },
       "block_order": [
-        "tab_Viz8j9",
-        "tab_46tQR6",
-        "tab_jgUU83",
-        "tab_6xiHdH"
+        "tab_9p4mPb",
+        "tab_DcbTr6",
+        "tab_FX6EE9",
+        "tab_RcCgJL",
+        "tab_Lmthqh",
+        "stat_XBUUxz",
+        "stat_FcnBxb",
+        "stat_JD9UmL"
       ],
-      "name": "SS Journey Tabs",
+      "name": "SS Shop Hero",
       "settings": {
-        "label": "Der Weg zu tiefem, erholsamem Schlaf"
+        "title": "Für deine Schlafroutine",
+        "description": "Es ist Zeit, Schlaf wieder zu zelebrieren. Personalisierte, modulare Schlafsysteme geben dir endlich die Kontrolle zurück – sie geben dir den Schlüssel zu erholsamer Ruhe, maßgeschneidert für deinen Körper. Zurück zum ursprünglichen Zweck des Schlafs: Regeneration."
       }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "ss_hero_iHCV7z",
-    "ss_journey_tabs_NHz9gN"
+    "ss_shop_hero_EhyBeh"
   ]
 }
