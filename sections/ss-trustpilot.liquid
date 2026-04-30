@@ -1,0 +1,50 @@
+<section class="section sr-trustpilot">
+  <div class="container">
+    <div class="sr-trustpilot__inner">
+      {%- if section.settings.icon != blank -%}
+        {{ section.settings.icon
+          | image_url: width: 32
+          | image_tag:
+              width: 16,
+              height: 16,
+              loading: 'lazy',
+              alt: 'Trustpilot'
+        }}
+      {%- else -%}
+        <img width="16" height="16" src="{{ 'trustpilot-icon-2.png' | asset_url }}" alt="Trustpilot" loading="lazy">
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+      <span class="sr-trustpilot__text">{{ section.settings.text }}</span>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "SS Trustpilot",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Review integration from Trustpilot"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SS Trustpilot"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,152 @@
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-xl-5 col-lg-6">
+        <div class="simple-img size6">
+          {%- if section.settings.main_image != blank -%}
+            {{ section.settings.main_image
+              | image_url: width: section.settings.main_image.width
+              | image_tag:
+                  loading: 'lazy',
+                  alt: section.settings.main_image.alt
+            }}
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="col-xl-7 col-lg-6 align-self-center order-2 order-lg-1">
+        <div class="lr-content-1">
+          {%- if section.settings.motto != blank -%}
+          <div class="motto">{{ section.settings.motto }}</div>
+          {%- endif -%}
+          {%- if section.settings.title != blank -%}
+          <h2 class="h2 title">{{ section.settings.title }}</h2>
+          {%- endif -%}
+          {%- if section.settings.description != blank -%}
+          <div class="text text-md">{{ section.settings.description }}</div>
+          {%- endif -%}
+
+          {%- if section.blocks.size > 0 -%}
+          <div class="swiper-entry">
+            <div class="swiper-container" data-options='{
+              "slidesPerView": 2.2,
+              "spaceBetween": 8,
+              "breakpoints":{
+                "576":{"spaceBetween": 16, "slidesPerView": 1.5},
+                "992":{"spaceBetween": 16, "slidesPerView": 1.8},
+                "1200":{"spaceBetween": 16, "slidesPerView": 1.8}
+              }}'>
+              <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                  <div class="swiper-slide" {{ block.shopify_attributes }}>
+                    <div class="simple-img">
+                      {%- if block.settings.slide_image != blank -%}
+                        {{ block.settings.slide_image
+                          | image_url: width: block.settings.slide_image.width
+                          | image_tag:
+                              loading: 'lazy',
+                              alt: block.settings.slide_image.alt
+                        }}
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endfor -%}
+              </div>
+            </div>
+            <div class="button-wrapp text-center pos-5">
+              <div class="swiper-button-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M19 12L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+          </div>
+          {%- endif -%}
+
+          {%- if section.settings.button_label != blank -%}
+          <a href="{{ section.settings.button_url }}" class="btn">
+            <b>{{ section.settings.button_label }}</b>
+          </a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer-lg"></div>
+</div>
+
+{% schema %}
+{
+  "name": "SS Dream Cozy",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "text",
+      "id": "motto",
+      "label": "Motto",
+      "default": "Seven Sundays"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "DREAM COZY"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "MEHR DAZU"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Gallery Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slide_image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SS Dream Cozy",
+      "blocks": [
+        { "type": "slide" },
+        { "type": "slide" },
+        { "type": "slide" }
+      ]
+    }
+  ]
+}
+{% endschema %}

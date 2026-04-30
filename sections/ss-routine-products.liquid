@@ -1,0 +1,117 @@
+<div class="section">
+  <div class="container">
+    <div class="title-shortcode">
+      {%- if section.settings.motto != blank -%}
+      <div class="motto">{{ section.settings.motto }}</div>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+      <h2 class="h2 title">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+      <div class="text text-md">{{ section.settings.description }}</div>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+    <div class="swiper-entry">
+      <div class="swiper-container" data-options='{
+        "slidesPerView": 1.2,
+        "spaceBetween": 8,
+        "breakpoints":{
+          "576":{"spaceBetween": 16, "slidesPerView": 1.5},
+          "992":{"spaceBetween": 16, "slidesPerView": 2.5},
+          "1200":{"spaceBetween": 16, "slidesPerView": 2.8}
+        }}'>
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            <div class="swiper-slide" {{ block.shopify_attributes }}>
+              <a href="{{ block.settings.item_url }}" class="product-category">
+                {%- if block.settings.item_image != blank -%}
+                  {{ block.settings.item_image
+                    | image_url: width: block.settings.item_image.width
+                    | image_tag:
+                        loading: 'lazy',
+                        alt: block.settings.item_image.alt
+                  }}
+                {%- endif -%}
+                <div class="product-info no-transform">
+                  {%- if block.settings.item_label != blank -%}
+                  <div class="btn">
+                    <b>{{ block.settings.item_label }}</b>
+                  </div>
+                  {%- endif -%}
+                </div>
+              </a>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+    </div>
+    {%- endif -%}
+  </div>
+  <div class="spacer-lg"></div>
+</div>
+
+{% schema %}
+{
+  "name": "SS Routine Products",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "motto",
+      "label": "Motto",
+      "default": "Seven Sundays"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "FÜR DEINE ROUTINE"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Product Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "item_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "item_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "item_url",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SS Routine Products",
+      "blocks": [
+        { "type": "item", "settings": { "item_label": "KISSENSPRAY" } },
+        { "type": "item", "settings": { "item_label": "SUPPLEMENT" } },
+        { "type": "item", "settings": { "item_label": "SCHLAFMASKE" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,162 @@
+<div class="section">
+  <div class="container">
+    <div class="title-shortcode">
+      {%- if section.settings.title != blank -%}
+      <h1 class="h1 title">{{ section.settings.title }}</h1>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+      <div class="text text-md">{{ section.settings.description }}</div>
+      {%- endif -%}
+    </div>
+
+    {%- assign tab_blocks = section.blocks | where: 'type', 'tab' -%}
+    {%- assign slide_blocks = section.blocks | where: 'type', 'slide' -%}
+    {%- assign stat_blocks = section.blocks | where: 'type', 'stat' -%}
+
+    {%- if tab_blocks.size > 0 -%}
+    <div class="sr-tabs">
+      {%- for block in tab_blocks -%}
+        <div class="sr-tab{% if forloop.first %} is-active{% endif %}" {{ block.shopify_attributes }}>
+          {{ block.settings.tab_label }}
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    {%- if slide_blocks.size > 0 -%}
+    <div class="swiper-entry">
+      <div class="swiper-container overflow-visible" data-options='{
+        "slidesPerView": 1.07,
+        "spaceBetween": 12,
+        "breakpoints":{
+          "576":{"spaceBetween": 16, "slidesPerView": 1.6},
+          "992":{"spaceBetween": 16, "slidesPerView": 2.4},
+          "1200":{"spaceBetween": 16, "slidesPerView": 1.7}
+        }}'>
+        <div class="swiper-wrapper">
+          {%- for block in slide_blocks -%}
+            <div class="swiper-slide" {{ block.shopify_attributes }}>
+              <div class="sleep-item type2">
+                <div class="sleep-img">
+                  {%- if block.settings.slide_image != blank -%}
+                    {{ block.settings.slide_image
+                      | image_url: width: block.settings.slide_image.width
+                      | image_tag:
+                          loading: 'lazy',
+                          alt: block.settings.slide_image.alt
+                    }}
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-relative d-none"></div>
+    </div>
+    {%- endif -%}
+
+    {%- if stat_blocks.size > 0 -%}
+    <div class="sr-compact-stats">
+      {%- for block in stat_blocks -%}
+        <div class="sr-compact-stats__item" {{ block.shopify_attributes }}>
+          {%- if block.settings.stat_number != blank -%}
+          <div class="sr-compact-stats__number">{{ block.settings.stat_number }}</div>
+          {%- endif -%}
+          {%- if block.settings.stat_label != blank -%}
+          <div class="sr-compact-stats__label">{{ block.settings.stat_label }}</div>
+          {%- endif -%}
+          {%- if block.settings.stat_desc != blank -%}
+          <p class="sr-compact-stats__desc">{{ block.settings.stat_desc }}</p>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+  </div>
+  <div class="spacer-lg"></div>
+</div>
+
+{% schema %}
+{
+  "name": "SS Shop Hero",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Für deine Schlafroutine"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_label",
+          "label": "Tab Label"
+        }
+      ]
+    },
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slide_image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "name": "Stat Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "stat_number",
+          "label": "Number"
+        },
+        {
+          "type": "text",
+          "id": "stat_label",
+          "label": "Label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "stat_desc",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SS Shop Hero",
+      "blocks": [
+        { "type": "tab", "settings": { "tab_label": "Alle Produkte" } },
+        { "type": "tab", "settings": { "tab_label": "Schlafsystem" } },
+        { "type": "tab", "settings": { "tab_label": "Decken" } },
+        { "type": "tab", "settings": { "tab_label": "Kissen" } },
+        { "type": "tab", "settings": { "tab_label": "Zubehör" } },
+        { "type": "stat", "settings": { "stat_number": "250.000+", "stat_label": "Loyale Kunden", "stat_desc": "bei Seven Sundays zeigen ihr Vertrauen in unsere hohe Qualität." } },
+        { "type": "stat", "settings": { "stat_number": "18%", "stat_label": "Verbesserte Schlafqualität", "stat_desc": "Wissenschaftlich belegt in einer Studie mit 43 Profi-Athleten" } },
+        { "type": "stat", "settings": { "stat_number": "10+", "stat_label": "Jahre sind wir erfolgreich", "stat_desc": "AM AWRKT und entwickeln unsere Produkte stetig weiter." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
