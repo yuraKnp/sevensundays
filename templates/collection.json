@@ -212,15 +212,21 @@
       "blocks": {
         "slide_qXkwHV": {
           "type": "slide",
-          "settings": {}
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.webp"
+          }
         },
         "slide_BB4YWG": {
           "type": "slide",
-          "settings": {}
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-2.webp"
+          }
         },
         "slide_cY7y4N": {
           "type": "slide",
-          "settings": {}
+          "settings": {
+            "slide_image": "shopify://shop_images/simple-img-1.jpg"
+          }
         }
       },
       "block_order": [
