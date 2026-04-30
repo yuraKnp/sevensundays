@@ -249,6 +249,43 @@
       "settings": {
         "text": "Review integration from Trustpilot"
       }
+    },
+    "ss_routine_products_HAUmYF": {
+      "type": "ss-routine-products",
+      "blocks": {
+        "item_Fz9aGP": {
+          "type": "item",
+          "settings": {
+            "item_label": "KISSENSPRAY",
+            "item_url": ""
+          }
+        },
+        "item_QVXfrm": {
+          "type": "item",
+          "settings": {
+            "item_label": "SUPPLEMENT",
+            "item_url": ""
+          }
+        },
+        "item_AXiDQK": {
+          "type": "item",
+          "settings": {
+            "item_label": "SCHLAFMASKE",
+            "item_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_Fz9aGP",
+        "item_QVXfrm",
+        "item_AXiDQK"
+      ],
+      "name": "SS Routine Products",
+      "settings": {
+        "motto": "Seven Sundays",
+        "title": "FÜR DEINE ROUTINE",
+        "description": ""
+      }
     }
   },
   "order": [
@@ -258,6 +295,7 @@
     "ss_schlafsystem_bnpLgV",
     "ss_dream_cozy_DdkReU",
     "ss_pillow_talk_Gegg7n",
-    "ss_trustpilot_pWR9Qw"
+    "ss_trustpilot_pWR9Qw",
+    "ss_routine_products_HAUmYF"
   ]
 }
