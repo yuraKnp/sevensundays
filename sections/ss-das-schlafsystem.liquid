@@ -1,0 +1,258 @@
+<section class="section ss-section" data-category="{{ section.settings.category }}">
+  <div class="container">
+
+    <div class="ss-section__header">
+      <div class="ss-section__header-top">
+        <h2 class="ss-section__title">{{ section.settings.title }}</h2>
+        {%- if section.settings.tag_text != blank -%}
+        <span class="ss-tag ss-tag--light">{{ section.settings.tag_text }}</span>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.description != blank -%}
+      <p class="ss-section__desc">{{ section.settings.description }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- assign dark_cards = section.blocks | where: 'type', 'dark_card' -%}
+    {%- assign light_cards = section.blocks | where: 'type', 'light_card' -%}
+
+    {%- if dark_cards.size > 0 -%}
+    <div class="ss-grid ss-grid--2">
+      {%- for block in dark_cards -%}
+      <div class="ss-pcard-dark" {{ block.shopify_attributes }}>
+        <div class="ss-pcard-dark__img {{ block.settings.bg_class }}">
+          {%- if block.settings.tag != blank -%}
+          <div class="ss-pcard-dark__tags">
+            <span class="ss-tag {{ block.settings.tag_style }}">{{ block.settings.tag }}</span>
+          </div>
+          {%- endif -%}
+          {%- if block.settings.image -%}
+          <div class="material-img">
+            <img width="380" height="240" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy">
+          </div>
+          {%- endif -%}
+        </div>
+        <div class="ss-pcard-dark__body">
+          {%- if block.settings.name != blank -%}
+          <div class="ss-pcard-dark__name">{{ block.settings.name }}</div>
+          {%- endif -%}
+          {%- if block.settings.description != blank -%}
+          <p class="ss-pcard-dark__desc">{{ block.settings.description }}</p>
+          {%- endif -%}
+          {%- if block.settings.button_text != blank -%}
+          <a href="{{ block.settings.button_url }}" class="btn">
+            <b>{{ block.settings.button_text }}</b>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          {%- endif -%}
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    {%- if light_cards.size > 0 -%}
+      {%- if section.settings.sub_label != blank -%}
+      <div class="ss-sub-label">{{ section.settings.sub_label }}</div>
+      {%- endif -%}
+
+      <div class="ss-grid ss-grid--{{ section.settings.grid_cols }}">
+        {%- for block in light_cards -%}
+        <div class="ss-pcard-light" {{ block.shopify_attributes }}>
+          <div class="ss-pcard-light__img {{ block.settings.bg_class }}">
+            <div class="ss-pcard-light__tags">
+              {%- if block.settings.tag != blank -%}
+              <span class="ss-tag ss-tag--light">{{ block.settings.tag }}</span>
+              {%- endif -%}
+              {%- if block.settings.show_new -%}
+              <span class="ss-tag ss-tag--neu">Neu</span>
+              {%- endif -%}
+            </div>
+            {%- if block.settings.image -%}
+            <img width="380" height="240" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy">
+            {%- endif -%}
+          </div>
+          <div class="ss-pcard-light__body">
+            {%- if block.settings.name != blank -%}
+            <div class="ss-pcard-light__name">{{ block.settings.name }}</div>
+            {%- endif -%}
+            {%- if block.settings.description != blank -%}
+            <p class="ss-pcard-light__desc">{{ block.settings.description }}</p>
+            {%- endif -%}
+            {%- if block.settings.button_text != blank -%}
+            <a href="{{ block.settings.button_url }}" class="btn">
+              <b>{{ block.settings.button_text }}</b>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "SS Das Schlafsystem",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "dark_card",
+      "name": "Featured card (dark)",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "bg_class",
+          "label": "Background class",
+          "default": "ss-imgbg--olive",
+          "info": "e.g. ss-imgbg--olive, ss-imgbg--sage, ss-imgbg--mauve, ss-imgbg--teal"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag text",
+          "default": "Die Basis"
+        },
+        {
+          "type": "select",
+          "id": "tag_style",
+          "label": "Tag style",
+          "options": [
+            { "value": "ss-tag--gold", "label": "Gold" },
+            { "value": "ss-tag--light", "label": "Light" },
+            { "value": "ss-tag--neu", "label": "Neu" }
+          ],
+          "default": "ss-tag--gold"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Product name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Entdecken"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "light_card",
+      "name": "Product card (light)",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "bg_class",
+          "label": "Background class",
+          "default": "ss-imgbg--sage"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag text"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_new",
+          "label": "Show \"Neu\" badge",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Product name"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Entdecke"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "category",
+      "label": "Category filter value",
+      "default": "system",
+      "info": "Must match the filter buttons (e.g. system, schlafklima, sinne, recovery)"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Das Schlafsystem"
+    },
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Header tag",
+      "default": "Die Basis"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section description"
+    },
+    {
+      "type": "text",
+      "id": "sub_label",
+      "label": "Sub-label between dark and light cards",
+      "default": "Kissen & Zubehör"
+    },
+    {
+      "type": "select",
+      "id": "grid_cols",
+      "label": "Light cards per row",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" },
+        { "value": "5", "label": "5" }
+      ],
+      "default": "5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SS Das Schlafsystem"
+    }
+  ]
+}
+{% endschema %}
