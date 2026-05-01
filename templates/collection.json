@@ -60,6 +60,24 @@
             "slide_image": "shopify://shop_images/lr-img-3_f8f9244e-bc1f-41e6-91df-b0fc46eb447c.webp"
           }
         },
+        "slide_w4jaqQ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Liberta_6_1.jpg"
+          }
+        },
+        "slide_7E6tUJ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Liberta_3_1.jpg"
+          }
+        },
+        "slide_cGUYcA": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Liberta_1_1.jpg"
+          }
+        },
         "tab_9p4mPb": {
           "type": "tab",
           "settings": {
@@ -124,6 +142,9 @@
         "slide_hhidiN",
         "slide_RfCFxt",
         "slide_9NMNx7",
+        "slide_w4jaqQ",
+        "slide_7E6tUJ",
+        "slide_cGUYcA",
         "tab_9p4mPb",
         "tab_DcbTr6",
         "tab_FX6EE9",
@@ -269,8 +290,7 @@
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none"
+        "show_rating": false
       }
     }
   },
