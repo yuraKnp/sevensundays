@@ -3,14 +3,6 @@
 
 {%- assign slider_tags = section.settings.slider_tags | split: ',' -%}
 
-{%- capture block_id_list -%}
-  {%- for block in section.blocks -%}
-    {%- if block.type == 'collapsible_tab_a_s' -%}
-      {{ block.id }}{% unless forloop.last %},{% endunless %}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endcapture -%}
-{%- assign block_ids = block_id_list | strip_newlines | replace: ' ', '' | split: ',' -%}
 
 {%- capture block_id_list_drop -%}
   {%- for block in section.blocks -%}
@@ -321,16 +313,15 @@
                     </div>
                     {%  endif %}
 
-                    {%- if block_ids.size > 0 -%}
+                    {%- assign delivery_blocks = section.blocks | where: 'type', 'collapsible_tab_a_s' -%}
+                    {%- if delivery_blocks.size > 0 -%}
                     <div class="pd-delivery">
-                        {%- for id in block_ids -%}
-                        {%- assign current_block = section.blocks | where: "id", id | first -%}
-                        
-                        <div class="delivery-item {{ id }}">
-                            {%- if current_block.settings.icon != blank -%}
-                            <img width="20" height="20" src="{{ current_block.settings.icon | img_url: '40x40' }}" alt="">
+                        {%- for block in delivery_blocks -%}
+                        <div class="delivery-item {{ block.id }}" {{ block.shopify_attributes }}>
+                            {%- if block.settings.icon != blank -%}
+                            <img width="20" height="20" src="{{ block.settings.icon | img_url: '40x40' }}" alt="">
                             {%- endif -%}
-                            <div class="text">{{ current_block.settings.content }}</div>
+                            <div class="text">{{ block.settings.content }}</div>
                         </div>
                         {%- endfor -%}
                     </div>
