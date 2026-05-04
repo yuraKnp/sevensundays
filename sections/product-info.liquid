@@ -841,6 +841,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateVariationSections(variantId) {
     document.querySelectorAll('[data-variation_connection]').forEach(el => {
+      if (el.dataset.variation_connection === '') return;
       el.style.display = el.dataset.variation_connection === String(variantId) ? '' : 'none';
     });
   }
