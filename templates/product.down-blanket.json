@@ -119,6 +119,7 @@
       "name": "Single product info",
       "settings": {
         "number_slide_images": 2,
+        "replace_gallery_info": false,
         "hide_doublepack": true,
         "three_elements": true,
         "text_after_add_to_cart": "Mehr Energie für alles, das zählt.",
@@ -144,6 +145,8 @@
         "content": "<p>Restorative sleep doesn't start with falling asleep. It starts with the right climate under the duvet.</p><p>That's exactly why we developed the SEVEN SUNDAYS Premium Down Duvet. Not in one size, but in three precisely calibrated warmth levels: the Summer duvet with no-wall chambers for maximum air circulation. The All-Year duvet with 2 cm walls for balanced warmth. The Winter duvet with 6 cm walls for maximum heat retention.</p><p>The 100% down fill uses the natural intelligence of the feather: hygroscopic, breathable, light. The organic cotton cover creates a microclimate that regulates moisture and is gentle on skin.Developed in Switzerland. </p><p><strong>Handcrafted in Germany. For the nights that matter.</strong><br/><br/></p>",
         "right_image": "shopify://shop_images/seven-sundays-premium-daunendecke-schlafklima.png",
         "section_type": "left",
+        "image_full_width": false,
+        "variation_connection": "",
         "remove_top_padding": true,
         "remove_bottom_padding": true
       }
@@ -156,6 +159,8 @@
         "content": "<p>There is a rule in sleep that most people have never consciously experienced: the body lowers its core temperature to slide into deep sleep phases. This process — finely regulated, biologically precise — needs the right environment. And it begins directly under your duvet.If the sleep climate is too warm, the body works against itself. It sweats. It regulates. It invests energy in thermoregulation instead of regeneration. The result: you wake up — somehow tired, somehow exhausted, without knowing why.<br/><br/>Too cool is the opposite — but no advantage. The body contracts, muscles tense, sleep stays shallow. Energy lost here too.<br/><br/>The comfort climate — that's the space in between. And it's different for every person.<br/><br/><br/><br/></p>",
         "right_image": "shopify://shop_images/Product_image_bbc5ea69-3c99-4ef9-a015-440b7e962ac7.png",
         "section_type": "right",
+        "image_full_width": false,
+        "variation_connection": "",
         "remove_top_padding": false,
         "remove_bottom_padding": false
       }
@@ -166,29 +171,36 @@
         "faq_c38MRJ": {
           "type": "faq",
           "settings": {
-            "question": "Your personal sleep climate",
-            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+            "question": "DEIN PERSÖNLICHES SCHLAFKLIMA",
+            "answer": "<p>Guter Schlaf ist keine Frage des Glücks. Er ist eine Frage der Temperatur.<br/><br/>Wer nachts schwitzt, verschwendet Energie – der Körper reguliert statt zu regenerieren. Wer friert, schläft flach. Beides kostet, was der Schlaf eigentlich geben soll: vollständige Erholung.<br/><br/>Drei Wärme-Varianten, präzise für unterschiedliche Körper, Schlafzimmer und Jahreszeiten entwickelt. Wähle die Decke, die zu dir passt – nicht zur Norm.</p>"
           }
         },
         "faq_mJ8ckL": {
           "type": "faq",
           "settings": {
-            "question": "Intelligent chamber system",
-            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+            "question": "INTELLIGENTES KAMMERN-SYSTEM",
+            "answer": "<p>Die meisten Daunendecken haben eine Kammer-Geometrie. Wir haben drei entwickelt.<br/><br/>Sommerdecke: steglose Kammern – die Daunen liegen flach, die Luft zirkuliert frei. Ganzjahresdecke: 2 cm Steg – ausgewogene Wärme, die atmet. Winterdecke: 6 cm Steg – ein tiefes Wärmebett, das Körperwärme speichert und hält.<br/><br/>Hermetisch verriegelt. Kein Verrutschen. Gleichmäßige Wärme – auch nach vielen Wäschen.</p>"
           }
         },
         "faq_E6fRxp": {
           "type": "faq",
           "settings": {
-            "question": "Natural temperature regulation",
-            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+            "question": "NATÜRLICHE TEMPERATURREGULIERUNG",
+            "answer": "<p>Eine Daune ist kein passives Material. Sie atmet.<br/><br/>Ihre feinen Verästelungen nehmen Körperfeuchtigkeit auf, bevor Schweiß entsteht, und geben sie nach außen ab. Wärme wird gespeichert, wenn der Körper sie braucht – und freigegeben, wenn es zu viel wird.<br/><br/>Die Hülle aus 100 % Premium-Bio-Baumwolle ergänzt diesen Prozess: feinste Luftkanäle halten das Mikroklima unter der Decke stabil. Das richtige Gefühl – die ganze Nacht.</p>"
           }
         },
         "faq_k7fxNK": {
           "type": "faq",
           "settings": {
-            "question": "Swiss engineering · Made in Germany",
-            "answer": "<p>Good sleep is not a matter of luck. It's a matter of temperature.  If you get too warm at night, your body wastes energy on temperature regulation instead of recovery. </p><p>If you're too cold, you sleep shallow. Both steal what sleep is supposed to give: complete restoration.  </p><p>Three warmth levels — precisely developed for different body types, bedrooms, and seasons. Choose the duvet that fits you, not the norm.<br/><br/></p>"
+            "question": "100 % NATURMATERIALIEN – KEIN LEBENDRUPF",
+            "answer": ""
+          }
+        },
+        "faq_HNKBt8": {
+          "type": "faq",
+          "settings": {
+            "question": "SWISS ENGINEERING · MADE IN GERMANY",
+            "answer": "<p>Die Idee entstand in der Schweiz, die Umsetzung in Deutschland. Das ist kein Zufall – es ist Prinzip.<br/><br/>Jede Entscheidung folgt einer Funktion: die drei Kammer-Geometrien, die Wahl der Bio-Baumwolle, die Abstimmung der Füllgewichte pro Größe. Die Fertigung in Deutschland garantiert Präzision in jeder Naht.<br/><br/>Ein Produkt, das hält, was es verspricht – weit über die erste Nacht hinaus.</p>"
           }
         }
       },
@@ -196,7 +208,8 @@
         "faq_c38MRJ",
         "faq_mJ8ckL",
         "faq_E6fRxp",
-        "faq_k7fxNK"
+        "faq_k7fxNK",
+        "faq_HNKBt8"
       ],
       "name": "Product FAQ",
       "settings": {

@@ -89,28 +89,28 @@
           "type": "tab",
           "settings": {
             "tab_label": "Schlafsystem",
-            "tab_url": ""
+            "tab_url": "shopify://products/seitenschlaeferkissen"
           }
         },
         "tab_FX6EE9": {
           "type": "tab",
           "settings": {
             "tab_label": "Decken",
-            "tab_url": ""
+            "tab_url": "shopify://products/daunendecken"
           }
         },
         "tab_RcCgJL": {
           "type": "tab",
           "settings": {
             "tab_label": "Kissen",
-            "tab_url": ""
+            "tab_url": "shopify://products/pillow-cover"
           }
         },
         "tab_Lmthqh": {
           "type": "tab",
           "settings": {
             "tab_label": "Zubehör",
-            "tab_url": ""
+            "tab_url": "shopify://collections/kissen"
           }
         },
         "stat_XBUUxz": {
