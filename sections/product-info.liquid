@@ -454,12 +454,14 @@
                     <div class="status" style="--clr-status: 61 161 92;">
                         <i></i>
                         <div class="text text-sm">
-          {%- if section.settings.in_stock_text != blank -%}
-            <span>{{ section.settings.in_stock_text }}</span>
-          {%- else -%}
-            <span>{{- 'products.product.inventory_in_stock' | t -}}</span>,&nbsp;{{- 'products.product.ship' | t -}}
-          {%- endif -%}
-        </div>
+                      {%- if section.settings.in_stock_text != blank -%}
+                        {% assign addditional_text = section.settings.in_stock_text %}
+                      {%- else -%}
+                        {% assign addditional_text =  'products.product.ship' | t %}
+                      {%- endif -%}
+                      <span>{{- 'products.product.inventory_in_stock' | t -}}</span>,&nbsp;{{ addditional_text }}
+                      </div>
+                  </div>
                     </div>
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
