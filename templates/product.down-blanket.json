@@ -53,7 +53,7 @@
           "settings": {
             "right_image": "shopify://shop_images/Form_Field_image_Home_Career_Buy_box.png",
             "heading": "Entdecke unser modulares Schlafsystem",
-            "content_dis": "<p>Dein Kissen war erst der Anfang. Lerne das modulare Schlafsystem kennen – bei einer unverbindlichen Beratung bei dir zu Hause.</p>",
+            "content_dis": "<p>Die Decke war erst der Anfang. Lerne das modulare Schlafsystem kennen – bei einer unverbindlichen Beratung bei dir zu Hause.</p>",
             "link_text": "Termin anfragen",
             "link": "https://seven-sundays.shop/pages/experience"
           }
@@ -82,22 +82,22 @@
         "collapsible_tab_HMwbPJ": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Maße & Abmessungen",
-            "content": "<ul><li>Nackenkissen: 60x40 cm</li><li>Seitenschläferkissen: 52x32 cm</li><li>Reisekissen: 45×24 cm </li></ul>"
+            "heading": "Maße & Füllgewichte",
+            "content": "<p>Sommerdecke<br/><br/>135 × 200 cm – 200 g<br/>140 × 200 cm – 200 g<br/>155 × 200 cm – 250 g<br/>155 × 220 cm – 300 g<br/>200 × 200 cm – 350 g<br/>200 × 220 cm – 400 g<br/><br/>Ganzjahresdecke<br/><br/>135 × 200 cm – 400 g<br/>140 × 200 cm – 400 g<br/>155 × 200 cm – 500 g<br/>155 × 220 cm – 600 g<br/>200 × 200 cm – 700 g<br/>200 × 220 cm – 800 g<br/><br/>Winterdecke<br/><br/>135 × 200 cm – 750 g<br/>140 × 200 cm – 750 g<br/>155 × 200 cm – 950 g<br/>155 × 220 cm – 1.100 g<br/>200 × 200 cm – 1.300 g<br/>200 × 220 cm – 1.500 g</p>"
           }
         },
         "collapsible_tab_rdVhCp": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Materialien & Pflege",
-            "content": "<p>Bezug: 69% Polyester, 31% Viskose, handgefertigt und abnehmbar. Bei 60°C auf links waschen, Reißverschluss zu 90% geschlossen. Trocknergeeignet bei niedriger Temperatur im Wäschenetz.</p>"
+            "content": "<p>Materialien<br/>- Füllung: 100 % Daunen (kein Lebendrupf)<br/>- Hülle: 100 % Premium-Bio-Baumwolle<br/>- Aufbewahrungstasche: 100 % Wolle (Naturfilz)<br/><br/>Zertifizierungen<br/>- NOMITE® – allergikergeeignet<br/>- OEKO-TEX® Standard 100 – Textiles Vertrauen<br/>- Höchste Tierschutz-Standards – garantiert kein Lebendrupf<br/><br/>Pflege<br/>- Regelmäßig ausschütteln und lüften <br/>- Maschinenwäsche bei 40 °C im Schonwaschgang<br/>- Trocknergeeignet auf niedriger Stufe, ggf. mehrere Durchgänge<br/>- Nicht chemisch reinigen<br/>- Kühl und trocken in der Filztasche lagern</p>"
           }
         },
         "collapsible_tab_nrFNyK": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Garantie, Versand & Rückgabe",
-            "content": "<p>Kostenloser Versand via DHL (ab € 120,00 Warenwert) innerhalb von 3–4 Werktagen. 14-tägiges Rückgaberecht mit voller Rückerstattung bei Unzufriedenheit. Swiss Engineered Quality mit Premium-Herstellergarantie.</p>"
+            "content": "<p>Kostenloser DHL-Versand (ab €120 Bestellwert). Lieferung in 4–5 Werktagen. Spedition nur mit dem SEVEN SUNDAYS Schlafsystem. 14 Tage Rückgaberecht mit voller Rückerstattung. Swiss Engineering Quality Garantie.</p>"
           }
         }
       },
@@ -141,8 +141,8 @@
       "type": "left-right",
       "name": "Left Right section",
       "settings": {
-        "title": "Temperature decides. So does sleep.",
-        "content": "<p>Restorative sleep doesn't start with falling asleep. It starts with the right climate under the duvet.</p><p>That's exactly why we developed the SEVEN SUNDAYS Premium Down Duvet. Not in one size, but in three precisely calibrated warmth levels: the Summer duvet with no-wall chambers for maximum air circulation. The All-Year duvet with 2 cm walls for balanced warmth. The Winter duvet with 6 cm walls for maximum heat retention.</p><p>The 100% down fill uses the natural intelligence of the feather: hygroscopic, breathable, light. The organic cotton cover creates a microclimate that regulates moisture and is gentle on skin.Developed in Switzerland. </p><p><strong>Handcrafted in Germany. For the nights that matter.</strong><br/><br/></p>",
+        "title": "Acht Stunden Schlaf sind nichts wert – ohne die richtige Temperatur.",
+        "content": "<p>Wenn dein Körper unter der Decke gegen Hitze oder Kälte ankämpft, <br/>verbringt er die Nacht mit Regulieren statt mit Regeneration. <br/>Du wachst müde auf – egal, wie lange du geschlafen hast.<br/><br/>Die SEVEN SUNDAYS Premium Daunendecke <br/>folgt einem Prinzip: die richtige Wärme, <br/>abgestimmt auf deinen Körper – nicht auf den Kalender.<br/><br/>Drei Wärmestufen. <br/>100 % natürliche Daunen. 100 % Bio-Baumwoll-Hülle. <br/>Entwickelt in der Schweiz. Handgefertigt in Deutschland.</p>",
         "right_image": "shopify://shop_images/seven-sundays-premium-daunendecke-schlafklima.png",
         "section_type": "left",
         "image_full_width": false,
@@ -155,8 +155,8 @@
       "type": "left-right",
       "name": "Left Right section",
       "settings": {
-        "title": "Why the climate under your duvet decides everything",
-        "content": "<p>There is a rule in sleep that most people have never consciously experienced: the body lowers its core temperature to slide into deep sleep phases. This process — finely regulated, biologically precise — needs the right environment. And it begins directly under your duvet.If the sleep climate is too warm, the body works against itself. It sweats. It regulates. It invests energy in thermoregulation instead of regeneration. The result: you wake up — somehow tired, somehow exhausted, without knowing why.<br/><br/>Too cool is the opposite — but no advantage. The body contracts, muscles tense, sleep stays shallow. Energy lost here too.<br/><br/>The comfort climate — that's the space in between. And it's different for every person.<br/><br/><br/><br/></p>",
+        "title": "Was unter deiner Decke geschieht – und warum es entscheidet, wie erholt du aufwachst.",
+        "content": "<p>Um in den Tiefschlaf zu finden, muss dein Körper <br/>seine Kerntemperatur um etwa 1 °C absenken. <br/>Je schneller der Abfall, desto tiefer die Erholung.<br/><br/>Doch dieser Abfall ist fragil. Eine Decke, die Wärme staut, <br/>zwingt den Körper zu schwitzen. Eine, die nicht isoliert, <br/>zwingt ihn zu zittern. So oder so: Die Energie, <br/>die deinen Körper regenerieren sollte, <br/>fließt in Thermoregulation.<br/><br/>Über ein Drittel deines Lebens hinweg <br/>ist das keine Komfortfrage. <br/>Es ist ein Erholungsdefizit, das du in jeden Tag mitnimmst.<br/><br/>Die richtige Decke arbeitet nicht gegen deine Temperatur – <br/>sie bewegt sich mit ihr. Die falsche kostet dich. <br/>Nacht für Nacht. Jahr für Jahr.</p>",
         "right_image": "shopify://shop_images/Product_image_bbc5ea69-3c99-4ef9-a015-440b7e962ac7.png",
         "section_type": "right",
         "image_full_width": false,
@@ -172,35 +172,35 @@
           "type": "faq",
           "settings": {
             "question": "DEIN PERSÖNLICHES SCHLAFKLIMA",
-            "answer": "<p>Guter Schlaf ist keine Frage des Glücks. Er ist eine Frage der Temperatur.<br/><br/>Wer nachts schwitzt, verschwendet Energie – der Körper reguliert statt zu regenerieren. Wer friert, schläft flach. Beides kostet, was der Schlaf eigentlich geben soll: vollständige Erholung.<br/><br/>Drei Wärme-Varianten, präzise für unterschiedliche Körper, Schlafzimmer und Jahreszeiten entwickelt. Wähle die Decke, die zu dir passt – nicht zur Norm.</p>"
+            "answer": "<p>Drei Wärme-Varianten – passend zu Körper, Schlafzimmertemperatur und Jahreszeit.<br/><br/>- Sommerdecke – ideal für 18–22 °C im Schlafzimmer<br/>- Ganzjahresdecke – ideal für 16–20 °C im Schlafzimmer<br/>- Winterdecke – ideal für unter 16 °C im Schlafzimmer</p>"
           }
         },
         "faq_mJ8ckL": {
           "type": "faq",
           "settings": {
             "question": "INTELLIGENTES KAMMERN-SYSTEM",
-            "answer": "<p>Die meisten Daunendecken haben eine Kammer-Geometrie. Wir haben drei entwickelt.<br/><br/>Sommerdecke: steglose Kammern – die Daunen liegen flach, die Luft zirkuliert frei. Ganzjahresdecke: 2 cm Steg – ausgewogene Wärme, die atmet. Winterdecke: 6 cm Steg – ein tiefes Wärmebett, das Körperwärme speichert und hält.<br/><br/>Hermetisch verriegelt. Kein Verrutschen. Gleichmäßige Wärme – auch nach vielen Wäschen.</p>"
+            "answer": "<p>– Sommerdecke: steglose Kammern, freie Luftzirkulation<br/>– Ganzjahresdecke: 2 cm Steg, ausgewogene Wärme<br/>– Winterdecke: 6 cm Steg, hohe Wärmespeicherung<br/><br/>Hermetisch verriegelt – kein Verrutschen, auch nach vielen Wäschen.</p>"
           }
         },
         "faq_E6fRxp": {
           "type": "faq",
           "settings": {
             "question": "NATÜRLICHE TEMPERATURREGULIERUNG",
-            "answer": "<p>Eine Daune ist kein passives Material. Sie atmet.<br/><br/>Ihre feinen Verästelungen nehmen Körperfeuchtigkeit auf, bevor Schweiß entsteht, und geben sie nach außen ab. Wärme wird gespeichert, wenn der Körper sie braucht – und freigegeben, wenn es zu viel wird.<br/><br/>Die Hülle aus 100 % Premium-Bio-Baumwolle ergänzt diesen Prozess: feinste Luftkanäle halten das Mikroklima unter der Decke stabil. Das richtige Gefühl – die ganze Nacht.</p>"
+            "answer": "<p>– Daunen nehmen Körperfeuchtigkeit auf, bevor Schweiß entsteht<br/>– Wärme wird gespeichert oder abgegeben – je nach Bedarf<br/>– Stabiles Mikroklima die ganze Nacht</p>"
           }
         },
         "faq_k7fxNK": {
           "type": "faq",
           "settings": {
             "question": "100 % NATURMATERIALIEN – KEIN LEBENDRUPF",
-            "answer": ""
+            "answer": "<p>– Füllung: 100 % Daunen, garantiert kein Lebendrupf<br/>– Hülle: 100 % Premium-Bio-Baumwolle mit feinen Luftkanälen<br/>– Aufbewahrungstasche: 100 % Wolle (Naturfilz)<br/>– Zertifiziert nach NOMITE® und OEKO-TEX® Standard 100</p>"
           }
         },
         "faq_HNKBt8": {
           "type": "faq",
           "settings": {
             "question": "SWISS ENGINEERING · MADE IN GERMANY",
-            "answer": "<p>Die Idee entstand in der Schweiz, die Umsetzung in Deutschland. Das ist kein Zufall – es ist Prinzip.<br/><br/>Jede Entscheidung folgt einer Funktion: die drei Kammer-Geometrien, die Wahl der Bio-Baumwolle, die Abstimmung der Füllgewichte pro Größe. Die Fertigung in Deutschland garantiert Präzision in jeder Naht.<br/><br/>Ein Produkt, das hält, was es verspricht – weit über die erste Nacht hinaus.</p>"
+            "answer": "<p>– Entwickelt in der Schweiz, gefertigt in Deutschland<br/>– Füllgewichte pro Größe individuell abgestimmt<br/>– Präzisionsverarbeitung in jeder Naht</p>"
           }
         }
       },
