@@ -141,8 +141,8 @@
       "type": "left-right",
       "name": "Left Right section",
       "settings": {
-        "title": "Temperature decides. So does sleep.",
-        "content": "<p>Restorative sleep doesn't start with falling asleep. It starts with the right climate under the duvet.</p><p>That's exactly why we developed the SEVEN SUNDAYS Premium Down Duvet. Not in one size, but in three precisely calibrated warmth levels: the Summer duvet with no-wall chambers for maximum air circulation. The All-Year duvet with 2 cm walls for balanced warmth. The Winter duvet with 6 cm walls for maximum heat retention.</p><p>The 100% down fill uses the natural intelligence of the feather: hygroscopic, breathable, light. The organic cotton cover creates a microclimate that regulates moisture and is gentle on skin.Developed in Switzerland. </p><p><strong>Handcrafted in Germany. For the nights that matter.</strong><br/><br/></p>",
+        "title": "Acht Stunden Schlaf sind nichts wert – ohne die richtige Temperatur.",
+        "content": "<p>Wenn dein Körper unter der Decke gegen Hitze oder Kälte ankämpft, <br/>verbringt er die Nacht mit Regulieren statt mit Regeneration. <br/>Du wachst müde auf – egal, wie lange du geschlafen hast.<br/><br/>Die SEVEN SUNDAYS Premium Daunendecke <br/>folgt einem Prinzip: die richtige Wärme, <br/>abgestimmt auf deinen Körper – nicht auf den Kalender.<br/><br/>Drei Wärmestufen. <br/>100 % natürliche Daunen. 100 % Bio-Baumwoll-Hülle. <br/>Entwickelt in der Schweiz. Handgefertigt in Deutschland.</p>",
         "right_image": "shopify://shop_images/seven-sundays-premium-daunendecke-schlafklima.png",
         "section_type": "left",
         "image_full_width": false,
@@ -200,7 +200,7 @@
           "type": "faq",
           "settings": {
             "question": "SWISS ENGINEERING · MADE IN GERMANY",
-            "answer": "<p>Die Idee entstand in der Schweiz, die Umsetzung in Deutschland. Das ist kein Zufall – es ist Prinzip.<br/><br/>Jede Entscheidung folgt einer Funktion: die drei Kammer-Geometrien, die Wahl der Bio-Baumwolle, die Abstimmung der Füllgewichte pro Größe. Die Fertigung in Deutschland garantiert Präzision in jeder Naht.<br/><br/>Ein Produkt, das hält, was es verspricht – weit über die erste Nacht hinaus.</p>"
+            "answer": "<p>– Entwickelt in der Schweiz, gefertigt in Deutschland<br/>– Füllgewichte pro Größe individuell abgestimmt<br/>– Präzisionsverarbeitung in jeder Naht</p>"
           }
         }
       },
