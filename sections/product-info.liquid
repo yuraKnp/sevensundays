@@ -455,7 +455,7 @@
                         <i></i>
                         <div class="text text-sm">
           {%- if section.settings.in_stock_text != blank -%}
-            {{ section.settings.in_stock_text }}
+            <span>{{ section.settings.in_stock_text }}</span>
           {%- else -%}
             <span>{{- 'products.product.inventory_in_stock' | t -}}</span>,&nbsp;{{- 'products.product.ship' | t -}}
           {%- endif -%}
