@@ -453,7 +453,13 @@
                     {% if current_variant.available %}
                     <div class="status" style="--clr-status: 61 161 92;">
                         <i></i>
-                        <div class="text text-sm"><span>{{- 'products.product.inventory_in_stock' | t -}}</span>,&nbsp;{{- 'products.product.ship' | t -}}</div>
+                        <div class="text text-sm">
+          {%- if section.settings.in_stock_text != blank -%}
+            {{ section.settings.in_stock_text }}
+          {%- else -%}
+            <span>{{- 'products.product.inventory_in_stock' | t -}}</span>,&nbsp;{{- 'products.product.ship' | t -}}
+          {%- endif -%}
+        </div>
                     </div>
                     {%- for block in section.blocks -%}
                       {%- case block.type -%}
@@ -1319,6 +1325,12 @@ document.addEventListener('DOMContentLoaded', function () {
       "id": "enable_video_looping",
       "default": false,
       "label": "t:sections.main-product.settings.enable_video_looping.label"
+    },
+    {
+      "type": "text",
+      "id": "in_stock_text",
+      "label": "In stock custom text",
+      "info": "Leave empty to use the default translation."
     },
     {
       "type": "header",
