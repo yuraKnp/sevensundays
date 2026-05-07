@@ -701,12 +701,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log(variant.available);
 
+    const spanEl = statusEl.querySelector('span');
     if (variant.available) {
       statusEl.style.setProperty('--clr-status', '61 161 92');
-      statusEl.querySelector('span').textContent = window.translations.inStock;
+      if (spanEl) spanEl.textContent = window.translations.inStock;
     } else {
       statusEl.style.setProperty('--clr-status', '185 28 28');
-      statusEl.querySelector('span').textContent = window.translations.soldOut;
+      if (spanEl) spanEl.textContent = window.translations.soldOut;
     }
   }
 
