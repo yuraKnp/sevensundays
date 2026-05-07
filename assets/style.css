@@ -1293,6 +1293,9 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
     font-weight: 600;
 }
 
+.quantity-item.comfort .text{
+   font-size: var(--sp-12);
+}
 
 .quantity-item.type2{
     padding: 16px;
