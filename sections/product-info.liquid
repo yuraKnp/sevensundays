@@ -200,7 +200,7 @@
                                 <div class="quantity-item type2 comfort {% if forloop.first %}active{% endif %}" data-value="{{ value }}">
                                     <div class="icon"></div>
                                     <div class="description"></div>
-                                    <div class="text"><b>{{ value }}</b></div>
+                                    <div class="text">{{ value }}</div>
                                 </div>
                                 {% endfor %}
                             </div>
@@ -778,7 +778,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // DESCRIPTION (desc2)
         const descEl = item.querySelector('.description');
         if (descEl && data.desc2) {
-          descEl.textContent = data.desc2;
+          descEl.textContent = '<b>'.data.desc2.'</b>';
         }
       });
     });
