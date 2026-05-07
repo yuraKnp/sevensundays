@@ -1289,7 +1289,7 @@ footer .form-block .input {--int-height: 58px;padding-right: 80px;}
 }
 
 .quantity-item .description{
-    font-size: var(--sp-12);
+    font-size: var(--sp-16);
 }
 
 .quantity-item.type2{

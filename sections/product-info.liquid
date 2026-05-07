@@ -199,7 +199,7 @@
                                 {% for value in option.values %}
                                 <div class="quantity-item type2 comfort {% if forloop.first %}active{% endif %}" data-value="{{ value }}">
                                     <div class="icon"></div>
-                                    <div class="description"></div>
+                                    <div class="description"><b></b></div>
                                     <div class="text">{{ value }}</div>
                                 </div>
                                 {% endfor %}
@@ -776,9 +776,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // DESCRIPTION (desc2)
-        const descEl = item.querySelector('.description');
+        const descEl = item.querySelector('.description b');
         if (descEl && data.desc2) {
-          descEl.textContent = '<b>'.data.desc2.'</b>';
+          descEl.textContent = data.desc2;
         }
       });
     });
