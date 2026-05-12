@@ -89,7 +89,7 @@
           "type": "tab",
           "settings": {
             "tab_label": "Schlafsystem",
-            "tab_url": "shopify://products/seitenschlaeferkissen"
+            "tab_url": "#shopify-section-template--24278661136652__ss_schlafsystem_bnpLgV"
           }
         },
         "tab_FX6EE9": {
@@ -192,7 +192,7 @@
         "motto": "Seven Sundays",
         "title": "SCHLAFSYSTEM",
         "description": "Das einzige Schlafsystem, das Dich besucht, bevor Du bestellst",
-        "button_label": "MEHR DAZU",
+        "button_label": "Mehr dazu",
         "button_url": ""
       }
     },
@@ -229,7 +229,7 @@
         "motto": "Seven Sundays",
         "title": "DREAM COZY",
         "description": "Das einzige Schlafsystem, das Dich besucht, bevor Du bestellst",
-        "button_label": "MEHR DAZU",
+        "button_label": "Mehr dazu",
         "button_url": ""
       }
     },
@@ -265,7 +265,7 @@
         "motto": "Seven Sundays",
         "title": "PILLOW TALK",
         "description": "So einzigartig wie dein Körper ist auch die ideale Positionierung von Kopf und Nacken. Wie du schläfst, bestimmt, was du brauchst.",
-        "button_label": "KISSEN ENTDECKEN",
+        "button_label": "Kissen entdecken",
         "button_url": ""
       }
     },
@@ -279,6 +279,7 @@
     },
     "ss_routine_products_HAUmYF": {
       "type": "ss-routine-products",
+      "disabled": true,
       "name": "SS Routine Products",
       "settings": {
         "motto": "Seven Sundays",
