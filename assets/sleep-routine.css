@@ -310,7 +310,7 @@
    TRUSTPILOT BANNER
    ============================================ */
 .sr-trustpilot {
-    background: var(--clr-border);
+    /* background: var(--clr-border); */
     padding: var(--sp-24) var(--sp-32);
     text-align: center;
     margin-bottom: var(--sp-lg)
