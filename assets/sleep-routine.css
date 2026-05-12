@@ -144,9 +144,6 @@
         width: auto !important;
         margin-right: 0 !important;
     }
-    .sr-compact-stats .swiper-pagination {
-        display: none;
-    }
 }
 
 .sr-compact-stats__item {
