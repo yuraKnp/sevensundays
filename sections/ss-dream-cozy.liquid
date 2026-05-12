@@ -28,9 +28,12 @@
 
           {%- if section.blocks.size > 0 -%}
           <div class="swiper-entry">
-            <div class="swiper-container" data-options='{
+            <div class="swiper-container ss-dream-cozy-swiper" data-options='{
               "slidesPerView": 2.2,
               "spaceBetween": 8,
+              "speed": 5000,
+              "loop": true,
+              "autoplay": {"delay": 0, "disableOnInteraction": false},
               "breakpoints":{
                 "576":{"spaceBetween": 16, "slidesPerView": 1.5},
                 "992":{"spaceBetween": 16, "slidesPerView": 1.8},

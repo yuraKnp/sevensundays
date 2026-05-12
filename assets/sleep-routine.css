@@ -343,6 +343,10 @@
     transform: none;
 }
 
+.ss-dream-cozy-swiper .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
 /* ============================================
    ROUTINE CARDS
    ============================================ */
