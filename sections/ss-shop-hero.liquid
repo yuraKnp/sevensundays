@@ -62,20 +62,33 @@
     {%- endif -%}
 
     {%- if stat_blocks.size > 0 -%}
-    <div class="sr-compact-stats">
-      {%- for block in stat_blocks -%}
-        <div class="sr-compact-stats__item" {{ block.shopify_attributes }}>
-          {%- if block.settings.stat_number != blank -%}
-          <div class="sr-compact-stats__number">{{ block.settings.stat_number }}</div>
-          {%- endif -%}
-          {%- if block.settings.stat_label != blank -%}
-          <div class="sr-compact-stats__label">{{ block.settings.stat_label }}</div>
-          {%- endif -%}
-          {%- if block.settings.stat_desc != blank -%}
-          <p class="sr-compact-stats__desc">{{ block.settings.stat_desc }}</p>
-          {%- endif -%}
+    <div class="sr-compact-stats swiper-entry">
+      <div class="swiper-container" data-options='{
+        "slidesPerView": 1.2,
+        "spaceBetween": 16,
+        "breakpoints": {
+          "768": {
+            "enabled": false
+          }
+        }
+      }'>
+        <div class="swiper-wrapper">
+          {%- for block in stat_blocks -%}
+            <div class="swiper-slide sr-compact-stats__item" {{ block.shopify_attributes }}>
+              {%- if block.settings.stat_number != blank -%}
+              <div class="sr-compact-stats__number">{{ block.settings.stat_number }}</div>
+              {%- endif -%}
+              {%- if block.settings.stat_label != blank -%}
+              <div class="sr-compact-stats__label">{{ block.settings.stat_label }}</div>
+              {%- endif -%}
+              {%- if block.settings.stat_desc != blank -%}
+              <p class="sr-compact-stats__desc">{{ block.settings.stat_desc }}</p>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
         </div>
-      {%- endfor -%}
+      </div>
+      <div class="swiper-pagination swiper-pagination-relative"></div>
     </div>
     {%- endif -%}
   </div>
