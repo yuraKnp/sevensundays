@@ -279,6 +279,7 @@
     },
     "ss_routine_products_HAUmYF": {
       "type": "ss-routine-products",
+      "disabled": true,
       "name": "SS Routine Products",
       "settings": {
         "motto": "Seven Sundays",
