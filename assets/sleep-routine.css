@@ -352,7 +352,7 @@
     top: var(--sp-16);
     left: var(--sp-16);
     z-index: 2;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 8px;
     padding: 10px 14px;
     box-shadow: 0 2px 12px rgba(0,0,0,.10);
