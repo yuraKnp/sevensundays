@@ -157,6 +157,9 @@
                             <div class="ruk_rating_snippet" data-sku="{{ product.id }};{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
 
                             {%- when 'title' -%}
+                            {%- if block.settings.above_title != blank -%}
+                              <p class="product-above-title">{{ block.settings.above_title }}</p>
+                            {%- endif -%}
                             <div class="title-with-rating">
                               <h1 class="h2 title">{{ product.title | escape }}</h1>
                               {%- if block.settings.trustpilot -%}
@@ -966,6 +969,11 @@ document.addEventListener('DOMContentLoaded', function () {
       "name": "t:sections.main-product.blocks.title.name",
       "limit": 1,
       "settings": [
+        {
+          "type": "text",
+          "id": "above_title",
+          "label": "Text above title"
+        },
         {
           "type": "checkbox",
           "id": "trustpilot",
