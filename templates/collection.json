@@ -269,14 +269,6 @@
         "button_url": ""
       }
     },
-    "ss_trustpilot_pWR9Qw": {
-      "type": "ss-trustpilot",
-      "name": "SS Trustpilot",
-      "settings": {
-        "custom_script": "<!-- TrustBox widget - Micro Combo -->\n\n<div class=\"trustpilot-widget\" data-locale=\"de-DE\" data-template-id=\"5419b6ffb0d04a076446a9af\" data-businessunit-id=\"5ff5d1f3b391a00001aac82e\" data-style-height=\"20px\" data-style-width=\"100%\" data-token=\"1fadb9cd-4553-48b1-8346-d2230bd75801\">\n\n  <a href=\"https://de.trustpilot.com/review/seven-sundays.shop\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n\n</div>\n\n<!-- End TrustBox widget -->",
-        "text": ""
-      }
-    },
     "ss_routine_products_HAUmYF": {
       "type": "ss-routine-products",
       "disabled": true,
@@ -302,7 +294,6 @@
     "ss_schlafsystem_bnpLgV",
     "ss_dream_cozy_DdkReU",
     "ss_pillow_talk_Gegg7n",
-    "ss_trustpilot_pWR9Qw",
     "ss_routine_products_HAUmYF"
   ]
 }
