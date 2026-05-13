@@ -27,7 +27,12 @@
         </div>
       </div>
       <div class="col-xl-7 col-lg-6 order-1 order-lg-2">
-        <div class="swiper-entry">
+        <div class="swiper-entry spt-slider-wrap">
+          {%- if section.settings.trustpilot_script != blank -%}
+            <div class="spt-trustpilot-badge">
+              {{ section.settings.trustpilot_script }}
+            </div>
+          {%- endif -%}
           <div class="swiper-container" data-options='{
             "slidesPerView": 1.2,
             "spaceBetween": 8,
@@ -111,6 +116,11 @@
       "type": "url",
       "id": "button_url",
       "label": "Button URL"
+    },
+    {
+      "type": "html",
+      "id": "trustpilot_script",
+      "label": "Trustpilot embed code"
     }
   ],
   "blocks": [
