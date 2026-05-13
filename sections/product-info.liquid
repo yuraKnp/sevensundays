@@ -783,7 +783,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // DESCRIPTION (desc2)
         const descEl = item.querySelector('.description b');
         if (descEl && data.desc2) {
-          descEl.textContent = data.desc2;
+          descEl.innerHTML = data.desc2;
         }
       });
     });
