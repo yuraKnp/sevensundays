@@ -352,13 +352,19 @@
     top: var(--sp-16);
     left: var(--sp-16);
     z-index: 2;
-    /* background: #fff; */
     border-radius: 8px;
     padding: 10px 14px;
-    /* box-shadow: 0 2px 12px rgba(0,0,0,.10); */
     display: inline-flex;
     align-items: center;
     pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .spt-trustpilot-badge--desktop { display: none; }
+}
+
+@media (min-width: 768px) {
+    .spt-trustpilot-badge--mobile { display: none; }
 }
 
 .ss-dream-cozy-swiper .swiper-wrapper {

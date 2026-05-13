@@ -28,9 +28,14 @@
       </div>
       <div class="col-xl-7 col-lg-6 order-1 order-lg-2">
         <div class="swiper-entry spt-slider-wrap">
-          {%- if section.settings.trustpilot_script != blank -%}
-            <div class="spt-trustpilot-badge">
-              {{ section.settings.trustpilot_script }}
+          {%- if section.settings.trustpilot_script_desktop != blank -%}
+            <div class="spt-trustpilot-badge spt-trustpilot-badge--desktop">
+              {{ section.settings.trustpilot_script_desktop }}
+            </div>
+          {%- endif -%}
+          {%- if section.settings.trustpilot_script_mobile != blank -%}
+            <div class="spt-trustpilot-badge spt-trustpilot-badge--mobile">
+              {{ section.settings.trustpilot_script_mobile }}
             </div>
           {%- endif -%}
           <div class="swiper-container" data-options='{
@@ -119,8 +124,13 @@
     },
     {
       "type": "html",
-      "id": "trustpilot_script",
-      "label": "Trustpilot embed code"
+      "id": "trustpilot_script_desktop",
+      "label": "Trustpilot embed code (desktop)"
+    },
+    {
+      "type": "html",
+      "id": "trustpilot_script_mobile",
+      "label": "Trustpilot embed code (mobile)"
     }
   ],
   "blocks": [
