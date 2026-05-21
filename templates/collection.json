@@ -45,19 +45,19 @@
         "slide_hhidiN": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/sleep-img-2.png"
+            "slide_image": "shopify://shop_images/stilllife_8269658b-b6d6-4578-a9a7-6a3c40a81556.jpg"
           }
         },
         "slide_RfCFxt": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/lr-img-2_988c355a-4ff9-4bc0-98b6-53a37130484e.webp"
+            "slide_image": "shopify://shop_images/Liberta_Images_Close.jpg"
           }
         },
         "slide_9NMNx7": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/lr-img-3_f8f9244e-bc1f-41e6-91df-b0fc46eb447c.webp"
+            "slide_image": "shopify://shop_images/Liberta_2_1.jpg"
           }
         },
         "slide_w4jaqQ": {
@@ -134,7 +134,7 @@
           "settings": {
             "stat_number": "10+",
             "stat_label": "Jahre sind wir erfolgreich",
-            "stat_desc": "AM AWRKT und entwickeln unsere Produkte stetig weiter."
+            "stat_desc": "Am Markt und entwickeln unsere Produkte stetig weiter. Engineered in Switzerland."
           }
         }
       },
@@ -157,7 +157,7 @@
       "name": "SS Shop Hero",
       "settings": {
         "title": "Für deine Schlafroutine",
-        "description": "Es ist Zeit, Schlaf wieder zu zelebrieren. Personalisierte, modulare Schlafsysteme geben dir endlich die Kontrolle zurück – sie geben dir den Schlüssel zu erholsamer Ruhe, maßgeschneidert für deinen Körper. Zurück zum ursprünglichen Zweck des Schlafs: Regeneration."
+        "description": "Definiere deinen Schlaf neu: Alles startet mit einem erholsamen Schlaf und den richtigen Produkten, die deinen Körper in jeder Position optimal supporten. UNLOCK BETTER SLEEP."
       }
     },
     "ss_schlafsystem_bnpLgV": {
@@ -166,19 +166,19 @@
         "slide_q48yCk": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-1.webp"
+            "slide_image": "shopify://shop_images/Liberta_3_1.jpg"
           }
         },
         "slide_FbdnRq": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-2.webp"
+            "slide_image": "shopify://shop_images/Combinations_Matress_1_v02.jpg"
           }
         },
         "slide_jrwDEn": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-1.jpg"
+            "slide_image": "shopify://shop_images/Liberta_1_1.jpg"
           }
         }
       },
@@ -191,9 +191,9 @@
       "settings": {
         "motto": "Seven Sundays",
         "title": "SCHLAFSYSTEM",
-        "description": "Das einzige Schlafsystem, das Dich besucht, bevor Du bestellst",
-        "button_label": "Mehr dazu",
-        "button_url": ""
+        "description": "Das einzige Schlafsystem, das Dich besucht, bevor Du bestellst. Hol dir jetzt deine Matratze für's Leben!",
+        "button_label": "Zur Schlafberatung",
+        "button_url": "shopify://pages/experience"
       }
     },
     "ss_dream_cozy_DdkReU": {
@@ -202,19 +202,19 @@
         "slide_ib7CBJ": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-1.webp"
+            "slide_image": "shopify://shop_images/Sommerdecke.png"
           }
         },
         "slide_enYriR": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-2.webp"
+            "slide_image": "shopify://shop_images/Winterdecke.png"
           }
         },
         "slide_CghGm6": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-1.jpg"
+            "slide_image": "shopify://shop_images/Ganzjahresdecke.png"
           }
         }
       },
@@ -225,12 +225,12 @@
       ],
       "name": "SS Dream Cozy",
       "settings": {
-        "main_image": "shopify://shop_images/simple-img-1.webp",
+        "main_image": "shopify://shop_images/Breakfast_in_bed.jpg",
         "motto": "Seven Sundays",
-        "title": "DREAM COZY",
-        "description": "Das einzige Schlafsystem, das Dich besucht, bevor Du bestellst",
-        "button_label": "Mehr dazu",
-        "button_url": ""
+        "title": "cloud7 Daunendecken",
+        "description": "Entdecke unsere Daunendecken: Soft Hug ⛅️, Cozy Hug ☁️ und Warm Hug 🌨️",
+        "button_label": "Jetzt Entdecken",
+        "button_url": "shopify://products/daunendecken"
       }
     },
     "ss_pillow_talk_Gegg7n": {
@@ -239,7 +239,7 @@
         "slide_qXkwHV": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/simple-img-1.webp"
+            "slide_image": "shopify://shop_images/pillow_love.jpg"
           }
         },
         "slide_BB4YWG": {
@@ -262,11 +262,11 @@
       ],
       "name": "SS Pillow Talk",
       "settings": {
-        "motto": "Seven Sundays",
+        "motto": "CLOUD7",
         "title": "PILLOW TALK",
-        "description": "So einzigartig wie dein Körper ist auch die ideale Positionierung von Kopf und Nacken. Wie du schläfst, bestimmt, was du brauchst.",
+        "description": "Ergonomischer Premium-Memory-Schaum passt sich Rücken-, Seiten- und Bauchschläfern an. Ergonomisch, wo es zählt. Kuschelig, wo du es spürst – Komfort in jeder Position.",
         "button_label": "Kissen entdecken",
-        "button_url": "",
+        "button_url": "shopify://collections/kissen",
         "trustpilot_script_desktop": "<div class=\"trustpilot-widget\" data-locale=\"de-DE\" data-template-id=\"53aa8807dec7e10d38f59f32\" data-businessunit-id=\"5ff5d1f3b391a00001aac82e\" data-style-height=\"73px\" data-style-width=\"140px\" data-token=\"4af8d245-a721-439b-962b-55d6ee830678\">  <a href=\"\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>",
         "trustpilot_script_mobile": "<div class=\"trustpilot-widget\" data-locale=\"de-DE\" data-template-id=\"53aa8807dec7e10d38f59f32\" data-businessunit-id=\"5ff5d1f3b391a00001aac82e\" data-style-height=\"40px\" data-style-width=\"70px\" data-token=\"4af8d245-a721-439b-962b-55d6ee830678\">  <a href=\"\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>"
       }
