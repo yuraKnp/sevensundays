@@ -151,7 +151,8 @@
         "image_ratio": "square",
         "variation_connection": "54774300147980",
         "remove_top_padding": true,
-        "remove_bottom_padding": true
+        "remove_bottom_padding": true,
+        "remove_top_margin_for_text": false
       }
     },
     "left_right_RTiFwY": {
@@ -166,7 +167,8 @@
         "image_ratio": "horizontal",
         "variation_connection": "54774300147980",
         "remove_top_padding": true,
-        "remove_bottom_padding": false
+        "remove_bottom_padding": true,
+        "remove_top_margin_for_text": true
       }
     },
     "product_faq_finfX4": {
