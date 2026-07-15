@@ -165,7 +165,7 @@
         "image_full_width": true,
         "image_ratio": "horizontal",
         "variation_connection": "54774300147980",
-        "remove_top_padding": false,
+        "remove_top_padding": true,
         "remove_bottom_padding": false
       }
     },
