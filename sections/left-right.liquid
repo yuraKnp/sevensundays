@@ -38,11 +38,11 @@
             </div>
             <div class="col-lg-6 col-xl-5 order-lg-1 align-self-center">
                 <div class="content-top-bottom">
+                      {% if section.settings.title != blank %}
                     <div class="title-shortcode">
-                        {% if section.settings.title != blank %}
                         <div class="h2 title">{{ section.settings.title }}</div>
-                        {% endif %}
                     </div>
+                    {% endif %}
                     {% if section.settings.content != blank %}
                     <div class="text">
                         {{ section.settings.content }}
