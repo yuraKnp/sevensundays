@@ -164,7 +164,7 @@
         "image_full_width": true,
         "variation_connection": "54774300147980",
         "remove_top_padding": true,
-        "remove_bottom_padding": true
+        "remove_bottom_padding": false
       }
     },
     "product_faq_finfX4": {
