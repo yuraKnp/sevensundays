@@ -161,7 +161,7 @@
         "content": "<p><strong>„Ich knautsche es mir jeden Abend zurecht – manchmal als Stütze beim Lesen, manchmal einfach, weil es so schön weich ist. Für mich fühlt es sich an, als würde ich den Kopf auf einer kleinen Wolke ablegen.</strong></p>",
         "right_image": "shopify://shop_images/width_800.webp",
         "section_type": "right",
-        "image_full_width": false,
+        "image_full_width": true,
         "variation_connection": "54774300147980",
         "remove_top_padding": true,
         "remove_bottom_padding": true
