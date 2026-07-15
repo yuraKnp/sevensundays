@@ -12,6 +12,13 @@
 {% assign bottom_padding = 'padding-bottom: 0px;' %}
 {% endif %}
 
+{% assign top_margin = '' %}
+{% if section.settings.remove_top_margin_for_text  %}
+{% assign top_margin = 'margin-top: 0px;' %}
+{% endif %}
+
+
+
 {% assign image_full = '' %}
 {% if section.settings.image_full_width  %}
 {% assign image_full = 'object-fit: contain;' %}
@@ -42,8 +49,8 @@
                 </div>
             </div>
             <div class="col-lg-6 col-xl-5 order-lg-1 align-self-center">
-                <div class="content-top-bottom">
-                      {% if section.settings.title != blank %}
+                <div class="content-top-bottom" style="{{ top_margin }}">
+                    {% if section.settings.title != blank %}
                     <div class="title-shortcode">
                         <div class="h2 title">{{ section.settings.title }}</div>
                     </div>
@@ -137,6 +144,12 @@
         "id": "remove_bottom_padding",
         "default": false,
         "label": "Remove bottom padding",
+    },
+    {
+        "type": "checkbox",
+        "id": "remove_top_margin_for_text",
+        "default": false,
+        "label": "Remove top margin for textg",
     }
   ],
   "presets": [
