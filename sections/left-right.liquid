@@ -17,6 +17,11 @@
 {% assign image_full = 'object-fit: contain;' %}
 {% endif %}
 
+{% assign image_ratio_class = '' %}
+{% if section.settings.image_ratio == 'horizontal' %}
+{% assign image_ratio_class = 'lr-img-1--horizontal' %}
+{% endif %}
+
 {% assign variation_connection = section.settings.variation_connection %}
 
 
@@ -24,7 +29,7 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-6 {{ type }}">
-                <div class="lr-img-1">
+                <div class="lr-img-1 {{ image_ratio_class }}">
                     {% assign right_image = section.settings.right_image %}
                     {% if right_image != blank %}
                         {% assign image_url = right_image | image_url  %}
@@ -99,6 +104,22 @@
         "id": "image_full_width",
         "default": false,
         "label": "Image 100% width",
+    },
+    {
+        "type": "select",
+        "id": "image_ratio",
+        "options": [
+          {
+            "value": "square",
+            "label": "Square"
+          },
+          {
+            "value": "horizontal",
+            "label": "Horizontal"
+          }
+        ],
+        "default": "square",
+        "label": "Image shape"
     },
     {
         "type": "text",
