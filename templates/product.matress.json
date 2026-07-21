@@ -62,7 +62,7 @@
           "type": "pairs_best_with",
           "settings": {
             "upsell_product": "seitenschlaeferkissen",
-            "upsell_product_sec": "nackenkissen-old",
+            "upsell_product_sec": "nackenkissen",
             "upsell_product_third": "reisekissen",
             "upsell_variant_id": "",
             "upsell_variant_id_sec": "",
