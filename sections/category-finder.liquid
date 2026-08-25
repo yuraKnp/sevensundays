@@ -1,0 +1,162 @@
+{% comment %}
+  "Which [product] suits you?" quiz. One "Content" block per collection (heading +
+  intro), and one or more "Option" blocks per collection (each an answer that swaps
+  the recommended-product panel on click). Both block types are matched to the
+  collection currently being viewed via their own "Collection" setting.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<script src="{{ 'category-page.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign content_block = null
+  assign options = section.blocks | where: 'type', 'option'
+  assign first_option = null
+
+  for block in section.blocks
+    if block.type == 'content' and block.settings.collection == collection
+      assign content_block = block
+    endif
+  endfor
+-%}
+
+{%- if content_block -%}
+  <div class="cat-section" id="cat-finder">
+    <div class="cat-finder__box">
+      <div class="cat-finder__col">
+        {%- if content_block.settings.heading != blank -%}
+          <h2>{{ content_block.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if content_block.settings.text != blank -%}
+          <p>{{ content_block.settings.text }}</p>
+        {%- endif -%}
+        <div class="cat-finder__opts">
+          {%- for block in options -%}
+            {%- if block.settings.collection == collection -%}
+              {%- assign is_first = false -%}
+              {%- if first_option == null -%}
+                {%- assign is_first = true -%}
+                {%- assign first_option = block -%}
+              {%- endif -%}
+              <button
+                type="button"
+                class="cat-finder__opt"
+                aria-pressed="{{ is_first }}"
+                data-name="{{ block.settings.result_name | escape }}"
+                data-why="{{ block.settings.result_why | escape }}"
+                data-href="{{ block.settings.result_url }}"
+                data-image="{{ block.settings.result_image | image_url: width: 900 }}"
+                {{ block.shopify_attributes }}
+              >
+                <span class="cat-dot"></span>
+                {{ block.settings.label | escape }}
+              </button>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="cat-finder__result-col">
+        {%- if first_option -%}
+          <img class="cat-finder__result-img" src="{{ first_option.settings.result_image | image_url: width: 900 }}" alt="">
+        {%- endif -%}
+        <div class="cat-finder__result cat-finder__fade">
+          <p class="cat-eyebrow">{{ content_block.settings.result_label | default: 'Unsere Empfehlung' | escape }}</p>
+          <h3 class="cat-finder__result-name">{{ first_option.settings.result_name | escape }}</h3>
+          <p class="cat-finder__result-why">{{ first_option.settings.result_why | escape }}</p>
+          <a class="btn cat-finder__result-link" href="{{ first_option.settings.result_url }}">
+            <b>{{ content_block.settings.result_button_label | default: 'Jetzt kaufen' | escape }}</b>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Category finder",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Collection content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This content shows only when this collection is the one being viewed."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "result_label",
+          "label": "Result eyebrow label",
+          "default": "Unsere Empfehlung"
+        },
+        {
+          "type": "text",
+          "id": "result_button_label",
+          "label": "Result button label",
+          "default": "Jetzt kaufen"
+        }
+      ]
+    },
+    {
+      "type": "option",
+      "name": "Answer option",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "Which collection's finder this answer belongs to."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Answer label",
+          "info": "e.g. \"Ich schlafe auf der Seite\""
+        },
+        {
+          "type": "text",
+          "id": "result_name",
+          "label": "Recommended product name"
+        },
+        {
+          "type": "text",
+          "id": "result_why",
+          "label": "Why this product"
+        },
+        {
+          "type": "url",
+          "id": "result_url",
+          "label": "Product link"
+        },
+        {
+          "type": "image_picker",
+          "id": "result_image",
+          "label": "Result image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category finder",
+      "blocks": [{ "type": "content" }, { "type": "option" }]
+    }
+  ]
+}
+{% endschema %}
