@@ -1,0 +1,76 @@
+{% comment %}
+  Two-column explainer text. One "Content" block per collection.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- liquid
+  assign content_block = null
+  for block in section.blocks
+    if block.settings.collection == collection
+      assign content_block = block
+    endif
+  endfor
+-%}
+
+{%- if content_block -%}
+  <div class="cat-section">
+    <div class="cat-intro" {{ content_block.shopify_attributes }}>
+      {%- if content_block.settings.heading != blank -%}
+        <h2>{{ content_block.settings.heading }}</h2>
+      {%- endif -%}
+      <div>
+        {%- if content_block.settings.text_1 != blank -%}
+          <p>{{ content_block.settings.text_1 }}</p>
+        {%- endif -%}
+        {%- if content_block.settings.text_2 != blank -%}
+          <p>{{ content_block.settings.text_2 }}</p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Category intro",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Collection content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This content shows only when this collection is the one being viewed."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Paragraph 1"
+        },
+        {
+          "type": "richtext",
+          "id": "text_2",
+          "label": "Paragraph 2"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category intro",
+      "blocks": [{ "type": "content" }]
+    }
+  ]
+}
+{% endschema %}
