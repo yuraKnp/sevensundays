@@ -2,7 +2,6 @@
   Full-bleed "need help deciding?" banner. One "Content" block per collection.
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- liquid
   assign content_block = null
@@ -21,7 +20,7 @@
       {%- endif -%}
       <div class="cat-cta__inner">
         {%- if content_block.settings.heading != blank -%}
-          <h2>{{ content_block.settings.heading }}</h2>
+          <h2 class="cat-cta__title">{{ content_block.settings.heading }}</h2>
         {%- endif -%}
         {%- if content_block.settings.text != blank -%}
           <p>{{ content_block.settings.text }}</p>
