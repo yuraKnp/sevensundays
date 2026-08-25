@@ -4,7 +4,6 @@
   "Collection" setting matches the collection currently being viewed is rendered.
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- liquid
   assign content_block = null
@@ -31,7 +30,7 @@
         <p class="cat-eyebrow cat-hero__eyebrow">{{ content_block.settings.eyebrow | escape }}</p>
       {%- endif -%}
       {%- if content_block.settings.heading != blank -%}
-        <h1>{{ content_block.settings.heading }}</h1>
+        <h1 class="cat-hero__title">{{ content_block.settings.heading }}</h1>
       {%- endif -%}
       {%- if content_block.settings.text != blank -%}
         <p>{{ content_block.settings.text }}</p>
