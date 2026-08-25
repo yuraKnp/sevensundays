@@ -1,0 +1,132 @@
+{% comment %}
+  Image (swaps per active row) + numbered accordion rows. One "Content" block per
+  collection (heading), and up to a few "Row" blocks per collection (title + text +
+  optional own image — leave a row's image blank to keep showing the previous row's
+  image when that row is opened).
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<script src="{{ 'category-page.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign content_block = null
+  assign rows = section.blocks | where: 'type', 'row'
+
+  for block in section.blocks
+    if block.type == 'content' and block.settings.collection == collection
+      assign content_block = block
+    endif
+  endfor
+-%}
+
+{%- if content_block -%}
+  <div class="cat-section">
+    <div class="cat-split">
+      <div class="cat-split__media">
+        {%- assign row_index = -1 -%}
+        {%- for block in rows -%}
+          {%- if block.settings.collection == collection -%}
+            {%- assign row_index = row_index | plus: 1 -%}
+            {%- if block.settings.image != blank -%}
+              <img
+                class="{% if row_index == 0 %}is-active{% endif %}"
+                data-i="{{ row_index }}"
+                src="{{ block.settings.image | image_url: width: 1200 }}"
+                alt=""
+              >
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <div {{ content_block.shopify_attributes }}>
+        {%- if content_block.settings.heading != blank -%}
+          <h2>{{ content_block.settings.heading }}</h2>
+        {%- endif -%}
+        <div class="cat-split__rows">
+          {%- assign row_index = -1 -%}
+          {%- assign row_number = 0 -%}
+          {%- for block in rows -%}
+            {%- if block.settings.collection == collection -%}
+              {%- assign row_index = row_index | plus: 1 -%}
+              {%- assign row_number = row_number | plus: 1 -%}
+              <div class="cat-split__row{% if row_number == 1 %} is-active{% endif %}" {% if block.settings.image != blank %}data-img="{{ row_index }}"{% endif %} {{ block.shopify_attributes }}>
+                <button class="cat-split__row-btn" type="button">
+                  <span class="cat-n">{{ row_number }}</span>
+                  {{ block.settings.title | escape }}
+                  <span class="cat-chev">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 9l7 7 7-7"/></svg>
+                  </span>
+                </button>
+                <div class="cat-split__row-body">
+                  <p><span>{{ block.settings.text | escape }}</span></p>
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Category material split",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Collection content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This content shows only when this collection is the one being viewed."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "name": "Accordion row",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "Which collection's split section this row belongs to."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Leave blank to keep showing the previous row's image."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category material split",
+      "blocks": [{ "type": "content" }, { "type": "row" }, { "type": "row" }, { "type": "row" }]
+    }
+  ]
+}
+{% endschema %}
