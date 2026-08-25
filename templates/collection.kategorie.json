@@ -428,56 +428,64 @@
           "type": "slide",
           "settings": {
             "question": "Wie finde ich die richtige Höhe?",
-            "answer": "<p>Die passende Höhe hängt von Schulterbreite und Schlafposition ab. Beim Nackenkissen lässt sich die Höhe über entnehmbare Einlagen anpassen, bis Kopf und Wirbelsäule eine Linie bilden. Wenn du unsicher bist, klärt das eine kostenlose Schlafberatung in wenigen Minuten.</p>"
+            "answer": "<p>Die passende Höhe hängt von Schulterbreite und Schlafposition ab. Beim Nackenkissen lässt sich die Höhe über entnehmbare Einlagen anpassen, bis Kopf und Wirbelsäule eine Linie bilden. Wenn du unsicher bist, klärt das eine kostenlose Schlafberatung in wenigen Minuten.</p>",
+            "collection": "kissen"
           }
         },
         "q_kissen_2": {
           "type": "slide",
           "settings": {
             "question": "Wie pflege ich das Kissen?",
-            "answer": "<p>Der Bezug ist abnehmbar und bei 60 Grad waschbar. Der Kern wird nicht gewaschen, sondern regelmäßig gelüftet. Ersatzbezüge gibt es einzeln, das Kissen muss also nicht ersetzt werden, wenn der Bezug verschlissen ist.</p>"
+            "answer": "<p>Der Bezug ist abnehmbar und bei 60 Grad waschbar. Der Kern wird nicht gewaschen, sondern regelmäßig gelüftet. Ersatzbezüge gibt es einzeln, das Kissen muss also nicht ersetzt werden, wenn der Bezug verschlissen ist.</p>",
+            "collection": "kissen"
           }
         },
         "q_kissen_3": {
           "type": "slide",
           "settings": {
             "question": "Kann ich Teile nachkaufen?",
-            "answer": "<p>Ja. Bezüge und Höheneinlagen sind einzeln erhältlich. Das ist derselbe Gedanke wie beim Schlafsystem: austauschen statt neu kaufen.</p>"
+            "answer": "<p>Ja. Bezüge und Höheneinlagen sind einzeln erhältlich. Das ist derselbe Gedanke wie beim Schlafsystem: austauschen statt neu kaufen.</p>",
+            "collection": "kissen"
           }
         },
         "q_kissen_4": {
           "type": "slide",
           "settings": {
             "question": "Wie läuft Lieferung und Rückgabe?",
-            "answer": "<p>Lieferung in zwei bis drei Werktagen. Innerhalb von 14 Tagen kannst du kostenlos und ohne Begründung zurückgeben.</p>"
+            "answer": "<p>Lieferung in zwei bis drei Werktagen. Innerhalb von 14 Tagen kannst du kostenlos und ohne Begründung zurückgeben.</p>",
+            "collection": "kissen"
           }
         },
         "q_decken_1": {
           "type": "slide",
           "settings": {
             "question": "Welche Größe brauche ich?",
-            "answer": "<p>Die Größe richtet sich nach deinem Bett und danach, ob du allein oder zu zweit schläfst. Verfügbar sind 135 × 200 bis 200 × 220 cm. Bei zwei Personen mit unterschiedlichem Wärmeempfinden sind zwei einzelne Decken meist besser als eine große.</p>"
+            "answer": "<p>Die Größe richtet sich nach deinem Bett und danach, ob du allein oder zu zweit schläfst. Verfügbar sind 135 × 200 bis 200 × 220 cm. Bei zwei Personen mit unterschiedlichem Wärmeempfinden sind zwei einzelne Decken meist besser als eine große.</p>",
+            "collection": "decken"
           }
         },
         "q_decken_2": {
           "type": "slide",
           "settings": {
             "question": "Wie wasche ich die Decke?",
-            "answer": "<p>Maschinenwäsche bei 40 Grad im Schonwaschgang. Trocknergeeignet auf niedriger Stufe, gegebenenfalls in mehreren Durchgängen. Nicht chemisch reinigen.</p>"
+            "answer": "<p>Maschinenwäsche bei 40 Grad im Schonwaschgang. Trocknergeeignet auf niedriger Stufe, gegebenenfalls in mehreren Durchgängen. Nicht chemisch reinigen.</p>",
+            "collection": "decken"
           }
         },
         "q_decken_3": {
           "type": "slide",
           "settings": {
             "question": "Sind die Decken für Allergiker geeignet?",
-            "answer": "<p>Ja, alle Decken sind NOMITE zertifiziert und damit für Hausstauballergiker geeignet. Die Hülle ist zusätzlich nach OEKO-TEX Standard 100 geprüft.</p>"
+            "answer": "<p>Ja, alle Decken sind NOMITE zertifiziert und damit für Hausstauballergiker geeignet. Die Hülle ist zusätzlich nach OEKO-TEX Standard 100 geprüft.</p>",
+            "collection": "decken"
           }
         },
         "q_decken_4": {
           "type": "slide",
           "settings": {
             "question": "Wie läuft Lieferung und Rückgabe?",
-            "answer": "<p>Kostenloser Versand mit DHL ab 120 Euro Bestellwert, Lieferung in vier bis fünf Werktagen. 14 Tage Rückgaberecht mit voller Erstattung.</p>"
+            "answer": "<p>Kostenloser Versand mit DHL ab 120 Euro Bestellwert, Lieferung in vier bis fünf Werktagen. 14 Tage Rückgaberecht mit voller Erstattung.</p>",
+            "collection": "decken"
           }
         }
       },
@@ -493,7 +501,9 @@
       ],
       "settings": {
         "title": "Häufige Fragen",
-        "section_type": "full"
+        "section_type": "full",
+        "layout_2col": true,
+        "intro_text": "<p>Alles zu Anpassung, Pflege und Lieferung. Für Maße und Materialien der einzelnen Produkte findest du die Angaben auf der jeweiligen Produktseite.</p>"
       }
     },
     "delivery": {
@@ -529,26 +539,82 @@
       "settings": {}
     },
     "reviews": {
-      "type": "category-reviews",
+      "type": "category-testimonials",
       "blocks": {
-        "kissen": {
+        "content_kissen": {
           "type": "content",
           "settings": {
             "collection": "kissen",
-            "heading": "Was Kunden über die Kissen sagen"
+            "heading": "Was Kunden über die Kissen sagen",
+            "rating_text": "4,7 von 5 auf Trustpilot"
           }
         },
-        "decken": {
+        "rev_kissen_1": {
+          "type": "review",
+          "settings": {
+            "collection": "kissen",
+            "quote": "Nach Jahren mit Nackenschmerzen morgens das erste Mal beschwerdefrei aufgewacht. Die Höhe konnte ich in fünf Minuten anpassen.",
+            "attribution": "Verifizierte Bewertung, Trustpilot"
+          }
+        },
+        "rev_kissen_2": {
+          "type": "review",
+          "settings": {
+            "collection": "kissen",
+            "quote": "Der Bezug lässt sich abnehmen und waschen, das war für mich der Grund. Nach einem Jahr sieht er aus wie neu.",
+            "attribution": "Verifizierte Bewertung, Trustpilot"
+          }
+        },
+        "rev_kissen_3": {
+          "type": "review",
+          "settings": {
+            "collection": "kissen",
+            "quote": "Die Beratung war ehrlich, es wurde mir nicht das teuerste Modell verkauft, sondern das passende.",
+            "attribution": "Verifizierte Bewertung, Trustpilot"
+          }
+        },
+        "content_decken": {
           "type": "content",
           "settings": {
             "collection": "decken",
-            "heading": "Was Kunden über die Decken sagen"
+            "heading": "Was Kunden über die Decken sagen",
+            "rating_text": "4,7 von 5 auf Trustpilot"
+          }
+        },
+        "rev_decken_1": {
+          "type": "review",
+          "settings": {
+            "collection": "decken",
+            "quote": "Endlich eine Decke, unter der ich nachts nicht schwitze. Die Sommerdecke war für mich genau richtig.",
+            "attribution": "Verifizierte Bewertung, Trustpilot"
+          }
+        },
+        "rev_decken_2": {
+          "type": "review",
+          "settings": {
+            "collection": "decken",
+            "quote": "Wir haben zwei einzelne Decken genommen, weil mein Mann friert und mir immer warm ist. Beste Entscheidung.",
+            "attribution": "Verifizierte Bewertung, Trustpilot"
+          }
+        },
+        "rev_decken_3": {
+          "type": "review",
+          "settings": {
+            "collection": "decken",
+            "quote": "Qualität sieht man sofort. Die Filztasche zur Aufbewahrung war ein schönes Detail.",
+            "attribution": "Verifizierte Bewertung, Trustpilot"
           }
         }
       },
       "block_order": [
-        "kissen",
-        "decken"
+        "content_kissen",
+        "rev_kissen_1",
+        "rev_kissen_2",
+        "rev_kissen_3",
+        "content_decken",
+        "rev_decken_1",
+        "rev_decken_2",
+        "rev_decken_3"
       ],
       "settings": {}
     },

@@ -5,8 +5,69 @@
   {% assign class = 'col-lg-12' %}
   {% assign padding = 'padd-md pd-b-0' %}
 {% endif %}
+
+{%- if section.settings.layout_2col -%}
+  {{ 'component-category-page.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- assign has_visible_blocks = false -%}
+{%- for block in section.blocks -%}
+  {%- if block.settings.collection == blank or block.settings.collection == collection -%}
+    {%- if block.settings.question != blank and block.settings.answer != blank -%}
+      {%- assign has_visible_blocks = true -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
 <div class="section {{ padding }}">
     <div class="container">
+      {%- if section.settings.layout_2col -%}
+        <div class="cat-section--tight faq">
+          <div class="cat-faq">
+            <div class="cat-faq__intro">
+              {%  if section.settings.title != blank %}
+              <div class="h2 title">{{ section.settings.title }}</div>
+              {% endif %}
+              {%  if section.settings.intro_text != blank %}
+              <div class="text">{{ section.settings.intro_text }}</div>
+              {% endif %}
+            </div>
+            {%- if has_visible_blocks -%}
+            {%- assign first_visible_rendered = false -%}
+            <div class="accordion type2" itemscope itemtype="https://schema.org/FAQPage">
+                {% for block in section.blocks %}
+                    {%- assign question = block.settings.question -%}
+                    {%- assign answer = block.settings.answer -%}
+                {% assign block_visible = false %}
+                {% if question != blank and answer != blank %}
+                  {% if block.settings.collection == blank or block.settings.collection == collection %}
+                    {% assign block_visible = true %}
+                  {% endif %}
+                {% endif %}
+                {% if block_visible %}
+                {%- assign is_first_visible = false -%}
+                {%- unless first_visible_rendered -%}
+                  {%- assign is_first_visible = true -%}
+                  {%- assign first_visible_rendered = true -%}
+                {%- endunless -%}
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" {{ block.shopify_attributes }}>
+                    <div class="accordion-title{% if is_first_visible %} is-active{% endif %}" itemprop="name">
+                        {{ question }}
+                        <i></i>
+                    </div>
+                    <div class="accordion-inner" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" {% if is_first_visible %}style="display: block;"{% endif %}>
+                        <div class="text" itemprop="text">
+                            {{ answer }}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- else -%}
         <div class="row justify-content-center">
             <div class="{{ class }}">
                 {%  if section.settings.title != blank %}
@@ -14,13 +75,19 @@
                     <div class="h2 title">{{ section.settings.title }}</div>
                 </div>
                 {% endif %}
-                {% if section.blocks != blank %}
+                {% if has_visible_blocks %}
                 <div class="accordion" itemscope itemtype="https://schema.org/FAQPage">
                     {% for block in section.blocks %}
                         {%- assign question = block.settings.question -%}
                         {%- assign answer = block.settings.answer -%}
-                    {% if question != blank and answer != blank  %}
-                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    {% assign block_visible = false %}
+                {% if question != blank and answer != blank %}
+                  {% if block.settings.collection == blank or block.settings.collection == collection %}
+                    {% assign block_visible = true %}
+                  {% endif %}
+                {% endif %}
+                {% if block_visible %}
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" {{ block.shopify_attributes }}>
                         <div class="accordion-title" itemprop="name">
                             {{ question }}
                             <i></i>
@@ -37,6 +104,7 @@
                 {%  endif %}
             </div>
         </div>
+      {%- endif -%}
     </div>
 </div>
 
@@ -71,6 +139,18 @@
       "default": "normal",
       "label": "Width"
     },
+    {
+      "type": "checkbox",
+      "id": "layout_2col",
+      "label": "Two-column layout (title + intro left, questions right)",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Intro text",
+      "info": "Only shown in the two-column layout."
+    },
   ],
   "blocks": [
     {
@@ -86,6 +166,12 @@
         "type": "richtext",
         "id": "answer",
         "label": "Answer"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Only show for collection",
+          "info": "Leave blank to always show this question. Used when this section is placed on a collection template shared by several collections."
         },
 
       ]

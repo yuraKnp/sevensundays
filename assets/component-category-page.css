@@ -11,11 +11,11 @@
 }
 
 .cat-section {
-  padding: 88px 0;
+  padding-block: 88px;
 }
 
 .cat-section--tight {
-  padding: 56px 0 0;
+  padding-block: 56px 0;
 }
 
 .cat-eyebrow {
@@ -31,7 +31,7 @@
   position: relative;
   overflow: hidden;
   border-radius: var(--rd-1);
-  margin: calc(var(--h-top-rating) + var(--h-height) + 20px) 3rem 0;
+  margin-top: calc(var(--h-top-rating) + var(--h-height) + 20px);
   min-height: min(78vh, 760px);
   display: flex;
   align-items: flex-end;
@@ -116,7 +116,7 @@
 
 @media (max-width: 989px) {
   .cat-hero {
-    margin: calc(var(--h-top-rating) + var(--h-height) + 12px) 12px 0;
+    margin-top: calc(var(--h-top-rating) + var(--h-height) + 12px);
     min-height: min(72vh, 540px);
   }
 
@@ -554,6 +554,16 @@
   margin-bottom: 14px;
 }
 
+.cat-faq__intro .text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--cat-muted);
+}
+
+.cat-faq .accordion.type2 .accordion-item:first-child {
+  border-top: 1px solid var(--clr-text-5);
+}
+
 @media (max-width: 989px) {
   .cat-faq {
     grid-template-columns: 1fr;
@@ -737,7 +747,7 @@
   gap: 48px;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 26px 0;
+  padding-block: 26px;
   border-top: 1px solid var(--cat-line);
   border-bottom: 1px solid var(--cat-line);
 }
@@ -760,7 +770,7 @@
 @media (max-width: 749px) {
   .cat-delivery {
     gap: 14px 22px;
-    padding: 20px 0;
+    padding-block: 20px;
     justify-content: flex-start;
   }
 }
@@ -782,6 +792,64 @@
   line-height: 1.05;
   margin: 0;
   color: var(--clr-black);
+}
+
+.cat-reviews__rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 14px;
+  color: var(--cat-muted);
+}
+
+.cat-stars {
+  display: flex;
+  gap: 2px;
+  color: #00b67a;
+  flex-shrink: 0;
+}
+
+.cat-stars svg {
+  width: 14px;
+  height: 14px;
+}
+
+.cat-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.cat-review {
+  background: var(--clr-white);
+  border-radius: 18px;
+  padding: 26px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-review .cat-stars {
+  margin-bottom: 14px;
+}
+
+.cat-review p {
+  margin: 0 0 18px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--clr-black);
+}
+
+.cat-review footer {
+  margin-top: auto;
+  font-size: 13px;
+  color: var(--cat-muted);
+}
+
+@media (max-width: 989px) {
+  .cat-reviews__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------------- Helper CTA ---------------- */

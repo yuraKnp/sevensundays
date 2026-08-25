@@ -1,0 +1,122 @@
+{% comment %}
+  Static review cards, matching the mockup exactly (heading + rating line + 3
+  quote cards). Separate from "Category reviews" (the live Reviews.io widget) —
+  use this one where curated/static quotes are preferred. One "Content" block
+  per collection (heading + rating text), and one or more "Review" blocks per
+  collection (quote + attribution), matched the same way as the other sections.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- liquid
+  assign content_block = null
+  assign reviews = section.blocks | where: 'type', 'review'
+
+  for block in section.blocks
+    if block.type == 'content' and block.settings.collection == collection
+      assign content_block = block
+    endif
+  endfor
+-%}
+
+{%- if content_block -%}
+  <div class="cat-section container">
+    <div class="cat-reviews__head" {{ content_block.shopify_attributes }}>
+      {%- if content_block.settings.heading != blank -%}
+        <h2>{{ content_block.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if content_block.settings.rating_text != blank -%}
+        <p class="cat-reviews__rating">
+          <span class="cat-stars">
+            {%- for i in (1..5) -%}
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.8L12 17.3 5.9 20.5l1.4-6.8-5-4.6 6.8-.8z"/></svg>
+            {%- endfor -%}
+          </span>
+          {{ content_block.settings.rating_text }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    <div class="cat-reviews__grid">
+      {%- for block in reviews -%}
+        {%- if block.settings.collection == collection and block.settings.quote != blank -%}
+          <div class="cat-review" {{ block.shopify_attributes }}>
+            <span class="cat-stars">
+              {%- for i in (1..5) -%}
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.8L12 17.3 5.9 20.5l1.4-6.8-5-4.6 6.8-.8z"/></svg>
+              {%- endfor -%}
+            </span>
+            <p>{{ block.settings.quote | escape }}</p>
+            {%- if block.settings.attribution != blank -%}
+              <footer>{{ block.settings.attribution | escape }}</footer>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Category testimonials",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Collection content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This content shows only when this collection is the one being viewed."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "rating_text",
+          "label": "Rating text",
+          "info": "e.g. \"4,7 von 5 auf Trustpilot\""
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "Which collection's testimonials this review belongs to."
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "attribution",
+          "label": "Attribution",
+          "info": "e.g. \"Verifizierte Bewertung, Trustpilot\"",
+          "default": "Verifizierte Bewertung"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category testimonials",
+      "blocks": [{ "type": "content" }, { "type": "review" }, { "type": "review" }, { "type": "review" }]
+    }
+  ]
+}
+{% endschema %}
