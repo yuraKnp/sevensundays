@@ -1,0 +1,122 @@
+{% comment %}
+  Category page hero. Shared across every collection that uses this template —
+  add one "Content" block per collection (Kissen, Decken, ...); the block whose
+  "Collection" setting matches the collection currently being viewed is rendered.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- liquid
+  assign content_block = null
+  for block in section.blocks
+    if block.settings.collection == collection
+      assign content_block = block
+    endif
+  endfor
+-%}
+
+{%- if content_block -%}
+  <div class="cat-hero" {{ content_block.shopify_attributes }}>
+    {%- if content_block.settings.image != blank -%}
+      <div class="cat-hero__image">
+        {{
+          content_block.settings.image
+          | image_url: width: 1800
+          | image_tag: loading: 'eager', sizes: '100vw'
+        }}
+      </div>
+    {%- endif -%}
+    <div class="cat-hero__inner">
+      {%- if content_block.settings.eyebrow != blank -%}
+        <p class="cat-eyebrow cat-hero__eyebrow">{{ content_block.settings.eyebrow | escape }}</p>
+      {%- endif -%}
+      {%- if content_block.settings.heading != blank -%}
+        <h1>{{ content_block.settings.heading }}</h1>
+      {%- endif -%}
+      {%- if content_block.settings.text != blank -%}
+        <p>{{ content_block.settings.text }}</p>
+      {%- endif -%}
+      {%- if content_block.settings.rating_text != blank -%}
+        <p class="cat-hero__rating">
+          <span class="cat-stars">
+            {%- for i in (1..5) -%}
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.8L12 17.3 5.9 20.5l1.4-6.8-5-4.6 6.8-.8z"/></svg>
+            {%- endfor -%}
+          </span>
+          {{ content_block.settings.rating_text }}
+        </p>
+      {%- endif -%}
+      {%- if content_block.settings.button_label != blank -%}
+        <a href="{{ content_block.settings.button_url | default: '#cat-products' }}" class="btn">
+          <b>{{ content_block.settings.button_label | escape }}</b>
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Category hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Collection content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This content shows only when this collection is the one being viewed."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow text"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "rating_text",
+          "label": "Rating text",
+          "info": "e.g. \"Hervorragend – 4,7 von 5 auf Trustpilot\""
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button link",
+          "info": "Leave blank to scroll to the products grid on this page."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category hero",
+      "blocks": [{ "type": "content" }]
+    }
+  ]
+}
+{% endschema %}
