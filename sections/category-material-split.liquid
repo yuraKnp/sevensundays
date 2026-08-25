@@ -5,8 +5,6 @@
   image when that row is opened).
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
-<script src="{{ 'category-page.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
   assign content_block = null
@@ -20,7 +18,7 @@
 -%}
 
 {%- if content_block -%}
-  <div class="cat-section">
+  <div class="cat-section container">
     <div class="cat-split">
       <div class="cat-split__media">
         {%- assign row_index = -1 -%}
