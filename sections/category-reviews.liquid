@@ -1,0 +1,84 @@
+{% comment %}
+  Reviews.io widget for the category page: heading (per-collection block) + the
+  live Reviews.io carousel, using the same store-code logic as
+  snippets/reviews-star-widget.liquid (already used on product pages).
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- liquid
+  assign content_block = null
+  for block in section.blocks
+    if block.settings.collection == collection
+      assign content_block = block
+    endif
+  endfor
+-%}
+
+<div class="cat-section container">
+  <div class="cat-reviews__head" {% if content_block %}{{ content_block.shopify_attributes }}{% endif %}>
+    {%- if content_block and content_block.settings.heading != blank -%}
+      <h2>{{ content_block.settings.heading }}</h2>
+    {%- endif -%}
+    <div id="ruk_rating_snippet"></div>
+  </div>
+
+  <div
+    class="reviewsio-carousel-widget"
+    data-store="{%- if shop.domain contains '.ch' -%}my7sundays.ch{%- else -%}seven-sundays.shop-6357lJx{%- endif -%}"
+    data-lang="de"
+    data-min-rating="4"
+    data-trim-length="150"
+  ></div>
+</div>
+
+<link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css">
+<script src="https://widget.reviews.io/rating-snippet/dist.js" defer="defer"></script>
+<script src="https://widget.reviews.io/carousel-widget/dist.js" defer="defer"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    if (typeof ratingSnippet === 'function') {
+      ratingSnippet('ruk_rating_snippet', {
+        store: "{%- if shop.domain contains '.ch' -%}my7sundays.ch{%- else -%}seven-sundays.shop-6357lJx{%- endif -%}",
+        color: '#feb85d',
+        linebreak: false,
+        usePolaris: true,
+        minRating: 3
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Category reviews",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Collection content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This heading shows only when this collection is the one being viewed."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category reviews",
+      "blocks": [{ "type": "content" }]
+    }
+  ]
+}
+{% endschema %}
