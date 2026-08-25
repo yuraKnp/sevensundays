@@ -14,7 +14,7 @@
 -%}
 
 {%- if content_block -%}
-  <div class="cat-section">
+  <div class="cat-section container">
     <div class="cat-cta" {{ content_block.shopify_attributes }}>
       {%- if content_block.settings.image != blank -%}
         {{ content_block.settings.image | image_url: width: 1800 | image_tag: loading: 'lazy', sizes: '100vw' }}
