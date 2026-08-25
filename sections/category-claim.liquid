@@ -1,0 +1,56 @@
+{% comment %}
+  Centered large statement. One "Content" block per collection.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- liquid
+  assign content_block = null
+  for block in section.blocks
+    if block.settings.collection == collection
+      assign content_block = block
+    endif
+  endfor
+-%}
+
+{%- if content_block and content_block.settings.heading != blank -%}
+  <div class="cat-section">
+    <div class="cat-claim" {{ content_block.shopify_attributes }}>
+      <h2>{{ content_block.settings.heading }}</h2>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Category claim",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Collection content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This content shows only when this collection is the one being viewed."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Statement"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category claim",
+      "blocks": [{ "type": "content" }]
+    }
+  ]
+}
+{% endschema %}
