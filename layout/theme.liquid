@@ -14,6 +14,10 @@
 
     {{ 'main.css' | asset_url | stylesheet_tag }}
     {{ 'form-style.css' | asset_url | stylesheet_tag }}
+    {%- if template.suffix == 'kategorie' -%}
+      {{ 'component-category-page.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'category-page.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
     <link rel="preload" href="{{ 'BasisGrotesqueArabicPro-Regular.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ 'BasisGrotesqueArabicPro-Medium.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ 'BasisGrotesqueArabicPro-Bold.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
@@ -350,7 +354,9 @@
     </script>
 
 
-
+  {%- if template == 'product' or template == 'product.pillow' or template == 'product.pillow1' or template == 'product.pillow2' or template == 'product.pillow3' -%}
+      {%- render 'reviews-star-widget' -%}
+  {%- endif -%}
 
   {% if request.page_type == 'article' %}
     <style>
@@ -532,7 +538,7 @@
     <script defer src="{{ 'app-swiper.js' | asset_url }}"></script>
     <script defer src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
 
-    {% render 'utm-gift' %}
+
 
   </body>
 </html>
