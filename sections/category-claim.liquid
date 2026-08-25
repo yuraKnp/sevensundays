@@ -2,7 +2,6 @@
   Centered large statement. One "Content" block per collection.
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- liquid
   assign content_block = null
@@ -14,7 +13,7 @@
 -%}
 
 {%- if content_block and content_block.settings.heading != blank -%}
-  <div class="cat-section">
+  <div class="cat-section container">
     <div class="cat-claim" {{ content_block.shopify_attributes }}>
       <h2>{{ content_block.settings.heading }}</h2>
     </div>
