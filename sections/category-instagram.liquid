@@ -1,0 +1,87 @@
+{% comment %}
+  Instagram image grid. Same content for every category page using this
+  template — plain blocks, no per-collection matching.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- if section.blocks.size > 0 -%}
+  <div class="cat-section cat-section--tight">
+    <div class="cat-insta__head">
+      {%- if section.settings.heading != blank -%}
+        <h2>{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.link_label != blank and section.settings.link_url != blank -%}
+        <a href="{{ section.settings.link_url }}" target="_blank" rel="noopener">{{ section.settings.link_label | escape }}</a>
+      {%- endif -%}
+    </div>
+    <div class="cat-insta__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.image != blank -%}
+          <a href="{{ block.settings.url | default: section.settings.link_url }}" target="_blank" rel="noopener" {{ block.shopify_attributes }}>
+            {{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 16vw, 33vw' }}
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Category Instagram grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "@sevensundays"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link label",
+      "default": "Auf Instagram folgen"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Instagram link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link",
+          "info": "Leave blank to use the Instagram link above."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category Instagram grid",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}
