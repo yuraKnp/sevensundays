@@ -26,13 +26,7 @@
           {%- if block.settings.collection == collection -%}
             {%- assign row_index = row_index | plus: 1 -%}
             {%- if block.settings.image != blank -%}
-              <img
-                class="{% if row_index == 0 %}is-active{% endif %}"
-                data-i="{{ row_index }}"
-                src="{{ block.settings.image | image_url: width: 1200 }}"
-                alt=""
-                loading="lazy"
-              >
+              <img class="{% if row_index == 0 %}is-active{% endif %}" data-i="{{ row_index }}" src="{{ block.settings.image | image_url: width: 1200 }}" alt="" loading="lazy">
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}
