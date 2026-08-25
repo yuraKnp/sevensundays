@@ -3,10 +3,9 @@
   template — plain blocks, no per-collection matching.
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- if section.blocks.size > 0 -%}
-  <div class="cat-delivery">
+  <div class="cat-delivery container">
     {%- for block in section.blocks -%}
       <div class="cat-delivery__item" {{ block.shopify_attributes }}>
         {%- if block.settings.icon != blank -%}

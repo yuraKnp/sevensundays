@@ -10,6 +10,12 @@
   --cat-line: #ECE9E2;
 }
 
+/* main.css resets font-style via `font: inherit` on every element, which kills
+   the browser's default italic on <em>. Restore it for this template. */
+em {
+  font-style: italic;
+}
+
 .cat-section {
   padding-block: 88px;
 }
@@ -70,13 +76,16 @@
   margin: 0 0 16px;
 }
 
-.cat-hero__inner h1 {
+/* !important: main.css's `:is(h1, .h1:not(.font-1), h2, ...)` heading-color
+   rule carries the specificity of its highest-specificity branch (a class +
+   :not()), which outranks a plain `.cat-hero__inner h1` selector. */
+.cat-hero__title {
   font-family: var(--ff-2);
   font-weight: 400;
   font-size: clamp(42px, 6.2vw, 86px);
   line-height: 1;
   margin-bottom: 20px;
-  color: var(--clr-white);
+  color: var(--clr-white) !important;
 }
 
 .cat-hero__inner p {
@@ -248,13 +257,14 @@
   margin: 0 0 10px;
 }
 
-.cat-finder__result h3 {
+.cat-finder__result h3,
+.cat-finder__result-name {
   font-family: var(--ff-2);
   font-weight: 400;
   font-size: 28px;
   line-height: 1.1;
   margin: 0 0 8px;
-  color: var(--clr-white);
+  color: var(--clr-white) !important;
 }
 
 .cat-finder__result p {
@@ -360,7 +370,7 @@
   line-height: 1.08;
   max-width: 16ch;
   margin: 0 0 200px;
-  color: var(--clr-white);
+  color: var(--clr-white) !important;
 }
 
 .cat-band__grid {
@@ -385,7 +395,8 @@
   display: block;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 8px;
+  line-height: 18px;
+  margin-bottom: 0px;
 }
 
 .cat-band__grid span {
@@ -485,8 +496,9 @@
   background: var(--cat-line);
   font-size: 11px;
   font-weight: 600;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: none;
   transition: background var(--transition-1);
 }
@@ -604,7 +616,7 @@
 .cat-products__head p {
   font-size: 15px;
   color: var(--cat-muted);
-  margin: 8px 0 0;
+  margin: 0px 0 0;
 }
 
 .cat-products__grid {
@@ -747,6 +759,7 @@
   gap: 48px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 64px;
   padding-block: 26px;
   border-top: 1px solid var(--cat-line);
   border-bottom: 1px solid var(--cat-line);
@@ -770,6 +783,7 @@
 @media (max-width: 749px) {
   .cat-delivery {
     gap: 14px 22px;
+    margin-top: 40px;
     padding-block: 20px;
     justify-content: flex-start;
   }
@@ -840,7 +854,7 @@
   color: var(--clr-black);
 }
 
-.cat-review footer {
+.cat-review__footer {
   margin-top: auto;
   font-size: 13px;
   color: var(--cat-muted);
@@ -885,13 +899,13 @@
   color: var(--clr-white-2);
 }
 
-.cat-cta__inner h2 {
+.cat-cta__title {
   font-family: var(--ff-2);
   font-weight: 400;
   font-size: clamp(28px, 3.2vw, 40px);
   line-height: 1.08;
   margin: 0 0 12px;
-  color: var(--clr-white);
+  color: var(--clr-white) !important;
 }
 
 .cat-cta__inner p {
@@ -927,6 +941,10 @@
   text-decoration: none;
   border-bottom: 1.5px solid var(--butter);
   padding-bottom: 3px;
+}
+
+.cat-insta-section {
+  padding-bottom: 88px;
 }
 
 .cat-insta__grid {

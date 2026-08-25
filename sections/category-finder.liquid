@@ -55,7 +55,7 @@
       </div>
       <div class="cat-finder__result-col">
         {%- if first_option -%}
-          <img class="cat-finder__result-img" src="{{ first_option.settings.result_image | image_url: width: 900 }}" alt="" loading="lazy" width="900" height="900">
+          <img class="cat-finder__result-img" src="{{ first_option.settings.result_image | image_url: width: 900 }}" alt="">
         {%- endif -%}
         <div class="cat-finder__result cat-finder__fade">
           <p class="cat-eyebrow">{{ content_block.settings.result_label | default: 'Unsere Empfehlung' | escape }}</p>
