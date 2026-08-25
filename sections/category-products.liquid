@@ -1,0 +1,113 @@
+{% comment %}
+  Product grid bound directly to the collection currently being viewed — works
+  automatically for every collection using this template, no per-collection blocks
+  needed for the products themselves. One "Content" block per collection sets the
+  heading/subtitle copy only.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- liquid
+  assign content_block = null
+  for block in section.blocks
+    if block.settings.collection == collection
+      assign content_block = block
+    endif
+  endfor
+-%}
+
+<div class="cat-section container" id="cat-products">
+  {%- if content_block and content_block.settings.heading != blank -%}
+    <div class="cat-products__head" {{ content_block.shopify_attributes }}>
+      <h2>{{ content_block.settings.heading }}</h2>
+      {%- if content_block.settings.subtitle != blank -%}
+        <p>{{ content_block.settings.subtitle | escape }}</p>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- paginate collection.products by section.settings.products_per_page -%}
+    <div class="cat-products__grid">
+      {%- for product in collection.products -%}
+        <a class="cat-p" href="{{ product.url }}">
+          <div class="cat-p__media">
+            {%- if product.featured_media != blank -%}
+              {{ product.featured_media | image_url: width: 900 | image_tag: loading: 'lazy', class: 'cat-p__base' }}
+            {%- endif -%}
+            {%- if product.media[1] != blank -%}
+              {{ product.media[1] | image_url: width: 900 | image_tag: loading: 'lazy', class: 'cat-p__alt' }}
+            {%- endif -%}
+            {%- if product.available == false -%}
+              <span class="cat-p__badge">{{ 'products.product.sold_out' | t }}</span>
+            {%- elsif product.metafields.custom.badge_text != blank -%}
+              <span class="cat-p__badge">{{ product.metafields.custom.badge_text }}</span>
+            {%- endif -%}
+            <h3 class="cat-p__name">{{ product.title | escape }}</h3>
+            <span class="cat-p__buy">{{ section.settings.buy_button_label | default: 'Jetzt kaufen' | escape }}</span>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+
+    {%- if paginate.pages > 1 -%}
+      {% render 'pagination', paginate: paginate, anchor: '' %}
+    {%- endif -%}
+  {%- endpaginate -%}
+</div>
+
+{% schema %}
+{
+  "name": "Category products",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "min": 4,
+      "max": 24,
+      "step": 4,
+      "default": 12,
+      "label": "Products per page"
+    },
+    {
+      "type": "text",
+      "id": "buy_button_label",
+      "label": "Buy button label",
+      "default": "Jetzt kaufen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Collection content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This heading shows only when this collection is the one being viewed."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Alle Produkte"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "info": "e.g. \"Ab €149,00\""
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category products",
+      "blocks": [{ "type": "content" }]
+    }
+  ]
+}
+{% endschema %}
