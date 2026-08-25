@@ -6,7 +6,6 @@
   collection (quote + attribution), matched the same way as the other sections.
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ 'component-category-page.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- liquid
   assign content_block = null
@@ -48,7 +47,7 @@
             </span>
             <p>{{ block.settings.quote | escape }}</p>
             {%- if block.settings.attribution != blank -%}
-              <footer>{{ block.settings.attribution | escape }}</footer>
+              <p class="cat-review__footer">{{ block.settings.attribution | escape }}</p>
             {%- endif -%}
           </div>
         {%- endif -%}
