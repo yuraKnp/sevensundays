@@ -1,0 +1,107 @@
+{% comment %}
+  Shop page intro: eyebrow, heading, text, Trustpilot rating line, and a row of
+  jump links ("chips") to the product families further down the page.
+{% endcomment %}
+
+
+<div class="container">
+  <div class="shop-head">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="cat-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    {%- if section.settings.heading != blank -%}
+      <h1>{{ section.settings.heading }}</h1>
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <div class="shop-head__text">{{ section.settings.text }}</div>
+    {%- endif -%}
+    {%- if section.settings.rating_text != blank -%}
+      <p class="shop-head__rating">
+        <span class="cat-stars">
+          {%- for i in (1..5) -%}
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.8L12 17.3 5.9 20.5l1.4-6.8-5-4.6 6.8-.8z"/></svg>
+          {%- endfor -%}
+        </span>
+        {%- if section.settings.rating_label != blank -%}<b>{{ section.settings.rating_label | escape }}</b>{%- endif -%}
+        <span>{{ section.settings.rating_text }}</span>
+      </p>
+    {%- endif -%}
+  </div>
+</div>
+
+{%- if section.blocks.size > 0 -%}
+  <div class="container">
+    <div class="shop-chipbar">
+      <div class="shop-chips" id="shop-chips">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.label != blank and block.settings.url != blank -%}
+            <a class="shop-chip" href="{{ block.settings.url }}" data-target="{{ block.settings.url | remove: '#' }}" {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Shop hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "Shop"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "rating_label",
+      "label": "Rating label",
+      "default": "Hervorragend"
+    },
+    {
+      "type": "text",
+      "id": "rating_text",
+      "label": "Rating text",
+      "info": "e.g. \"4,7 von 5 auf Trustpilot\". Leave blank to hide the rating line."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Jump link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link",
+          "info": "e.g. \"#kissen\" to jump to a family section further down this page."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop hero",
+      "blocks": [{ "type": "chip" }, { "type": "chip" }, { "type": "chip" }, { "type": "chip" }]
+    }
+  ]
+}
+{% endschema %}
