@@ -1,0 +1,120 @@
+{% comment %}
+  Consultation-led "Schlafsystem" block on the Shop page: not shoppable directly,
+  links to booking a sleep consultation instead. One section, no product grid.
+{% endcomment %}
+
+
+<div class="container">
+  <div class="shop-sys"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %}>
+    <div class="shop-sys__media">
+      {%- if section.settings.tag_text != blank -%}
+        <span class="shop-sys__tag">{{ section.settings.tag_text | escape }}</span>
+      {%- endif -%}
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(min-width: 980px) 55vw, 100vw' }}
+      {%- endif -%}
+    </div>
+    <div class="shop-sys__body">
+      {%- if section.settings.heading != blank -%}
+        <h2>{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="shop-sys__text">{{ section.settings.text }}</div>
+      {%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <div class="shop-sys__spec">
+          {%- for block in section.blocks -%}
+            <div {{ block.shopify_attributes }}>
+              {%- if block.settings.title != blank -%}<b>{{ block.settings.title | escape }}</b>{%- endif -%}
+              {%- if block.settings.subtitle != blank -%}<span>{{ block.settings.subtitle | escape }}</span>{%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
+        <a href="{{ section.settings.button_url }}" class="btn shop-sys__btn">
+          <b>{{ section.settings.button_label | escape }}</b>
+        </a>
+      {%- endif -%}
+      {%- if section.settings.note_text != blank -%}
+        <p class="shop-sys__note">{{ section.settings.note_text | escape }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shop system block",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Anchor id",
+      "info": "e.g. \"schlafsystem\" — lets a jump link target this block with \"#schlafsystem\"."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Image tag",
+      "default": "Nur mit Schlafberatung"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "note_text",
+      "label": "Note below button"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "spec",
+      "name": "Spec row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop system block",
+      "blocks": [{ "type": "spec" }, { "type": "spec" }, { "type": "spec" }, { "type": "spec" }]
+    }
+  ]
+}
+{% endschema %}
