@@ -1,0 +1,475 @@
+/* Shop page ("/pages/shop", template suffix "shop") — styles specific to this
+   page. Product-card, delivery-strip and Instagram-grid styling is shared with
+   the category pages via component-category-page.css (cat-* classes), which
+   this template also loads. Classes here are prefixed `shop-` to avoid
+   collisions. */
+
+/* ---------------- Hero ---------------- */
+.shop-head {
+  margin-top: calc(var(--h-top-rating) + var(--h-height) + 40px);
+  max-width: 620px;
+}
+
+.shop-head h1 {
+  font-family: var(--ff-2);
+  font-weight: 400;
+  font-size: clamp(40px, 5.5vw, 72px);
+  line-height: 1;
+  margin: 0 0 16px;
+  color: var(--clr-black);
+}
+
+.shop-head__text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--cat-muted);
+}
+
+.shop-head__rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  margin: 34px 0 0;
+  color: var(--clr-black);
+}
+
+.shop-head__rating .cat-stars {
+  display: flex;
+  gap: 2px;
+  color: #00b67a;
+}
+
+.shop-head__rating .cat-stars svg {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.shop-head__rating b {
+  font-weight: 600;
+}
+
+.shop-head__rating span {
+  color: var(--cat-muted);
+}
+
+/* ---------------- Chips (jump nav) ---------------- */
+.shop-chipbar {
+  display: flex;
+  justify-content: flex-start;
+  margin: 34px 0 8px;
+}
+
+.shop-chips {
+  display: inline-flex;
+  gap: 4px;
+  background: var(--clr-white);
+  border-radius: 999px;
+  padding: 5px;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.07);
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.shop-chips::-webkit-scrollbar {
+  display: none;
+}
+
+.shop-chip {
+  flex: none;
+  color: var(--clr-black);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.shop-chip:hover {
+  background: #f5f3ee;
+}
+
+.shop-chip.is-current {
+  background: var(--clr-black);
+  color: var(--clr-white-2);
+}
+
+/* ---------------- System block (consultation-led) ---------------- */
+.shop-sys {
+  background: var(--clr-white);
+  border-radius: var(--rd-1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  margin: 40px 0 8px;
+  scroll-margin-top: calc(var(--h-top-rating) + var(--h-height) + 24px);
+}
+
+.shop-sys__media {
+  position: relative;
+  min-height: 520px;
+  background: #edeae2;
+}
+
+.shop-sys__media img {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.shop-sys__tag {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  background: var(--clr-white);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.shop-sys__body {
+  padding: 60px 60px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shop-sys__body h2 {
+  font-family: var(--ff-2);
+  font-weight: 400;
+  font-size: clamp(30px, 3.2vw, 42px);
+  line-height: 1.05;
+  margin: 0 0 16px;
+  color: var(--clr-black);
+}
+
+.shop-sys__text {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--cat-muted);
+  margin: 0 0 40px;
+  max-width: 40ch;
+}
+
+.shop-sys__spec {
+  margin: 0 0 34px;
+  border-top: 1px solid var(--cat-line);
+}
+
+.shop-sys__spec div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--cat-line);
+}
+
+.shop-sys__spec b {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--clr-black);
+}
+
+.shop-sys__spec span {
+  font-size: 13.5px;
+  color: var(--cat-muted);
+  text-align: right;
+}
+
+.shop-sys__btn {
+  align-self: flex-start;
+}
+
+.shop-sys__note {
+  font-size: 13px;
+  color: var(--cat-muted);
+  margin: 26px 0 0;
+}
+
+@media (max-width: 989px) {
+  .shop-sys {
+    grid-template-columns: 1fr;
+    border-radius: 22px;
+  }
+
+  .shop-sys__media {
+    min-height: 260px;
+  }
+
+  .shop-sys__body {
+    padding: 26px 22px 30px;
+  }
+
+  .shop-sys__body h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .shop-sys__text {
+    font-size: 15.5px;
+    margin-bottom: 26px;
+  }
+
+  .shop-sys__spec div {
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 0;
+  }
+
+  .shop-sys__spec span {
+    text-align: left;
+  }
+}
+
+/* ---------------- Product family ---------------- */
+.shop-family {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--cat-line);
+  scroll-margin-top: calc(var(--h-top-rating) + var(--h-height) + 24px);
+}
+
+.shop-family__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.shop-family__head h2 {
+  font-family: var(--ff-2);
+  font-weight: 400;
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1.05;
+  margin: 0;
+  color: var(--clr-black);
+}
+
+.shop-family__from {
+  font-size: 15px;
+  color: var(--cat-muted);
+  margin: 8px 0 0;
+}
+
+.shop-family__link {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--clr-black);
+  border-bottom: 1.5px solid var(--butter);
+  padding-bottom: 3px;
+}
+
+@media (max-width: 749px) {
+  .shop-family {
+    padding: 36px 0;
+  }
+
+  .shop-family__head {
+    margin-bottom: 20px;
+    gap: 12px;
+  }
+
+  .shop-family__head h2 {
+    font-size: 26px;
+  }
+
+  .shop-family__from {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+}
+
+/* ---------------- Reassurance ("Warum Seven Sundays") ---------------- */
+.shop-why {
+  padding: 64px 0 0;
+}
+
+.shop-why h2 {
+  font-family: var(--ff-2);
+  font-weight: 400;
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 1.1;
+  margin: 0 0 28px;
+  color: var(--clr-black);
+}
+
+.shop-why__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.shop-why__card {
+  background: var(--clr-white);
+  border-radius: var(--rd-0);
+  overflow: hidden;
+}
+
+.shop-why__card img {
+  width: 100% !important;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  background: #edeae2;
+}
+
+.shop-why__body {
+  padding: 24px 26px 28px;
+}
+
+.shop-why__body b {
+  font-size: 19px;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--clr-black);
+}
+
+.shop-why__body div {
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--cat-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .shop-why__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 749px) {
+  .shop-why {
+    padding-top: 44px;
+  }
+
+  .shop-why h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .shop-why__grid {
+    gap: 14px;
+  }
+
+  .shop-why__body {
+    padding: 20px 22px 24px;
+  }
+
+  .shop-why__body b {
+    font-size: 17px;
+  }
+}
+
+/* ---------------- Closing CTA ---------------- */
+.shop-helper {
+  position: relative;
+  border-radius: var(--rd-1);
+  overflow: hidden;
+  margin: 64px 0;
+  min-height: 380px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.shop-helper img {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.shop-helper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.15));
+}
+
+.shop-helper__inner {
+  position: relative;
+  z-index: 2;
+  padding: 44px;
+  max-width: 620px;
+  color: var(--clr-white-2);
+}
+
+.shop-helper__inner h2 {
+  font-family: var(--ff-2);
+  font-weight: 400;
+  font-size: clamp(28px, 3.2vw, 40px);
+  line-height: 1.08;
+  margin: 0 0 12px;
+  color: var(--clr-white) !important;
+}
+
+.shop-helper__text {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0 0 24px;
+}
+
+@media (max-width: 749px) {
+  .shop-helper {
+    min-height: 340px;
+    margin: 44px 0 0;
+  }
+
+  .shop-helper__inner {
+    padding: 26px 22px 30px;
+  }
+
+  .shop-helper__inner h2 {
+    font-size: 26px;
+  }
+
+  .shop-helper__text {
+    font-size: 15.5px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 749px) {
+  .shop-head {
+    margin-top: calc(var(--h-top-rating) + var(--h-height) + 24px);
+  }
+
+  .shop-head h1 {
+    font-size: clamp(32px, 9vw, 44px);
+  }
+
+  .shop-head__text {
+    font-size: 15.5px;
+  }
+
+  .shop-head__rating {
+    font-size: 13px;
+    margin-top: 24px;
+  }
+
+  .shop-chipbar {
+    margin: 24px 0 4px;
+  }
+
+  .shop-chips {
+    padding: 4px;
+  }
+
+  .shop-chip {
+    padding: 10px 16px;
+    font-size: 13.5px;
+  }
+}
