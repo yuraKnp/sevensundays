@@ -14,9 +14,13 @@
 
     {{ 'main.css' | asset_url | stylesheet_tag }}
     {{ 'form-style.css' | asset_url | stylesheet_tag }}
-    {%- if template.suffix == 'kategorie' -%}
+    {%- if template.suffix contains 'collection-template' or template.suffix == 'shop-main' -%}
       {{ 'component-category-page.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'category-page.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+    {%- if template.suffix == 'shop-main' -%}
+      {{ 'component-shop-page.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'shop-page.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <link rel="preload" href="{{ 'BasisGrotesqueArabicPro-Regular.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ 'BasisGrotesqueArabicPro-Medium.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
