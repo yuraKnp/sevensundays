@@ -1,0 +1,124 @@
+{% comment %}
+  One curated product family on the Shop page (e.g. "Kissen"). Add one section
+  instance per family and set its Anchor so the hero's jump chips (#kissen,
+  #decken, ...) can scroll to it. Cards reuse the same look as the collection
+  pages' product grid (sections/category-products.liquid) via the shared
+  cat-p classes from component-category-page.css.
+{% endcomment %}
+
+
+<div class="container">
+  <div class="shop-family"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %}>
+    <div class="shop-family__head">
+      <div>
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subtitle != blank -%}
+          <p class="shop-family__from">{{ section.settings.subtitle | escape }}</p>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.link_label != blank and section.settings.link_url != blank -%}
+        <a class="shop-family__link" href="{{ section.settings.link_url }}">{{ section.settings.link_label | escape }}</a>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="cat-products__grid">
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign p = block.settings.product
+            if p == blank
+              continue
+            endif
+          -%}
+          <a class="cat-p" href="{{ p.url }}" {{ block.shopify_attributes }}>
+            <div class="cat-p__media">
+              {%- if p.featured_media != blank -%}
+                {{ p.featured_media | image_url: width: 900 | image_tag: loading: 'lazy', class: 'cat-p__base' }}
+              {%- endif -%}
+              {%- if p.media[1] != blank -%}
+                {{ p.media[1] | image_url: width: 900 | image_tag: loading: 'lazy', class: 'cat-p__alt' }}
+              {%- endif -%}
+              {%- if p.available == false -%}
+                <span class="cat-p__badge">{{ 'products.product.sold_out' | t }}</span>
+              {%- elsif p.metafields.custom.badge_text != blank -%}
+                <span class="cat-p__badge">{{ p.metafields.custom.badge_text }}</span>
+              {%- endif -%}
+              <h3 class="cat-p__name">{{ block.settings.name_override | default: p.title | escape }}</h3>
+              <span class="cat-p__buy">{{ section.settings.buy_button_label | default: 'Jetzt kaufen' | escape }}</span>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shop product family",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Anchor id",
+      "info": "e.g. \"kissen\" — lets a jump link target this family with \"#kissen\"."
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "info": "e.g. \"Ab €149,00\" or \"Jedes Teil einzeln nachkaufbar\"."
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "\"View all\" link label"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "\"View all\" link"
+    },
+    {
+      "type": "text",
+      "id": "buy_button_label",
+      "label": "Buy button label",
+      "default": "Jetzt kaufen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "name_override",
+          "label": "Name override",
+          "info": "Leave blank to use the product's title."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop product family",
+      "blocks": [{ "type": "product" }, { "type": "product" }, { "type": "product" }]
+    }
+  ]
+}
+{% endschema %}
