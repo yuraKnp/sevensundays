@@ -12,27 +12,9 @@
     "cart-items": {
       "type": "main-cart-items",
       "blocks": {
-        "product_C7KWhr": {
-          "type": "product",
-          "settings": {
-            "product": "reisetasche-kissen",
-            "title": "",
-            "text": ""
-          }
-        },
-        "product_QBDN7n": {
-          "type": "product",
-          "settings": {
-            "product": "reisetasche-kissen-1",
-            "title": "Zusätzliche Angebote",
-            "text": "Wird häufig zusammen gekauft."
-          }
-        },
         "legal_text_block": {
           "type": "legal_text",
-          "settings": {
-            "text": "<p>By placing your order you agree to our Terms and Privacy Policy. Shipping costs and taxes are calculated at checkout.</p>"
-          }
+          "settings": {}
         },
         "subtotal": {
           "type": "subtotal",
@@ -46,35 +28,36 @@
           "type": "trustpilot_line",
           "settings": {
             "rating": "4.7 / 5",
-            "summary_text": "from over 1,000 reviews on Trustpilot",
+            "summary_text": "aus über 1.000 Bewertungen auf Trustpilot",
             "link": ""
           }
         },
         "trust_item1": {
           "type": "trust_item",
           "settings": {
-            "text": "14-day free returns, no reason needed"
+            "icon": "",
+            "text": "14 Tage kostenlose Rückgabe, ohne Begründung"
           }
         },
         "trust_item2": {
           "type": "trust_item",
           "settings": {
-            "text": "Swiss engineered, second-generation craftsmanship"
+            "icon": "",
+            "text": "Swiss Engineered, in zweiter Generation gefertigt"
           }
         },
         "advice1": {
           "type": "advice",
           "settings": {
-            "heading": "Not sure what to choose?",
-            "text": "<p>A sleep advisor will walk through your configuration with you before you order.</p>",
-            "link_text": "Free sleep consultation",
+            "image": "",
+            "heading": "Unsicher bei der Auswahl?",
+            "text": "<p>Ein Schlafberater geht die Konfiguration mit dir durch, bevor du bestellst.</p>",
+            "link_text": "Kostenlose Schlafberatung",
             "link": ""
           }
         }
       },
       "block_order": [
-        "product_C7KWhr",
-        "product_QBDN7n",
         "legal_text_block",
         "subtotal",
         "buttons",
@@ -85,8 +68,8 @@
       ],
       "settings": {
         "color_scheme": "",
-        "cross_sell_heading": "Additional offers",
-        "cross_sell_subheading": "Frequently bought together.",
+        "cross_sell_heading": "Zusätzliche Angebote",
+        "cross_sell_subheading": "Wird häufig zusammen gekauft.",
         "padding_top": 100,
         "padding_bottom": 100
       }
