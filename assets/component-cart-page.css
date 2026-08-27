@@ -20,6 +20,12 @@
   --wk-line: #ECE9E2;
 }
 
+/* base.css sets #main-cart-items { margin-top: 20px } globally — override it
+   here instead of editing the shared file. */
+#main-cart-items {
+  margin-top: 0;
+}
+
 /* ---------------- Two-column layout (items+cross-sell | sticky sidebar) ----------------
    .wk-head__title (h1) and .wk-side__title (h2) are each the first child of
    their own column below, so align-items:start on this one grid lines them
