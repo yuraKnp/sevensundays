@@ -31,7 +31,7 @@
         {%- assign remaining_money = remaining_cents | money -%}
         <span>{{ 'sections.cart.free_shipping.remaining_html' | t: amount: remaining_money }}</span>
       {%- else -%}
-        <span>{{ 'sections.cart.free_shipping.achieved' | t }}</span>
+        <span>{{ 'sections.cart.free_shipping.achieved_html' | t }}</span>
       {%- endif -%}
     </div>
     <div class="wk-track">
