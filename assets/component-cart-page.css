@@ -212,16 +212,14 @@
   text-decoration: none;
 }
 
-/* The line total already shows in the price column on the right, so the
-   per-unit price Dawn renders here (".product-option"/".cart-item__discounted-prices",
-   direct children of the details cell only — variant options further down
-   use the same "product-option" class but nested inside a <dl>) is
-   secondary info, not a second headline price like the mockup never has. */
+/* The line total already shows in the price column on the right — the mockup
+   never repeats it under the product name, so the per-unit price Dawn
+   renders here (".product-option"/".cart-item__discounted-prices", direct
+   children of the details cell only — variant options further down use the
+   same "product-option" class but nested inside a <dl>, untouched) is hidden. */
 .wk-items .cart-item__details > .product-option,
 .wk-items .cart-item__details > .cart-item__discounted-prices {
-  font-size: 14px;
-  color: var(--wk-muted);
-  margin: 0 0 14px;
+  display: none;
 }
 
 .wk-items .cart-item__details dl {
@@ -240,6 +238,26 @@
   width: auto;
 }
 
+.wk-items .quantity.cart-quantity {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--wk-line);
+  border-radius: 999px;
+  width: auto;
+}
+
+.wk-items .quantity.cart-quantity .quantity__button {
+  border: 0;
+  background: none;
+}
+
+.wk-items .quantity.cart-quantity .quantity__input {
+  border: 0;
+  background: none;
+  width: 2.5em;
+  text-align: center;
+}
+
 .wk-items td.cart-item__totals {
   grid-column: 3;
   grid-row: 1;
@@ -251,6 +269,31 @@
   font-size: 17px;
   font-weight: 600;
   color: var(--ink);
+}
+
+.wk-items td.cart-item__remove {
+  grid-column: 3;
+  grid-row: 2;
+  padding: 0;
+  text-align: right;
+  align-self: start;
+}
+
+.wk-items td.cart-item__remove cart-remove-button a {
+  font-size: 13.5px;
+  color: var(--wk-muted);
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.wk-items td.cart-item__remove cart-remove-button a:hover {
+  color: var(--ink);
+}
+
+.wk-items td.cart-item__remove .svg-wrapper {
+  display: none;
 }
 
 /* ---------------- Legal text ---------------- */
@@ -593,6 +636,12 @@
   .wk-items td.cart-item__totals {
     grid-column: 2;
     grid-row: 3;
+    text-align: left;
+  }
+
+  .wk-items td.cart-item__remove {
+    grid-column: 2;
+    grid-row: 4;
     text-align: left;
   }
 

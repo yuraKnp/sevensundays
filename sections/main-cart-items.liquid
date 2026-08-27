@@ -28,7 +28,13 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
-  assign cross_sell_blocks = section.blocks | where: 'type', 'product'
+  assign cross_sell_blocks_all = section.blocks | where: 'type', 'product'
+  assign cross_sell_count = 0
+  for block in cross_sell_blocks_all
+    if block.settings.product != null
+      assign cross_sell_count = cross_sell_count | plus: 1
+    endif
+  endfor
 -%}
 
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate wk-cart{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
@@ -303,24 +309,6 @@
                                   </button>
                                 </quantity-input>
                               </div>
-                              <cart-remove-button
-                                id="Remove-{{ item.index | plus: 1 }}"
-                                data-index="{{ item.index | plus: 1 }}"
-                                {% assign can_remove = item.instructions.can_remove | default: true %}
-                                {% if can_remove == false %}
-                                  class="hidden"
-                                {% endif %}
-                              >
-                                <a
-                                  href="{{ item.url_to_remove }}"
-                                  class="button button--tertiary"
-                                  aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
-                                >
-                                  <span class="svg-wrapper">
-                                    {{- 'icon-remove.svg' | inline_asset_content -}}
-                                  </span>
-                                </a>
-                              </cart-remove-button>
                             </div>
                             {%- if has_qty_rules or has_vol_pricing -%}
                               <button
@@ -447,6 +435,27 @@
                             {%- endif -%}
                           </div>
                         </td>
+
+                        <td class="cart-item__remove">
+                          <cart-remove-button
+                            id="Remove-{{ item.index | plus: 1 }}"
+                            data-index="{{ item.index | plus: 1 }}"
+                            {% assign can_remove = item.instructions.can_remove | default: true %}
+                            {% if can_remove == false %}
+                              class="hidden"
+                            {% endif %}
+                          >
+                            <a
+                              href="{{ item.url_to_remove }}"
+                              aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
+                            >
+                              <span class="svg-wrapper">
+                                {{- 'icon-remove.svg' | inline_asset_content -}}
+                              </span>
+                              {{- 'sections.cart.remove' | t -}}
+                            </a>
+                          </cart-remove-button>
+                        </td>
                       </tr>
                     {%- endfor -%}
                   </tbody>
@@ -463,14 +472,17 @@
                   {%- endif -%}
                 {%- endfor -%}
 
-            {%- if cross_sell_blocks.size > 0 -%}
+            {%- if cross_sell_count > 0 -%}
               <section class="wk-offers">
                 <h2 class="wk-offers__title">{{ section.settings.cross_sell_heading }}</h2>
                 {%- if section.settings.cross_sell_subheading != blank -%}
                   <p>{{ section.settings.cross_sell_subheading }}</p>
                 {%- endif -%}
 
-                {%- for block in cross_sell_blocks -%}
+                {%- for block in cross_sell_blocks_all -%}
+                  {%- if block.settings.product == null -%}
+                    {%- continue -%}
+                  {%- endif -%}
                   {%- assign product = block.settings.product -%}
                   {%- assign variant = product.selected_or_first_available_variant -%}
                   {%- assign cross_sell_form_id = 'cart-cross-sell-' | append: block.id -%}
