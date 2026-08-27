@@ -407,6 +407,7 @@
   color: var(--wk-muted);
   line-height: 1.55;
   text-align: left;
+  margin-bottom: 0px;
 }
 
 .wk-ctas {
