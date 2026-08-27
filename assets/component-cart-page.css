@@ -81,8 +81,38 @@
   margin-bottom: 24px;
 }
 
+.wk-head__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--wk-muted);
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+
+.wk-head__back:hover {
+  color: var(--ink);
+}
+
+.wk-head__back-icon {
+  display: inline-flex;
+  width: 12px;
+  height: 9px;
+  transform: rotate(180deg);
+}
+
+.wk-head__back-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
 .wk-head__title {
   font-family: var(--font-heading-family);
+  font-weight: 400;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1;
+  margin: 0;
 }
 
 /* ---------------- Free shipping notice ---------------- */
@@ -198,6 +228,36 @@
   font-size: 1.6rem;
 }
 
+.wk-items .cart-item__name {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 4px;
+  text-decoration: none;
+}
+
+/* The line total already shows in the price column on the right, so the
+   per-unit price Dawn renders here (".product-option"/".cart-item__discounted-prices",
+   direct children of the details cell only — variant options further down
+   use the same "product-option" class but nested inside a <dl>) is
+   secondary info, not a second headline price like the mockup never has. */
+.wk-items .cart-item__details > .product-option,
+.wk-items .cart-item__details > .cart-item__discounted-prices {
+  font-size: 14px;
+  color: var(--wk-muted);
+  margin: 0 0 14px;
+}
+
+.wk-items .cart-item__details dl {
+  margin: 0 0 14px;
+}
+
+.wk-items .cart-item__details dl .product-option {
+  font-size: 14px;
+  color: var(--wk-muted);
+}
+
 .wk-items td.cart-item__quantity {
   grid-column: 2;
   grid-row: 2;
@@ -210,6 +270,12 @@
   grid-row: 1;
   padding: 0;
   text-align: right;
+}
+
+.wk-items td.cart-item__totals .price {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
 }
 
 /* ---------------- Legal text ---------------- */
@@ -337,21 +403,25 @@
    fixed-header reason. */
 .wk-side {
   margin-top: calc(var(--h-top-rating) + var(--h-height) + 16px);
-  padding: 24px;
-  background: rgb(var(--color-background));
-  border: 1px solid var(--wk-line);
-  border-radius: var(--rd-1, 18px);
 }
 
 .wk-side__title {
   font-family: var(--font-heading-family);
+  font-weight: 400;
   font-size: clamp(22px, 2vw, 28px);
   margin: 0 0 20px;
   color: var(--ink);
 }
 
+/* .wk-sum is its own card (like mockup's "card sum"), not the whole sidebar —
+   only this and .wk-advice further down are bordered cards; buttons,
+   paytiles and trust rows sit directly on the page background between them. */
 .wk-sum {
-  padding: 0 0 20px;
+  background: rgb(var(--color-background));
+  border: 1px solid var(--wk-line);
+  border-radius: var(--rd-1, 18px);
+  padding: 24px;
+  margin-bottom: 16px;
 }
 
 .wk-sum__row {
@@ -457,6 +527,7 @@
 .wk-tp__stars svg {
   width: 13px;
   height: 13px;
+  fill: currentColor;
 }
 
 .wk-tp b {
