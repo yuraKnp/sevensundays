@@ -142,7 +142,9 @@
                 <p class="wk-tp" {{ block.shopify_attributes }}>
                   <span class="wk-tp__stars" aria-hidden="true">
                     {%- for i in (1..5) -%}
-                      {{- 'icon-star.svg' | inline_asset_content -}}
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.8L12 17.3 5.9 20.5l1.4-6.8-5-4.6 6.8-.8z" />
+                      </svg>
                     {%- endfor -%}
                   </span>
                   {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}

@@ -28,11 +28,12 @@
 
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate wk-cart{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width container">
-    <div class="wk-head title-wrapper-with-link">
-      <h1 class="wk-head__title title title--primary">{{ 'sections.cart.title' | t }}</h1>
-      <a href="{{ shop.url }}/pages/shop" class="wk-head__continue underlined-link">
+    <div class="wk-head">
+      <a href="{{ shop.url }}/pages/shop" class="wk-head__back">
+        <span class="wk-head__back-icon">{{- 'icon-arrow.svg' | inline_asset_content -}}</span>
         {{- 'general.continue_shopping' | t -}}
       </a>
+      <h1 class="wk-head__title title title--primary">{{ 'sections.cart.title' | t }}</h1>
     </div>
 
     <div class="cart__warnings">
