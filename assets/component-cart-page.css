@@ -26,12 +26,13 @@
   margin-top: 0;
 }
 
-/* base.css also gives the <cart-items> element itself header-clearance
-   padding-top/bottom (".cart cart-items") — redundant with our own
-   section-padding_top spacing and stacks into extra top/bottom gap. */
+/* base.css gives the <cart-items> element itself header-clearance
+   padding-top/bottom (".cart cart-items"), but with extra --sp-md/-28px
+   terms tuned for its own old layout — simplified here to just the header
+   height itself. */
 .cart cart-items {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: calc(var(--h-top-rating) + var(--h-height));
+  padding-bottom: calc(var(--h-top-rating) + var(--h-height));
 }
 
 /* ---------------- Two-column layout (items+cross-sell | sticky sidebar) ----------------
