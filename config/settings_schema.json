@@ -1487,37 +1487,23 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
-      }
-    ]
-  },
-  {
-    "name": "UTM Gift",
-    "settings": [
+      },
       {
         "type": "header",
-        "content": "UTM Gift Auto-Add"
+        "content": "Free shipping progress bar"
       },
       {
-        "type": "paragraph",
-        "content": "Adds a free gift to the cart when a visitor arrives via a UTM link and the trigger product is in the cart. Gift is removed automatically when the trigger product is removed or the UTM session expires (30 days)."
+        "type": "checkbox",
+        "id": "cart_free_shipping_enable",
+        "label": "Show free shipping progress bar in cart",
+        "default": true
       },
       {
-        "type": "product",
-        "id": "utm_trigger_product",
-        "label": "Trigger product",
-        "info": "The gift is added only when this product is in the cart. Leave empty to require only a UTM visit."
-      },
-      {
-        "type": "product",
-        "id": "utm_gift_product",
-        "label": "Gift product",
-        "info": "The product to add for free. Use the field below to target a specific variant, otherwise the first available variant is used."
-      },
-      {
-        "type": "text",
-        "id": "utm_gift_variant_id",
-        "label": "Gift variant ID (optional)",
-        "info": "Override to a specific variant. Find the ID in the product URL in Shopify admin: /variants/XXXXXXXXXX"
+        "type": "number",
+        "id": "cart_free_shipping_threshold",
+        "label": "Free shipping threshold",
+        "info": "Order amount (in shop currency, whole units) needed for free shipping. Must match the minimum order value set on the free shipping rate under Settings > Shipping and delivery.",
+        "default": 200
       }
     ]
   }
