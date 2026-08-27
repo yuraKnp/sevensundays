@@ -36,6 +36,7 @@
           {%- if block.type == 'product' and block.settings.product != null -%}
             {%- assign product = block.settings.product -%}
             {%- assign variant = product.selected_or_first_available_variant -%}
+            {%- assign cross_sell_form_id = 'cart-cross-sell-' | append: block.id -%}
             <div class="wk-offer" {{ block.shopify_attributes }}>
               <a href="{{ product.url }}" class="wk-offer__media" tabindex="-1" aria-hidden="true">
                 {%- if product.featured_media -%}
@@ -55,7 +56,7 @@
                 <product-form>
                   {%- form 'product',
                     product,
-                    id: 'cart-cross-sell-' | append: block.id,
+                    id: cross_sell_form_id,
                     class: 'form',
                     novalidate: 'novalidate',
                     data-type: 'add-to-cart-form'
