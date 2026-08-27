@@ -45,22 +45,25 @@
         "trust_item1": {
           "type": "trust_item",
           "settings": {
+            "icon": "shopify://shop_images/delivery-icons-2_40x40_df3bd0d4-5323-4dfb-9c97-9126e0409d13.svg",
             "text": "14 Tage kostenlose Rückgabe, ohne Begründung"
           }
         },
         "trust_item2": {
           "type": "trust_item",
           "settings": {
+            "icon": "shopify://shop_images/delivery-icons-1_40x40_10617ece-5fa7-4802-8e5b-b21f68cbb099.svg",
             "text": "Swiss Engineered, in zweiter Generation gefertigt"
           }
         },
         "advice1": {
           "type": "advice",
           "settings": {
+            "image": "shopify://shop_images/Decken.jpg",
             "heading": "Unsicher bei der Auswahl?",
             "text": "<p>Ein Schlafberater geht die Konfiguration mit dir durch, bevor du bestellst.</p>",
             "link_text": "Kostenlose Schlafberatung",
-            "link": ""
+            "link": "shopify://collections/kissen"
           }
         }
       },
