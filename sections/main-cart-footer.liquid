@@ -2,6 +2,7 @@
 {{ 'component-totals.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-page.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -23,9 +24,11 @@
   data-id="{{ section.id }}"
 >
   <div class="page-width container">
-    <div class="cart__footer isolate section-{{ section.id }}-padding">
+    <div class="cart__footer wk-side isolate section-{{ section.id }}-padding">
+      <h2 class="wk-side__title">{{ 'sections.cart.summary_title' | t }}</h2>
+
       {%- if settings.show_cart_note -%}
-        <cart-note class="cart__note field">
+        <cart-note class="cart__note field wk-note">
           <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
           <textarea
             class="text-area field__input"
@@ -37,13 +40,15 @@
         </cart-note>
       {%- endif -%}
 
-      <div class="cart__blocks">
+      <div class="cart__blocks wk-side__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when '@app' -%}
-              {% render block %}
+              <div class="wk-app-block" {{ block.shopify_attributes }}>
+                {% render block %}
+              </div>
             {%- when 'subtotal' -%}
-              <div class="js-contents" {{ block.shopify_attributes }}>
+              <div class="js-contents wk-sum" {{ block.shopify_attributes }}>
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -58,7 +63,7 @@
                   {%- endif -%}
                 </div>
 
-                <div class="totals">
+                <div class="totals wk-sum__row">
                   <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
                   <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>
@@ -103,12 +108,12 @@
                   {%- endif -%}
                 </small>
               </div>
-            {%- else -%}
-              <div class="cart__ctas" {{ block.shopify_attributes }}>
+            {%- when 'buttons' -%}
+              <div class="cart__ctas wk-ctas" {{ block.shopify_attributes }}>
                 <button
                   type="submit"
                   id="checkout"
-                  class="cart__checkout-button btn"
+                  class="cart__checkout-button wk-pbtn wk-pbtn--main btn"
                   name="checkout"
                   {% if cart == empty %}
                     disabled
@@ -120,10 +125,51 @@
               </div>
 
               {%- if additional_checkout_buttons -%}
-                <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+                <div class="cart__dynamic-checkout-buttons wk-dynamic-checkout additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}
                 </div>
               {%- endif -%}
+
+              {%- if shop.enabled_payment_types.size > 0 -%}
+                <div class="wk-paytiles">
+                  {%- for type in shop.enabled_payment_types -%}
+                    <span class="wk-tile">{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</span>
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+            {%- when 'trustpilot_line' -%}
+              {%- if block.settings.rating != blank -%}
+                <p class="wk-tp" {{ block.shopify_attributes }}>
+                  <span class="wk-tp__stars" aria-hidden="true">
+                    {%- for i in (1..5) -%}
+                      {{- 'icon-star.svg' | inline_asset_content -}}
+                    {%- endfor -%}
+                  </span>
+                  {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+                  <b>{{ block.settings.rating }}</b> {{ block.settings.summary_text }}
+                  {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                </p>
+              {%- endif -%}
+            {%- when 'trust_item' -%}
+              <div class="wk-trust-item" {{ block.shopify_attributes }}>
+                {%- if block.settings.icon != blank -%}
+                  {{ block.settings.icon | image_url: width: 40 | image_tag: loading: 'lazy', width: 20, height: 20 }}
+                {%- endif -%}
+                <span>{{ block.settings.text | escape }}</span>
+              </div>
+            {%- when 'advice' -%}
+              <div class="wk-advice" {{ block.shopify_attributes }}>
+                {%- if block.settings.image != blank -%}
+                  {{ block.settings.image | image_url: width: 128 | image_tag: loading: 'lazy', width: 64, height: 64 }}
+                {%- endif -%}
+                <div>
+                  {%- if block.settings.heading != blank -%}<b>{{ block.settings.heading }}</b>{%- endif -%}
+                  {%- if block.settings.text != blank -%}<span>{{ block.settings.text }}</span>{%- endif -%}
+                  {%- if block.settings.link_text != blank and block.settings.link != blank -%}
+                    <a href="{{ block.settings.link }}">{{ block.settings.link_text }}</a>
+                  {%- endif -%}
+                </div>
+              </div>
           {%- endcase -%}
         {% endfor %}
 
@@ -179,6 +225,36 @@
       "type": "buttons",
       "name": "t:sections.main-cart-footer.blocks.buttons.name",
       "limit": 1
+    },
+    {
+      "type": "trustpilot_line",
+      "name": "Trustpilot rating line",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "rating", "label": "Rating", "default": "4.7 / 5" },
+        { "type": "text", "id": "summary_text", "label": "Summary text", "default": "from over 1,000 reviews on Trustpilot" },
+        { "type": "url", "id": "link", "label": "Link to Trustpilot" }
+      ]
+    },
+    {
+      "type": "trust_item",
+      "name": "Trust row",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon" },
+        { "type": "text", "id": "text", "label": "Text" }
+      ]
+    },
+    {
+      "type": "advice",
+      "name": "Consultation card",
+      "limit": 1,
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Not sure what to choose?" },
+        { "type": "richtext", "id": "text", "label": "Text" },
+        { "type": "text", "id": "link_text", "label": "Link text", "default": "Free sleep consultation" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
     },
     {
       "type": "@app"

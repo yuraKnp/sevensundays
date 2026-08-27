@@ -4,6 +4,7 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-page.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -25,11 +26,11 @@
 
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
-<cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
+<cart-items class="gradient color-{{ section.settings.color_scheme }} isolate wk-cart{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width container">
-    <div class="title-wrapper-with-link">
-      <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-      <a href="{{ shop.url }}/pages/shop" class="underlined-link">
+    <div class="wk-head title-wrapper-with-link">
+      <h1 class="wk-head__title title title--primary">{{ 'sections.cart.title' | t }}</h1>
+      <a href="{{ shop.url }}/pages/shop" class="wk-head__continue underlined-link">
         {{- 'general.continue_shopping' | t -}}
       </a>
     </div>
@@ -51,8 +52,9 @@
     <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
       <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
         <div class="js-contents">
+          {%- render 'cart-free-shipping-bar' -%}
           {%- if cart != empty -%}
-            <table class="cart-items">
+            <table class="cart-items wk-items">
               <caption class="visually-hidden">
                 {{ 'sections.cart.title' | t }}
               </caption>
@@ -443,6 +445,16 @@
         </div>
       </div>
 
+      {%- if cart != empty -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'legal_text' and block.settings.text != blank -%}
+            <div class="wk-legal rte" {{ block.shopify_attributes }}>
+              {{ block.settings.text }}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+
       <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
       <p
         class="visually-hidden"
@@ -490,6 +502,21 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "legal_text",
+      "name": "Legal text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>By placing your order you agree to our Terms and Privacy Policy. Shipping costs and taxes are calculated at checkout.</p>"
+        }
+      ]
     }
   ]
 }
