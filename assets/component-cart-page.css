@@ -232,6 +232,22 @@
   margin-top: 0px;
 }
 
+/* Dawn's own component-cart.css gives ".cart__items" (the wrapper div around
+   .js-contents/the table, not our .wk-items table itself) padding-bottom:3rem
+   + a border-bottom, and 4rem padding-bottom at >=750px — leftover spacing
+   for its own table-based layout that just adds a gap + stray line under our
+   card here. */
+.wk-layout__main .cart__items {
+  padding-bottom: 1rem;
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .wk-layout__main .cart__items {
+    padding-bottom: 1rem;
+  }
+}
+
 .wk-items td.cart-item__quantity {
   grid-column: 2;
   grid-row: 2;

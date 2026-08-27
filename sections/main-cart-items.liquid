@@ -464,6 +464,68 @@
               </div>
 
               {%- if cart != empty -%}
+                {%- if cross_sell_count > 0 -%}
+                  <section class="wk-offers">
+                    <h2 class="wk-offers__title">{{ section.settings.cross_sell_heading }}</h2>
+                    {%- if section.settings.cross_sell_subheading != blank -%}
+                      <p>{{ section.settings.cross_sell_subheading }}</p>
+                    {%- endif -%}
+
+                    {%- for block in cross_sell_blocks_all -%}
+                      {%- if block.settings.product == null -%}
+                        {%- continue -%}
+                      {%- endif -%}
+                      {%- assign product = block.settings.product -%}
+                      {%- assign variant = product.selected_or_first_available_variant -%}
+                      {%- assign cross_sell_form_id = 'cart-cross-sell-' | append: block.id -%}
+                      <div class="wk-offer" {{ block.shopify_attributes }}>
+                        <a href="{{ product.url }}" class="wk-offer__media" tabindex="-1" aria-hidden="true">
+                          {%- if product.featured_media -%}
+                            {{
+                              product.featured_media
+                              | image_url: width: 264
+                              | image_tag: loading: 'lazy', width: 132, height: 132
+                            }}
+                          {%- endif -%}
+                        </a>
+                        <div>
+                          <a href="{{ product.url }}"><b>{{ block.settings.title | default: product.title }}</b></a>
+                          <p>{{ block.settings.text | default: product.description | strip_html | truncate: 110 }}</p>
+                        </div>
+                        <div class="wk-offer__cta">
+                          <span class="wk-offer__price">{{ variant.price | money }}</span>
+                          <product-form>
+                            {%- form 'product',
+                              product,
+                              id: cross_sell_form_id,
+                              class: 'form',
+                              novalidate: 'novalidate',
+                              data-type: 'add-to-cart-form'
+                            -%}
+                              <input type="hidden" name="id" value="{{ variant.id }}" {% if variant.available == false or variant == null %}disabled{% endif %}>
+                              <button
+                                type="submit"
+                                name="add"
+                                class="wk-add"
+                                {% if variant.available == false or variant == null %}disabled{% endif %}
+                              >
+                                <span>
+                                  {%- if variant == null or variant.available == false -%}
+                                    {{ 'products.product.sold_out' | t }}
+                                  {%- else -%}
+                                    {{ 'products.product.add_to_cart' | t }}
+                                  {%- endif -%}
+                                </span>
+                                {%- render 'loading-spinner' -%}
+                              </button>
+                            {%- endform -%}
+                          </product-form>
+                        </div>
+                      </div>
+                    {%- endfor -%}
+                  </section>
+                {%- endif -%}
+
                 {%- for block in section.blocks -%}
                   {%- if block.type == 'legal_text' and block.settings.text != blank -%}
                     <div class="wk-legal rte" {{ block.shopify_attributes }}>
@@ -471,69 +533,7 @@
                     </div>
                   {%- endif -%}
                 {%- endfor -%}
-
-            {%- if cross_sell_count > 0 -%}
-              <section class="wk-offers">
-                <h2 class="wk-offers__title">{{ section.settings.cross_sell_heading }}</h2>
-                {%- if section.settings.cross_sell_subheading != blank -%}
-                  <p>{{ section.settings.cross_sell_subheading }}</p>
-                {%- endif -%}
-
-                {%- for block in cross_sell_blocks_all -%}
-                  {%- if block.settings.product == null -%}
-                    {%- continue -%}
-                  {%- endif -%}
-                  {%- assign product = block.settings.product -%}
-                  {%- assign variant = product.selected_or_first_available_variant -%}
-                  {%- assign cross_sell_form_id = 'cart-cross-sell-' | append: block.id -%}
-                  <div class="wk-offer" {{ block.shopify_attributes }}>
-                    <a href="{{ product.url }}" class="wk-offer__media" tabindex="-1" aria-hidden="true">
-                      {%- if product.featured_media -%}
-                        {{
-                          product.featured_media
-                          | image_url: width: 264
-                          | image_tag: loading: 'lazy', width: 132, height: 132
-                        }}
-                      {%- endif -%}
-                    </a>
-                    <div>
-                      <a href="{{ product.url }}"><b>{{ block.settings.title | default: product.title }}</b></a>
-                      <p>{{ block.settings.text | default: product.description | strip_html | truncate: 110 }}</p>
-                    </div>
-                    <div class="wk-offer__cta">
-                      <span class="wk-offer__price">{{ variant.price | money }}</span>
-                      <product-form>
-                        {%- form 'product',
-                          product,
-                          id: cross_sell_form_id,
-                          class: 'form',
-                          novalidate: 'novalidate',
-                          data-type: 'add-to-cart-form'
-                        -%}
-                          <input type="hidden" name="id" value="{{ variant.id }}" {% if variant.available == false or variant == null %}disabled{% endif %}>
-                          <button
-                            type="submit"
-                            name="add"
-                            class="wk-add"
-                            {% if variant.available == false or variant == null %}disabled{% endif %}
-                          >
-                            <span>
-                              {%- if variant == null or variant.available == false -%}
-                                {{ 'products.product.sold_out' | t }}
-                              {%- else -%}
-                                {{ 'products.product.add_to_cart' | t }}
-                              {%- endif -%}
-                            </span>
-                            {%- render 'loading-spinner' -%}
-                          </button>
-                        {%- endform -%}
-                      </product-form>
-                    </div>
-                  </div>
-                {%- endfor -%}
-              </section>
-            {%- endif -%}
-          {%- endif -%}
+              {%- endif -%}
         </div>
 
         <aside class="wk-layout__side">
