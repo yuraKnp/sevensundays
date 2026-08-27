@@ -19,9 +19,12 @@
 /* ---------------- Two-column layout (items | sticky sidebar) ----------------
    main-cart-items, cart-cross-sell and main-cart-footer are three separate
    Shopify sections (see templates/cart.json: "cart-items", "cart-cross-sell",
-   "cart-footer" — those keys are stable, they drive the #shopify-section-*
-   wrapper ids below). Grid-template-areas lets the footer sit beside items+
-   cross-sell as a sticky sidebar without merging the sections into one file. */
+   "cart-footer" — those keys are stable). Shopify wraps JSON-template sections
+   as #shopify-section-template--{numeric template id}__{section key}, so the
+   numeric part is NOT stable across themes/duplicates — match on the id
+   SUFFIX instead of assuming "#shopify-section-cart-items" verbatim.
+   Grid-template-areas lets the footer sit beside items+cross-sell as a
+   sticky sidebar without merging the sections into one file. */
 #MainContent.cart {
   display: grid;
   grid-template-columns: 1fr 460px;
@@ -33,17 +36,22 @@
   padding: 0 1.5rem;
 }
 
-#MainContent.cart #shopify-section-cart-items { grid-area: main; }
-#MainContent.cart #shopify-section-cart-cross-sell { grid-area: cross; }
-#MainContent.cart #shopify-section-cart-footer {
+#MainContent.cart [id$="__cart-items"] { grid-area: main; }
+#MainContent.cart [id$="__cart-cross-sell"] { grid-area: cross; }
+#MainContent.cart [id$="__cart-footer"] {
   grid-area: side;
   position: sticky;
   top: 110px;
 }
 
 /* neutralize the sections' own page-width/container so they don't double up
-   padding inside the grid columns above */
+   padding inside the grid columns above. width:100% needs !important — a
+   third-party stylesheet (loaded by the Parcely app block in the footer)
+   ships its own unscoped ".container { width: 100% }" rule that otherwise
+   wins the cascade and makes every column as wide as #MainContent itself,
+   collapsing the sidebar. */
 #MainContent.cart .page-width.container {
+  width: 100% !important;
   max-width: none;
   margin: 0;
   padding: 0;
@@ -55,9 +63,15 @@
     padding: 0 1.5rem;
   }
 
-  #MainContent.cart #shopify-section-cart-footer {
+  #MainContent.cart [id$="__cart-footer"] {
     position: static;
     top: auto;
+  }
+
+  /* below 989px the sidebar flows below items/cross-sell instead of beside
+     them, so it no longer needs the header-clearance margin */
+  .wk-side {
+    margin-top: 0;
   }
 }
 
@@ -314,7 +328,15 @@
 }
 
 /* ---------------- Sidebar: "Bestellübersicht" ---------------- */
+/* #MainContent.cart uses align-items:start, so this section's grid row
+   starts level with the items column — but the items column clears the
+   fixed/overlay header via its own padding_top setting (100px), while this
+   section's padding_top (40px) isn't enough on its own, so the card
+   otherwise renders under the header. Same --h-height/--h-top-rating pair
+   component-shop-page.css/component-category-page.css use for the same
+   fixed-header reason. */
 .wk-side {
+  margin-top: calc(var(--h-top-rating) + var(--h-height) + 16px);
   padding: 24px;
   background: rgb(var(--color-background));
   border: 1px solid var(--wk-line);
