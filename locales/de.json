@@ -7,6 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
+
 {
   "general": {
     "banner": {
@@ -369,7 +370,7 @@
       "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet.",
       "free_shipping": {
         "remaining_html": "Noch <b>{{ amount }}</b> bis zum kostenlosen Versand.",
-        "achieved": "Dein Versand ist <b>kostenlos</b>."
+        "achieved_html": "Dein Versand ist <b>kostenlos</b>."
       },
       "summary_title": "Bestellübersicht"
     },
