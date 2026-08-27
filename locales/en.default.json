@@ -138,13 +138,7 @@
   },
   "products": {
     "product": {
-      "shipping": "Shipping",
-      "remove_matrass": "including old mattress removal",
-      "total_price": "Total price",
       "pairs_best_with": "PAIRS BEST WITH",
-      "pairs_best_with_mat": "Dazu passend: Kissen",
-      "pairs_best_with_mat_right": "Modular · Memory · Foam",
-      "pairs_best_with_right": "bundle & save",
       "pairs_best_with_ver": "WITH",
       "double_pack": "Double pack",
       "single_pack": "Single Pack",
@@ -163,7 +157,7 @@
       "inventory_low_stock_show_count": "Low stock: {{ quantity }} left",
       "inventory_out_of_stock": "Out of stock",
       "inventory_out_of_stock_continue_selling": "In stock",
-      "ship": "ships within 3–4 business days",
+      "ship": "ships within 2–3 business days",
       "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
@@ -274,7 +268,6 @@
       "pillow_side_sleeper": "Why customers love the Side Sleeper Pillow",
       "pillow_down": "Why customers love the Down Pillow",
       "pillow_travel": "Why customers love the Travel Pillow",
-      "pillow_dp": "Why customers trust SEVEN SUNDAYS",
       "pillow_spray": "Why customers love the Pillow Spray",
       "down_duvet": "Why customers love the Down Duvet",
       "widgets": {
@@ -380,7 +373,12 @@
       "login": {
         "title": "Have an account?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in</a> to check out faster."
-      }
+      },
+      "free_shipping": {
+        "remaining_html": "Only <b>{{ amount }}</b> away from free shipping.",
+        "achieved": "Your shipping is <b>free</b>."
+      },
+      "summary_title": "Order summary"
     },
     "footer": {
       "payment": "Payment methods",
