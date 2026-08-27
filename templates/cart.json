@@ -12,6 +12,14 @@
     "cart-items": {
       "type": "main-cart-items",
       "blocks": {
+        "product_C7KWhr": {
+          "type": "product",
+          "settings": {
+            "product": "nackenkissen",
+            "title": "",
+            "text": ""
+          }
+        },
         "product_QBDN7n": {
           "type": "product",
           "settings": {
@@ -65,6 +73,7 @@
         }
       },
       "block_order": [
+        "product_C7KWhr",
         "product_QBDN7n",
         "legal_text_block",
         "subtotal",
