@@ -391,6 +391,7 @@
   font-size: 19px;
   font-weight: 600;
   margin: 0;
+  color: #1A1A18;
 }
 
 .wk-sum__row .totals__total-value {
@@ -405,6 +406,7 @@
   font-size: 13.5px;
   color: var(--wk-muted);
   line-height: 1.55;
+  text-align: left;
 }
 
 .wk-ctas {
