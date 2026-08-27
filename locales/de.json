@@ -371,7 +371,9 @@
         "remaining_html": "Noch <b>{{ amount }}</b> bis zum kostenlosen Versand.",
         "achieved_html": "Dein Versand ist <b>kostenlos</b>."
       },
-      "summary_title": "Bestellübersicht"
+      "summary_title": "Bestellübersicht",
+      "subtotal": "Zwischensumme",
+      "taxes_note": "Die Versandkosten und Steuern werden im Bezahlschritt berechnet."
     },
     "footer": {
       "payment": "Zahlungsmethoden",
