@@ -26,6 +26,14 @@
   margin-top: 0;
 }
 
+/* base.css also gives the <cart-items> element itself header-clearance
+   padding-top/bottom (".cart cart-items") — redundant with our own
+   section-padding_top spacing and stacks into extra top/bottom gap. */
+.cart cart-items {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 /* ---------------- Two-column layout (items+cross-sell | sticky sidebar) ----------------
    .wk-head__title (h1) and .wk-side__title (h2) are each the first child of
    their own column below, so align-items:start on this one grid lines them
