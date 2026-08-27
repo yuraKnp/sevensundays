@@ -1,0 +1,41 @@
+{% comment %}
+  Renders the "free shipping from {{ threshold }}" progress card shown at the
+  top of the cart item list (see S7 MOCKUP FINALS/seven-sundays-warenkorb.html,
+  ".notice"/".track"). Purely a display of progress toward the threshold — the
+  shipping rate itself must be configured to match in Shopify Admin under
+  Settings > Shipping and delivery.
+
+  Usage:
+  {% render 'cart-free-shipping-bar' %}
+{% endcomment %}
+
+{%- if settings.cart_free_shipping_enable and cart != empty -%}
+  {%- liquid
+    assign threshold_cents = settings.cart_free_shipping_threshold | times: 100
+    assign remaining_cents = threshold_cents | minus: cart.total_price
+    if remaining_cents < 0
+      assign remaining_cents = 0
+    endif
+    assign progress = 100
+    if threshold_cents > 0
+      assign progress = cart.total_price | times: 100 | divided_by: threshold_cents
+    endif
+    if progress > 100
+      assign progress = 100
+    endif
+  -%}
+  <div class="wk-notice">
+    <div class="wk-notice__top">
+      <span class="wk-notice__icon">{{- 'icon-truck.svg' | inline_asset_content -}}</span>
+      {%- if remaining_cents > 0 -%}
+        {%- assign remaining_money = remaining_cents | money -%}
+        <span>{{ 'sections.cart.free_shipping.remaining_html' | t: amount: remaining_money }}</span>
+      {%- else -%}
+        <span>{{ 'sections.cart.free_shipping.achieved' | t }}</span>
+      {%- endif -%}
+    </div>
+    <div class="wk-track">
+      <i style="width: {{ progress }}%"></i>
+    </div>
+  </div>
+{%- endif -%}
