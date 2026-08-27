@@ -347,6 +347,7 @@
       "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
+      "remove": "Remove",
       "estimated_total": "Estimated total",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
@@ -376,9 +377,11 @@
       },
       "free_shipping": {
         "remaining_html": "Only <b>{{ amount }}</b> away from free shipping.",
-        "achieved": "Your shipping is <b>free</b>."
+        "achieved_html": "Your shipping is <b>free</b>."
       },
-      "summary_title": "Order summary"
+      "summary_title": "Order summary",
+      "subtotal": "Subtotal",
+      "taxes_note": "Shipping costs and taxes are calculated at checkout."
     },
     "footer": {
       "payment": "Payment methods",

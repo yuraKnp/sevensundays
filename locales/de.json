@@ -340,6 +340,7 @@
       "title": "Dein Warenkorb",
       "caption": "Artikel im Warenkorb",
       "remove_title": "{{ title }} entfernen",
+      "remove": "Entfernen",
       "note": "Spezielle Bestellanweisungen",
       "checkout": "Auschecken",
       "empty": "Dein Warenkorb ist leer",
