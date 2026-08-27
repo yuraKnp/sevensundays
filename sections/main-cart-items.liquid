@@ -55,12 +55,13 @@
     </div>
 
     <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
-      <div class="wk-layout">
-        <div class="wk-layout__main">
-          <h1 class="wk-head__title title title--primary">{{ 'sections.cart.title' | t }}</h1>
+      <div id="main-cart-items" data-id="{{ section.id }}">
+        <div class="js-contents">
+          <div class="wk-layout">
+            <div class="wk-layout__main">
+              <h1 class="wk-head__title title title--primary">{{ 'sections.cart.title' | t }}</h1>
 
-          <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
-            <div class="js-contents">
+              <div class="cart__items">
               {%- render 'cart-free-shipping-bar' -%}
               {%- if cart != empty -%}
                 <table class="cart-items wk-items">
@@ -451,17 +452,16 @@
                   </tbody>
                 </table>
               {%- endif -%}
-            </div>
-          </div>
+              </div>
 
-          {%- if cart != empty -%}
-            {%- for block in section.blocks -%}
-              {%- if block.type == 'legal_text' and block.settings.text != blank -%}
-                <div class="wk-legal rte" {{ block.shopify_attributes }}>
-                  {{ block.settings.text }}
-                </div>
-              {%- endif -%}
-            {%- endfor -%}
+              {%- if cart != empty -%}
+                {%- for block in section.blocks -%}
+                  {%- if block.type == 'legal_text' and block.settings.text != blank -%}
+                    <div class="wk-legal rte" {{ block.shopify_attributes }}>
+                      {{ block.settings.text }}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
 
             {%- if cross_sell_blocks.size > 0 -%}
               <section class="wk-offers">
@@ -642,6 +642,8 @@
             <div id="cart-errors"></div>
           </div>
         </aside>
+          </div>
+        </div>
       </div>
 
       <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
