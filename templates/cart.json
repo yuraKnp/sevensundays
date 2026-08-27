@@ -11,15 +11,11 @@
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "cart-footer": {
-      "type": "main-cart-footer",
       "blocks": {
+        "legal_text_block": {
+          "type": "legal_text",
+          "settings": {}
+        },
         "subtotal": {
           "type": "subtotal",
           "settings": {}
@@ -27,16 +23,55 @@
         "buttons": {
           "type": "buttons",
           "settings": {}
+        },
+        "trustpilot_line1": {
+          "type": "trustpilot_line",
+          "settings": {
+            "rating": "4.7 / 5",
+            "summary_text": "from over 1,000 reviews on Trustpilot",
+            "link": ""
+          }
+        },
+        "trust_item1": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "",
+            "text": "14-day free returns, no reason needed"
+          }
+        },
+        "trust_item2": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "",
+            "text": "Swiss engineered, second-generation craftsmanship"
+          }
+        },
+        "advice1": {
+          "type": "advice",
+          "settings": {
+            "image": "",
+            "heading": "Not sure what to choose?",
+            "text": "<p>A sleep advisor will walk through your configuration with you before you order.</p>",
+            "link_text": "Free sleep consultation",
+            "link": ""
+          }
         }
       },
       "block_order": [
+        "legal_text_block",
         "subtotal",
-        "buttons"
+        "buttons",
+        "trustpilot_line1",
+        "trust_item1",
+        "trust_item2",
+        "advice1"
       ],
       "settings": {
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "cross_sell_heading": "Additional offers",
+        "cross_sell_subheading": "Frequently bought together.",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "featured-collection": {
@@ -71,7 +106,6 @@
   },
   "order": [
     "cart-items",
-    "cart-footer",
     "featured-collection"
   ]
 }

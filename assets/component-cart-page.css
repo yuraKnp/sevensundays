@@ -1,7 +1,11 @@
 /* Cart page ("/cart") — redesign based on S7 MOCKUP FINALS/seven-sundays-warenkorb.html.
-   Loaded by sections/main-cart-items.liquid, sections/main-cart-footer.liquid and
-   sections/cart-cross-sell.liquid. Classes are prefixed `wk-` (Warenkorb) to avoid
-   collisions with existing site-wide classes.
+   Everything (items, cross-sell, order summary) lives in ONE Shopify section
+   (sections/main-cart-items.liquid) split into two CSS Grid columns — not
+   three separate sections stitched together with cross-section CSS. That
+   earlier approach fought Shopify's per-section id/padding independence and
+   a third-party stylesheet collision; a single section with normal DOM
+   nesting sidesteps all of that. Classes are prefixed `wk-` (Warenkorb) to
+   avoid collisions with existing site-wide classes.
 
    Important: the item rows below are still real Dawn markup (<table class="cart-items">,
    td.cart-item__*, quantity-input, cart-remove-button, ids Quantity-{n}/Remove-{n}) —
@@ -16,69 +20,38 @@
   --wk-line: #ECE9E2;
 }
 
-/* ---------------- Two-column layout (items | sticky sidebar) ----------------
-   main-cart-items, cart-cross-sell and main-cart-footer are three separate
-   Shopify sections (see templates/cart.json: "cart-items", "cart-cross-sell",
-   "cart-footer" — those keys are stable). Shopify wraps JSON-template sections
-   as #shopify-section-template--{numeric template id}__{section key}, so the
-   numeric part is NOT stable across themes/duplicates — match on the id
-   SUFFIX instead of assuming "#shopify-section-cart-items" verbatim.
-   Grid-template-areas lets the footer sit beside items+cross-sell as a
-   sticky sidebar without merging the sections into one file. */
-#MainContent.cart {
+/* ---------------- Two-column layout (items+cross-sell | sticky sidebar) ----------------
+   .wk-head__title (h1) and .wk-side__title (h2) are each the first child of
+   their own column below, so align-items:start on this one grid lines them
+   up automatically — same trick the mockup uses (".layout h1, .layout h2.col"
+   share one rule), no manual offset math needed between columns. */
+.wk-layout {
   display: grid;
   grid-template-columns: 1fr 460px;
-  grid-template-areas: "main side" "cross side";
-  column-gap: 56px;
+  gap: 56px;
   align-items: start;
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 0 1.5rem;
 }
 
-#MainContent.cart [id$="__cart-items"] { grid-area: main; }
-#MainContent.cart [id$="__cart-cross-sell"] { grid-area: cross; }
-#MainContent.cart [id$="__cart-footer"] {
-  grid-area: side;
+.wk-layout__side {
   position: sticky;
   top: 110px;
 }
 
-/* neutralize the sections' own page-width/container so they don't double up
-   padding inside the grid columns above. width:100% needs !important — a
-   third-party stylesheet (loaded by the Parcely app block in the footer)
-   ships its own unscoped ".container { width: 100% }" rule that otherwise
-   wins the cascade and makes every column as wide as #MainContent itself,
-   collapsing the sidebar. */
-#MainContent.cart .page-width.container {
-  width: 100% !important;
-  max-width: none;
-  margin: 0;
-  padding: 0;
-}
-
 @media screen and (max-width: 989px) {
-  #MainContent.cart {
+  .wk-layout {
     display: block;
-    padding: 0 1.5rem;
   }
 
-  #MainContent.cart [id$="__cart-footer"] {
+  .wk-layout__side {
     position: static;
     top: auto;
-  }
-
-  /* below 989px the sidebar flows below items/cross-sell instead of beside
-     them, so it no longer needs the header-clearance margin */
-  .wk-side {
-    margin-top: 0;
+    margin-top: 32px;
   }
 }
 
 /* ---------------- Hero ---------------- */
 .wk-head {
   margin-top: 8px;
-  margin-bottom: 24px;
 }
 
 .wk-head__back {
@@ -107,12 +80,14 @@
   height: 100%;
 }
 
-.wk-head__title {
+.wk-head__title,
+.wk-side__title {
   font-family: var(--font-heading-family);
   font-weight: 400;
   font-size: clamp(32px, 4vw, 52px);
   line-height: 1;
-  margin: 0;
+  margin: 0 0 24px;
+  color: var(--ink);
 }
 
 /* ---------------- Free shipping notice ---------------- */
@@ -394,25 +369,6 @@
 }
 
 /* ---------------- Sidebar: "Bestellübersicht" ---------------- */
-/* #MainContent.cart uses align-items:start, so this section's grid row
-   starts level with the items column — but the items column clears the
-   fixed/overlay header via its own padding_top setting (100px), while this
-   section's padding_top (40px) isn't enough on its own, so the card
-   otherwise renders under the header. Same --h-height/--h-top-rating pair
-   component-shop-page.css/component-category-page.css use for the same
-   fixed-header reason. */
-.wk-side {
-  margin-top: calc(var(--h-top-rating) + var(--h-height) + 16px);
-}
-
-.wk-side__title {
-  font-family: var(--font-heading-family);
-  font-weight: 400;
-  font-size: clamp(22px, 2vw, 28px);
-  margin: 0 0 20px;
-  color: var(--ink);
-}
-
 /* .wk-sum is its own card (like mockup's "card sum"), not the whole sidebar —
    only this and .wk-advice further down are bordered cards; buttons,
    paytiles and trust rows sit directly on the page background between them. */
@@ -664,7 +620,7 @@
     font-size: 12.5px;
   }
 
-  .wk-side {
+  .wk-sum {
     padding: 20px;
     border-radius: 14px;
   }
