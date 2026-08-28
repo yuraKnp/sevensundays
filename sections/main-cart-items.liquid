@@ -60,7 +60,17 @@
       {%- endif -%} {% endcomment %}
     </div>
 
-    <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
+    {%- comment -%}
+      A real, empty <form id="cart"> kept out-of-flow here (not wrapping the
+      content below) — the checkout button and cart-note textarea associate
+      with it via form="cart" rather than DOM nesting. This section also
+      renders a cross-sell product-form per cross-sell item; browsers silently
+      drop a <form> nested inside another <form>, which broke those "add to
+      cart" buttons when this form used to wrap the whole section.
+    {%- endcomment -%}
+    <form action="{{ routes.cart_url }}" method="post" id="cart" class="visually-hidden" aria-hidden="true"></form>
+
+    <div class="cart__contents critical-hidden">
       <div id="main-cart-items" data-id="{{ section.id }}">
         <div class="js-contents">
           <div class="wk-layout">
@@ -288,6 +298,7 @@
                                     aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                                     id="Quantity-{{ item.index | plus: 1 }}"
                                     data-index="{{ item.index | plus: 1 }}"
+                                    form="cart"
                                     {% if can_update_quantity == false %}
                                       disabled
                                     {% endif %}
@@ -638,7 +649,7 @@
                 {%- when 'advice' -%}
                   <div class="wk-advice" {{ block.shopify_attributes }}>
                     {%- if block.settings.image != blank -%}
-                      {{ block.settings.image | image_url: width: 128 | image_tag: loading: 'lazy', width: 64, height: 64 }}
+                      {{ block.settings.image | image_url: width: 300 | image_tag: loading: 'lazy', width: 72, height: 72 }}
                     {%- endif -%}
                     <div>
                       {%- if block.settings.heading != blank -%}<b>{{ block.settings.heading }}</b>{%- endif -%}
@@ -668,7 +679,7 @@
       >
         {{ 'accessibility.loading' | t }}
       </p>
-    </form>
+    </div>
   </div>
 </cart-items>
 
