@@ -394,6 +394,7 @@
   font-size: 14px;
   color: var(--wk-muted);
   margin: 0 0 18px;
+  line-height: 20px;
 }
 
 .wk-offer {
@@ -701,16 +702,34 @@
     padding: 18px 0;
   }
 
-  .wk-items td.cart-item__totals {
-    grid-column: 2;
+  /* Dawn's own component-price.css sets .price--end { text-align: right },
+     a direct rule on the price span that beats the inherited text-align
+     below no matter how specific the ancestor selector is — it has to be
+     overridden on the span itself. Sharing one row (instead of stacking
+     price above "Entfernen" as two full-width lines) also matches the
+     mockup, where the price sits left and the remove link sits right on
+     the same line. */
+  .wk-items td.cart-item__totals,
+  .wk-items td.cart-item__remove {
     grid-row: 3;
+    grid-column: 2;
+    width: auto;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .wk-items td.cart-item__totals {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .wk-items td.cart-item__totals .price--end {
     text-align: left;
   }
 
   .wk-items td.cart-item__remove {
-    grid-column: 2;
-    grid-row: 4;
-    text-align: left;
+    justify-self: end;
+    text-align: right;
   }
 
   .wk-offers h2 {
