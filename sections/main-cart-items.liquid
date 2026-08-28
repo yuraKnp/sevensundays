@@ -505,7 +505,7 @@
                         </div>
                         <div class="wk-offer__cta">
                           <span class="wk-offer__price">{{ variant.price | money }}</span>
-                          <product-form>
+                          <product-form data-suppress-cart-popup="true">
                             {%- form 'product',
                               product,
                               id: cross_sell_form_id,
