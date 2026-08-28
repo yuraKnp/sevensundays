@@ -15,7 +15,6 @@ if (!customElements.get('product-form')) {
         if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
 
         this.hideErrors = this.dataset.hideErrors === 'true';
-        this.suppressCartPopup = this.dataset.suppressCartPopup === 'true';
       }
 
       onSubmitHandler(evt) {
@@ -84,7 +83,7 @@ if (!customElements.get('product-form')) {
                 () => {
                   setTimeout(() => {
                     CartPerformance.measure("add:paint-updated-sections", () => {
-                      this.cart.renderContents(response, this.suppressCartPopup);
+                      this.cart.renderContents(response);
                     });
                   });
                 },
@@ -93,7 +92,7 @@ if (!customElements.get('product-form')) {
               quickAddModal.hide(true);
             } else {
               CartPerformance.measure("add:paint-updated-sections", () => {
-                this.cart.renderContents(response, this.suppressCartPopup);
+                this.cart.renderContents(response);
               });
             }
           })

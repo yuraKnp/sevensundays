@@ -34,7 +34,7 @@ class CartNotification extends HTMLElement {
     removeTrapFocus(this.activeElement);
   }
 
-  renderContents(parsedState, skipOpen = false) {
+  renderContents(parsedState) {
     this.cartItemKey = parsedState.key;
     this.getSectionsToRender().forEach((section) => {
       document.getElementById(section.id).innerHTML = this.getSectionInnerHTML(
@@ -43,7 +43,6 @@ class CartNotification extends HTMLElement {
       );
     });
 
-    if (skipOpen) return;
     if (this.header) this.header.reveal();
     this.open();
   }
