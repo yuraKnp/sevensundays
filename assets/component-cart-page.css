@@ -700,6 +700,7 @@
   .wk-items tr.cart-item {
     grid-template-columns: 76px 1fr;
     padding: 18px 0;
+    margin-bottom: 0;
   }
 
   /* Dawn's own component-price.css sets .price--end { text-align: right },
