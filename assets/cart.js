@@ -106,12 +106,30 @@ class CartItems extends HTMLElement {
           console.error(e);
         });
     } else {
-      return fetch(`${routes.cart_url}?section_id=main-cart-items`)
-        .then((response) => response.text())
-        .then((responseText) => {
-          const html = new DOMParser().parseFromString(responseText, 'text/html');
-          const sourceQty = html.querySelector('cart-items');
-          this.innerHTML = sourceQty.innerHTML;
+      // A plain `?section_id=main-cart-items` GET (Dawn's stock approach) comes
+      // back with `section.blocks` empty on this store — the sidebar
+      // (subtotal/buttons/trust blocks) and the cross-sell offers silently
+      // disappear even though the same blocks render fine on a normal page
+      // load. Re-rendering through /cart/update.js's bundled `sections`
+      // response — the same mechanism updateQuantity() already uses
+      // successfully below — sidesteps whatever that GET path is missing.
+      const body = JSON.stringify({
+        sections: this.getSectionsToRender().map((section) => section.section),
+        sections_url: window.location.pathname,
+      });
+
+      return fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } })
+        .then((response) => response.json())
+        .then((parsedState) => {
+          this.getSectionsToRender().forEach((section) => {
+            const elementToReplace =
+              document.getElementById(section.id).querySelector(section.selector) ||
+              document.getElementById(section.id);
+            elementToReplace.innerHTML = this.getSectionInnerHTML(
+              parsedState.sections[section.section],
+              section.selector
+            );
+          });
         })
         .catch((e) => {
           console.error(e);
