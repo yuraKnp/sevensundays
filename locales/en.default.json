@@ -25,7 +25,7 @@
       "thank_you_t": "Thank you for Your request",
       "thank_you_d": "We will contact you shortly",
       "partner": "PARTNER CODE",
-      "partner_p": "If you were referred by one of our partners"
+      "partner_p": "If you were referred by one of our partners",
     },
     "menu": {
       "get_sleep_system": "Get Sleep System",
@@ -138,25 +138,15 @@
   },
   "products": {
     "product": {
-      "shipping": "Shipping",
-      "size": "Size",
-      "double": "Double",
-      "single": "Single",
-      "remove_matrass": "including old mattress removal",
-      "total_price": "Total price",
-      "gift_with_purchase": "Gift with purchase",
       "pairs_best_with": "PAIRS BEST WITH",
-      "pairs_best_with_mat": "Matching: Pillows",
-      "pairs_best_with_mat_right": "Modular · Memory · Foam",
-      "pairs_best_with_right": "bundle & save",
       "pairs_best_with_ver": "WITH",
       "double_pack": "Double pack",
       "single_pack": "Single Pack",
       "included": "Included",
-      "quantity_new": "Select quantity",
+      "quantity_new": "Select your pillow quantity",
       "shop_now": "Shop now",
       "read_now": "Shop now",
-      "specifications": "Product specifications",
+      "specifications" : "Product specifications",
       "add_to_cart": "Add to cart",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
@@ -167,8 +157,7 @@
       "inventory_low_stock_show_count": "Low stock: {{ quantity }} left",
       "inventory_out_of_stock": "Out of stock",
       "inventory_out_of_stock_continue_selling": "In stock",
-      "ship": "ships within 3–4 business days",
-      "ship_mat": "Made to order and handcrafted just for you. Delivery in 2–3 weeks.",
+      "ship": "ships within 2–3 business days",
       "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
@@ -279,7 +268,6 @@
       "pillow_side_sleeper": "Why customers love the Side Sleeper Pillow",
       "pillow_down": "Why customers love the Down Pillow",
       "pillow_travel": "Why customers love the Travel Pillow",
-      "pillow_dp": "Why customers trust SEVEN SUNDAYS",
       "pillow_spray": "Why customers love the Pillow Spray",
       "down_duvet": "Why customers love the Down Duvet",
       "widgets": {
@@ -359,6 +347,7 @@
       "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
+      "remove": "Remove",
       "estimated_total": "Estimated total",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
@@ -385,20 +374,27 @@
       "login": {
         "title": "Have an account?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in</a> to check out faster."
-      }
+      },
+      "free_shipping": {
+        "remaining_html": "Only <b>{{ amount }}</b> away from free shipping.",
+        "achieved_html": "Your shipping is <b>free</b>."
+      },
+      "summary_title": "Order summary",
+      "subtotal": "Subtotal",
+      "taxes_note": "Shipping costs and taxes are calculated at checkout."
     },
     "footer": {
       "payment": "Payment methods",
       "form_input": "Email address",
       "form_submit": "Submit",
-      "footer_additional_text": "Sign up and be the first to hear about new products, events and exclusive offers. Unsubscribe anytime."
+      "footer_additional_text": "Sign up and be the first to hear about new products, events and exclusive offers. Unsubscribe anytime.",
     },
     "red": {
       "badge": "Recommended",
       "days": "DAYS",
       "hours": "HOURS",
       "minutes": "MINUTES",
-      "seconds": "SECONDS"
+      "seconds": "SECONDS",
     },
     "form": {
       "submit_form": "Enter now",
@@ -416,12 +412,12 @@
       "thank_you_d": "We will contact you shortly",
       "radio_l": "What happens next",
       "radio_tag": "recommended",
-      "radio_f": "Option A – Nackenkissen gewinnen",
-      "radio_f_desc": "Enter the draw for 11 neck pillows",
-      "radio_s": "Option B – Doppelte Chance",
-      "radio_s_desc": "Sleep system + pillow draw + free sleep consultation",
-      "radio_s_additional_text": "After your registration, our team will personally contact you to arrange a suitable appointment for your free and non-binding sleep consultation at your home.",
-      "add_checkbox": "CUSTOMER STATUS"
+      "radio_f":"Option A – Nackenkissen gewinnen",
+      "radio_f_desc":"Enter the draw for 11 neck pillows",
+      "radio_s":"Option B – Doppelte Chance",
+      "radio_s_desc":"Sleep system + pillow draw + free sleep consultation",
+      "radio_s_additional_text":"After your registration, our team will personally contact you to arrange a suitable appointment for your free and non-binding sleep consultation at your home.",
+      "add_checkbox": "CUSTOMER STATUS",
     },
     "featured_blog": {
       "view_all": "View all",
