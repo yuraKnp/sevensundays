@@ -157,11 +157,10 @@
                             <div class="ruk_rating_snippet" data-sku="{{ product.id }};{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
 
                             {%- when 'title' -%}
-
+                            {%- if block.settings.above_title != blank -%}
+                              <p class="product-above-title">{{ block.settings.above_title }}</p>
+                            {%- endif -%}
                             <div class="title-with-rating">
-                              {%- if block.settings.above_title != blank -%}
-                                <p class="product-above-title">{{ block.settings.above_title }}</p>
-                              {%- endif -%}
                               <h1 class="h2 title">{{ product.title | escape }}</h1>
                               {%- if block.settings.trustpilot -%}
                                 <div class="trustpilot-widget" data-locale="de-DE" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5ff5d1f3b391a00001aac82e" data-style-height="150px" data-style-width="100%" data-token="4af8d245-a721-439b-962b-55d6ee830678">  <a href="" target="_blank" rel="noopener">Trustpilot</a></div>
@@ -205,7 +204,6 @@
                                     <div class="icon"></div>
                                     <div class="description"><b></b></div>
                                     <div class="text">{{ value }}</div>
-                                    
                                 </div>
                                 {% endfor %}
                             </div>
@@ -447,37 +445,39 @@
                                 </div>
                             </div>
                           {%  endif %}
-                        {%- when 'free_gift_bundle' -%}
+
+                        {%- when 'gift_with_purchase' -%}
                           {% assign gift_product = block.settings.gift_product %}
-                          {% if gift_product != blank %}
-                            {% assign gift_variant = gift_product.selected_or_first_available_variant %}
-                            {% if block.settings.gift_variant_id != blank %}
-                              {% assign gift_variant_id = block.settings.gift_variant_id | plus: 0 %}
-                              {% assign gift_variant = gift_product.variants | where: "id", gift_variant_id | first %}
+                          {% assign gift_variant = gift_product.selected_or_first_available_variant %}
+                          {% if block.settings.gift_variant_id != blank %}
+                            {% assign gift_variant_id_num = block.settings.gift_variant_id | plus: 0 %}
+                            {% assign gift_variant = gift_product.variants | where: "id", gift_variant_id_num | first %}
+                          {% endif %}
+
+                          {% if gift_product != blank and gift_variant != blank %}
+                            {% if block.settings.bundle_heading != blank %}
+                              {% assign gift_heading = block.settings.bundle_heading %}
+                            {% else %}
+                              {% assign gift_heading = 'products.product.gift_with_purchase' | t: product: product.title, gift: gift_product.title %}
                             {% endif %}
-                            <div class="gift-bundle" data-gift-variant-id="{{ gift_variant.id }}" {{ block.shopify_attributes }}>
-                              <div class="gift-bundle__badge">{{ block.settings.badge_text }}</div>
-                              {% if block.settings.headline != blank %}
-                                <p class="gift-bundle__headline">{{ block.settings.headline }}</p>
-                              {% endif %}
-                              <div class="gift-bundle__item">
-                                <div class="gift-bundle__img">
-                                  <img
-                                    src="{{ gift_product.featured_image | img_url: 'small' }}"
-                                    width="56"
-                                    height="56"
-                                    alt="{{ gift_product.title | escape }}"
-                                    loading="lazy"
-                                  >
+                            <div class="pairs-wrapp background gift-with-purchase">
+                                <div class="additional-caption">
+                                    <div class="motto">{{ gift_heading }}</div>
                                 </div>
-                                <div class="gift-bundle__content">
-                                  <div class="gift-bundle__title">{{ gift_product.title }}</div>
-                                  <div class="gift-bundle__price">
-                                    <s class="gift-bundle__old-price">{{ gift_variant.price | money }}</s>
-                                    <span class="gift-bundle__free">{{ block.settings.free_label }}</span>
-                                  </div>
+                                <div class="pairs">
+                                    <div class="pairs-item gift-item" data-variant-id="{{ gift_variant.id }}">
+                                        <div class="img-wrapper">
+                                          <img width="72" height="40" src="{{ gift_product.featured_image | img_url: 'small' }}" alt="{{ gift_product.title | escape }}" loading="lazy">
+                                        </div>
+                                        <div class="content">
+                                            <div class="text text-sm"><b>{{ gift_product.title }}</b></div>
+                                        </div>
+                                        <div class="btn btn-third gift-price">
+                                            <s class="gift-price__original">{{ gift_variant.price | money }}</s>
+                                            <span class="gift-price__free">{{ 'products.product.free_label' | t }}</span>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
                           {% endif %}
                     {% endcase %}
@@ -740,12 +740,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log(variant.available);
 
+    const spanEl = statusEl.querySelector('span');
     if (variant.available) {
       statusEl.style.setProperty('--clr-status', '61 161 92');
-      statusEl.querySelector('span').textContent = window.translations.inStock;
+      if (spanEl) spanEl.textContent = window.translations.inStock;
     } else {
       statusEl.style.setProperty('--clr-status', '185 28 28');
-      statusEl.querySelector('span').textContent = window.translations.soldOut;
+      if (spanEl) spanEl.textContent = window.translations.soldOut;
     }
   }
 
@@ -1145,39 +1146,26 @@ document.addEventListener('DOMContentLoaded', function () {
       ]
     },
     {
-      "type": "free_gift_bundle",
-      "name": "Free gift bundle",
+      "type": "gift_with_purchase",
+      "name": "Gift with purchase",
       "settings": [
         {
           "type": "product",
           "id": "gift_product",
-          "label": "Gift product",
-          "info": "The product given away for free (e.g. Travel Bag)."
+          "label": "Select gift product"
         },
         {
           "type": "text",
           "id": "gift_variant_id",
-          "label": "Gift variant ID (optional)",
-          "info": "Leave blank to use the first available variant."
+          "label": "Gift Variant ID",
+          "info": "Leave blank to use the product's first available variant"
         },
         {
           "type": "text",
-          "id": "headline",
-          "label": "Headline",
-          "default": "Buy one Travel Pillow and get your Travel Bag for free!"
+          "id": "bundle_heading",
+          "label": "Bundle heading override",
+          "info": "Leave blank to use the default translated text with product/gift names filled in"
         },
-        {
-          "type": "text",
-          "id": "badge_text",
-          "label": "Badge text",
-          "default": "Bundle-Angebot"
-        },
-        {
-          "type": "text",
-          "id": "free_label",
-          "label": "Free price label",
-          "default": "Gratis"
-        }
       ]
     },
     {

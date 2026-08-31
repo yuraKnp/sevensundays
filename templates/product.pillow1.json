@@ -39,6 +39,14 @@
             "upsell_variant_id_third": ""
           }
         },
+        "gift_with_purchase_TravBg1": {
+          "type": "gift_with_purchase",
+          "settings": {
+            "gift_product": "reisetasche-kissen-1",
+            "gift_variant_id": "",
+            "bundle_heading": ""
+          }
+        },
         "buy_buttons_WaiNe3": {
           "type": "buy_buttons",
           "settings": {
@@ -105,6 +113,7 @@
         "price_MKjNkN",
         "description_dgLa3m",
         "pairs_best_with_pQhe7V",
+        "gift_with_purchase_TravBg1",
         "buy_buttons_WaiNe3",
         "discover_info_Y79BnV",
         "collapsible_tab_a_s_CrGik6",
