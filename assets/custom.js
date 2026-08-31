@@ -330,7 +330,7 @@ jQuery(function ($) {
 
     $(document).ready(function() {
         // Listen for the main product form submission
-        $('form[action="/cart/add"]').on('submit', function(e) {
+        $('form[action$="/cart/add"]').on('submit', function(e) {
             e.preventDefault();
             const $form = $(this);
             const items = [];
@@ -363,12 +363,12 @@ jQuery(function ($) {
             // 3. Send all items to Shopify in one request
             $.ajax({
             type: 'POST',
-            url: '/cart/add.js',
+            url: (window.routes && window.routes.cart_add_url ? window.routes.cart_add_url : '/cart/add') + '.js',
             data: { items: items },
             dataType: 'json',
             success: function() {
                 // Redirect to cart or open drawer
-                window.location.href = '/cart';
+                window.location.href = (window.routes && window.routes.cart_url) ? window.routes.cart_url : '/cart';
             },
             error: function(err) {
                 // console.error("Error adding bundle:", err);
@@ -410,7 +410,7 @@ jQuery(function ($) {
         $('.price--large').html(formattedPrice);
 
         // ✅ Update hidden input in product form
-        $('form[action="/cart/add"] input[name="id"]').val(variant.id);
+        $('form[action$="/cart/add"] input[name="id"]').val(variant.id);
 
         // ✅ Update URL (optional but recommended)
         const url = new URL(window.location);
