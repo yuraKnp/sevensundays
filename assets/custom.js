@@ -345,7 +345,15 @@ jQuery(function ($) {
             });
 
             // 2. Add any checked upsells
-            $('.pairs-item.active:not(.variant)').each(function() {
+            $('.pairs-item.active:not(.variant):not(.gift-item)').each(function() {
+                items.push({
+                    id: $(this).data('variant-id'),
+                    quantity: 1
+                });
+            });
+
+            // 2.5. Add gift-with-purchase item(s) - always included, no checkbox
+            $('.gift-item').each(function() {
                 items.push({
                     id: $(this).data('variant-id'),
                     quantity: 1
