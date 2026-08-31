@@ -635,6 +635,11 @@ a.discover-item:hover .title {color: var(--clr-white);}
 .pairs-item .content {margin-right: auto;}
 .pairs-item .content > * + * {margin-top: 4px;}
 .pairs-item .btn {padding-inline: var(--sp-12);font-size: 12px;line-height: 10px;flex-shrink: 0;pointer-events: none;}
+.gift-with-purchase .motto {color: var(--clr-text-6);}
+.pairs-item.gift-item {cursor: default;}
+.gift-price {display: flex;flex-direction: column;align-items: flex-end;gap: 2px;padding-inline: var(--sp-12);}
+.gift-price__original {font-size: 12px;line-height: 10px;opacity: .6;text-decoration: line-through;}
+.gift-price__free {font-size: 12px;line-height: 10px;font-weight: 700;color: var(--clr-text-6);}
 .status {display: flex;align-items: center;gap: var(--sp-12);height: 24px;}
 .status + * {margin-top: var(--sp-24);}
 .status i {display: inline-block;position: relative;width: 14px;height: 14px;border-radius: 50%;background-color: rgb(var(--clr-status));}
