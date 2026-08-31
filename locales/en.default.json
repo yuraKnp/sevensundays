@@ -140,6 +140,9 @@
     "product": {
       "pairs_best_with": "PAIRS BEST WITH",
       "pairs_best_with_ver": "WITH",
+      "gift_with_purchase": "Buy one {{ product }} and get your {{ gift }} for free!",
+      "free_label": "FREE",
+      "gift_label": "Gift",
       "double_pack": "Double pack",
       "single_pack": "Single Pack",
       "included": "Included",
