@@ -586,6 +586,12 @@
   flex-wrap: wrap;
 }
 
+.wk-tp .trustpilot-widget {
+  min-width: 260px;
+  flex-shrink: 0;
+  margin-left: -24px;
+}
+
 .wk-tp__stars {
   display: flex;
   gap: 1px;
