@@ -577,12 +577,12 @@
 .wk-tp {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
   font-size: 13.5px;
   margin: 20px 0 0;
   color: var(--wk-muted);
-  text-align: center;
+  text-align: left;
   flex-wrap: wrap;
 }
 
