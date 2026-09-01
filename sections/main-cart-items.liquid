@@ -625,23 +625,20 @@
                     </div>
                   {%- endif -%}
                 {%- when 'trustpilot_line' -%}
-                  <script
-                    type="text/javascript"
-                    src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
-                    async
-                  ></script>
-                  <div
-                    class="trustpilot-widget"
-                    data-locale="{{ block.settings.locale }}"
-                    data-template-id="{{ block.settings.template_id }}"
-                    data-businessunit-id="{{ block.settings.businessunit_id }}"
-                    data-style-height="{{ block.settings.height }}"
-                    data-style-width="100%"
-                    data-token="4af8d245-a721-439b-962b-55d6ee830678"
-                    {{ block.shopify_attributes }}
-                  >
-                    <a href="https://www.trustpilot.com/review/{{ shop.domain }}" target="_blank" rel="noopener">Trustpilot</a>
-                  </div>
+                  {%- if block.settings.rating != blank -%}
+                    <p class="wk-tp" {{ block.shopify_attributes }}>
+                      <span class="wk-tp__stars" aria-hidden="true">
+                        {%- for i in (1..5) -%}
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.8L12 17.3 5.9 20.5l1.4-6.8-5-4.6 6.8-.8z" />
+                          </svg>
+                        {%- endfor -%}
+                      </span>
+                      {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+                      <b>{{ block.settings.rating }}</b> {{ block.settings.summary_text }}
+                      {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                    </p>
+                  {%- endif -%}
                 {%- when 'trust_item' -%}
                   <div class="wk-trust-item" {{ block.shopify_attributes }}>
                     {%- if block.settings.icon != blank -%}
@@ -771,30 +768,9 @@
       "name": "Trustpilot rating line",
       "limit": 1,
       "settings": [
-        {
-          "type": "text",
-          "id": "businessunit_id",
-          "label": "Trustpilot business unit ID",
-          "default": "5ff5d1f3b391a00001aac82e"
-        },
-        {
-          "type": "text",
-          "id": "template_id",
-          "label": "Trustpilot template ID",
-          "default": "53aa8807dec7e10d38f59f32"
-        },
-        {
-          "type": "text",
-          "id": "locale",
-          "label": "Locale",
-          "default": "de-DE"
-        },
-        {
-          "type": "text",
-          "id": "height",
-          "label": "Widget height",
-          "default": "130px"
-        }
+        { "type": "text", "id": "rating", "label": "Rating", "default": "4.7 / 5" },
+        { "type": "text", "id": "summary_text", "label": "Summary text", "default": "aus über 1.000 Bewertungen auf Trustpilot" },
+        { "type": "url", "id": "link", "label": "Link to Trustpilot" }
       ]
     },
     {
