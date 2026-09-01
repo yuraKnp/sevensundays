@@ -548,6 +548,10 @@
   margin-bottom: 10px;
 }
 
+.wk-dynamic-checkout shopify-accelerated-checkout-cart {
+  --shopify-accelerated-checkout-button-border-radius: 22px;
+}
+
 .wk-paytiles {
   display: flex;
   flex-wrap: wrap;
