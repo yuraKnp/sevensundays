@@ -625,20 +625,23 @@
                     </div>
                   {%- endif -%}
                 {%- when 'trustpilot_line' -%}
-                  {%- if block.settings.rating != blank -%}
-                    <p class="wk-tp" {{ block.shopify_attributes }}>
-                      <span class="wk-tp__stars" aria-hidden="true">
-                        {%- for i in (1..5) -%}
-                          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.8L12 17.3 5.9 20.5l1.4-6.8-5-4.6 6.8-.8z" />
-                          </svg>
-                        {%- endfor -%}
-                      </span>
-                      {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
-                      <b>{{ block.settings.rating }}</b> {{ block.settings.summary_text }}
-                      {%- if block.settings.link != blank -%}</a>{%- endif -%}
-                    </p>
-                  {%- endif -%}
+                  <script
+                    type="text/javascript"
+                    src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+                    async
+                  ></script>
+                  <div
+                    class="trustpilot-widget"
+                    data-locale="de-DE"
+                    data-template-id="5419b6a8b0d04a076446a9ad"
+                    data-businessunit-id="5ff5d1f3b391a00001aac82e"
+                    data-style-height="20px"
+                    data-style-width="100%"
+                    data-token="4af8d245-a721-439b-962b-55d6ee830678"
+                    {{ block.shopify_attributes }}
+                  >
+                    <a href="https://www.trustpilot.com/review/{{ shop.domain }}" target="_blank" rel="noopener">Trustpilot</a>
+                  </div>
                 {%- when 'trust_item' -%}
                   <div class="wk-trust-item" {{ block.shopify_attributes }}>
                     {%- if block.settings.icon != blank -%}
