@@ -389,8 +389,9 @@
     }
 
     onScroll() {
+      {% comment %}
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
+
       if (scrollTop < 0 || scrollTop + window.innerHeight > document.documentElement.scrollHeight) return;
       if (Math.abs(scrollTop - this.currentScrollTop) < 10) return;
 
@@ -419,7 +420,7 @@
         requestAnimationFrame(this.reset.bind(this));
       }
 
-      this.currentScrollTop = scrollTop;
+      this.currentScrollTop = scrollTop;*/
     }
 
     hide() {
