@@ -4657,3 +4657,11 @@ body.red form .btn b{
     font-family: var(--ff-1);
     text-transform: uppercase;
 }
+
+.h-inner>* {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
