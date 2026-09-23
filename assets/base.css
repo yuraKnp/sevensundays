@@ -3645,6 +3645,14 @@ main.type2 > section:first-child .section.sec-padd:first-child {
   main.type2 > section:first-child .section.sec-padd:first-child {
     padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-64) - 28px);
   }
+  
+  .h-inner>* {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 }
 
 #MainContent > section:first-child .section.sec-cta{
@@ -4656,12 +4664,4 @@ body.red form .btn b{
 .tp-widget-trustscore {
     font-family: var(--ff-1);
     text-transform: uppercase;
-}
-
-.h-inner>* {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
