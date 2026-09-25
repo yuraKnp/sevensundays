@@ -3646,7 +3646,7 @@ main.type2 > section:first-child .section.sec-padd:first-child {
     padding-top: calc(var(--h-top-rating) + var(--h-height) + var(--sp-64) - 28px);
   }
   
-  .h-inner>* {
+  .h-burger, .h-logo, .h-cart {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
