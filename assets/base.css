@@ -4666,5 +4666,5 @@ body.red form .btn b{
     text-transform: uppercase;
 }
 .trustpilot-widget iframe{
-      height: 24px;
+      height: 24px !important;
 }
